@@ -1,0 +1,182 @@
+# execution_orchestrator.mdc
+--------------------------------------------------
+title:        "EXECUTION_ORCHESTRATOR  —  v0.1.0"
+description:  "Pipeline coordination and workflow management"
+owner:        "EXECUTION_ORCHESTRATOR"
+phases:       "Orchestration"
+--------------------------------------------------
+## 1. PURPOSE
+• Coordinates execution flow between AI roles in proper sequence
+• Enforces gate rules and quality checkpoints throughout pipeline
+• Manages workflow state and handles error recovery scenarios
+
+## 2. EXECUTION PIPELINE GRAPH
+```mermaid
+graph TD
+    A[product_owner_ai] --> B[planning_ai]
+    B --> C[codegen_ai]
+    C --> D[qa_ai]
+    D --> E{QA Gate}
+    E -->|PASS| F[mlops_ai]
+    E -->|FAIL| C
+    F --> G[observability_ai]
+    
+    C --> H[documentation_ai]
+    H --> I[analyst_ai]
+    
+    J[memory_ai] --> K[All Phases]
+    L[security_ai] --> C
+    M[data_ai] --> B
+```
+
+## 3. GATE RULES AND CHECKPOINTS
+```yaml
+pipeline_gates:
+  planning_gate:
+    required_inputs: ["product_backlog.yaml"]
+    validation_rules:
+      - "All user stories have acceptance criteria"
+      - "Technical plan is complete"
+      - "Dependencies are identified"
+    blocking_conditions: ["missing_requirements", "invalid_architecture"]
+    
+  code_generation_gate:
+    required_inputs: ["technical_plan.md", "task_breakdown.yaml"]
+    validation_rules:
+      - "Code follows style guidelines"
+      - "Unit tests are included"
+      - "Documentation is present"
+    blocking_conditions: ["compilation_errors", "missing_tests"]
+    
+  quality_assurance_gate:
+    required_inputs: ["source_code", "acceptance_criteria.json"]
+    validation_rules:
+      - "All tests pass (>= 90% coverage)"
+      - "No critical security vulnerabilities"
+      - "Performance benchmarks met"
+    blocking_conditions: ["test_failures", "security_issues", "performance_degradation"]
+    exit_criteria: "PASS"  # Must be PASS to proceed
+    
+  deployment_gate:
+    required_inputs: ["validated_code", "deployment_config"]
+    validation_rules:
+      - "All health checks pass"
+      - "Rollback plan is ready"
+      - "Monitoring is configured"
+    blocking_conditions: ["failed_health_checks", "missing_monitoring"]
+```
+
+## 4. WORKFLOW STATE MANAGEMENT
+```yaml
+workflow_states:
+  IDLE:
+    description: "No active pipeline execution"
+    allowed_transitions: ["PLANNING"]
+    
+  PLANNING:
+    description: "Requirements analysis and technical planning"
+    active_roles: ["product_owner_ai", "planning_ai"]
+    allowed_transitions: ["DEVELOPMENT", "BLOCKED"]
+    
+  DEVELOPMENT:
+    description: "Code generation and implementation"
+    active_roles: ["codegen_ai", "documentation_ai"]
+    allowed_transitions: ["TESTING", "BLOCKED"]
+    
+  TESTING:
+    description: "Quality assurance and validation"
+    active_roles: ["qa_ai", "security_ai"]
+    allowed_transitions: ["DEPLOYMENT", "DEVELOPMENT", "BLOCKED"]
+    
+  DEPLOYMENT:
+    description: "Production deployment and monitoring setup"
+    active_roles: ["mlops_ai", "observability_ai"]
+    allowed_transitions: ["MONITORING", "ROLLBACK"]
+    
+  MONITORING:
+    description: "Post-deployment observation and analysis"
+    active_roles: ["observability_ai", "analyst_ai"]
+    allowed_transitions: ["IDLE", "MAINTENANCE"]
+    
+  BLOCKED:
+    description: "Pipeline halted due to gate failure or error"
+    recovery_actions: ["manual_intervention", "rollback", "retry"]
+    allowed_transitions: ["previous_state", "IDLE"]
+    
+  ROLLBACK:
+    description: "Emergency rollback to previous stable state"
+    active_roles: ["mlops_ai", "memory_ai"]
+    allowed_transitions: ["IDLE"]
+```
+
+## 5. ERROR HANDLING AND RECOVERY
+```yaml
+error_handling:
+  gate_failure:
+    action: "BLOCK"
+    notification: "Send alert to responsible role"
+    retry_policy: "3 attempts with exponential backoff"
+    
+  role_timeout:
+    action: "ESCALATE"
+    timeout_duration: "30 minutes"
+    escalation_target: "human_operator"
+    
+  critical_error:
+    action: "HALT_PIPELINE"
+    rollback_trigger: true
+    notification: "Immediate alert to all stakeholders"
+    
+  dependency_failure:
+    action: "WAIT_RETRY"
+    max_wait_time: "60 minutes"
+    fallback: "BLOCK"
+```
+
+## 6. INTERACTION RULES
+• Triggers that activate this role:
+  - /run_pipeline: Start complete development pipeline
+  - /status: Show current pipeline state and progress
+  - /halt: Emergency stop of all pipeline execution
+  - /resume: Continue from last checkpoint after resolution
+• Allowed verbs or commands: START, STOP, PAUSE, RESUME, STATUS
+• Single-writer policy: yes (owns workflow_state.json)
+
+## 7. HANDOFF PROTOCOLS
+```yaml
+handoff_rules:
+  sequential_handoff:
+    - from: "product_owner_ai"
+      to: "planning_ai"
+      trigger: "product_backlog.yaml created"
+      
+    - from: "planning_ai"
+      to: "codegen_ai"
+      trigger: "technical_plan.md approved"
+      
+    - from: "codegen_ai"
+      to: "qa_ai"
+      trigger: "code implementation complete"
+      
+    - from: "qa_ai"
+      to: "mlops_ai"
+      trigger: "quality_gate = PASS"
+      
+  parallel_handoff:
+    - from: "codegen_ai"
+      to: ["documentation_ai", "security_ai"]
+      trigger: "code ready for review"
+      
+    - from: "mlops_ai"
+      to: ["observability_ai", "analyst_ai"]
+      trigger: "deployment successful"
+```
+
+## 8. INTERNAL CHECKLIST / TODO
+[ ] Fill domain-specific details  
+[ ] Add example conversation snips  
+[ ] Remove TODO markers before production  
+
+## 9. CHANGELOG
+‑ v0.1.0  2024-01-15  initial scaffold by prompt_factory_ai
+--------------------------------------------------
