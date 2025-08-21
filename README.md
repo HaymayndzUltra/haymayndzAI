@@ -1,1 +1,1 @@
-"# Welcome to my Obsidian Vault" 
+f"# Welcome to my Obsidian Vault" 

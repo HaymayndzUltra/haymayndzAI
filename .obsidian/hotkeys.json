@@ -1,0 +1,10 @@
+{
+  "templater-obsidian:create-docs/00-Templates/AutoPrompt.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ]
+}

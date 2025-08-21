@@ -1,0 +1,15 @@
+{
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.venv/**",
+    "**/venv/**"
+  ],
+  "promptDelete": false,
+  "spellcheck": false,
+  "legacyEditor": false,
+  "vimMode": false
+}
