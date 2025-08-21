@@ -1,0 +1,264 @@
+{
+  "main": {
+    "id": "f2e0624620ef4632",
+    "type": "split",
+    "children": [
+      {
+        "id": "59e2e1679b989963",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05c55fcbadb11c7b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "prompts/Analyst template.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Analyst template"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0ce1bf0372f58d91",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac6d6cd3d6da68d1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e172e84ebd21bb15",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "254457be8a4892d3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d3798069894f2bf9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c306022e83eecb5c",
+    "type": "split",
+    "children": [
+      {
+        "id": "b88030cb3c83fcdc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08097bdeef88ab0b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "flow_overview.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for flow_overview"
+            }
+          },
+          {
+            "id": "9db0ea8d66b37412",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "flow_overview.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "lucide-ghost",
+              "title": "outgoing-link"
+            }
+          },
+          {
+            "id": "a73d30af4ac29ddc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "59ba984e2439a934",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "prompts/Analyst template.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Analyst template"
+            }
+          },
+          {
+            "id": "6c3e2fed30cebb56",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "b0979ba840d0d439",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "80b0d5e731c7779b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "1f374b314b6deb8f",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "prompts/Analyst template.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "workspaces:Manage workspace layouts": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "bases:Create new base": false,
+      "templater-obsidian:Templater": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "command-palette:Open command palette": false,
+      "switcher:Open quick switcher": false,
+      "random-note:Open random note": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "05c55fcbadb11c7b",
+  "lastOpenFiles": [
+    "pipeline/Untitled.base",
+    "reports/file1.md",
+    "reports/file2.md",
+    "reports/file3.md",
+    "Untitled.canvas",
+    "README.md",
+    "note1.md",
+    "pre_rebuttal_flow.png",
+    "debate_style_loop_detailed.png",
+    "flow_overview.md",
+    "Excalidraw/Drawing 2025-08-20 02.45.36.excalidraw.md",
+    "References/Obsidian-Manuals.md",
+    "References",
+    "Untitled.md",
+    "prompts/Analyst template.md",
+    "docs/00-Templates/ADR.md",
+    "analysis/analysis-2025-08-19T23-31-20.md",
+    "analysis/analysis-2025-08-19T23-30-45.md",
+    "analysis/analysis-2025-08-19T23-29-55.md",
+    "analysis/analysis-2025-08-19T23-42-58.md",
+    "Untitled.base",
+    "docs/00-Templates/Daily.md",
+    "docs/00-Templates/AutoPrompt.md",
+    "docs/00-Templates/AdvancedPromptTemplates.md",
+    "Excalidraw",
+    "Untitled 1.base",
+    "2025-08-19.md",
+    "docs/00-Templates/VSCodeLink.md",
+    "docs/00-Templates/Prompt-ToT.md",
+    "docs/00-Templates/Prompt-CoT.md",
+    "pre_rebuttal_flow",
+    "diagram_pre_rebuttal.py",
+    "debate_style_loop_detailed",
+    "diagram.py",
+    "scripts/claims_consensus.py"
+  ]
+}

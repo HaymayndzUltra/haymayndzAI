@@ -1,0 +1,4 @@
+{
+  "daily": {"folder": "notes/daily", "format": "YYYY-MM-DD", "template": "docs/00-Templates/Daily"},
+  "weekly": {"folder": "notes/weekly", "format": "gggg-[W]ww"}
+}
