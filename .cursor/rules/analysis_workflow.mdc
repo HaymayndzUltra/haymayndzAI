@@ -3,55 +3,36 @@ description: Pre-Execution Analysis Orchestrator — continuous analysis workflo
 alwaysApply: false
 ---
 
-## Pre-Execution Analysis Workflow (Continuous Flow)
+## Pre-Execution Analysis Workflow (Common-Sense, Advisory by Default)
 
-Objective: Iterate each phase of `memory-bank/queue-system/tasks_active.json` and perform a deep, single-phase analysis using `analyzer.py`. Continue processing regardless of findings.
-
-### State
-- Current phase index K is maintained externally by the operator or by re-running this workflow; the workflow always starts at the first unfinished analysis phase in `analysis_active.json` linked to the execution task.
+Objective: Compare `memory-bank/queue-system/tasks_active.json` (execution plan) directly against the codebase to detect conflicts, missing contracts, policy drift, and sequencing issues. Keep execution unblocked by default; surface actionable findings.
 
 ### Inputs
-- Execution task: `memory-bank/queue-system/tasks_active.json` (array, exactly one task)
-- Analysis mirror: `memory-bank/queue-system/analysis_active.json` (linked via `source_task_id`)
-- Repo root: repository top-level (auto-detected by scripts)
+- Execution plan: `memory-bank/queue-system/tasks_active.json` (array, exactly one task)
+- Repo root: repository top-level (auto-detected)
 
-### Loop (K = 0..N)
-1. Identify execution task `T` and its `todos`.
-2. For phase K (0-based), call the analysis engine (proactive mode on; auto-detect repo root and tasks file):
-   ```bash
-   python3 analyzer.py --phase-index K --proactive > /tmp/analysis_K.json
-   ```
-3. Parse JSON and document findings:
-   - If > 0: Document findings and continue to next phase.
-   - If == 0: Mark analysis phase K done in `analysis_active.json` and proceed to K+1.
+### Method
+1. Read the execution plan `tasks_active.json` and iterate phases K=0..N.
+2. For each phase K, infer expected artifacts/contracts (schemas, commands, files, services) from phase text.
+3. Cross-check against the codebase:
+   - Presence/shape of referenced files/schemas/configs
+   - Policy contracts (e.g., timestamps, correlation_id, schema versions)
+   - Test/coverage targets, CI configs, scanners, performance harness
+   - Integration points (routing, orchestrator, memory, docs, observability)
+4. Record concise findings per phase (Duplicate/Overlap/Conflict/Missing) with evidence (paths/symbols/lines).
+5. Summarize risks and suggested fixes; do not block execution by default.
 
-### Analysis Guidelines
-- Findings are documented for awareness and improvement.
-- Analysis can continue even with findings present.
-- Plans can proceed to execution regardless of findings.
-
-### Commands (reference)
+### Commands (reference; advisory)
 ```bash
-# Ensure an analysis task exists (linked to execution task)
-python3 todo_manager.py new "Pre-execution analysis for <EXEC_TASK_ID>" --mode analysis
-python3 todo_manager.py add <ANALYSIS_TASK_ID> "PHASE 0: SETUP & PROTOCOL (READ FIRST) — ANALYSIS\n\nPurpose: ...\n\nDecision Gate: ...\n\nIMPORTANT NOTE: ..." --mode analysis
-
-# For each K, run analyzer (read-only, proactive) and write findings preview
-python3 analyzer.py --phase-index K --proactive > /tmp/analysis_K.json
-
-# HALT rule: if jq '.findings | length' > 0 → stop and display
-cat /tmp/analysis_K.json | jq -r '.findings[] | "- [\(.category)] (\(.severity)) \(.description)"'
-
-# If zero findings, mark analysis K done
-python3 todo_manager.py done <ANALYSIS_TASK_ID> K --mode analysis
+python3 plan_next.py
+python3 plain_hier.py <TASK_ID>
+# Optional analyzers (read-only): grep/rg checks, schema validators, config linters
 ```
 
 ### Completion
-- When all phases K are processed in `analysis_active.json`, emit:
-  - "Analysis Complete - Ready for Execution."
+- Emit: "Analysis Complete — Findings available; execution may proceed."
 
 ### IMPORTANT NOTE
-- This orchestrator is analysis-only. It must not execute any side-effectful commands from execution phases.
-- Analysis findings are documented for awareness but don't block execution.
-- Findings can be addressed at any time as part of continuous improvement.
+- Advisory by default (solo/shadow modes). Blocking only when enforcement escalates per policy.
+- Focus on plan-vs-codebase consistency; do not auto-edit the plan without operator approval.
 
