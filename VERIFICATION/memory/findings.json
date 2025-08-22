@@ -1,0 +1,93 @@
+{
+  "component": "framework_memory_bridge.mdc + memory-bank/queue-system/* + cursor_state.json + current-session.md",
+  "raci": {
+    "tasks_active.json": {
+      "responsible": ["todo_manager.py"],
+      "accountable": ["todo_manager.py"],
+      "consulted": ["plan_next.py", "plain_hier.py", "auto_sync_manager.py"],
+      "informed": ["framework roles/bridge"],
+      "constraints": [
+        "Single SOT for execution",
+        "Atomic writes + advisory file locks",
+        "ISO8601 with +08:00 in created/updated"
+      ]
+    },
+    "analysis_active.json": {
+      "responsible": ["analysis ingestion/mirror"],
+      "accountable": ["Deep Analysis Gate (todo_manager.py)"],
+      "consulted": ["plan_next.py", "plain_hier.py"],
+      "informed": ["framework roles/bridge"],
+      "constraints": [
+        "Must include source_task_id",
+        "Each phase ends with IMPORTANT NOTE and Decision Gate"
+      ]
+    },
+    "current-session.md": {
+      "responsible": ["cursor_memory_bridge.dump_markdown()"],
+      "accountable": ["cursor_memory_bridge.py"],
+      "consulted": ["auto_sync_manager.py", "memory_system/cli.py"],
+      "informed": ["all tools/users"],
+      "constraints": [
+        "Single writer for full snapshot",
+        "Append-only notes must not overwrite snapshot"
+      ]
+    },
+    "memory-bank/cursor_state.json": {
+      "responsible": ["cursor_session_manager"],
+      "accountable": ["cursor_session_manager"],
+      "consulted": ["auto_sync_manager (mirror only if root exists)"],
+      "informed": ["framework roles/bridge"],
+      "constraints": [
+        "Canonical path under memory-bank/",
+        "Root cursor_state.json is a compatibility mirror",
+        "ISO8601 with +08:00"
+      ]
+    }
+  },
+  "consistency": {
+    "timezone": {
+      "policy": "All timestamps ISO8601 with +08:00",
+      "conformance": {
+        "todo_manager": true,
+        "auto_sync_manager": true,
+        "cursor_session_manager": false,
+        "cursor_memory_bridge_header": false
+      }
+    },
+    "analysis_gate": {
+      "present": true,
+      "notes": "analysis_active.json exists; done:true; gate enforced on exec --run and done"
+    }
+  },
+  "integrity_checks": [
+    "Temp file + os.replace for tasks_active.json and analysis_active.json",
+    "fcntl advisory locks around read/write critical sections",
+    "Plan lint: Phase 0 first, IMPORTANT NOTE present, monotonic completion",
+    "Validate analysis_active.json.source_task_id linkage"
+  ],
+  "retention": {
+    "policy": "Archive completed tasks to tasks_done.json; no purge",
+    "rotation": "Time or size-based rotation (e.g., 90 days or 10k entries)",
+    "performance": "Streamed reads/pagination for large archives"
+  },
+  "continuity_checklist": [
+    "Read memory-bank/queue-system/tasks_active.json",
+    "Run auto_sync_manager.auto_sync()",
+    "Verify memory-bank/cursor_state.json and current-session.md updated",
+    "Gate: plan_next.py --gate --task-id <ACTIVE_TASK_ID>",
+    "Mirror root cursor_state.json from canonical if present",
+    "Audit timestamps for +08:00"
+  ],
+  "risks": [
+    "Concurrent writes to task JSON without atomicity/locking",
+    "Multiple writers to current-session.md leading to clobber",
+    "Divergence between root and memory-bank cursor_state.json",
+    "Backlog size impacts performance in tasks_done.json"
+  ],
+  "remediations": [
+    "Implement atomic writes and fcntl locks in todo_manager._save",
+    "Refactor auto_sync_manager to call cursor_memory_bridge.dump_markdown",
+    "Normalize cursor_session_manager and cursor_memory_bridge to +08:00",
+    "Define retention rotation and implement archival path"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "gate_id": "quality_assurance_gate",
+  "description": "Decision matrix results, loop control status, and audit trail for codegen_ai ↔ qa_ai QA Gate.",
+  "policy": {
+    "criteria": [
+      { "id": "C1", "name": "Tests pass", "source": "test_results.json", "rule": "100% pass required" },
+      { "id": "C2", "name": "Coverage threshold", "source": "coverage_report", "rule": ">= 90% line coverage" },
+      { "id": "C3", "name": "Security critical", "source": "security_report", "rule": "No critical+ vulnerabilities" },
+      { "id": "C4", "name": "Performance meets criteria", "source": "benchmark_report", "rule": "Meets acceptance_criteria.json" },
+      { "id": "C5", "name": "No critical QA findings", "source": "quality_assessment.md", "rule": "No critical violations open" },
+      { "id": "C6", "name": "Artifact integrity", "source": "artifact_digests", "rule": "All required artifacts present, well-formed, consistent" }
+    ],
+    "decision_rule": "PASS iff all criteria C1..C6 are PASS; otherwise FAIL",
+    "loop_control": {
+      "max_attempts": 3,
+      "backoff_seconds": [0, 60, 300],
+      "retryable_classes": [
+        "test_failures",
+        "coverage_shortfall",
+        "style_or_noncritical_quality",
+        "minor_performance_shortfall"
+      ],
+      "non_retryable_classes": [
+        "critical_security",
+        "invalid_acceptance_criteria",
+        "invalid_architecture",
+        "unchanged_source_digest_repeat_failure"
+      ]
+    },
+    "documentation_interaction": {
+      "on_pass": [
+        "update_release_notes",
+        "link_qa_artifacts",
+        "summarize_quality_assessment_pass"
+      ],
+      "on_fail": [
+        "write_qa_feedback",
+        "include_exec_summary_on_escalation",
+        "request_decision_accept_risk_defer_or_rework"
+      ]
+    },
+    "retention_policy": {
+      "min_days": 30,
+      "min_attempt_records_per_component": 10,
+      "store_artifact_digests_only": true
+    }
+  },
+  "audit_schema": {
+    "gate_id": "string",
+    "component_id": "string",
+    "attempt": "integer",
+    "decision": "enum[PASS|FAIL]",
+    "timestamp": "ISO-8601 with +08:00",
+    "actor_role": "enum[qa_ai]",
+    "inputs": [
+      { "type": "string", "path": "string", "sha256": "string" }
+    ],
+    "metrics": {
+      "coverage_pct": "number",
+      "tests_total": "integer",
+      "tests_passed": "integer",
+      "perf_metrics": { "p50_ms": "number", "p95_ms": "number", "throughput": "number" }
+    },
+    "rule_evaluations": [
+      { "criterion": "C1..C6", "result": "PASS|FAIL", "reason": "string" }
+    ],
+    "loop_control": {
+      "max_attempts": "integer",
+      "attempts_used": "integer",
+      "next_action": "enum[retry|escalate|proceed]",
+      "backoff_seconds": "integer"
+    },
+    "escalation": {
+      "target": "enum[product_owner_ai|planning_ai|human_operator|none]",
+      "reason": "string"
+    },
+    "documentation_interaction": {
+      "on_pass": ["string"],
+      "on_fail": ["string"]
+    },
+    "notes": "string"
+  },
+  "findings": []
+}
