@@ -121,7 +121,7 @@ roles:
     dependencies: ["planning_ai"]
 
   planner_moderator_ai:
-    enabled: false
+    enabled: true
     priority: 17
     triggers: ["/planner_mode"]
     dependencies: []
