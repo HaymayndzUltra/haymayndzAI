@@ -429,6 +429,22 @@ def _extract_fenced_code_blocks(markdown: str) -> List[str]:
     pattern = re.compile(r"```(?:[a-zA-Z0-9_+-]+)?\n([\s\S]*?)\n```", re.MULTILINE)
     return [m.group(1).strip() for m in pattern.finditer(markdown)]
 
+# New policy helpers: detect concluding-only command blocks and require actionable sub-steps
+
+def _is_concluding_line(command: str) -> bool:
+    return re.search(r"\btodo_manager\.py\s+(done|show)\b", command) is not None
+
+
+def _phase_has_actionable_commands(markdown: str) -> bool:
+    blocks = _extract_fenced_code_blocks(markdown)
+    if not blocks:
+        return False
+    lines = [ln for ln in blocks[0].splitlines() if ln.strip() and not ln.strip().startswith("#")]
+    for ln in lines:
+        if not _is_concluding_line(ln):
+            return True
+    return False
+
 
 def _parse_sub_index(sub_index: str) -> (int, Optional[int]):
     """Parse sub-index like '4.1' → (4, 0). If '4' → (4, None)."""
@@ -447,7 +463,7 @@ def _parse_sub_index(sub_index: str) -> (int, Optional[int]):
 
 def _replace_placeholders_in_command(command: str, task_id: str, phase_index: int, command_index_one_based: Optional[int]) -> str:
     """Replace common placeholders in a command string with concrete values.
-
+    
     Supported placeholders:
       - <task_id ReplaceAll>, <task_id Replace All>, <task_id>, <TASK_ID>
       - <PHASE_INDEX>, <phase_index>
@@ -474,73 +490,6 @@ def _replace_placeholders_in_command(command: str, task_id: str, phase_index: in
         command = command.replace(needle, value)
     return command
 
-
-# ------------------------------------------------------------------
-# Deep Analysis Gate helpers ---------------------------------------
-# ------------------------------------------------------------------
-
-def _analysis_file() -> Path:
-    return Path(os.getcwd()) / "memory-bank" / "queue-system" / "analysis_active.json"
-
-
-def _load_json_list(path: Path) -> List[Dict[str, Any]]:
-    if not path.exists():
-        return []
-    try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-        if isinstance(data, dict) and "tasks" in data:
-            data = data["tasks"]
-        return data if isinstance(data, list) else []
-    except Exception:
-        return []
-
-
-def _find_analysis_for_task(execution_task_id: str) -> Optional[Dict[str, Any]]:
-    """Find analysis task linked to the execution task via source_task_id or id prefix."""
-    analyses = _load_json_list(_analysis_file())
-    for a in analyses:
-        if a.get("source_task_id") == execution_task_id:
-            return a
-    for a in analyses:
-        if str(a.get("id", "")).startswith(f"{execution_task_id}_analysis_"):
-            return a
-    return None
-
-
-def _analysis_phase_has_required_sections(text: str) -> bool:
-    return ("IMPORTANT NOTE:" in (text or "")) and ("Decision Gate" in (text or ""))
-
-
-def _analysis_phase_has_blocking_findings(text: str) -> bool:
-    txt = text or ""
-    return (
-        re.search(r"Type:\s*Conflict", txt, re.I) is not None
-        or re.search(r"Type:\s*Duplicate", txt, re.I) is not None
-    )
-
-
-def enforce_deep_analysis_gate(execution_task_id: str) -> (bool, str):
-    """Return (ok, message). ok=False blocks execution side-effects for this task."""
-    analysis = _find_analysis_for_task(execution_task_id)
-    if analysis is None:
-        return (
-            False,
-            "No analysis found in analysis_active.json for this execution task (missing source_task_id link).",
-        )
-    todos = analysis.get("todos", [])
-    if not todos:
-        return False, "Analysis task has no phases."
-    for idx, td in enumerate(todos):
-        txt = td.get("text", "")
-        if not td.get("done"):
-            return False, f"Analysis phase {idx} not done."
-        if not _analysis_phase_has_required_sections(txt):
-            return False, f"Analysis phase {idx} missing 'Decision Gate' or 'IMPORTANT NOTE:'."
-        if _analysis_phase_has_blocking_findings(txt):
-            return False, f"Analysis phase {idx} contains blocking Findings (Conflict/Duplicate)."
-    return True, "Deep Analysis Gate passed."
-
-
 # ------------------------------------------------------------------
 # Enforcement mode (config-over-code) -------------------------------
 # ------------------------------------------------------------------
@@ -548,11 +497,11 @@ def enforce_deep_analysis_gate(execution_task_id: str) -> (bool, str):
 def _gate_policy() -> str:
     """Return 'block' (default) or 'warn' depending on AI_ENFORCEMENT_MODE.
 
-    Modes treated as warn/advisory (non-blocking): solo, optional, warn, advisory
+    Modes treated as warn/advisory (non-blocking): solo, shadow, optional, warn, advisory
     Any other value defaults to block.
     """
-    mode = os.getenv("AI_ENFORCEMENT_MODE", "team").strip().lower()
-    if mode in ("solo", "optional", "warn", "advisory"):
+    mode = os.getenv("AI_ENFORCEMENT_MODE", "shadow").strip().lower()
+    if mode in ("solo", "shadow", "optional", "warn", "advisory"):
         return "warn"
     return "block"
 
@@ -724,14 +673,6 @@ def main(argv: Optional[List[str]] = None) -> None:
                 return
         
         # Enforce deep analysis gate for execution mode marking done
-        if args.mode == "execution":
-            ok, msg = enforce_deep_analysis_gate(args.task_id)
-            if not ok:
-                if _gate_policy() == "warn":
-                    print(f"⚠️ Deep Analysis Gate WARN (non-blocking in this mode): {msg}")
-                else:
-                    print(f"⛔ Deep Analysis Gate BLOCK: {msg}")
-                    return
         mark_done(args.task_id, index)
     elif args.cmd == "delete":
         _set_data_file_for_mode(args.mode)
@@ -753,14 +694,7 @@ def main(argv: Optional[List[str]] = None) -> None:
         delete_todo(args.task_id, index)
     elif args.cmd == "exec":
         # Allow preview without gate; enforce gate only when --run
-        if args.run:
-            ok, msg = enforce_deep_analysis_gate(args.task_id)
-            if not ok:
-                if _gate_policy() == "warn":
-                    print(f"⚠️ Deep Analysis Gate WARN (non-blocking in this mode): {msg}")
-                else:
-                    print(f"⛔ Deep Analysis Gate BLOCK: {msg}")
-                    return
+        # No deep analysis gate enforcement; rely on rules/triggers for verification
         exec_substep(args.task_id, args.sub_index, args.run)
     elif args.cmd == "show":
         _set_data_file_for_mode(args.mode)

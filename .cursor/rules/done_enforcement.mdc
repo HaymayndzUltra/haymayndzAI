@@ -18,6 +18,8 @@ python3 plain_hier.py <TASK_ID>
 python3 todo_manager.py show <TASK_ID>
 python3 todo_manager.py done <TASK_ID> <PHASE_INDEX>
 ```
+- Prohibited: Marking a phase done when its first fenced code block contains ONLY concluding protocol lines (`todo_manager.py show|done`). Add actionable sub-steps first.
+- Required: If the phase defines verification commands (e.g., tests, linters, schema validation, scans), these MUST have been executed successfully before marking done.
 
 ### Post-DONE Verification (Required)
 - Immediately verify plan integrity after marking done:
@@ -29,6 +31,11 @@ python3 plan_next.py
   2) Execute missing sub-steps with `python3 todo_manager.py exec <TASK_ID> <SUB_INDEX>`
   3) Re-run `python3 todo_manager.py done <TASK_ID> <PHASE_INDEX>`
 
+### Analysis Evidence Gate (Required)
+- Before `done` in execution mode, ensure the analysis mirror has for the same phase:
+  - `IMPORTANT NOTE:` and `Decision Gate` sections present
+  - `Findings:` explicitly set to evidence items or `Findings: none`
+
 ### Error Handling
 - If `done` fails due to unmet preconditions, DO NOT skip. Investigate using `plain_hier.py` and complete the missing steps.
 - Enforce monotonic completion: never mark a later phase done while an earlier phase remains undone.
@@ -36,4 +43,5 @@ python3 plan_next.py
 ### Acceptance Criteria
 - A phase is considered complete only after:
   - `todo_manager.py done` succeeds for that phase, and
-  - `plan_next.py` shows the next phase index strictly greater than the completed one.
+  - `plan_next.py` shows the next phase index strictly greater than the completed one, and
+  - (If applicable) defined verification commands have been executed successfully.

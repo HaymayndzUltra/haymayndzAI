@@ -1,61 +1,45 @@
 [
   {
-    "id": "memory_system_canonicalization_actionable_20250820",
-    "description": "Actionable plan compiled from MEMORY SYSTEM organizer. Source: memory-bank/plan/organize.md",
+    "id": "final_implementation_plan_actionable_20250119",
+    "description": "Actionable plan compiled from Final Implementation Plan (memory-bank/plan/organize.md) - Foundational hardening, memory subsystem remediation, QA gates, observability, security, and enforcement escalation.",
     "status": "in_progress",
-    "created": "2025-08-21T07:55:00+08:00",
-    "updated": "2025-08-20T23:55:53.232295+08:00",
+    "created": "2025-01-19T10:30:00+08:00",
+    "updated": "2025-01-19T10:30:00+08:00",
     "todos": [
       {
-        "text": "PHASE 0: SETUP & PROTOCOL (READ FIRST)\n\n**Explanations:**\n- This plan standardizes memory domains, logging, timezones, atomicity, and MCP config. Follow gates: validate next-phase and show hierarchy before any execution, and only mark done after sub-steps pass.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] Single source of truth for execution: `memory-bank/queue-system/tasks_active.json`.\n- Always validate before executing: `python3 plan_next.py` then `python3 plain_hier.py <TASK_ID>`.\n- Use PH time (+08:00) for all timestamps.\n- Agent must not directly write queue/state files outside the defined commands.\n- Human-readable session file has exactly one writer (`cursor_memory_bridge.dump_markdown()`).",
-        "done": true
-      },
-      {
-        "text": "PHASE 1: Establish canonical memory domains\n\n**Explanations:**\n- Define ownership: JSON SOT for execution/analysis; session state under `memory-bank/cursor_state.json` with root mirror; single writer for `current-session.md`.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] Execution SOT: keep `memory-bank/queue-system/*.json`.\n- Context SOT: canonical `memory-bank/cursor_state.json`, mirror to root only for compatibility.\n- Human-readable: only `cursor_memory_bridge.dump_markdown()` writes `memory-bank/current-session.md`.",
+        "text": "PHASE 0: SETUP & PROTOCOL (READ FIRST)\n\n**Explanations:**\nThis is the mandatory setup phase that establishes execution protocols and environment constraints for the entire implementation plan. All subsequent phases depend on these foundational protocols being understood and followed.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id>\npython3 todo_manager.py done <task_id> 0\n```\n\n**IMPORTANT NOTE:** Agent scope is execution-only; no direct file writes to queue/state files. All JSON outputs are content-only for system/operator placement. Environment variables and read-only analyzers must be used as specified. Timestamps must use Philippines timezone (+08:00). All schema validations and CI gates must pass before proceeding to next phases.",
         "done": false
       },
       {
-        "text": "PHASE 2: Add structured run/decision logging (SQLite, WAL)\n\n**Explanations:**\n- Introduce SQLite-backed `state.sqlite` with `runs`, `decisions`, `context`; provide `memory_store.py` for `init`, `log-run`, `log-decision`, `set-context`.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] Use WAL mode; store stdout/stderr as file paths (no blobs).\n- Keep DB under `memory-bank/memory/state.sqlite`; PH ISO timestamps.",
+        "text": "PHASE 1: FOUNDATIONAL HARDENING AND TOOLING SETUP\n\n**Explanations:**\nDefine global contracts (critical transitions), telemetry schema (dual timestamps + correlation_id), versioned JSON schemas, docs freshness SLO, acceptance criteria, CI schema-validation, centralized config with RBAC, waivers, and disk policies.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id>\npython3 todo_manager.py done <task_id> 1\n```\n\n**IMPORTANT NOTE:** All schemas must be versioned JSON with strict validation. Telemetry requires dual timestamps (UTC Z and +08:00). RBAC enforcement must be implemented for MEMORY_WRITES_MODE and AI_ENFORCEMENT_MODE. Documentation SLO is ≤48h update, block after 72h. All CI schema-validation jobs must pass.",
         "done": false
       },
       {
-        "text": "PHASE 3: Hook execution logging into todo runner\n\n**Explanations:**\n- Extend `todo_manager.exec_substep` to capture per-command start/end time, stdout/stderr paths, exit codes, and to call `memory_store.py log-run`.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] Logs folder `memory-bank/logs/` is canonical.\n- Log status as success/failed/preview; never include secrets in logs.",
+        "text": "PHASE 2: MEMORY SUBSYSTEM REMEDIATION (WITH SAFETY FLAGS)\n\n**Explanations:**\nImplement atomic IO, watcher adapters, serialized report updates, single-writer bridge with metrics, staged rollout of memory write modes, DR snapshots, and reader/watcher migration.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id>\npython3 todo_manager.py done <task_id> 2\n```\n\n**IMPORTANT NOTE:** Atomic writes include directory fsync; staged rollout direct → atomic → dual_write → bridge; bridge provides idempotent append, monotonic sequence, durability, retries, DLQ, backpressure; DR with defined RPO/RTO and tested restore.",
         "done": false
       },
       {
-        "text": "PHASE 4: Eliminate competing writers for current-session.md\n\n**Explanations:**\n- Replace direct markdown writes in `auto_sync_manager` with `cursor_memory_bridge.dump_markdown()`; keep `memoryctl save` append-only notes.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] Only the bridge writes the full session snapshot; other modules must call it.\n- Append-only “Memory Note” sections must not overwrite the main snapshot.",
+        "text": "PHASE 3: QA GATE REMEDIATION AND CI HARDENING\n\n**Explanations:**\nEnforce coverage thresholds (≥90% line, ≥80% branch), security scan with policy/waivers, performance CI pinned to acceptance criteria, cross-vertical integration tests, 3 consecutive greens before escalation.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id>\npython3 todo_manager.py done <task_id> 3\n```\n\n**IMPORTANT NOTE:** Coverage regressions >2% fail builds; HIGH/CRITICAL gate post-waiver; p95 and variance vs baseline with confidence intervals; integration suites must include routing, orchestrator, memory, docs, deploy/obs health.",
         "done": false
       },
       {
-        "text": "PHASE 5: Atomic writes + file locking for JSON SOT\n\n**Explanations:**\n- Implement temp-file + `os.replace` for writes and advisory file locks for read/write on `tasks_active.json` (and any mutated analysis file) to prevent corruption.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] All task JSON writes must be atomic; protect critical sections with `fcntl` locks.",
+        "text": "PHASE 4: DOCUMENTATION, DEPLOYABILITY, AND OBSERVABILITY TIGHTENING\n\n**Explanations:**\nTest orchestrator critical transitions (≥90% coverage), docs provenance lint + freshness SLO enforcement, monitoring config schema validation, telemetry dual-stamp + correlation_id, observability monitors.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id>\npython3 todo_manager.py done <task_id> 4\n```\n\n**IMPORTANT NOTE:** Documentation promotion blocks after 72h SLO breach; telemetry must enforce dual timestamps and X-Correlation-Id; alerts tied to enforcement mode SLOs.",
         "done": false
       },
       {
-        "text": "PHASE 6: Timezone normalization (PH +08:00)\n\n**Explanations:**\n- Ensure all modules emit ISO timestamps with `+08:00` consistently: session manager, todo manager, auto-sync, logging CLI.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] Disallow UTC-naive timestamps; normalize all displayed/saved times to PH ISO.",
+        "text": "PHASE 5: ARTIFACT INTEGRITY, SBOM, AND SUPPLY CHAIN SECURITY\n\n**Explanations:**\nGenerate SPDX SBOM with digests and commit SHA; sign artifacts and create attestations; verify in CI; publish artifact_digests.json.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id>\npython3 todo_manager.py done <task_id> 5\n```\n\n**IMPORTANT NOTE:** SBOM must be SPDX; all artifacts require valid signatures and attestations; digests must be published with builds.",
         "done": false
       },
       {
-        "text": "PHASE 7: Cursor state unification\n\n**Explanations:**\n- Point session manager’s default file to `memory-bank/cursor_state.json`; mirror to root only if root exists; prevent auto-sync from double-writing when session manager is active.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] Single canonical path for cursor state; mirror is compatibility only, not a second SOT.",
+        "text": "PHASE 6: CONCURRENCY-SAFE REPORTING AND GOVERNANCE\n\n**Explanations:**\nSerialize PASS flips via bridge/mutex; atomic updates with directory fsync; enforce RBAC and audit for governance changes.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id>\npython3 todo_manager.py done <task_id> 6\n```\n\n**IMPORTANT NOTE:** CI must reject non-atomic report writes; unauthorized governance changes must alert and be audited.",
         "done": false
       },
       {
-        "text": "PHASE 8: Retention policy safety\n\n**Explanations:**\n- Replace purge behavior with archival to `memory-bank/queue-system/tasks_done.json`; include size/time-based rotation rules.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] Never silently delete completed tasks; archive instead; define rotation windows to avoid unbounded growth.",
+        "text": "PHASE 7: ENFORCEMENT MODE ESCALATION\n\n**Explanations:**\nProgress AI_ENFORCEMENT_MODE solo → shadow → soft_block → hard_block with emergency overrides via expiring signed waivers (RBAC enforced).\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id>\npython3 todo_manager.py done <task_id> 7\n```\n\n**IMPORTANT NOTE:** Require 3 consecutive greens including integration suites before hard block.",
         "done": false
       },
       {
-        "text": "PHASE 9: MCP config hygiene\n\n**Explanations:**\n- Remove committed secrets from `mcp_memory.json`; use env placeholders; ensure a valid `memory.json` exists or provide fallback via setup script.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] Store secrets in env; do not commit tokens; prefer local MCP fallback when external service is unavailable.",
-        "done": false
-      },
-      {
-        "text": "PHASE 10: Tests and validation\n\n**Explanations:**\n- Add concurrency tests for JSON atomicity, run logging assertions, and ensure markdown ownership consistency across imports.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] Tests must simulate parallel writers; verify no truncation, valid schema, and stable session markdown.",
-        "done": false
-      },
-      {
-        "text": "PHASE 11: Observability (optional)\n\n**Explanations:**\n- Produce daily run summaries (top commands, failures, durations) in `memory-bank/reports/` for quick forensics.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] Reports contain no secrets; optional and must not block main plan.",
-        "done": false
-      },
-      {
-        "text": "PHASE 12: Documentation\n\n**Explanations:**\n- Document ownership and boundaries: who writes what, where to read, and how to extend safely.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\n\nIMPORTANT NOTE:\n- [SYNTHESIZED FROM ORGANIZER] Ownership map: bridge→`current-session.md`; memory_store→runs/decisions/context; todo_manager→atomic JSON+hooks; auto_sync→JSON sync only.",
+        "text": "PHASE 8: VERIFICATION AND CLOSE-OUT\n\n**Explanations:**\nRe-run vertical verifications, update findings and reports, atomically refresh master report and summary, freeze when all PASS and enforcement hard_block, publish runbook.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id>\npython3 todo_manager.py done <task_id> 8\n```\n\n**IMPORTANT NOTE:** Freeze only after signatures verified and atomic updates confirmed; runbook must include commands, rollbacks, waivers, and contacts.",
         "done": false
       }
     ]
