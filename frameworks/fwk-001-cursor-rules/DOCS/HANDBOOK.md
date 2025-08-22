@@ -74,25 +74,18 @@ See `rules_master_toggle.mdc` routing matrix. Example additions used in Café pr
 - l10n_i18n_ai: `translation_templates.json`, `locale_configs.yaml`, `l10n_guidelines.md`
 - data_ai: `database_schema.sql`, `migration_scripts.sql`, `data_model.mermaid`
 
-## 7) Café Project Profile (Applied Example)
-- Enabled: product_owner_ai, planning_ai, data_ai, codegen_ai, qa_ai, mlops_ai, documentation_ai, security_ai
-- Disabled: auditor_ai, principal_engineer_ai, observability_ai, analyst_ai, prompt_linter_ai, l10n_i18n_ai
-- QA Gate: >= 80% coverage
-- Extra routes: data_ai + security_ai, planner mode enabled as needed
-- Artifacts: `examples/project_profile.cafe.yaml`, `examples/database_schema.cafe.sql`, `examples/Admin_Guide_Cafe.md`, `examples/Profile_Summary_Cafe.md`, `examples/Action_Plan_Cafe.md`
-
-## 8) Operations Cheatsheet
+## 7) Operations Cheatsheet
 - Toggle a role: `/toggle <role> on|off`
 - Who handles a command: `/route <trigger>`
 - Start/Stop pipeline: `/run_pipeline`, `/halt`, `/status`
 - Planner-first: `/planner_mode on|off`
 
-## 9) Files Index
+## 8) Files Index
 - System prompts: `system-prompt/*.mdc` (+ OPTIONAL/*)
-- Docs: this handbook + per-role docs
-- Examples: project profile, schema/migration, guides, plans
+- Docs: this handbook
+- Examples: sample files (if any)
 
-## 10) Change Impact & Safety
+## 9) Change Impact & Safety
 - All edits generate `.bak` backups where applicable
 - Planner-first prevents unconfirmed changes
 - Gates enforce quality and release safety
