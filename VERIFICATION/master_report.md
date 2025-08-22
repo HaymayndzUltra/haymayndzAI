@@ -7,12 +7,12 @@ Generated: summary of VERIFICATION/* at merge time
 
 | Vertical       | Status | Findings Path                                 | Report Path                           |
 |----------------|--------|-----------------------------------------------|----------------------------------------|
-| orchestrator   | WARN   | VERIFICATION/orchestrator/findings.json       | VERIFICATION/orchestrator/report.md    |
+| orchestrator   | PASS   | VERIFICATION/orchestrator/findings.json       | VERIFICATION/orchestrator/report.md    |
 | qa_gate        | WARN   | VERIFICATION/qa_gate/findings.json            | VERIFICATION/qa_gate/report.md         |
-| routing        | WARN   | VERIFICATION/routing/findings.json            | VERIFICATION/routing/report.md         |
+| routing        | PASS   | VERIFICATION/routing/findings.json            | VERIFICATION/routing/report.md         |
 | memory         | WARN   | VERIFICATION/memory/findings.json             | VERIFICATION/memory/report.md          |
-| docs_analyst   | WARN   | VERIFICATION/docs_analyst/findings.json       | VERIFICATION/docs_analyst/report.md    |
-| deploy_obs     | WARN   | VERIFICATION/deploy_obs/findings.json         | VERIFICATION/deploy_obs/report.md      |
+| docs_analyst   | PASS   | VERIFICATION/docs_analyst/findings.json       | VERIFICATION/docs_analyst/report.md    |
+| deploy_obs     | PASS   | VERIFICATION/deploy_obs/findings.json         | VERIFICATION/deploy_obs/report.md      |
 
 Note: Status is (n/a) where the findings.json does not yet set a PASS/WARN/FAIL status.
 
