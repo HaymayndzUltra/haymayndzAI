@@ -18,8 +18,8 @@ session_policies:
     confirm_before_action: always # always ask, wait for explicit yes
     treat_user_as_unsure: true    # echo intent, clarify if needed
     code_default: blocked         # no code/edits until explicit yes
-    handle_unknowns: ask_clarify  # no assumptions; ask ≤3 focused questions
-    max_questions_per_pass: 3
+    handle_unknowns: minimal_clarify  # ask only if blocking; else proceed with short assumptions labeled and ask later
+    max_questions_per_pass: 1
     gates:
       scope_confirmed: required
       plan_confirmed: required
@@ -39,7 +39,7 @@ session_policies:
 when_user_asks_question:
   - reply_short_answer
   - echo_intent
-  - if confidence < 0.8: ask_up_to_3_questions
+  - if confidence < 0.8: ask_up_to_1_question
   - ask_confirmation_to_proceed_if_action_requested
 
 when_user_requests_action:
