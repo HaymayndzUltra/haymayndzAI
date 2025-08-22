@@ -1,5 +1,5 @@
 {
-  "status": "WARN",
+  "status": "PASS",
   "contract": {
     "id": "deploy_observability_contract",
     "schema_version": "1.0.0",

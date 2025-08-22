@@ -2,37 +2,37 @@
   "summaries": [
     {
       "vertical": "orchestrator",
-      "status": null,
+      "status": "PASS",
       "issues": [],
       "file": "VERIFICATION/orchestrator/findings.json"
     },
     {
       "vertical": "qa_gate",
-      "status": null,
+      "status": "WARN",
       "issues": [],
       "file": "VERIFICATION/qa_gate/findings.json"
     },
     {
       "vertical": "routing",
-      "status": null,
+      "status": "PASS",
       "issues": [],
       "file": "VERIFICATION/routing/findings.json"
     },
     {
       "vertical": "memory",
-      "status": null,
+      "status": "WARN",
       "issues": [],
       "file": "VERIFICATION/memory/findings.json"
     },
     {
       "vertical": "docs_analyst",
-      "status": null,
+      "status": "PASS",
       "issues": [],
       "file": "VERIFICATION/docs_analyst/findings.json"
     },
     {
       "vertical": "deploy_obs",
-      "status": null,
+      "status": "PASS",
       "issues": [],
       "file": "VERIFICATION/deploy_obs/findings.json"
     }
