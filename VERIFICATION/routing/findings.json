@@ -1,0 +1,104 @@
+{
+  "vertical": "routing",
+  "sources": [
+    "PROPOSAL/proposal_3.md",
+    ".cursor/rules/rules_master_toggle.mdc",
+    ".cursor/rules/trigger_phrases.mdc",
+    ".cursor/rules/trigger_phrases_extra.mdc",
+    "frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc",
+    "frameworks/fwk-001-cursor-rules/system-prompt/*.mdc"
+  ],
+  "routing_matrix": {
+    "/backlog": { "primary": "product_owner_ai" },
+    "/prioritize": { "primary": "product_owner_ai" },
+    "/refine": { "primary": "product_owner_ai" },
+    "/plan": { "primary": "planning_ai" },
+    "/architect": { "primary": "planning_ai" },
+    "/estimate": { "primary": "planning_ai" },
+    "/gen_code": { "primary": "codegen_ai" },
+    "/implement": { "primary": "codegen_ai" },
+    "/refactor": { "primary": "codegen_ai" },
+    "/test": { "primary": "qa_ai" },
+    "/review": { "primary": "analyst_ai", "fallback": "qa_ai" },
+    "/validate": { "primary": "qa_ai" },
+    "/deploy": { "primary": "mlops_ai" },
+    "/rollback": { "primary": "mlops_ai" },
+    "/scale": { "primary": "mlops_ai" },
+    "/docs": { "primary": "documentation_ai" },
+    "/update_docs": { "primary": "documentation_ai" },
+    "/validate_docs": { "primary": "documentation_ai" },
+    "/analyze": { "primary": "analyst_ai" },
+    "/benchmark": { "primary": "analyst_ai" },
+    "/snapshot": { "primary": "memory_ai" },
+    "/recall": { "primary": "memory_ai" },
+    "/learn": { "primary": "memory_ai" },
+    "/observe": { "primary": "observability_ai" },
+    "/alert": { "primary": "observability_ai" },
+    "/health": { "primary": "observability_ai" },
+    "/run_pipeline": { "primary": "execution_orchestrator" },
+    "/status": { "primary": "execution_orchestrator" },
+    "/halt": { "primary": "execution_orchestrator" },
+    "/new_framework": { "primary": "prompt_factory_ai" },
+    "/extend_framework": { "primary": "prompt_factory_ai" },
+    "/template": { "primary": "prompt_factory_ai" },
+    "/toggle": { "primary": "rules_master_toggle" }
+  },
+  "dependencies": {
+    "planning_ai": ["product_owner_ai"],
+    "codegen_ai": ["planning_ai"],
+    "qa_ai": ["codegen_ai"],
+    "mlops_ai": ["qa_ai"],
+    "documentation_ai": ["codegen_ai"],
+    "observability_ai": ["mlops_ai"]
+  },
+  "toggle_policy": {
+    "master_toggle": {
+      "enabled_message": "Rules enabled.",
+      "disabled_message": "Rules disabled by user. Say \"[cursor-rules:on]\" to re-enable.",
+      "scope": "Enable/disable all .cursor/rules/* except master toggle"
+    },
+    "role_toggles": "frameworks/.../rules_master_toggle.mdc roles.<role>.enabled governs route availability"
+  },
+  "error_paths": [
+    {
+      "code": "ROLE_DISABLED",
+      "condition": "Primary role disabled",
+      "behavior": "Route to fallback if enabled; else error",
+      "message": "Role '<role>' disabled; try '/toggle <role> on'"
+    },
+    {
+      "code": "MISSING_DEPENDENCY",
+      "condition": "Role dependency not satisfied",
+      "behavior": "Stop with deterministic error",
+      "message": "Missing dependency '<dep>' for '<role>'"
+    },
+    {
+      "code": "MASTER_TOGGLE_OFF",
+      "condition": "Global rules disabled",
+      "behavior": "Do not route",
+      "message": "Rules disabled by user. Say '[cursor-rules:on]' to re-enable."
+    },
+    {
+      "code": "UNRECOGNIZED_COMMAND",
+      "condition": "Command not in routing matrix",
+      "behavior": "Show help",
+      "message": "Unknown command"
+    },
+    {
+      "code": "AMBIGUOUS_ROUTE",
+      "condition": "Multiple roles claim command (outside slash map)",
+      "behavior": "Honor single-dispatch precedence and right-most tie-break; suggest explicit command",
+      "message": "Ambiguous phrase; use explicit slash command or include target (e.g., '/review qa')"
+    }
+  ],
+  "observability": {
+    "trace": "Attach correlation ID at routing; log command, role, fallback_used, enabled_flags, deps_state, outcome",
+    "sink": "memory-bank/decisions/index.jsonl"
+  },
+  "acceptance_check": {
+    "unique_primary": true,
+    "fallbacks_max_one": true,
+    "toggles_enumerated": true,
+    "error_policy_explicit": true
+  }
+}
