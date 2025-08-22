@@ -4,7 +4,7 @@
     "description": "Actionable plan compiled from Final Implementation Plan (memory-bank/plan/organize.md) - Foundational hardening, memory subsystem remediation, QA gates, observability, security, and enforcement escalation.",
     "status": "in_progress",
     "created": "2025-01-19T10:30:00+08:00",
-    "updated": "2025-08-22T20:28:37.056487+08:00",
+    "updated": "2025-08-22T20:31:39.508490+08:00",
     "todos": [
       {
         "text": "PHASE 0: SETUP & PROTOCOL (READ FIRST)\n\n**Explanations:**\nThis is the mandatory setup phase that establishes execution protocols and environment constraints for the entire implementation plan. All subsequent phases depend on these foundational protocols being understood and followed.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id>\npython3 todo_manager.py done <task_id> 0\n```\n\n**IMPORTANT NOTE:** Agent scope is execution-only; no direct file writes to queue/state files. All JSON outputs are content-only for system/operator placement. Environment variables and read-only analyzers must be used as specified. Timestamps must use Philippines timezone (+08:00). All schema validations and CI gates must pass before proceeding to next phases.",
@@ -12,7 +12,7 @@
       },
       {
         "text": "PHASE 1: FOUNDATIONAL HARDENING AND TOOLING SETUP\n\n**Explanations:**\nEstablish critical transitions, telemetry schema, JSON schemas, documentation SLOs, acceptance criteria, CI validation, centralized config with RBAC, waiver workflows, and disk management. This phase creates the foundational infrastructure for all subsequent work.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id>\npython3 todo_manager.py done <task_id> 1\n```\n\n**IMPORTANT NOTE:** All schemas must be versioned JSON with strict validation. Telemetry requires dual timestamps (UTC Z and +08:00). RBAC enforcement must be implemented for MEMORY_WRITES_MODE and AI_ENFORCEMENT_MODE. Documentation SLO is ≤48h update, block after 72h. All CI schema-validation jobs must pass.",
-        "done": false
+        "done": true
       },
       {
         "text": "PHASE 2: MEMORY SUBSYSTEM REMEDIATION (WITH SAFETY FLAGS)\n\n**Explanations:**\nImplement atomic I/O operations, watcher adapters, serialized updates, single-writer bridge with metrics, staged rollout of memory writes modes, disaster recovery with snapshots, and reader/watcher migration. Focus on ext4/overlayfs support with NFS explicitly unsupported.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id>\npython3 todo_manager.py done <task_id> 2\n```\n\n**IMPORTANT NOTE:** Atomic writes must include directory fsync. Staged rollout sequence: direct → atomic → dual_write → bridge (2 weeks clean before switch). Bridge must have idempotent append, monotonic sequence, durability, retries, DLQ, backpressure. DR requires defined RPO/RTO with tested restore procedures.",
