@@ -1,6 +1,15 @@
+Status: PASS
+
 ### Deployment → Observability Contract Summary (mlops_ai → observability_ai)
 
 **Scope**: Define deployment outputs consumed by observability after QA Gate PASS. Excludes creating dashboards/alerts/pipelines or changing CI/CD.
+
+## Rationale
+- Versioned contract and required artifacts enumerated, including hashes and owners (Contract section).
+- Health/readiness and rollback signals are explicit and testable with simulate hooks (Health & Readiness; Rollback Signals).
+- Telemetry events and common fields defined with +08:00 timestamp requirement (Telemetry Events).
+- Post-deploy validation steps map to orchestrator transitions (Post‑Deploy Validation & Orchestrator Transitions).
+- Risks and mitigations address format mismatches, blind spots, and observability of rollback.
 
 #### Contract
 - **Versioning**: schema_version=1.0.0; producer=mlops_ai; consumer=observability_ai

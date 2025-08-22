@@ -81,5 +81,38 @@
     "notes": "string"
   },
   "status": "WARN",
-  "findings": []
+  "findings": [
+    {
+      "concern": "missing_runtime_artifacts",
+      "severity": "warn",
+      "evidence": {
+        "path": "VERIFICATION/qa_gate/report.md",
+        "section": "1) Gate Decision Model — Required evidence (artifacts)",
+        "why": "Policy enumerates required artifacts but none are present in this verification set to evaluate C1..C6."
+      }
+    },
+    {
+      "concern": "decision_rule_unambiguous",
+      "severity": "info",
+      "evidence": {
+        "path": "VERIFICATION/qa_gate/report.md",
+        "section": "2) Decision Matrix",
+        "why": "Decision rule is explicitly PASS iff all of C1..C6 are PASS."
+      }
+    },
+    {
+      "concern": "audit_schema_defined",
+      "severity": "info",
+      "evidence": {
+        "path": "VERIFICATION/qa_gate/findings.json",
+        "section": "audit_schema",
+        "why": "Audit fields include +08:00 timestamps, metrics, rule evaluations, and loop control."
+      }
+    }
+  ],
+  "recommendations": [
+    "Produce and link QA artifacts (tests, coverage, security, benchmarks) to evaluate C1..C6.",
+    "Automate writing gate audit records per attempt with metrics and rule_evaluations.",
+    "Integrate security and performance reports into the gate inputs."
+  ]
 }

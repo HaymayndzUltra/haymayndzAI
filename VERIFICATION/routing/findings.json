@@ -101,5 +101,38 @@
     "fallbacks_max_one": true,
     "toggles_enumerated": true,
     "error_policy_explicit": true
-  }
+  },
+  "findings": [
+    {
+      "concern": "unique_primary_per_command",
+      "severity": "info",
+      "evidence": {
+        "path": "VERIFICATION/routing/report.md",
+        "section": "Routing Matrix",
+        "why": "Exactly one primary per command; only /review declares a single fallback."
+      }
+    },
+    {
+      "concern": "toggle_policy_enumerated",
+      "severity": "info",
+      "evidence": {
+        "path": ".cursor/rules/rules_master_toggle.mdc",
+        "section": "Enable/disable semantics",
+        "why": "Master and role toggles are explicitly defined with user-facing messages."
+      }
+    },
+    {
+      "concern": "error_policy_explicit",
+      "severity": "info",
+      "evidence": {
+        "path": "VERIFICATION/routing/report.md",
+        "section": "Failure Handling & Error Paths",
+        "why": "Enumerates ROLE_DISABLED, MISSING_DEPENDENCY, MASTER_TOGGLE_OFF, UNRECOGNIZED_COMMAND, AMBIGUOUS_ROUTE."
+      }
+    }
+  ],
+  "recommendations": [
+    "Automate tests for ambiguous phrase resolution and right-most tie-break.",
+    "Emit routing decisions with correlation_id to memory-bank/decisions/index.jsonl."
+  ]
 }

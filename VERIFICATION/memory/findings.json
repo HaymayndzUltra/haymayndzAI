@@ -90,5 +90,17 @@
     "Refactor auto_sync_manager to call cursor_memory_bridge.dump_markdown",
     "Normalize cursor_session_manager and cursor_memory_bridge to +08:00",
     "Define retention rotation and implement archival path"
+  ],
+  "findings": [
+    {"concern":"timezone_policy_nonconformant","severity":"warn","evidence":{"path":"VERIFICATION/memory/findings.json","section":"consistency.timezone.conformance","why":"cursor_session_manager and current-session header not yet emitting +08:00 timestamps."}},
+    {"concern":"multi_writer_current_session","severity":"warn","evidence":{"path":"VERIFICATION/memory/report.md","section":"Conflict Resolution","why":"current-session.md has multiple writers; requires single-writer policy via cursor_memory_bridge."}},
+    {"concern":"non_atomic_writes","severity":"warn","evidence":{"path":"VERIFICATION/memory/findings.json","section":"integrity_checks","why":"todo_manager._save uses non-atomic write; temp+replace and fcntl locks recommended."}},
+    {"concern":"retention_rotation_missing","severity":"info","evidence":{"path":"VERIFICATION/memory/findings.json","section":"retention.rotation","why":"Rotation policy described but not implemented yet."}}
+  ],
+  "recommendations": [
+    "Adopt temp-file + os.replace and fcntl locks for task JSON writes.",
+    "Route all full snapshot writes of current-session.md through cursor_memory_bridge only.",
+    "Normalize cursor_session_manager and cursor_memory_bridge to +08:00 timestamps.",
+    "Implement archive rotation and streamed reads for tasks_done.json."
   ]
 }
