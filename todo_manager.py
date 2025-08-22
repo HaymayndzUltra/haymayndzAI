@@ -429,6 +429,22 @@ def _extract_fenced_code_blocks(markdown: str) -> List[str]:
     pattern = re.compile(r"```(?:[a-zA-Z0-9_+-]+)?\n([\s\S]*?)\n```", re.MULTILINE)
     return [m.group(1).strip() for m in pattern.finditer(markdown)]
 
+# New policy helpers: detect concluding-only command blocks and require actionable sub-steps
+
+def _is_concluding_line(command: str) -> bool:
+    return re.search(r"\btodo_manager\.py\s+(done|show)\b", command) is not None
+
+
+def _phase_has_actionable_commands(markdown: str) -> bool:
+    blocks = _extract_fenced_code_blocks(markdown)
+    if not blocks:
+        return False
+    lines = [ln for ln in blocks[0].splitlines() if ln.strip() and not ln.strip().startswith("#")]
+    for ln in lines:
+        if not _is_concluding_line(ln):
+            return True
+    return False
+
 
 def _parse_sub_index(sub_index: str) -> (int, Optional[int]):
     """Parse sub-index like '4.1' → (4, 0). If '4' → (4, None)."""
@@ -447,7 +463,7 @@ def _parse_sub_index(sub_index: str) -> (int, Optional[int]):
 
 def _replace_placeholders_in_command(command: str, task_id: str, phase_index: int, command_index_one_based: Optional[int]) -> str:
     """Replace common placeholders in a command string with concrete values.
-
+    
     Supported placeholders:
       - <task_id ReplaceAll>, <task_id Replace All>, <task_id>, <TASK_ID>
       - <PHASE_INDEX>, <phase_index>
