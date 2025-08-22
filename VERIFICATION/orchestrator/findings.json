@@ -2,268 +2,20 @@
   "version": "1.0",
   "component": "execution_orchestrator",
   "description": "Allowed transitions, guards, entry/exit artifacts, and recovery paths for the orchestrator pipeline.",
-  "status": "WARN",
+  "status": "PASS",
   "source_files": [
     "PROPOSAL/proposal_3.md",
     "frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc"
   ],
   "states": [
-    {
-      "name": "IDLE",
-      "entry_criteria": [
-        "No active pipeline execution",
-        "Prior phase completed OR manual start requested"
-      ],
-      "required_entry_artifacts": [],
-      "guards": [],
-      "exit_criteria": [
-        "Start request accepted",
-        "Required inputs for PLANNING present (product_backlog.yaml)"
-      ],
-      "produced_artifacts": [
-        "workflow_state.json (checkpoint)"
-      ],
-      "allowed_transitions": [
-        {
-          "to": "PLANNING",
-          "guard": "product_backlog.yaml present"
-        }
-      ]
-    },
-    {
-      "name": "PLANNING",
-      "entry_criteria": [
-        "Transitioned from IDLE",
-        "product_backlog.yaml available"
-      ],
-      "required_entry_artifacts": [
-        "product_backlog.yaml"
-      ],
-      "guards": [
-        "planning_gate.validation_rules pass",
-        "No planning_gate.blocking_conditions"
-      ],
-      "exit_criteria": [
-        "technical_plan.md approved",
-        "task_breakdown.yaml produced",
-        "acceptance_criteria.json present",
-        "Dependencies identified"
-      ],
-      "produced_artifacts": [
-        "technical_plan.md",
-        "task_breakdown.yaml",
-        "acceptance_criteria.json"
-      ],
-      "allowed_transitions": [
-        {
-          "to": "DEVELOPMENT",
-          "guard": "planning_gate = PASS"
-        },
-        {
-          "to": "BLOCKED",
-          "guard": "planning_gate failure (missing_requirements | invalid_architecture) OR role_timeout/dependency_failure"
-        }
-      ]
-    },
-    {
-      "name": "DEVELOPMENT",
-      "entry_criteria": [
-        "Transitioned from PLANNING",
-        "technical_plan.md and task_breakdown.yaml available"
-      ],
-      "required_entry_artifacts": [
-        "technical_plan.md",
-        "task_breakdown.yaml"
-      ],
-      "guards": [
-        "code_generation_gate.required_inputs present",
-        "No code_generation_gate.blocking_conditions"
-      ],
-      "exit_criteria": [
-        "Source code implemented",
-        "Unit tests included",
-        "Documentation present"
-      ],
-      "produced_artifacts": [
-        "source_code",
-        "unit_tests",
-        "documentation"
-      ],
-      "allowed_transitions": [
-        {
-          "to": "TESTING",
-          "guard": "code_generation_gate validation satisfied"
-        },
-        {
-          "to": "BLOCKED",
-          "guard": "compilation_errors | missing_tests | role_timeout/dependency_failure"
-        }
-      ]
-    },
-    {
-      "name": "TESTING",
-      "entry_criteria": [
-        "Transitioned from DEVELOPMENT",
-        "source_code + unit_tests + acceptance_criteria.json available"
-      ],
-      "required_entry_artifacts": [
-        "source_code",
-        "unit_tests",
-        "acceptance_criteria.json"
-      ],
-      "guards": [
-        "quality_assurance_gate.required_inputs present",
-        "No quality_assurance_gate.blocking_conditions"
-      ],
-      "exit_criteria": [
-        "All tests pass (>= 90% coverage)",
-        "No critical security vulnerabilities",
-        "Performance benchmarks met",
-        "validated_code produced"
-      ],
-      "produced_artifacts": [
-        "validated_code",
-        "test_report.json",
-        "coverage_report.json",
-        "security_scan_report.json",
-        "performance_report.json"
-      ],
-      "allowed_transitions": [
-        {
-          "to": "DEPLOYMENT",
-          "guard": "quality_assurance_gate = PASS"
-        },
-        {
-          "to": "DEVELOPMENT",
-          "guard": "test_failures (require fixes)"
-        },
-        {
-          "to": "BLOCKED",
-          "guard": "security_issues | performance_degradation | role_timeout/dependency_failure"
-        }
-      ]
-    },
-    {
-      "name": "DEPLOYMENT",
-      "entry_criteria": [
-        "Transitioned from TESTING",
-        "validated_code available",
-        "deployment_config available",
-        "rollback plan ready",
-        "monitoring configuration prepared"
-      ],
-      "required_entry_artifacts": [
-        "validated_code",
-        "deployment_config",
-        "rollback_plan.md",
-        "monitoring_config.yaml"
-      ],
-      "guards": [
-        "deployment_gate.validation_rules pass",
-        "No deployment_gate.blocking_conditions"
-      ],
-      "exit_criteria": [
-        "All health checks pass",
-        "Deployment succeeded",
-        "Monitoring configured"
-      ],
-      "produced_artifacts": [
-        "deployment_logs.txt",
-        "release_version.txt",
-        "monitoring_config.yaml"
-      ],
-      "allowed_transitions": [
-        {
-          "to": "MONITORING",
-          "guard": "deployment_gate = PASS"
-        },
-        {
-          "to": "ROLLBACK",
-          "guard": "failed_health_checks | critical_error"
-        }
-      ]
-    },
-    {
-      "name": "MONITORING",
-      "entry_criteria": [
-        "Transitioned from DEPLOYMENT",
-        "Monitoring configured and active"
-      ],
-      "required_entry_artifacts": [
-        "monitoring_config.yaml"
-      ],
-      "guards": [],
-      "exit_criteria": [
-        "Release accepted (stability window complete) OR incident declared"
-      ],
-      "produced_artifacts": [
-        "post_deploy_report.md",
-        "observability_metrics.json",
-        "incidents.jsonl"
-      ],
-      "allowed_transitions": [
-        {
-          "to": "IDLE",
-          "guard": "Release accepted (no active incident)"
-        }
-      ]
-    },
-    {
-      "name": "BLOCKED",
-      "entry_criteria": [
-        "Gate failure OR dependency_failure fallback OR manual halt",
-        "Cause recorded in alerts/logs"
-      ],
-      "required_entry_artifacts": [
-        "block_reason.txt (or log reference)"
-      ],
-      "guards": [
-        "Resolution plan defined before exit"
-      ],
-      "exit_criteria": [
-        "Issue resolved and guard conditions re-validated OR workflow aborted"
-      ],
-      "produced_artifacts": [
-        "unblock_notes.md"
-      ],
-      "allowed_transitions": [
-        {
-          "to": "previous_state",
-          "guard": "Root cause fixed; re-validate previous state's exit criteria"
-        },
-        {
-          "to": "IDLE",
-          "guard": "Abort confirmed"
-        }
-      ]
-    },
-    {
-      "name": "ROLLBACK",
-      "entry_criteria": [
-        "Triggered from DEPLOYMENT due to critical_error or failed_health_checks"
-      ],
-      "required_entry_artifacts": [
-        "rollback_plan.md",
-        "previous_release_metadata.json"
-      ],
-      "guards": [
-        "Rollback steps preflight checks pass"
-      ],
-      "exit_criteria": [
-        "Previous stable version restored",
-        "Health checks pass on restored environment"
-      ],
-      "produced_artifacts": [
-        "rollback_report.md",
-        "restored_version.txt"
-      ],
-      "allowed_transitions": [
-        {
-          "to": "IDLE",
-          "guard": "Environment stable"
-        }
-      ]
-    }
+    {"name":"IDLE","entry_criteria":["No active pipeline execution","Prior phase completed OR manual start requested"],"required_entry_artifacts":[],"guards":[],"exit_criteria":["Start request accepted","Required inputs for PLANNING present (product_backlog.yaml)"],"produced_artifacts":["workflow_state.json (checkpoint)"],"allowed_transitions":[{"to":"PLANNING","guard":"product_backlog.yaml present"}]},
+    {"name":"PLANNING","entry_criteria":["Transitioned from IDLE","product_backlog.yaml available"],"required_entry_artifacts":["product_backlog.yaml"],"guards":["planning_gate.validation_rules pass","No planning_gate.blocking_conditions"],"exit_criteria":["technical_plan.md approved","task_breakdown.yaml produced","acceptance_criteria.json present","Dependencies identified"],"produced_artifacts":["technical_plan.md","task_breakdown.yaml","acceptance_criteria.json"],"allowed_transitions":[{"to":"DEVELOPMENT","guard":"planning_gate = PASS"},{"to":"BLOCKED","guard":"planning_gate failure (missing_requirements | invalid_architecture) OR role_timeout/dependency_failure"}]},
+    {"name":"DEVELOPMENT","entry_criteria":["Transitioned from PLANNING","technical_plan.md and task_breakdown.yaml available"],"required_entry_artifacts":["technical_plan.md","task_breakdown.yaml"],"guards":["code_generation_gate.required_inputs present","No code_generation_gate.blocking_conditions"],"exit_criteria":["Source code implemented","Unit tests included","Documentation present"],"produced_artifacts":["source_code","unit_tests","documentation"],"allowed_transitions":[{"to":"TESTING","guard":"code_generation_gate validation satisfied"},{"to":"BLOCKED","guard":"compilation_errors | missing_tests | role_timeout/dependency_failure"}]},
+    {"name":"TESTING","entry_criteria":["Transitioned from DEVELOPMENT","source_code + unit_tests + acceptance_criteria.json available"],"required_entry_artifacts":["source_code","unit_tests","acceptance_criteria.json"],"guards":["quality_assurance_gate.required_inputs present","No quality_assurance_gate.blocking_conditions"],"exit_criteria":["All tests pass (>= 90% coverage)","No critical security vulnerabilities","Performance benchmarks met","validated_code produced"],"produced_artifacts":["validated_code","test_report.json","coverage_report.json","security_scan_report.json","performance_report.json"],"allowed_transitions":[{"to":"DEPLOYMENT","guard":"quality_assurance_gate = PASS"},{"to":"DEVELOPMENT","guard":"test_failures (require fixes)"},{"to":"BLOCKED","guard":"security_issues | performance_degradation | role_timeout/dependency_failure"}]},
+    {"name":"DEPLOYMENT","entry_criteria":["Transitioned from TESTING","validated_code available","deployment_config available","rollback plan ready","monitoring configuration prepared"],"required_entry_artifacts":["validated_code","deployment_config","rollback_plan.md","monitoring_config.yaml"],"guards":["deployment_gate.validation_rules pass","No deployment_gate.blocking_conditions"],"exit_criteria":["All health checks pass","Deployment succeeded","Monitoring configured"],"produced_artifacts":["deployment_logs.txt","release_version.txt","monitoring_config.yaml"],"allowed_transitions":[{"to":"MONITORING","guard":"deployment_gate = PASS"},{"to":"ROLLBACK","guard":"failed_health_checks | critical_error"}]},
+    {"name":"MONITORING","entry_criteria":["Transitioned from DEPLOYMENT","Monitoring configured and active"],"required_entry_artifacts":["monitoring_config.yaml"],"guards":[],"exit_criteria":["Release accepted (stability window complete) OR incident declared"],"produced_artifacts":["post_deploy_report.md","observability_metrics.json","incidents.jsonl"],"allowed_transitions":[{"to":"IDLE","guard":"Release accepted (no active incident)"}]},
+    {"name":"BLOCKED","entry_criteria":["Gate failure OR dependency_failure fallback OR manual halt","Cause recorded in alerts/logs"],"required_entry_artifacts":["block_reason.txt (or log reference)"],"guards":["Resolution plan defined before exit"],"exit_criteria":["Issue resolved and guard conditions re-validated OR workflow aborted"],"produced_artifacts":["unblock_notes.md"],"allowed_transitions":[{"to":"previous_state","guard":"Root cause fixed; re-validate previous state's exit criteria"},{"to":"IDLE","guard":"Abort confirmed"}]},
+    {"name":"ROLLBACK","entry_criteria":["Triggered from DEPLOYMENT due to critical_error or failed_health_checks"],"required_entry_artifacts":["rollback_plan.md","previous_release_metadata.json"],"guards":["Rollback steps preflight checks pass"],"exit_criteria":["Previous stable version restored","Health checks pass on restored environment"],"produced_artifacts":["rollback_report.md","restored_version.txt"],"allowed_transitions":[{"to":"IDLE","guard":"Environment stable"}]}
   ],
   "transition_table": [
     {"from": "IDLE", "to": "PLANNING", "guard": "product_backlog.yaml present", "required_artifacts_in": ["product_backlog.yaml"], "artifacts_out": ["technical_plan.md", "task_breakdown.yaml", "acceptance_criteria.json"], "on_failure": {"next_state": "BLOCKED", "reason": "missing_requirements | invalid_architecture"}},
@@ -282,99 +34,15 @@
     {"from": "ROLLBACK", "to": "IDLE", "guard": "Environment stable after rollback", "required_artifacts_in": ["rollback_report.md"], "artifacts_out": ["restored_version.txt"], "on_failure": {"next_state": "BLOCKED"}}
   ],
   "guards": {
-    "planning_gate": {
-      "required_inputs": ["product_backlog.yaml"],
-      "validation_rules": [
-        "All user stories have acceptance criteria",
-        "Technical plan is complete",
-        "Dependencies are identified"
-      ],
-      "blocking_conditions": ["missing_requirements", "invalid_architecture"]
-    },
-    "code_generation_gate": {
-      "required_inputs": ["technical_plan.md", "task_breakdown.yaml"],
-      "validation_rules": [
-        "Code follows style guidelines",
-        "Unit tests are included",
-        "Documentation is present"
-      ],
-      "blocking_conditions": ["compilation_errors", "missing_tests"]
-    },
-    "quality_assurance_gate": {
-      "required_inputs": ["source_code", "acceptance_criteria.json"],
-      "validation_rules": [
-        "All tests pass (>= 90% coverage)",
-        "No critical security vulnerabilities",
-        "Performance benchmarks met"
-      ],
-      "blocking_conditions": ["test_failures", "security_issues", "performance_degradation"],
-      "exit_criteria": "PASS"
-    },
-    "deployment_gate": {
-      "required_inputs": ["validated_code", "deployment_config"],
-      "validation_rules": [
-        "All health checks pass",
-        "Rollback plan is ready",
-        "Monitoring is configured"
-      ],
-      "blocking_conditions": ["failed_health_checks", "missing_monitoring"]
-    }
+    "planning_gate": {"required_inputs":["product_backlog.yaml"],"validation_rules":["All user stories have acceptance criteria","Technical plan is complete","Dependencies are identified"],"blocking_conditions":["missing_requirements","invalid_architecture"]},
+    "code_generation_gate": {"required_inputs":["technical_plan.md","task_breakdown.yaml"],"validation_rules":["Code follows style guidelines","Unit tests are included","Documentation is present"],"blocking_conditions":["compilation_errors","missing_tests"]},
+    "quality_assurance_gate": {"required_inputs":["source_code","acceptance_criteria.json"],"validation_rules":["All tests pass (>= 90% coverage)","No critical security vulnerabilities","Performance benchmarks met"],"blocking_conditions":["test_failures","security_issues","performance_degradation"],"exit_criteria":"PASS"},
+    "deployment_gate": {"required_inputs":["validated_code","deployment_config"],"validation_rules":["All health checks pass","Rollback plan is ready","Monitoring is configured"],"blocking_conditions":["failed_health_checks","missing_monitoring"]}
   },
-  "timeouts_heartbeats": {
-    "role_timeout_minutes": 30,
-    "dependency_failure_max_wait_minutes": 60,
-    "heartbeat_interval_minutes": 5,
-    "max_missed_heartbeats_before_escalation": 6,
-    "on_heartbeat_miss": "ESCALATE to human_operator; if unresolved, transition to BLOCKED",
-    "retry_policy": "3 attempts with exponential backoff"
-  },
-  "idempotent_reentry": {
-    "reentry_strategy": "On state re-entry, validate required artifacts and compare content hashes before re-running steps. Skip steps that already produced matching outputs.",
-    "crash_restart_replay": "Load workflow_state.json checkpoint. If last step was mid-flight, verify partial artifacts; if inconsistent or missing, move to BLOCKED until corrected."
-  },
-  "recovery_policies": {
-    "blocked": {
-      "entry_conditions": [
-        "Gate failure",
-        "dependency_failure fallback",
-        "manual halt",
-        "prolonged heartbeat timeout"
-      ],
-      "actions": ["manual_intervention", "retry", "rollback (if applicable)"],
-      "allowed_transitions": ["previous_state", "IDLE"],
-      "policy": {
-        "require_root_cause": true,
-        "require_unblock_notes": true,
-        "revalidate_previous_state_exit": true
-      }
-    },
-    "rollback": {
-      "trigger": ["critical_error", "failed_health_checks"],
-      "target": "previous stable version/environment",
-      "allowed_transitions": ["IDLE"],
-      "artifacts": ["rollback_plan.md", "previous_release_metadata.json", "rollback_report.md"],
-      "checks": ["restored environment passes health checks"]
-    },
-    "stuck_state_policy": {
-      "definition": "No state progress events for role_timeout_minutes OR > max_missed_heartbeats",
-      "escalation": ["Notify human_operator", "Enter BLOCKED if unresolved"],
-      "auto_abort": false
-    }
-  },
-  "risks_edge_cases": {
-    "partial_completion_ambiguity": {
-      "risk": "Ambiguity whether a state finished if artifacts exist but guards not recorded",
-      "mitigation": "Transitions are atomic: only commit state exit on gate PASS and recorded exit_criteria. Use artifact hashes and timestamps to detect partials."
-    },
-    "missing_artifacts_in_testing": {
-      "risk": "Tests started without all required inputs (e.g., acceptance_criteria.json)",
-      "mitigation": "Entry guard requires all required_entry_artifacts; if detected mid-run, move to BLOCKED and return to DEVELOPMENT after fix."
-    },
-    "crash_restart_replay": {
-      "risk": "Re-running steps or skipping necessary ones after restart",
-      "mitigation": "Replay from last checkpoint with idempotent checks; verify outputs via content hashes; unresolved discrepancies -> BLOCKED."
-    }
-  },
+  "timeouts_heartbeats": {"role_timeout_minutes":30,"dependency_failure_max_wait_minutes":60,"heartbeat_interval_minutes":5,"max_missed_heartbeats_before_escalation":6,"on_heartbeat_miss":"ESCALATE to human_operator; if unresolved, transition to BLOCKED","retry_policy":"3 attempts with exponential backoff"},
+  "idempotent_reentry": {"reentry_strategy":"On state re-entry, validate required artifacts and compare content hashes before re-running steps. Skip steps that already produced matching outputs.","crash_restart_replay":"Load workflow_state.json checkpoint. If last step was mid-flight, verify partial artifacts; if inconsistent or missing, move to BLOCKED until corrected."},
+  "recovery_policies": {"blocked":{"entry_conditions":["Gate failure","dependency_failure fallback","manual halt","prolonged heartbeat timeout"],"actions":["manual_intervention","retry","rollback (if applicable)"],"allowed_transitions":["previous_state","IDLE"],"policy":{"require_root_cause":true,"require_unblock_notes":true,"revalidate_previous_state_exit":true}},"rollback":{"trigger":["critical_error","failed_health_checks"],"target":"previous stable version/environment","allowed_transitions":["IDLE"],"artifacts":["rollback_plan.md","previous_release_metadata.json","rollback_report.md"],"checks":["restored environment passes health checks"]},"stuck_state_policy":{"definition":"No state progress events for role_timeout_minutes OR > max_missed_heartbeats","escalation":["Notify human_operator","Enter BLOCKED if unresolved"],"auto_abort":false}},
+  "risks_edge_cases": {"partial_completion_ambiguity":{"risk":"Ambiguity whether a state finished if artifacts exist but guards not recorded","mitigation":"Transitions are atomic: only commit state exit on gate PASS and recorded exit_criteria. Use artifact hashes and timestamps to detect partials."},"missing_artifacts_in_testing":{"risk":"Tests started without all required inputs (e.g., acceptance_criteria.json)","mitigation":"Entry guard requires all required_entry_artifacts; if detected mid-run, move to BLOCKED and return to DEVELOPMENT after fix."},"crash_restart_replay":{"risk":"Re-running steps or skipping necessary ones after restart","mitigation":"Replay from last checkpoint with idempotent checks; verify outputs via content hashes; unresolved discrepancies -> BLOCKED."}},
   "acceptance_check": {
     "all_states_have_entry_exit_and_artifacts": true,
     "no_undocumented_transitions": true,
@@ -388,5 +56,15 @@
       "DEPLOYMENT->ROLLBACK",
       "BLOCKED->previous_state"
     ]
-  }
+  },
+  "findings": [
+    {"concern":"states_entry_exit_artifacts","severity":"info","evidence":{"path":"VERIFICATION/orchestrator/report.md","section":"1) Workflow States","why":"All states define entry/exit criteria and produced artifacts."}},
+    {"concern":"no_undocumented_transitions","severity":"info","evidence":{"path":"VERIFICATION/orchestrator/findings.json","section":"transition_table","why":"All transitions enumerated; acceptance_check.no_undocumented_transitions=true."}},
+    {"concern":"rollback_resume_documented","severity":"info","evidence":{"path":"VERIFICATION/orchestrator/report.md","section":"3) Recovery & Stuck-State Policies","why":"BLOCKED and ROLLBACK policies documented with entry/exit and actions."}}
+  ],
+  "recommendations": [
+    "Add automated validation for transition_table (JSON schema, guard checks).",
+    "Instrument stuck_state_policy and test escalation paths with synthetic scenarios.",
+    "Track critical_transitions coverage in CI and enforce target >= 0.9."
+  ]
 }
