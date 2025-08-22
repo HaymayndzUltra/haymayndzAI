@@ -104,12 +104,20 @@ def main():
         if not args.task_id:
             print("❌ --gate requires --task-id"); sys.exit(2)
         try:
-            from todo_manager import enforce_deep_analysis_gate  # type: ignore
+            from todo_manager import enforce_deep_analysis_gate, _gate_policy  # type: ignore
         except Exception as e:
             print(f"❌ Cannot import gate: {e}"); sys.exit(2)
         ok, msg = enforce_deep_analysis_gate(args.task_id)
-        print(f"DEEP ANALYSIS: {'PASS' if ok else 'BLOCK'} — {msg}")
-        sys.exit(0 if ok else 3)
+        if ok:
+            print(f"DEEP ANALYSIS: PASS — {msg}")
+            sys.exit(0)
+        else:
+            if _gate_policy() == "warn":
+                print(f"DEEP ANALYSIS: WARN — {msg}")
+                sys.exit(0)
+            else:
+                print(f"DEEP ANALYSIS: BLOCK — {msg}")
+                sys.exit(3)
 
     tasks = load_tasks()
     if not tasks: print("ℹ️ No active tasks."); return

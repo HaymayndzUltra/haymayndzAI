@@ -135,3 +135,62 @@ Notes:
 - Replace `<K>` with the current phase index when available.
 - Keep suggestions concise; use the exact lines above without extra prose between them.
 
+### Beginner-Friendly Flow (First-time or Unknown State)
+- If new session, unknown state, or user appears unsure:
+  - `Suggested next trigger: "I-validate ang plan"`
+  - `Alternate: "Show hierarchy"`
+- If plan validation reports "No active tasks" or tasks file missing/invalid:
+  - `Suggested next trigger: "Ingest mo ang plan"`
+  - `Alternate: "Compile actionable plan"`
+- If user asks for help or “paano gamitin”:
+  - `Suggested next trigger: "Show hierarchy"`
+  - `Alternate: "Ano ang next phase?"`
+
+### Error-to-Trigger Mapping (Operational)
+- On preview/run: "Invalid phase index" or "Command index out of range":
+  - `Suggested next trigger: "Show hierarchy"`
+  - `Alternate: "I-validate ang plan"`
+- "No fenced code block found" or "No executable lines found":
+  - `Suggested next trigger: "Ingest mo ang plan"`
+  - `Alternate: "Compile actionable plan"`
+- Deep Analysis Gate: "No analysis found" / "missing source_task_id":
+  - `Suggested next trigger: "Regenerate analysis mirror"`
+  - `Alternate: "Start pre-execution analysis"`
+- Deep Analysis Gate: "missing 'Decision Gate' or 'IMPORTANT NOTE:'":
+  - `Suggested next trigger: "Compile analysis doc (strict)"`
+  - `Alternate: "Start pre-execution analysis"`
+- Deep Analysis Gate: blocking findings (Conflict/Duplicate):
+  - `Suggested next trigger: "Compile analysis doc (strict)"`
+  - `Alternate: "Start pre-execution analysis"`
+- Command execution non-zero exit (runtime error):
+  - `Suggested next trigger: "I-validate ang plan"`
+  - `Alternate: "Show hierarchy"`
+
+### Slash-Command Integration (If Enabled)
+- After `/backlog`:
+  - `Suggested next trigger: " /plan"`
+  - `Alternate: "I-validate ang plan"`
+- After `/plan` creates/updates tasks:
+  - `Suggested next trigger: "I-validate ang plan"`
+  - `Alternate: "Execute the next unfinished phase"`
+- After `/gen_code`, `/test`, `/deploy` produce artifacts:
+  - `Suggested next trigger: "I-validate ang plan"`
+  - `Alternate: "Show hierarchy"`
+
+### Placeholder Autofill Guidance
+- When the next action requires `<TASK_ID>`, `<K>` or `<K.N>` and values are unknown:
+  - `Suggested next trigger: "Show hierarchy"`
+  - `Alternate: "I-validate ang plan"`
+- The assistant MAY include resolved placeholders automatically if the latest context reveals them (avoid asking the user).
+
+### Language Aliases (Helpful for New Users)
+- Validate plan: `"I-validate ang plan"` | `"Validate plan"`
+- Show hierarchy: `"Show hierarchy"` | `"Ipakita ang plano"`
+- Execute next: `"Execute the next unfinished phase"` | `"Ituloy ang susunod na phase"`
+- Start analysis: `"Start pre-execution analysis"` | `"Simulan ang analysis"`
+
+### Session / Resume Mapping
+- After reconnect or unclear session status:
+  - `Suggested next trigger: "I-validate ang plan"`
+  - `Alternate: "Show hierarchy"`
+

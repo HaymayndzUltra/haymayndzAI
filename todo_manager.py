@@ -542,6 +542,22 @@ def enforce_deep_analysis_gate(execution_task_id: str) -> (bool, str):
 
 
 # ------------------------------------------------------------------
+# Enforcement mode (config-over-code) -------------------------------
+# ------------------------------------------------------------------
+
+def _gate_policy() -> str:
+    """Return 'block' (default) or 'warn' depending on AI_ENFORCEMENT_MODE.
+
+    Modes treated as warn/advisory (non-blocking): solo, optional, warn, advisory
+    Any other value defaults to block.
+    """
+    mode = os.getenv("AI_ENFORCEMENT_MODE", "team").strip().lower()
+    if mode in ("solo", "optional", "warn", "advisory"):
+        return "warn"
+    return "block"
+
+
+# ------------------------------------------------------------------
 # Mode selection for data file -------------------------------------
 # ------------------------------------------------------------------
 
@@ -711,8 +727,11 @@ def main(argv: Optional[List[str]] = None) -> None:
         if args.mode == "execution":
             ok, msg = enforce_deep_analysis_gate(args.task_id)
             if not ok:
-                print(f"⛔ Deep Analysis Gate BLOCK: {msg}")
-                return
+                if _gate_policy() == "warn":
+                    print(f"⚠️ Deep Analysis Gate WARN (non-blocking in this mode): {msg}")
+                else:
+                    print(f"⛔ Deep Analysis Gate BLOCK: {msg}")
+                    return
         mark_done(args.task_id, index)
     elif args.cmd == "delete":
         _set_data_file_for_mode(args.mode)
@@ -737,8 +756,11 @@ def main(argv: Optional[List[str]] = None) -> None:
         if args.run:
             ok, msg = enforce_deep_analysis_gate(args.task_id)
             if not ok:
-                print(f"⛔ Deep Analysis Gate BLOCK: {msg}")
-                return
+                if _gate_policy() == "warn":
+                    print(f"⚠️ Deep Analysis Gate WARN (non-blocking in this mode): {msg}")
+                else:
+                    print(f"⛔ Deep Analysis Gate BLOCK: {msg}")
+                    return
         exec_substep(args.task_id, args.sub_index, args.run)
     elif args.cmd == "show":
         _set_data_file_for_mode(args.mode)
