@@ -18,6 +18,12 @@ alwaysApply: true
 - After each allowed command is executed (validate/show/exec/done), the assistant MUST suggest the next best trigger, per `next_action_suggestions.mdc`.
 - Suggestions must be concrete commands, not prose.
 
+## ENFORCEMENT MODE DEFAULTS
+- Default runtime for exec/done suggestions: `AI_ENFORCEMENT_MODE=shadow` (advisory, non-blocking). Escalate only per Phase 7.
+- When escalation is explicitly requested or Phase 7 completes, use:
+  - `AI_ENFORCEMENT_MODE=soft_block` (block but allow waivers) or
+  - `AI_ENFORCEMENT_MODE=hard_block` (strict block)
+
 ## ACTIONABLE-STEP ENFORCEMENT (MANDATORY)
 - A phase MUST contain at least one actionable command in its first fenced block that is NOT a concluding protocol line (`todo_manager.py show|done`).
 - The assistant MUST NOT:
@@ -25,7 +31,7 @@ alwaysApply: true
   - Suggest or run `exec` when the selected command is a concluding line, unless explicitly instructed to finalize after all actionable steps have succeeded.
 - If a phase lacks actionable commands, the assistant MUST suggest plan ingestion/update to add concrete sub-steps before proceeding:
   - `Ingest mo ang plan` or regenerate `tasks_active.json` from the execution plan with actionable sub-steps.
-- Deep Analysis Gate (policy-level): Prior to any `--run` or `done`, the analysis mirror must contain for the corresponding phase:
-  - `IMPORTANT NOTE:` and `Decision Gate` sections, and
-  - A `Findings:` block set to either explicit evidence items or `Findings: none`.
-- Evidence-first: When available, prefer running verification commands (tests, schema lint, scans) before marking a phase done. If such commands are missing, block and suggest updating the phase.
+- Deep Analysis Gate (policy-level):
+  - In `soft_block` or `hard_block`: require that the analysis mirror include `IMPORTANT NOTE:`, `Decision Gate`, and a `Findings:` block (evidence or `Findings: none`) before `--run` or `done`.
+  - In `solo` or `shadow`: advisory only; DO NOT block exec/done.
+- Evidence-first: When available, prefer running verification commands (tests, schema lint, scans) before marking a phase done. If such commands are missing, block and suggest updating the phase (only in `soft_block`/`hard_block`).
