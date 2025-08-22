@@ -24,3 +24,8 @@ https://nextjs.org/telemetry
  ✓ Compiled / in 1481ms (475 modules)
  GET / 200 in 1619ms
  GET / 200 in 20ms
+ GET / 200 in 29ms
+ ✓ Compiled /menu in 229ms (477 modules)
+ ✓ Compiled /checkout in 114ms (479 modules)
+ ✓ Compiled /api/orders in 164ms (274 modules)
+ GET /api/orders 200 in 213ms
