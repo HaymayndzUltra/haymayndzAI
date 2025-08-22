@@ -1,0 +1,47 @@
+[
+  {
+    "id": "final_implementation_plan_actionable_20250822",
+    "description": "Final Implementation Plan (memory-bank/plan/organized.md)",
+    "status": "in_progress",
+    "created": "2025-08-22T19:15:00+08:00",
+    "updated": "2025-08-22T19:15:00+08:00",
+    "todos": [
+      {
+        "text": "PHASE 0: SETUP & PROTOCOL (READ FIRST)\n\n**Explanations:** This plan is derived from the frozen organizer and will be the single source of truth for execution. We will not write any state/queue files directly; we will only produce content for ingestion and use read-only validation tools. All timestamps must be ISO8601 with +08:00 timezone, and completion will be strictly monotonic per phase.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\nIMPORTANT NOTE: [SYNTHESIZED FROM ORGANIZER] No direct edits to `memory-bank/queue-system/tasks_active.json`; JSON output only. Enforce phase order; no skipping. Use `python3 plan_next.py` and `python3 plain_hier.py <TASK_ID>` before any execution/marking done. Preserve organizer constraints verbatim; no silent upgrades. All timestamps use `+08:00`. Placeholders in fenced commands are allowed and will be resolved by the executor.",
+        "done": false
+      },
+      {
+        "text": "PHASE 1: Foundational Hardening and Tooling Setup\n\n**Explanations:** Establish core governance and tooling: define orchestrator critical transitions and guards; formalize telemetry schema (dual timestamps and correlation IDs); publish versioned JSON Schemas; set docs freshness SLO with enforcement; finalize acceptance criteria; add CI schema-validation; implement centralized config with RBAC for write/enforcement modes; add waiver workflow with expiry; and configure disk quotas/retention with CI guards.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\nIMPORTANT NOTE: [SYNTHESIZED FROM ORGANIZER] Telemetry events must include `event_time_utc` (ISO8601 Z), `event_time_local` (`+08:00`), and `correlation_id` (128-bit hex). Docs freshness SLO: update ≤48h; block after 72h. All schemas versioned and validated in CI. Config flags: `MEMORY_WRITES_MODE={direct|atomic|dual_write|bridge}`, `AI_ENFORCEMENT_MODE={solo|shadow|soft_block|hard_block}` with RBAC. Waivers must expire and be stored in `memory-bank/decisions/index.jsonl`. Disk free-space thresholds enforced in CI.",
+        "done": false
+      },
+      {
+        "text": "PHASE 2: Memory Subsystem Remediation (with Safety Flags)\n\n**Explanations:** Build atomic IO with tests; provide watcher adapters for rename/in-place; apply atomic writes with directory fsync to reports; serialize concurrent report updates; implement single-writer bridge with durability and backpressure; add bridge metrics and alerts; stage rollout: direct → atomic → dual_write → bridge; establish DR snapshots/restore; migrate readers to rename semantics with dual-read and deprecation.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\nIMPORTANT NOTE: [SYNTHESIZED FROM ORGANIZER] `lib/atomic_io.py` must be validated on ext4/overlayfs; NFS unsupported. Atomic writes include file replace + directory fsync. Bridge provides idempotent append, monotonic sequence, disk-backed durability, retries, DLQ, and backpressure; HA or client circuit-breaker fallback. Rollout gates: clean validation before promotion; ability to rollback to `direct`. Readers must handle rename semantics; alert on stragglers.",
+        "done": false
+      },
+      {
+        "text": "PHASE 3: QA Gate Remediation and CI Hardening\n\n**Explanations:** Enforce coverage thresholds (≥90% line, ≥80% branch; floors per module; guard on regressions >2%); publish `test_results.xml` and `coverage.xml`; add security scans with waivers/expiry and gate on HIGH/CRITICAL; implement performance CI pinned to acceptance criteria with confidence intervals; add cross-vertical integration suites; require three consecutive green CI runs before enforcement escalation.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\nIMPORTANT NOTE: [SYNTHESIZED FROM ORGANIZER] CI must fail if coverage thresholds not met or regress by >2%. Security scan waivers must expire; store `security_report.json`. Performance assertions use `acceptance_criteria.json` (p95/variance). Integration tests cover orchestrator transitions/guards, memory modes, docs promotion, and deploy/obs health. Require 3 consecutive greens including integration.",
+        "done": false
+      },
+      {
+        "text": "PHASE 4: Documentation, Deployability, and Observability Tightening\n\n**Explanations:** Raise quality bars across orchestrator coverage, docs provenance and freshness SLO (block after 72h), and deploy/observability with schema validation for `monitoring_config.json`, healthcheck endpoints, telemetry dual timestamps with correlation propagation, and observability monitors for atomic failures, report latency, and disk utilization tied to enforcement SLOs.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\nIMPORTANT NOTE: [SYNTHESIZED FROM ORGANIZER] Orchestrator handlers/guards target ≥90% coverage. Docs promotion requires provenance lint; freshness SLO enforced with breach ticket/block. Healthcheck returns HTTP 200 `{status:\"ok\"}`. Enforce `X-Correlation-Id` propagation. Monitors/alerts mapped to enforcement mode SLOs.",
+        "done": false
+      },
+      {
+        "text": "PHASE 5: Artifact Integrity, SBOM, and Supply Chain Security\n\n**Explanations:** Generate SPDX SBOM and sha256 digests for images/manifests/configs including commit SHA; sign artifacts and produce attestations (Cosign); verify in CI; publish `artifact_digests.json` with build outputs.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\nIMPORTANT NOTE: [SYNTHESIZED FROM ORGANIZER] SBOM format: SPDX JSON; include commit SHA and reproducible digests. Cosign signing and attestation verification are CI gates. `artifact_digests.json` stored and kept in sync with artifacts.",
+        "done": false
+      },
+      {
+        "text": "PHASE 6: Concurrency-Safe Reporting and Governance\n\n**Explanations:** Ensure all PASS flips route via bridge or protected mutex for serialization; enforce atomic updates for master/summary reports with dir fsync and CI guard rejecting non-atomic writes; apply RBAC for toggles/waivers/enforcement changes with audits and alerts on unauthorized attempts.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\nIMPORTANT NOTE: [SYNTHESIZED FROM ORGANIZER] PASS flips are serialized; direct concurrent writes are forbidden. CI must detect and reject non-atomic writes to `VERIFICATION/master_report.md` and `VERIFICATION/summary.json`. All governance actions are RBAC-controlled and audited to `memory-bank/decisions/index.jsonl`.",
+        "done": false
+      },
+      {
+        "text": "PHASE 7: Enforcement Mode Escalation\n\n**Explanations:** Escalate `AI_ENFORCEMENT_MODE` from `solo` → `shadow` → `soft_block` → `hard_block` only after stability conditions are met (three consecutive greens including integration); provide emergency override through expiring, signed waivers with RBAC enforcement and logging.\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\nIMPORTANT NOTE: [SYNTHESIZED FROM ORGANIZER] Do not escalate without the three-green CI criterion. Waivers must be time-bound, signed, RBAC-enforced, and logged. Escalation changes audited.",
+        "done": false
+      },
+      {
+        "text": "PHASE 8: Verification and Close-out\n\n**Explanations:** Re-run verification across all verticals, update `findings.json`, prepend Status/Rationale in each `report.md`, and flip to PASS; atomically refresh master/summary reports via pipeline; when all verticals PASS and enforcement is `hard_block`, freeze reports, append closing entries to `memory-bank/decisions/index.jsonl`, and publish final runbook/checklist in `README` (commands, rollbacks, waivers, contacts).\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <task_id ReplaceAll>\npython3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>\n```\nIMPORTANT NOTE: [SYNTHESIZED FROM ORGANIZER] All verticals must reach PASS; master/summary updates are atomic via the reporting pipeline. Finalization requires enforcement at `hard_block`. Runbook must include commands, rollbacks, waiver process, and contacts; decisions appended to `memory-bank/decisions/index.jsonl`.",
+        "done": false
+      }
+    ]
+  }
+]
