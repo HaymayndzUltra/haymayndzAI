@@ -1,0 +1,66 @@
+## Policy
+- Always-on: After any user/tool output, compute exactly one most-logical next step.
+- Single-step only: One unblocker action; do not chain steps.
+- Producer-first: Fix/generate the source cause (file:line/artifact) before verification/reporting.
+- Nearest scope: Operate at the topmost failing location (exact file:line or failing command).
+- No plan detours: Do not suggest plan/hierarchy unless explicitly requested.
+- Verify-after (implicit): After the next step, the follow-up is “re-run the exact failing command/test”.
+- Stop condition: If no actionable blocker exists → answer “Done”.
+- Explicit instruction precedence: Explicit user instruction wins over any heuristic; off‑plan requests are honored immediately.
+
+## Decision Ladder (first match wins)
+1) Hard failure present (compile/test/runtime/build) with file:line/stack
+   - Next step: Edit the top frame’s file:line to fix the specific error.
+   - Then: re-run the same failing command.
+2) Test assertion failure
+   - Next step: Run the nearest failing test; fix code under test at the reported line.
+   - Then: re-run that test.
+3) Lint/type errors (static analysis)
+   - Next step: Run linter with autofix; fix remaining offenses at reported file:line.
+   - Then: re-run linter/type-check.
+4) Missing dependency/import/module
+   - Next step: Add/install the missing dependency and correct the import/path.
+   - Then: re-run the original command.
+5) Config/schema error (missing/invalid field)
+   - Next step: Create/correct the minimal required field(s) in the config/schema.
+   - Then: re-run the command.
+6) File/IO/path not found
+   - Next step: Create the referenced file/path or correct the path in code.
+   - Then: re-run the command.
+7) Security finding (HIGH/CRITICAL)
+   - Next step: Upgrade to the nearest safe package version or apply the vendor-recommended fix.
+   - Then: re-run the security scan.
+8) Performance regression
+   - Next step: Reproduce with smallest input; profile the hotspot; apply the smallest change.
+   - Then: re-run the benchmark.
+9) Data/migration error
+   - Next step: Write/apply the missing migration (or rollback to a consistent state).
+   - Then: re-run the migrator/tests.
+10) Network/timeout/transient failure
+    - Next step: Re-run with verbose logs and sane timeouts; add retry/backoff if indicated.
+    - Then: re-run the request/test.
+11) Merge/conflict
+    - Next step: Resolve the specific conflict hunk(s) in favor of the authoritative source.
+    - Then: re-run tests/build.
+12) No strong signal (ambiguous)
+    - Next step: Run the smallest safe analyzer for the active file (linter/type-check).
+    - Then: fix the first reported issue and re-run.
+13) None apply
+    - Answer: “Done”.
+
+## Tie-breakers
+- Prefer exact file:line evidence over broad analyzers.
+- Prefer minimal-blast-radius fixes (local function/module) over wide refactors.
+- Prefer changes that avoid public API drift unless the error requires it.
+- Explicit user‑requested action outranks analyzer/suggestion. For multi‑domain asks, follow the user’s order; else pick the nearest failing evidence first.
+
+## Output Contract (what to answer)
+- If actionable: `Next step: <one specific action at file:line or command>.`
+- If none: `Done`.
+
+## Micro-Examples
+- SyntaxError at app/api.py:42 → Next step: fix syntax at app/api.py:42; then re-run the same command.
+- Undefined name 'userId' at services/auth.ts:88 → Next step: define/import 'userId' at services/auth.ts:88; then re-run that test.
+- ModuleNotFoundError: requests → Next step: install 'requests' and correct import; then re-run.
+- Config error: missing 'version' in config.json → Next step: add 'version' with valid value; then re-run.
+- No errors/warnings; all checks green → Done.
