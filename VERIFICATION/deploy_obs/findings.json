@@ -1,0 +1,204 @@
+{
+  "contract": {
+    "id": "deploy_observability_contract",
+    "schema_version": "1.0.0",
+    "producer_role": "mlops_ai",
+    "consumer_role": "observability_ai",
+    "description": "Contract for deployment outputs consumed by observability after QA Gate PASS."
+  },
+  "artifacts_contract": {
+    "required_artifacts": [
+      {
+        "name": "deployment_manifest",
+        "path": "deploy/deployment_manifest.yaml",
+        "format": "yaml",
+        "owner": "mlops_ai",
+        "hash": { "algorithm": "sha256", "value": "<fill-on-deploy>" },
+        "fields": {
+          "environment": "production|staging|dev",
+          "version": "semantic version or immutable build tag",
+          "rollout_strategy": "blue-green|canary|rolling",
+          "services": ["api", "worker", "scheduler"],
+          "images": [
+            {
+              "service": "api",
+              "image": "registry.example.com/app/api:<tag>",
+              "git_sha": "<40-hex>",
+              "build_time": "<ISO8601>",
+              "build_number": "<string>"
+            }
+          ],
+          "config": { "env": { "KEY": "VALUE" } }
+        }
+      },
+      {
+        "name": "monitoring_config",
+        "path": "deploy/monitoring_config.json",
+        "format": "json",
+        "owner": "mlops_ai",
+        "hash": { "algorithm": "sha256", "value": "<fill-on-deploy>" },
+        "fields": {
+          "dashboards": "references only; not created here (out-of-scope)",
+          "alerts": "references only; not created here (out-of-scope)",
+          "metrics": [
+            { "name": "latency_p95_ms", "type": "gauge" },
+            { "name": "error_rate_percent", "type": "gauge" },
+            { "name": "throughput_rps", "type": "counter" },
+            { "name": "saturation_percent", "type": "gauge" }
+          ]
+        }
+      },
+      {
+        "name": "release_report",
+        "path": "deploy/release_report.md",
+        "format": "markdown",
+        "owner": "mlops_ai",
+        "hash": { "algorithm": "sha256", "value": "<fill-on-deploy>" },
+        "fields": {
+          "status": "SUCCESS|FAIL|PARTIAL",
+          "started_at": "<ISO8601>",
+          "completed_at": "<ISO8601>",
+          "version": "<string>",
+          "environment": "<string>",
+          "notes": "<string>"
+        }
+      }
+    ],
+    "build_metadata": {
+      "git_sha": "<40-hex>",
+      "git_ref": "refs/tags/vX.Y.Z or refs/heads/main",
+      "artifact_registry": "<string>",
+      "builder": "mlops_ai",
+      "task_id": "<tasks_active id, if applicable>",
+      "timestamp": "<ISO8601+08:00>"
+    }
+  },
+  "health_contract": {
+    "heartbeat_endpoints": [
+      {
+        "service": "api",
+        "url": "http://<host>:<port>/health",
+        "method": "GET",
+        "expected_status": 200,
+        "expected_body": { "status": "ok" },
+        "timeout_ms": 2000,
+        "interval_s": 10,
+        "success_threshold": 3,
+        "failure_threshold": 3,
+        "initial_grace_s": 30
+      }
+    ],
+    "readiness_checks": [
+      {
+        "name": "database_migrations_applied",
+        "type": "sql|app-internal",
+        "timeout_s": 120,
+        "retries": 3,
+        "interval_s": 10
+      }
+    ],
+    "blind_spot_controls": {
+      "pre_health_gap_s": 15,
+      "canary": {
+        "traffic_percent": 5,
+        "min_duration_s": 300
+      }
+    }
+  },
+  "rollback_contract": {
+    "signals": [
+      {
+        "name": "canary_error_rate_exceeds_threshold",
+        "metric": "http.server.errors.rate",
+        "threshold": { "operator": ">", "value": 2.0, "unit": "percent", "window": "5m" },
+        "severity": "critical",
+        "source": "observability_ai",
+        "action": "ROLLBACK",
+        "test": {
+          "simulate": "inject_5xx_errors",
+          "expected_event": "rollback.requested"
+        }
+      },
+      {
+        "name": "healthcheck_failure_breach",
+        "signal": "health_check_failed",
+        "condition": "failure_threshold breaches during canary or steady-state",
+        "severity": "critical",
+        "source": "observability_ai",
+        "action": "ROLLBACK",
+        "test": {
+          "simulate": "force /health to 500",
+          "expected_event": "rollback.requested"
+        }
+      }
+    ],
+    "emit_hook": {
+      "topic": "observability/deploy/rollback",
+      "event_schema": {
+        "event": "rollback.requested",
+        "service": "<string>",
+        "environment": "<string>",
+        "version": "<string>",
+        "reason": "<string>",
+        "observed": { "metric": "<string>", "value": "<number>", "window": "<string>" },
+        "correlation_id": "<uuid>",
+        "timestamp": "<ISO8601+08:00>"
+      }
+    }
+  },
+  "telemetry_contract": {
+    "schema_version": "1.0.0",
+    "common_fields": {
+      "correlation_id": "uuid",
+      "task_id": "string",
+      "phase_index": "integer",
+      "environment": "string",
+      "version": "string",
+      "timestamp": "ISO8601+08:00"
+    },
+    "events": [
+      { "name": "deploy.started", "required_fields": ["version", "environment", "git_sha", "correlation_id", "timestamp"] },
+      { "name": "deploy.completed", "required_fields": ["status", "environment", "version", "timestamp"] },
+      { "name": "health.ok", "required_fields": ["service", "checks", "timestamp"] },
+      { "name": "health.failed", "required_fields": ["service", "reason", "timestamp"] },
+      { "name": "canary.started", "required_fields": ["traffic_percent", "timestamp"] },
+      { "name": "canary.completed", "required_fields": ["duration_s", "result", "timestamp"] },
+      { "name": "rollback.requested", "required_fields": ["reason", "observed", "timestamp"] },
+      { "name": "rollback.completed", "required_fields": ["result", "timestamp"] }
+    ]
+  },
+  "post_deploy_validation": {
+    "steps": [
+      {
+        "name": "heartbeat_endpoints_pass",
+        "description": "All heartbeat endpoints pass success_threshold consecutively",
+        "assert": "health_contract.heartbeat_endpoints[*].success_threshold satisfied",
+        "command_preview": "curl -sSf http://<host>/health | jq -e '.status==\"ok\"'",
+        "on_pass_transition": "DEPLOYMENT->MONITORING",
+        "on_fail_transition": "DEPLOYMENT->ROLLBACK"
+      },
+      {
+        "name": "canary_window_complete",
+        "description": "Canary window elapses without breach",
+        "assert": "rollback_contract.signals not triggered during canary.min_duration_s",
+        "on_pass_transition": "increase_traffic or finalize",
+        "on_fail_transition": "DEPLOYMENT->ROLLBACK"
+      }
+    ],
+    "orchestrator_transitions": [
+      { "from": "DEPLOYMENT", "to": "MONITORING", "gate": "All health checks pass and no rollback signals active" },
+      { "from": "DEPLOYMENT", "to": "ROLLBACK", "gate": "Any rollback_contract signal triggers" }
+    ]
+  },
+  "risks_and_mitigations": {
+    "format_mismatches": "Mitigate with schema_version, JSON schema validation, and artifact hashes",
+    "blind_spots_pre_health": "Mitigate with initial_grace_s and canary window gating",
+    "rollback_not_observable": "Mitigate with explicit emit_hook topic and event_schema"
+  },
+  "acceptance_evidence": {
+    "contract_fields_complete_versioned": true,
+    "health_and_rollback_unambiguous_testable": true,
+    "post_deploy_validation_declared_and_mapped": true,
+    "notes": "This file defines the versioned contract, enumerates testable health/rollback signals, and declares post-deploy validation tied to orchestrator transitions."
+  }
+}
