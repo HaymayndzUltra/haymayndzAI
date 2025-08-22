@@ -27,6 +27,11 @@ graph TD
     J[memory_ai] --> K[All Phases]
     L[security_ai] --> C
     M[data_ai] --> B
+    
+    %% === Additions: Audit & Verification Phases (inserted between planning_ai and codegen_ai) ===
+    B --> X[auditor_ai]
+    X --> Y[principal_engineer_ai]
+    Y --> C
 ```
 
 ## 3. GATE RULES AND CHECKPOINTS
@@ -64,6 +69,31 @@ pipeline_gates:
       - "Rollback plan is ready"
       - "Monitoring is configured"
     blocking_conditions: ["failed_health_checks", "missing_monitoring"]
+  
+  audit_gate:
+    required_inputs: ["technical_plan.md", "Action_Plan.md"]
+    validation_rules:
+      - "Auditor must produce Summary_Report.md"
+      - "All identified risks and blind spots have traceability to plan sections"
+      - "If no issues found, explicit confirmation line is present"
+    blocking_conditions: ["missing_Summary_Report", "untraceable_findings", "ambiguous_verdict"]
+
+  verification_gate:
+    required_inputs: ["Action_Plan.md", "Summary_Report.md"]
+    validation_rules:
+      - "Principal Engineer produced Validation_Report.md"
+      - "Each risk marked CONFIRM or CHALLENGE with rationale"
+      - "Contested findings are logged and referenced"
+    blocking_conditions: ["missing_Validation_Report", "unresolved_contested_findings"]
+
+  synthesis_gate:
+    required_inputs: ["Action_Plan.md", "Summary_Report.md", "Validation_Report.md"]
+    validation_rules:
+      - "Final_Implementation_Plan.md exists"
+      - "Tasks are sequenced with prerequisites"
+      - "Rollback and contingency steps included where applicable"
+      - "Each task has Source refs to plan/risk/validation"
+    blocking_conditions: ["missing_Final_Implementation_Plan", "missing_traceability", "no_rollback_for_high_risk"]
 ```
 
 ## 4. WORKFLOW STATE MANAGEMENT
@@ -107,6 +137,21 @@ workflow_states:
     description: "Emergency rollback to previous stable state"
     active_roles: ["mlops_ai", "memory_ai"]
     allowed_transitions: ["IDLE"]
+  
+  AUDIT:
+    description: "Pre-mortem risk analysis of the Action_Plan"
+    active_roles: ["auditor_ai"]
+    allowed_transitions: ["VALIDATION", "BLOCKED"]
+
+  VALIDATION:
+    description: "Peer review of audit findings and gap analysis"
+    active_roles: ["principal_engineer_ai"]
+    allowed_transitions: ["SYNTHESIS", "BLOCKED"]
+
+  SYNTHESIS:
+    description: "Consolidation into a final, executable implementation plan"
+    active_roles: ["principal_engineer_ai"]
+    allowed_transitions: ["DEVELOPMENT", "BLOCKED"]
 ```
 
 ## 5. ERROR HANDLING AND RECOVERY
@@ -130,6 +175,21 @@ error_handling:
   dependency_failure:
     action: "WAIT_RETRY"
     max_wait_time: "60 minutes"
+    fallback: "BLOCK"
+  
+  audit_failure:
+    action: "BLOCK"
+    notification: "Notify planning_ai and principal_engineer_ai of audit failure"
+    retry_policy: "manual_gate_recheck"
+
+  verification_conflict:
+    action: "ESCALATE"
+    escalation_target: "human_operator"
+    note: "Unresolved contested findings between auditor and principal engineer"
+
+  synthesis_incomplete:
+    action: "WAIT_RETRY"
+    max_wait_time: "30 minutes"
     fallback: "BLOCK"
 ```
 
@@ -161,6 +221,18 @@ handoff_rules:
     - from: "qa_ai"
       to: "mlops_ai"
       trigger: "quality_gate = PASS"
+    
+    - from: "planning_ai"
+      to: "auditor_ai"
+      trigger: "technical_plan.md ready && Action_Plan.md present"
+
+    - from: "auditor_ai"
+      to: "principal_engineer_ai"
+      trigger: "Summary_Report.md created"
+
+    - from: "principal_engineer_ai"
+      to: "codegen_ai"
+      trigger: "Validation_Report.md && Final_Implementation_Plan.md available"
       
   parallel_handoff:
     - from: "codegen_ai"
@@ -179,4 +251,5 @@ handoff_rules:
 
 ## 9. CHANGELOG
 ‑ v0.1.0  2024-01-15  initial scaffold by prompt_factory_ai
+- v0.1.1  2025-08-23  added AUDIT/VALIDATION/SYNTHESIS phases, gates, handoffs, and error cases (auditor_ai + principal_engineer_ai)
 --------------------------------------------------

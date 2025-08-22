@@ -64,6 +64,22 @@
 - [ ] Set health check requirements
 - [ ] Add log aggregation and analysis rules
 
+#### Auditor AI
+- [ ] Configure scope of risk analysis (technical, process, compliance)
+- [ ] Define risk severity taxonomy (High / Medium / Low)
+- [ ] Customize traceability format (e.g., Plan Section, Line Ref)
+- [ ] Set confirmation message when no issues are detected
+- [ ] Add context awareness rules (diagnostic vs operational plan types)
+
+#### Principal Engineer AI
+- [ ] Configure peer review protocol (CONFIRM/CHALLENGE decision matrix)
+- [ ] Define handling rules for contested risks
+- [ ] Customize Validation_Report.md structure
+- [ ] Configure synthesis output (Final_Implementation_Plan.md format)
+- [ ] Add priority tagging rules (P0/P1/P2) for synthesized tasks
+- [ ] Define rollback & contingency integration requirements
+- [ ] Set traceability mapping from risks → tasks
+
 ### Optional Roles Configuration
 
 #### Security AI (if enabled)

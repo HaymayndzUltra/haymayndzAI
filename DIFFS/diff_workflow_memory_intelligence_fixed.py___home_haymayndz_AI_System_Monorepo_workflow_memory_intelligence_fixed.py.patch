@@ -1,0 +1,28 @@
+== Diff: /home/haymayndz/HaymayndzAI/workflow_memory_intelligence_fixed.py vs /home/haymayndz/AI_System_Monorepo/workflow_memory_intelligence_fixed.py ==
+--- /home/haymayndz/HaymayndzAI/workflow_memory_intelligence_fixed.py	2025-08-22 01:07:32.980232716 +0800
++++ /home/haymayndz/AI_System_Monorepo/workflow_memory_intelligence_fixed.py	2025-08-12 05:55:14.265794088 +0800
+@@ -792,7 +792,7 @@
+         return normalised
+ 
+     # ------------------------------------------------------------------
+-    # �� Compatibility helpers
++    # 📎 Compatibility helpers
+     # ------------------------------------------------------------------
+ 
+     def _smart_sentence_split(self, text: str) -> List[str]:  # noqa: D401
+@@ -1658,7 +1658,7 @@
+                 return self._execute_complex_task(chunked_task)
+                 
+         except Exception as e:
+-            logger.error(f"�� Error during task execution: {e}")
++            logger.error(f"💥 Error during task execution: {e}")
+             return {
+                 "execution_type": "ERROR",
+                 "error": str(e),
+@@ -1946,4 +1946,4 @@
+     
+     result = execute_task_intelligently(test_task)
+     print("📊 Result:")
+-    print(json.dumps(result, indent=2)) 
++    print(json.dumps(result, indent=2)) 
+\ No newline at end of file
