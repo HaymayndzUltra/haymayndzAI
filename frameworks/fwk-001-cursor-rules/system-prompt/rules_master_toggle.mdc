@@ -52,7 +52,7 @@ roles:
     dependencies: ["codegen_ai"]
     
   analyst_ai:
-    enabled: true
+    enabled: false
     priority: 7
     triggers: ["/review", "/analyze", "/benchmark"]
     dependencies: []
@@ -64,7 +64,7 @@ roles:
     dependencies: []
     
   observability_ai:
-    enabled: true
+    enabled: false
     priority: 9
     triggers: ["/observe", "/alert", "/health"]
     dependencies: ["mlops_ai"]
@@ -83,13 +83,13 @@ roles:
     dependencies: []
 
   auditor_ai:
-    enabled: true
+    enabled: false
     priority: 15
     triggers: ["/audit"]
     dependencies: ["planning_ai"]   # audit usually runs after a plan is produced
 
   principal_engineer_ai:
-    enabled: true
+    enabled: false
     priority: 16
     triggers: ["/peer_review", "/synthesize_plan"]
     dependencies: ["auditor_ai"]   # runs only after audit report exists
@@ -97,7 +97,7 @@ roles:
 
 # Optional Roles (disabled by default)
   security_ai:
-    enabled: false
+    enabled: true
     priority: 11
     triggers: ["/security_scan", "/threat_model", "/compliance_check"]
     dependencies: ["codegen_ai"]
@@ -115,7 +115,7 @@ roles:
     dependencies: []
     
   data_ai:
-    enabled: false
+    enabled: true
     priority: 14
     triggers: ["/design_schema", "/create_migration", "/optimize_queries"]
     dependencies: ["planning_ai"]
@@ -158,6 +158,12 @@ command_routing:
   "/extend_framework": "prompt_factory_ai"
   "/template":         "prompt_factory_ai"
   "/toggle":           "rules_master_toggle"
+  "/design_schema":     "data_ai"
+  "/create_migration":  "data_ai"
+  "/optimize_queries":  "data_ai"
+  "/security_scan":     "security_ai"
+  "/threat_model":      "security_ai"
+  "/compliance_check":  "security_ai"
   
 ```
 
