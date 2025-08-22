@@ -1,0 +1,42 @@
+{
+  "summaries": [
+    {
+      "vertical": "orchestrator",
+      "status": null,
+      "issues": [],
+      "file": "VERIFICATION/orchestrator/findings.json"
+    },
+    {
+      "vertical": "qa_gate",
+      "status": null,
+      "issues": [],
+      "file": "VERIFICATION/qa_gate/findings.json"
+    },
+    {
+      "vertical": "routing",
+      "status": null,
+      "issues": [],
+      "file": "VERIFICATION/routing/findings.json"
+    },
+    {
+      "vertical": "memory",
+      "status": null,
+      "issues": [],
+      "file": "VERIFICATION/memory/findings.json"
+    },
+    {
+      "vertical": "docs_analyst",
+      "status": null,
+      "issues": [],
+      "file": "VERIFICATION/docs_analyst/findings.json"
+    },
+    {
+      "vertical": "deploy_obs",
+      "status": null,
+      "issues": [],
+      "file": "VERIFICATION/deploy_obs/findings.json"
+    }
+  ],
+  "duplicates": [],
+  "conflicts": []
+}
