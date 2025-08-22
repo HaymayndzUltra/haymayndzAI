@@ -1,4 +1,5 @@
 {
+  "status": "WARN",
   "component": "framework_memory_bridge.mdc + memory-bank/queue-system/* + cursor_state.json + current-session.md",
   "raci": {
     "tasks_active.json": {

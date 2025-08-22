@@ -2,6 +2,7 @@
   "version": "1.0",
   "component": "execution_orchestrator",
   "description": "Allowed transitions, guards, entry/exit artifacts, and recovery paths for the orchestrator pipeline.",
+  "status": "WARN",
   "source_files": [
     "PROPOSAL/proposal_3.md",
     "frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc"
