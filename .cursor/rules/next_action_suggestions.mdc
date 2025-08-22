@@ -3,6 +3,67 @@ description: Automatic next-step trigger suggestions after actions
 alwaysApply: true
 ---
 
+## Proactive Context-Aware Engine (v2)
+
+### High-Level Objective
+Transform from reactive, framework-bound triggers to a proactive, context-aware suggestion engine that infers user intent from live workspace signals and proposes the single most relevant next action (plus one alternate) for the active task, adapting instantly to context shifts.
+
+### Required Contextual Inputs
+- Conversation signals: last messages, explicit goals, recent commands, error snippets.
+- Editor context: active file path/language, cursor window (±100 lines), open tabs, unsaved state.
+- Code diagnostics: LSP errors/warnings, type-checker output, linter and test failures.
+- Project fingerprints: scripts/configs (e.g., package.json, pyproject.toml, go.mod), CI configs, Makefiles, task/plan files (e.g., memory-bank/queue-system/tasks_active.json).
+- VCS state: branch, staged/unstaged changes, HEAD message, merge/rebase in progress.
+- Recent execution: last command, exit code, duration, notable stderr lines.
+- Runtime hints: detected frameworks (pytest/jest/vitest/go test), runnable entrypoints (dev servers/CLIs).
+- Temporal signals: dwell time on files, rapid toggling between code/test, quick returns after failures.
+
+### Intent Registry (extensible)
+- run_tests, fix_lint, type_check, debug_failure, run_dev_server, build, run_migration,
+  doc_preview, doc_lint, commit_changes, push_branch, validate_plan, run_analysis,
+  run_file (current module), container_build.
+
+### Scoring and Decision Logic
+- Feature extraction: normalize signals to features (file role: test/src/doc/infra; error types: lint/type/test/build; near-cursor patterns like `it(`, `assert`).
+- Weighted evidence: Hard signals (blocking errors, failing tests) > explicit user ask > file role + framework presence > VCS state > heuristics (dwell time).
+- Near-cursor boost: content within cursor window counts 1.5×; recency weighting for latest events.
+- Gating rules: If analysis/plan gates are active → suggest analysis/validation first. Diagnostics with errors → prioritize fix_lint/type_check before build/commit.
+- Dynamic relevancy: Recompute on editor focus/diagnostics/conversation/VCS updates; instantly switch when user pivots (e.g., code → docs → infra).
+- Safety fallback: If confidence < 0.65 or inputs insufficient → prefer read-only validation/preview suggestions.
+
+### Output Contract
+- Always emit literal, immediately-executable suggestions (not generic placeholders).
+- Format:
+  - `Suggested next trigger: <one concrete action aligned to current context>`
+  - `Alternate: <closest safe neighbor>`
+- Include internal fields (not printed to user UI unless requested): inferred intent, reason, confidence (0-1).
+
+### Canonical Suggestion Mapping (non-exhaustive)
+- run_tests: "Run nearest tests" | alternate "Run all tests"
+- fix_lint: "Run linter with autofix" | alternate "Run type-checker"
+- type_check: "Run type-checker" | alternate "Run linter with autofix"
+- debug_failure: "Re-run last command with verbose logs" | alternate "Open failing log output"
+- run_dev_server: "Start dev server" | alternate "Run build"
+- build: "Run build" | alternate "Run tests"
+- run_file: "Run current file/module" | alternate "Run project default target"
+- doc_preview: "Open Markdown preview" | alternate "Run markdown lint"
+- doc_lint: "Run markdown lint" | alternate "Open Markdown preview"
+- commit_changes: "Commit staged changes" | alternate "Stage all and commit"
+- push_branch: "Push current branch" | alternate "Create PR"
+- run_analysis: "Start pre-execution analysis" | alternate "Compile analysis doc (strict)"
+- validate_plan: "I-validate ang plan" | alternate "Show hierarchy"
+- container_build: "Build container image" | alternate "Dockerfile lint"
+
+### Example Scenarios (meaning-aware, beyond framework keywords)
+- Emergent testing intent: Editing `tests/*` or cursor shows `describe()/it()/assert`. → Suggest "Run nearest tests"; Alternate "Run all tests".
+- Live bugfix loop: Conversation says bugfix; editing target function; diagnostics show errors; unstaged changes exist. → Suggest "Run linter with autofix"; Alternate "Run type-checker".
+- Documentation pass: Active file is `.md/.mdx`; no code diagnostics; markdown config detected. → Suggest "Open Markdown preview"; Alternate "Run markdown lint".
+- Analysis gate active: Previous run blocked by analysis gate. → Suggest "Start pre-execution analysis"; Alternate "Compile analysis doc (strict)".
+- Ambiguous/low-signal state: Minimal context available. → Suggest "I-validate ang plan"; Alternate "Show hierarchy".
+
+### Legacy Fallback (Reactive Mappings)
+If context is missing or confidence is low, the engine may fall back to the legacy reactive mappings defined below. These remain authoritative for plan-specific trigger flows.
+
 ## Post-Action Next-Step Suggestions (Required)
 
 Goal: After every action the assistant performs (validate, show, exec, done), the assistant MUST immediately suggest the most appropriate next TRIGGER PHRASE so the user never has to search for it.

@@ -1,5 +1,6 @@
 {
   "vertical": "routing",
+  "status": "WARN",
   "sources": [
     "PROPOSAL/proposal_3.md",
     ".cursor/rules/rules_master_toggle.mdc",

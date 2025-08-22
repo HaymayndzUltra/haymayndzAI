@@ -1,4 +1,5 @@
 {
+  "status": "WARN",
   "contract": {
     "id": "deploy_observability_contract",
     "schema_version": "1.0.0",
