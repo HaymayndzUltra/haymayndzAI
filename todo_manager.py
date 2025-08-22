@@ -564,11 +564,11 @@ def enforce_deep_analysis_gate(execution_task_id: str) -> (bool, str):
 def _gate_policy() -> str:
     """Return 'block' (default) or 'warn' depending on AI_ENFORCEMENT_MODE.
 
-    Modes treated as warn/advisory (non-blocking): solo, optional, warn, advisory
+    Modes treated as warn/advisory (non-blocking): solo, shadow, optional, warn, advisory
     Any other value defaults to block.
     """
-    mode = os.getenv("AI_ENFORCEMENT_MODE", "team").strip().lower()
-    if mode in ("solo", "optional", "warn", "advisory"):
+    mode = os.getenv("AI_ENFORCEMENT_MODE", "shadow").strip().lower()
+    if mode in ("solo", "shadow", "optional", "warn", "advisory"):
         return "warn"
     return "block"
 
@@ -620,6 +620,11 @@ def exec_substep(task_id: str, sub_index: str, run: bool = False) -> None:
         print("❌ No fenced code block found in this phase.")
         return
 
+    # Policy: require at least one actionable command in the first block
+    if not _phase_has_actionable_commands(text):
+        print("⛔ Phase has no actionable commands (only concluding lines). Please update tasks_active.json with concrete sub-steps before execution.")
+        return
+
     lines = [ln for ln in blocks[0].splitlines() if ln.strip() and not ln.strip().startswith("#")]
     # Resolve placeholders before preview/execution to avoid shell redirection issues
     resolved_lines = [
@@ -634,11 +639,14 @@ def exec_substep(task_id: str, sub_index: str, run: bool = False) -> None:
 
     selected: List[str]
     if cmd_idx is None:
-        selected = resolved_lines
-        print("🔎 Selected all commands in phase block (dry-run by default):")
+        selected = [c for c in resolved_lines if not _is_concluding_line(c)]
+        print("🔎 Selected actionable commands in phase block (dry-run by default):")
     else:
         if cmd_idx >= len(lines):
             print(f"❌ Command index {cmd_idx + 1} out of range (1..{len(lines)})")
+            return
+        if _is_concluding_line(resolved_lines[cmd_idx]):
+            print("⛔ Selected command is a concluding line (show/done). Select an actionable sub-step instead.")
             return
         selected = [resolved_lines[cmd_idx]]
         print(f"🔎 Selected command #{cmd_idx + 1} (dry-run by default):")
@@ -748,6 +756,18 @@ def main(argv: Optional[List[str]] = None) -> None:
                 else:
                     print(f"⛔ Deep Analysis Gate BLOCK: {msg}")
                     return
+            # Policy: prevent concluding-only phases from being marked done
+            data = _load()
+            task = next((t for t in data if t.get("id") == args.task_id), None)
+            if task is not None:
+                try:
+                    idx = int(args.index)
+                    phase_text = task.get("todos", [])[idx].get("text", "")
+                    if not _phase_has_actionable_commands(phase_text):
+                        print("⛔ Cannot mark done: phase has no actionable commands (only concluding lines). Update tasks_active.json.")
+                        return
+                except Exception:
+                    pass
         mark_done(args.task_id, index)
     elif args.cmd == "delete":
         _set_data_file_for_mode(args.mode)
