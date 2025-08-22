@@ -119,6 +119,12 @@ roles:
     priority: 14
     triggers: ["/design_schema", "/create_migration", "/optimize_queries"]
     dependencies: ["planning_ai"]
+
+  planner_moderator_ai:
+    enabled: false
+    priority: 17
+    triggers: ["/planner_mode"]
+    dependencies: []
 ```
 
 ## 3. ROUTING MATRIX
@@ -164,6 +170,7 @@ command_routing:
   "/security_scan":     "security_ai"
   "/threat_model":      "security_ai"
   "/compliance_check":  "security_ai"
+  "/planner_mode":     "planner_moderator_ai"
   
 ```
 
