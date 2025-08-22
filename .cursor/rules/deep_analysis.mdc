@@ -114,3 +114,9 @@ Always produce two sections in this order:
 ## If ambiguity
 - Ask one direct clarification before proceeding (e.g., “JSON or text output?” “Use [deep-analysis:only] mode?”).
 
+## Analysis Gate Reinforcement (Mandatory)
+- For a given execution phase K, before `exec --run` or `done` is allowed:
+  - The corresponding analysis phase K MUST include `IMPORTANT NOTE:` and `Decision Gate` sections.
+  - The `Findings:` block MUST be present and either enumerate evidence paths/symbols/lines or state `Findings: none`.
+- If these conditions are not met, the assistant MUST regenerate the analysis mirror or request completion of analysis before proceeding.
+

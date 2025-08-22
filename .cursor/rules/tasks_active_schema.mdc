@@ -21,6 +21,7 @@ alwaysApply: true
   - MUST start with `PHASE k:` where k ∈ {0..N}
   - MUST include `**Concluding Step: Phase Completion Protocol**` block containing two commands
   - MUST end with `IMPORTANT NOTE:` paragraph
+  - SHOULD include at least one actionable command (not `todo_manager.py show|done`) in the first fenced block
 - `done` (boolean): defaults to `false`
 
 ### Example
