@@ -1,0 +1,95 @@
+{
+  "version": "1.0.0",
+  "sources": [
+    "PROPOSAL/proposal_3.md",
+    "frameworks/fwk-001-cursor-rules/system-prompt/documentation_ai.mdc",
+    "frameworks/fwk-001-cursor-rules/system-prompt/analyst_ai.mdc",
+    "frameworks/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc"
+  ],
+  "trigger_matrix": [
+    {
+      "trigger": "/gen_code (preview/implementation)",
+      "actor": "documentation_ai",
+      "action": "generate draft docs",
+      "storage_path": "memory-bank/roles/documentation_ai/staging/<component>/",
+      "gate": "none (draft)",
+      "provenance": {"qa_status": "pending"}
+    },
+    {
+      "trigger": "Deep Analysis Gate PASS on exec --run or todo_manager.py done",
+      "actor": "documentation_ai",
+      "action": "promote canonical docs",
+      "storage_path": "memory-bank/roles/documentation_ai/<service_or_component>/",
+      "gate": "required (PASS)",
+      "provenance": {"qa_status": "pass"}
+    },
+    {
+      "trigger": "/update_docs <component>",
+      "actor": "documentation_ai",
+      "action": "refresh canonical docs section",
+      "storage_path": "memory-bank/roles/documentation_ai/<service_or_component>/",
+      "gate": "n/a (preserve provenance)",
+      "provenance": {"qa_status": "pass|pending"}
+    },
+    {
+      "trigger": "/validate_docs or phase done:true or scheduled sweep",
+      "actor": "documentation_ai",
+      "action": "validate completeness/freshness",
+      "storage_path": "memory-bank/roles/documentation_ai/validations/<yyyymmdd>/",
+      "gate": "n/a (validation)",
+      "provenance": {"qa_status": "n/a"}
+    },
+    {
+      "trigger": "/review (docs scope) or post-update hook",
+      "actor": "analyst_ai",
+      "action": "validate accuracy and enrich",
+      "storage_path": "memory-bank/roles/analyst_ai/reports/<yyyymmdd>/",
+      "gate": "advisory (single-writer: analyst_ai)",
+      "provenance": {"linked_docs": true}
+    }
+  ],
+  "provenance_schema": {
+    "task_id": "string",
+    "phase_index": "integer",
+    "commit": "string (git sha)",
+    "qa_status": "enum[pending, pass, fail]",
+    "source_paths": ["string"],
+    "generated_by": "enum[documentation_ai]",
+    "reviewed_by": ["string"],
+    "decision_ledger_ref": "string (file#line or id)"
+  },
+  "orchestrator_linkage": {
+    "tasks_active": "front matter carries TASK_ID and PHASE_INDEX; validation runs on phase done transitions",
+    "analysis_active": "presence and done:true phases satisfy Deep Analysis Gate; docs promotion aligned with gate PASS",
+    "decision_ledger": "append record on each doc create/update/promote"
+  },
+  "slos": {
+    "freshness_days": 7,
+    "validation_on_phase_done": true,
+    "stale_doc_max_age_days": 14,
+    "analyst_review_required_on_major_update": true
+  },
+  "risks": [
+    {
+      "name": "docs_for_failed_builds",
+      "description": "Draft docs exist for implementations that fail QA",
+      "mitigation": "Keep in staging; mark qa_status=fail; do not promote"
+    },
+    {
+      "name": "stale_docs",
+      "description": "Canonical docs drift from code",
+      "mitigation": "Scheduled /validate_docs; open decision ledger task; SLO freshness_days"
+    },
+    {
+      "name": "merge_conflicts",
+      "description": "Conflicts on canonical doc paths",
+      "mitigation": "Single-writer policy; role-owned paths; ledger notes when manual resolution"
+    }
+  ],
+  "acceptance_check": {
+    "every_artifact_has_trigger": true,
+    "every_artifact_has_storage_path": true,
+    "provenance_captured": true,
+    "review_loop_defined": true
+  }
+}
