@@ -82,6 +82,19 @@ roles:
     triggers: ["/new_framework", "/extend_framework", "/template"]
     dependencies: []
 
+  auditor_ai:
+    enabled: true
+    priority: 15
+    triggers: ["/audit"]
+    dependencies: ["planning_ai"]   # audit usually runs after a plan is produced
+
+  principal_engineer_ai:
+    enabled: true
+    priority: 16
+    triggers: ["/peer_review", "/synthesize_plan"]
+    dependencies: ["auditor_ai"]   # runs only after audit report exists
+
+
 # Optional Roles (disabled by default)
   security_ai:
     enabled: false
@@ -145,6 +158,7 @@ command_routing:
   "/extend_framework": "prompt_factory_ai"
   "/template":         "prompt_factory_ai"
   "/toggle":           "rules_master_toggle"
+  
 ```
 
 ## 4. INTERACTION RULES

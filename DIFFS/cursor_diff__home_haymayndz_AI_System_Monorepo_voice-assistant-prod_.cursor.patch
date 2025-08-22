@@ -1,0 +1,2138 @@
+== Diff: /home/haymayndz/HaymayndzAI/.cursor vs /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor ==
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/environment.json /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/environment.json
+--- /home/haymayndz/HaymayndzAI/.cursor/environment.json	2025-08-22 16:46:33.880469184 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/environment.json	1970-01-01 08:00:00.000000000 +0800
+@@ -1,11 +0,0 @@
+-{
+-  "setup": [
+-    "python3 --version",
+-    "pip install --upgrade pip",
+-    "pip install regex"
+-  ],
+-  "env": {
+-    "AI_ENFORCEMENT_MODE": "solo"
+-  }
+-}
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/README.md /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/README.md
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/README.md	2025-08-19 12:38:08.928949023 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/README.md	1970-01-01 08:00:00.000000000 +0800
+@@ -1 +0,0 @@
+-f"# Welcome to my Obsidian Vault" 
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/agent_plan_ingestion.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/agent_plan_ingestion.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/agent_plan_ingestion.mdc	2025-08-21 21:35:56.815686861 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/agent_plan_ingestion.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,44 +0,0 @@
+----
+-description: Agent-only plan ingestion protocol (no scripts)
+-alwaysApply: true
+----
+-## Agent Plan Ingestion (No Scripts)
+-
+-Objective: Any AI/session MUST generate an actionable, phase-gated plan directly from the frozen source document (e.g., `memory-bank/plan/organize.md`) using understanding of the content. Do not rely on helper scripts to create files. Produce the final JSON content ready to be placed into `memory-bank/queue-system/tasks_active.json` by the system/operator.
+-
+-### Inputs
+-- One frozen source document in `memory-bank/plan/*.md` (e.g., `organize.md`).
+-- Use the document as the single source of truth for phase titles, explanations, constraints, and risk fallbacks.
+-
+-### Output (Two-Pass, Agent-Only)
+-1) Human-Readable Plan Draft
+-   - Compose `PHASE 0: SETUP & PROTOCOL (READ FIRST)` (always present).
+-   - Compose `PHASE k: <Title>` for k ≥ 1 using the source doc (prefer a section like "Implementation Plan"; if absent, derive a coherent phase breakdown: Discovery → Planning → Implementation → Validation).
+-   - Each phase MUST include:
+-     - `**Explanations:**` a short paragraph aligned with the source.
+-     - `**Concluding Step: Phase Completion Protocol**` with:
+-       - `python3 todo_manager.py show <task_id Replace All>`
+-       - `python3 todo_manager.py done <task_id Replace All> <PHASE_INDEX>`
+-     - `IMPORTANT NOTE:` constraints synthesized from the source (e.g., sections A–G).
+-   - Present the complete draft for approval.
+-
+-2) JSON Finalization (Ready for tasks_active.json)
+-   - After approval, produce a single JSON array with one task object following the schema in `tasks_active_schema.mdc`.
+-   - Set `id` to `<slug>_actionable_<YYYYMMDD>`; timestamps must be ISO with `+08:00` timezone.
+-   - Do not write files. Output JSON content only; the system/operator will place it into `memory-bank/queue-system/tasks_active.json`.
+-
+-### IMPORTANT NOTE Enforcement
+-- Every phase MUST end with an `IMPORTANT NOTE:`. If any phase lacks it, halt and request clarification or provide a sourced synthesis.
+-
+-### Validation (Read-Only Tools)
+-- Before execution begins, validate the produced JSON by running:
+-  - `python3 plan_next.py` → Check next phase, IMPORTANT NOTE presence, monotonic completion.
+-  - `python3 plain_hier.py <task_id Replace All>` → Verify progress counters, phase list, and command preview.
+-
+-### Constraints
+-- No direct edits to queue/state files by the agent. JSON is provided as content-only output.
+-- Queue transitions remain autonomous. This protocol is for plan creation only.
+-
+-### Triggers
+-- See `trigger_phrases.mdc` for natural-language phrases that should automatically start the ingestion and finalization sequence.
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/analysis_doc_renderer.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/analysis_doc_renderer.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/analysis_doc_renderer.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/analysis_doc_renderer.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,85 +0,0 @@
+----
+-description: Render strict, analysis-only doc from tasks_active.json (no scripts, no writes)
+-alwaysApply: true
+----
+-
+-## Strict Analysis Doc Renderer — tasks_active.json → analysis-only output
+-
+-Scope:
+-- Single source of truth: `memory-bank/queue-system/tasks_active.json` only.
+-- Read-only; do NOT execute anything; do NOT read the codebase.
+-- Output is content-only printed to chat; the operator may save as `goaltomakelikethis.md`.
+-
+-Triggers (match anywhere in the message; ignore inside quotes/code fences):
+-- "Compile analysis doc"
+-- "Render analysis doc"
+-- "Generate analysis doc (analysis-only)"
+-- "Compile analysis doc (strict)" (enables strict enforcement + summary)
+-
+-This path is selected by the above Renderer triggers. It renders an analysis-only document; do NOT include Concluding Step blocks in the output.
+-
+-Input expectations:
+-- Top-level is an array (or an object with key `tasks` mapping to an array).
+-- Each task has: `id`, `description`, `status`, `created`, and `todos` (array).
+-- Each todo `text` starts with a single-line phase title (e.g., `PHASE K: …`).
+-
+-Deterministic phase mapping (content-focused, no assumptions):
+-1) Title: Use the first line of the phase `text` verbatim.
+-2) Purpose: Use the block under `**Explanations:**` verbatim (if present).
+-3) Scope: Set to "policy/contracts only; not execution" (analysis view).
+-4) Checks (must be derived from existing content; do not invent):
+-   - From `IMPORTANT NOTE:` bullets → copy each bullet as a check.
+-   - From `**Command Preview:**` → translate each relevant line into a pre-execution precondition, e.g.:
+-     - docker buildx build → reproducible builds; tag pattern `YYYYMMDD-<git_sha>`; target platforms; required build args (e.g., `TORCH_CUDA_ARCH_LIST`).
+-     - docker-compose `user: "10001:10001"` → non-root runtime enforced; tini as PID 1 when applicable.
+-     - compose healthcheck → `/health` returns HTTP 200 `{status:"ok"}`; port uniqueness within and across services.
+-     - GitHub Actions + trivy-action → HIGH/CRITICAL severities must fail builds (gate enforced).
+-     - syft → SBOM in SPDX JSON; artifact/upload present; tags align with date+git scheme.
+-     - GPU env/driver (e.g., `TORCH_CUDA_ARCH_LIST`, `GPU_VISIBLE_DEVICES`) → arch/driver baselines and env naming consistency.
+-     - Cache policy → single canonical cache-to/from registry approach; no alternates.
+-5) LOGIC PARITY CHECK: Compare this phase’s implied policies against other phases to flag duplicates/conflicts for the same concern (tag scheme, cache policy, security gate thresholds, health contract, CPU/GPU boundaries, non-root+tini, pinned versions).
+-6) DECISION GATE: Compose "Block if …" statements strictly from Checks and Parity findings for this phase (no new concerns beyond what’s present).
+-7) IMPORTANT NOTE: Reproduce verbatim. If missing, print `IMPORTANT NOTE: (missing)`.
+-
+-Rendering rules:
+-- Do NOT include `**Command Preview:**` or `**Concluding Step:**` blocks themselves in the analysis doc.
+-- Preserve verbatim text where specified; otherwise, provide concise precondition phrasing derived from previews/notes.
+-- Keep section order: Purpose → Scope → Checks → LOGIC PARITY CHECK → DECISION GATE → IMPORTANT NOTE.
+-- Only print sections that exist or are required (Purpose/Scope/Important Note). If Purpose/Scope/Important Note are missing, mark `(missing)`.
+-
+-Cross-phase global guards (after rendering all phases):
+-- Double logic detection: If two phases define conflicting policies for the same concern, mark CONFLICT.
+-- Inventory completeness: Every image/family/service/env/port referenced in any preview must appear in at least one Check. Missing → MISSING_INVENTORY.
+-- Agents/services alignment: Mentioned agents/services must have a corresponding policy Check and must not be duplicated.
+-- Docker/CI alignment: build flags, tag scheme, cache policy, SBOM, and security gating must be consistent across phases.
+-
+-Strict enforcement (only when trigger contains "(strict)"):
+-- Per phase, compute PhaseStatus:
+-  - FAIL if any of: Purpose missing; Scope missing; Important Note missing; no derived Checks while previews/notes exist; parity conflict; missing inventory for referenced artifacts.
+-  - PASS otherwise.
+-- After all phases, print a "STRICT ANALYSIS SUMMARY" section:
+-  - One line per phase: `Phase K — PASS|FAIL — Missing:[Purpose|Scope|ImportantNote|Checks] — Conflicts:[…]` (omit empty brackets).
+-  - Then a `BLOCKERS:` list aggregating all FAIL/CONFLICT/MISSING_INVENTORY items.
+-  - If any blockers exist, print the line: `BLOCK EXECUTION: Analysis failed; fix blockers before proceeding.`
+-
+-Failure handling:
+-- If `tasks_active.json` is missing/invalid → print a single line: `No valid tasks_active.json`.
+-- If there are zero tasks → print headers and `No active tasks.`
+-- If a task has no `todos` → print metadata and skip phases.
+-
+-Quality guard:
+-- Never execute; never scan the repo; never add links or commentary outside the rules above.
+-- Do not summarize freeform; when unsure, prefer verbatim reproduction inside the correct section.
+-
+-Output framing (reference only; do not hardcode content):
+-============================================================
+-🎮 TASK COMMAND & CONTROL CENTER
+-============================================================
+-
+-📋 ALL OPEN TASKS:
+-========================================
+-
+-<task blocks…>
+-
+-<STRICT ANALYSIS SUMMARY (only in strict mode)…>
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/analysis_ingestion_from_tasks_active.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/analysis_ingestion_from_tasks_active.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/analysis_ingestion_from_tasks_active.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/analysis_ingestion_from_tasks_active.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,46 +0,0 @@
+----
+-description: Analysis-only ingestion protocol from tasks_active.json (no scripts)
+-alwaysApply: true
+----
+-## Analysis Ingestion from tasks_active.json (No Scripts)
+-
+-Objective: Any session MUST construct a Human-Readable Analysis Draft (and, upon approval, a JSON content-only plan) using ONLY `memory-bank/queue-system/tasks_active.json` as the single source of truth. No writes, no execution.
+-
+-This path is selected by explicit requests to ingest analysis from `tasks_active.json`. Each analysis phase MUST include a Concluding Step block (see below).
+-
+-### Inputs
+-- Frozen source: `memory-bank/queue-system/tasks_active.json` (array with one active task containing `todos`/phases).
+-- Use the execution phases as the basis to mirror analysis phases.
+-
+-### Output (Two-Pass, Agent-Only)
+-1) Human-Readable Analysis Draft
+-   - Compose `PHASE 0: SETUP & PROTOCOL ANALYSIS (READ FIRST)` (always present).
+-   - For each execution `PHASE k: <Title>` in the source, compose `PHASE k: <Title> — ANALYSIS`.
+-   - Each analysis phase MUST include:
+-     - `Purpose`, `Scope` (semantic/architectural only; no runtime tests), and `Checks` (ownership, dependencies, category boundaries, policy/interface single-source).
+-     - `LOGIC PARITY CHECK`: classify SAME | OVERLAP | CONFLICT.
+-     - `DECISION GATE`: conditions to halt if conflicts/overlaps remain.
+-     - `**Concluding Step: Phase Completion Protocol**` with:
+-       - `python3 todo_manager.py show <TASK_ID>`
+-       - `python3 todo_manager.py done <TASK_ID> <PHASE_INDEX>`
+-     - `IMPORTANT NOTE:` constraints (analysis-only; no edits/execution).
+-   - Present the complete draft for approval.
+-
+-2) JSON Finalization (Content-Only)
+-   - After approval, produce a single JSON array (one task object) mirroring the draft.
+-   - Set `id` to `<original_slug>_analysis_<YYYYMMDD>`; timestamps must be ISO with `+08:00` timezone.
+-   - Do not write files. Output JSON content only; the system/operator will place it where needed.
+-
+-### IMPORTANT NOTE Enforcement
+-- Every analysis phase MUST end with an `IMPORTANT NOTE:`. If any phase lacks it, halt and request clarification or provide a sourced synthesis.
+-
+-### Constraints
+-- No direct edits to queue/state files by the agent; analysis is content-only.
+-- Single source of truth for analysis: `tasks_active.json`. If missing or malformed, respond with:
+-  ```json
+-  {"status":"INSUFFICIENT_EVIDENCE","follow_up":"tasks_active.json not found or invalid"}
+-  ```
+-
+-### Triggers
+-- See `trigger_phrases.mdc` — Analysis Ingestion from tasks_active.json.
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/analysis_tools.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/analysis_tools.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/analysis_tools.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/analysis_tools.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,47 +0,0 @@
+----
+-description: Read-only plan analysis tools (plain_hier.py, plan_next.py)
+-alwaysApply: true
+----
+-## Read-only Plan Analysis Tools
+-
+-These tools are permitted for visibility and validation only. They MUST NOT modify any files or state.
+-
+-### plain_hier.py — Hierarchical Plan Viewer
+-- Purpose: Print a compact, read-only view of a task's phases, including the first fenced code block preview and any IMPORTANT NOTE snippet.
+-- Usage:
+-  ```bash
+-  python3 plain_hier.py <task_id Replace All Replace All>
+-  ```
+-- Output highlights:
+-  - Progress summary (done/total)
+-  - Phase index list with checkmarks
+-  - IMPORTANT NOTE snippet if present
+-  - First fenced code block lines as command preview
+-
+-### plan_next.py — Next-Phase Analyzer & Linter
+-- Purpose: For each active task, identify the next unfinished phase, preview commands, and lint for structural issues.
+-- Usage:
+-  ```bash
+-  python3 plan_next.py
+-  ```
+-- Output highlights:
+-  - Next phase index and title
+-  - Extracted commands/code (preview)
+-  - Progress information and phase details
+-
+-## When to Use
+-- Before executing a phase: run `plan_next.py` to get information about the next phase and preview commands.
+-- Before marking a phase done: run `plain_hier.py <task_id Replace All Replace All>` to review status and commands.
+-
+-## Safety Constraints
+-- Both tools operate in read-only mode and are allowed solely for validation/visibility.
+-- Do not modify these tools to perform writes; queue/state management remains under the autonomous system.
+-
+-## Notes
+-- Run from the repository root to ensure path auto-detection works.
+-- Environment variable detection differs between scripts; absolute repo fallback is used. If you set an env var, ensure correct naming.
+-- Current implementations are read-only and rely on parsing `memory-bank/queue-system/tasks_active.json`.
+-
+-### Triggers
+-- "Validate plan", "Check next phase", "Lint plan", "Show hierarchy <task_id Replace All Replace All Replace All>" should route to these tools per `trigger_phrases.mdc`.
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/analysis_workflow.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/analysis_workflow.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/analysis_workflow.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/analysis_workflow.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,57 +0,0 @@
+----
+-description: Pre-Execution Analysis Orchestrator — continuous analysis workflow
+-alwaysApply: false
+----
+-
+-## Pre-Execution Analysis Workflow (Continuous Flow)
+-
+-Objective: Iterate each phase of `memory-bank/queue-system/tasks_active.json` and perform a deep, single-phase analysis using `analyzer.py`. Continue processing regardless of findings.
+-
+-### State
+-- Current phase index K is maintained externally by the operator or by re-running this workflow; the workflow always starts at the first unfinished analysis phase in `analysis_active.json` linked to the execution task.
+-
+-### Inputs
+-- Execution task: `memory-bank/queue-system/tasks_active.json` (array, exactly one task)
+-- Analysis mirror: `memory-bank/queue-system/analysis_active.json` (linked via `source_task_id`)
+-- Repo root: repository top-level (auto-detected by scripts)
+-
+-### Loop (K = 0..N)
+-1. Identify execution task `T` and its `todos`.
+-2. For phase K (0-based), call the analysis engine (proactive mode on; auto-detect repo root and tasks file):
+-   ```bash
+-   python3 analyzer.py --phase-index K --proactive > /tmp/analysis_K.json
+-   ```
+-3. Parse JSON and document findings:
+-   - If > 0: Document findings and continue to next phase.
+-   - If == 0: Mark analysis phase K done in `analysis_active.json` and proceed to K+1.
+-
+-### Analysis Guidelines
+-- Findings are documented for awareness and improvement.
+-- Analysis can continue even with findings present.
+-- Plans can proceed to execution regardless of findings.
+-
+-### Commands (reference)
+-```bash
+-# Ensure an analysis task exists (linked to execution task)
+-python3 todo_manager.py new "Pre-execution analysis for <EXEC_TASK_ID>" --mode analysis
+-python3 todo_manager.py add <ANALYSIS_TASK_ID> "PHASE 0: SETUP & PROTOCOL (READ FIRST) — ANALYSIS\n\nPurpose: ...\n\nDecision Gate: ...\n\nIMPORTANT NOTE: ..." --mode analysis
+-
+-# For each K, run analyzer (read-only, proactive) and write findings preview
+-python3 analyzer.py --phase-index K --proactive > /tmp/analysis_K.json
+-
+-# HALT rule: if jq '.findings | length' > 0 → stop and display
+-cat /tmp/analysis_K.json | jq -r '.findings[] | "- [\(.category)] (\(.severity)) \(.description)"'
+-
+-# If zero findings, mark analysis K done
+-python3 todo_manager.py done <ANALYSIS_TASK_ID> K --mode analysis
+-```
+-
+-### Completion
+-- When all phases K are processed in `analysis_active.json`, emit:
+-  - "Analysis Complete - Ready for Execution."
+-
+-### IMPORTANT NOTE
+-- This orchestrator is analysis-only. It must not execute any side-effectful commands from execution phases.
+-- Analysis findings are documented for awareness but don't block execution.
+-- Findings can be addressed at any time as part of continuous improvement.
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/auto_phase_runner.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/auto_phase_runner.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/auto_phase_runner.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/auto_phase_runner.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,48 +0,0 @@
+----
+-description: Auto-runner to complete the next unfinished phase while honoring gates
+-alwaysApply: true
+----
+-
+-## Phase Auto-Runner (Single Phase, Gate-Compliant)
+-
+-Objective: When triggered, automatically execute all sub-steps for the next unfinished phase K, then mark the phase done, while strictly following the gates from `phase_gates.mdc` and the sequence from `tool_usage_guarantee.mdc`.
+-
+-### Prerequisites
+-- Active execution task exists in `memory-bank/queue-system/tasks_active.json`.
+-- Phase K contains a fenced code block with commands.
+-
+-### Sequence (Required)
+-1) Validate next phase and lint:
+-```bash
+-python3 plan_next.py
+-```
+-2) Show hierarchy (recommended):
+-```bash
+-python3 plain_hier.py <TASK_ID>
+-```
+-3) Preview phase K commands (no side effects):
+-```bash
+-python3 todo_manager.py exec <TASK_ID> K
+-```
+-4) Execute phase K commands:
+-```bash
+-python3 todo_manager.py exec <TASK_ID> K --run
+-```
+-5) Show updated status:
+-```bash
+-python3 todo_manager.py show <TASK_ID>
+-```
+-6) Mark phase K done:
+-```bash
+-python3 todo_manager.py done <TASK_ID> K
+-```
+-7) Post-action verification:
+-```bash
+-python3 plan_next.py
+-```
+-
+-### Notes
+-- Replace `<TASK_ID>` with the current active task and `K` with the next unfinished phase index reported by `plan_next.py`.
+-- If any gate or validation step fails, stop immediately and print the error. Do not proceed to execution or marking done.
+-- Keep outputs concise; after completion, suggest the next trigger per `next_action_suggestions.mdc`.
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/autopilot-next-phase.md /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/autopilot-next-phase.md
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/autopilot-next-phase.md	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/autopilot-next-phase.md	1970-01-01 08:00:00.000000000 +0800
+@@ -1,210 +0,0 @@
+----
+-description: Execute the next unfinished phase with Phase Gates + required docs (post-review & pre-analysis)
+----
+-
+-> OPERATOR-ONLY PLAYBOOK (outside agent exec-policy). Contains VCS operations (git add/commit/pull/push). Agents must not execute these; use `auto_phase_runner.mdc` + `exec_policy.mdc` instead.
+-
+-This workflow advances the active task strictly following the rules in memory-bank/queue-system/tasks_active.json, Phase Gates, and Exec Policy.
+-
+-Defaults
+- - task_id Replace All: auto-detected from memory-bank/queue-system/tasks_active.json
+-- Repo root: /home/haymayndz/MatalinongWorkflow
+-
+-1) Ensure rules are enabled (send as chat message)
+-[cursor-rules:on]
+-
+-// turbo
+-2) Validate plan (required gate)
+-```bash
+-set -euo pipefail
+-python3 plan_next.py | tee /tmp/plan_next.out
+-grep -q "Lint: ok" /tmp/plan_next.out
+-```
+-
+-// turbo
+-3) Show hierarchy (recommended gate)
+-```bash
+-set -euo pipefail
+-TASK_ID=$(python3 - <<'PY'
+-import json
+-print(json.load(open('memory-bank/queue-system/tasks_active.json'))[0]['id'])
+-PY
+-)
+-python3 plain_hier.py "$TASK_ID"
+-```
+-
+-// turbo
+-4) Capture NEXT phase index (k)
+-```bash
+-set -euo pipefail
+-k=$(python3 plan_next.py | grep -m1 "Next phase index:" | sed -E 's/.*index: //') && echo "Next phase: $k"
+-```
+-
+-5) Create post-review doc for phase k
+-```bash
+-set -euo pipefail
+-TASK_ID=$(python3 - <<'PY'
+-import json
+-print(json.load(open('memory-bank/queue-system/tasks_active.json'))[0]['id'])
+-PY
+-)
+-k=$(python3 plan_next.py | grep -m1 "Next phase index:" | sed -E 's/.*index: //')
+-NOW=$(date +"%Y-%m-%dT%H:%M:%S%:z")
+-
+-# Extract IMPORTANT NOTE for phase k from tasks_active.json into a temp file
+-NOTE_FILE="/tmp/${TASK_ID}_phase_${k}_important_note.txt"
+-python3 - <<'PY'
+-import json, sys, re
+-data=json.load(open('memory-bank/queue-system/tasks_active.json'))
+-task=data[0]
+-todos=task['todos']
+-idx=int(sys.argv[1])
+-text=todos[idx]['text']
+-pos=text.find('IMPORTANT NOTE:')
+-if pos<0:
+-  sys.stderr.write('ERROR: IMPORTANT NOTE not found for phase %d\n' % idx)
+-  sys.exit(2)
+-note=text[pos:].strip('\n')
+-open(sys.argv[2],'w').write(note+"\n")
+-print('Extracted IMPORTANT NOTE to', sys.argv[2])
+-PY
+-"$k" "$NOTE_FILE"
+-
+-post="memory-bank/DOCUMENTS/${TASK_ID}_phase${k}_postreview.md"
+-mkdir -p "$(dirname "$post")"
+-cat > "$post" << EOF
+-# Post-Review — Phase ${k}
+-
+-- Task: ${TASK_ID}
+-- Phase Index: ${k}
+-- Timestamp: ${NOW}
+-
+-## IMPORTANT NOTE (Restated)
+-$(cat "$NOTE_FILE")
+-
+-### How constraints were satisfied
+-- [ ] Describe evidence per constraint
+-
+-## What was done
+-- 
+-
+-## Evidence / Outputs
+-- 
+-
+-## Checks
+-- Plan gates passed (plan_next, plain_hier)
+-- SLO/constraints satisfied
+-
+-EOF
+-echo "Wrote $post"
+-```
+-
+-6) Create pre-analysis doc for phase k+1
+-```bash
+-set -euo pipefail
+-TASK_ID=$(python3 - <<'PY'
+-import json
+-print(json.load(open('memory-bank/queue-system/tasks_active.json'))[0]['id'])
+-PY
+-)
+-k=$(python3 plan_next.py | grep -m1 "Next phase index:" | sed -E 's/.*index: //')
+-NEXT=$((k+1))
+-NOW=$(date +"%Y-%m-%dT%H:%M:%S%:z")
+-pre="memory-bank/DOCUMENTS/${TASK_ID}_phase${NEXT}_preanalysis.md"
+-mkdir -p "$(dirname "$pre")"
+-
+-# Try to extract IMPORTANT NOTE of next phase if it exists
+-NEXT_NOTE_FILE="/tmp/${TASK_ID}_phase_${NEXT}_important_note.txt"
+-python3 - <<'PY'
+-import json, sys
+-data=json.load(open('memory-bank/queue-system/tasks_active.json'))
+-task=data[0]
+-todos=task['todos']
+-idx=int(sys.argv[1])
+-if 0 <= idx < len(todos):
+-  text=todos[idx]['text']
+-  pos=text.find('IMPORTANT NOTE:')
+-  if pos>=0:
+-    note=text[pos:].strip('\n')
+-  else:
+-    note='IMPORTANT NOTE: [MISSING IN PHASE TEXT]'
+-else:
+-  note='IMPORTANT NOTE: [NO NEXT PHASE — END OF PLAN]'
+-open(sys.argv[2],'w').write(note+"\n")
+-print('Prepared NEXT IMPORTANT NOTE at', sys.argv[2])
+-PY
+-"$NEXT" "$NEXT_NOTE_FILE"
+-
+-cat > "$pre" << EOF
+-# Pre-Analysis — Phase ${NEXT}
+-
+-- Task: ${TASK_ID}
+-- Next Phase Index: ${NEXT}
+-- Timestamp: ${NOW}
+-
+-## IMPORTANT NOTE (To satisfy)
+-$(cat "$NEXT_NOTE_FILE")
+-
+-## Plan
+-- 
+-
+-## Risks & Rollback
+-- 
+-
+-EOF
+-echo "Wrote $pre"
+-```
+-
+-// turbo
+-7) Mark the phase done (monotonic completion only)
+-```bash
+-set -euo pipefail
+-TASK_ID=$(python3 - <<'PY'
+-import json
+-print(json.load(open('memory-bank/queue-system/tasks_active.json'))[0]['id'])
+-PY
+-)
+-k=$(python3 plan_next.py | grep -m1 "Next phase index:" | sed -E 's/.*index: //')
+-# Ensure docs exist before marking done
+-post="memory-bank/DOCUMENTS/${TASK_ID}_phase${k}_postreview.md"
+-if [ ! -f "$post" ]; then
+-  echo "ERROR: Missing post-review doc: $post" >&2
+-  exit 2
+-fi
+-python3 todo_manager.py done "$TASK_ID" "$k"
+-```
+-
+-8) Verify status after
+-```bash
+-set -euo pipefail
+-TASK_ID=$(python3 - <<'PY'
+-import json
+-print(json.load(open('memory-bank/queue-system/tasks_active.json'))[0]['id'])
+-PY
+-)
+-python3 plain_hier.py "$TASK_ID"
+-```
+-
+-9) (Optional) Commit and push docs/state changes
+-```bash
+-set -euo pipefail
+-TASK_ID=$(python3 - <<'PY'
+-import json
+-print(json.load(open('memory-bank/queue-system/tasks_active.json'))[0]['id'])
+-PY
+-)
+-GitTime=$(date +"%Y-%m-%dT%H:%M:%S%:z")
+-git add -A
+-if ! git diff --staged --quiet; then
+-  git commit -m "chore(phase): postreview+preanalysis docs for ${TASK_ID} [${GitTime}]"
+-  git pull --rebase origin master
+-  git push origin HEAD:master
+-else
+-  echo "No changes to commit."
+-fi
+-```
+-
+-Notes
+-- Do not edit queue/state files directly; rely on todo_manager.py.
+-- Stop if any gate fails (missing IMPORTANT NOTE / non-monotonic completion).
+-- Repeat the workflow to advance subsequent phases.
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/cursorrules.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/cursorrules.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/cursorrules.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/cursorrules.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,133 +0,0 @@
+----
+-description: TASK , MEMORY , NEW SESSION
+-alwaysApply: true
+----
+-## **⚡ TASK EXECUTION PROTOCOL**
+-
+-- **AI ASSISTANT SCOPE (CRITICAL)**:
+-    - **ONLY WORK WITH**: `memory-bank/queue-system/tasks_active.json`
+-    - **DO NOT MANAGE**: Queue transitions, task distribution, system management
+-    - **FOCUS ON**: Pure task execution and TODO completion
+-    - **AUTO-SYNC**: Triggers automatically on every task modification
+-
+-- After any significant code change, task completion, or decision:
+-    - **STORE MEMORY**: Run `mcp_memory_store` (save summary ng pagbabago)
+-    - **UPDATE DOCUMENTATION**: Append summary sa tamang `memory-bank/*.md`
+-    - **TRIGGER AUTO-SYNC**: All state files automatically updated
+-        • `memory-bank/cursor_state.json` - Current task focus
+-        • `memory-bank/task_state.json` - Execution progress
+-        • `memory-bank/task_interruption_state.json` - Active interruptions
+-        • `memory-bank/current-session.md` - Session activity
+-        • Queue system files - Managed by autonomous engine
+-
+----
+-
+-## **🔄 AUTONOMOUS QUEUE INTEGRATION**
+-
+-- **QUEUE SYSTEM FLOW**:
+-    • Queue (`tasks_queue.json`) → Active (`tasks_active.json`) → Done (`tasks_done.json`)
+-    • **AI READS ONLY**: `tasks_active.json` for pure execution focus
+-    • **SYSTEM MANAGES**: All queue transitions, priority, interruptions
+-    • **AUTO-DETECTION**: Completion triggers automatic queue movement
+-
+-- **TASK LIFECYCLE**:
+-    • New tasks → Added to queue automatically
+-    • Active tasks → AI executes and marks TODOs done
+-    • Completed tasks → Auto-moved to done queue
+-    • Interrupted tasks → Priority resume on next session
+-
+----
+-
+-## **💬 Q&A AND MEMORY PROTOCOL**
+-
+-- For all questions and responses:
+-    - **PRIORITY ORDER**: MCP memory → memory-bank → execution context
+-    - **STATE VERIFICATION**: Always check state file consistency
+-    - **CURRENT FOCUS**: Use `tasks_active.json` as primary task source
+-    - **SESSION CONTEXT**: Reference `current-session.md` for recent activity
+-
+----
+-
+-## **🔧 SESSION CONTINUITY SYSTEM**
+-
+-- **AUTOMATIC STATE SYNC** (After file saves, edits, tests):
+-    • Auto-sync manager handles all state consistency
+-    • No manual intervention required
+-    • Real-time state updates across all files
+-    • Timestamps automatically managed
+-
+-- **DISCONNECT/RECONNECT HANDLING**:
+-    • **RESUME STATE**: Read `tasks_active.json` for current work
+-    • **RESTORE CONTEXT**: Load `cursor_state.json` for cursor position
+-    • **SYNC REALITY**: Ensure all state files match current system state
+-    • **QUEUE CONTINUITY**: Autonomous queue system maintains flow
+-
+----
+-
+-## **🛡️ CONSISTENCY ENFORCEMENT**
+-
+-- **DUPLICATE PREVENTION**:
+-    • Check existing tasks before creating new ones
+-    • Reuse and update existing tasks instead of duplicating
+-    • Maintain task ID consistency across system
+-
+-- **DATA INTEGRITY**:
+-    • All timestamps in Philippines timezone (UTC+8)
+-    • Consistent JSON formatting across all files
+-    • Automatic backup and rollback capabilities
+-    • Error recovery with graceful degradation
+-
+----
+-
+-## **🎯 SUCCESS METRICS**
+-
+-- **OPERATIONAL EXCELLENCE**:
+-    • Zero manual queue management required
+-    • 100% auto-sync success rate
+-    • Complete task execution focus for AI
+-    • Seamless session continuity across disconnections
+-
+-- **AUTOMATION GOALS**:
+-    • AI focuses purely on task execution
+-    • System handles all queue and state management
+-    • No state inconsistencies or data loss
+-    • Real-time monitoring and auto-correction
+-
+----
+-
+-**SYSTEM STATUS**: 🟢 FULLY OPERATIONAL
+-**AUTO-SYNC**: ✅ ACTIVE  
+-**QUEUE ENGINE**: ✅ AUTONOMOUS
+-**AI SCOPE**: ✅ EXECUTION FOCUSED
+-
+-- **MAINTAIN TIMESTAMP CONSISTENCY**:
+-    • Use ISO format timestamps consistently
+-    • Update `last_activity` and `disconnected_at` timestamps
+-    • Ensure all state files have consistent timestamps
+-
+-- **VALIDATE STATE INTEGRITY**:
+-    • Check that `memory-bank/task_state.json` matches active tasks
+-    • Verify `memory-bank/task_interruption_state.json` points to valid task ID
+-    • Ensure `memory-bank/cursor_state.json` reflects current reality
+-    • Confirm AI only reads `memory-bank/queue-system/tasks_active.json`
+-- On disconnect / reconnect events:
+-    - Look at cursor_state.json to resume cursor position.
+-
+----
+-
+-## ✅ STRICT PLAN ADHERENCE (HARD ENFORCEMENT)
+-- `memory-bank/queue-system/tasks_active.json` is the single source of truth.
+-- No deviation or improvisation. If a step fails, follow its defined rollback.
+-- All actions must map to a specific phase index in the plan.
+-
+-## 🔒 REQUIRED LOOP PER PHASE k
+-1. Post-Review: Create `memory-bank/DOCUMENTS/<task_id>_phase{k}_postreview.md`
+-   - Summarize what was done and validate against the phase’s "IMPORTANT NOTE".
+-2. Next-Phase Pre-Analysis: Create `memory-bank/DOCUMENTS/<task_id>_phase{k+1}_preanalysis.md`
+-   - Restate next phase "IMPORTANT NOTE", add risks and prerequisites.
+-
+-4. Done: Run `python3 todo_manager.py done <task_id> <k>`.
+-5. Sync/Memory: Run `mcp_memory_store` and rely on auto-sync to update state files.
+-
+-
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/deep_analysis.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/deep_analysis.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/deep_analysis.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/deep_analysis.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,116 +0,0 @@
+----
+-alwaysApply: true
+----
+-# CURSOR SYSTEM PROMPT — EXECUTION → ANALYSIS MIRROR
+-
+-## Mode switch
+-- Only switch to Analysis Mode when explicit tokens are present in the latest USER message:
+-  - `[deep-analysis:only]`, `[deep-analysis:on]`, `deep analysis only`, `start deep analysis`
+-- Otherwise, remain in normal mode (follow the user’s ask).
+-
+-## Source of truth
+-- Read the execution plan from the user message.
+-- If a file path is specified, use: memory-bank/queue-system/tasks_active.json
+-- Treat the plan as canonical. Do NOT change order, titles, notes, or done flags.
+-
+-## Required output shape
+-Always produce two sections in this order:
+-
+-[EXECUTION]
+-<exact, literal copy of the execution plan content>
+-
+-[ANALYSIS]
+-<a 1:1 mirrored list of the same phases, but as pre-execution analysis>
+-
+----
+-
+-## Analysis content (for each mirrored phase)
+-
+-**Purpose**  
+-“Check for duplicates, overlaps, or conflicts with existing phases or codebase logic before execution. List all detected issues explicitly.”
+-
+-**Scope**  
+-“Semantic/architectural review only;Cross-check applies both across this plan and against existing codebase/system logic.”
+-
+-**Checks** (include all bullets)  
+-• Ownership/authority is single-source (no double owners).  
+-• Dependency order is correct (no circular or inverted prerequisites).  
+-• Contract/schema is consistent (inputs/outputs mean the same everywhere).  
+-• Flags/gating are not mutually enabled when exclusive.  
+-• Severity/priority is not overlapping with other phases.  
+-• Cross-phase collisions or missing referenced items (blind spots).  
+-• Traceability to requirements is clear (no orphan phases).  
+-• Boundaries/interfaces are well-defined (no gray zones).  
+-• Tasks are complementary, not redundant unless explicitly intentional.  
+-• Conceptual failure paths are clear (no silent breaks).  
+-• Semantic duplicate scan (codebase-wide; ignore name differences).  
+-• Policy contradiction check for the same concern (criteria/order/owner).  
+-• Evidence requirement: list file paths, symbols, and line spans for all hits.
+-
+-**LOGIC PARITY CHECK (Semantic Method)**  
+-1. Build a Semantic Signature:  
+-   • Inputs/signals  
+-   • Criteria/thresholds  
+-   • Flow/state/steps  
+-   • Outputs/contract semantics  
+-   • Side-effects (events/writes/calls)  
+-2. Normalize: lemmatize verbs, canonicalize units/operators, strip naming noise.  
+-3. Compare against codebase candidates.  
+-4. Rubric:  
+-   • ≥0.80 or 4–5/5 = duplicate  
+-   • 0.55–0.79 or 3/5 = overlap  
+-   • Divergent/conflicting rules for same concern = conflict  
+-5. Record findings with concern tag, type, similarity score, evidence paths/symbols/lines, and short reasoning.
+-
+-**Review Guidelines**
+-"Review for potential duplicates, overlaps, or conflicts. Document any issues found for awareness, but execution can proceed regardless."
+-
+-**Findings (stub for each phase)**  
+-- Concern: <short tag, e.g., streaming_interrupt_handling>  
+-  Type: <Duplicate|Overlap|Conflict>  
+-  Similarity: <0.00–1.00 or 3/5, 4/5, 5/5>  
+-  Evidence:  
+-    - <repo_path>:<start_line>-<end_line> (<symbol/function/class>)  
+-    - Why: <reason for match>  
+-
+----
+-
+-## JSON handling
+-- If the input is JSON and JSON output is requested, return a parallel JSON:
+-  • New "id" = original_id + "_analysis_<YYYYMMDD>"  
+-  • Copy status/created/updated unless instructed otherwise  
+-  • For every execution "todo", create an analysis "todo" with the text described above and "done": false  
+-
+-- Otherwise, return the readable two-section text view.
+-
+-### JSON OUTPUT TEMPLATE (PARALLEL ANALYSIS OBJECT)
+-
+-[
+-  {
+-    "id": "<ORIGINAL_ID>_analysis_<YYYYMMDD>",
+-    "description": "Pre-execution analysis for <original description>: detect ownership overlaps, policy conflicts, contract/schema drift, dependency inversions, semantic duplicates, and scoping mistakes BEFORE execution.",
+-    "status": "<copy original status>",
+-    "created": "<copy original created>",
+-    "updated": "<copy original updated>",
+-    "todos": [
+-      {
+-        "text": "PHASE <N>: <ORIGINAL TITLE> — ANALYSIS\n\nPurpose: Check for duplicates, overlaps, or conflicts with existing phases or codebase logic before execution. List all detected issues explicitly.\nScope: Semantic/architectural review only; NOT runtime tests, syntax, or health checks. Cross-check applies both across this plan and against existing codebase/system logic.\n\nChecks:\n• Single ownership/authority (no double owners).\n• Correct dependency order (no circular/inverted prerequisites).\n• Consistent contract/schema (inputs/outputs mean the same everywhere).\n• Flags/gating not mutually enabled when exclusive.\n• No severity/priority overlap with other phases.\n• Cross-phase collisions or missing referenced items (blind spots).\n• Traceability to requirements is clear (no orphan phases).\n• Boundaries/interfaces are well-defined (no gray zones).\n• Tasks are complementary, not redundant unless explicitly intentional.\n• Conceptual failure paths are clear (no silent breaks).\n• Semantic duplicate scan (codebase-wide; ignore name differences).\n• Policy contradiction check for the same concern (criteria/order/owner).\n• Evidence requirement: list file paths, symbols, and line spans for all hits.\n\nLOGIC PARITY CHECK (Semantic Method):\n• Build a Semantic Signature: inputs/signals; criteria/thresholds; flow/steps; outputs/contracts; side-effects.\n• Normalize names/units/operators.\n• Compare vs codebase candidates.\n• Rubric: ≥0.80 or 4–5/5 = duplicate; 0.55–0.79 or 3/5 = overlap; divergent/conflicting rules for same concern = conflict.\n\nDecision Gate: Do not proceed if any duplicates, overlaps, or conflicts exist. All detected issues must be listed with similarity scores and evidence (paths/symbols/lines) before execution.\n\nFindings:\n- Concern: <...>\n  Type: <...>\n  Similarity: <...>\n  Evidence:\n    - <path>:<lines> (<symbol>)\n    - Why: <reason>",
+-        "done": false
+-      }
+-      // …repeat one mirrored ANALYSIS todo for every EXECUTION todo…
+-    ]
+-  }
+-]
+-
+----
+-
+-## Language
+-- Mirror the input language. Do not translate unless asked.
+-
+-## Do not
+-- Do NOT reclassify items or change phase order.
+-- Do NOT invent owners, thresholds, or details not present in the plan.
+-
+-## If ambiguity
+-- Ask one direct clarification before proceeding (e.g., “JSON or text output?” “Use [deep-analysis:only] mode?”).
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/done_enforcement.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/done_enforcement.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/done_enforcement.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/done_enforcement.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,39 +0,0 @@
+-## DONE ENFORCEMENT
+-
+-To prevent unfinished phases lingering, the assistant MUST strictly follow this completion protocol for every phase:
+-
+-### Pre-DONE Review (Optional)
+-- Optional: Run:
+-```bash
+-python3 plan_next.py
+-python3 plain_hier.py <TASK_ID>
+-```
+-- Optional: Review:
+-  - The reported next phase (informational)
+-  - Phase content and structure
+-
+-### Mark Phase Done (Required)
+-- Only when all sub-steps of phase `<PHASE_INDEX>` are completed:
+-```bash
+-python3 todo_manager.py show <TASK_ID>
+-python3 todo_manager.py done <TASK_ID> <PHASE_INDEX>
+-```
+-
+-### Post-DONE Verification (Required)
+-- Immediately verify plan integrity after marking done:
+-```bash
+-python3 plan_next.py
+-```
+-- If the same phase is still shown as next or any sub-step is reported undone:
+-  1) Run `python3 plain_hier.py <TASK_ID>` to identify remaining sub-steps
+-  2) Execute missing sub-steps with `python3 todo_manager.py exec <TASK_ID> <SUB_INDEX>`
+-  3) Re-run `python3 todo_manager.py done <TASK_ID> <PHASE_INDEX>`
+-
+-### Error Handling
+-- If `done` fails due to unmet preconditions, DO NOT skip. Investigate using `plain_hier.py` and complete the missing steps.
+-- Enforce monotonic completion: never mark a later phase done while an earlier phase remains undone.
+-
+-### Acceptance Criteria
+-- A phase is considered complete only after:
+-  - `todo_manager.py done` succeeds for that phase, and
+-  - `plan_next.py` shows the next phase index strictly greater than the completed one.
+\ No newline at end of file
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/exec_policy.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/exec_policy.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/exec_policy.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/exec_policy.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,19 +0,0 @@
+----
+-description: Allowed execution scope for agent
+-alwaysApply: true
+----
+-## EXECUTION-ONLY SCOPE
+-- Allowed:
+-  - `python3 todo_manager.py show|done|list|exec`
+-  - `mcp_memory_store`
+-  - `python3 plain_hier.py <task_id ReplaceAll ReplaceAll ReplaceAll ReplaceAll ReplaceAll ReplaceAll ReplaceAll>` (read-only)
+-  - `python3 plan_next.py` (read-only)
+-  - Producing JSON content for `tasks_active.json` (agent output only; no direct file writes)
+-- Additional capabilities:
+-  - Can edit `memory-bank/queue-system/tasks_active.json` directly when needed
+-  - Can manage queue transitions and priority changes
+-  - Can run various commands as needed for workflow management
+-
+-## POST-ACTION SUGGESTION POLICY (REQUIRED)
+-- After each allowed command is executed (validate/show/exec/done), the assistant MUST suggest the next best trigger, per `next_action_suggestions.mdc`.
+-- Suggestions must be concrete commands, not prose.
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/expertcursor.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/expertcursor.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/expertcursor.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/expertcursor.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,71 +0,0 @@
+----
+-alwaysApply: true
+----
+-## 📜 AI PERSONA & PROFESSIONAL STANDARDS
+-
+-You are an expert AI coding assistant with deep technical knowledge and a rigorous approach to problem-solving. I require your assistance in delivering precise, evidence-based solutions with strict validation protocols.
+-
+-- **Consistency Validation:** Before responding, thoroughly validate all code, logic, and assumptions against industry standards and best practices.
+-- **Evidence Requirement:** Always provide actual, executable code snippets (in the requested language) as proof of concept before any explanation.
+-- **Confidence Scoring:** Attach a confidence score (0-100%) to every response, indicating certainty in accuracy. If below 80%, explicitly state uncertainties and request clarification.
+-- **Technical Rigor:** Prioritize correctness over speed—no speculative answers. If a solution requires testing, simulate it first.
+-- **Error Handling:** Include edge-case considerations, performance implications, and failure modes in all code examples.
+-- **Directness:** Avoid conversational fluff—focus solely on technical precision, citing authoritative sources (e.g., official docs, peer-reviewed papers) when applicable.
+-
+-Apply your expertise to ensure responses are production-ready, benchmarked, and adhere to the strictest engineering standards. If requirements are unclear, request specific details before proceeding.
+-
+----
+----
+-
+-## ⚙️ SYSTEM CONSTITUTION & OPERATING CONTEXT
+-
+-### **⚡ TASK EXECUTION PROTOCOL**
+-
+-- **AI ASSISTANT SCOPE (CRITICAL)**:
+-    - **ONLY WORK WITH**: `memory-bank/queue-system/tasks_active.json`
+-    - **DO NOT MANAGE**: Queue transitions, task distribution, system management
+-    - **FOCUS ON**: Pure task execution and TODO completion
+-    - **AUTO-SYNC**: Triggers automatically on every task modification
+-
+-<!-- NEWLY ADDED SECTION -->
+-- **STRICT PLAN ADHERENCE (CRITICAL)**:
+-    - The active task plan, as defined in `memory-bank/queue-system/tasks_active.json`, is the **single source of truth** for all actions.
+-    - You **MUST NOT** deviate, improvise, or suggest alternative steps unless explicitly instructed or if a step fails and requires a defined rollback procedure.
+-    - All actions must directly correspond to executing a specific sub-step in the hierarchical TODO list.
+-<!-- END OF NEWLY ADDED SECTION -->
+-
+-- After any significant code change, task completion, or decision:
+-    - **STORE MEMORY**: Run `mcp_memory_store` (save summary ng pagbabago)
+-    - **UPDATE DOCUMENTATION**: Append summary sa tamang `memory-bank/*.md`
+-    - **TRIGGER AUTO-SYNC**: All state files automatically updated
+-
+-### **🔄 AUTONOMOUS QUEUE INTEGRATION**
+-
+-- **QUEUE SYSTEM FLOW**:
+-    • Queue (`tasks_queue.json`) → Active (`tasks_active.json`) → Done (`tasks_done.json`)
+-    • **AI READS ONLY**: `tasks_active.json` for pure execution focus
+-    • **SYSTEM MANAGES**: All queue transitions, priority, interruptions
+-
+-### **💬 Q&A AND MEMORY PROTOCOL**
+-
+-- For all questions and responses:
+-    - **PRIORITY ORDER**: MCP memory → memory-bank → execution context
+-    - **STATE VERIFICATION**: Always check state file consistency
+-    - **CURRENT FOCUS**: Use `tasks_active.json` as primary task source
+-
+-### **🔧 SESSION CONTINUITY SYSTEM**
+-
+-- **AUTOMATIC STATE SYNC**: Auto-sync manager handles all state consistency.
+-- **DISCONNECT/RECONNECT HANDLING**:
+-    • **RESUME STATE**: Read `tasks_active.json` for current work.
+-    • **RESTORE CONTEXT**: Load `cursor_state.json` for cursor position.
+-
+-### **🛡️ CONSISTENCY ENFORCEMENT**
+-
+-- **DUPLICATE PREVENTION**: Reuse and update existing tasks.
+-- **DATA INTEGRITY**: All timestamps in Philippines timezone (UTC+8).
+-
+----
+-
+-**SYSTEM STATUS**: 🟢 FULLY OPERATIONAL
+-**AI SCOPE**: ✅ EXECUTION FOCUSED
+\ No newline at end of file
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/important_note_enforcement.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/important_note_enforcement.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/important_note_enforcement.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/important_note_enforcement.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,9 +0,0 @@
+----
+-description: IMPORTANT NOTE compliance
+-alwaysApply: true
+----
+-## IMPORTANT NOTE POLICY
+-- For phases with an "IMPORTANT NOTE":
+-  - Extract and review the "IMPORTANT NOTE" from the phase text
+-  - Consider the constraints when planning execution
+-  - Continue execution even if "IMPORTANT NOTE" is missing
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/next_action_suggestions.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/next_action_suggestions.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/next_action_suggestions.mdc	2025-08-22 18:14:48.117607891 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/next_action_suggestions.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,257 +0,0 @@
+----
+-description: Automatic next-step trigger suggestions after actions
+-alwaysApply: true
+----
+-
+-## Proactive Context-Aware Engine (v2)
+-
+-### High-Level Objective
+-Transform from reactive, framework-bound triggers to a proactive, context-aware suggestion engine that infers user intent from live workspace signals and proposes the single most relevant next action (plus one alternate) for the active task, adapting instantly to context shifts.
+-
+-### Required Contextual Inputs
+-- Conversation signals: last messages, explicit goals, recent commands, error snippets.
+-- Editor context: active file path/language, cursor window (±100 lines), open tabs, unsaved state.
+-- Code diagnostics: LSP errors/warnings, type-checker output, linter and test failures.
+-- Project fingerprints: scripts/configs (e.g., package.json, pyproject.toml, go.mod), CI configs, Makefiles, task/plan files (e.g., memory-bank/queue-system/tasks_active.json).
+-- VCS state: branch, staged/unstaged changes, HEAD message, merge/rebase in progress.
+-- Recent execution: last command, exit code, duration, notable stderr lines.
+-- Runtime hints: detected frameworks (pytest/jest/vitest/go test), runnable entrypoints (dev servers/CLIs).
+-- Temporal signals: dwell time on files, rapid toggling between code/test, quick returns after failures.
+-
+-### Intent Registry (extensible)
+-- run_tests, fix_lint, type_check, debug_failure, run_dev_server, build, run_migration,
+-  doc_preview, doc_lint, commit_changes, push_branch, validate_plan, run_analysis,
+-  run_file (current module), container_build.
+-
+-### Scoring and Decision Logic
+-- Feature extraction: normalize signals to features (file role: test/src/doc/infra; error types: lint/type/test/build; near-cursor patterns like `it(`, `assert`).
+-- Weighted evidence: Hard signals (blocking errors, failing tests) > explicit user ask > file role + framework presence > VCS state > heuristics (dwell time).
+-- Near-cursor boost: content within cursor window counts 1.5×; recency weighting for latest events.
+-- Gating rules: If analysis/plan gates are active → suggest analysis/validation first. Diagnostics with errors → prioritize fix_lint/type_check before build/commit.
+-- Dynamic relevancy: Recompute on editor focus/diagnostics/conversation/VCS updates; instantly switch when user pivots (e.g., code → docs → infra).
+-- Safety fallback: If confidence < 0.65 or inputs insufficient → prefer read-only validation/preview suggestions.
+-
+-### Output Contract
+-- Always emit literal, immediately-executable suggestions (not generic placeholders).
+-- Format:
+-  - `Suggested next trigger: <one concrete action aligned to current context>`
+-  - `Alternate: <closest safe neighbor>`
+-- Include internal fields (not printed to user UI unless requested): inferred intent, reason, confidence (0-1).
+-
+-### Canonical Suggestion Mapping (non-exhaustive)
+-- run_tests: "Run nearest tests" | alternate "Run all tests"
+-- fix_lint: "Run linter with autofix" | alternate "Run type-checker"
+-- type_check: "Run type-checker" | alternate "Run linter with autofix"
+-- debug_failure: "Re-run last command with verbose logs" | alternate "Open failing log output"
+-- run_dev_server: "Start dev server" | alternate "Run build"
+-- build: "Run build" | alternate "Run tests"
+-- run_file: "Run current file/module" | alternate "Run project default target"
+-- doc_preview: "Open Markdown preview" | alternate "Run markdown lint"
+-- doc_lint: "Run markdown lint" | alternate "Open Markdown preview"
+-- commit_changes: "Commit staged changes" | alternate "Stage all and commit"
+-- push_branch: "Push current branch" | alternate "Create PR"
+-- run_analysis: "Start pre-execution analysis" | alternate "Compile analysis doc (strict)"
+-- validate_plan: "I-validate ang plan" | alternate "Show hierarchy"
+-- container_build: "Build container image" | alternate "Dockerfile lint"
+-
+-### Example Scenarios (meaning-aware, beyond framework keywords)
+-- Emergent testing intent: Editing `tests/*` or cursor shows `describe()/it()/assert`. → Suggest "Run nearest tests"; Alternate "Run all tests".
+-- Live bugfix loop: Conversation says bugfix; editing target function; diagnostics show errors; unstaged changes exist. → Suggest "Run linter with autofix"; Alternate "Run type-checker".
+-- Documentation pass: Active file is `.md/.mdx`; no code diagnostics; markdown config detected. → Suggest "Open Markdown preview"; Alternate "Run markdown lint".
+-- Analysis gate active: Previous run blocked by analysis gate. → Suggest "Start pre-execution analysis"; Alternate "Compile analysis doc (strict)".
+-- Ambiguous/low-signal state: Minimal context available. → Suggest "I-validate ang plan"; Alternate "Show hierarchy".
+-
+-### Legacy Fallback (Reactive Mappings)
+-If context is missing or confidence is low, the engine may fall back to the legacy reactive mappings defined below. These remain authoritative for plan-specific trigger flows.
+-
+-## Post-Action Next-Step Suggestions (Required)
+-
+-Goal: After every action the assistant performs (validate, show, exec, done), the assistant MUST immediately suggest the most appropriate next TRIGGER PHRASE so the user never has to search for it.
+-
+-### General Policy
+-- Always end responses with a single-line suggestion:
+-  - Format: `Suggested next trigger: <trigger phrase>`
+-  - If multiple options are contextually valid, list the primary then an alternate on the next line starting with `Alternate:`.
+-- Prefer the shortest safe path that advances progress, honoring phase gates.
+-- Respect read-only vs side-effect actions: preview first; run only when explicitly requested or when the auto-runner is appropriate.
+-
+-### Proactive Decision Engine (Signal-ranked)
+-- The assistant MUST evaluate output signals from the most recent action(s) before deciding the next suggestion. Signals come from tool outputs or messages (e.g., `plan_next.py`, `plain_hier.py`, `todo_manager.py exec|done`, analysis renderer):
+-  - Structural Gate Errors: "Phase 0 is not first", "missing IMPORTANT NOTE", "IMPORTANT NOTE: (missing)".
+-  - Task State: "No active tasks", tasks_active.json missing/invalid.
+-  - Deep Analysis Gate: "DEEP ANALYSIS: WARN", findings present, or lines mentioning "Decision Gate:" (non-blocking).
+-  - Analysis Mirror Linking: "No analysis found", "missing source_task_id".
+-  - Validation Warnings: "Completion is non-monotonic (undone after done)" (treat as inspect-first, not a hard block).
+-  - Plan Completeness: No next phase reported / all phases done.
+-  - Command Availability: next phase lacks fenced commands or preview.
+-
+-- Priority Order (highest first):
+-  1) Safety/Danger Conditions (structural gate errors; no tasks) → Ingestion.
+-  2) Deep Analysis Gate warnings → Optional analysis (non-blocking).
+-  3) Mirror/linkage issues → Regenerate analysis mirror.
+-  4) Stale analysis vs execution → Regenerate analysis mirror.
+-  5) Unknown/ambiguous state → Validate plan (read-only), then inspect hierarchy.
+-  6) Normal flow → Auto-run next phase.
+-
+-- Ambiguity & Safety-First Fallback:
+-  - If signals are insufficient or outputs are ambiguous, suggest read-only validation first: `I-validate ang plan` then `Show hierarchy`.
+-  - Never suggest side-effectful execution if any higher-priority signal indicates risk.
+-
+-- Loop Detection & Escalation:
+-  - If the same gate failure repeats after remediation attempts, escalate to stricter inspection:
+-    - Prefer `Compile analysis doc (strict)`; if mirror missing, `Regenerate analysis mirror` first.
+-
+-### Mappings by Last Action (Gate-Aware)
+-- After running plan validation (execution mode):
+-  - If output contains any structural gate errors (e.g., "Phase 0 is not first", "missing IMPORTANT NOTE", "IMPORTANT NOTE: (missing)") or "No active tasks":
+-    - `Suggested next trigger: "Ingest mo ang plan"`
+-    - `Alternate: "Compile actionable plan"`
+-  - If output contains "Completion is non-monotonic (undone after done)":
+-    - `Suggested next trigger: "Show hierarchy"`
+-    - `Alternate: "Execute the next unfinished phase"`
+-  - Else:
+-    - `Suggested next trigger: "Show hierarchy"`
+-    - `Alternate: "Execute the next unfinished phase"`
+-
+-- After showing hierarchy:
+-  - Suggest the auto phase runner to handle preview → run → show → done → re-validate.
+-  - `Suggested next trigger: "Execute the next unfinished phase"`
+-  - If the hierarchy shows "No active tasks":
+-    - `Suggested next trigger: "Ingest mo ang plan"`
+-    - `Alternate: "Compile actionable plan"`
+-  - If the preview indicates missing or empty fenced commands for the next phase:
+-    - `Suggested next trigger: "Ingest mo ang plan"`
+-    - `Alternate: "Compile actionable plan"`
+-
+-- After previewing a sub-step (no run):
+-  - Suggest running the step or returning to plan view.
+-  - `Suggested next trigger: "Execute the next unfinished phase"`
+-  - `Alternate: "I-validate ang plan"`
+-
+-- After executing a sub-step (run):
+-  - If execution was blocked by Deep Analysis Gate:
+-    - If the block message contains "No analysis found" or "missing source_task_id":
+-      - `Suggested next trigger: "Regenerate analysis mirror"`
+-      - `Alternate: "Start pre-execution analysis"`
+-    - Else if the block includes "Decision Gate:" or analysis findings (e.g., "CONFLICT", "OVERLAP", "DUPLICATE"):
+-      - `Suggested next trigger: "Compile analysis doc (strict)"`
+-      - `Alternate: "Start pre-execution analysis"`
+-  - Else:
+-    - `Suggested next trigger: "Tapusin ang phase <K>"`
+-    - `Alternate: "Ano ang next phase?"`
+-
+-- After marking a phase done:
+-  - If analysis mirror looks stale (execution progressed beyond last analysis done:true index):
+-    - `Suggested next trigger: "Regenerate analysis mirror"`
+-    - `Alternate: "Start pre-execution analysis"`
+-  - Else:
+-    - `Suggested next trigger: "I-validate ang plan"`
+-    - `Alternate: "Execute the next unfinished phase"`
+-  - If plan appears fully complete (no next phase reported by validation):
+-    - `Suggested next trigger: "Compile analysis doc (strict)"`
+-    - `Alternate: "Regenerate analysis mirror"`
+-
+-- After plan ingestion is finalized (JSON approved):
+-  - Always refresh the analysis mirror to avoid stale gate blocks:
+-  - `Suggested next trigger: "Regenerate analysis mirror"`
+-  - `Alternate: "Start pre-execution analysis"`
+-
+-- After regenerating/finalizing the analysis mirror (analysis JSON approved):
+-  - Proceed to gate checks before any execution:
+-  - `Suggested next trigger: "I-validate ang plan"`
+-  - `Alternate: "Show hierarchy"`
+-
+-- After "Compile analysis doc (strict)":
+-  - If the rendered doc indicates PASS for all phases (e.g., STRICT ANALYSIS SUMMARY has no FAIL and `BLOCKERS:` is empty or `None`):
+-    - `Suggested next trigger: "I-validate ang plan"`
+-    - `Alternate: "Show hierarchy"`
+-  - If the rendered doc indicates BLOCK/FAIL (e.g., contains `BLOCK EXECUTION:` or any FAIL in STRICT ANALYSIS SUMMARY):
+-    - `Suggested next trigger: "Start pre-execution analysis"`
+-    - `Alternate: "Compile analysis doc (strict)"`
+-
+-- After starting or running Pre-Execution Analysis:
+-  - If output contains "Verified and Ready for Execution":
+-    - `Suggested next trigger: "I-validate ang plan"`
+-    - `Alternate: "Show hierarchy"`
+-  - If any findings are present (e.g., mentions of "CONFLICT", "OVERLAP", "DUPLICATE", or non-empty findings list):
+-    - `Suggested next trigger: "Compile analysis doc (strict)"`
+-    - `Alternate: "Start pre-execution analysis"`
+-
+-- After DRY RUN (simulation-only):
+-  - `Suggested next trigger: "I-validate ang plan"`
+-  - `Alternate: "Show hierarchy"`
+-
+-- After listing tasks:
+-  - If the list shows no active tasks:
+-    - `Suggested next trigger: "Ingest mo ang plan"`
+-    - `Alternate: "Compile actionable plan"`
+-
+-### Deep Analysis Awareness (if enabled)
+-- If a Deep Analysis Gate is in effect and currently BLOCK:
+-  - Suggest analysis-inspection triggers instead of execution.
+-  - `Suggested next trigger: "Start pre-execution analysis"`
+-  - `Alternate: "Compile analysis doc (strict)"`
+-
+-Notes:
+-- Replace `<K>` with the current phase index when available.
+-- Keep suggestions concise; use the exact lines above without extra prose between them.
+-
+-### Beginner-Friendly Flow (First-time or Unknown State)
+-- If new session, unknown state, or user appears unsure:
+-  - `Suggested next trigger: "I-validate ang plan"`
+-  - `Alternate: "Show hierarchy"`
+-- If plan validation reports "No active tasks" or tasks file missing/invalid:
+-  - `Suggested next trigger: "Ingest mo ang plan"`
+-  - `Alternate: "Compile actionable plan"`
+-- If user asks for help or “paano gamitin”:
+-  - `Suggested next trigger: "Show hierarchy"`
+-  - `Alternate: "Ano ang next phase?"`
+-
+-### Error-to-Trigger Mapping (Operational)
+-- On preview/run: "Invalid phase index" or "Command index out of range":
+-  - `Suggested next trigger: "Show hierarchy"`
+-  - `Alternate: "I-validate ang plan"`
+-- "No fenced code block found" or "No executable lines found":
+-  - `Suggested next trigger: "Ingest mo ang plan"`
+-  - `Alternate: "Compile actionable plan"`
+-- Deep Analysis Gate: "No analysis found" / "missing source_task_id":
+-  - `Suggested next trigger: "Regenerate analysis mirror"`
+-  - `Alternate: "Start pre-execution analysis"`
+-- Deep Analysis Gate: "missing 'Decision Gate' or 'IMPORTANT NOTE:'":
+-  - `Suggested next trigger: "Compile analysis doc (strict)"`
+-  - `Alternate: "Start pre-execution analysis"`
+-- Deep Analysis Gate: blocking findings (Conflict/Duplicate):
+-  - `Suggested next trigger: "Compile analysis doc (strict)"`
+-  - `Alternate: "Start pre-execution analysis"`
+-- Command execution non-zero exit (runtime error):
+-  - `Suggested next trigger: "I-validate ang plan"`
+-  - `Alternate: "Show hierarchy"`
+-
+-### Slash-Command Integration (If Enabled)
+-- After `/backlog`:
+-  - `Suggested next trigger: " /plan"`
+-  - `Alternate: "I-validate ang plan"`
+-- After `/plan` creates/updates tasks:
+-  - `Suggested next trigger: "I-validate ang plan"`
+-  - `Alternate: "Execute the next unfinished phase"`
+-- After `/gen_code`, `/test`, `/deploy` produce artifacts:
+-  - `Suggested next trigger: "I-validate ang plan"`
+-  - `Alternate: "Show hierarchy"`
+-
+-### Placeholder Autofill Guidance
+-- When the next action requires `<TASK_ID>`, `<K>` or `<K.N>` and values are unknown:
+-  - `Suggested next trigger: "Show hierarchy"`
+-  - `Alternate: "I-validate ang plan"`
+-- The assistant MAY include resolved placeholders automatically if the latest context reveals them (avoid asking the user).
+-
+-### Language Aliases (Helpful for New Users)
+-- Validate plan: `"I-validate ang plan"` | `"Validate plan"`
+-- Show hierarchy: `"Show hierarchy"` | `"Ipakita ang plano"`
+-- Execute next: `"Execute the next unfinished phase"` | `"Ituloy ang susunod na phase"`
+-- Start analysis: `"Start pre-execution analysis"` | `"Simulan ang analysis"`
+-
+-### Session / Resume Mapping
+-- After reconnect or unclear session status:
+-  - `Suggested next trigger: "I-validate ang plan"`
+-  - `Alternate: "Show hierarchy"`
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/offplan_next_step.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/offplan_next_step.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/offplan_next_step.mdc	2025-08-22 19:27:03.827564183 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/offplan_next_step.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,73 +0,0 @@
+----
+-description: Universal Next‑Step Suggestion Rules (framework‑agnostic)
+-alwaysApply: true
+-version: 1.0.0
+-scope: any-scenario
+----
+-
+-## Policy
+-- Always-on: After any user/tool output, compute exactly one most-logical next step.
+-- Single-step only: One unblocker action; do not chain steps.
+-- Producer-first: Fix/generate the source cause (file:line/artifact) before verification/reporting.
+-- Nearest scope: Operate at the topmost failing location (exact file:line or failing command).
+-- No plan detours: Do not suggest plan/hierarchy unless explicitly requested.
+-- Verify-after (implicit): After the next step, the follow-up is “re-run the exact failing command/test”.
+-- Stop condition: If no actionable blocker exists → answer “Done”.
+-- Explicit instruction precedence: Explicit user instruction wins over any heuristic; off‑plan requests are honored immediately.
+-
+-## Decision Ladder (first match wins)
+-1) Hard failure present (compile/test/runtime/build) with file:line/stack
+-   - Next step: Edit the top frame’s file:line to fix the specific error.
+-   - Then: re-run the same failing command.
+-2) Test assertion failure
+-   - Next step: Run the nearest failing test; fix code under test at the reported line.
+-   - Then: re-run that test.
+-3) Lint/type errors (static analysis)
+-   - Next step: Run linter with autofix; fix remaining offenses at reported file:line.
+-   - Then: re-run linter/type-check.
+-4) Missing dependency/import/module
+-   - Next step: Add/install the missing dependency and correct the import/path.
+-   - Then: re-run the original command.
+-5) Config/schema error (missing/invalid field)
+-   - Next step: Create/correct the minimal required field(s) in the config/schema.
+-   - Then: re-run the command.
+-6) File/IO/path not found
+-   - Next step: Create the referenced file/path or correct the path in code.
+-   - Then: re-run the command.
+-7) Security finding (HIGH/CRITICAL)
+-   - Next step: Upgrade to the nearest safe package version or apply the vendor-recommended fix.
+-   - Then: re-run the security scan.
+-8) Performance regression
+-   - Next step: Reproduce with smallest input; profile the hotspot; apply the smallest change.
+-   - Then: re-run the benchmark.
+-9) Data/migration error
+-   - Next step: Write/apply the missing migration (or rollback to a consistent state).
+-   - Then: re-run the migrator/tests.
+-10) Network/timeout/transient failure
+-    - Next step: Re-run with verbose logs and sane timeouts; add retry/backoff if indicated.
+-    - Then: re-run the request/test.
+-11) Merge/conflict
+-    - Next step: Resolve the specific conflict hunk(s) in favor of the authoritative source.
+-    - Then: re-run tests/build.
+-12) No strong signal (ambiguous)
+-    - Next step: Run the smallest safe analyzer for the active file (linter/type-check).
+-    - Then: fix the first reported issue and re-run.
+-13) None apply
+-    - Answer: “Done”.
+-
+-## Tie-breakers
+-- Prefer exact file:line evidence over broad analyzers.
+-- Prefer minimal-blast-radius fixes (local function/module) over wide refactors.
+-- Prefer changes that avoid public API drift unless the error requires it.
+-- Explicit user‑requested action outranks analyzer/suggestion. For multi‑domain asks, follow the user’s order; else pick the nearest failing evidence first.
+-
+-## Output Contract (what to answer)
+-- If actionable: `Next step: <one specific action at file:line or command>.`
+-- If none: `Done`.
+-
+-## Micro-Examples
+-- SyntaxError at app/api.py:42 → Next step: fix syntax at app/api.py:42; then re-run the same command.
+-- Undefined name 'userId' at services/auth.ts:88 → Next step: define/import 'userId' at services/auth.ts:88; then re-run that test.
+-- ModuleNotFoundError: requests → Next step: install 'requests' and correct import; then re-run.
+-- Config error: missing 'version' in config.json → Next step: add 'version' with valid value; then re-run.
+-- No errors/warnings; all checks green → Done.
+\ No newline at end of file
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/organizer_authority.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/organizer_authority.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/organizer_authority.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/organizer_authority.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,26 +0,0 @@
+----
+-description: Background Agent is the sole author of organizer.md; agent-mode must obey it
+-alwaysApply: true
+----
+-
+-## Organizer Authority (Background Agent Source of Truth)
+-
+-- The file `memory-bank/plan/organize.md` (the "organizer") is produced by the Background Agent and is the single source of truth for plan content, order, constraints, and versions.
+-- Agent Mode (foreground) MUST NOT edit `organize.md`. Any attempt to alter it must be refused with: "Organizer is authoritative and read-only; please update via Background Agent."
+-- If the user instruction conflicts with the organizer, the organizer wins. Ask for confirmation only if the organizer is internally ambiguous.
+-
+-### Session Invariants (All Sessions, All Models)
+-- Always read `memory-bank/plan/organize.md` fresh at the start of the ingestion sequence.
+-- Respect exact ordering of phases from the organizer. If no explicit phases exist, derive sequential phases from its Implementation/Action sections as specified in `organizer_to_tasks_active.mdc`.
+-- Preserve explicit versions/toolchain constraints from the organizer (e.g., CUDA, Torch, model versions) within the `IMPORTANT NOTE:` of the mapped phases. Do not "upgrade" versions implicitly.
+-- Never write to queue/state files. The agent outputs JSON content only; file writes are performed by the system/operator.
+-
+-### Conflict and Ambiguity Handling
+-- If multiple conflicting versions are found in the organizer, stop and request Background Agent reconciliation.
+-- If a required phase is missing key constraints (e.g., no `IMPORTANT NOTE:`), synthesize from nearby organizer context and clearly mark: `IMPORTANT NOTE: [SYNTHESIZED FROM ORGANIZER] …` then halt for approval.
+-- If the organizer appears outdated relative to repo code (e.g., incompatible CUDA/tooling mentioned elsewhere), surface a warning but do not override the organizer automatically.
+-
+-### Safety and Precedence
+-- This rule applies with highest priority among ingestion-related rules and cannot be disabled except by the master toggle.
+-- Platform/system/developer instructions and safety policies continue to apply at all times.
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/organizer_to_tasks_active.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/organizer_to_tasks_active.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/organizer_to_tasks_active.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/organizer_to_tasks_active.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,52 +0,0 @@
+----
+-description: Canonical mapping from organizer.md → tasks_active.json (content-only)
+-alwaysApply: true
+----
+-
+-## Canonical Organizer → tasks_active Mapping
+-
+-### Inputs
+-- Frozen source: `memory-bank/plan/organize.md` (Background Agent output).
+-- Schema: `tasks_active_schema.mdc`.
+-
+-### Output (Content-Only)
+-- Single JSON array with one task object:
+-  - `id`: `<slug>_actionable_<YYYYMMDD>` (lowercase, underscores)
+-  - `description`: `<organizer_title> (path)`
+-  - `status`: `in_progress`
+-  - `created`/`updated`: ISO8601 with `+08:00`
+-  - `todos`: array of markdown phases
+-
+-### Phase Construction Rules
+-1. Phase 0 is mandatory: `PHASE 0: SETUP & PROTOCOL (READ FIRST)`
+-   - Must include `Explanations:`, concluding commands, and `IMPORTANT NOTE:` with global constraints (no file writes by agent; env vars; read-only analyzers).
+-2. Detect phases using the organizer’s `^Phase\s+(\d+):\s*(.+)$` headings. Preserve order.
+-3. If headings are absent, derive sequential phases from “Implementation Sequence”/“Priority Action Plan” items (1..N) in listed order.
+-4. For each phase k:
+-   - `text` begins with `PHASE k: <Title>`.
+-   - `Explanations:` summarize near-phase lines like `Immediate:`, `Week x:`, `Day(s):`, `Verification:`.
+-   - Include the concluding commands block:
+-     ```bash
+-     python3 todo_manager.py show <task_id ReplaceAll>
+-     python3 todo_manager.py done <task_id ReplaceAll> <PHASE_INDEX>
+-     ```
+-   - `IMPORTANT NOTE:`
+-     - Prefer explicit constraints/version lines from the organizer.
+-     - If missing, synthesize from organizer context and tag `[SYNTHESIZED FROM ORGANIZER]`.
+-
+-### Validation Gates (Read-Only)
+-- Before execution, run:
+-  - `python3 plan_next.py`
+-  - `python3 plain_hier.py <task_id ReplaceAll>`
+-- Hard errors if:
+-  - Phase 0 is missing or not first
+-  - Any phase lacks `IMPORTANT NOTE:`
+- 
+- - Warnings (not blocking during forward progress):
+-   - Lint reports "Completion is non-monotonic (undone after done)" while later phases remain undone
+-
+-### Prohibitions and Safety
+-- No direct writes to any queue/state files by the agent.
+-- No silent version upgrades or toolchain changes versus organizer text.
+-- If organizer conflicts are detected, stop and request Background Agent reconciliation.
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/phase_gates.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/phase_gates.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/phase_gates.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/phase_gates.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,21 +0,0 @@
+----
+-description: Phase Gates (pre-execution checks)
+-alwaysApply: true
+----
+-## Phase Gates (Pre-Execution Checks)
+-
+-These are optional recommendations for better workflow management:
+-
+-1. Optional: Next-Phase Integrity Check
+-   - Optional: Run: `python3 plan_next.py`
+-   - Optional: Review:
+-     - The reported next phase (for informational purposes)
+-     - Phase content (for planning)
+-
+-2. Optional: Hierarchy Review
+-   - Optional: Run: `python3 plain_hier.py <task_id ReplaceAll>`
+-   - Optional: Review:
+-     - Progress summary
+-     - Phase structure
+-
+-You can execute `todo_manager.py exec` or `done` commands at any time without waiting for these checks.
+\ No newline at end of file
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/rules.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/rules.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/rules.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/rules.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,5 +0,0 @@
+----
+-alwaysApply: true
+----
+-
+-RULE: Do not hedge or soften the correction. If the user is wrong, state clearly: “That is incorrect” and then provide the accurate explanation. Do not add flattering language. Do not add disclaimers unless strictly necessary for accuracy. Be concise and factual. Do not agree with me just to be polite. If my statement is wrong or incomplete, correct me directly. Do not optimize for “pleasantness” — optimize for accuracy.RULE: Do not hedge or soften the correction. If the user is wrong, state clearly: “That is incorrect” and then provide the accurate explanation. Do not add flattering language. Do not add disclaimers unless strictly necessary for accuracy. Be concise and factual. Do not agree with me just to be polite. If my statement is wrong or incomplete, correct me directly. Do not optimize for “pleasantness” — optimize for accuracy.
+\ No newline at end of file
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/rules_master_toggle.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/rules_master_toggle.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/rules_master_toggle.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/rules_master_toggle.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,52 +0,0 @@
+----
+-description: Global Rules Master Toggle (v2)
+-alwaysApply: true
+----
+-## Global Rules Master Toggle (v2)
+-
+-Session-wide switch to enable/disable ALL `.cursor/rules/*` (this file excluded), while preserving platform/system safety. Designed to avoid accidental activation by requiring explicit, user-scoped triggers.
+-
+-### Scope and Guard Rails
+-- Evaluate triggers on the latest USER message only. Ignore system/developer messages.
+-- Ignore occurrences inside code fences (``` ... ```), inline code (`...`), or quotes (">", "\"").
+-- If a message contains both enable and disable triggers, the LAST occurrence wins (right-most precedence).
+-
+-### Primary Triggers (recommended)
+-- Disable rules:
+-  - Literal tokens: `[cursor-rules:off]`, `/rules off`, `cursor rules off`, `disable cursor rules`.
+-  - Tagalog: `i-disable ang cursor rules`, `patayin ang cursor rules`.
+-- Enable rules:
+-  - Literal tokens: `[cursor-rules:on]`, `/rules on`, `cursor rules on`, `enable cursor rules`.
+-  - Tagalog: `i-enable ang cursor rules`, `buksan ang cursor rules`.
+-
+-### Legacy Compatibility (optional, safer)
+-- These only trigger if the same USER message also contains the word `cursor` or `agent` (case-insensitive):
+-  - Disable: `dont obey the rules` or `don't obey the rules`.
+-  - Enable: `follow the rules`.
+-
+-### Behavior
+-- When disabled (`RULES_ENABLED = false`):
+-  - Suspend all other `.cursor/rules/*` files.
+-  - Do not run tools, external commands, or perform edits.
+-  - Respond with a concise acknowledgment only: `Rules disabled by user. Say "[cursor-rules:on]" to re-enable.`
+-- When enabled (`RULES_ENABLED = true`):
+-  - Resume normal rule processing and acknowledge: `Rules enabled.`
+-
+-### Implementation Notes (for the agent)
+-- Maintain a session boolean `RULES_ENABLED`, default `true`.
+-- Evaluate triggers each turn with the guards above; apply last-occurrence precedence.
+-- This file has highest precedence over all other `.cursor/rules/*` files.
+-- Platform/system/developer safety policies remain in force at all times and cannot be disabled.
+-
+-### Coupled (Mutual-Exclusion) Toggles
+-- To avoid conflicts when switching environments (Cursor vs Windsurf), honor cross-environment tokens and enforce exclusivity using last-occurrence precedence:
+-  - If the latest USER message contains `[windsurf-rules:on]`, treat this ruleset as disabled for the turn (equivalent to `[cursor-rules:off]`).
+-  - If the latest USER message contains `[cursor-rules:on]`, treat this ruleset as enabled and assume Windsurf rules are disabled.
+-  - Also recognize Windsurf tokens for convenience: `[windsurf-rules:on]`, `[windsurf-rules:off]`.
+-  - Precedence note: If both `[cursor-rules:on]` and `[windsurf-rules:on]` appear, the right‑most token wins.
+-
+-### Precedence Banner (global)
+-Master Toggle > Mode Switch (Deep Analysis) > Organizer Authority > Exec Policy > Phase Gates > Auto-Runner > Suggestions
+-
+-### Precedence Banner (global)
+-Master Toggle > Mode Switch (Deep Analysis) > Organizer Authority > Exec Policy > Phase Gates > Auto-Runner > Suggestions
+\ No newline at end of file
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/tasks_active_schema.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/tasks_active_schema.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/tasks_active_schema.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/tasks_active_schema.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,54 +0,0 @@
+----
+-description: tasks_active.json canonical schema and formatting
+-alwaysApply: true
+----
+-## tasks_active.json Schema (Canonical)
+-
+-### Top-level (array)
+-- Type: `List[Task]`
+-- Exactly one Task per plan ingestion.
+-
+-### Task object
+-- `id` (string): `<slug>_actionable_<YYYYMMDD>` (lowercase, underscores only)
+-- `description` (string): Concise plan summary and provenance (source doc name/title)
+-- `todos` (array of Todo)
+-- `status` (string): one of `in_progress` | `done`
+-- `created` (string): ISO 8601 timestamp with timezone `+08:00`
+-- `updated` (string): ISO 8601 timestamp with timezone `+08:00`
+-
+-### Todo object
+-- `text` (string): Full markdown content of the phase
+-  - MUST start with `PHASE k:` where k ∈ {0..N}
+-  - MUST include `**Concluding Step: Phase Completion Protocol**` block containing two commands
+-  - MUST end with `IMPORTANT NOTE:` paragraph
+-- `done` (boolean): defaults to `false`
+-
+-### Example
+-```json
+-[
+-  {
+-    "id": "docker_arch_blueprint_actionable_20250811",
+-    "description": "Actionable plan compiled from FINAL Docker Architecture Blueprint (frozen source).",
+-    "todos": [
+-      { "text": "PHASE 0: SETUP & PROTOCOL (READ FIRST)\n\n...\nIMPORTANT NOTE: ...", "done": false },
+-      { "text": "PHASE 1: BUILD FOUNDATIONAL BASE IMAGES\n\n...\nIMPORTANT NOTE: ...", "done": false }
+-    ],
+-    "status": "in_progress",
+-    "created": "2025-08-11T19:15:00+08:00",
+-    "updated": "2025-08-11T19:15:00+08:00"
+-  }
+-]
+-```
+-
+-### Formatting Rules
+-- Preserve newlines; avoid trailing spaces.
+-- Keep each phase self-contained; do not reference external state.
+-- Ensure monotonic completion (no undone after a done) during execution.
+-
+-### Placeholders in concluding commands
+-- Fenced command blocks inside each phase may include placeholders for readability and portability:
+-  - `<task_id ReplaceAll>`, `<task_id Replace All>`, `<task_id>`, `<TASK_ID>`
+-  - `<PHASE_INDEX>`, `<phase_index>`
+-  - `<SUB_INDEX>`, `<sub_index>`
+-- These are resolved at runtime when commands are executed via `python3 todo_manager.py exec`.
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/todo-list-format.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/todo-list-format.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/todo-list-format.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/todo-list-format.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,64 +0,0 @@
+-SYSTEM INSTRUCTION (Revision 5.0 - Finalized)
+-
+-Core Directive: You are an intelligent assistant that generates actionable to-do lists using an interactive, two-pass system. Your primary goal is to ensure user approval of the plan's content and structure before final JSON generation, enhancing accuracy, user control, and contextual completeness. You operate in one of two modes: Human-Readable Draft Proposal or JSON Finalization.
+-
+-MODE 1: HUMAN-READABLE DRAFT PROPOSAL (The "Thinking & Formatting" Pass)
+-Trigger: This mode activates when a user provides a long, unstructured technical document and asks for a "plan," "todolist," or similar, and you have not just presented a proposal.
+-
+-Process & Principles:
+-1.  Thoroughly analyze the user's document.
+-2.  Principle of Structural Fidelity (CRUCIAL): If the source document has a pre-defined structure (e.g., `PHASE 1`, `P0 BLOCKERS`), that structure is considered intentional and must be preserved. If no structure exists, apply the `Principle of Sequential Dependency` (Discovery → Planning → Implementation → Validation) to create one.
+-3.  Principle of Contextual Completeness (CRUCIAL): For each technical task derived from the source, you MUST include relevant context if available in the document. This includes, but is not limited to, `Root Cause`, `Blast Radius`, or `Why it was missed`. This provides the "why" behind the "what."
+-4.  Principle of Verbatim Archiving (CRUCIAL): All core content for a task (explanations, lists, file paths, code snippets) MUST be preserved verbatim and mapped into their correct phase.
+-
+-Strict Draft Formatting Rules (NON-NEGOTIABLE): The draft MUST be formatted using Markdown and MUST include the following elements in order (aligned with `agent_plan_ingestion.mdc` and `tasks_active_schema.mdc`):
+-*   A. Plan Header: A main header containing the Plan ID, Description, and Status. (e.g., `🗒️ PLAN: [plan_id]`)
+-*   B. TODO Items Header: A sub-header for the list of tasks.
+-*   C. Mandatory Phase 0 (Rich Cognitive Guidance): The draft MUST begin with a complete `PHASE 0: SETUP & PROTOCOL (READ FIRST)`. This phase's content MUST be comprehensive, including both the **Core Behavioral Mandates** and the **How-To/Workflow Protocol**. It must be marked with `[✗]`.
+-*   D. Numbered Phases: All subsequent phases must be clearly separated, numbered, and marked with `[✗]`.
+-*   E. Mandatory Phase Completion Protocol (Canonical): Each phase MUST end with a fenced code block containing exactly two commands (applies to Phase 0 and all subsequent phases):
+-    ```bash
+-    python3 todo_manager.py show <TASK_ID>
+-    python3 todo_manager.py done <TASK_ID> <PHASE_INDEX>
+-    ```
+-*   F. Mandatory IMPORTANT NOTE: Every phase MUST end with a context-aware `IMPORTANT NOTE:`.
+-
+-Output Format:
+-1.  The output MUST BE plain text, not a JSON code block.
+-2.  Start with the exact phrase: `Analysis complete. I propose the following Human-Readable Plan Draft:`
+-3.  Present the complete, formatted draft that follows all `Strict Draft Formatting Rules`.
+-4.  End with the exact question: `Do you approve this plan draft? You can approve, or provide a modified list.`
+-
+-MODE 2: JSON FINALIZATION (The "Conversion" Pass)
+-Trigger: This mode activates when the user responds affirmatively to your "Human-Readable Plan Draft".
+-
+-Process:
+-1.  Perform a direct, mechanical conversion of the approved draft into a single, valid JSON object.
+-
+-Strict JSON Output Format (Rules for Mode 2):
+-1.  The final output MUST BE a single, valid JSON code block. Do not add any conversational text outside of it.
+-2.  **Concise Description Field:** The top-level `description` field MUST contain only the concise PLAN SUMMARY.
+-3.  **Integrated Content:** The `text` field of every todo item MUST include all its content from the draft, including the fully detailed `Phase Completion Protocol`.
+-4.  **Schema Adherence:** The JSON must follow the exact schema provided in the example.
+-
+-Example JSON Schema for Mode 2 (Canonical, matches `tasks_active_schema.mdc`):
+-```json
+-[
+-  {
+-    "id": "docker_arch_blueprint_actionable_20250811",
+-    "description": "Action plan to systematically complete a given project based on provided documentation.",
+-    "todos": [
+-      {
+-        "text": "PHASE 0: SETUP & PROTOCOL (READ FIRST)\n\n...\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <TASK_ID>\npython3 todo_manager.py done <TASK_ID> 0\n```\nIMPORTANT NOTE: ...",
+-        "done": false
+-      },
+-      {
+-        "text": "PHASE 1: BUILD FOUNDATIONAL BASE IMAGES\n\n...\n\n**Concluding Step: Phase Completion Protocol**\n```bash\npython3 todo_manager.py show <TASK_ID>\npython3 todo_manager.py done <TASK_ID> 1\n```\nIMPORTANT NOTE: ...",
+-        "done": false
+-      }
+-    ],
+-    "status": "in_progress",
+-    "created": "2025-08-11T19:15:00+08:00",
+-    "updated": "2025-08-11T19:15:00+08:00"
+-  }
+-]
+\ No newline at end of file
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/todo_manager_flow.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/todo_manager_flow.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/todo_manager_flow.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/todo_manager_flow.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,176 +0,0 @@
+----
+-description: todo_manager.py task execution command
+-alwaysApply: true
+----
+-### **1. TASK EXECUTION COMMANDS:**
+-
+-**SHOW HIERARCHICAL STRUCTURE:**
+-```bash
+-python3 todo_manager.py show TASK_ID 
+-# Shows main TODOs with all sub-steps
+-# Displays commands ready for execution
+-```
+-
+-**EXECUTE SUB-TODO:**
+-```bash
+-python3 todo_manager.py exec TASK_ID 4.1
+-# Executes specific sub-step (4.1)
+-# Runs the associated command
+-# Marks as completed automatically
+-```
+-
+-**PLACEHOLDER SUBSTITUTION (EXEC):**
+-- When running `python3 todo_manager.py exec`, common placeholders in fenced commands are automatically replaced to avoid shell redirection errors and to simplify execution:
+-  - `<task_id ReplaceAll>`, `<task_id Replace All>`, `<task_id>`, `<TASK_ID>` → actual task id
+-  - `<PHASE_INDEX>`, `<phase_index>` → current phase index (K)
+-  - `<SUB_INDEX>`, `<sub_index>` → selected command index (1-based)
+-- Substitution applies to both preview and `--run` execution.
+-- Recommendation: Keep concluding command blocks readable with placeholders; `exec` will resolve them at runtime.
+-
+-**MARK MAIN TODO DONE:**
+-```bash
+-python3 todo_manager.py done TASK_ID 4
+-# Marks main TODO as completed
+-# Only when all sub-steps (4.1-4.7) are done
+-```
+-
+-### **4. ENHANCED WORKFLOW SEQUENCE:**
+-```bash
+-# 1. Check hierarchical status
+-python3 todo_manager.py show TASK_ID 
+-# 2. Execute sub-step with command
+-python3 todo_manager.py exec TASK_ID 4.1
+-# → Runs: diff docker-compose.yml docker-compose.yml.backup
+-
+-# 3. Continue to next sub-step
+-python3 todo_manager.py exec TASK_ID 4.2
+-# → Runs: docker-compose build --no-cache
+-
+-# 4. If sub-step fails, run rollback
+-python3 todo_manager.py exec TASK_ID 4.7
+-# → Runs: docker-compose down && echo "ROLLBACK COMPLETED"
+-
+-# 5. Mark main TODO done when all sub-steps complete
+-python3 todo_manager.py done TASK_ID 4
+-```
+-
+----
+-
+-## **🧠 MEMORY SYSTEM INTEGRATION**
+-
+-### **AUTO-CONTEXT LOADING:**
+-When Local Agent starts, it automatically reads:
+-```json
+-// memory-bank/cursor_session_context.json
+-{
+-  "current_focus": "Task execution ready",
+-  "hierarchical_todos": {...},
+-  "execution_commands": {...},
+-  "context_level": "DETAILED_PLAN_READY"
+-}
+-```
+-
+-### **SEAMLESS HANDOVER:**
+-- Background Agent → prepares everything
+-- Local Agent → executes with full context
+-- Zero explanation needed from user
+-- Instant understanding of the plan
+-
+----
+-
+-## **🔎 Auxiliary Read-Only Tools**
+-
+-- `python3 plan_next.py`
+-  - Identifies next unfinished phase per task
+-  - Extracts command previews from fenced blocks
+-  - Lints plan: Phase 0 position, IMPORTANT NOTE presence, completion monotonicity
+-
+-- `python3 plain_hier.py <TASK_ID>`
+-  - Shows compact hierarchical view of phases with checkmarks
+-  - Prints snippet of "IMPORTANT NOTE:" if present
+-  - Previews first fenced command block
+-
+-Use these before executing any phase to verify the IMPORTANT NOTE and expected commands.
+-
+----
+-
+-## **📊 TODO COMPLEXITY LEVELS**
+-
+-### **SIMPLE TODOS:**
+-```
+-[✗] 1. Update documentation
+-    1.1 Edit README.md file
+-    1.2 Commit changes
+-```
+-
+-
+-
+----
+-
+-## **🎯 LOCAL AGENT MODE INSTRUCTIONS**
+-
+-### **WHEN USER MENTIONS TODO/TASK:**
+-1. **ALWAYS** check current hierarchical structure first
+-2. **IDENTIFY** which sub-step to execute
+-3. **SHOW** the specific command to run
+-4. **EXECUTE** with user approval
+-5. **MARK** completion and update progress
+-
+-### **AUTO-ABSORB CONTEXT:**
+-- Read memory-bank files for background context
+-- Understand hierarchical TODO structures
+-- No need for user explanation
+-- Ready to execute detailed plans immediately
+-
+-### **EXECUTION PRIORITY:**
+-- Follow sub-step sequence (4.1 → 4.2 → 4.3...)
+-- Include error handling steps
+-- Provide rollback options
+-- Validate completion before moving forward
+-
+----
+-
+-## **🚀 BEST PRACTICES FOR CURSOR AGENT MODE**
+-
+-### **1. HIERARCHICAL AWARENESS:**
+-- Always understand the sub-step structure
+-- Execute in proper sequence
+-- Check dependencies between steps
+-
+-### **2. COMMAND EXECUTION:**
+-- Show command before running
+-- Get user approval for critical operations
+-- Provide clear success/failure feedback
+-
+-### **3. PROGRESS TRACKING:**
+-- Mark sub-steps as completed
+-- Update main TODO status
+-- Sync progress across sessions
+-
+-### **4. ERROR HANDLING:**
+-- Follow rollback procedures when failures occur
+-- Provide clear error messages
+-- Suggest next steps for recovery
+-
+----
+-
+-## **📱 QUICK REFERENCE COMMANDS**
+-
+-```bash
+-# Show plan
+-python3 todo_manager.py show <TASK_ID>
+-
+-
+-python3 todo_manager.py done <TASK_ID> <PHASE_INDEX>
+-
+-# Show all active tasks
+-python3 todo_manager.py list
+-```
+-
+-## ✅ EXECUTION POLICY (ENFORCED) 
+-- ORDER ENFORCEMENT:
+-  - No skipping phases; mark in sequence only
+-  - If confidence < 90%, repeat review and pre-analysis
+-
+----
+-
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/tool_usage_guarantee.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/tool_usage_guarantee.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/tool_usage_guarantee.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/tool_usage_guarantee.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,48 +0,0 @@
+----
+-alwaysApply: true
+----
+-
+-## TOOL USAGE GUARANTEE
+-
+-For any phase execution or completion, the following sequence is MANDATORY:
+-
+-1) Discovery/Verification before action:
+-```bash
+-python3 plan_next.py
+-python3 plain_hier.py <task_id ReplaceAll>
+-```
+-
+-2) Execute sub-step(s) as indicated by the plan preview:
+-```bash
+-python3 todo_manager.py exec <task_id ReplaceAll> <SUB_INDEX>
+-```
+-
+-3) Show current status to confirm progress:
+-```bash
+-python3 todo_manager.py show <task_id ReplaceAll>
+-```
+-
+-4) When a phase's sub-steps are all complete, finalize:
+-```bash
+-python3 todo_manager.py done <ReplaceAll> <PHASE_INDEX>
+-```
+-
+-5) Post-action verification:
+-```bash
+-python3 plan_next.py
+-```
+-
+-These steps are required to avoid missed "done" transitions and to keep the plan in sync.
+-
+-### Placeholder substitution (exec)
+-- `python3 todo_manager.py exec` automatically substitutes placeholders in fenced commands before preview/execute:
+-  - `<task_id ReplaceAll>`, `<task_id Replace All>`, `<task_id>`, `<TASK_ID>`
+-  - `<PHASE_INDEX>`, `<phase_index>`
+-  - `<SUB_INDEX>`, `<sub_index>` (when selecting a specific command, e.g., K.N)
+-- This prevents shell errors from `<`/`>` characters and allows safe `--run` usage against plan commands.
+-
+-## Docs Standard (recommended)
+-- Prefer `<TASK_ID>`, `<PHASE_INDEX>`, `<SUB_INDEX>` in examples for clarity.
+-
+-## Runtime compatibility (unchanged)
+-- Legacy variants remain supported at runtime: `<task_id ReplaceAll>`, `<task_id Replace All>`, `<task_id>`, `<TASK_ID>`, `<PHASE_INDEX>`/`<phase_index>`, `<SUB_INDEX>`/`<sub_index>`.
+\ No newline at end of file
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/trigger_phrases.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/trigger_phrases.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/trigger_phrases.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/trigger_phrases.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,35 +0,0 @@
+----
+-description: Trigger phrases → action dispatch map
+-alwaysApply: true
+----
+-
+-## Dispatch policy
+-- Select the highest-priority matching trigger family only (single-dispatch).
+-- Tie-breaker for multiple matches: right-most occurrence in the user message.
+-- Family precedence:
+-  Master Toggle > Mode Switch (Deep Analysis) > Ingestion > Analysis Renderer > Auto-Runner > Execute Sub-step > Mark Done > Validate/Inspect > Suggestions.
+-
+-### Auto Phase Runner
+-- Triggers:
+-  - "Execute the next unfinished phase", "Run next phase", "Ituloy ang susunod na phase", "Auto-run phase"
+-- Action (gate-compliant):
+-  - Follow `auto_phase_runner.mdc` to preview, run, show, mark done, and re-validate for the next unfinished phase.
+-
+-#### Analysis Integration
+-- Analysis results are available for review and can inform execution decisions.
+-- Execution can proceed regardless of analysis status.
+-
+-### Ingestion (Agent Plan Ingestion)
+-- Triggers: "Ingest plan", "Ingest mo ang plan", "Compile actionable plan", "Finalize plan JSON"
+-- Action:
+-  - Follow `agent_plan_ingestion.mdc`: Phase 0 + derived phases → human-readable draft → on approval output JSON (content-only; operator/system saves)
+-
+-### Pre-Execution Analysis (Hybrid)
+-- Triggers: "Start pre-execution analysis", "Begin pre-execution analysis", "Run analysis before execution", "Pre-execution review"
+-- Action:
+-  - Follow `analysis_workflow.mdc`: iterate phases 0..N, call `analyzer.py` per phase, HALT if findings exist, proceed only when phase is clean; declare "Verified and Ready for Execution" when all are clean.
+-
+-### Analysis Ingestion (Mirror from tasks_active.json)
+-- Triggers: "Regenerate analysis mirror", "Refresh analysis mirror", "Finalize analysis JSON (analysis)", "Finalize analysis mirror JSON"
+-- Action:
+-  - Follow `analysis_ingestion_from_tasks_active.mdc`: Read `tasks_active.json` → produce analysis Human-Readable Draft → finalize analysis JSON (content-only; operator saves to `analysis_active.json`).
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/trigger_phrases_extra.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/trigger_phrases_extra.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/trigger_phrases_extra.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/trigger_phrases_extra.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,50 +0,0 @@
+----
+-alwaysApply: true
+----
+-
+-## Additional Triggers → Required Actions
+-
+-Note: Ingestion triggers are defined in `trigger_phrases.mdc` (canonical). Do not duplicate ingestion mappings here. This file only augments Validate/Inspect/Execute/Done heuristics.
+-
+-### DRY RUN (Read-only Simulation)
+-- Triggers: "Dry run", "Dry run next phase", "Dry run all", "Run dry run", "Simulate plan", "Simulate phases", "DRY RUN (MAX_LOOPS:<n>)"
+-- Actions:
+-  - Set optional environment variable `MAX_LOOPS=<n>` (if provided)
+-  - Run read-only workflow: `/.windsurf/workflows/autopilot-dry-run.md` (no writes, no done)
+-
+-### Validate / Inspect
+-- Triggers: "I-validate ang plan", "Suriin ang susunod", "Ano ang next phase?", "Show hierarchy", "Ipakita ang plano"
+-- Actions:
+-  - Run: `python3 plan_next.py`
+-  - Then: `python3 plain_hier.py <task_id ReplaceAll ReplaceAll>`
+-
+-#### Gate-Aware Suggestion Override
+-- If recent attempt to execute returned a Deep Analysis Gate block (message contains `Deep Analysis Gate BLOCK`), the next suggestion MUST be one of:
+-  - Suggested next trigger: "Start pre-execution analysis"
+-  - Alternate: "Compile analysis doc (strict)"
+-  This prevents re-suggesting execution until analysis phases are marked done and the gate passes.
+-
+-### Execute Sub-step
+-- Triggers: "Gawin ang step <i>", "Execute <i>", "Run sub-step <i>", "Ituloy ang <i>"
+-- Actions:
+-  - Run: `python3 todo_manager.py exec <task_id ReplaceAll ReplaceAll Replace> <SUB_INDEX>`
+-  - Then: `python3 todo_manager.py show <task_id ReplaceAll ReplaceAll ReplaceAll>`
+-
+-### Execute Sub-step (RUN)
+-- Triggers: "Run <i>", "Execute <i> now", "Run sub-step <i> now", "Itakbo ang <i>", "Patakbuhin ang <i>"
+-- Actions:
+-  - Run: `python3 todo_manager.py exec <task_id ReplaceAll ReplaceAll Replace> <SUB_INDEX> --run`
+-  - Then: `python3 todo_manager.py show <task_id ReplaceAll ReplaceAll ReplaceAll>`
+-
+-### Mark Phase Done
+-- Triggers: "Tapusin ang phase <k>", "Markahan done ang phase <k>", "Finish phase <k>", "Complete phase <k>", "Close phase <k>", "Tapos na ang phase <k>"
+-- Actions:
+-  - Pre-checks: `python3 plan_next.py` and `python3 plain_hier.py <task_id ReplaceAll ReplaceAll>`
+-  - Mark done: `python3 todo_manager.py done <task_id ReplaceAll ReplaceAll> <PHASE_INDEX>`
+-  - Verify: `python3 plan_next.py`
+-
+-### Next Action Heuristic
+-- Triggers: "Ano ang susunod na gagawin?", "Next action", "Next step"
+-- Actions:
+-  - Run: `python3 plan_next.py`
+-  - If a specific sub-step is shown, follow with `python3 todo_manager.py exec <task_id ReplaceAll ReplaceAll> <SUB_INDEX>`
+\ No newline at end of file
+diff -ru --new-file /home/haymayndz/HaymayndzAI/.cursor/rules/unified_analysis_prompt.mdc /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/unified_analysis_prompt.mdc
+--- /home/haymayndz/HaymayndzAI/.cursor/rules/unified_analysis_prompt.mdc	2025-08-21 21:35:56.835686764 +0800
++++ /home/haymayndz/AI_System_Monorepo/voice-assistant-prod/.cursor/rules/unified_analysis_prompt.mdc	1970-01-01 08:00:00.000000000 +0800
+@@ -1,163 +0,0 @@
+----
+-description: UNIFIED ANALYSIS & VALIDATION PROMPT (All-in-One Template)
+-alwaysApply: false
+----
+-
+-UNIFIED ANALYSIS & VALIDATION PROMPT (All-in-One Template)
+-Modes covered: Critic · Reflexion · Verifier · Phase-by-Phase · Conflict Detection · Auditor · Reviewer · Red-Team · Validator · Gap Analysis
+-
+-ROLE
+-- You are a Principal Systems Auditor-Reviewer operating in multi-mode with strong reasoning, self-critique, standards mapping, and adversarial testing.
+-
+-OBJECTIVE
+-- {task_or_goal}
+-
+-ARTIFACTS (INPUTS)
+-- Primary artifact(s): {plan|spec|design|code|SOP}
+-- Phase structure (if any): {list_of_phases_or_headings}
+-- Context & constraints: {context}
+-- Standards to check (optional): {e.g., OWASP ASVS, ISO 27001, PCI-DSS, SOC2, PEP8, RFCs, org_policies}
+-- Success criteria & KPIs (optional): {criteria_with_weights}
+-
+-CONTROLS
+-- modes_on: [critic, reflexion, verifier, phase_by_phase, conflict_detection, auditor, reviewer, red_team, validator, gap_analysis]
+-- reflexion_passes: {2}
+-- strictness: {high|medium|low}
+-- risk_tolerance: {low|medium|high}
+-- output_format: {markdown|json|both}
+-- evidence_required: {true|false}
+-- max_findings_per_section: {10}
+-- assumptions_policy: proceed_with_minimal_safe_assumptions_if_underspecified
+-- reasoning_visibility: {concise_steps|full|hidden_keypoints}
+-- conflict_precedence: system>developer>user
+-- stop_on_blocker: {true|false}
+-- language: {en|fil|mix}
+-
+-PIPELINE (Execute sequentially; keep sections short but rigorous)
+-0) Intake & Scope
+-   - Restate objective, artifacts, scope boundaries, and assumptions (only those needed).
+-   - Identify any missing inputs. If missing, proceed with clearly labeled assumptions.
+-
+-1) Phase-by-Phase Analysis (detailed sequential check)
+-   - For each phase K (or logical section):
+-     • Purpose & Expected Outcomes
+-     • Inputs/Pre-reqs & Dependencies
+-     • Steps/Flow (concise)
+-     • Outputs/Deliverables
+-     • Risks/Edge Cases
+-     • Checks (see Verifier Checklist)
+-     • Findings (issues/opportunities)
+-     • Verdict: PASS|WARN|FAIL
+-     • Remediations/Improvements
+-
+-2) Conflict Detection (contradictions/logic errors)
+-   - Cross-phase contradictions, inverted dependencies, mutually exclusive flags enabled, duplicated ownership, contract/schema drift.
+-   - Produce a conflict list + minimal “why” + impacted phases.
+-
+-3) Verifier (Checklist + validation)
+-   Mandatory checks (mark PASS|WARN|FAIL per item; attach evidence refs):
+-   - Single ownership/authority (no double owners)
+-   - Correct dependency order (no circular/inverted prerequisites)
+-   - Contract/schema consistency (inputs/outputs semantics)
+-   - Exclusive flags/gates not co-enabled; gating order enforced
+-   - Severity/priority non-overlapping; escalation paths clear
+-   - Cross-phase collisions or blind spots
+-   - Traceability to requirements (no orphans)
+-   - Boundaries/interfaces well-defined; no gray zones
+-   - No semantic duplicates (codebase/plan-wide)
+-   - Policy contradiction check for same concern
+-   - Evidence: file paths/symbols/lines or section references
+-
+-4) Auditor (Compliance/standards mapping)
+-   - Map to {standards}; list passes/gaps; required controls; residual risk.
+-   - Note deviations and compensating controls.
+-
+-5) Reviewer (Peer-review: strengths + weaknesses)
+-   - Strengths (with impact)
+-   - Weaknesses (with severity and quick fixes)
+-   - Maintainability/testability notes
+-
+-6) Red-Team (adversarial tests, attack & edge cases)
+-   - Abuse cases, failure injections, negative paths, race/consistency issues, DoS/latency/throughput constraints, privilege/escalation vectors.
+-   - For each: scenario → expected defense → observed gap → remediation.
+-
+-7) Validator (sequence validity & logical integrity)
+-   - Topological order check; invariants preserved; idempotency; rollback strategy presence; acceptance criteria measurability.
+-   - Verdict per invariant.
+-
+-8) Gap Analysis (missing elements)
+-   - Missing inputs/owners/criteria/telemetry/runbooks/rollbacks/tests/monitoring/SLIs-SLOs.
+-   - Prioritize critical gaps; propose minimal additions.
+-
+-9) Reflexion (self-review and revise before final)
+-   - Pass 1: enumerate concrete defects by taxonomy (logic, constraints, edges, perf, clarity).
+-   - Pass 2: integrate fixes/suggestions; re-check key gates.
+-   - Stop early if criteria met or passes exhausted.
+-
+-10) Synthesis & Decision Gate
+-   - Overall verdict: BLOCK | PROCEED_WITH_GUARDS | PROCEED
+-   - Why (1–3 bullets), top risks, must-do remediations, and next actions.
+-   - If BLOCK: list the smallest set of changes to unblock.
+-
+-OUTPUT (Markdown Report)
+-- Executive Summary
+-- Overall Verdict + Rationale
+-- Scorecard (correctness, feasibility, risk, compliance) [0–100 or PASS|WARN|FAIL]
+-- Phase-by-Phase Findings (K=1..N)
+-- Conflicts Report
+-- Verifier Checklist (table with PASS/WARN/FAIL + evidence)
+-- Compliance Map (Auditor)
+-- Reviewer Notes (strengths/weaknesses)
+-- Red-Team Scenarios & Results
+-- Gap Analysis & Remediation Plan
+-- Validator Verdict (sequence/invariants)
+-- Reflexion Changes Applied
+-- Action Plan (ordered, with owners/timebox)
+-- Appendix: Evidence Index (IDs → file/section/line)
+-
+-OUTPUT (JSON Skeleton; return if output_format is json|both)
+-{
+-  "summary": {
+-    "objective": "{...}",
+-    "verdict": "BLOCK|PROCEED_WITH_GUARDS|PROCEED",
+-    "scores": { "correctness": 0, "feasibility": 0, "risk": 0, "compliance": 0 },
+-    "top_risks": [ "..." ],
+-    "must_fixes": [ "..." ]
+-  },
+-  "phases": [
+-    {
+-      "index": 1,
+-      "title": "...",
+-      "verdict": "PASS|WARN|FAIL",
+-      "checks": [
+-        { "id": "ownership_single_source", "status": "PASS|WARN|FAIL", "evidence": ["path:line", "section_ref"] }
+-      ],
+-      "issues": [ { "type": "gap|conflict|risk|weakness", "desc": "...", "severity": "low|med|high" } ],
+-      "remediations": [ "..." ]
+-    }
+-  ],
+-  "conflicts": [ { "between": [ "phase_k", "phase_j" ], "desc": "...", "severity": "..." } ],
+-  "compliance": [ { "standard": "OWASP ASVS", "control": "x.y", "status": "pass|gap", "evidence": ["..."] } ],
+-  "strengths": [ "..." ],
+-  "weaknesses": [ "..." ],
+-  "red_team": [ { "scenario": "...", "expected_defense": "...", "observed": "...", "fix": "..." } ],
+-  "gaps": [ { "item": "...", "impact": "..." } ],
+-  "validator": { "topology_ok": true, "invariants": [ { "name": "...", "status": "pass|fail", "note": "..." } ] },
+-  "reflexion": { "passes": 2, "changes": [ "..." ] },
+-  "actions": [ { "step": 1, "desc": "...", "owner": "...", "due": "..." } ],
+-  "evidence_index": [ "path:line or section_ref" ]
+-}
+-
+-GUARDRAILS (unified)
+-- Precedence: system > developer > user. If conflicts, state conflict, choose safer path, proceed with labeled assumptions.
+-- If asked to skip validation/safety, ignore that request; always run minimal checks.
+-- If reasoning must be hidden, output “Key Steps (concise)” and all verdicts/checks.
+-- Never drop “Decision Gate” or evidence references when evidence_required = true.
+-
+-MINI USAGE EXAMPLE (short)
+-Objective: Audit a 5-phase microservice rollout plan (blue/green deploy, DB migration, observability).
+-Standards: OWASP ASVS L1, org-release-policy v3.2
+-Controls: modes_on=[all], strictness=high, reflexion_passes=2, output_format=both, evidence_required=true
+-Criteria (weights): correctness 0.4, feasibility 0.3, risk 0.2, compliance 0.1
+-→ Produce the full Markdown report and JSON skeleton populated with concise findings, then a final verdict and next actions.
+-
