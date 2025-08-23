@@ -36,7 +36,7 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8")
 
 
-def compute_metrics(repo: Path) -> Tuple[Dict[str, Any], List[str]]:
+def compute_metrics(repo: Path, trigger: str) -> Tuple[Dict[str, Any], List[str]]:
     fwk = repo / "frameworks" / "fwk-001-cursor-rules"
     changes = fwk / "DOCS" / "changes"
 
@@ -51,12 +51,11 @@ def compute_metrics(repo: Path) -> Tuple[Dict[str, Any], List[str]]:
     progressive_on: bool = bool(override.get("progressive_mode"))
     allowlist: List[str] = list(override.get("overrides", {}).get("allowlist_triggers", []))
 
-    # Expectations under limited Progressive ON (/route only)
-    expected_trigger = "/route"
-    expected_role = "rules_master_toggle"
-    route_target_ok = routing.get(expected_trigger) == expected_role
-    role_enabled_ok = roles.get(expected_role, {}).get("enabled", False) is True
-    scope_ok = progressive_on and allowlist == [expected_trigger]
+    # Expectations under limited Progressive ON
+    expected_role = routing.get(trigger)
+    route_target_ok = expected_role is not None
+    role_enabled_ok = bool(roles.get(expected_role, {}).get("enabled", False)) if expected_role else False
+    scope_ok = progressive_on and (trigger in allowlist)
 
     # Drift detection: effective shadow should not alter routing targets
     shadow_routing = shadow.get("command_routing", {})
@@ -64,12 +63,12 @@ def compute_metrics(repo: Path) -> Tuple[Dict[str, Any], List[str]]:
 
     if not progressive_on:
         alerts.append("Progressive mode expected True but found False")
-    if allowlist != [expected_trigger]:
-        alerts.append(f"Allowlist triggers must be ['{expected_trigger}'] but found {allowlist}")
+    if trigger not in allowlist:
+        alerts.append(f"Trigger {trigger} not in allowlist {allowlist}")
     if not route_target_ok:
-        alerts.append(f"Baseline routing for {expected_trigger} must be {expected_role}")
-    if not role_enabled_ok:
-        alerts.append(f"Role {expected_role} must be enabled in roles matrix")
+        alerts.append(f"Baseline routing missing for {trigger}")
+    if route_target_ok and not role_enabled_ok:
+        alerts.append(f"Role {expected_role} must be enabled for {trigger}")
     if not no_routing_drift:
         alerts.append("routing_effective.shadow.json differs from baseline routing targets")
 
@@ -77,6 +76,8 @@ def compute_metrics(repo: Path) -> Tuple[Dict[str, Any], List[str]]:
         "timestamp_utc": time.strftime("%Y-%m-%dT%H:%M:%S+00:00", time.gmtime()),
         "progressive_mode": progressive_on,
         "allowlist_triggers": allowlist,
+        "trigger": trigger,
+        "expected_role": expected_role,
         "route_target_ok": route_target_ok,
         "role_enabled_ok": role_enabled_ok,
         "no_routing_drift": no_routing_drift,
@@ -86,26 +87,28 @@ def compute_metrics(repo: Path) -> Tuple[Dict[str, Any], List[str]]:
 
 def write_observability(repo: Path, metrics: Dict[str, Any], alerts: List[str]) -> None:
     fwk = repo / "frameworks" / "fwk-001-cursor-rules"
-    obs_dir = fwk / "DOCS" / "reports" / "progressive_observability"
-    obs_dir.mkdir(parents=True, exist_ok=True)
+    base_dir = fwk / "DOCS" / "reports" / "progressive_observability"
+    # Subfolder per trigger
+    sub_dir = base_dir / metrics["trigger"].strip("/").replace("/", "_")
+    sub_dir.mkdir(parents=True, exist_ok=True)
 
-    # Dashboard (JSON)
     dash = {
         "component": "routing_progressive_monitor",
-        "scope": "limited:/route",
+        "scope": f"limited:{metrics['trigger']}",
         "metrics": metrics,
         "alerts": alerts,
-        "status": "PASS" if not alerts else "WARN" if alerts else "PASS",
+        "status": "PASS" if not alerts else "WARN",
     }
-    (obs_dir / "monitoring_dashboard.json").write_text(json.dumps(dash, indent=2), encoding="utf-8")
+    (sub_dir / "monitoring_dashboard.json").write_text(json.dumps(dash, indent=2), encoding="utf-8")
 
-    # Health report (Markdown)
     health_lines = [
-        "# Progressive ON Health Report (limited: /route)",
+        f"# Progressive ON Health Report (limited: {metrics['trigger']})",
         "",
         f"- Timestamp (UTC): {metrics['timestamp_utc']}",
         f"- Progressive mode: {metrics['progressive_mode']}",
         f"- Allowlist triggers: {metrics['allowlist_triggers']}",
+        f"- Trigger: {metrics['trigger']}",
+        f"- Expected role: {metrics['expected_role']}",
         f"- Route target OK: {metrics['route_target_ok']}",
         f"- Role enabled OK: {metrics['role_enabled_ok']}",
         f"- No routing drift: {metrics['no_routing_drift']}",
@@ -116,15 +119,13 @@ def write_observability(repo: Path, metrics: Dict[str, Any], alerts: List[str]) 
         health_lines += [f"- {a}" for a in alerts]
     else:
         health_lines.append("- (none)")
-    write_text(obs_dir / "health_report.md", "\n".join(health_lines) + "\n")
+    write_text(sub_dir / "health_report.md", "\n".join(health_lines) + "\n")
 
-    # Alerts log (append)
-    if alerts:
-        with open(obs_dir / "alert_history.log", "a", encoding="utf-8") as f:
+    with open(sub_dir / "alert_history.log", "a", encoding="utf-8") as f:
+        if alerts:
             for a in alerts:
                 f.write(f"{metrics['timestamp_utc']} ALERT {a}\n")
-    else:
-        with open(obs_dir / "alert_history.log", "a", encoding="utf-8") as f:
+        else:
             f.write(f"{metrics['timestamp_utc']} OK no-alerts\n")
 
 
@@ -133,38 +134,40 @@ def append_consolidated(repo: Path, metrics: Dict[str, Any], alerts: List[str]) 
     latest = fwk / "DOCS" / "reports" / "Latest_Current.md"
     status = "PASS" if not alerts else "WARN"
     lines = [
-        "\n## Progressive Monitoring Snapshot (/route)",
+        "\n## Progressive Monitoring Snapshot (limited canary)",
+        f"- Trigger: {metrics['trigger']}",
         f"- Timestamp (UTC): {metrics['timestamp_utc']}",
         f"- Status: {status}",
         f"- Progressive mode: {metrics['progressive_mode']}",
         f"- Allowlist: {metrics['allowlist_triggers']}",
+        f"- Expected role: {metrics['expected_role']}",
         f"- Route target OK: {metrics['route_target_ok']}",
         f"- No routing drift: {metrics['no_routing_drift']}",
     ]
     latest.write_text(latest.read_text() + "\n" + "\n".join(lines) + "\n", encoding="utf-8")
 
 
-def run_once() -> int:
+def run_once(trigger: str) -> int:
     repo = discover_repo_root()
-    metrics, alerts = compute_metrics(repo)
+    metrics, alerts = compute_metrics(repo, trigger)
     write_observability(repo, metrics, alerts)
     append_consolidated(repo, metrics, alerts)
-    # Exit non-zero if alerts (to integrate with CI if desired)
     return 1 if alerts else 0
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Monitor limited Progressive ON (/route) health and produce observability artifacts")
+    ap = argparse.ArgumentParser(description="Monitor limited Progressive ON health and produce observability artifacts")
     ap.add_argument("--interval", type=int, default=0, help="Seconds between checks (0 for single run)")
     ap.add_argument("--repeat", type=int, default=1, help="Number of runs (ignored if interval=0)")
+    ap.add_argument("--trigger", type=str, default="/route", help="Trigger to check (e.g., /route, /status)")
     args = ap.parse_args()
 
     if args.interval <= 0:
-        return run_once()
+        return run_once(args.trigger)
 
     code = 0
     for i in range(max(args.repeat, 1)):
-        rc = run_once()
+        rc = run_once(args.trigger)
         code = rc or code
         if i < args.repeat - 1:
             time.sleep(args.interval)

@@ -4645,3 +4645,12 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 ---
 
+### 2025-08-23 — LIMITED CANARY — /status enabled
+
+- Change: allowlist extended to include /status (Progressive ON still limited)
+- Monitor: scripts/progressive_monitor.py --trigger /status → PASS; expected_role execution_orchestrator; no drift/alerts
+- Rollback: restore routing_override.yaml from latest .bak and rerun monitor to confirm OFF state for /status
+
+
+---
+
