@@ -14,6 +14,7 @@ from datetime import datetime
 from typing import Dict, Any
 
 from cursor_session_manager import session_manager
+from atomic_io import atomic_write_json, with_json_lock
 
 STATE_FILE = os.path.join(os.getcwd(), "task-state.json")
 
@@ -25,8 +26,10 @@ STATE_FILE = os.path.join(os.getcwd(), "task-state.json")
 def load_task_state() -> Dict[str, Any]:
     if os.path.exists(STATE_FILE):
         try:
-            with open(STATE_FILE, "r", encoding="utf-8") as fp:
-                return json.load(fp)
+            # Shared lock during read to reduce races
+            with with_json_lock(STATE_FILE, exclusive=False):
+                with open(STATE_FILE, "r", encoding="utf-8") as fp:
+                    return json.load(fp)
         except (OSError, json.JSONDecodeError):
             pass
     return {}
@@ -39,8 +42,8 @@ def save_task_state(extra_state: Dict[str, Any] | None = None) -> None:
     # Inject cursor session so everything is centralised.
     state["cursor_session"] = session_manager.get_state().get("cursor_session", {})
     try:
-        with open(STATE_FILE, "w", encoding="utf-8") as fp:
-            json.dump(state, fp, indent=2, ensure_ascii=False)
+        with with_json_lock(STATE_FILE, exclusive=True):
+            atomic_write_json(STATE_FILE, state)
     except OSError:
         pass
 

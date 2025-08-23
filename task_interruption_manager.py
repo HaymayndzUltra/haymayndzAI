@@ -13,6 +13,8 @@ from pathlib import Path
 # Import existing managers
 from todo_manager import new_task, add_todo, list_open_tasks, set_task_status
 from task_state_manager import save_task_state, load_task_state
+from atomic_io import atomic_write_json, with_json_lock
+from tz_utils import now_ph_iso
 
 class TaskInterruptionManager:
     """Manages automatic task interruption and resumption"""
@@ -27,10 +29,11 @@ class TaskInterruptionManager:
         """Load interruption state from file"""
         if self.interruption_file.exists():
             try:
-                with open(self.interruption_file, 'r') as f:
-                    data = json.load(f)
-                    self.current_task = data.get('current_task')
-                    self.interrupted_tasks = data.get('interrupted_tasks', [])
+                with with_json_lock(str(self.interruption_file), exclusive=False):
+                    with open(self.interruption_file, 'r') as f:
+                        data = json.load(f)
+                        self.current_task = data.get('current_task')
+                        self.interrupted_tasks = data.get('interrupted_tasks', [])
             except Exception as e:
                 print(f"⚠️  Error loading interruption state: {e}")
     
@@ -39,11 +42,11 @@ class TaskInterruptionManager:
         data = {
             'current_task': self.current_task,
             'interrupted_tasks': self.interrupted_tasks,
-            'last_updated': datetime.utcnow().isoformat()
+            'last_updated': now_ph_iso()
         }
         try:
-            with open(self.interruption_file, 'w') as f:
-                json.dump(data, f, indent=2)
+            with with_json_lock(str(self.interruption_file), exclusive=True):
+                atomic_write_json(str(self.interruption_file), data)
         except Exception as e:
             print(f"⚠️  Error saving interruption state: {e}")
     
@@ -59,7 +62,7 @@ class TaskInterruptionManager:
         self.current_task = {
             'task_id': task_id,
             'description': task_description,
-            'started_at': datetime.utcnow().isoformat(),
+            'started_at': now_ph_iso(),
             'status': 'active'
         }
         
@@ -73,7 +76,7 @@ class TaskInterruptionManager:
         """Interrupt the current task and save it for later resumption"""
         if self.current_task:
             self.current_task['status'] = 'interrupted'
-            self.current_task['interrupted_at'] = datetime.utcnow().isoformat()
+            self.current_task['interrupted_at'] = now_ph_iso()
             self.interrupted_tasks.append(self.current_task)
             
             print(f"⏸️  Interrupted task: {self.current_task['description']}")
@@ -139,92 +142,11 @@ class TaskInterruptionManager:
             self.resume_interrupted_tasks()
             return "✅ Resumed all interrupted tasks"
         
-        # Check for status command
-        if 'status' in command.lower() or 'anong ginagawa' in command.lower():
-            status = self.get_current_status()
-            return self.format_status(status)
-        
-        # Regular command - continue with current task
-        return f"📋 Continuing with current task: {self.current_task['description'] if self.current_task else 'None'}"
-    
-    def format_status(self, status: Dict[str, Any]) -> str:
-        """Format status for display"""
-        lines = ["📊 Task Interruption Status:"]
-        
-        if status['current_task']:
-            # Handle both string (task ID) and dict formats
-            if isinstance(status['current_task'], str):
-                # It's a task ID, get the full task details
-                from todo_manager import list_open_tasks
-                tasks = list_open_tasks()
-                current_task = None
-                for task in tasks:
-                    if task['id'] == status['current_task']:
-                        current_task = task
-                        break
-                
-                if current_task:
-                    lines.append(f"   🚀 Current Task: {current_task['description']}")
-                    lines.append(f"      ID: {current_task['id']}")
-                    lines.append(f"      Status: {current_task['status']}")
-                else:
-                    lines.append(f"   🚀 Current Task ID: {status['current_task']} (details not found)")
-                    lines.append(f"      ID: {status['current_task']}")
-                    lines.append(f"      Status: Unknown")
-            else:
-                # It's already a dictionary
-                lines.append(f"   🚀 Current Task: {status['current_task']['description']}")
-                lines.append(f"      ID: {status['current_task']['task_id']}")
-                lines.append(f"      Status: {status['current_task']['status']}")
-        else:
-            lines.append("   ℹ️  No current task")
-        
-        if status['interrupted_tasks_count'] > 0:
-            lines.append(f"   ⏸️  Interrupted Tasks: {status['interrupted_tasks_count']}")
-            for i, task in enumerate(status['interrupted_tasks'], 1):
-                lines.append(f"      {i}. {task['description']}")
-                lines.append(f"         ID: {task['task_id']}")
-        else:
-            lines.append("   ℹ️  No interrupted tasks")
-        
-        return "\n".join(lines)
+        return "ℹ️  No task interruption action detected"
 
-
-# Global instance
+# Singleton instance
 interruption_manager = TaskInterruptionManager()
 
-
-def auto_task_handler(command: str) -> str:
-    """Main function to handle automatic task interruption"""
-    return interruption_manager.process_command(command)
-
-
-def start_interrupted_task(task_description: str) -> str:
-    """Start a new task with automatic interruption"""
-    return interruption_manager.start_task(task_description)
-
-
-def resume_all_interrupted_tasks():
-    """Resume all interrupted tasks"""
-    interruption_manager.resume_interrupted_tasks()
-
-
-def get_interruption_status() -> Dict[str, Any]:
-    """Get current interruption status"""
-    return interruption_manager.get_current_status()
-
-
 if __name__ == "__main__":
-    import sys
-    
-    if len(sys.argv) > 1:
-        command = " ".join(sys.argv[1:])
-        result = auto_task_handler(command)
-        print(result)
-    else:
-        print("Task Interruption Manager")
-        print("Usage: python3 task_interruption_manager.py <command>")
-        print("Commands:")
-        print("  <any text> - Auto-detect if it's a new task")
-        print("  resume - Resume all interrupted tasks")
-        print("  status - Show current status") 
+    manager = interruption_manager
+    print(json.dumps(manager.get_current_status(), indent=2)) 
