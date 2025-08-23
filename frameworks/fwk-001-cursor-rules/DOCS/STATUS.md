@@ -9,6 +9,8 @@ Current
 - Canonical policies: frameworks/fwk-001-cursor-rules/system-prompt/*
 - Gates: BLOCK semantics per execution_orchestrator.mdc
 - Examples present for all required artifacts
+- Routing updated: `/toggle` → `rules_master_toggle` in routing matrix
+- Progressive mode: OFF (dry-run; shadow-only overrides)
 
 Open items (project-specific)
 - Fill project goals and constraints into role INPUT contracts

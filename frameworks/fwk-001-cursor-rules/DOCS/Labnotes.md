@@ -4610,3 +4610,16 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 ---
 
+### 2025-08-23 — DOC CONSISTENCY — fwk-001-cursor-rules
+
+- Updated STATUS.md: noted routing fix and Progressive OFF
+- Updated HANDBOOK.md: noted routing fix and Progressive OFF under Operations
+- Acceptance (docs): PASS — links present; Progressive OFF reflected in both docs
+
+Rollback: revert the two doc edits if needed.
+
+Next: keep Progressive OFF; proceed to next minimal slice (if any)
+
+
+---
+
