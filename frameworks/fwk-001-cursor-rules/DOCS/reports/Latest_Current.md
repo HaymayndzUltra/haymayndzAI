@@ -253,3 +253,12 @@
 - Allowlist: ['/route']
 - Route target OK: True
 - No routing drift: True
+
+
+## Progressive Monitoring Snapshot (/route)
+- Timestamp (UTC): 2025-08-23T14:12:17+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route']
+- Route target OK: True
+- No routing drift: True
