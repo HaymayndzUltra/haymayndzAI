@@ -1,0 +1,243 @@
+{
+  "command_routing": {
+    "/alert": "observability_ai",
+    "/analyze": "analyst_ai",
+    "/architect": "planning_ai",
+    "/backlog": "product_owner_ai",
+    "/benchmark": "analyst_ai",
+    "/compliance_check": "security_ai",
+    "/create_migration": "data_ai",
+    "/deploy": "mlops_ai",
+    "/design_schema": "data_ai",
+    "/docs": "documentation_ai",
+    "/estimate": "planning_ai",
+    "/extend_framework": "prompt_factory_ai",
+    "/gen_code": "codegen_ai",
+    "/halt": "execution_orchestrator",
+    "/health": "observability_ai",
+    "/implement": "codegen_ai",
+    "/learn": "memory_ai",
+    "/new_framework": "prompt_factory_ai",
+    "/observe": "observability_ai",
+    "/optimize_queries": "data_ai",
+    "/plan": "planning_ai",
+    "/planner_mode": "planner_moderator_ai",
+    "/prioritize": "product_owner_ai",
+    "/recall": "memory_ai",
+    "/refactor": "codegen_ai",
+    "/refine": "product_owner_ai",
+    "/review": "analyst_ai",
+    "/rollback": "mlops_ai",
+    "/run_pipeline": "execution_orchestrator",
+    "/scale": "mlops_ai",
+    "/security_scan": "security_ai",
+    "/snapshot": "memory_ai",
+    "/status": "execution_orchestrator",
+    "/template": "prompt_factory_ai",
+    "/test": "qa_ai",
+    "/threat_model": "security_ai",
+    "/toggle": "rules_master_toggle",
+    "/update_docs": "documentation_ai",
+    "/validate": "qa_ai",
+    "/validate_docs": "documentation_ai"
+  },
+  "roles": {
+    "analyst_ai": {
+      "dependencies": [],
+      "enabled": true,
+      "priority": 7,
+      "triggers": [
+        "/review",
+        "/analyze",
+        "/benchmark"
+      ]
+    },
+    "auditor_ai": {
+      "dependencies": [
+        "planning_ai"
+      ],
+      "enabled": true,
+      "priority": 15,
+      "triggers": [
+        "/audit"
+      ]
+    },
+    "codegen_ai": {
+      "dependencies": [
+        "planning_ai"
+      ],
+      "enabled": true,
+      "priority": 3,
+      "triggers": [
+        "/gen_code",
+        "/implement",
+        "/refactor"
+      ]
+    },
+    "data_ai": {
+      "dependencies": [
+        "planning_ai"
+      ],
+      "enabled": true,
+      "priority": 14,
+      "triggers": [
+        "/design_schema",
+        "/create_migration",
+        "/optimize_queries"
+      ]
+    },
+    "documentation_ai": {
+      "dependencies": [
+        "codegen_ai"
+      ],
+      "enabled": true,
+      "priority": 6,
+      "triggers": [
+        "/docs",
+        "/update_docs",
+        "/validate_docs"
+      ]
+    },
+    "execution_orchestrator": {
+      "dependencies": [],
+      "enabled": true,
+      "priority": 0,
+      "triggers": [
+        "/run_pipeline",
+        "/status",
+        "/halt"
+      ]
+    },
+    "l10n_i18n_ai": {
+      "dependencies": [
+        "documentation_ai"
+      ],
+      "enabled": true,
+      "priority": 12,
+      "triggers": [
+        "/l10n_setup",
+        "/generate_templates",
+        "/validate_locale"
+      ]
+    },
+    "memory_ai": {
+      "dependencies": [],
+      "enabled": true,
+      "priority": 8,
+      "triggers": [
+        "/snapshot",
+        "/recall",
+        "/learn"
+      ]
+    },
+    "mlops_ai": {
+      "dependencies": [
+        "qa_ai"
+      ],
+      "enabled": true,
+      "priority": 5,
+      "triggers": [
+        "/deploy",
+        "/rollback",
+        "/scale"
+      ]
+    },
+    "observability_ai": {
+      "dependencies": [
+        "mlops_ai"
+      ],
+      "enabled": true,
+      "priority": 9,
+      "triggers": [
+        "/observe",
+        "/alert",
+        "/health"
+      ]
+    },
+    "planner_moderator_ai": {
+      "dependencies": [],
+      "enabled": true,
+      "priority": 17,
+      "triggers": [
+        "/planner_mode"
+      ]
+    },
+    "planning_ai": {
+      "dependencies": [
+        "product_owner_ai"
+      ],
+      "enabled": true,
+      "priority": 2,
+      "triggers": [
+        "/plan",
+        "/architect",
+        "/estimate"
+      ]
+    },
+    "principal_engineer_ai": {
+      "dependencies": [
+        "auditor_ai"
+      ],
+      "enabled": true,
+      "priority": 16,
+      "triggers": [
+        "/peer_review",
+        "/synthesize_plan"
+      ]
+    },
+    "product_owner_ai": {
+      "dependencies": [],
+      "enabled": true,
+      "priority": 1,
+      "triggers": [
+        "/backlog",
+        "/prioritize",
+        "/refine"
+      ]
+    },
+    "prompt_factory_ai": {
+      "dependencies": [],
+      "enabled": true,
+      "priority": 10,
+      "triggers": [
+        "/new_framework",
+        "/extend_framework",
+        "/template"
+      ]
+    },
+    "prompt_linter_ai": {
+      "dependencies": [],
+      "enabled": true,
+      "priority": 13,
+      "triggers": [
+        "/lint_prompts",
+        "/check_style",
+        "/suggest_improvements"
+      ]
+    },
+    "qa_ai": {
+      "dependencies": [
+        "codegen_ai"
+      ],
+      "enabled": true,
+      "priority": 4,
+      "triggers": [
+        "/test",
+        "/review",
+        "/validate"
+      ]
+    },
+    "security_ai": {
+      "dependencies": [
+        "codegen_ai"
+      ],
+      "enabled": true,
+      "priority": 11,
+      "triggers": [
+        "/security_scan",
+        "/threat_model",
+        "/compliance_check"
+      ]
+    }
+  }
+}
