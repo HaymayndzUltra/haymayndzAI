@@ -1,6 +1,6 @@
 {
   "framework": "fwk-001-cursor-rules",
-  "timestamp_utc": "2025-08-23T12:22:17+00:00",
+  "timestamp_utc": "2025-08-23T12:52:37+00:00",
   "repo_root": "/workspace",
   "roles": {
     "product_owner_ai": {
@@ -244,6 +244,7 @@
     "/extend_framework": "prompt_factory_ai",
     "/template": "prompt_factory_ai",
     "/toggle": "rules_master_toggle",
+    "/route": "rules_master_toggle",
     "/design_schema": "data_ai",
     "/create_migration": "data_ai",
     "/optimize_queries": "data_ai",

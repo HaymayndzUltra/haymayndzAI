@@ -4635,3 +4635,13 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 ---
 
+### 2025-08-23 — ROUTING FIX — /route mapping applied
+
+- Change: added /route → rules_master_toggle in rules_master_toggle.mdc routing matrix
+- Baselines regenerated; effective shadow updated (scope still limited)
+- Monitoring: status PASS (no alerts); drift none; allowlist ['/route']
+- Rollback: revert the single-line mapping in rules_master_toggle.mdc and restore routing_baseline.json from prior commit if required
+
+
+---
+

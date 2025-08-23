@@ -133,3 +133,15 @@
 - Allowlist: ['/route']
 - Route target OK: False
 - No routing drift: True
+
+## Routing Matrix Update
+- /route now maps to rules_master_toggle
+
+
+## Progressive Monitoring Snapshot (/route)
+- Timestamp (UTC): 2025-08-23T12:53:01+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route']
+- Route target OK: True
+- No routing drift: True

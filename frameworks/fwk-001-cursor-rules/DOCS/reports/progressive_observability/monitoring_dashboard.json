@@ -2,17 +2,15 @@
   "component": "routing_progressive_monitor",
   "scope": "limited:/route",
   "metrics": {
-    "timestamp_utc": "2025-08-23T12:49:07+00:00",
+    "timestamp_utc": "2025-08-23T12:53:01+00:00",
     "progressive_mode": true,
     "allowlist_triggers": [
       "/route"
     ],
-    "route_target_ok": false,
+    "route_target_ok": true,
     "role_enabled_ok": true,
     "no_routing_drift": true
   },
-  "alerts": [
-    "Baseline routing for /route must be rules_master_toggle"
-  ],
-  "status": "WARN"
+  "alerts": [],
+  "status": "PASS"
 }
