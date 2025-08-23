@@ -4663,3 +4663,12 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 ---
 
+### 2025-08-23 — LIMITED CANARY — /health PASS (single)
+
+- Change: allowlist extended to include /health (Progressive ON limited)
+- Monitor: scripts/progressive_monitor.py --trigger /health → PASS; expected_role observability_ai; no drift/alerts
+- Rollback: restore routing_override.yaml from the latest .bak and re-run /health monitor to confirm OFF state
+
+
+---
+

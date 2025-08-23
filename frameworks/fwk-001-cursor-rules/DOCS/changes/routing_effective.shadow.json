@@ -259,7 +259,8 @@
     "roles": {},
     "allowlist_triggers": [
       "/route",
-      "/status"
+      "/status",
+      "/health"
     ]
   }
 }

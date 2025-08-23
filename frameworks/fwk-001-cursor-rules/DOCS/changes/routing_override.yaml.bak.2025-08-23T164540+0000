@@ -5,5 +5,4 @@ overrides:
   allowlist_triggers:
   - /route
   - /status
-  - /health
 notes: Dry-run only. Progressive OFF.
