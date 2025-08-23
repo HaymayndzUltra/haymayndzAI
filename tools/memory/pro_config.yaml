@@ -13,7 +13,7 @@ index:
     m: 64
     bits: 8
 storage:
-  root: /workspace/storage/memory
+  root: /home/haymayndz/HaymayndzAI/storage/memory
   ltm_file: knowledge_base.jsonl
   decision_log: decision_log.md
   snapshot_file: context_snapshot.yaml

@@ -35,9 +35,9 @@ command_mapping:
   "/gen_code":    "python3 workflow_memory_intelligence_fixed.py execute"
   "/test":        "python3 analyzer.py --phase-index"
   "/deploy":      "python3 auto_sync_manager.py deploy"
-  "/snapshot":    "python3 /workspace/tools/memory/memory_cli.py snapshot"
-  "/recall":      "python3 /workspace/tools/memory/memory_cli.py recall"
-  "/learn":       "python3 /workspace/tools/memory/memory_cli.py save"
+  "/snapshot":    "python3 /home/haymayndz/HaymayndzAI/tools/memory/memory_cli.py snapshot"
+  "/recall":      "python3 /home/haymayndz/HaymayndzAI/tools/memory/memory_cli.py recall"
+  "/learn":       "python3 /home/haymayndz/HaymayndzAI/tools/memory/memory_cli.py save"
 
 # Existing CLI preserved
 existing_commands:

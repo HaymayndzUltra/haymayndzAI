@@ -89,3 +89,17 @@ See `rules_master_toggle.mdc` routing matrix. Example additions used in Café pr
 - All edits generate `.bak` backups where applicable
 - Planner-first prevents unconfirmed changes
 - Gates enforce quality and release safety
+
+## 11) Memory (Pro) — GPU-preferred, CPU fallback
+- CLI: `/home/haymayndz/HaymayndzAI/tools/memory/memory_cli.py`
+- Config: `/home/haymayndz/HaymayndzAI/tools/memory/pro_config.yaml`
+- Storage Root: `/home/haymayndz/HaymayndzAI/storage/memory`
+- Common commands:
+  - Save: `python3 /home/haymayndz/HaymayndzAI/tools/memory/memory_cli.py save "note" --tags project:default`
+  - Recall: `python3 /home/haymayndz/HaymayndzAI/tools/memory/memory_cli.py recall "topic" --topk 5`
+  - Reindex: `python3 /home/haymayndz/HaymayndzAI/tools/memory/memory_cli.py reindex`
+  - Snapshot: `python3 /home/haymayndz/HaymayndzAI/tools/memory/memory_cli.py snapshot --summary "..."`
+- Bridge mappings:
+  - `/snapshot` → `python3 /home/haymayndz/HaymayndzAI/tools/memory/memory_cli.py snapshot`
+  - `/recall` → `python3 /home/haymayndz/HaymayndzAI/tools/memory/memory_cli.py recall`
+  - `/learn` → `python3 /home/haymayndz/HaymayndzAI/tools/memory/memory_cli.py save`
