@@ -12,6 +12,7 @@ Current
 - Routing updated: `/toggle` → `rules_master_toggle` in routing matrix
 - Progressive mode: OFF (dry-run; shadow-only overrides)
 - Progressive ON (limited): /route only via DOCS/changes/routing_override.yaml (rollback: use .bak)
+‑ Progressive ON (limited): ['/route', '/status', '/health'] via DOCS/changes/routing_override.yaml (rollback: use .bak)
 
 Open items (project-specific)
 - Fill project goals and constraints into role INPUT contracts

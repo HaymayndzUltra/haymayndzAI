@@ -69,3 +69,10 @@
 - Expected role: observability_ai
 - Route target OK: True
 - No routing drift: True
+
+## /health Canary Summary (limited)
+- Runs recorded: 6
+- Window: 2025-08-23T16:46:06+00:00 → 2025-08-23T17:09:00+00:00 (UTC)
+- Scope: Progressive ON allowlist ['/route', '/status', '/health']
+- Expected role: observability_ai
+- Result: PASS (0 alerts), No routing drift

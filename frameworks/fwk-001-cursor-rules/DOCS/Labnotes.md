@@ -4672,3 +4672,12 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 ---
 
+### 2025-08-23 — SUMMARY — /health canary PASS; docs updated
+
+- Runs: 6 recorded; all PASS; 0 alerts; no drift
+- Scope now limited to: ['/route', '/status', '/health']
+- Docs updated: STATUS.md and HANDBOOK.md reflect limited scope and rollback path
+
+
+---
+
