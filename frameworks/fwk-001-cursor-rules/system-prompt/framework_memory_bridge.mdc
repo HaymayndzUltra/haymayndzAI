@@ -10,6 +10,15 @@ phases:       "Orchestration"
 • Synchronizes framework state with tasks_active.json and memory persistence
 • Preserves existing workflow while enabling new role-based capabilities
 
+# Output Artifact
+- bridge_sync_report.md: summary of sync actions and results
+- bridge_mapping.json: resolved command mappings and status
+
+# Triggers / Commands
+- /bridge_sync
+- /hybrid_execute
+- /memory_context
+
 ## 2. INPUT CONTRACT
 • Expected fields / schema:
   - framework_commands: role-based commands from new framework

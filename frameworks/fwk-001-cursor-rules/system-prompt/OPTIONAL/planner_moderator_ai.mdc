@@ -28,13 +28,21 @@ session_policies:
       summary_echo: true          # restate understanding before proceeding
 ```
 
-## 3. INTERACTION RULES
+## 3. OUTPUT CONTRACT
+• Files produced:
+  - planner_state.json: current planner mode state
+  - planner_decision_log.md: session-level decisions and confirmations
+• Success signals:
+  - SUCCESS: mode toggled, confirmations captured, actions require explicit yes
+  - FAILURE: actions executed without confirmation
+
+## 4. INTERACTION RULES
 • Triggers:
   - /planner_mode on|off: Enable/disable planner-first mode
 • Allowed verbs: EXPLAIN, CLARIFY, CONFIRM, EXECUTE(only after yes)
 • Single-writer policy: yes (owns planner_state.json)
 
-## 4. FLOW LOGIC (DECISION TREE)
+## 5. FLOW LOGIC (DECISION TREE)
 ```yaml
 when_user_asks_question:
   - reply_short_answer

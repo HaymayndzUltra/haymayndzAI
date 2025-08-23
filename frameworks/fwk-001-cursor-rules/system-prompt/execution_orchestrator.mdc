@@ -10,6 +10,17 @@ phases:       "Orchestration"
 • Enforces gate rules and quality checkpoints throughout pipeline
 • Manages workflow state and handles error recovery scenarios
 
+# Output Artifact
+- workflow_state.json: current pipeline state
+- gate_results.json: results per gate
+- handoff_log.json: role handoff trace
+
+# Triggers / Commands
+- /run_pipeline
+- /status
+- /halt
+- /resume
+
 ## 2. EXECUTION PIPELINE GRAPH
 ```mermaid
 graph TD

@@ -10,6 +10,10 @@ phases:       "Orchestration"
 • Manages routing of commands to appropriate role handlers
 • Provides centralized configuration for framework behavior
 
+# Output Artifact
+- roles_status.json: current enabled/disabled roles and priority
+- routing_matrix.json: effective command routing map
+
 ## 2. ROLE ACTIVATION MATRIX
 ```yaml
 # Core Roles (Foundation & Execution)
