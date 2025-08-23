@@ -1,0 +1,136 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+REPO="$(git rev-parse --show-toplevel)"
+LAB="$REPO/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md"
+
+# Allow bypass with LABNOTES_DISABLE=1
+if [ "${LABNOTES_DISABLE:-}" = "1" ]; then
+  exit 0
+fi
+
+mkdir -p "$(dirname "$LAB")"
+
+changes="$(git diff --cached --name-status)"
+[ -z "$changes" ] && exit 0
+
+numstat_for() {
+  local path="$1"
+  git diff --cached --numstat -- "$path" | awk '{printf("%s %s", $1, $2)}'
+}
+
+classify_importance() {
+  local path="$1"
+  case "$path" in
+    tools/memory/*|atomic_io.py|todo_manager.py|scripts/*|frameworks/fwk-001-cursor-rules/examples/*)
+      echo "High" ;;
+    frameworks/fwk-001-cursor-rules/*)
+      echo "Medium" ;;
+    *) echo "Low" ;;
+  esac
+}
+
+py_symbols_added() {
+  local path="$1"
+  git diff --cached -U0 -- "$path" | sed -n 's/^+\s*def \([^ (][^ (]*\).*/\1/p; s/^+\s*class \([^ (][^ (]*\).*/\1/p' | tr '\n' ',' | sed 's/,$//'
+}
+
+md_headings_added() {
+  local path="$1"
+  git diff --cached -U0 -- "$path" | sed -n 's/^+\s*\(#[#]* .*\)/\1/p' | tr '\n' ';' | sed 's/;$//'
+}
+
+yaml_keys_added() {
+  local path="$1"
+  git diff --cached -U0 -- "$path" | sed -n 's/^+\s*\([^#][^:]*\):.*/\1/p' | tr '\n' ',' | sed 's/,$//'
+}
+
+json_keys_added() {
+  local path="$1"
+  git diff --cached -U0 -- "$path" | sed -n 's/^+\s*"\([^"]\+\)":.*/\1/p' | tr '\n' ',' | sed 's/,$//'
+}
+
+while IFS=$'\t' read -r status path1 path2; do
+  [ -z "${status:-}" ] && continue
+  case "$status" in
+    A) action="CREATE"; file="$path1" ;;
+    M) action="MODIFY"; file="$path1" ;;
+    D) action="DELETE"; file="$path1" ;;
+    R*) action="RENAME"; file="$path2" ;;
+    *) action="$status"; file="${path2:-$path1}" ;;
+  esac
+  ts="$(TZ=Asia/Manila date '+%Y-%m-%d %H:%M:%S %Z%z')"
+  rel="$file"
+  abs="$REPO/$file"
+  fname="$(basename "$file")"
+  ext=""
+  case "$fname" in
+    *.*) ext=".${fname##*.}" ;;
+  esac
+  read -r added removed <<<"$(numstat_for "$file")"
+  [ -z "${added:-}" ] && added=0
+  [ -z "${removed:-}" ] && removed=0
+  importance="$(classify_importance "$file")"
+  autosummary=""
+  case "$ext" in
+    .py)
+      symbols="$(py_symbols_added "$file")"
+      [ -n "$symbols" ] && autosummary="Functions/Classes: $symbols" || autosummary=""
+      ;;
+    .md)
+      heads="$(md_headings_added "$file")"
+      [ -n "$heads" ] && autosummary="Headings: $heads" || autosummary=""
+      ;;
+    .yml|.yaml)
+      keys="$(yaml_keys_added "$file")"
+      [ -n "$keys" ] && autosummary="Keys: $keys" || autosummary=""
+      ;;
+    .json)
+      jkeys="$(json_keys_added "$file")"
+      [ -n "$jkeys" ] && autosummary="Keys: $jkeys" || autosummary=""
+      ;;
+    *) autosummary="" ;;
+  esac
+
+  {
+    printf '### %s — %s — %s\n\n' "$ts" "$action" "$rel"
+    printf '%s\n' "- Actor: ${LABNOTES_ACTOR:-User} [AI | User | Automation]"
+    printf '%s\n' "- Action: $action [CREATE | MODIFY | DELETE | TEST]"
+    printf '%s\n' "- Path: $rel (abs: $abs)"
+    printf '%s\n\n' "- File: $fname (ext: $ext)"
+    printf '#### Summary\n- Auto Summary: +%s/-%s lines; Importance: %s\n' "$added" "$removed" "$importance"
+    if [ -n "$autosummary" ]; then printf '%s\n' "-- $autosummary"; fi
+    printf '\n'
+    printf '#### Reason / Motivation\n-\n\n'
+    printf '#### Details of Change\n- Staged diff stats: +%s lines, -%s lines\n\n' "$added" "$removed"
+    printf '#### Commands Run (if any)\n````bash\n# add commands here\n````\n\n'
+    printf '#### Tests Executed\n- [ ] Unit\n- [ ] Integration\n- [ ] Manual\n- Notes:\n\n'
+    printf '#### Results / Observations\n-\n\n'
+    printf '#### Acceptance / Verification\n- Criteria:\n- Evidence:\n\n'
+    printf '#### Risks / Impact\n-\n\n'
+    printf '#### Rollback / Recovery\n- Steps:\n\n'
+    printf '#### Follow-ups / Next Steps\n-\n\n'
+    printf '#### Traceability\n'
+    case "$rel" in
+      frameworks/fwk-001-cursor-rules/examples/*)
+        printf '%s\n\n' "- References: Final_Implementation_Plan / Summary_Report / Validation_Report (examples)" ;;
+      tools/memory/*)
+        printf '%s\n\n' "- References: tools/memory README & pro_config.yaml" ;;
+      atomic_io.py|todo_manager.py)
+        printf '%s\n\n' "- References: Action_Plan (Atomic IO/Locking), Validation_Report (PoC)" ;;
+      *)
+        printf '%s\n\n' "- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)" ;;
+    esac
+    printf '---\n\n'
+  } >> "$LAB"
+
+done <<EOF
+$changes
+EOF
+
+# Ensure Labnotes is included in this commit
+git add "$LAB" || true
+
+exit 0
+
+

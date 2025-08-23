@@ -129,14 +129,23 @@ def append_labnotes(text: str) -> None:
 def run(actor: str, interval: float) -> None:
     template = load_template()
     prev = iter_repo_files(REPO_ROOT)
+    last_emit: Dict[str, float] = {}
+    debounce_s = 3.0
     while True:
         time.sleep(interval)
         curr = iter_repo_files(REPO_ROOT)
         changes = detect_changes(prev, curr)
+        now = time.time()
         for path, action in changes.items():
+            key = f"{action}:{path}"
+            if key in last_emit and (now - last_emit[key]) < debounce_s:
+                continue
             try:
                 entry = format_entry(template, actor=actor, action=action, path=path)
-                append_labnotes(entry)
+                # Minimal auto-summary hint (lines +/- via os.stat delta heuristic not available w/o diff)
+                hint = f"\n> auto: detected {action.lower()} on {path.name}"
+                append_labnotes(entry + hint + "\n")
+                last_emit[key] = now
             except Exception:
                 # best-effort logging only; continue
                 pass
