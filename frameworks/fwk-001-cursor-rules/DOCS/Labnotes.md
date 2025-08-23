@@ -4584,3 +4584,29 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 ---
 
+### 2025-08-23 — DRY-RUN — routing slice — fwk-001-cursor-rules
+
+- Scope: Build routing/gates baselines, shadow overrides, acceptance checks
+- Artifacts: DOCS/changes/routing_baseline.json, gates_baseline.json, routing_override.yaml, routing_effective.shadow.json
+- Report: DOCS/reports/Latest_Current.md (dry-run slice + Acceptance Gate Results)
+
+#### Gate Status
+- routing_integrity: FAIL — /toggle → rules_master_toggle (role missing in roles matrix)
+- gates_parseable: PASS — pipeline_gates parsed
+- observability: PASS — role present
+- memory_integrity: PASS — tools present
+- docs_updated: PASS — links present
+
+#### Rollback
+- Remove newly written dry-run files under DOCS/changes/* and the appended section in DOCS/reports/Latest_Current.md
+
+#### Next Slice (proposed)
+- Add `rules_master_toggle` to `roles` in `system-prompt/rules_master_toggle.mdc` with triggers ["/toggle", "/route"] and enabled=true (no other routing changes)
+- Re-run acceptance checks; if PASS, enable Progressive for routing-only overrides
+
+#### Notes
+- Progressive mode remains OFF; no live edits performed
+
+
+---
+

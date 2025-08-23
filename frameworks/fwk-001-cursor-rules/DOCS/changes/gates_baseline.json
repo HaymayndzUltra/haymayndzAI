@@ -1,0 +1,120 @@
+{
+  "framework": "fwk-001-cursor-rules",
+  "timestamp_utc": "2025-08-23T12:14:35+00:00",
+  "repo_root": "/workspace",
+  "pipeline_gates": {
+    "planning_gate": {
+      "required_inputs": [
+        "product_backlog.yaml"
+      ],
+      "validation_rules": [
+        "All user stories have acceptance criteria",
+        "Technical plan is complete",
+        "Dependencies are identified"
+      ],
+      "blocking_conditions": [
+        "missing_requirements",
+        "invalid_architecture"
+      ]
+    },
+    "code_generation_gate": {
+      "required_inputs": [
+        "technical_plan.md",
+        "task_breakdown.yaml"
+      ],
+      "validation_rules": [
+        "Code follows style guidelines",
+        "Unit tests are included",
+        "Documentation is present"
+      ],
+      "blocking_conditions": [
+        "compilation_errors",
+        "missing_tests"
+      ]
+    },
+    "quality_assurance_gate": {
+      "required_inputs": [
+        "source_code",
+        "acceptance_criteria.json"
+      ],
+      "validation_rules": [
+        "All tests pass (>= 80% coverage)",
+        "No critical security vulnerabilities",
+        "Performance benchmarks met"
+      ],
+      "blocking_conditions": [
+        "test_failures",
+        "security_issues",
+        "performance_degradation"
+      ],
+      "exit_criteria": "PASS"
+    },
+    "deployment_gate": {
+      "required_inputs": [
+        "validated_code",
+        "deployment_config"
+      ],
+      "validation_rules": [
+        "All health checks pass",
+        "Rollback plan is ready",
+        "Monitoring is configured"
+      ],
+      "blocking_conditions": [
+        "failed_health_checks",
+        "missing_monitoring"
+      ]
+    },
+    "audit_gate": {
+      "enabled": true,
+      "required_inputs": [
+        "technical_plan.md",
+        "Action_Plan.md"
+      ],
+      "validation_rules": [
+        "Auditor must produce Summary_Report.md",
+        "All identified risks and blind spots have traceability to plan sections",
+        "If no issues found, explicit confirmation line is present"
+      ],
+      "blocking_conditions": [
+        "missing_Summary_Report",
+        "untraceable_findings",
+        "ambiguous_verdict"
+      ]
+    },
+    "verification_gate": {
+      "enabled": true,
+      "required_inputs": [
+        "Action_Plan.md",
+        "Summary_Report.md"
+      ],
+      "validation_rules": [
+        "Principal Engineer produced Validation_Report.md",
+        "Each risk marked CONFIRM or CHALLENGE with rationale",
+        "Contested findings are logged and referenced"
+      ],
+      "blocking_conditions": [
+        "missing_Validation_Report",
+        "unresolved_contested_findings"
+      ]
+    },
+    "synthesis_gate": {
+      "enabled": true,
+      "required_inputs": [
+        "Action_Plan.md",
+        "Summary_Report.md",
+        "Validation_Report.md"
+      ],
+      "validation_rules": [
+        "Final_Implementation_Plan.md exists",
+        "Tasks are sequenced with prerequisites",
+        "Rollback and contingency steps included where applicable",
+        "Each task has Source refs to plan/risk/validation"
+      ],
+      "blocking_conditions": [
+        "missing_Final_Implementation_Plan",
+        "missing_traceability",
+        "no_rollback_for_high_risk"
+      ]
+    }
+  }
+}
