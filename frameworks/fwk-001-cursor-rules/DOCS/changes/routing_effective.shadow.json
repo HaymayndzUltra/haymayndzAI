@@ -262,7 +262,8 @@
       "/status",
       "/health",
       "/observe",
-      "/alert"
+      "/alert",
+      "/benchmark"
     ]
   }
 }

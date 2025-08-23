@@ -8,5 +8,4 @@ overrides:
   - /health
   - /observe
   - /alert
-  - /benchmark
 notes: Dry-run only. Progressive OFF.
