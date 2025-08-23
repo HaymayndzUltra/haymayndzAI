@@ -52,7 +52,7 @@ roles:
     dependencies: ["codegen_ai"]
     
   analyst_ai:
-    enabled: false
+    enabled: true
     priority: 7
     triggers: ["/review", "/analyze", "/benchmark"]
     dependencies: []
@@ -64,7 +64,7 @@ roles:
     dependencies: []
     
   observability_ai:
-    enabled: false
+    enabled: true
     priority: 9
     triggers: ["/observe", "/alert", "/health"]
     dependencies: ["mlops_ai"]
@@ -83,13 +83,13 @@ roles:
     dependencies: []
 
   auditor_ai:
-    enabled: false
+    enabled: true
     priority: 15
     triggers: ["/audit"]
     dependencies: ["planning_ai"]   # audit usually runs after a plan is produced
 
   principal_engineer_ai:
-    enabled: false
+    enabled: true
     priority: 16
     triggers: ["/peer_review", "/synthesize_plan"]
     dependencies: ["auditor_ai"]   # runs only after audit report exists
@@ -103,13 +103,13 @@ roles:
     dependencies: ["codegen_ai"]
     
   l10n_i18n_ai:
-    enabled: false
+    enabled: true
     priority: 12
     triggers: ["/l10n_setup", "/generate_templates", "/validate_locale"]
     dependencies: ["documentation_ai"]
     
   prompt_linter_ai:
-    enabled: false
+    enabled: true
     priority: 13
     triggers: ["/lint_prompts", "/check_style", "/suggest_improvements"]
     dependencies: []
