@@ -7,9 +7,9 @@ Design goals:
 - Debounce rapid changes to avoid spam.
 - Smart hints: fill placeholders with timestamp (PH tz), path, and action.
 
-Monitored root: /home/haymayndz/HaymayndzAI
-Labnotes file:  /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md
-Entry template: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md
+Monitored root: /workspace
+Labnotes file:  /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md
+Entry template: /workspace/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md
 
 Usage:
   python3 scripts/labnotes_watcher.py --interval 1.0 --actor User
@@ -30,9 +30,9 @@ from typing import Dict
 from zoneinfo import ZoneInfo
 
 
-REPO_ROOT = Path("/home/haymayndz/HaymayndzAI").resolve()
-LABNOTES_PATH = Path("/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md").resolve()
-TEMPLATE_PATH = Path("/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md").resolve()
+REPO_ROOT = Path("/workspace").resolve()
+LABNOTES_PATH = Path("/workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md").resolve()
+TEMPLATE_PATH = Path("/workspace/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md").resolve()
 PH = ZoneInfo("Asia/Manila")
 
 # Ignore paths (labnotes updates should not trigger themselves, and ignore node_modules/.git/.cursor, logs)

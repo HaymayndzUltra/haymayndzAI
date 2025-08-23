@@ -13,7 +13,7 @@ Targets:
 - Final_Implementation_Plan.md
 
 Usage:
-  python3 /home/haymayndz/HaymayndzAI/scripts/auto_restore_templates.py --interval 1.0
+  python3 /workspace/scripts/auto_restore_templates.py --interval 1.0
 
 Notes:
 - Pure standard library, no external deps.
@@ -28,8 +28,8 @@ import time
 from pathlib import Path
 
 
-TEMPLATES_ROOT = Path("/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates")
-EXAMPLES_ROOT = Path("/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples")
+TEMPLATES_ROOT = Path("/workspace/frameworks/fwk-001-cursor-rules/templates")
+EXAMPLES_ROOT = Path("/workspace/frameworks/fwk-001-cursor-rules/examples")
 
 
 TARGETS = {
