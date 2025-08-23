@@ -171,3 +171,25 @@
 - Scope: Progressive ON allowlist ['/route', '/status', '/health', '/observe']
 - Expected role: observability_ai
 - Result: PASS (0 alerts), No routing drift
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /alert
+- Timestamp (UTC): 2025-08-23T20:23:04+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /alert
+- Timestamp (UTC): 2025-08-23T20:23:22+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True

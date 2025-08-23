@@ -261,7 +261,8 @@
       "/route",
       "/status",
       "/health",
-      "/observe"
+      "/observe",
+      "/alert"
     ]
   }
 }

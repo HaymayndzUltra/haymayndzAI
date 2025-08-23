@@ -7,5 +7,4 @@ overrides:
   - /status
   - /health
   - /observe
-  - /alert
 notes: Dry-run only. Progressive OFF.
