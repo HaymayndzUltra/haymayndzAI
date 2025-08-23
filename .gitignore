@@ -1,0 +1,24 @@
+# General
+.DS_Store
+.env
+.env.*
+
+# Node
+node_modules/
+**/node_modules/
+*.log
+.next/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+\.venv/
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# OS
+Thumbs.db
