@@ -1,0 +1,32 @@
+device: auto   # 'cuda' if available else 'cpu'
+embedding:
+  model: sentence-transformers/all-MiniLM-L6-v2
+  dim: 384
+  batch_size: 512
+index:
+  backend: faiss
+  type: flatip_until
+  flatip_threshold: 200000   # switch to IVF,PQ beyond this
+  ivf:
+    nlist: 4096
+  pq:
+    m: 64
+    bits: 8
+storage:
+  root: /workspace/storage/memory
+  ltm_file: knowledge_base.jsonl
+  decision_log: decision_log.md
+  snapshot_file: context_snapshot.yaml
+  index_file: kb.index.faiss
+  meta_file: kb.meta.json
+rotation:
+  ltm_max_mb: 20
+  ltm_hot_days: 90
+snapshot:
+  cadence: manual   # manual|daily
+  include_tags: [always_hot]
+policies:
+  promotion: [explicit_save, snapshot, repetition]
+  repetition_threshold: 2
+  redaction: true
+  namespace: default
