@@ -252,5 +252,12 @@
     "/compliance_check": "security_ai",
     "/planner_mode": "planner_moderator_ai"
   },
-  "notes": "Effective routing with overrides applied (shadow)."
+  "progressive_mode": true,
+  "overrides": {
+    "command_routing": {},
+    "roles": {},
+    "allowlist_triggers": [
+      "/route"
+    ]
+  }
 }

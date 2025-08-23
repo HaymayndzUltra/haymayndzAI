@@ -92,3 +92,8 @@
   }
 }
 ```
+
+
+## Progressive ON (limited)
+- Scope: /route only (no routing target changes)
+- Acceptance: PASS (no regressions)

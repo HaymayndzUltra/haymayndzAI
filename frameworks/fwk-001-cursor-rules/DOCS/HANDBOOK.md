@@ -79,8 +79,10 @@ See `rules_master_toggle.mdc` routing matrix. Example additions used in Café pr
 - Who handles a command: `/route <trigger>`
 - Start/Stop pipeline: `/run_pipeline`, `/halt`, `/status`
 - Planner-first: `/planner_mode on|off`
-  
+
 Note: Routing fix applied — `rules_master_toggle` handles `/toggle` and `/route`. Progressive mode is OFF; routing overrides are shadow-only.
+
+Limited Progressive ON: active for `/route` only via `DOCS/changes/routing_override.yaml` (rollback: restore `.bak`).
 
 ## 8) Files Index
 - System prompts: `system-prompt/*.mdc` (+ OPTIONAL/*)
