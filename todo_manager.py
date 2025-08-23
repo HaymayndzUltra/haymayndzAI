@@ -17,6 +17,7 @@ from typing import Dict, Any, List, Optional
 import re
 import subprocess
 from atomic_io import atomic_write_json, with_json_lock
+from tz_utils import now_ph_iso, parse_iso_aware, now_ph
 
 DATA_FILE = Path(os.getcwd()) / "memory-bank" / "queue-system" / "tasks_active.json"
 
@@ -62,20 +63,16 @@ def _cleanup_outdated_tasks(data: List[Dict[str, Any]]) -> bool:
 	Returns True if the dataset was modified (i.e. tasks removed).
 	"""
 
-	now = datetime.utcnow()
+	now = now_ph()
 
 	def _is_stale(task: Dict[str, Any]) -> bool:
 		if task.get("status") != "completed":
 			return False
 
 		try:
-			# Prefer the last *updated* timestamp so we keep recently reopened
-			# tasks even if originally created long ago.
-			last = datetime.fromisoformat(task.get("updated", task.get("created")))
+			last = parse_iso_aware(task.get("updated", task.get("created")))
 			return (now - last).days >= DEFAULT_CLEANUP_DAYS
 		except Exception:
-			# If parsing fails for whatever reason, be conservative and keep
-			# the task – we don't want to delete user data accidentally.
 			return False
 
 	before = len(data)
@@ -106,11 +103,7 @@ def _save(data: List[Dict[str, Any]]) -> None:
 
 def _timestamp() -> str:
 	"""Get current Philippines time in ISO format"""
-	from datetime import timezone, timedelta
-	utc_now = datetime.utcnow()
-	philippines_tz = timezone(timedelta(hours=8))
-	ph_time = utc_now.astimezone(philippines_tz)
-	return ph_time.isoformat()
+	return now_ph_iso()
 
 
 # ------------------------------------------------------------------

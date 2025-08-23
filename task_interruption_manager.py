@@ -14,6 +14,7 @@ from pathlib import Path
 from todo_manager import new_task, add_todo, list_open_tasks, set_task_status
 from task_state_manager import save_task_state, load_task_state
 from atomic_io import atomic_write_json, with_json_lock
+from tz_utils import now_ph_iso
 
 class TaskInterruptionManager:
     """Manages automatic task interruption and resumption"""
@@ -41,7 +42,7 @@ class TaskInterruptionManager:
         data = {
             'current_task': self.current_task,
             'interrupted_tasks': self.interrupted_tasks,
-            'last_updated': datetime.utcnow().isoformat()
+            'last_updated': now_ph_iso()
         }
         try:
             with with_json_lock(str(self.interruption_file), exclusive=True):
@@ -61,7 +62,7 @@ class TaskInterruptionManager:
         self.current_task = {
             'task_id': task_id,
             'description': task_description,
-            'started_at': datetime.utcnow().isoformat(),
+            'started_at': now_ph_iso(),
             'status': 'active'
         }
         
@@ -75,7 +76,7 @@ class TaskInterruptionManager:
         """Interrupt the current task and save it for later resumption"""
         if self.current_task:
             self.current_task['status'] = 'interrupted'
-            self.current_task['interrupted_at'] = datetime.utcnow().isoformat()
+            self.current_task['interrupted_at'] = now_ph_iso()
             self.interrupted_tasks.append(self.current_task)
             
             print(f"⏸️  Interrupted task: {self.current_task['description']}")
