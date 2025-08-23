@@ -1,0 +1,8 @@
+ts: '2025-08-23T08:56:41Z'
+summary: Planner-first ON; LTM recall OK.
+open_questions:
+- Confirm FAISS install for semantic search
+next_steps:
+- Run reindex when needed
+tags:
+- always_hot

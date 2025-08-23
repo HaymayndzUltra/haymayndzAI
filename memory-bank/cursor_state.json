@@ -1,8 +1,10 @@
 {
   "cursor_session": {
-    "disconnected_at": "2025-08-21T17:39:31.472468+08:00",
-    "current_task": "Actionable plan compiled from MEMORY SYSTEM organizer. Source: memory-bank/plan/organize.md",
-    "progress": 0.07692307692307693,
-    "last_activity": "2025-08-20T23:55:53.232295+08:00"
+    "disconnected_at": "2025-08-23T09:00:57.065800",
+    "current_task": "Verify autosave STM",
+    "progress": 0.1,
+    "last_activity": "2025-08-23T09:00:56.965368",
+    "current_file": "frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md",
+    "cursor_line": 50
   }
 }
