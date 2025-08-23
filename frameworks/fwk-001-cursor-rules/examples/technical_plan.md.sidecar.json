@@ -1,0 +1,10 @@
+{
+  "id": "technical_plan",
+  "version": "1.0.0",
+  "status": "review",
+  "framework": "fwk-001-cursor-rules",
+  "kind": "technical_plan",
+  "checksumSha256": "78bc93b15968ff16c842a5f86befa4705ca9d89eac17a5f162b5a3bcb25e9e1a",
+  "createdAt": "2025-08-21T06:37:52Z",
+  "updatedAt": "2025-08-21T06:37:52Z"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "migration_plan",
+  "version": "1.0.0",
+  "status": "review",
+  "framework": "fwk-001-cursor-rules",
+  "kind": "migration_plan",
+  "createdAt": "2025-08-23T00:00:00Z",
+  "updatedAt": "2025-08-23T00:00:00Z"
+}
