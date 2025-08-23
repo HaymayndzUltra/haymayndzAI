@@ -6,5 +6,4 @@ overrides:
   - /route
   - /status
   - /health
-  - /observe
 notes: Dry-run only. Progressive OFF.

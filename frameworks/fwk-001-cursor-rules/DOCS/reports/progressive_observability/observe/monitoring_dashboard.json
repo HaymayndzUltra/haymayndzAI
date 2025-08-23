@@ -1,0 +1,21 @@
+{
+  "component": "routing_progressive_monitor",
+  "scope": "limited:/observe",
+  "metrics": {
+    "timestamp_utc": "2025-08-23T18:49:22+00:00",
+    "progressive_mode": true,
+    "allowlist_triggers": [
+      "/route",
+      "/status",
+      "/health",
+      "/observe"
+    ],
+    "trigger": "/observe",
+    "expected_role": "observability_ai",
+    "route_target_ok": true,
+    "role_enabled_ok": true,
+    "no_routing_drift": true
+  },
+  "alerts": [],
+  "status": "PASS"
+}

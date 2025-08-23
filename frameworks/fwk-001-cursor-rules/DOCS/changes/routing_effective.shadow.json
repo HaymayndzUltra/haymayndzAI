@@ -260,7 +260,8 @@
     "allowlist_triggers": [
       "/route",
       "/status",
-      "/health"
+      "/health",
+      "/observe"
     ]
   }
 }
