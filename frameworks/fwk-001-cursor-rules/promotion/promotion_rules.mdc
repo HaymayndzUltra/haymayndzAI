@@ -1,0 +1,12 @@
+# Promotion Rules — Snapshots, Sign/Verify, Rollback
+
+## Snapshots
+- Content-addressable JSON files named by SHA-256 of `artifacts_index.json`.
+- Optional signing step; verify before rollback or deploy.
+
+## Retention
+- Keep last N=20 snapshots; purge older with audit log.
+
+## Rollback
+- Select snapshot by digest; verify; restore index; re-run verification gate.
+

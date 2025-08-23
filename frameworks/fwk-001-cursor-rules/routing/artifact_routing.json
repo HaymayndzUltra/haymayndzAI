@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "routes": [
+    { "artifactType": "schema", "pathPattern": "frameworks/{framework}/schemas/{artifactId}.mdc" },
+    { "artifactType": "routing", "pathPattern": "frameworks/{framework}/routing/{artifactId}.mdc" },
+    { "artifactType": "sync_rules", "pathPattern": "frameworks/{framework}/sync/{artifactId}.mdc" },
+    { "artifactType": "hydration_rules", "pathPattern": "frameworks/{framework}/hydration/{artifactId}.mdc" },
+    { "artifactType": "framework_contract", "pathPattern": "frameworks/{framework}/contracts/{artifactId}.mdc" },
+    { "artifactType": "promotion_rules", "pathPattern": "frameworks/{framework}/promotion/{artifactId}.mdc" }
+  ],
+  "tieBreaker": { "field": "pathPattern", "order": "asc" }
+}
+
+

@@ -1,0 +1,12 @@
+# Hydration Rules — Deterministic Input Selection
+
+## Precedence
+- approved > review > draft
+- Tie-breakers: higher updatedAt, then lexical id/path
+
+## Determinism
+- Repeated runs over identical inputs must yield identical selections.
+
+## Validation
+- Provide test vectors in `hydration_tests.yaml` and CI check for stability across runs.
+

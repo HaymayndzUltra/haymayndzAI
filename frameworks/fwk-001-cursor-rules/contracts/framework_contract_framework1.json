@@ -1,0 +1,25 @@
+{
+  "framework": "fwk-001-cursor-rules",
+  "allowedArtifacts": ["schemas", "routing", "sync", "hydration", "contracts", "promotion"],
+  "states": ["draft", "review", "approved"],
+  "requiredFiles": [
+    "frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc",
+    "frameworks/fwk-001-cursor-rules/routing/artifact_routing.json",
+    "frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc",
+    "frameworks/fwk-001-cursor-rules/sync/index_writer.py",
+    "frameworks/fwk-001-cursor-rules/sync/index_cli.py",
+    "frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc",
+    "frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml",
+    "frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py",
+    "frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py",
+    "frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc",
+    "frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc"
+  ],
+  "validation": {
+    "hydrationTests": "python3 frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml",
+    "routingConflicts": "python3 frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py",
+    "indexVerify": "python3 frameworks/fwk-001-cursor-rules/sync/index_cli.py verify"
+  }
+}
+
+

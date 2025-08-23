@@ -1,0 +1,41 @@
+# Framework Contract — framework1
+
+## Allowed Artifacts
+- schemas/*, routing/*, sync/*, hydration/*, contracts/*, promotion/*
+
+## States
+- draft → review → approved
+
+## Gate Requirements
+- audit_gate: Action_Plan + technical_plan present
+- verification_gate: Action_Plan + Summary_Report present
+- synthesis_gate: Action_Plan + Summary_Report + Validation_Report present
+
+## Required Files (presence)
+- frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc
+- frameworks/fwk-001-cursor-rules/routing/artifact_routing.json
+- frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc
+- frameworks/fwk-001-cursor-rules/sync/index_writer.py
+- frameworks/fwk-001-cursor-rules/sync/index_cli.py
+- frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc
+- frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml
+- frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py
+- frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py
+- frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc
+- frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc
+
+## Validation Rules
+- Hydration selection is deterministic and passes tests
+- Routing conflicts report shows none
+- Index verifies with artifacts ≥ 4
+
+## How to Validate (commands)
+```bash
+python3 frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py \
+  frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml | cat
+
+python3 frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py | cat
+
+python3 frameworks/fwk-001-cursor-rules/sync/index_cli.py verify | cat
+```
+
