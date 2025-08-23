@@ -4584,3 +4584,113 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 ---
 
+### 2025-08-23 — DRY-RUN — routing slice — fwk-001-cursor-rules
+
+- Scope: Build routing/gates baselines, shadow overrides, acceptance checks
+- Artifacts: DOCS/changes/routing_baseline.json, gates_baseline.json, routing_override.yaml, routing_effective.shadow.json
+- Report: DOCS/reports/Latest_Current.md (dry-run slice + Acceptance Gate Results)
+
+#### Gate Status
+- routing_integrity: FAIL — /toggle → rules_master_toggle (role missing in roles matrix)
+- gates_parseable: PASS — pipeline_gates parsed
+- observability: PASS — role present
+- memory_integrity: PASS — tools present
+- docs_updated: PASS — links present
+
+#### Rollback
+- Remove newly written dry-run files under DOCS/changes/* and the appended section in DOCS/reports/Latest_Current.md
+
+#### Next Slice (proposed)
+- Add `rules_master_toggle` to `roles` in `system-prompt/rules_master_toggle.mdc` with triggers ["/toggle", "/route"] and enabled=true (no other routing changes)
+- Re-run acceptance checks; if PASS, enable Progressive for routing-only overrides
+
+#### Notes
+- Progressive mode remains OFF; no live edits performed
+
+
+---
+
+### 2025-08-23 — DOC CONSISTENCY — fwk-001-cursor-rules
+
+- Updated STATUS.md: noted routing fix and Progressive OFF
+- Updated HANDBOOK.md: noted routing fix and Progressive OFF under Operations
+- Acceptance (docs): PASS — links present; Progressive OFF reflected in both docs
+
+Rollback: revert the two doc edits if needed.
+
+Next: keep Progressive OFF; proceed to next minimal slice (if any)
+
+
+---
+
+### 2025-08-23 — MONITORING — Progressive ON (/route)
+
+- Setup: scripts/progressive_monitor.py — generates monitoring_dashboard.json, health_report.md, alert_history.log
+- Scope: /route only; no routing target changes
+- Initial run: completed; consolidated report updated with snapshot
+- Rollback readiness: routing_override.yaml has .bak; revert and rerun monitor to confirm OFF state
+
+Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not widen scope yet
+
+
+---
+
+### 2025-08-23 — ROUTING FIX — /route mapping applied
+
+- Change: added /route → rules_master_toggle in rules_master_toggle.mdc routing matrix
+- Baselines regenerated; effective shadow updated (scope still limited)
+- Monitoring: status PASS (no alerts); drift none; allowlist ['/route']
+- Rollback: revert the single-line mapping in rules_master_toggle.mdc and restore routing_baseline.json from prior commit if required
+
+
+---
+
+### 2025-08-23 21:28:45 PST+0800 — MODIFY — frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- File: Labnotes.md (ext: .md)
+
+#### Summary
+- Auto Summary: +61/-0 lines; Importance: Medium
+-- Headings: ### 2025-08-23 — DRY-RUN — routing slice — fwk-001-cursor-rules;#### Gate Status;#### Rollback;#### Next Slice (proposed);#### Notes;### 2025-08-23 — DOC CONSISTENCY — fwk-001-cursor-rules;### 2025-08-23 — MONITORING — Progressive ON (/route);### 2025-08-23 — ROUTING FIX — /route mapping applied
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +61 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
