@@ -1,0 +1,13 @@
+cases:
+  - name: prefer_approved_over_newer_review
+    candidates:
+      - { id: A, status: review, updatedAt: "2025-08-23T10:00:00Z", path: a.yaml }
+      - { id: B, status: approved, updatedAt: "2025-08-23T09:00:00Z", path: b.yaml }
+    expect: { path: b.yaml }
+  - name: tiebreak_by_updatedAt_then_path
+    candidates:
+      - { id: A, status: approved, updatedAt: "2025-08-23T10:00:00Z", path: a.yaml }
+      - { id: C, status: approved, updatedAt: "2025-08-23T10:00:00Z", path: c.yaml }
+    expect: { path: c.yaml }
+
+

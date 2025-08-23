@@ -1,0 +1,152 @@
+tasks:
+  - id: T-01
+    title: Define artifact schema (frontmatter/sidecar)
+    owner_role: platform_eng
+    priority: P0
+    inputs: ["Action_Plan L1"]
+    outputs: ["artifact_schema.mdc"]
+    depends_on: []
+    acceptance_criteria:
+      - "All existing example artifacts validate against schema"
+      - "Schema documented with versioning and enums"
+    estimate_days: 1
+    risk_refs: ["R-006"]
+
+  - id: T-02
+    title: Implement artifact routing with conflict detection
+    owner_role: principal_engineer
+    priority: P0
+    inputs: ["Action_Plan L2", "artifact_schema.mdc"]
+    outputs: ["artifact_routing.mdc", "routing_conflicts_report.md"]
+    depends_on: ["T-01"]
+    acceptance_criteria:
+      - "0 conflicts vs routing_matrix.json"
+      - "Deterministic path resolution with tests"
+    estimate_days: 2
+    risk_refs: ["R-003"]
+
+  - id: T-03
+    title: Build artifacts index (single-writer, atomic, journaled)
+    owner_role: orchestrator_infra
+    priority: P0
+    inputs: ["Action_Plan L3", "artifact_schema.mdc"]
+    outputs: ["artifacts_index.json", "index_writer_lib.py", "recovery_journal.log"]
+    depends_on: ["T-01"]
+    acceptance_criteria:
+      - "Crash simulation preserves consistency"
+      - "Lockfile prevents concurrent writers"
+    estimate_days: 3
+    risk_refs: ["R-002", "B-004"]
+
+  - id: T-04
+    title: Hydration precedence with explicit tie-breakers
+    owner_role: platform_eng
+    priority: P1
+    inputs: ["Action_Plan L4", "artifact_schema.mdc"]
+    outputs: ["hydration_rules.mdc", "hydration_tests.yaml"]
+    depends_on: ["T-01"]
+    acceptance_criteria:
+      - "Deterministic selection proven by repeated runs"
+      - "Tie-breakers documented and tested"
+    estimate_days: 2
+    risk_refs: ["R-004"]
+
+  - id: T-05
+    title: Framework contract for framework1
+    owner_role: principal_engineer
+    priority: P1
+    inputs: ["Action_Plan L5", "hydration_rules.mdc", "artifact_routing.mdc"]
+    outputs: ["framework_contract_framework1.mdc"]
+    depends_on: ["T-01", "T-02", "T-04"]
+    acceptance_criteria:
+      - "Contract validates allowed artifacts and states"
+    estimate_days: 2
+    risk_refs: ["R-001"]
+
+  - id: T-06
+    title: Promotion governance (snapshots, sign/verify, rollback)
+    owner_role: devops_release
+    priority: P1
+    inputs: ["Action_Plan L6", "framework_contract_framework1.mdc", "artifacts_index.json"]
+    outputs: ["promotion_rules.mdc", "rollback_playbook.md", "snapshot_format.md"]
+    depends_on: ["T-03", "T-05"]
+    acceptance_criteria:
+      - "Signed snapshots with retention policy"
+      - "Rollback rehearsal passes"
+    estimate_days: 2
+    risk_refs: ["R-005"]
+
+  - id: T-07
+    title: Migration and backfill plan
+    owner_role: platform_eng
+    priority: P1
+    inputs: ["Summary_Report B-001", "artifacts_index.json"]
+    outputs: ["migration_plan.md", "backfill_script.py"]
+    depends_on: ["T-01", "T-02", "T-03"]
+    acceptance_criteria:
+      - "Zero data loss in dry-run"
+      - "Rollback path documented"
+    estimate_days: 2
+    risk_refs: ["B-001"]
+
+  - id: T-08
+    title: Test strategy (unit/contract/e2e/gates)
+    owner_role: qa_platform
+    priority: P0
+    inputs: ["All rules artifacts"]
+    outputs: ["test_plan.md", "ci_checks.yaml"]
+    depends_on: ["T-01", "T-02", "T-03", "T-04", "T-05", "T-06"]
+    acceptance_criteria:
+      - ">=80% coverage; gate checks green"
+    estimate_days: 2
+    risk_refs: ["B-002"]
+
+  - id: T-09
+    title: Access control and secrets for metadata/snapshots
+    owner_role: security_platform
+    priority: P1
+    inputs: ["promotion_rules.mdc"]
+    outputs: ["access_policies.md", "acl.json"]
+    depends_on: ["T-06"]
+    acceptance_criteria:
+      - "Least-privilege policies enforced"
+    estimate_days: 1
+    risk_refs: ["B-003"]
+
+  - id: T-10
+    title: Multi-writer hardening
+    owner_role: orchestrator_infra
+    priority: P2
+    inputs: ["artifacts_index.json"]
+    outputs: ["lease_design.md", "concurrency_tests.yaml"]
+    depends_on: ["T-03"]
+    acceptance_criteria:
+      - "Concurrent writes detected and serialized"
+    estimate_days: 2
+    risk_refs: ["B-004"]
+
+  - id: T-11
+    title: Telemetry/observability for drift and promotions
+    owner_role: sre_platform
+    priority: P1
+    inputs: ["hydration_rules.mdc", "promotion_rules.mdc"]
+    outputs: ["dashboards.mmd", "alerts.yaml", "audit_logs.md"]
+    depends_on: ["T-04", "T-06"]
+    acceptance_criteria:
+      - "Drift detected within 5m; MTTR < 30m"
+    estimate_days: 2
+    risk_refs: ["B-005"]
+
+  - id: T-12
+    title: Governance fields, RACI, estimates, acceptance
+    owner_role: program_mgmt
+    priority: P0
+    inputs: ["Summary_Report R-006"]
+    outputs: ["owners_matrix.yaml", "acceptance_checklist.md"]
+    depends_on: []
+    acceptance_criteria:
+      - "All tasks have owners, estimates, acceptance criteria"
+    estimate_days: 1
+    risk_refs: ["R-006"]
+
+

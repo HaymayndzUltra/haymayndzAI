@@ -1,0 +1,15 @@
+# Artifact Sync Rules — Single‑Writer Index
+
+## Index File
+- `artifacts_index.json` at `frameworks/fwk-001-cursor-rules/sync/`
+- Single writer with POSIX lock; atomic temp write + fsync + rename.
+- Journal for recovery on crash (optional, future work).
+
+## Commands (reference)
+- index add|update|rebuild|verify
+
+## Invariants
+- Idempotency: same (id, version) replaces entry
+- Consistency: directory fsync after rename
+- Concurrency: lock must serialize writers
+

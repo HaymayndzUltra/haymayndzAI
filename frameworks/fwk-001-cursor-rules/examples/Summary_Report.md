@@ -1,121 +1,120 @@
 ## Summary Report (Auditor Output)
 
 ## 1. Context Summary (type/intent detected)
-- **Plan Title**: Memory Enhancement Plan (v1.0)
-- **Type**: Engineering Action Plan
-- **Intent**: Improve portability, enforce single-writer policy, ensure atomic/locked writes, clarify fallback retrieval, harden device/config safety, lifecycle index management, observability, and rotation/archival.
+- **Plan Title**: Not specified
+- **Type/Intent**: Operational/Execution — integrate governance/config artifacts into the framework (multiple “Integrate …” actions).
 
 ## 2. Critical Risks
-- **R-001 — Competing writers for `current-session.md` may corrupt or drift snapshot**
+- R-001 — Missing end-to-end sequencing and readiness criteria
   - **Evidence/Quote**:
-```75:77:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-- **R-001 (HIGH)**: Competing writers for `current-session.md` may corrupt or drift snapshot under race.
-  - **Mitigation**: E-002; bridge-only snapshot; notes via separate file or API.
+```1:6:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
+artifact_schema.mdc	Integrate	Enhancement — no uniform frontmatter/sidecar schema exists; adds consistent metadata (ids, versions, status) for orchestrator and linting without conflicting with current gates or routing.
+artifact_routing.mdc	Integrate (ensure naming separation from command routing)	Enhancement — current rules_master_toggle.mdc routes commands only; deterministic artifact path mapping is missing. Keep artifact routing artifacts separate from routing_matrix.json to avoid confusion.
+artifact_sync_rules.mdc	Integrate (orchestrator single-writer)	Enhancement — introduces artifacts_index.json with checksums/versioning/history. Aligns with orchestrator’s single-writer model; complements memory-bridge sync without overlap.
+hydration_rules.mdc	Integrate	Enhancement — defines input selection/precedence (approved → latest non-draft → solo) per stage to prevent drift; not present in current framework; compatible with gate inputs.
+framework_contract_framework1.mdc	Integrate (after schema/routing/hydration)	Enhancement — formalizes per-framework allowed artifacts and draft→review→approved save rules, complementing examples and gates; defer until base schema/routing/hydration are in place to avoid duplication.
+promotion_rules.mdc	Integrate	Enhancement — adds lifecycle governance (promotion tags, snapshots, rollback) tied to gate PASS; currently absent and aligns with safety/traceability goals.
 ```
   - **Severity**: High
-  - **Affected Steps**: Step 3 (single-writer enforcement)
-```93:96:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-- **Step 3**: Replace direct writes to `current-session.md` with bridge API. For `memory_system/cli.py save`, switch to `memory-notes.md` or call `append_note()`.
-```
-  - **Downstream Impact**: Inconsistent human-readable session view; audit trail drift.
+  - **Affected Steps**: L1–L6
+  - **Downstream Impact**: Out-of-order changes can break gates/routing/hydration invariants; unclear prerequisites impede safe rollout and rollback planning.
 
-- **R-002 — Hardcoded absolute paths hinder portability and CI usage**
+- R-002 — Data integrity and concurrency risks around artifacts_index.json and single-writer assumptions
   - **Evidence/Quote**:
-```77:78:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-- **R-002 (MEDIUM)**: Hardcoded absolute paths hinder portability and CI usage.
-  - **Mitigation**: E-001; env-first, repo-relative defaults, docs cleanup.
+```3:3:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
+artifact_sync_rules.mdc	Integrate (orchestrator single-writer)	Enhancement — introduces artifacts_index.json with checksums/versioning/history. Aligns with orchestrator’s single-writer model; complements memory-bridge sync without overlap.
+```
+  - **Severity**: High
+  - **Affected Steps**: L3
+  - **Downstream Impact**: Index corruption on crashes/retries; re-entrancy and lock semantics unspecified; rollback of index state unclear.
+
+- R-003 — Ambiguous separation of artifact vs command routing (risk of drift/duplication)
+  - **Evidence/Quote**:
+```2:2:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
+artifact_routing.mdc	Integrate (ensure naming separation from command routing)	Enhancement — current rules_master_toggle.mdc routes commands only; deterministic artifact path mapping is missing. Keep artifact routing artifacts separate from routing_matrix.json to avoid confusion.
 ```
   - **Severity**: Medium
-  - **Affected Steps**: Step 1–2 (portable root + config/docs normalization)
-```91:93:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-- **Step 1**: Set `MEMORY_STORAGE_ROOT="$PWD/memory-bank/storage/memory"` in shells/CI. Keep current config until rollout completes.
-- **Step 2**: Update `pro_config.yaml` default root to repo-local; do not remove env override. Commit docs using relative paths.
-```
-  - **Downstream Impact**: Non-reproducible local/CI runs; brittle path assumptions.
+  - **Affected Steps**: L2
+  - **Downstream Impact**: Two sources-of-truth (artifact routing vs routing_matrix.json) can diverge; breakage in lookups and auditability.
 
-- **R-003 — JSON/JSONL races may interleave or truncate data**
+- R-004 — Non-deterministic hydration precedence and conflict resolution
   - **Evidence/Quote**:
-```79:80:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-- **R-003 (MEDIUM)**: JSON/JSONL races may interleave or truncate data.
-  - **Mitigation**: E-003; locks for JSONL append; atomic JSON writes everywhere.
+```4:4:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
+hydration_rules.mdc	Integrate	Enhancement — defines input selection/precedence (approved → latest non-draft → solo) per stage to prevent drift; not present in current framework; compatible with gate inputs.
 ```
   - **Severity**: Medium
-  - **Affected Steps**: Step 4 (locked JSONL + atomic JSON)
-```94:95:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-- **Step 4**: Introduce `append_jsonl_locked` and refactor writers (`archive_tasks.py`, `memory_cli.append_jsonl`).
-```
-  - **Downstream Impact**: Data loss/corruption under concurrency.
+  - **Affected Steps**: L4
+  - **Downstream Impact**: Precedence may still yield ties (e.g., multiple “approved” inputs); unspecified tie-breakers cause nondeterminism and drift.
 
-<!-- Duplicate the R-### block as needed for each risk. Keep one risk per ID. -->
+- R-005 — Lifecycle governance ties to gate PASS without explicit rollback and snapshot provenance
+  - **Evidence/Quote**:
+```6:6:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
+promotion_rules.mdc	Integrate	Enhancement — adds lifecycle governance (promotion tags, snapshots, rollback) tied to gate PASS; currently absent and aligns with safety/traceability goals.
+```
+  - **Severity**: Medium
+  - **Affected Steps**: L6
+  - **Downstream Impact**: Undefined rollback criteria and snapshot storage/location/integrity can make recovery unreliable after a failed promotion.
+
+- R-006 — Execution feasibility gaps (owners, envs, estimates, acceptance criteria, SLOs)
+  - **Evidence/Quote**: L1–L6 (no owners/timelines/acceptance criteria present in entire file)
+  - **Severity**: High
+  - **Affected Steps**: L1–L6
+  - **Downstream Impact**: Orphaned changes, scheduling conflicts, and unverifiable completion; inability to coordinate across frameworks/*.
 
 ## 3. Potential Blind Spots
-- **B-001 — No validation exercise for dangerous `MEMORY_STORAGE_ROOT` overrides**
-  - **Why it matters**: Plan includes safety rails (E-010) but Validation Plan lacks a negative test for out-of-repo overrides; increases risk of cross-repo writes.
-```97:106:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-### Validation Plan
-- **V1: Fallback recall (no embeddings/index)**
-...
-```
-
-- **B-002 — Lack of explicit validation for index backend switching threshold**
-  - **Why it matters**: E-005 defines `flatip_threshold`, but Validation Plan only checks basic `reindex` without asserting backend choice or bounded memory.
-```113:119:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-- **V3: Semantic index (optional; requires sentence-transformers + faiss)**
-python3 tools/memory/memory_cli.py reindex
-...
-```
+- **B-001 — Migration/backfill for existing artifacts (schema/routing/index)**
+  - **Why it matters**: In-place upgrades can invalidate legacy paths; needs compatibility strategy.
+- **B-002 — Testing strategy and guardrails (unit/contract/e2e/gate checks)**
+  - **Why it matters**: Governance features require strong pre-merge and gate enforcement to avoid regressions.
+- **B-003 — Access control and security around new metadata (ids/versions/status, snapshot access)**
+  - **Why it matters**: Unauthorized changes or disclosure of internal states.
+- **B-004 — Multi-writer or distributed execution scenarios**
+  - **Why it matters**: Single-writer assumption may be violated in CI or parallel agents.
+- **B-005 — Telemetry/observability for hydration, routing, and promotions**
+  - **Why it matters**: Detect drift and diagnose failures quickly.
 
 ## 4. Assumptions (explicit/implicit) & fragility
-- **A-001 (Explicit)**: Bridge is the source of truth for the session snapshot
-  - **Fragility**: Medium — until competing writers are removed, this can be violated in practice.
-```159:162:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-- **PASS**: V1 and V2 are green; E-001 and E-003 implemented; no more direct writes to `current-session.md` detected by grep; optional V3 passes when deps installed.
-IMPORTANT NOTE: The bridge is the source of truth for the session snapshot.
-```
-
-- **A-002 (Implicit)**: POSIX advisory locks (`fcntl`) are available
-  - **Fragility**: Medium — code downgrades to no-op locking when `fcntl` is unavailable.
-```17:21:/home/haymayndz/HaymayndzAI/atomic_io.py
-try:
-	import fcntl  # type: ignore
-except Exception as _e:  # pragma: no cover
-	fcntl = None  # type: ignore
-```
+- **A-001 — Orchestrator operates single-writer only**
+  - **Fragility**: High — fragile under parallelization.
+  - **Evidence**: L3.
+- **A-002 — Gates with PASS semantics already exist**
+  - **Fragility**: Medium — depends on consistent definitions across frameworks.
+  - **Evidence**: L6.
+- **A-003 — States draft/review/approved and promotion tagging are standardized**
+  - **Fragility**: Medium — requires org-wide alignment.
+  - **Evidence**: L5–L6.
+- **A-004 — routing_matrix.json remains the canonical command-routing store**
+  - **Fragility**: Medium — duplicates increase drift risk.
+  - **Evidence**: L2.
+- **A-005 — “memory-bridge sync” present and compatible with the new index**
+  - **Fragility**: Medium — integration surface not specified.
+  - **Evidence**: L3.
 
 ## 5. Ambiguities & Measurement Gaps
-- **M-001**: No explicit negative test for rejecting unsafe storage root overrides in Validation Plan.
-- **M-002**: No memory/time metrics or backend assertion for `reindex` path; threshold behavior not measured.
+- **M-001** — “approved → latest non-draft → solo” tie-breakers and determinism not specified. Evidence: L4.
+- **M-002** — Snapshot format, retention, sign/verify, and rollback triggers undefined. Evidence: L6.
+- **M-003** — Artifact vs command routing precedence rules and conflict detection unclear. Evidence: L2.
+- **M-004** — No success metrics (e.g., policy coverage %, drift incidents, MTTR). Evidence: L1–L6 (absence).
 
 ## 6. Consistency Issues (within plan & across refs)
-- Single-writer policy vs actual code behavior
-  - Plan acceptance requires only the bridge to write `current-session.md`:
-```11:16:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-- **E-002: Enforce single-writer policy for `current-session.md`**
-  - **Acceptance**: Grep shows only bridge writes to `current-session.md`. Notes go to `memory-notes.md` or via the new bridge API. Manual run of `cursor_memory_bridge.py --dump` always regenerates a consistent snapshot.
-```
-  - Actual code still appends to `current-session.md` in CLI:
-```188:205:/home/haymayndz/HaymayndzAI/memory_system/cli.py
-# Append to current-session.md
-try:
-	lines = []
-	...
-	with session_md.open("a", encoding="utf-8") as fh:
-		fh.write("\n".join(lines))
-```
+- **C-001** — Potential duplication and divergence between artifact routing and routing_matrix.json. Evidence: L2.
+- **C-002** — Only one ordered dependency explicitly stated (“after schema/routing/hydration” for framework_contract), others lack ordering; internal consistency of sequencing is weak. Evidence: L1–L6.
 
 ## 7. Compliance/Feasibility/Timeline/Scope findings
-- **Compliance**: Partial — E-001, E-002, E-003 (JSONL locking), E-005, E-006, E-008, E-009, E-010 not fully realized in code/docs at time of audit; fallback recall behavior is present.
-- **Feasibility**: High — atomic JSON and advisory locks are already present; extending to JSONL and validations is straightforward.
-- **Timeline/Ordering**: Interdependencies exist (portability first; then single-writer; then atomic/locks) as reflected in plan steps; measurement additions needed for backend switching and override safety.
-- **Scope**: Coverage is broad (portability, durability, retrieval behavior, rotation, observability); validation breadth should expand for unsafe overrides and indexing thresholds.
+- **Compliance**: Security/retention for snapshots and metadata not addressed (L6, L1).
+- **Feasibility**: No resource/owner/time/rollback rehearsal info (L1–L6).
+- **Timeline/Ordering**: Partial ordering only noted for framework_contract; others missing (L5 vs L1–L4, L6).
+- **Scope**: References external components (rules_master_toggle.mdc, routing_matrix.json, memory-bridge) without explicit interfaces or version bounds (L2–L3).
 
 ## 8. Traceability Map (Risk IDs → Plan refs)
-- R-001 → ```75:77:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```, Affected Step → ```93:96:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
-- R-002 → ```77:78:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```, Affected Steps → ```91:93:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
-- R-003 → ```79:80:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```, Affected Step → ```94:95:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- R-001 → L1–L6
+- R-002 → L3
+- R-003 → L2
+- R-004 → L4
+- R-005 → L6
+- R-006 → L1–L6
 
 ## 9. Verdict
 - Risks detected. See sections above.
 
 <!-- Reporting Rules: cite exact lines for every claim; concise bullets; no prescriptive fixes. -->
-

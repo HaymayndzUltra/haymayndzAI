@@ -1,0 +1,28 @@
+# Artifact Schema — v1
+
+## Purpose
+- Provide a uniform metadata schema (frontmatter/sidecar) for all framework artifacts to enable validation, gating, and traceability.
+
+## Sidecar File Convention
+- Location: next to the primary artifact
+- Naming: `<artifact_filename>.sidecar.json` (e.g., `Final_Implementation_Plan.md.sidecar.json`)
+- Encoding: UTF‑8 JSON
+
+## Fields (camelCase)
+- id: string, pattern `^[A-Za-z0-9_.-]+$`
+- version: string, SemVer 2.0.0 (`MAJOR.MINOR.PATCH[-PRERELEASE][+BUILD]`)
+- status: string, enum {`draft`, `review`, `approved`}
+- framework: string (e.g., `fwk-001-cursor-rules`)
+- kind: string (e.g., `action_plan`, `summary_report`, `validation_report`, `final_implementation_plan`, `schema`)
+- checksumSha256: string (optional), 64‑char hex digest of the primary artifact
+- createdAt: string, RFC 3339 UTC timestamp (e.g., `2025-08-23T00:00:00Z`)
+- updatedAt: string, RFC 3339 UTC timestamp
+
+## JSON Schema
+- File: `frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json`
+- Draft: 2020‑12
+
+## Acceptance
+- Sidecars exist and validate for all example artifacts under `frameworks/fwk-001-cursor-rules/examples/`.
+- Deterministic validator script passes with 0 errors.
+

@@ -1,0 +1,37 @@
+flowchart TD
+  subgraph Governance_Artifacts
+    SCHEMA[artifact_schema.mdc]
+    ROUTE[artifact_routing.mdc]
+    HYDRATE[hydration_rules.mdc]
+    CONTRACT[framework_contract_framework1.mdc]
+    PROMO[promotion_rules.mdc]
+  end
+
+  DEV[Developers/Agents] --> SCHEMA
+  DEV --> ROUTE
+  DEV --> HYDRATE
+  SCHEMA --> INDEX[artifacts_index.json (single-writer)]
+  ROUTE --> HYDRATE
+  HYDRATE --> CONTRACT
+  CONTRACT --> PROMO
+  PROMO --> SNAP[Signed Snapshots]
+
+  subgraph Gates
+    AG{{audit_gate}}
+    VG{{verification_gate}}
+    SY{{synthesis_gate}}
+  end
+
+  TP[technical_plan.md] --> AG
+  AG --> SR[Summary_Report.md]
+  SR --> VG
+  VG --> VR[Validation_Report.md]
+  VR --> SY
+  SY --> FIP[Final_Implementation_Plan.md]
+
+  FIP --> CODEGEN[codegen_ai]
+  CODEGEN --> QA[qa_ai]
+  QA --> MLOPS[mlops_ai]
+  MLOPS --> OBS[observability_ai]
+
+
