@@ -193,3 +193,58 @@
 - Expected role: observability_ai
 - Route target OK: True
 - No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /alert
+- Timestamp (UTC): 2025-08-23T20:28:22+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /alert
+- Timestamp (UTC): 2025-08-23T20:33:22+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /alert
+- Timestamp (UTC): 2025-08-23T20:38:22+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /alert
+- Timestamp (UTC): 2025-08-23T20:43:22+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /alert
+- Timestamp (UTC): 2025-08-23T20:48:22+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True
