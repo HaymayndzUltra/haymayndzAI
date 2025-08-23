@@ -105,3 +105,4 @@
 - `exec_substep` produces structured logs with redaction.
 - Recall fallback works without embeddings.
 - Completed tasks archived; no silent purges.
+

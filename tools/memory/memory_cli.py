@@ -19,7 +19,12 @@ CONFIG_PATH = Path(__file__).with_name("pro_config.yaml")
 
 def load_cfg():
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
-        return yaml.safe_load(f)
+        cfg = yaml.safe_load(f)
+    # Portability override
+    root_override = os.getenv("MEMORY_STORAGE_ROOT")
+    if root_override:
+        cfg.setdefault("storage", {})["root"] = str(Path(root_override).resolve())
+    return cfg
 
 
 def ensure_dirs(root: Path):
@@ -142,12 +147,14 @@ def cmd_reindex(args):
 def cmd_recall(args):
     cfg = load_cfg()
     p = ltm_paths(cfg)
-    model, device = load_model(cfg)
     query = args.query.strip()
     if not query:
         print("Empty query.")
         return
-    if faiss is None or not p["index"].exists() or not p["meta"].exists():
+    semantic_ready = (
+        faiss is not None and p["index"].exists() and p["meta"].exists() and SentenceTransformer is not None
+    )
+    if not semantic_ready:
         # fallback: naive tag/substring search
         hits = []
         for e in iter_jsonl(p["ltm"]):
@@ -156,6 +163,8 @@ def cmd_recall(args):
         for e in hits[: args.topk]:
             print(orjson.dumps(e).decode())
         return
+    # semantic path (load model only when needed)
+    model, device = load_model(cfg)
     qv = embed_batch(model, [query])
     idx = faiss.read_index(str(p["index"]))
     with open(p["meta"], "r", encoding="utf-8") as f:

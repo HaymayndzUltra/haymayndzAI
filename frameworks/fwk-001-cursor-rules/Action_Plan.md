@@ -63,11 +63,7 @@ Operational
 ## Exit Criteria
 - All writers to SoT use atomic IO and locks.
 - Only `cursor_memory_bridge.dump_markdown()` writes `current-session.md`.
-<<<<<<< Current (Your changes)
 - `cursor_state.json` unified under `memory-bank/` with optional mirror.
-=======
-- `cursor_state.json` unified under `memory-bank/` with optional root mirror.
->>>>>>> Incoming (Background Agent changes)
 - All timestamps stored/printed with `+08:00` offset.
 - `exec_substep` produces structured logs per command.
 - `memory_cli recall` works without embeddings installed.
