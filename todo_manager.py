@@ -355,20 +355,15 @@ def hard_delete_task(task_id: str) -> None:
 
 
 def cleanup_completed_tasks() -> None:
-	"""Remove all completed tasks from memory"""
-	data = _load()
-	original_count = len(data)
-	
-	# Keep only non-completed tasks
-	data[:] = [t for t in data if t.get("status") != "completed"]  # In-place modification
-	
-	removed_count = original_count - len(data)
-	
-	if removed_count > 0:
-		_save(data)
-		print(f"🧹 Cleaned up {removed_count} completed task(s) from memory")
+	"""Archive completed tasks to tasks_done.jsonl and keep active list."""
+	from archive_tasks import archive_completed
+	result = archive_completed()
+	if result.get("status") == "ok":
+		print(f"🧹 Archived {result['archived']} task(s); {result['remaining']} remaining active")
+	elif result.get("status") == "noop":
+		print("ℹ️  No active file found; nothing to archive")
 	else:
-		print("ℹ️  No completed tasks to clean up")
+		print(f"❌ Archival error: {result.get('error','unknown')}")
 
 
 def show_task_details(task_id: str) -> None:
