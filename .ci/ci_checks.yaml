@@ -1,0 +1,266 @@
+# CI Checks Configuration — T-08 (Test Strategy Implementation)
+# Framework: fwk-001-cursor-rules
+# Owner: qa_platform
+# Priority: P0
+
+version: "1.0"
+framework: "fwk-001-cursor-rules"
+checks_version: "2025.08.24"
+
+# Test Execution Configuration
+test_suite:
+  framework: "pytest"
+  coverage_tool: "pytest-cov"
+  coverage_threshold: 80
+  timeout_minutes: 5
+  parallel_jobs: 4
+  
+# Pre-commit Checks (Local Development)
+pre_commit:
+  enabled: true
+  hooks:
+    - name: "unit-tests-changed"
+      command: "pytest --tb=short -q"
+      files: "frameworks/fwk-001-cursor-rules/**/*.py"
+      description: "Run unit tests for changed Python files"
+      
+    - name: "schema-validation"
+      command: "python3 -c 'import json, jsonschema; jsonschema.validate(json.load(open(\"frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json\")), {\"type\": \"object\"})'"
+      files: "frameworks/fwk-001-cursor-rules/schemas/*.json"
+      description: "Validate JSON schema syntax"
+      
+    - name: "contract-validation"
+      command: "python3 frameworks/fwk-001-cursor-rules/contracts/validate_contract.py"
+      files: "frameworks/fwk-001-cursor-rules/contracts/*.mdc"
+      description: "Validate framework contracts"
+      
+    - name: "code-formatting"
+      command: "black --check --diff"
+      files: "frameworks/fwk-001-cursor-rules/**/*.py"
+      description: "Check Python code formatting"
+      
+    - name: "import-sorting"
+      command: "isort --check-only --diff"
+      files: "frameworks/fwk-001-cursor-rules/**/*.py"
+      description: "Check import statement ordering"
+
+# Pull Request Gates
+pull_request_gates:
+  required: true
+  checks:
+    - name: "unit-tests-all"
+      command: "cd frameworks/fwk-001-cursor-rules && pytest tests/unit/ -v --tb=short"
+      timeout_minutes: 3
+      description: "All unit tests must pass"
+      failure_action: "block"
+      
+    - name: "contract-tests"
+      command: "cd frameworks/fwk-001-cursor-rules && pytest tests/contract/ -v"
+      timeout_minutes: 2
+      description: "Contract validation tests must pass"
+      failure_action: "block"
+      
+    - name: "coverage-check"
+      command: "cd frameworks/fwk-001-cursor-rules && pytest --cov=. --cov-report=term-missing --cov-fail-under=80"
+      timeout_minutes: 3
+      description: "Code coverage must be >=80%"
+      failure_action: "block"
+      
+    - name: "schema-compliance"
+      command: "cd frameworks/fwk-001-cursor-rules && python3 -c 'import json, jsonschema; jsonschema.validate(json.load(open(\"schemas/artifact.schema.json\")), {\"type\": \"object\"})'"
+      timeout_minutes: 1
+      description: "JSON schemas must be valid"
+      failure_action: "block"
+      
+    - name: "contract-syntax"
+      command: "cd frameworks/fwk-001-cursor-rules && python3 -c 'import yaml; yaml.safe_load(open(\"contracts/framework_contract_framework1.mdc\"))'"
+      timeout_minutes: 1
+      description: "Contract files must have valid syntax"
+      failure_action: "block"
+
+# Release Gates
+release_gates:
+  required: true
+  checks:
+    - name: "full-test-suite"
+      command: "cd frameworks/fwk-001-cursor-rules && pytest tests/ -v --tb=short"
+      timeout_minutes: 10
+      description: "Complete test suite execution"
+      failure_action: "block"
+      
+    - name: "coverage-report"
+      command: "cd frameworks/fwk-001-cursor-rules && pytest --cov=. --cov-report=html --cov-report=term-missing --cov-fail-under=80"
+      timeout_minutes: 5
+      description: "Generate coverage report with >=80% threshold"
+      failure_action: "block"
+      
+    - name: "performance-benchmarks"
+      command: "cd frameworks/fwk-001-cursor-rules && python3 -m pytest tests/ --benchmark-only"
+      timeout_minutes: 5
+      description: "Performance benchmarks must not regress"
+      failure_action: "warn"
+      
+    - name: "security-scan"
+      command: "bandit -r frameworks/fwk-001-cursor-rules/ -f json -o security-report.json"
+      timeout_minutes: 3
+      description: "Security vulnerability scan"
+      failure_action: "block"
+      
+    - name: "dependency-audit"
+      command: "safety check --json --output safety-report.json"
+      timeout_minutes: 2
+      description: "Check for known security vulnerabilities in dependencies"
+      failure_action: "block"
+
+# Nightly/Continuous Checks
+continuous_checks:
+  schedule: "0 2 * * *"  # Daily at 2 AM
+  checks:
+    - name: "e2e-workflows"
+      command: "cd frameworks/fwk-001-cursor-rules && pytest tests/e2e/ -v --tb=short"
+      timeout_minutes: 15
+      description: "End-to-end workflow tests"
+      failure_action: "notify"
+      
+    - name: "integration-tests"
+      command: "cd frameworks/fwk-001-cursor-rules && pytest tests/integration/ -v"
+      timeout_minutes: 10
+      description: "Integration tests with external dependencies"
+      failure_action: "notify"
+      
+    - name: "performance-regression"
+      command: "cd frameworks/fwk-001-cursor-rules && python3 -m pytest tests/ --benchmark-compare=baseline"
+      timeout_minutes: 8
+      description: "Performance regression detection"
+      failure_action: "notify"
+      
+    - name: "coverage-trends"
+      command: "cd frameworks/fwk-001-cursor-rules && pytest --cov=. --cov-report=json --cov-report=html"
+      timeout_minutes: 5
+      description: "Generate coverage reports for trend analysis"
+      failure_action: "notify"
+
+# Quality Gates
+quality_gates:
+  coverage:
+    minimum: 80
+    target: 85
+    critical: 75
+    
+  performance:
+    unit_test_max_ms: 100
+    contract_test_max_ms: 500
+    e2e_test_max_seconds: 5
+    full_suite_max_minutes: 2
+    
+  reliability:
+    flaky_test_rate_max: 1.0
+    test_stability_min: 99.0
+    retry_attempts: 3
+    
+  security:
+    critical_vulnerabilities: 0
+    high_vulnerabilities: 0
+    medium_vulnerabilities_max: 2
+
+# Test Environment Configuration
+test_environment:
+  python_version: "3.8+"
+  dependencies:
+    - "pytest>=7.0.0"
+    - "pytest-cov>=4.0.0"
+    - "pytest-mock>=3.10.0"
+    - "pytest-benchmark>=4.0.0"
+    - "jsonschema>=4.17.0"
+    - "pyyaml>=6.0"
+    - "bandit>=1.7.0"
+    - "safety>=2.3.0"
+    
+  environment_variables:
+    PYTHONPATH: "frameworks/fwk-001-cursor-rules"
+    TEST_ENVIRONMENT: "ci"
+    COVERAGE_FILE: ".coverage.ci"
+    
+  artifacts:
+    - "coverage-reports/"
+    - "test-results/"
+    - "performance-reports/"
+    - "security-reports/"
+
+# Notification Configuration
+notifications:
+  slack:
+    channel: "#framework-qa"
+    webhook_url: "${SLACK_WEBHOOK_URL}"
+    
+  email:
+    recipients: ["qa-team@company.com"]
+    smtp_server: "${SMTP_SERVER}"
+    
+  webhook:
+    url: "${WEBHOOK_URL}"
+    events: ["test_failure", "coverage_drop", "security_alert"]
+
+# Rollback Triggers
+rollback_triggers:
+  - condition: "coverage < 75%"
+    action: "block_deployment"
+    description: "Code coverage below critical threshold"
+    
+  - condition: "critical_security_vulnerabilities > 0"
+    action: "block_deployment"
+    description: "Critical security vulnerabilities detected"
+    
+  - condition: "test_failure_rate > 5%"
+    action: "block_deployment"
+    description: "Test failure rate above acceptable threshold"
+    
+  - condition: "performance_regression > 20%"
+    action: "warn_deployment"
+    description: "Significant performance regression detected"
+
+# Metrics Collection
+metrics:
+  test_execution:
+    - "test_duration"
+    - "test_success_rate"
+    - "test_failure_patterns"
+    - "coverage_trends"
+    
+  performance:
+    - "execution_time"
+    - "memory_usage"
+    - "cpu_utilization"
+    - "response_times"
+    
+  quality:
+    - "bug_density"
+    - "technical_debt"
+    - "code_complexity"
+    - "documentation_coverage"
+
+# Documentation Requirements
+documentation:
+  required:
+    - "test_plan.md"
+    - "README.md"
+    - "API_documentation.md"
+    - "deployment_guide.md"
+    
+  coverage:
+    - "All public APIs documented"
+    - "Test scenarios documented"
+    - "Troubleshooting guide"
+    - "Performance benchmarks"
+
+# Compliance & Standards
+compliance:
+  standards:
+    - "ISO 25010 (Software Quality)"
+    - "IEEE 829 (Test Documentation)"
+    - "ISTQB Test Process"
+    
+  audit:
+    frequency: "quarterly"
+    scope: "Full test suite and processes"
+    reporting: "Executive summary + detailed findings"

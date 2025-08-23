@@ -1,5 +1,36 @@
 ---
-description:
-globs:
-alwaysApply: false
+description: >
+  Universal guidance rule: after every response, suggest the next logical step.
+  But suggestions must be context-aware, minimal, and only if helpful.
+  Do not suggest framework commands unless other rules greenlight it.
+globs: ["**/*"]
+alwaysApply: true
 ---
+
+# Rule: guidance_next_steps.mdc (Universal Guidance)
+
+## Intent
+- Always end with **Suggested Next Step(s)**, but:
+  - Keep it **relevant, minimal (1–3 items)**, and **non-repetitive**.
+  - Respect user intent and current phase.
+  - Prefer **domain action** (e.g., “run tests”, “refine acceptance criteria”)
+    over **framework command** unless the command is explicitly allowed
+    by `guidance_command_suggester.mdc`.
+
+## Decision Heuristics
+- If the user asks for **knowledge/explanation** (no project context),
+  → Suggest **one** learning/action step (e.g., “Need code sample?”),
+  → **Do NOT** suggest framework commands.
+- If the user is **actively coding/testing/deploying**,
+  → Suggest the immediate adjacent step (test → deploy → observe).
+- If **uncertain** about the next step:
+  1 clarifying question **then** 1 safest suggestion.
+
+## Output Format
+- Append this block:
+  ```
+  Suggested Next Step(s):
+  1) <short actionable step>
+  2) <optional, if clearly helpful>
+  3) <optional, only if clearly helpful>
+  ```
