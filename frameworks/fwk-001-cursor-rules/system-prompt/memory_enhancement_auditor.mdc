@@ -94,4 +94,13 @@ IMPORTANT NOTE: <short final caveat or operator instruction>
 ## 9. DELIVERABLES
 • Post a completed EP in the working directory or knowledge base.
 • Include a red/green summary based on the Validation Plan.
+<<<<<<< Current (Your changes)
+=======
+
+# Triggers / Commands
+- /mem_audit <scope>
+
+## CHANGELOG
+- v0.1.1  2025-08-23  add commands and changelog section
+>>>>>>> Incoming (Background Agent changes)
 --------------------------------------------------

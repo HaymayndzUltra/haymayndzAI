@@ -13,7 +13,7 @@ Targets:
 - Final_Implementation_Plan.md
 
 Usage:
-  python3 /home/haymayndz/HaymayndzAI/scripts/auto_restore_templates.py --interval 1.0
+  python3 /workspace/scripts/auto_restore_templates.py --interval 1.0
 
 Notes:
 - Pure standard library, no external deps.
@@ -28,8 +28,28 @@ import time
 from pathlib import Path
 
 
-TEMPLATES_ROOT = Path("/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates")
-EXAMPLES_ROOT = Path("/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples")
+def resolve_repo_root() -> Path:
+    env_root = os.getenv("REPO_ROOT")
+    if env_root:
+        try:
+            return Path(env_root).resolve()
+        except Exception:
+            pass
+    workspace = Path("/workspace")
+    if workspace.exists():
+        return workspace.resolve()
+    return Path.cwd().resolve()
+
+
+REPO_ROOT = resolve_repo_root()
+TEMPLATES_ROOT = Path(os.getenv(
+    "TEMPLATES_ROOT",
+    str(REPO_ROOT / "frameworks/fwk-001-cursor-rules/templates"),
+))
+EXAMPLES_ROOT = Path(os.getenv(
+    "EXAMPLES_ROOT",
+    str(REPO_ROOT / "frameworks/fwk-001-cursor-rules/examples"),
+))
 
 
 TARGETS = {

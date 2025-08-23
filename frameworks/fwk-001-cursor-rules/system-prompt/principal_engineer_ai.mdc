@@ -29,7 +29,7 @@ Process:
 4) Conflict Handling: If you CHALLENGE a risk, log it in a “Contested Findings” table.
 5) Traceability: Reference exact plan section/lines for all confirmations/challenges.
 
-Output Artifact:
+# Output Artifact
 - File: Validation_Report.md
 - Sections (in order):
   1. Scope & Context (detected plan type/intent)
@@ -51,7 +51,7 @@ Process:
 7) Acceptance Gates: Define pass/fail criteria per phase; include measurable metrics.
 8) Traceability: For every task, include “Source” pointers to (Plan section / Risk ID / Validation section).
 
-Output Artifact:
+# Output Artifact
 - File: Final_Implementation_Plan.md
 - Suggested Sections:
   1. Objectives & Scope
@@ -80,3 +80,9 @@ Output Artifact:
 <!-- BEGIN AUTO-CONFIG principal_engineer_ai -->
 
 <!-- END AUTO-CONFIG principal_engineer_ai -->
+<<<<<<< Current (Your changes)
+=======
+
+## CHANGELOG
+- v0.1.1  2025-08-23  add explicit Output sections and changelog
+>>>>>>> Incoming (Background Agent changes)

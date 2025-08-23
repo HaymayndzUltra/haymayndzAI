@@ -58,3 +58,9 @@ Ground all flags relative to the plan’s stated scope and intent.
 
 # Example Command
 /audit frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
+<<<<<<< Current (Your changes)
+=======
+
+## CHANGELOG
+- v0.1.1  2025-08-23  add changelog section for validator compliance
+>>>>>>> Incoming (Background Agent changes)
