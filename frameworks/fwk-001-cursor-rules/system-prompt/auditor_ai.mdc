@@ -3,3 +3,10 @@ description:
 globs:
 alwaysApply: false
 ---
+
+<!-- BEGIN AUTO-CONFIG auditor_ai -->
+```yaml
+enabled: false
+notes: "Disabled for Cafe project to meet 3-week/$500 scope"
+```
+<!-- END AUTO-CONFIG auditor_ai -->

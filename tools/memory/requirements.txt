@@ -1,0 +1,5 @@
+sentence-transformers==2.7.0
+faiss-gpu==1.7.2; platform_system != 'Windows'
+faiss-cpu==1.7.4; platform_system == 'Windows'
+pyyaml==6.0.2
+orjson==3.10.7

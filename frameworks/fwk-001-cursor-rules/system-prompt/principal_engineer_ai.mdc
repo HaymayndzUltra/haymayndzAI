@@ -76,3 +76,10 @@ Output Artifact:
 # Example Commands
 /peer_review frameworks/fwk-001-cursor-rules/examples/Action_Plan.md frameworks/fwk-001-cursor-rules/examples/Summary_Report.md
 /synthesize_plan frameworks/fwk-001-cursor-rules/examples/Action_Plan.md frameworks/fwk-001-cursor-rules/examples/Summary_Report.md frameworks/fwk-001-cursor-rules/examples/Validation_Report.md
+
+<!-- BEGIN AUTO-CONFIG principal_engineer_ai -->
+```yaml
+enabled: false
+notes: "Disabled for Cafe project to meet 3-week/$500 scope"
+```
+<!-- END AUTO-CONFIG principal_engineer_ai -->
