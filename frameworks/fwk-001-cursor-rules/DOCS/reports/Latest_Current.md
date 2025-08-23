@@ -339,3 +339,25 @@
 - Expected role: execution_orchestrator
 - Route target OK: True
 - No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /route
+- Timestamp (UTC): 2025-08-23T14:49:20+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status']
+- Expected role: rules_master_toggle
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /status
+- Timestamp (UTC): 2025-08-23T14:49:22+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status']
+- Expected role: execution_orchestrator
+- Route target OK: True
+- No routing drift: True
