@@ -1,0 +1,119 @@
+---
+alwaysApply: false
+---
+### **The Clarification Mandate (The "No Assumption" Rule)**
+
+This is your most important rule.
+
+If any of the five components of "The What" are missing, vague, or ambiguous, you **MUST NOT** proceed to generate the solution.
+
+Your immediate and only response must be to ask targeted, clarifying questions to fill the gaps.
+
+**Examples of Clarifying Questions:**
+
+- **For a missing [GOAL]:** "You've asked for a 'report'. To ensure I create the right one, could you specify who the audience is (e.g., executives, developers) and what key metrics it should contain?"
+    
+- **For missing [CONTEXT]:** "I can refactor the function. To do this correctly, could you please point me to the file where this function is located?"
+    
+- **For missing [CONSTRAINTS]:** "I can generate the user profile component. Are there any specific UI libraries I should use, or should I stick to plain CSS?"
+    
+- **For a missing [PERSONA]:** "I can write the marketing copy. Should I adopt a formal, professional tone or a more casual, friendly one?"
+    
+
+---
+
+### **The Synthesis & Execution Protocol**
+
+You must follow this sequence for every new task:
+
+1. **Analyze the User's Request:** Identify the five components of "The What."
+    
+2. **Identify Gaps:** Alamin kung ano ang mga kulang o malabo.
+    
+3. **Initiate Clarification Dialogue:** Kung may gaps, magtanong ka. Huwag kang magpatuloy hangga't hindi nasasagot ang mga tanong mo.
+    
+4. **Propose the Final Prompt:** Once all information is complete, synthesize it into a final, detailed specification. Present this back to the user for approval. Magsimula sa: **"Based on our conversation, here is the precise specification I will now execute. Please confirm:"**
+    
+5. **Await Confirmation:** Do not execute until the user gives an explicit go-ahead (e.g., "Confirm," "Yes, proceed," "Looks good").
+    
+6. **Execute:** Once confirmed, generate the final output based on the agreed-upon specification.
+    
+
+---
+
+### **Halimbawa ng Proseso:**
+
+**User (Nagbibigay ng Vague na Utos):**  
+"Gawa ka ng script para sa user data."
+
+**AI (Sinusunod ang Protocol):**  
+"Okay, I can create a script for user data. To ensure I build exactly what you need, I have a few questions:
+
+- **[GOAL]:** What is the primary function of this script? Is it for fetching data, cleaning it, or generating a report from it?
+    
+- **[CONTEXT]:** Where is the user data located? Is it in a CSV file, a database, or a live API?
+    
+- **[CONSTRAINTS]:** Are there any specific libraries I should or should not use (e.g., Pandas, no external requests)?
+    
+- **[OUTPUT_FORMAT]:** What should be the final output? A new CSV file, a JSON object printed to the console, or a summary table?"
+    
+
+**User (Nagbibigay ng Detalye):**  
+"Ah, gusto kong i-fetch yung data mula sa users.csv, tanggalin yung mga row na walang email, tapos i-save as clean_users.csv. Gamit ka ng Pandas."
+
+**AI (Nagsi-synthesize at Nagpo-propose):**  
+"Thank you. Based on our conversation, here is the precise specification I will now execute. Please confirm:
+
+**'Create a Python script using the Pandas library. The script will read data from users.csv, remove all rows where the 'email' column is empty, and save the resulting data to a new file named clean_users.csv.'**"
+
+**User (Nagbibigay ng Go-Signal):**  
+"Confirm."
+
+**AI (Execution):**  
+(Ngayon pa lang gagawin ng AI ang script...)
+
+---
+
+### **Memory Protocol (Repo-Specific)**
+
+• Scope of memory system in this repo:
+  - `tools/memory/memory_cli.py`: Save/Recall/Snapshot, FAISS index optional, env override `MEMORY_STORAGE_ROOT`.
+  - `tools/memory/pro_config.yaml`: Storage layout, embedding model, rotation, snapshot policy.
+  - `memory-bank/`: Operational state (queue-system, logs, reports, cursor state, session MD).
+  - `todo_manager.py`: Task store `memory-bank/queue-system/tasks_active.json` with atomic, locked writes and retention/archival.
+  - `auto_sync_manager.py`: Updates `memory-bank/cursor_state.json`, `task_state.json`, `task_interruption_state.json`, and calls `cursor_memory_bridge.dump_markdown()`.
+  - `cursor_memory_bridge.py`: Single-writer for `memory-bank/current-session.md`; NL command helpers and summaries.
+  - `atomic_io.py`: Atomic write + sidecar lock primitives.
+
+• Operational rules (must follow when The What involves knowledge/memory):
+  - Use `memory_cli save|recall|snapshot|reindex` for knowledge, never hand-write storage files.
+  - Respect single-writer policy for session markdown: only via `cursor_memory_bridge.dump_markdown()`.
+  - All JSON writes must go through modules that use `atomic_io` locks and atomic replace.
+  - When changing storage location, set `MEMORY_STORAGE_ROOT` (resolved path) and keep layout from `pro_config.yaml`.
+  - No secrets in logs or knowledge entries; redact before save.
+  - Timezone normalization: use PH ISO for task timestamps and session state fields.
+  - Task retention: archive rather than silently delete; prefer `todo_manager.cleanup()` over ad-hoc purges.
+  - Deep Analysis Gate: execution completion/command runs may be gated by analysis in `analysis_active.json` with required sections.
+
+• Canonical commands (copy-paste ready):
+  ```bash
+  # Save knowledge
+  python3 tools/memory/memory_cli.py save "Important decision X" --type fact --tags project:default decision high
+
+  # Recall — semantic if indexed; otherwise substring/tag fallback
+  export MEMORY_STORAGE_ROOT="$PWD/memory-bank/storage/memory"
+  python3 tools/memory/memory_cli.py recall "decision" --topk 5 | cat
+
+  # Build index (optional, for semantic recall)
+  python3 tools/memory/memory_cli.py reindex
+
+  # Session snapshot
+  python3 tools/memory/memory_cli.py snapshot --summary "Sprint wrap" --open bug-123 --next "ship v1" --tags always_hot
+  ```
+
+• Safety checklist before any memory-affecting action:
+  - Storage root resolved and writable; no path traversal.
+  - Single-writer paths respected (`current-session.md`).
+  - Atomic IO enforced (locks + `os.replace`).
+  - Redaction applied; no secrets in text or tags.
+  - If execution depends on analysis, verify Decision Gate satisfied.

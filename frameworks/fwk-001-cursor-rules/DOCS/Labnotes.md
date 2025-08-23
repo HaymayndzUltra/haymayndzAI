@@ -151,3 +151,199 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 - Added: `atomic_io.py`, `tz_utils.py`, `exec_logging.py`, `archive_tasks.py`.
 - Modified: `todo_manager.py`, `auto_sync_manager.py`, `cursor_session_manager.py`, `task_state_manager.py`, `task_interruption_manager.py`, `tools/memory/memory_cli.py`.
 - Docs: `frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md` (diagram + mapping).
+
+### 2025-08-23 18:11:53 — MODIFY — scripts/labnotes_watcher.py
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: scripts/labnotes_watcher.py (abs: /home/haymayndz/HaymayndzAI/scripts/labnotes_watcher.py)
+- File: labnotes_watcher.py (ext: .py)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-23 18:11:53 — MODIFY — frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md)
+- File: Labnotes.entry.template.md (ext: .md)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-23 18:26:16 — MODIFY — frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- File: Action_Plan.md (ext: .md)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-23 18:26:18 — MODIFY — frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- File: Action_Plan.md (ext: .md)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+

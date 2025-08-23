@@ -1,7 +1,5 @@
 ---
-description:
-globs:
-alwaysApply: false
+alwaysApply: true
 ---
 # Role: auditor_ai
 # Purpose
@@ -60,13 +58,3 @@ Ground all flags relative to the plan’s stated scope and intent.
 
 # Example Command
 /audit frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-
-<<<<<<< Current (Your changes)
-<!-- BEGIN AUTO-CONFIG auditor_ai -->
-```yaml
-enabled: true
-notes: "Disabled for Cafe project to meet 3-week/$500 scope"
-```
-<!-- END AUTO-CONFIG auditor_ai -->
-=======
->>>>>>> Incoming (Background Agent changes)
