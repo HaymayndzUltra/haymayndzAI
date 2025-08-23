@@ -1,0 +1,14 @@
+[33md01263b[m[33m ([m[1;31morigin/cursor/run-incremental-merges-across-all-frameworks-89b1[m[33m)[m Update progressive monitoring timestamp for route tracking
+[33m16f5e2e[m Checkpoint before follow-up message
+[33m19af67f[m Update progressive monitoring timestamps and health report
+[33m51c319f[m Checkpoint before follow-up message
+[33md91c65c[m Checkpoint before follow-up message
+[33m7810981[m Add /route mapping to rules_master_toggle routing matrix
+[33m63dacf2[m Checkpoint before follow-up message
+[33mf324e0f[m Checkpoint before follow-up message
+[33ma7a0d4a[m Update progressive monitoring timestamp for /route
+[33m38b11a1[m Add progressive monitoring script and observability reports for /route
+[33m281087a[m Enable limited progressive mode for /route command
+[33m793bf70[m Update docs: routing fix and Progressive mode status
+[33m6c41728[m Add rules_master_toggle configuration and update routing baseline
+[33m83f1d62[m Add routing baseline and dry-run artifacts for cursor rules framework
