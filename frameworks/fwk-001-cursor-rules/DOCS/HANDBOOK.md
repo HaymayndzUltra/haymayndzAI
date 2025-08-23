@@ -88,6 +88,7 @@ Limited Progressive ON: active for `/route`, `/status`, `/health`, `/observe`, `
 - System prompts: `system-prompt/*.mdc` (+ OPTIONAL/*)
 - Docs: this handbook
 - Examples: sample files (if any)
+ - End-to-end diagram: `DOCS/END_TO_END.mmd`
 
 ## 10) Recent Change Reports
 - Consolidated (last 3 days): `frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md`

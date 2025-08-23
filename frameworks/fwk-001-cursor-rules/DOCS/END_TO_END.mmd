@@ -1,0 +1,85 @@
+flowchart TD
+  %% Inputs → Artifacts → Governance/Promotion → Observability
+
+  subgraph Inputs
+    PO[/Backlog: product_backlog.yaml/]
+    AP[/Action_Plan.md/]
+  end
+
+  subgraph Planning
+    PL[planning_ai]
+    TPL[[technical_plan.md]]
+    TBD[[task_breakdown.yaml]]
+    ADG[[architecture_diagram.mermaid]]
+  end
+
+  subgraph Audit_Verify_Synthesize
+    AU[auditor_ai]
+    SR[[Summary_Report.md]]
+    PE[principal_engineer_ai]
+    VR[[Validation_Report.md]]
+    FIP[[Final_Implementation_Plan.md]]
+  end
+
+  subgraph Delivery
+    CG[codegen_ai]
+    QA[qa_ai]
+    ML[mlops_ai]
+    DOC[documentation_ai]
+  end
+
+  subgraph Observability
+    OB[observability_ai]
+    AN[analyst_ai]
+  end
+
+  subgraph Memory_Bridge
+    MEM[memory_ai]
+    BRIDGE[[framework_memory_bridge]]
+  end
+
+  subgraph Orchestration
+    ORCH[execution_orchestrator]
+    RMT[rules_master_toggle]
+  end
+
+  %% Origin/main additions (contracts, routing, promotion, sync)
+  subgraph Governance_and_Extensions
+    CNT[[contracts/*]]
+    GOV[[governance/*]]
+    ROUTE[[routing/*]]
+    PROMO[[promotion/*]]
+    SYNC[[sync/*]]
+    SCHEMA[[schemas/*]]
+    SEC[[security/*]]
+  end
+
+  %% Flow wiring
+  PO --> PL
+  AP --> PL
+  PL --> TPL --> AU --> SR --> PE --> VR --> FIP --> CG
+  PL --> TBD
+  CG --> QA --> ML --> OB --> AN
+  CG --> DOC
+  MEM --- BRIDGE --- ORCH
+  ORCH --> PL
+  ORCH --> CG
+  ORCH --> QA
+  ORCH --> ML
+  RMT --> ORCH
+
+  %% Governance hooks
+  TPL --> CNT
+  FIP --> GOV
+  ROUTE -. artifact routing .- DOC
+  PROMO -. release process .- ML
+  SYNC -. index & concurrency .- GOV
+  SCHEMA --> ROUTE
+  SEC --> ML
+
+  %% Inputs to Observability
+  ML --> OB
+  OB --> AN
+
+  %% Final Outputs
+  AN -->|reports| GOV
