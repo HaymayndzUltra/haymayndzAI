@@ -631,23 +631,21 @@ def exec_substep(task_id: str, sub_index: str, run: bool = False) -> None:
 		print("💡 Use '--run' to actually execute. Keeping it safe (preview only).")
 		return
 
-	print("🚀 Executing...")
-	for cmd in selected:
-		try:
-			# Use shell to allow pipelines; execution is explicit via --run flag
-			result = subprocess.run(cmd, shell=True, text=True, capture_output=True)
-			print(f"$ {cmd}")
-			print(f"↳ exit={result.returncode}")
-			if result.stdout:
-				print(result.stdout.rstrip())
-			if result.stderr:
-				print(result.stderr.rstrip())
-			if result.returncode != 0:
-				print("⚠️ Command returned non-zero status. Stopping further execution.")
-				break
-		except Exception as e:
-			print(f"❌ Execution failed: {e}")
-			break
+	    print("🚀 Executing...")
+    from exec_logging import run_logged
+    for cmd in selected:
+        try:
+            exit_code, meta = run_logged(cmd)
+            print(f"$ {cmd}")
+            print(f"↳ exit={exit_code}")
+            print(f"↳ stdout: {meta['stdout']}")
+            print(f"↳ stderr: {meta['stderr']}")
+            if exit_code != 0:
+                print("⚠️ Command returned non-zero status. Stopping further execution.")
+                break
+        except Exception as e:
+            print(f"❌ Execution failed: {e}")
+            break
 
 
 def main(argv: Optional[List[str]] = None) -> None:
