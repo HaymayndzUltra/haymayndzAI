@@ -2,4 +2,4 @@ progressive_mode: false
 overrides:
   command_routing: {}
   roles: {}
-notes: Dry-run only. No live changes.
+notes: Dry-run only. Progressive OFF.

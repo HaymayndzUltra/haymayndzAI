@@ -80,6 +80,12 @@ roles:
     triggers: ["/run_pipeline", "/status", "/halt"]
     dependencies: []
     
+  rules_master_toggle:
+    enabled: true
+    priority: 10
+    triggers: ["/toggle", "/route"]
+    dependencies: []
+    
   prompt_factory_ai:
     enabled: true
     priority: 10

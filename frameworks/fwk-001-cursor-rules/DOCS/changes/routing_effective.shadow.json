@@ -1,6 +1,6 @@
 {
   "framework": "fwk-001-cursor-rules",
-  "timestamp_utc": "2025-08-23T12:14:35+00:00",
+  "timestamp_utc": "2025-08-23T12:22:17+00:00",
   "repo_root": "/workspace",
   "roles": {
     "product_owner_ai": {
@@ -112,6 +112,15 @@
         "/run_pipeline",
         "/status",
         "/halt"
+      ],
+      "dependencies": []
+    },
+    "rules_master_toggle": {
+      "enabled": true,
+      "priority": 10,
+      "triggers": [
+        "/toggle",
+        "/route"
       ],
       "dependencies": []
     },
