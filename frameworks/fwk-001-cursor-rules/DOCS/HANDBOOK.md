@@ -85,6 +85,13 @@ See `rules_master_toggle.mdc` routing matrix. Example additions used in Café pr
 - Docs: this handbook
 - Examples: sample files (if any)
 
+## 10) Recent Change Reports
+- Consolidated (last 3 days): `frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md`
+- Git changes: `frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md`
+- Filesystem changes: `frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md`
+- Labnotes changes: `frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md`
+- Discrepancies: `frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md`
+
 ## 9) Change Impact & Safety
 - All edits generate `.bak` backups where applicable
 - Planner-first prevents unconfirmed changes

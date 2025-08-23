@@ -20,3 +20,10 @@ Checklists
 - [ ] Pipeline gates tailored
 - [ ] Artifacts authored and linked
 - [ ] CI guard for AI_ENFORCEMENT_MODE=team
+
+Reports (last 3 days)
+- Consolidated: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md
+- Per-source: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md
+- Per-source: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md
+- Per-source: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md
+- Discrepancies: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md
