@@ -4654,3 +4654,12 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 ---
 
+### 2025-08-23 — SUMMARY — /status canary PASS, scope limited
+
+- Runs: 8 recorded; all PASS; 0 alerts; no drift
+- Scope remains: ['/route', '/status'] (Progressive ON limited)
+- Next: continue limited monitoring; consider /health canary only upon approval
+
+
+---
+
