@@ -4623,3 +4623,15 @@ Next: keep Progressive OFF; proceed to next minimal slice (if any)
 
 ---
 
+### 2025-08-23 — MONITORING — Progressive ON (/route)
+
+- Setup: scripts/progressive_monitor.py — generates monitoring_dashboard.json, health_report.md, alert_history.log
+- Scope: /route only; no routing target changes
+- Initial run: completed; consolidated report updated with snapshot
+- Rollback readiness: routing_override.yaml has .bak; revert and rerun monitor to confirm OFF state
+
+Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not widen scope yet
+
+
+---
+

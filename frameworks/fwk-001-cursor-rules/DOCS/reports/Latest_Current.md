@@ -97,3 +97,12 @@
 ## Progressive ON (limited)
 - Scope: /route only (no routing target changes)
 - Acceptance: PASS (no regressions)
+
+
+## Progressive Monitoring Snapshot (/route)
+- Timestamp (UTC): 2025-08-23T12:36:37+00:00
+- Status: WARN
+- Progressive mode: True
+- Allowlist: ['/route']
+- Route target OK: False
+- No routing drift: True
