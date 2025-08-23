@@ -121,7 +121,7 @@ while IFS=$'\t' read -r status path1 path2; do
       *)
         printf '%s\n\n' "- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)" ;;
     esac
-    printf '---\n\n'
+    printf '%s\n\n' '---'
   } >> "$LAB"
 
 done <<EOF
