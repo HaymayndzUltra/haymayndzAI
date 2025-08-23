@@ -1,0 +1,16 @@
+{
+  "component": "routing_progressive_monitor",
+  "scope": "limited:/route",
+  "metrics": {
+    "timestamp_utc": "2025-08-23T12:59:49+00:00",
+    "progressive_mode": true,
+    "allowlist_triggers": [
+      "/route"
+    ],
+    "route_target_ok": true,
+    "role_enabled_ok": true,
+    "no_routing_drift": true
+  },
+  "alerts": [],
+  "status": "PASS"
+}

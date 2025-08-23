@@ -80,6 +80,12 @@ roles:
     triggers: ["/run_pipeline", "/status", "/halt"]
     dependencies: []
     
+  rules_master_toggle:
+    enabled: true
+    priority: 10
+    triggers: ["/toggle", "/route"]
+    dependencies: []
+    
   prompt_factory_ai:
     enabled: true
     priority: 10
@@ -168,6 +174,7 @@ command_routing:
   "/extend_framework": "prompt_factory_ai"
   "/template":         "prompt_factory_ai"
   "/toggle":           "rules_master_toggle"
+  "/route":            "rules_master_toggle"
   "/design_schema":     "data_ai"
   "/create_migration":  "data_ai"
   "/optimize_queries":  "data_ai"
