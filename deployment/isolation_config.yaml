@@ -1,0 +1,13 @@
+# Environment isolation for deployment checks
+version: v1
+staging:
+  namespace_strategy: "ephemeral"
+  namespace_prefix: "ci-stg-"
+  ttl_minutes: 120
+  network_isolation: true
+  secrets_scope: "staging"
+production:
+  namespace_strategy: "static"
+  namespace: "prod"
+  change_control_required: true
+

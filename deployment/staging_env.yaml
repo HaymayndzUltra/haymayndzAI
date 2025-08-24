@@ -1,0 +1,13 @@
+# Staging vs Production segregation
+environment: staging
+image_pull_policy: IfNotPresent
+ingress:
+  enabled: false
+resources:
+  requests:
+    cpu: "500m"
+    memory: "512Mi"
+  limits:
+    cpu: "1"
+    memory: "1Gi"
+
