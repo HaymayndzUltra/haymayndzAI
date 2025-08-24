@@ -416,3 +416,10 @@
 - Expected role: analyst_ai
 - Route target OK: True
 - No routing drift: True
+
+## /analyze Canary Summary (limited)
+- Runs recorded: 7
+- Window: 2025-08-24T01:21:07+00:00 → 2025-08-24T01:46:27+00:00 (UTC)
+- Scope: Progressive ON allowlist ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze']
+- Expected role: analyst_ai
+- Result: PASS (0 alerts), No routing drift

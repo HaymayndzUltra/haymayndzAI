@@ -82,7 +82,7 @@ See `rules_master_toggle.mdc` routing matrix. Example additions used in Café pr
 
 Note: Routing fix applied — `rules_master_toggle` handles `/toggle` and `/route`. Progressive mode is OFF; routing overrides are shadow-only.
 
-Limited Progressive ON: active for `/route`, `/status`, `/health`, `/observe`, `/alert`, `/benchmark` via `DOCS/changes/routing_override.yaml` (rollback: restore `.bak`).
+Limited Progressive ON: active for `/route`, `/status`, `/health`, `/observe`, `/alert`, `/benchmark`, `/analyze` via `DOCS/changes/routing_override.yaml` (rollback: restore `.bak`).
 
 ## 8) Files Index
 - System prompts: `system-prompt/*.mdc` (+ OPTIONAL/*)
