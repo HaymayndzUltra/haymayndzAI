@@ -60369,3 +60369,54 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 
 > auto: detected modify on persona_payload.json
+
+### 2025-08-24 18:58:17 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/Command_Routing_Source_of_Truth.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Command_Routing_Source_of_Truth.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Command_Routing_Source_of_Truth.md)
+- File: Command_Routing_Source_of_Truth.md (ext: .md)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+> auto: detected create on Command_Routing_Source_of_Truth.md
