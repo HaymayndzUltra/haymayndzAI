@@ -11,5 +11,4 @@ overrides:
   - /benchmark
   - /analyze
   - /review
-  - /validate_docs
 notes: Dry-run only. Progressive OFF.

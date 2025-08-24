@@ -500,3 +500,25 @@
 - Expected role: analyst_ai
 - Route target OK: True
 - No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /validate_docs
+- Timestamp (UTC): 2025-08-24T04:09:24+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: documentation_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /validate_docs
+- Timestamp (UTC): 2025-08-24T04:09:43+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: documentation_ai
+- Route target OK: True
+- No routing drift: True

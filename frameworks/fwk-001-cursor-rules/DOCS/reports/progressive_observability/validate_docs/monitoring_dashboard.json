@@ -1,0 +1,26 @@
+{
+  "component": "routing_progressive_monitor",
+  "scope": "limited:/validate_docs",
+  "metrics": {
+    "timestamp_utc": "2025-08-24T04:09:43+00:00",
+    "progressive_mode": true,
+    "allowlist_triggers": [
+      "/route",
+      "/status",
+      "/health",
+      "/observe",
+      "/alert",
+      "/benchmark",
+      "/analyze",
+      "/review",
+      "/validate_docs"
+    ],
+    "trigger": "/validate_docs",
+    "expected_role": "documentation_ai",
+    "route_target_ok": true,
+    "role_enabled_ok": true,
+    "no_routing_drift": true
+  },
+  "alerts": [],
+  "status": "PASS"
+}
