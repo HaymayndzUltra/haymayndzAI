@@ -1,5 +1,5 @@
 {
-  "agent": "planning_ai",
+  "agent": "codegen_ai",
   "intent": "codegen",
   "source_rule": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc"
 }
