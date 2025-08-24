@@ -2,11 +2,18 @@
   "component": "routing_progressive_monitor",
   "scope": "limited:/status",
   "metrics": {
-    "timestamp_utc": "2025-08-23T14:49:22+00:00",
-    "progressive_mode": true,
+    "timestamp_utc": "2025-08-24T07:51:16+00:00",
+    "progressive_mode": false,
     "allowlist_triggers": [
       "/route",
-      "/status"
+      "/status",
+      "/health",
+      "/observe",
+      "/alert",
+      "/benchmark",
+      "/analyze",
+      "/review",
+      "/validate_docs"
     ],
     "trigger": "/status",
     "expected_role": "execution_orchestrator",
@@ -14,6 +21,8 @@
     "role_enabled_ok": true,
     "no_routing_drift": true
   },
-  "alerts": [],
-  "status": "PASS"
+  "alerts": [
+    "Progressive mode expected True but found False"
+  ],
+  "status": "WARN"
 }

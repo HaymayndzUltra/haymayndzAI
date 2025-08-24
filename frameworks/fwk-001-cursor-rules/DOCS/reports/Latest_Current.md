@@ -584,3 +584,234 @@
 - Scope: Progressive ON allowlist ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
 - Expected role: documentation_ai
 - Result: PASS (0 alerts), No routing drift
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /route
+- Timestamp (UTC): 2025-08-24T07:49:09+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: rules_master_toggle
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /status
+- Timestamp (UTC): 2025-08-24T07:49:09+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: execution_orchestrator
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /health
+- Timestamp (UTC): 2025-08-24T07:49:09+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /observe
+- Timestamp (UTC): 2025-08-24T07:49:09+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /alert
+- Timestamp (UTC): 2025-08-24T07:49:09+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /benchmark
+- Timestamp (UTC): 2025-08-24T07:49:09+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /analyze
+- Timestamp (UTC): 2025-08-24T07:49:09+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /review
+- Timestamp (UTC): 2025-08-24T07:49:09+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /validate_docs
+- Timestamp (UTC): 2025-08-24T07:49:09+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: documentation_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /route
+- Timestamp (UTC): 2025-08-24T07:50:44+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: rules_master_toggle
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /status
+- Timestamp (UTC): 2025-08-24T07:51:16+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: execution_orchestrator
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /health
+- Timestamp (UTC): 2025-08-24T07:51:19+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /observe
+- Timestamp (UTC): 2025-08-24T07:51:41+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /alert
+- Timestamp (UTC): 2025-08-24T07:51:43+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: observability_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /benchmark
+- Timestamp (UTC): 2025-08-24T07:51:48+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /analyze
+- Timestamp (UTC): 2025-08-24T07:51:55+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /analyze
+- Timestamp (UTC): 2025-08-24T07:51:55+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /analyze
+- Timestamp (UTC): 2025-08-24T07:51:58+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /review
+- Timestamp (UTC): 2025-08-24T07:52:10+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /validate_docs
+- Timestamp (UTC): 2025-08-24T07:52:13+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: documentation_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /route
+- Timestamp (UTC): 2025-08-24T07:52:27+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: rules_master_toggle
+- Route target OK: True
+- No routing drift: True

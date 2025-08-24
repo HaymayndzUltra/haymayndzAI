@@ -1,7 +1,7 @@
 # Progressive ON Health Report (limited: /validate_docs)
 
-- Timestamp (UTC): 2025-08-24T04:34:44+00:00
-- Progressive mode: True
+- Timestamp (UTC): 2025-08-24T07:52:13+00:00
+- Progressive mode: False
 - Allowlist triggers: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
 - Trigger: /validate_docs
 - Expected role: documentation_ai
@@ -10,4 +10,4 @@
 - No routing drift: True
 
 ## Alerts
-- (none)
+- Progressive mode expected True but found False

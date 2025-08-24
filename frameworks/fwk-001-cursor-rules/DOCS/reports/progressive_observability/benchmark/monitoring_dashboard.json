@@ -2,15 +2,18 @@
   "component": "routing_progressive_monitor",
   "scope": "limited:/benchmark",
   "metrics": {
-    "timestamp_utc": "2025-08-23T22:13:41+00:00",
-    "progressive_mode": true,
+    "timestamp_utc": "2025-08-24T07:51:48+00:00",
+    "progressive_mode": false,
     "allowlist_triggers": [
       "/route",
       "/status",
       "/health",
       "/observe",
       "/alert",
-      "/benchmark"
+      "/benchmark",
+      "/analyze",
+      "/review",
+      "/validate_docs"
     ],
     "trigger": "/benchmark",
     "expected_role": "analyst_ai",
@@ -18,6 +21,8 @@
     "role_enabled_ok": true,
     "no_routing_drift": true
   },
-  "alerts": [],
-  "status": "PASS"
+  "alerts": [
+    "Progressive mode expected True but found False"
+  ],
+  "status": "WARN"
 }

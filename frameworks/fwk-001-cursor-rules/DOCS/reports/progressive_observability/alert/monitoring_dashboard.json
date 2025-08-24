@@ -2,14 +2,18 @@
   "component": "routing_progressive_monitor",
   "scope": "limited:/alert",
   "metrics": {
-    "timestamp_utc": "2025-08-23T20:48:22+00:00",
-    "progressive_mode": true,
+    "timestamp_utc": "2025-08-24T07:51:43+00:00",
+    "progressive_mode": false,
     "allowlist_triggers": [
       "/route",
       "/status",
       "/health",
       "/observe",
-      "/alert"
+      "/alert",
+      "/benchmark",
+      "/analyze",
+      "/review",
+      "/validate_docs"
     ],
     "trigger": "/alert",
     "expected_role": "observability_ai",
@@ -17,6 +21,8 @@
     "role_enabled_ok": true,
     "no_routing_drift": true
   },
-  "alerts": [],
-  "status": "PASS"
+  "alerts": [
+    "Progressive mode expected True but found False"
+  ],
+  "status": "WARN"
 }
