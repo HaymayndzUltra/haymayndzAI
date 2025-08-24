@@ -16,7 +16,7 @@
   "properties": {
     "id": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+$" },
     "version": { "type": "string", "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-[0-9A-Za-z-.]+)?(?:\\+[0-9A-Za-z-.]+)?$" },
-    "status": { "type": "string", "enum": ["draft", "review", "approved"] },
+    "status": { "type": "string", "enum": ["draft", "review", "approved", "deprecated"] },
     "framework": { "type": "string" },
     "kind": { "type": "string" },
     "labels": { "type": "array", "items": { "type": "string" } },

@@ -1,0 +1,42 @@
+[
+  {
+    "test_name": "Single Writer Isolation",
+    "start_time": "2025-08-24T06:28:06.142293",
+    "status": "PASSED",
+    "result": true,
+    "end_time": "2025-08-24T06:28:06.152505",
+    "duration": 0.010215044021606445
+  },
+  {
+    "test_name": "Multiple Writers Sequential",
+    "start_time": "2025-08-24T06:28:06.152574",
+    "status": "PASSED",
+    "result": true,
+    "end_time": "2025-08-24T06:28:06.173584",
+    "duration": 0.021013259887695312
+  },
+  {
+    "test_name": "Concurrent Write Detection",
+    "start_time": "2025-08-24T06:28:06.173657",
+    "status": "PASSED",
+    "result": true,
+    "end_time": "2025-08-24T06:28:06.286165",
+    "duration": 0.11251282691955566
+  },
+  {
+    "test_name": "Lease Expiration Handling",
+    "start_time": "2025-08-24T06:28:06.286236",
+    "status": "PASSED",
+    "result": true,
+    "end_time": "2025-08-24T06:28:09.301000",
+    "duration": 3.0147669315338135
+  },
+  {
+    "test_name": "Batch Write Operations",
+    "start_time": "2025-08-24T06:28:09.301059",
+    "status": "PASSED",
+    "result": true,
+    "end_time": "2025-08-24T06:28:09.331849",
+    "duration": 0.030792713165283203
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "snapshot": {
+    "digest": "8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639",
+    "createdAt": "2025-08-23T22:28:52.227056Z",
+    "creator": "haymayndz",
+    "trigger": "manual",
+    "environment": "development"
+  },
+  "artifacts": {
+    "count": 0,
+    "statuses": {},
+    "kinds": []
+  },
+  "promotion": {
+    "gate": "verification_gate",
+    "checksum": "13ba8c6393313b911d5d68b55e5f71be0a91f017269e84971d395b063ced6ad5",
+    "timestamp": "2025-08-23T22:28:52.227095Z"
+  },
+  "notes": "Snapshot created via CLI - manual trigger"
+}

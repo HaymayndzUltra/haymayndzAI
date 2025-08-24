@@ -16,9 +16,9 @@
     "frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc"
   ],
   "validation": {
-    "hydrationTests": "python3 frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml",
-    "routingConflicts": "python3 frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py",
-    "indexVerify": "python3 frameworks/fwk-001-cursor-rules/sync/index_cli.py verify"
+    "hydrationTests": "python3 ../hydration/run_hydration_tests.py ../hydration/hydration_tests.yaml",
+    "routingConflicts": "python3 ../routing/check_routing_conflicts.py",
+    "indexVerify": "python3 ../sync/index_cli.py verify"
   }
 }
 

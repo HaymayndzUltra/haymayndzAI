@@ -20,7 +20,11 @@ class SecurityConfigValidator:
     
     def __init__(self, framework_root: Path):
         self.framework_root = framework_root
-        self.security_dir = framework_root / "security"
+        # If we're already in the security directory, use current directory
+        if Path.cwd().name == "security":
+            self.security_dir = Path.cwd()
+        else:
+            self.security_dir = framework_root / "security"
         self.acl_file = self.security_dir / "acl.json"
         self.policies_file = self.security_dir / "access_policies.md"
         
@@ -399,9 +403,8 @@ def main():
         print(f"Error: Framework root directory not found: {framework_root}")
         sys.exit(1)
     
-    # Create security directory if it doesn't exist
-    security_dir = framework_root / "security"
-    security_dir.mkdir(exist_ok=True)
+    # Use current directory for results
+    security_dir = Path.cwd()
     
     # Initialize validator
     validator = SecurityConfigValidator(framework_root)
