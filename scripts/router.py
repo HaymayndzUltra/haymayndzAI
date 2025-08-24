@@ -71,11 +71,13 @@ def build_effective() -> Dict[str, Any]:
     allowlist = (ovr.get("overrides") or {}).get("allowlist_triggers") or ovr.get("allowlist_triggers") or []
     progressive_mode = bool(ovr.get("progressive_mode", False))
 
+    planner_mode = bool((ovr.get("overrides") or {}).get("planner_mode", False))
     return {
         "roles": roles,
         "command_routing": routing,
         "allowlist_triggers": allowlist,
         "progressive_mode": progressive_mode,
+        "planner_mode": planner_mode,
     }
 
 
@@ -134,7 +136,7 @@ def print_status() -> None:
         for k, v in roles.items()
     ]
     table.sort(key=lambda r: (not r["enabled"], r["priority"], r["role"]))
-    print(json.dumps({"progressive_mode": eff["progressive_mode"], "roles": table}, indent=2))
+    print(json.dumps({"progressive_mode": eff["progressive_mode"], "planner_mode": eff.get("planner_mode", False), "roles": table}, indent=2))
 
 
 def main() -> int:
