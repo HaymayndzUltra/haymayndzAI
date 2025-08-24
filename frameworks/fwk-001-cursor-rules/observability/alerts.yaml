@@ -1,15 +1,6 @@
-# Alert Configuration - T-11 Implementation
+---
+# Alert Configuration - T-11 Implementation (YAML)
 
-## Overview
-Comprehensive alert configuration for framework drift detection and promotion monitoring. Designed to meet T-11 acceptance criteria: **Drift detected within 5m; MTTR < 30m**.
-
-## Alert Categories
-
-### 1. **Critical Alerts (Immediate Response Required)**
-**Response Time**: Immediate (0-5 minutes)
-**Escalation**: 15 minutes
-
-```yaml
 critical_alerts:
   system_down:
     name: "Framework System Down"
@@ -45,7 +36,7 @@ critical_alerts:
         duration: "0s"
       - metric: "drift_detection_time"
         operator: ">"
-        value: "300s"  # 5 minutes
+        value: "300s"
         duration: "0s"
     notifications:
       - channel: "pagerduty"
@@ -93,7 +84,7 @@ critical_alerts:
         duration: "0s"
       - metric: "promotion_blocked_duration"
         operator: ">"
-        value: "300s"  # 5 minutes
+        value: "300s"
         duration: "0s"
     notifications:
       - channel: "pagerduty"
@@ -104,13 +95,7 @@ critical_alerts:
       - "page_oncall_engineer"
       - "freeze_promotions"
       - "initiate_rollback_procedure"
-```
 
-### 2. **High Alerts (Response within 30 minutes)**
-**Response Time**: 30 minutes
-**Escalation**: 1 hour
-
-```yaml
 high_alerts:
   drift_detected:
     name: "Framework Drift Detected"
@@ -120,7 +105,7 @@ high_alerts:
     conditions:
       - metric: "drift_detection_time"
         operator: ">"
-        value: "300s"  # 5 minutes (T-11 acceptance criteria)
+        value: "300s"
         duration: "120s"
       - metric: "drift_severity"
         operator: "in"
@@ -146,7 +131,7 @@ high_alerts:
     conditions:
       - metric: "mttr_current"
         operator: ">"
-        value: "1800s"  # 30 minutes (T-11 acceptance criteria)
+        value: "1800s"
         duration: "300s"
       - metric: "recovery_in_progress"
         operator: "=="
@@ -202,7 +187,7 @@ high_alerts:
         duration: "300s"
       - metric: "promotion_blocked_duration"
         operator: ">"
-        value: "600s"  # 10 minutes
+        value: "600s"
         duration: "300s"
     notifications:
       - channel: "slack"
@@ -215,13 +200,7 @@ high_alerts:
       - "investigate_promotion_failure"
       - "check_gate_status"
       - "initiate_manual_intervention"
-```
 
-### 3. **Medium Alerts (Response within 2 hours)**
-**Response Time**: 2 hours
-**Escalation**: 4 hours
-
-```yaml
 medium_alerts:
   low_severity_drift:
     name: "Low Severity Drift"
@@ -235,7 +214,7 @@ medium_alerts:
         duration: "900s"
       - metric: "drift_detection_time"
         operator: ">"
-        value: "900s"  # 15 minutes
+        value: "900s"
         duration: "900s"
     notifications:
       - channel: "slack"
@@ -300,13 +279,7 @@ medium_alerts:
       - "investigate_snapshot_issues"
       - "check_storage_health"
       - "verify_backup_procedures"
-```
 
-### 4. **Low Alerts (Response within 24 hours)**
-**Response Time**: 24 hours
-**Escalation**: 48 hours
-
-```yaml
 low_alerts:
   informational_updates:
     name: "System Status Updates"
@@ -372,14 +345,7 @@ low_alerts:
       - "generate_compliance_report"
       - "schedule_audit_review"
       - "update_compliance_dashboard"
-```
 
-## Alert Configuration Details
-
-### Notification Channels
-
-#### Slack Integration
-```yaml
 slack_config:
   webhook_url: "${SLACK_WEBHOOK_URL}"
   channels:
@@ -391,10 +357,7 @@ slack_config:
   message_format: "slack"
   username: "Framework Monitor"
   icon_emoji: ":warning:"
-```
 
-#### PagerDuty Integration
-```yaml
 pagerduty_config:
   api_key: "${PAGERDUTY_API_KEY}"
   service_id: "${PAGERDUTY_SERVICE_ID}"
@@ -402,10 +365,7 @@ pagerduty_config:
   urgency: "high"
   auto_resolve: true
   auto_resolve_timeout: "1h"
-```
 
-#### Email Integration
-```yaml
 email_config:
   smtp_server: "${SMTP_SERVER}"
   smtp_port: 587
@@ -414,62 +374,44 @@ email_config:
   from_address: "framework-monitor@company.com"
   reply_to: "sre-team@company.com"
   html_format: true
-```
 
-### Alert Escalation Matrix
-
-#### Escalation Levels
-```yaml
 escalation_matrix:
   level_1:
     response_time: "0-5m"
     team: "On-Call Engineer"
     actions: ["acknowledge", "investigate", "resolve"]
-  
   level_2:
     response_time: "5-15m"
     team: "Senior Engineer"
     actions: ["escalate", "coordinate", "communicate"]
-  
   level_3:
     response_time: "15-30m"
     team: "Engineering Manager"
     actions: ["escalate", "stakeholder_communication", "resource_allocation"]
-  
   level_4:
     response_time: "30m+"
     team: "Director of Engineering"
     actions: ["executive_communication", "incident_review", "process_improvement"]
-```
 
-### Alert Suppression and Maintenance
-
-#### Suppression Rules
-```yaml
 suppression_rules:
   maintenance_windows:
     - name: "Scheduled Maintenance"
       start_time: "2025-01-01T02:00:00Z"
       end_time: "2025-01-01T06:00:00Z"
       suppress_alerts: ["performance_degradation", "resource_usage_high"]
-  
   known_issues:
     - name: "Known Performance Issue"
       start_time: "2025-01-01T00:00:00Z"
       end_time: "2025-01-02T00:00:00Z"
       suppress_alerts: ["performance_degradation"]
       reason: "Investigating known performance regression"
-  
   testing:
     - name: "Alert Testing"
       start_time: "2025-01-01T10:00:00Z"
       end_time: "2025-01-01T11:00:00Z"
       suppress_alerts: ["*"]
       reason: "Testing alert configurations"
-```
 
-#### Maintenance Windows
-```yaml
 maintenance_windows:
   weekly:
     - day: "Sunday"
@@ -477,82 +419,14 @@ maintenance_windows:
       end_time: "06:00"
       timezone: "UTC"
       description: "Weekly maintenance window"
-  
   monthly:
     - day: "First Sunday"
       start_time: "02:00"
       end_time: "08:00"
       timezone: "UTC"
       description: "Monthly maintenance window"
-  
   emergency:
     - name: "Emergency Maintenance"
       start_time: "immediate"
       end_time: "4h"
       description: "Emergency maintenance procedures"
-```
-
-## Alert Testing and Validation
-
-### Test Scenarios
-```yaml
-test_scenarios:
-  drift_detection:
-    - name: "Test Drift Detection Alert"
-      description: "Verify drift detection alerts within 5 minutes"
-      test_data:
-        drift_severity: "high"
-        drift_detection_time: "310s"  # Just over 5 minutes
-      expected_result:
-        alert_triggered: true
-        severity: "high"
-        response_time: "2m"
-  
-  mttr_threshold:
-    - name: "Test MTTR Threshold Alert"
-      description: "Verify MTTR threshold alerts when exceeding 30 minutes"
-      test_data:
-        mttr_current: "1900s"  # Just over 30 minutes
-        recovery_in_progress: true
-      expected_result:
-        alert_triggered: true
-        severity: "high"
-        response_time: "30m"
-  
-  promotion_failure:
-    - name: "Test Promotion Failure Alert"
-      description: "Verify promotion failure alerts"
-      test_data:
-        promotion_status: "failed"
-        promotion_blocked_duration: "650s"  # Over 10 minutes
-      expected_result:
-        alert_triggered: true
-        severity: "high"
-        response_time: "5m"
-```
-
-### Validation Criteria
-```yaml
-validation_criteria:
-  drift_detection:
-    - "Drift detected within 5 minutes" ✅
-    - "Alert severity matches drift severity" ✅
-    - "Proper notification channels triggered" ✅
-    - "Escalation procedures followed" ✅
-  
-  mttr_monitoring:
-    - "MTTR threshold alerts within 30 minutes" ✅
-    - "Recovery progress tracked" ✅
-    - "Escalation matrix followed" ✅
-    - "Stakeholder communication sent" ✅
-  
-  promotion_monitoring:
-    - "Promotion failures detected" ✅
-    - "Gate status monitored" ✅
-    - "Rollback procedures available" ✅
-    - "Performance metrics tracked" ✅
-```
-
----
-
-**T-11 Alert Configuration** provides comprehensive alerting for framework drift detection and promotion monitoring, ensuring the acceptance criteria of **drift detected within 5m; MTTR < 30m** are met through proactive alerting and proper escalation procedures.

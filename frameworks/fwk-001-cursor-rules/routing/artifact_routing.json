@@ -6,7 +6,8 @@
     { "artifactType": "sync_rules", "pathPattern": "frameworks/{framework}/sync/{artifactId}.mdc" },
     { "artifactType": "hydration_rules", "pathPattern": "frameworks/{framework}/hydration/{artifactId}.mdc" },
     { "artifactType": "framework_contract", "pathPattern": "frameworks/{framework}/contracts/{artifactId}.mdc" },
-    { "artifactType": "promotion_rules", "pathPattern": "frameworks/{framework}/promotion/{artifactId}.mdc" }
+    { "artifactType": "promotion_rules", "pathPattern": "frameworks/{framework}/promotion/{artifactId}.mdc" },
+    { "artifactType": "technical_plan", "pathPattern": "frameworks/{framework}/DOCS/{artifactId}.md" }
   ],
   "tieBreaker": { "field": "pathPattern", "order": "asc" }
 }
