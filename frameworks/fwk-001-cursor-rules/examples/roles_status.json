@@ -1,0 +1,12 @@
+{
+  "framework": "fwk-001-cursor-rules",
+  "timestamp": "${NOW}",
+  "roles": {
+    "product_owner_ai": { "enabled": true, "priority": 1 },
+    "auditor_ai": { "enabled": true, "priority": 2 },
+    "principal_engineer_ai": { "enabled": true, "priority": 3 },
+    "codegen_ai": { "enabled": false, "priority": 4 },
+    "qa_ai": { "enabled": false, "priority": 5 },
+    "mlops_ai": { "enabled": false, "priority": 6 }
+  }
+}

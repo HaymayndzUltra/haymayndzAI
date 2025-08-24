@@ -1,3 +1,19 @@
+Phase 0: Deterministic Router and JIT Persona Integration
+Purpose: Introduce a minimal central router and safe, gated persona injection without affecting routing or monitors.
+Specific Items to Implement:
+- Add scripts/router.py (deterministic, file-driven) using rules_master_toggle.mdc + routing_override.yaml; fallback to harvested .mdc if primary missing.
+- Gate persona JIT injection behind env JIT_PERSONA=on; inject only after route ok:true; map role→agent; add timeout and fallback to base persona on errors.
+- Use tools/rules_indexer.py (auto-build index if missing) + tools/jit_persona_orchestrator.py to construct task persona (INSTRUCTIONS as directive; GUARDRAILS as constraints).
+- Logging: write tools/persona_payload.json and a small summary log; keep DOCS/changes/* and routing shadows unmodified.
+- Safety: skip injection for UNKNOWN_TRIGGER, ROLE_DISABLED, NOT_ALLOWLISTED; no monitor invocation; read-only operations.
+- Observability: record persona injection events (JSONL) and measure overhead (<50ms target); ensure progressive_monitor remains unaffected.
+Specific Items to Test:
+- /plan and /gen_code: route resolution is correct; persona injected when JIT_PERSONA=on, not injected when off.
+- Progressive=OFF on main: routing artifacts unchanged; conflicts report remains “No conflicts detected”; monitors pass.
+- Progressive=ON + allowlist: persona injection occurs only for allowlisted triggers.
+- New session determinism: rebuilding the index yields identical persona selection for the same backlog.
+Expected Outcome: Router resolves triggers deterministically with safety checks; persona overlay activates just-in-time without modifying routing artifacts; performance overhead within budget; no conflicts with monitors or overrides.
+
 Phase 1: Foundational Integrity Testing
 Command Surface Sanity
 Purpose: Verify that all routed commands exist and map to the correct roles.

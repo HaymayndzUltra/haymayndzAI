@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: DeploymentManifest
+metadata:
+  name: fwk-001-cursor-rules-example
+  version: "0.1.0"
+spec:
+  environment: local
+  components:
+    - name: audit
+      enabled: true
+    - name: peer_review
+      enabled: true
+    - name: synthesis
+      enabled: true
+  checks:
+    - name: schema_validation
+      status: pending
+    - name: smoke
+      status: pending

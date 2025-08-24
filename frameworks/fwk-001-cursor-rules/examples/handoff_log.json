@@ -1,0 +1,14 @@
+{
+  "framework": "fwk-001-cursor-rules",
+  "timestamp": "${NOW}",
+  "sequence": [
+    { "step": 1, "command": "/backlog", "artifact": "examples/product_backlog.yaml" },
+    { "step": 2, "command": "/plan", "artifact": "examples/technical_plan.md" },
+    { "step": 3, "command": "/gen_code", "artifact": "examples/task_breakdown.yaml" },
+    { "step": 4, "command": "/test", "artifact": "examples/test_results.json" }
+  ],
+  "gate_checks": {
+    "planning_gate": "passed",
+    "artifact_paths_valid": true
+  }
+}

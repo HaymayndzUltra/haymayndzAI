@@ -1,0 +1,4 @@
+# product backlog (example)
+- id: PBI-001
+  title: Example backlog item
+  status: draft
