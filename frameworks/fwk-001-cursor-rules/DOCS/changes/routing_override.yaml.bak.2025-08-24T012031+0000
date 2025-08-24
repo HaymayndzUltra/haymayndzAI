@@ -9,5 +9,4 @@ overrides:
   - /observe
   - /alert
   - /benchmark
-  - /analyze
 notes: Dry-run only. Progressive OFF.
