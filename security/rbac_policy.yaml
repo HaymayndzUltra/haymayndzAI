@@ -1,0 +1,29 @@
+# RBAC policy for command execution
+version: v1
+subjects:
+  - name: ci_runner
+    roles: [executor]
+  - name: developer
+    roles: [editor, executor]
+  - name: auditor
+    roles: [auditor]
+roles:
+  executor:
+    allow:
+      - "/plan"
+      - "/gen_code"
+      - "/test"
+      - "/deploy"
+      - "/snapshot"
+  editor:
+    allow:
+      - "/docs"
+      - "/update_docs"
+  auditor:
+    allow:
+      - "/audit"
+      - "/peer_review"
+rules:
+  default_deny: true
+  evaluation_order: [subject, role, action]
+

@@ -1,0 +1,16 @@
+{
+  "waivers": [
+    {
+      "id": "WVR-2025-0001",
+      "rationale": "Legacy third-party SDK flagged as Medium; remediation planned",
+      "owner": "sec-gov",
+      "expiry_date": "2025-12-31",
+      "affected_component": "sdk/legacy",
+      "conditions": {
+        "severity_max": "MEDIUM",
+        "tools": ["bandit", "safety"]
+      }
+    }
+  ]
+}
+
