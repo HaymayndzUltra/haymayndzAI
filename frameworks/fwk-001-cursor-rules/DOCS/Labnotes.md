@@ -57773,3 +57773,2089 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 ---
 
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/product_owner_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/product_owner_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/product_owner_ai.mdc)
+- File: product_owner_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- File: framework_memory_bridge.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/planning_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/planning_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/planning_ai.mdc)
+- File: planning_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- File: execution_orchestrator.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- File: auditor_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- File: planner_moderator_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/l10n_i18n_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/l10n_i18n_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/l10n_i18n_ai.mdc)
+- File: l10n_i18n_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- File: principal_engineer_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/security_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/security_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/security_ai.mdc)
+- File: security_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/documentation_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/documentation_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/documentation_ai.mdc)
+- File: documentation_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/data_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/data_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/data_ai.mdc)
+- File: data_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/observability_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/observability_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/observability_ai.mdc)
+- File: observability_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_ai.mdc)
+- File: memory_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/qa_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/qa_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/qa_ai.mdc)
+- File: qa_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc)
+- File: codegen_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
+- File: memory_enhancement_auditor.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/analyst_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/analyst_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/analyst_ai.mdc)
+- File: analyst_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/prompt_linter_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/prompt_linter_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/prompt_linter_ai.mdc)
+- File: prompt_linter_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/prompt_factory_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/prompt_factory_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/prompt_factory_ai.mdc)
+- File: prompt_factory_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/mlops_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/mlops_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/mlops_ai.mdc)
+- File: mlops_ai.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+
+### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- File: rules_master_toggle.mdc (ext: .mdc)
+
+#### Summary
+- 
+
+#### Reason / Motivation
+- 
+
+#### Details of Change
+- 
+
+#### Commands Run (if any)
+```bash
+# add commands here
+```
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+- 
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+- 
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+- 
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — MODIFY — frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- File: Labnotes.md (ext: .md)
+
+#### Summary
+- Auto Summary: +1029/-0 lines; Importance: Medium
+-- Headings: ### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/product_owner_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/planning_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/l10n_i18n_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/security_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/documentation_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/data_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/observability_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/qa_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/analyst_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/prompt_linter_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/prompt_factory_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/mlops_ai.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability;### 2025-08-25 00:40:09 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc;#### Summary;#### Reason / Motivation;#### Details of Change;#### Commands Run (if any);# add commands here;#### Tests Executed;#### Results / Observations;#### Acceptance / Verification;#### Risks / Impact;#### Rollback / Recovery;#### Follow-ups / Next Steps;#### Traceability
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +1029 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/data_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/data_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/data_ai.mdc)
+- File: data_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +53/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +53 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/l10n_i18n_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/l10n_i18n_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/l10n_i18n_ai.mdc)
+- File: l10n_i18n_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +52/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +52 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- File: planner_moderator_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +65/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +65 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/prompt_linter_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/prompt_linter_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/prompt_linter_ai.mdc)
+- File: prompt_linter_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +52/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +52 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/security_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/security_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/security_ai.mdc)
+- File: security_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +52/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +52 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/analyst_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/analyst_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/analyst_ai.mdc)
+- File: analyst_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +52/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +52 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- File: auditor_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +108/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +108 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc)
+- File: codegen_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +53/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +53 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/documentation_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/documentation_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/documentation_ai.mdc)
+- File: documentation_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +52/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +52 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- File: execution_orchestrator.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +269/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +269 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- File: framework_memory_bridge.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +115/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +115 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_ai.mdc)
+- File: memory_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +53/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +53 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
+- File: memory_enhancement_auditor.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +106/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +106 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/mlops_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/mlops_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/mlops_ai.mdc)
+- File: mlops_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +52/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +52 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/observability_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/observability_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/observability_ai.mdc)
+- File: observability_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +52/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +52 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/planning_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/planning_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/planning_ai.mdc)
+- File: planning_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +52/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +52 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- File: principal_engineer_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +117/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +117 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/product_owner_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/product_owner_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/product_owner_ai.mdc)
+- File: product_owner_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +53/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +53 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/prompt_factory_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/prompt_factory_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/prompt_factory_ai.mdc)
+- File: prompt_factory_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +53/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +53 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/qa_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/qa_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/qa_ai.mdc)
+- File: qa_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +52/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +52 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 00:40:58 PST+0800 — RENAME — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- File: rules_master_toggle.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +203/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +203 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
