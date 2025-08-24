@@ -1,120 +1,126 @@
-## Summary Report (Auditor Output)
+### 1) Context Summary (type/intent detected)
+- Type: Operational / Execution plan
+- Intent: Integrate an AI-driven Memory Bridge (JSON + SQLite), perform rules-based selection and integration, containerize services with Docker Compose, enable cross-machine worker with Redis backbone, support hybrid inference with cloud fallback, target 50+ concurrent tasks, implement observability checks, and define a rollback and PR workflow.
+- Scope includes: selection dry-run and apply, memory bridge prototype, Docker Compose stack, cross-machine instructions, hybrid inference policy, concurrency tests, observability, rollback, and git hygiene.
 
-## 1. Context Summary (type/intent detected)
-- **Plan Title**: Not specified
-- **Type/Intent**: Operational/Execution — integrate governance/config artifacts into the framework (multiple “Integrate …” actions).
+### 2) Critical Risks
+- R-001 — Progressive integration applied with protections disabled
+  - Evidence/Quote: "--apply --progressive off" (L15-L19)
+  - Affected Steps: 5, 6, 15
+  - Severity: High
+  - Downstream Impact: Unprotected routing/config changes; higher likelihood of unintended rule activation and drift without guardrails.
 
-## 2. Critical Risks
-- R-001 — Missing end-to-end sequencing and readiness criteria
-  - **Evidence/Quote**:
-```1:6:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-artifact_schema.mdc	Integrate	Enhancement — no uniform frontmatter/sidecar schema exists; adds consistent metadata (ids, versions, status) for orchestrator and linting without conflicting with current gates or routing.
-artifact_routing.mdc	Integrate (ensure naming separation from command routing)	Enhancement — current rules_master_toggle.mdc routes commands only; deterministic artifact path mapping is missing. Keep artifact routing artifacts separate from routing_matrix.json to avoid confusion.
-artifact_sync_rules.mdc	Integrate (orchestrator single-writer)	Enhancement — introduces artifacts_index.json with checksums/versioning/history. Aligns with orchestrator’s single-writer model; complements memory-bridge sync without overlap.
-hydration_rules.mdc	Integrate	Enhancement — defines input selection/precedence (approved → latest non-draft → solo) per stage to prevent drift; not present in current framework; compatible with gate inputs.
-framework_contract_framework1.mdc	Integrate (after schema/routing/hydration)	Enhancement — formalizes per-framework allowed artifacts and draft→review→approved save rules, complementing examples and gates; defer until base schema/routing/hydration are in place to avoid duplication.
-promotion_rules.mdc	Integrate	Enhancement — adds lifecycle governance (promotion tags, snapshots, rollback) tied to gate PASS; currently absent and aligns with safety/traceability goals.
-```
-  - **Severity**: High
-  - **Affected Steps**: L1–L6
-  - **Downstream Impact**: Out-of-order changes can break gates/routing/hydration invariants; unclear prerequisites impede safe rollout and rollback planning.
+- R-002 — Redis exposed cross-machine without authentication/TLS
+  - Evidence/Quote: "ensure 6379/tcp open" and remote `REDIS_URL` usage (L136-L139)
+  - Affected Steps: 12
+  - Severity: High
+  - Downstream Impact: Unauthorized access, data exfiltration, command injection, lateral movement; non-compliant with basic security standards.
 
-- R-002 — Data integrity and concurrency risks around artifacts_index.json and single-writer assumptions
-  - **Evidence/Quote**:
-```3:3:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-artifact_sync_rules.mdc	Integrate (orchestrator single-writer)	Enhancement — introduces artifacts_index.json with checksums/versioning/history. Aligns with orchestrator’s single-writer model; complements memory-bridge sync without overlap.
-```
-  - **Severity**: High
-  - **Affected Steps**: L3
-  - **Downstream Impact**: Index corruption on crashes/retries; re-entrancy and lock semantics unspecified; rollback of index state unclear.
+- R-003 — SQLite backing store under high concurrency (50+ tasks)
+  - Evidence/Quote: Memory bridge uses sqlite3 with per-call connections and no WAL or retry (L35-L66); concurrency target noted (L145-L151)
+  - Affected Steps: 7, 8, 14
+  - Severity: High
+  - Downstream Impact: "database is locked" errors, write contention, data loss/corruption risk, stalled workers.
 
-- R-003 — Ambiguous separation of artifact vs command routing (risk of drift/duplication)
-  - **Evidence/Quote**:
-```2:2:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-artifact_routing.mdc	Integrate (ensure naming separation from command routing)	Enhancement — current rules_master_toggle.mdc routes commands only; deterministic artifact path mapping is missing. Keep artifact routing artifacts separate from routing_matrix.json to avoid confusion.
-```
-  - **Severity**: Medium
-  - **Affected Steps**: L2
-  - **Downstream Impact**: Two sources-of-truth (artifact routing vs routing_matrix.json) can diverge; breakage in lookups and auditability.
+- R-004 — Orchestrator healthcheck references localhost:8080 with no declared port
+  - Evidence/Quote: Healthcheck command connects to ('localhost', 8080) (L115-L118); no ports mapping specified for orchestrator
+  - Affected Steps: 10, 11
+  - Severity: Medium
+  - Downstream Impact: Perpetual unhealthy status or false negatives; churn due to restarts; delayed readiness.
 
-- R-004 — Non-deterministic hydration precedence and conflict resolution
-  - **Evidence/Quote**:
-```4:4:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-hydration_rules.mdc	Integrate	Enhancement — defines input selection/precedence (approved → latest non-draft → solo) per stage to prevent drift; not present in current framework; compatible with gate inputs.
-```
-  - **Severity**: Medium
-  - **Affected Steps**: L4
-  - **Downstream Impact**: Precedence may still yield ties (e.g., multiple “approved” inputs); unspecified tie-breakers cause nondeterminism and drift.
+- R-005 — GPU reservation via compose `deploy.resources` likely ineffective
+  - Evidence/Quote: `deploy.resources.reservations.devices` under Compose v3 (L126-L131)
+  - Affected Steps: 10, 11
+  - Severity: Medium
+  - Downstream Impact: GPU not utilized as intended; degraded performance; configuration silently ignored on non-Swarm setups.
 
-- R-005 — Lifecycle governance ties to gate PASS without explicit rollback and snapshot provenance
-  - **Evidence/Quote**:
-```6:6:/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
-promotion_rules.mdc	Integrate	Enhancement — adds lifecycle governance (promotion tags, snapshots, rollback) tied to gate PASS; currently absent and aligns with safety/traceability goals.
-```
-  - **Severity**: Medium
-  - **Affected Steps**: L6
-  - **Downstream Impact**: Undefined rollback criteria and snapshot storage/location/integrity can make recovery unreliable after a failed promotion.
+- R-006 — Cloud fallback policy undefined and unbounded
+  - Evidence/Quote: `quality = score(output)` with fallback if < 0.85; external call to `call_cloud_llm` (L141-L145)
+  - Affected Steps: 13
+  - Severity: Medium
+  - Downstream Impact: Uncontrolled cost/egress; privacy/PII exposure; undefined scoring method leads to nondeterministic routing.
 
-- R-006 — Execution feasibility gaps (owners, envs, estimates, acceptance criteria, SLOs)
-  - **Evidence/Quote**: L1–L6 (no owners/timelines/acceptance criteria present in entire file)
-  - **Severity**: High
-  - **Affected Steps**: L1–L6
-  - **Downstream Impact**: Orphaned changes, scheduling conflicts, and unverifiable completion; inability to coordinate across frameworks/*.
+- R-007 — Log and value truncation silently discards data
+  - Evidence/Quote: `json.dumps(payload)[:200000]` and `json.dumps(value)[:200000]` (L47, L52)
+  - Affected Steps: 7, 8, 9
+  - Severity: Medium
+  - Downstream Impact: Incomplete audit trail; data loss in memory values; challenges in incident reconstruction and compliance.
 
-## 3. Potential Blind Spots
-- **B-001 — Migration/backfill for existing artifacts (schema/routing/index)**
-  - **Why it matters**: In-place upgrades can invalidate legacy paths; needs compatibility strategy.
-- **B-002 — Testing strategy and guardrails (unit/contract/e2e/gate checks)**
-  - **Why it matters**: Governance features require strong pre-merge and gate enforcement to avoid regressions.
-- **B-003 — Access control and security around new metadata (ids/versions/status, snapshot access)**
-  - **Why it matters**: Unauthorized changes or disclosure of internal states.
-- **B-004 — Multi-writer or distributed execution scenarios**
-  - **Why it matters**: Single-writer assumption may be violated in CI or parallel agents.
-- **B-005 — Telemetry/observability for hydration, routing, and promotions**
-  - **Why it matters**: Detect drift and diagnose failures quickly.
+- R-008 — Limited rollback scope
+  - Evidence/Quote: Only `routing_override.yaml` is restored (L155-L157)
+  - Affected Steps: 16
+  - Severity: Medium
+  - Downstream Impact: Partial revert may leave selection/integration side-effects and DB/log changes intact; residual drift.
 
-## 4. Assumptions (explicit/implicit) & fragility
-- **A-001 — Orchestrator operates single-writer only**
-  - **Fragility**: High — fragile under parallelization.
-  - **Evidence**: L3.
-- **A-002 — Gates with PASS semantics already exist**
-  - **Fragility**: Medium — depends on consistent definitions across frameworks.
-  - **Evidence**: L6.
-- **A-003 — States draft/review/approved and promotion tagging are standardized**
-  - **Fragility**: Medium — requires org-wide alignment.
-  - **Evidence**: L5–L6.
-- **A-004 — routing_matrix.json remains the canonical command-routing store**
-  - **Fragility**: Medium — duplicates increase drift risk.
-  - **Evidence**: L2.
-- **A-005 — “memory-bridge sync” present and compatible with the new index**
-  - **Fragility**: Medium — integration surface not specified.
-  - **Evidence**: L3.
+- R-009 — Cross-machine worker build/runtime ambiguity
+  - Evidence/Quote: Worker brought up on PC2 using same compose file (L136-L140) while service uses `build: .` (L121-L123)
+  - Affected Steps: 10, 12
+  - Severity: Medium
+  - Downstream Impact: Image/build context mismatch on remote host; runtime drift; environment-specific failures.
 
-## 5. Ambiguities & Measurement Gaps
-- **M-001** — “approved → latest non-draft → solo” tie-breakers and determinism not specified. Evidence: L4.
-- **M-002** — Snapshot format, retention, sign/verify, and rollback triggers undefined. Evidence: L6.
-- **M-003** — Artifact vs command routing precedence rules and conflict detection unclear. Evidence: L2.
-- **M-004** — No success metrics (e.g., policy coverage %, drift incidents, MTTR). Evidence: L1–L6 (absence).
+- R-010 — Observability checks lack gating and clear acceptance criteria
+  - Evidence/Quote: Expect WARN due to Progressive=OFF; "ensure drift=0" without measurement method (L20-L33, L151-L154)
+  - Affected Steps: 6, 15
+  - Severity: Low–Medium
+  - Downstream Impact: False sense of safety; undetected regressions; inconsistent drift interpretation.
 
-## 6. Consistency Issues (within plan & across refs)
-- **C-001** — Potential duplication and divergence between artifact routing and routing_matrix.json. Evidence: L2.
-- **C-002** — Only one ordered dependency explicitly stated (“after schema/routing/hydration” for framework_contract), others lack ordering; internal consistency of sequencing is weak. Evidence: L1–L6.
+- R-011 — Insufficient input validation and error handling in memory bridge CLI
+  - Evidence/Quote: CLI commands call `json.loads` without try/except; DB ops lack retries (L67-L83)
+  - Affected Steps: 7, 8, 9
+  - Severity: Low–Medium
+  - Downstream Impact: Uncaught exceptions, partial writes, poor robustness under malformed inputs.
 
-## 7. Compliance/Feasibility/Timeline/Scope findings
-- **Compliance**: Security/retention for snapshots and metadata not addressed (L6, L1).
-- **Feasibility**: No resource/owner/time/rollback rehearsal info (L1–L6).
-- **Timeline/Ordering**: Partial ordering only noted for framework_contract; others missing (L5 vs L1–L4, L6).
-- **Scope**: References external components (rules_master_toggle.mdc, routing_matrix.json, memory-bridge) without explicit interfaces or version bounds (L2–L3).
+- R-012 — PR workflow preserves Progressive=OFF
+  - Evidence/Quote: "keep Progressive=OFF" for PR (L163) with earlier `--apply --progressive off` (L15-L19)
+  - Affected Steps: 5, 17
+  - Severity: Medium
+  - Downstream Impact: Risk of merging weakened safeguards; normalization of disabled protections.
 
-## 8. Traceability Map (Risk IDs → Plan refs)
-- R-001 → L1–L6
-- R-002 → L3
-- R-003 → L2
-- R-004 → L4
-- R-005 → L6
-- R-006 → L1–L6
+### 3) Potential Blind Spots
+- B-001 — Capacity and queueing model for 50+ concurrency not described; throughput/latency targets absent (L145-L151).
+- B-002 — Data retention, compaction, and backup strategy for SQLite not specified; disk growth and recovery posture unclear (L35-L66).
+- B-003 — Secrets management for cloud LLM and Redis not described; key rotation/auditing missing (L123-L126, L136-L139, L141-L145).
+- B-004 — Network policies/firewall scope and segmentation not defined for cross-machine traffic (L136-L139).
+- B-005 — Disaster recovery testing (restore, failover) not covered beyond a single file rollback (L155-L157).
+- B-006 — Observability SLOs (availability, latency, error budget) and alert thresholds not defined (L20-L33, L151-L154).
 
-## 9. Verdict
-- Risks detected. See sections above.
+### 4) Assumptions (explicit/implicit) & fragility
+- A-001 — `redis-cli` available in `redis:7-alpine` for health checks (L97-L103) — fragile if image changes.
+- A-002 — Orchestrator listens on 8080 inside container (L115-L118) — fragile without explicit port configuration.
+- A-003 — PC2 has compatible GPU drivers/runtime for containerized workload (L126-L131) — fragile across hosts.
+- A-004 — `score(output)` is reliable and correlated with quality (L141-L144) — fragile without calibration.
+- A-005 — SQLite will suffice for 50+ concurrent operations (L145-L151) — fragile under write-heavy loads.
 
-<!-- Reporting Rules: cite exact lines for every claim; concise bullets; no prescriptive fixes. -->
+### 5) Ambiguities & Measurement Gaps
+- M-001 — "drift=0" criteria and measurement method are unspecified (L20-L33).
+- M-002 — "<2m recovery" lacks a defined failure taxonomy and measurement protocol (L9-L11, L145-L151).
+- M-003 — Quality threshold 0.85 lacks validation dataset, confidence intervals, or monitoring (L141-L145).
+- M-004 — "100% audit trail" claim conflicts with payload truncation (L47, L52).
+
+### 6) Consistency Issues
+- C-001 — Compose `deploy.resources` GPU section is Swarm-oriented, but the plan uses `docker compose` (non-Swarm) (L121-L131).
+- C-002 — Orchestrator healthcheck assumes an internal port (8080) that is not declared; readiness vs liveness conflation (L115-L118).
+- C-003 — Scaling guidance ("scale worker=4") not aligned with 50+ concurrency goal; no linkage to queue depth (L146-L147).
+
+### 7) Compliance / Feasibility / Timeline / Scope Findings
+- Compliance: Unsecured Redis over LAN/WAN (L136-L139) and cloud egress without stated data controls (L141-L145) raise security/privacy concerns.
+- Feasibility: SQLite under 50+ concurrent tasks (L145-L151) is questionable without WAL/tuning; GPU reservation via Compose (L126-L131) may not be honored.
+- Timeline: No explicit time or sequencing buffers; cross-machine setup may stall on network/firewall prerequisites (L136-L139).
+- Scope: Rollback limited to one file (L155-L157); does not cover DB/log/state reversions.
+
+### 8) Traceability Map (Risk IDs → Plan lines)
+- R-001 → L15-L19, L20-L33, L151-L154
+- R-002 → L136-L139
+- R-003 → L35-L66, L145-L151
+- R-004 → L115-L118
+- R-005 → L126-L131
+- R-006 → L141-L145
+- R-007 → L47, L52
+- R-008 → L155-L157
+- R-009 → L121-L123, L136-L140
+- R-010 → L20-L33, L151-L154
+- R-011 → L67-L83
+- R-012 → L15-L19, L158-L163
+
+### 9) Verdict
+Risks detected. See sections above.
