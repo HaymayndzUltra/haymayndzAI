@@ -445,3 +445,58 @@
 - Expected role: analyst_ai
 - Route target OK: True
 - No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /review
+- Timestamp (UTC): 2025-08-24T02:32:35+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /review
+- Timestamp (UTC): 2025-08-24T02:37:35+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /review
+- Timestamp (UTC): 2025-08-24T02:42:35+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /review
+- Timestamp (UTC): 2025-08-24T02:47:35+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /review
+- Timestamp (UTC): 2025-08-24T02:52:35+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review']
+- Expected role: analyst_ai
+- Route target OK: True
+- No routing drift: True
