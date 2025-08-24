@@ -2,7 +2,7 @@
   "component": "routing_progressive_monitor",
   "scope": "limited:/validate_docs",
   "metrics": {
-    "timestamp_utc": "2025-08-24T04:09:43+00:00",
+    "timestamp_utc": "2025-08-24T04:14:44+00:00",
     "progressive_mode": true,
     "allowlist_triggers": [
       "/route",
