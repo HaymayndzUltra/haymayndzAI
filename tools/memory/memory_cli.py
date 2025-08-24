@@ -36,7 +36,8 @@ def now_ts() -> str:
 
 
 def entry_id(text: str) -> str:
-    h = hashlib.sha1(text.encode("utf-8")).hexdigest()[:10]
+    # Non-security identifier; use SHA-256 for modern hashing
+    h = hashlib.sha256(text.encode("utf-8")).hexdigest()[:10]
     return f"kb_{time.strftime('%Y%m%d_%H%M%S')}_{h}"
 
 

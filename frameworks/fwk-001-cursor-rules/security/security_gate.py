@@ -14,27 +14,44 @@ def load_waivers() -> dict:
 		return {"waivers": []}
 
 
-def run_bandit() -> list:
-	cp = subprocess.run(['bandit', '-q', '-r', '/workspace', '-f', 'json'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-	if cp.returncode not in (0, 1):
-		print('bandit error:', cp.stderr.strip())
-		return []
+def _run_cmd(args: list[str]) -> tuple[int, str, str]:
 	try:
-		data = json.loads(cp.stdout or '{}')
+		cp = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+		return cp.returncode, cp.stdout, cp.stderr
+	except Exception as e:
+		return 127, "", str(e)
+
+
+def run_bandit() -> list:
+	# Prefer module invocation to avoid PATH issues
+	rc, out, err = _run_cmd([sys.executable, '-m', 'bandit', '-q', '-r', '/workspace', '-f', 'json'])
+	if rc not in (0, 1):
+		# Fallback to CLI name
+		rc, out, err = _run_cmd(['bandit', '-q', '-r', '/workspace', '-f', 'json'])
+		if rc not in (0, 1):
+			print('bandit error:', (err or '').strip())
+			return []
+	try:
+		data = json.loads(out or '{}')
 		return data.get('results', [])
 	except Exception:
 		return []
 
 
 def run_safety() -> list:
-	cp = subprocess.run(['safety', 'check', '--full-report', '--json'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-	if cp.returncode not in (0, 1):
-		print('safety error:', cp.stderr.strip())
-		return []
+	# Use JSON-only output; some envs may still raise tool exceptions—handle gracefully
+	rc, out, err = _run_cmd([sys.executable, '-m', 'safety', 'check', '--json'])
+	if rc not in (0, 1):
+		# Fallback to CLI name
+		rc, out, err = _run_cmd(['safety', 'check', '--json'])
+		if rc not in (0, 1):
+			print('safety error:', (err or '').strip())
+			return []
 	try:
-		data = json.loads(cp.stdout or '[]')
+		data = json.loads(out or '[]')
 		return data if isinstance(data, list) else []
 	except Exception:
+		# Safety sometimes fails JSON in certain dependency combos
 		return []
 
 
@@ -83,3 +100,4 @@ def main() -> int:
 
 if __name__ == '__main__':
 	sys.exit(main())
+

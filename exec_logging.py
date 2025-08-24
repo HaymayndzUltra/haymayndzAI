@@ -7,6 +7,7 @@ import time
 import stat
 import re
 from subprocess import run, CompletedProcess
+import shlex
 from typing import Tuple, Dict, Any
 from tz_utils import now_ph, PH_TZ
 
@@ -47,7 +48,9 @@ def run_logged(cmd: str) -> Tuple[int, Dict[str, Any]]:
 	outp, errp, metap = base + ".out", base + ".err", base + ".json"
 
 	start = time.time()
-	cp: CompletedProcess = run(cmd, shell=True, text=True, capture_output=True)
+	# Avoid shell=True; split into args safely
+	args = shlex.split(cmd)
+	cp: CompletedProcess = run(args, shell=False, text=True, capture_output=True)
 	end = time.time()
 
 	# Redact and write outputs
@@ -62,6 +65,7 @@ def run_logged(cmd: str) -> Tuple[int, Dict[str, Any]]:
 
 	meta = {
 		"cmd": cmd,
+		"argv": args,
 		"exit_code": cp.returncode,
 		"started_at": time.strftime("%Y-%m-%dT%H:%M:%S%z", time.localtime(start)),
 		"ended_at": time.strftime("%Y-%m-%dT%H:%M:%S%z", time.localtime(end)),

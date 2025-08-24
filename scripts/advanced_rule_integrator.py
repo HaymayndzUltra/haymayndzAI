@@ -159,7 +159,8 @@ class RuleDoc:
 
 
 def _hash_id(path: str) -> str:
-    return hashlib.sha1(path.encode()).hexdigest()[:8]
+    # Non-security identifier; prefer SHA-256 for modern hashing
+    return hashlib.sha256(path.encode()).hexdigest()[:8]
 
 
 def load_harvested_docs(paths: List[str]) -> List[RuleDoc]:

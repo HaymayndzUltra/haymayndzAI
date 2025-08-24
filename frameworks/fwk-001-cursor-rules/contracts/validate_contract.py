@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, os, subprocess, sys
+import json, os, subprocess, sys, shlex
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 CONTRACT = os.path.join(os.path.dirname(__file__), "framework_contract_framework1.json")
@@ -16,7 +16,8 @@ def main() -> int:
     for name in ["hydrationTests", "routingConflicts", "indexVerify"]:
         cmd = cmds[name]
         print("RUN:", cmd)
-        res = subprocess.run(cmd, shell=True)
+        argv = cmd if isinstance(cmd, list) else shlex.split(cmd)
+        res = subprocess.run(argv, shell=False)
         if res.returncode != 0:
             print("FAIL:", name)
             return res.returncode

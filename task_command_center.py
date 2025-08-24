@@ -35,8 +35,9 @@ class TaskCommandCenter:
         self.running = True
     
     def clear_screen(self):
-        """Clear the terminal screen"""
-        os.system('clear' if os.name == 'posix' else 'cls')
+        """Clear the terminal screen without invoking a shell"""
+        # ANSI escape to clear and home cursor
+        print("\x1b[2J\x1b[H", end="")
     
     def show_header(self):
         """Show the command center header"""
