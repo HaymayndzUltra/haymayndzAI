@@ -29,3 +29,11 @@ Routing highlights
 - /audit → auditor_ai
 - /peer_review, /synthesize_plan → principal_engineer_ai
 - /run_pipeline → execution_orchestrator
+
+---
+
+Canonical repo paths and references
+- Canonical roles matrix doc (this file): `frameworks/fwk-001-cursor-rules/DOCS/ROLES_MATRIX.md`
+- Harvested system-prompt copy: `frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc`
+- Framework rule: `frameworks/fwk-001-cursor-rules/.cursor/rules/principal_engineer_ai.mdc` (validation mode)
+- Routing changes directory: `frameworks/fwk-001-cursor-rules/DOCS/changes/`
