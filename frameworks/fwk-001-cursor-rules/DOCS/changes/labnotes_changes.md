@@ -53,7 +53,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md)
+- Path: frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md (abs: /workspace/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md)
 - File: Labnotes.entry.template.md (ext: .md)
 
 #### Summary
@@ -102,7 +102,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -151,7 +151,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -1180,7 +1180,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -1426,7 +1426,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -1476,7 +1476,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -1525,7 +1525,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -1574,7 +1574,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -1672,7 +1672,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
 - File: memory_enhancement_auditor.mdc (ext: .mdc)
 
 #### Summary
@@ -1868,7 +1868,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -1917,7 +1917,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
 - File: planner_moderator_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -1966,7 +1966,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
 - File: framework_memory_bridge.mdc (ext: .mdc)
 
 #### Summary
@@ -2015,7 +2015,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2064,7 +2064,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
 - File: execution_orchestrator.mdc (ext: .mdc)
 
 #### Summary
@@ -2162,7 +2162,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -2211,7 +2211,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2260,7 +2260,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -2309,7 +2309,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
 - File: planner_moderator_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2358,7 +2358,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
 - File: framework_memory_bridge.mdc (ext: .mdc)
 
 #### Summary
@@ -2407,7 +2407,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2456,7 +2456,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
 - File: execution_orchestrator.mdc (ext: .mdc)
 
 #### Summary
@@ -2505,7 +2505,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -2554,7 +2554,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2603,7 +2603,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -2652,7 +2652,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -2702,7 +2702,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -2752,7 +2752,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
 - File: planner_moderator_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2801,7 +2801,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2850,7 +2850,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
 - File: execution_orchestrator.mdc (ext: .mdc)
 
 #### Summary
@@ -2899,7 +2899,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
 - File: framework_memory_bridge.mdc (ext: .mdc)
 
 #### Summary
@@ -2948,7 +2948,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
 - File: memory_enhancement_auditor.mdc (ext: .mdc)
 
 #### Summary
@@ -2997,7 +2997,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -3046,7 +3046,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -3344,7 +3344,7 @@
 ```markdown
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md)
 - File: OVERVIEW.md (ext: .md)
 
 #### Summary

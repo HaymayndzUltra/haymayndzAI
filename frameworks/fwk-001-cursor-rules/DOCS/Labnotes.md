@@ -205,7 +205,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md)
+- Path: frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md (abs: /workspace/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md)
 - File: Labnotes.entry.template.md (ext: .md)
 
 #### Summary
@@ -254,7 +254,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -303,7 +303,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -1317,7 +1317,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -1560,7 +1560,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -1610,7 +1610,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -1659,7 +1659,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -1708,7 +1708,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -1806,7 +1806,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
 - File: memory_enhancement_auditor.mdc (ext: .mdc)
 
 #### Summary
@@ -2002,7 +2002,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -2051,7 +2051,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
 - File: planner_moderator_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2100,7 +2100,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
 - File: framework_memory_bridge.mdc (ext: .mdc)
 
 #### Summary
@@ -2149,7 +2149,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2198,7 +2198,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
 - File: execution_orchestrator.mdc (ext: .mdc)
 
 #### Summary
@@ -2296,7 +2296,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -2345,7 +2345,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2394,7 +2394,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -2443,7 +2443,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
 - File: planner_moderator_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2492,7 +2492,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
 - File: framework_memory_bridge.mdc (ext: .mdc)
 
 #### Summary
@@ -2541,7 +2541,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2590,7 +2590,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
 - File: execution_orchestrator.mdc (ext: .mdc)
 
 #### Summary
@@ -2639,7 +2639,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -2688,7 +2688,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2736,7 +2736,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -2784,7 +2784,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -2833,7 +2833,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -2882,7 +2882,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
 - File: planner_moderator_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2930,7 +2930,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2978,7 +2978,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
 - File: execution_orchestrator.mdc (ext: .mdc)
 
 #### Summary
@@ -3026,7 +3026,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
 - File: framework_memory_bridge.mdc (ext: .mdc)
 
 #### Summary
@@ -3074,7 +3074,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
 - File: memory_enhancement_auditor.mdc (ext: .mdc)
 
 #### Summary
@@ -3122,7 +3122,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -3170,7 +3170,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -3463,7 +3463,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md)
 - File: OVERVIEW.md (ext: .md)
 
 #### Summary
@@ -3610,7 +3610,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md)
 - File: labnotes_changes.md (ext: .md)
 
 #### Summary
@@ -3659,7 +3659,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md)
 - File: git_changes.md (ext: .md)
 
 #### Summary
@@ -3708,7 +3708,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md)
 - File: fs_changes.md (ext: .md)
 
 #### Summary
@@ -3757,7 +3757,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -3806,7 +3806,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md)
 - File: discrepancies.md (ext: .md)
 
 #### Summary
@@ -3904,7 +3904,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -3953,7 +3953,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -4002,7 +4002,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -4051,7 +4051,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -4100,7 +4100,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -4148,7 +4148,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -4197,7 +4197,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -4246,7 +4246,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -4294,7 +4294,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md)
 - File: discrepancies.md (ext: .md)
 
 #### Summary
@@ -4343,7 +4343,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md)
 - File: fs_changes.md (ext: .md)
 
 #### Summary
@@ -4392,7 +4392,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md)
 - File: git_changes.md (ext: .md)
 
 #### Summary
@@ -4441,7 +4441,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md)
 - File: labnotes_changes.md (ext: .md)
 
 #### Summary
@@ -4490,7 +4490,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -4936,7 +4936,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md)
+- Path: frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md (abs: /workspace/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md)
 - File: Labnotes.entry.template.md (ext: .md)
 
 #### Summary
@@ -4985,7 +4985,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -5034,7 +5034,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -6048,7 +6048,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -6291,7 +6291,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -6341,7 +6341,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -6390,7 +6390,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -6439,7 +6439,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -6537,7 +6537,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
 - File: memory_enhancement_auditor.mdc (ext: .mdc)
 
 #### Summary
@@ -6733,7 +6733,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -6782,7 +6782,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
 - File: planner_moderator_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -6831,7 +6831,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
 - File: framework_memory_bridge.mdc (ext: .mdc)
 
 #### Summary
@@ -6880,7 +6880,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -6929,7 +6929,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
 - File: execution_orchestrator.mdc (ext: .mdc)
 
 #### Summary
@@ -7027,7 +7027,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -7076,7 +7076,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -7125,7 +7125,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -7174,7 +7174,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
 - File: planner_moderator_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -7223,7 +7223,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
 - File: framework_memory_bridge.mdc (ext: .mdc)
 
 #### Summary
@@ -7272,7 +7272,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -7321,7 +7321,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
 - File: execution_orchestrator.mdc (ext: .mdc)
 
 #### Summary
@@ -7370,7 +7370,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -7419,7 +7419,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -7467,7 +7467,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -7515,7 +7515,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -7564,7 +7564,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -7613,7 +7613,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
 - File: planner_moderator_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -7661,7 +7661,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -7709,7 +7709,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
 - File: execution_orchestrator.mdc (ext: .mdc)
 
 #### Summary
@@ -7757,7 +7757,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
 - File: framework_memory_bridge.mdc (ext: .mdc)
 
 #### Summary
@@ -7805,7 +7805,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
 - File: memory_enhancement_auditor.mdc (ext: .mdc)
 
 #### Summary
@@ -7853,7 +7853,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -7901,7 +7901,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -8194,7 +8194,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md)
 - File: OVERVIEW.md (ext: .md)
 
 #### Summary
@@ -8341,7 +8341,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md)
 - File: labnotes_changes.md (ext: .md)
 
 #### Summary
@@ -8390,7 +8390,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md)
 - File: git_changes.md (ext: .md)
 
 #### Summary
@@ -8439,7 +8439,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md)
 - File: fs_changes.md (ext: .md)
 
 #### Summary
@@ -8488,7 +8488,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -8537,7 +8537,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md)
 - File: discrepancies.md (ext: .md)
 
 #### Summary
@@ -8635,7 +8635,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -8684,7 +8684,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -8733,7 +8733,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -8782,7 +8782,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -8831,7 +8831,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -8879,7 +8879,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -8928,7 +8928,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -8977,7 +8977,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -9025,7 +9025,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md)
 - File: discrepancies.md (ext: .md)
 
 #### Summary
@@ -9074,7 +9074,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md)
 - File: fs_changes.md (ext: .md)
 
 #### Summary
@@ -9123,7 +9123,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md)
 - File: git_changes.md (ext: .md)
 
 #### Summary
@@ -9172,7 +9172,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md)
 - File: labnotes_changes.md (ext: .md)
 
 #### Summary
@@ -9221,7 +9221,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -9380,7 +9380,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -9526,7 +9526,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -9576,7 +9576,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -9625,7 +9625,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -9674,7 +9674,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -9723,7 +9723,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
 - File: Validation_Report.md (ext: .md)
 
 #### Summary
@@ -9772,7 +9772,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
 - File: Final_Implementation_Plan.md (ext: .md)
 
 #### Summary
@@ -9821,7 +9821,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
 - File: Final_Implementation_Plan.md (ext: .md)
 
 #### Summary
@@ -9870,7 +9870,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -9919,7 +9919,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -9968,7 +9968,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -10017,7 +10017,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -10066,7 +10066,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -10115,7 +10115,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -10164,7 +10164,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
 - File: Validation_Report.md (ext: .md)
 
 #### Summary
@@ -10213,7 +10213,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
 - File: Validation_Report.md (ext: .md)
 
 #### Summary
@@ -10262,7 +10262,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
 - File: Validation_Report.md (ext: .md)
 
 #### Summary
@@ -10311,7 +10311,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
 - File: Final_Implementation_Plan.md (ext: .md)
 
 #### Summary
@@ -10360,7 +10360,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
 - File: Final_Implementation_Plan.md (ext: .md)
 
 #### Summary
@@ -10409,7 +10409,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
 - File: Final_Implementation_Plan.md (ext: .md)
 
 #### Summary
@@ -10458,7 +10458,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/technical_plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/technical_plan.md)
 - File: technical_plan.md (ext: .md)
 
 #### Summary
@@ -10507,7 +10507,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml)
+- Path: frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml)
 - File: task_breakdown.yaml (ext: .yaml)
 
 #### Summary
@@ -10556,7 +10556,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid)
+- Path: frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid)
 - File: architecture_diagram.mermaid (ext: .mermaid)
 
 #### Summary
@@ -10605,7 +10605,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml)
+- Path: frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml)
 - File: task_breakdown.yaml (ext: .yaml)
 
 #### Summary
@@ -10654,7 +10654,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/technical_plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/technical_plan.md)
 - File: technical_plan.md (ext: .md)
 
 #### Summary
@@ -10703,7 +10703,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid)
+- Path: frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid)
 - File: architecture_diagram.mermaid (ext: .mermaid)
 
 #### Summary
@@ -10752,7 +10752,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -10801,7 +10801,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -10850,7 +10850,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc)
 - File: artifact_schema.mdc (ext: .mdc)
 
 #### Summary
@@ -10899,7 +10899,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
 - File: artifact.schema.json (ext: .json)
 
 #### Summary
@@ -10948,7 +10948,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json)
 - File: Action_Plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -10997,7 +10997,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json)
 - File: Summary_Report.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -11046,7 +11046,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json)
 - File: Validation_Report.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -11095,7 +11095,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json)
 - File: Final_Implementation_Plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -11193,7 +11193,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json)
 - File: Action_Plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -11242,7 +11242,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json)
 - File: Summary_Report.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -11340,7 +11340,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
 - File: artifact.schema.json (ext: .json)
 
 #### Summary
@@ -11389,7 +11389,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json)
 - File: Validation_Report.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -11438,7 +11438,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json)
 - File: Final_Implementation_Plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -11487,7 +11487,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc)
 - File: artifact_schema.mdc (ext: .mdc)
 
 #### Summary
@@ -11536,7 +11536,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc)
+- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc)
 - File: artifact_routing.mdc (ext: .mdc)
 
 #### Summary
@@ -11585,7 +11585,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc)
 - File: artifact_sync_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -11634,7 +11634,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc)
 - File: hydration_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -11683,7 +11683,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml)
 - File: hydration_tests.yaml (ext: .yaml)
 
 #### Summary
@@ -11732,7 +11732,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
 - File: framework_contract_framework1.mdc (ext: .mdc)
 
 #### Summary
@@ -11781,7 +11781,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
 - File: promotion_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -11830,7 +11830,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
 - File: index_writer.py (ext: .py)
 
 #### Summary
@@ -11879,7 +11879,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml)
 - File: hydration_tests.yaml (ext: .yaml)
 
 #### Summary
@@ -11928,7 +11928,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
 - File: promotion_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -11977,7 +11977,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
 - File: index_writer.py (ext: .py)
 
 #### Summary
@@ -12026,7 +12026,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc)
 - File: hydration_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -12075,7 +12075,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc)
 - File: artifact_sync_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -12124,7 +12124,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc)
+- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc)
 - File: artifact_routing.mdc (ext: .mdc)
 
 #### Summary
@@ -12173,7 +12173,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
 - File: framework_contract_framework1.mdc (ext: .mdc)
 
 #### Summary
@@ -12222,7 +12222,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
 - File: artifacts_index.json.lock (ext: .lock)
 
 #### Summary
@@ -12271,7 +12271,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -12320,7 +12320,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
 - File: artifacts_index.json.lock (ext: .lock)
 
 #### Summary
@@ -12369,7 +12369,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -12418,7 +12418,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/deploy/deployment_manifest.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/deploy/deployment_manifest.yaml)
+- Path: frameworks/fwk-001-cursor-rules/deploy/deployment_manifest.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/deploy/deployment_manifest.yaml)
 - File: deployment_manifest.yaml (ext: .yaml)
 
 #### Summary
@@ -12467,7 +12467,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/deploy/release_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/deploy/release_report.md)
+- Path: frameworks/fwk-001-cursor-rules/deploy/release_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/deploy/release_report.md)
 - File: release_report.md (ext: .md)
 
 #### Summary
@@ -12516,7 +12516,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/deploy/deployment_manifest.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/deploy/deployment_manifest.yaml)
+- Path: frameworks/fwk-001-cursor-rules/deploy/deployment_manifest.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/deploy/deployment_manifest.yaml)
 - File: deployment_manifest.yaml (ext: .yaml)
 
 #### Summary
@@ -12565,7 +12565,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/deploy/release_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/deploy/release_report.md)
+- Path: frameworks/fwk-001-cursor-rules/deploy/release_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/deploy/release_report.md)
 - File: release_report.md (ext: .md)
 
 #### Summary
@@ -12614,7 +12614,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/dashboards.json)
+- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.json (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/dashboards.json)
 - File: dashboards.json (ext: .json)
 
 #### Summary
@@ -12663,7 +12663,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/dashboards.json)
+- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.json (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/dashboards.json)
 - File: dashboards.json (ext: .json)
 
 #### Summary
@@ -12712,7 +12712,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/dashboards.json)
+- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.json (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/dashboards.json)
 - File: dashboards.json (ext: .json)
 
 #### Summary
@@ -12761,7 +12761,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/deploy/deployment_manifest.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/deploy/deployment_manifest.yaml)
+- Path: frameworks/fwk-001-cursor-rules/deploy/deployment_manifest.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/deploy/deployment_manifest.yaml)
 - File: deployment_manifest.yaml (ext: .yaml)
 
 #### Summary
@@ -12810,7 +12810,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/deploy/release_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/deploy/release_report.md)
+- Path: frameworks/fwk-001-cursor-rules/deploy/release_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/deploy/release_report.md)
 - File: release_report.md (ext: .md)
 
 #### Summary
@@ -12859,7 +12859,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/artifact_routing.json)
+- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.json (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/artifact_routing.json)
 - File: artifact_routing.json (ext: .json)
 
 #### Summary
@@ -12908,7 +12908,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py)
+- Path: frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py)
 - File: check_routing_conflicts.py (ext: .py)
 
 #### Summary
@@ -12957,7 +12957,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py)
+- Path: frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py)
 - File: resolve_artifact_path.py (ext: .py)
 
 #### Summary
@@ -13006,7 +13006,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -13055,7 +13055,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py)
+- Path: frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py)
 - File: resolve_artifact_path.py (ext: .py)
 
 #### Summary
@@ -13104,7 +13104,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/artifact_routing.json)
+- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.json (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/artifact_routing.json)
 - File: artifact_routing.json (ext: .json)
 
 #### Summary
@@ -13153,7 +13153,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py)
+- Path: frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py)
 - File: check_routing_conflicts.py (ext: .py)
 
 #### Summary
@@ -13202,7 +13202,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -13251,7 +13251,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
 - File: index_writer.py (ext: .py)
 
 #### Summary
@@ -13300,7 +13300,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_cli.py)
 - File: index_cli.py (ext: .py)
 
 #### Summary
@@ -13349,7 +13349,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_cli.py)
 - File: index_cli.py (ext: .py)
 
 #### Summary
@@ -13398,7 +13398,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
 - File: artifacts_index.json.lock (ext: .lock)
 
 #### Summary
@@ -13447,7 +13447,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -13496,7 +13496,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
 - File: artifacts_index.json.lock (ext: .lock)
 
 #### Summary
@@ -13545,7 +13545,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -13594,7 +13594,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
 - File: index_writer.py (ext: .py)
 
 #### Summary
@@ -13643,7 +13643,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_cli.py)
 - File: index_cli.py (ext: .py)
 
 #### Summary
@@ -13692,7 +13692,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
 - File: hydration_selector.py (ext: .py)
 
 #### Summary
@@ -13741,7 +13741,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py)
+- Path: frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py)
 - File: run_hydration_tests.py (ext: .py)
 
 #### Summary
@@ -13790,7 +13790,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
 - File: hydration_selector.py (ext: .py)
 
 #### Summary
@@ -13839,7 +13839,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
 - File: hydration_selector.py (ext: .py)
 
 #### Summary
@@ -13888,7 +13888,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
 - File: hydration_selector.py (ext: .py)
 
 #### Summary
@@ -13937,7 +13937,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py)
+- Path: frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py)
 - File: run_hydration_tests.py (ext: .py)
 
 #### Summary
@@ -13986,7 +13986,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
 - File: framework_contract_framework1.mdc (ext: .mdc)
 
 #### Summary
@@ -14035,7 +14035,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
 - File: framework_contract_framework1.json (ext: .json)
 
 #### Summary
@@ -14084,7 +14084,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/validate_contract.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/validate_contract.py)
+- Path: frameworks/fwk-001-cursor-rules/contracts/validate_contract.py (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/validate_contract.py)
 - File: validate_contract.py (ext: .py)
 
 #### Summary
@@ -14133,7 +14133,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -14182,7 +14182,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/validate_contract.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/validate_contract.py)
+- Path: frameworks/fwk-001-cursor-rules/contracts/validate_contract.py (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/validate_contract.py)
 - File: validate_contract.py (ext: .py)
 
 #### Summary
@@ -14231,7 +14231,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
 - File: framework_contract_framework1.json (ext: .json)
 
 #### Summary
@@ -14280,7 +14280,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
 - File: framework_contract_framework1.mdc (ext: .mdc)
 
 #### Summary
@@ -14329,7 +14329,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
 - File: snapshot_format.md (ext: .md)
 
 #### Summary
@@ -14378,7 +14378,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
 - File: snapshot_format.md (ext: .md)
 
 #### Summary
@@ -14427,7 +14427,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
 - File: rollback_playbook.md (ext: .md)
 
 #### Summary
@@ -14476,7 +14476,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
 - File: snapshot_cli.py (ext: .py)
 
 #### Summary
@@ -14525,7 +14525,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json)
 - File: 14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json (ext: .json)
 
 #### Summary
@@ -14574,7 +14574,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -14623,7 +14623,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
 - File: snapshot_format.md (ext: .md)
 
 #### Summary
@@ -14672,7 +14672,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
 - File: rollback_playbook.md (ext: .md)
 
 #### Summary
@@ -14721,7 +14721,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
 - File: snapshot_cli.py (ext: .py)
 
 #### Summary
@@ -14770,7 +14770,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -14962,7 +14962,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -15011,7 +15011,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -15060,7 +15060,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
 - File: framework_contract_framework1.json (ext: .json)
 
 #### Summary
@@ -15109,7 +15109,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
 - File: framework_contract_framework1.mdc (ext: .mdc)
 
 #### Summary
@@ -15157,7 +15157,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/validate_contract.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/validate_contract.py)
+- Path: frameworks/fwk-001-cursor-rules/contracts/validate_contract.py (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/validate_contract.py)
 - File: validate_contract.py (ext: .py)
 
 #### Summary
@@ -15206,7 +15206,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -15254,7 +15254,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json)
 - File: Action_Plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -15303,7 +15303,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
 - File: Final_Implementation_Plan.md (ext: .md)
 
 #### Summary
@@ -15352,7 +15352,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json)
 - File: Final_Implementation_Plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -15401,7 +15401,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -15449,7 +15449,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json)
 - File: Summary_Report.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -15498,7 +15498,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
 - File: Validation_Report.md (ext: .md)
 
 #### Summary
@@ -15546,7 +15546,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json)
 - File: Validation_Report.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -15595,7 +15595,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid)
+- Path: frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid)
 - File: architecture_diagram.mermaid (ext: .mermaid)
 
 #### Summary
@@ -15643,7 +15643,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml)
+- Path: frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml)
 - File: task_breakdown.yaml (ext: .yaml)
 
 #### Summary
@@ -15692,7 +15692,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/technical_plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/technical_plan.md)
 - File: technical_plan.md (ext: .md)
 
 #### Summary
@@ -15741,7 +15741,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc)
 - File: hydration_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -15789,7 +15789,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
 - File: hydration_selector.py (ext: .py)
 
 #### Summary
@@ -15838,7 +15838,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml)
 - File: hydration_tests.yaml (ext: .yaml)
 
 #### Summary
@@ -15887,7 +15887,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py)
+- Path: frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py)
 - File: run_hydration_tests.py (ext: .py)
 
 #### Summary
@@ -15936,7 +15936,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
 - File: promotion_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -15984,7 +15984,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
 - File: rollback_playbook.md (ext: .md)
 
 #### Summary
@@ -16033,7 +16033,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
 - File: snapshot_cli.py (ext: .py)
 
 #### Summary
@@ -16082,7 +16082,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
 - File: snapshot_format.md (ext: .md)
 
 #### Summary
@@ -16131,7 +16131,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json)
 - File: 14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json (ext: .json)
 
 #### Summary
@@ -16179,7 +16179,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/artifact_routing.json)
+- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.json (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/artifact_routing.json)
 - File: artifact_routing.json (ext: .json)
 
 #### Summary
@@ -16228,7 +16228,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc)
+- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc)
 - File: artifact_routing.mdc (ext: .mdc)
 
 #### Summary
@@ -16276,7 +16276,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py)
+- Path: frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py)
 - File: check_routing_conflicts.py (ext: .py)
 
 #### Summary
@@ -16325,7 +16325,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py)
+- Path: frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py)
 - File: resolve_artifact_path.py (ext: .py)
 
 #### Summary
@@ -16374,7 +16374,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
 - File: artifact.schema.json (ext: .json)
 
 #### Summary
@@ -16423,7 +16423,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc)
 - File: artifact_schema.mdc (ext: .mdc)
 
 #### Summary
@@ -16471,7 +16471,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc)
 - File: artifact_sync_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -16519,7 +16519,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -16567,7 +16567,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
 - File: artifacts_index.json.lock (ext: .lock)
 
 #### Summary
@@ -16615,7 +16615,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_cli.py)
 - File: index_cli.py (ext: .py)
 
 #### Summary
@@ -16664,7 +16664,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
 - File: index_writer.py (ext: .py)
 
 #### Summary
@@ -16713,7 +16713,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -16811,7 +16811,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md)
 - File: Labnotes.local-backup.md (ext: .md)
 
 #### Summary
@@ -16860,7 +16860,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json.bak (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json.bak)
+- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json.bak (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json.bak)
 - File: technical_plan.md.sidecar.json.bak (ext: .bak)
 
 #### Summary
@@ -16909,7 +16909,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/migration_plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/migration_plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/migration_plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/migration_plan.md.sidecar.json)
 - File: migration_plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -16958,7 +16958,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json)
 - File: technical_plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -17007,7 +17007,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/migration_plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/migration_plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/migration_plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/migration_plan.md)
 - File: migration_plan.md (ext: .md)
 
 #### Summary
@@ -17056,7 +17056,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/backfill_script.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/backfill_script.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/backfill_script.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/backfill_script.py)
 - File: backfill_script.py (ext: .py)
 
 #### Summary
@@ -17105,7 +17105,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -17153,7 +17153,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md)
 - File: Labnotes.local-backup.md (ext: .md)
 
 #### Summary
@@ -17202,7 +17202,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -17252,7 +17252,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -17350,7 +17350,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/gitignore (abs: /home/haymayndz/HaymayndzAI/frameworks/gitignore)
+- Path: frameworks/gitignore (abs: /workspace/frameworks/gitignore)
 - File: gitignore (ext: )
 
 #### Summary
@@ -17399,7 +17399,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/gitignore (abs: /home/haymayndz/HaymayndzAI/frameworks/gitignore)
+- Path: frameworks/gitignore (abs: /workspace/frameworks/gitignore)
 - File: gitignore (ext: )
 
 #### Summary
@@ -17448,7 +17448,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/gitignored (abs: /home/haymayndz/HaymayndzAI/frameworks/gitignored)
+- Path: frameworks/gitignored (abs: /workspace/frameworks/gitignored)
 - File: gitignored (ext: )
 
 #### Summary
@@ -17497,7 +17497,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/gitignore (abs: /home/haymayndz/HaymayndzAI/frameworks/gitignore)
+- Path: frameworks/gitignore (abs: /workspace/frameworks/gitignore)
 - File: gitignore (ext: )
 
 #### Summary
@@ -17546,7 +17546,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/.gitignore (abs: /home/haymayndz/HaymayndzAI/frameworks/.gitignore)
+- Path: frameworks/.gitignore (abs: /workspace/frameworks/.gitignore)
 - File: .gitignore (ext: )
 
 #### Summary
@@ -17595,7 +17595,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/gitignored (abs: /home/haymayndz/HaymayndzAI/frameworks/gitignored)
+- Path: frameworks/gitignored (abs: /workspace/frameworks/gitignored)
 - File: gitignored (ext: )
 
 #### Summary
@@ -17644,7 +17644,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/.gitignore (abs: /home/haymayndz/HaymayndzAI/frameworks/.gitignore)
+- Path: frameworks/.gitignore (abs: /workspace/frameworks/.gitignore)
 - File: .gitignore (ext: )
 
 #### Summary
@@ -17693,7 +17693,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/.gitignore (abs: /home/haymayndz/HaymayndzAI/frameworks/.gitignore)
+- Path: frameworks/.gitignore (abs: /workspace/frameworks/.gitignore)
 - File: .gitignore (ext: )
 
 #### Summary
@@ -17741,7 +17741,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/.gitignore (abs: /home/haymayndz/HaymayndzAI/frameworks/.gitignore)
+- Path: frameworks/.gitignore (abs: /workspace/frameworks/.gitignore)
 - File: .gitignore (ext: .gitignore)
 
 #### Summary
@@ -17789,7 +17789,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -17887,7 +17887,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md)
 - File: Labnotes.local-backup.md (ext: .md)
 
 #### Summary
@@ -17936,7 +17936,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/.gitignore (abs: /home/haymayndz/HaymayndzAI/frameworks/.gitignore)
+- Path: frameworks/.gitignore (abs: /workspace/frameworks/.gitignore)
 - File: .gitignore (ext: )
 
 #### Summary
@@ -18034,7 +18034,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/test_plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/test_plan.md)
 - File: test_plan.md (ext: .md)
 
 #### Summary
@@ -18083,7 +18083,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/test_plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/test_plan.md)
 - File: test_plan.md (ext: .md)
 
 #### Summary
@@ -18230,7 +18230,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/requirements-test.txt (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/requirements-test.txt)
+- Path: frameworks/fwk-001-cursor-rules/requirements-test.txt (abs: /workspace/frameworks/fwk-001-cursor-rules/requirements-test.txt)
 - File: requirements-test.txt (ext: .txt)
 
 #### Summary
@@ -18279,7 +18279,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/pytest.ini)
+- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /workspace/frameworks/fwk-001-cursor-rules/pytest.ini)
 - File: pytest.ini (ext: .ini)
 
 #### Summary
@@ -18328,7 +18328,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/pytest.ini)
+- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /workspace/frameworks/fwk-001-cursor-rules/pytest.ini)
 - File: pytest.ini (ext: .ini)
 
 #### Summary
@@ -18377,7 +18377,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/conftest.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/conftest.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/conftest.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/conftest.py)
 - File: conftest.py (ext: .py)
 
 #### Summary
@@ -18426,7 +18426,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/conftest.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/conftest.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/conftest.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/conftest.py)
 - File: conftest.py (ext: .py)
 
 #### Summary
@@ -18475,7 +18475,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
 - File: test_schema_validation.py (ext: .py)
 
 #### Summary
@@ -18524,7 +18524,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
 - File: test_schema_validation.py (ext: .py)
 
 #### Summary
@@ -18573,7 +18573,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/README.md)
+- Path: frameworks/fwk-001-cursor-rules/tests/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -18622,7 +18622,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/README.md)
+- Path: frameworks/fwk-001-cursor-rules/tests/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -18671,7 +18671,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
 - File: test_schema_validation.py (ext: .py)
 
 #### Summary
@@ -18720,7 +18720,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/README.md)
+- Path: frameworks/fwk-001-cursor-rules/tests/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -18769,7 +18769,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/access_policies.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/access_policies.md)
+- Path: frameworks/fwk-001-cursor-rules/security/access_policies.md (abs: /workspace/frameworks/fwk-001-cursor-rules/security/access_policies.md)
 - File: access_policies.md (ext: .md)
 
 #### Summary
@@ -18818,7 +18818,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/acl.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/acl.json)
+- Path: frameworks/fwk-001-cursor-rules/security/acl.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/acl.json)
 - File: acl.json (ext: .json)
 
 #### Summary
@@ -18867,7 +18867,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/acl.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/acl.json)
+- Path: frameworks/fwk-001-cursor-rules/security/acl.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/acl.json)
 - File: acl.json (ext: .json)
 
 #### Summary
@@ -18916,7 +18916,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
+- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
 - File: validate_security_config.py (ext: .py)
 
 #### Summary
@@ -18965,7 +18965,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
+- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
 - File: validate_security_config.py (ext: .py)
 
 #### Summary
@@ -19014,7 +19014,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/README.md)
+- Path: frameworks/fwk-001-cursor-rules/security/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/security/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -19063,7 +19063,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/README.md)
+- Path: frameworks/fwk-001-cursor-rules/security/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/security/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -19112,7 +19112,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
+- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
 - File: validate_security_config.py (ext: .py)
 
 #### Summary
@@ -19161,7 +19161,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/access_policies.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/access_policies.md)
+- Path: frameworks/fwk-001-cursor-rules/security/access_policies.md (abs: /workspace/frameworks/fwk-001-cursor-rules/security/access_policies.md)
 - File: access_policies.md (ext: .md)
 
 #### Summary
@@ -19210,7 +19210,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/acl.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/acl.json)
+- Path: frameworks/fwk-001-cursor-rules/security/acl.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/acl.json)
 - File: acl.json (ext: .json)
 
 #### Summary
@@ -19259,7 +19259,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/README.md)
+- Path: frameworks/fwk-001-cursor-rules/security/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/security/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -19308,7 +19308,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
 - File: rollback_playbook.md (ext: .md)
 
 #### Summary
@@ -19357,7 +19357,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
 - File: snapshot_format.md (ext: .md)
 
 #### Summary
@@ -19406,7 +19406,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
 - File: promotion_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -19455,7 +19455,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
 - File: promotion_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -19504,7 +19504,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
 - File: snapshot_cli.py (ext: .py)
 
 #### Summary
@@ -19553,7 +19553,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
 - File: aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (ext: .json)
 
 #### Summary
@@ -19602,7 +19602,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
 - File: aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (ext: .json)
 
 #### Summary
@@ -19651,7 +19651,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py)
 - File: rollback_rehearsal.py (ext: .py)
 
 #### Summary
@@ -19700,7 +19700,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py)
 - File: rollback_rehearsal.py (ext: .py)
 
 #### Summary
@@ -19749,7 +19749,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/README.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -19798,7 +19798,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/README.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -19847,7 +19847,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051623.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051623.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051623.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051623.json)
 - File: index_backup_20250824_051623.json (ext: .json)
 
 #### Summary
@@ -19896,7 +19896,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py)
 - File: rollback_rehearsal.py (ext: .py)
 
 #### Summary
@@ -19945,7 +19945,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/rehearsal_report_20250824_051639.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rehearsal/rehearsal_report_20250824_051639.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/rehearsal_report_20250824_051639.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rehearsal/rehearsal_report_20250824_051639.md)
 - File: rehearsal_report_20250824_051639.md (ext: .md)
 
 #### Summary
@@ -19994,7 +19994,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_051639 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_051639)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_051639 (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_051639)
 - File: artifacts_index.json.backup.20250824_051639 (ext: .20250824_051639)
 
 #### Summary
@@ -20043,7 +20043,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051639.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051639.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051639.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051639.json)
 - File: index_backup_20250824_051639.json (ext: .json)
 
 #### Summary
@@ -20092,7 +20092,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
 - File: aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (ext: .json)
 
 #### Summary
@@ -20141,7 +20141,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -20190,7 +20190,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
 - File: aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (ext: .json)
 
 #### Summary
@@ -20239,7 +20239,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md)
 - File: T-06_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -20288,7 +20288,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
 - File: snapshot_format.md (ext: .md)
 
 #### Summary
@@ -20337,7 +20337,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/README.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -20386,7 +20386,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
 - File: snapshot_cli.py (ext: .py)
 
 #### Summary
@@ -20435,7 +20435,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
 - File: promotion_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -20484,7 +20484,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py)
 - File: rollback_rehearsal.py (ext: .py)
 
 #### Summary
@@ -20533,7 +20533,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md)
 - File: T-06_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -20582,7 +20582,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/lease_design.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/lease_design.md)
+- Path: frameworks/fwk-001-cursor-rules/sync/lease_design.md (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/lease_design.md)
 - File: lease_design.md (ext: .md)
 
 #### Summary
@@ -20631,7 +20631,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/lease_design.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/lease_design.md)
+- Path: frameworks/fwk-001-cursor-rules/sync/lease_design.md (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/lease_design.md)
 - File: lease_design.md (ext: .md)
 
 #### Summary
@@ -20680,7 +20680,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml)
+- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml)
 - File: concurrency_tests.yaml (ext: .yaml)
 
 #### Summary
@@ -20729,7 +20729,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml)
+- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml)
 - File: concurrency_tests.yaml (ext: .yaml)
 
 #### Summary
@@ -20778,7 +20778,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
 - File: enhanced_index_writer.py (ext: .py)
 
 #### Summary
@@ -20827,7 +20827,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
 - File: enhanced_index_writer.py (ext: .py)
 
 #### Summary
@@ -20876,7 +20876,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
 - File: artifacts_index.json.leases (ext: .leases)
 
 #### Summary
@@ -20925,7 +20925,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
 - File: enhanced_index_writer.py (ext: .py)
 
 #### Summary
@@ -20974,7 +20974,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
 - File: enhanced_index_writer.py (ext: .py)
 
 #### Summary
@@ -21023,7 +21023,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -21072,7 +21072,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
 - File: artifacts_index.json.leases (ext: .leases)
 
 #### Summary
@@ -21121,7 +21121,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/test_concurrency.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/test_concurrency.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/test_concurrency.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/test_concurrency.py)
 - File: test_concurrency.py (ext: .py)
 
 #### Summary
@@ -21170,7 +21170,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/test_concurrency.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/test_concurrency.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/test_concurrency.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/test_concurrency.py)
 - File: test_concurrency.py (ext: .py)
 
 #### Summary
@@ -21219,7 +21219,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -21268,7 +21268,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
 - File: artifacts_index.json.leases (ext: .leases)
 
 #### Summary
@@ -21317,7 +21317,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_053348.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_053348.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_053348.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_053348.json)
 - File: concurrency_test_report_20250824_053348.json (ext: .json)
 
 #### Summary
@@ -21366,7 +21366,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -21415,7 +21415,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
 - File: artifacts_index.json.leases (ext: .leases)
 
 #### Summary
@@ -21464,7 +21464,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
 - File: artifacts_index.json.leases (ext: .leases)
 
 #### Summary
@@ -21513,7 +21513,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md)
 - File: T-10_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -21562,7 +21562,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md)
 - File: T-10_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -21611,7 +21611,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
 - File: enhanced_index_writer.py (ext: .py)
 
 #### Summary
@@ -21660,7 +21660,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md)
 - File: T-10_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -21709,7 +21709,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/test_concurrency.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/test_concurrency.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/test_concurrency.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/test_concurrency.py)
 - File: test_concurrency.py (ext: .py)
 
 #### Summary
@@ -21758,7 +21758,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.mmd (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/dashboards.mmd)
+- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.mmd (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/dashboards.mmd)
 - File: dashboards.mmd (ext: .mmd)
 
 #### Summary
@@ -21807,7 +21807,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.mmd (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/dashboards.mmd)
+- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.mmd (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/dashboards.mmd)
 - File: dashboards.mmd (ext: .mmd)
 
 #### Summary
@@ -21856,7 +21856,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/alerts.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/alerts.yaml)
+- Path: frameworks/fwk-001-cursor-rules/observability/alerts.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/alerts.yaml)
 - File: alerts.yaml (ext: .yaml)
 
 #### Summary
@@ -21905,7 +21905,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/alerts.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/alerts.yaml)
+- Path: frameworks/fwk-001-cursor-rules/observability/alerts.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/alerts.yaml)
 - File: alerts.yaml (ext: .yaml)
 
 #### Summary
@@ -21954,7 +21954,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/audit_logs.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/audit_logs.md)
+- Path: frameworks/fwk-001-cursor-rules/observability/audit_logs.md (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/audit_logs.md)
 - File: audit_logs.md (ext: .md)
 
 #### Summary
@@ -22003,7 +22003,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/audit_logs.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/audit_logs.md)
+- Path: frameworks/fwk-001-cursor-rules/observability/audit_logs.md (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/audit_logs.md)
 - File: audit_logs.md (ext: .md)
 
 #### Summary
@@ -22052,7 +22052,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md)
 - File: T-11_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -22101,7 +22101,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md)
 - File: T-11_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -22150,7 +22150,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/alerts.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/alerts.yaml)
+- Path: frameworks/fwk-001-cursor-rules/observability/alerts.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/alerts.yaml)
 - File: alerts.yaml (ext: .yaml)
 
 #### Summary
@@ -22199,7 +22199,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.mmd (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/dashboards.mmd)
+- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.mmd (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/dashboards.mmd)
 - File: dashboards.mmd (ext: .mmd)
 
 #### Summary
@@ -22248,7 +22248,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/audit_logs.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/audit_logs.md)
+- Path: frameworks/fwk-001-cursor-rules/observability/audit_logs.md (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/audit_logs.md)
 - File: audit_logs.md (ext: .md)
 
 #### Summary
@@ -22297,7 +22297,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml)
+- Path: frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml)
 - File: owners_matrix.yaml (ext: .yaml)
 
 #### Summary
@@ -22346,7 +22346,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml)
+- Path: frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml)
 - File: owners_matrix.yaml (ext: .yaml)
 
 #### Summary
@@ -22395,7 +22395,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md)
+- Path: frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md)
 - File: acceptance_checklist.md (ext: .md)
 
 #### Summary
@@ -22444,7 +22444,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md)
+- Path: frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md)
 - File: acceptance_checklist.md (ext: .md)
 
 #### Summary
@@ -22493,7 +22493,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md)
 - File: T-12_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -22542,7 +22542,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md)
 - File: T-12_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -22591,7 +22591,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md)
 - File: T-12_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -22640,7 +22640,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md)
+- Path: frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md)
 - File: acceptance_checklist.md (ext: .md)
 
 #### Summary
@@ -22689,7 +22689,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml)
+- Path: frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml)
 - File: owners_matrix.yaml (ext: .yaml)
 
 #### Summary
@@ -22930,7 +22930,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -22979,7 +22979,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/test_plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/test_plan.md)
 - File: test_plan.md (ext: .md)
 
 #### Summary
@@ -23028,7 +23028,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md)
 - File: T-12_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -23077,7 +23077,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md)
+- Path: frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md)
 - File: acceptance_checklist.md (ext: .md)
 
 #### Summary
@@ -23126,7 +23126,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml)
+- Path: frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml)
 - File: owners_matrix.yaml (ext: .yaml)
 
 #### Summary
@@ -23175,7 +23175,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md)
 - File: T-11_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -23224,7 +23224,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/alerts.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/alerts.yaml)
+- Path: frameworks/fwk-001-cursor-rules/observability/alerts.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/alerts.yaml)
 - File: alerts.yaml (ext: .yaml)
 
 #### Summary
@@ -23273,7 +23273,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/audit_logs.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/audit_logs.md)
+- Path: frameworks/fwk-001-cursor-rules/observability/audit_logs.md (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/audit_logs.md)
 - File: audit_logs.md (ext: .md)
 
 #### Summary
@@ -23322,7 +23322,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.mmd (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/dashboards.mmd)
+- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.mmd (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/dashboards.mmd)
 - File: dashboards.mmd (ext: .mmd)
 
 #### Summary
@@ -23370,7 +23370,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/README.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -23419,7 +23419,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md)
 - File: T-06_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -23468,7 +23468,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
 - File: aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (ext: .json)
 
 #### Summary
@@ -23517,7 +23517,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
 - File: promotion_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -23565,7 +23565,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051623.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051623.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051623.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051623.json)
 - File: index_backup_20250824_051623.json (ext: .json)
 
 #### Summary
@@ -23613,7 +23613,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051639.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051639.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051639.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051639.json)
 - File: index_backup_20250824_051639.json (ext: .json)
 
 #### Summary
@@ -23661,7 +23661,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/rehearsal_report_20250824_051639.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rehearsal/rehearsal_report_20250824_051639.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/rehearsal_report_20250824_051639.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rehearsal/rehearsal_report_20250824_051639.md)
 - File: rehearsal_report_20250824_051639.md (ext: .md)
 
 #### Summary
@@ -23710,7 +23710,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
 - File: rollback_playbook.md (ext: .md)
 
 #### Summary
@@ -23759,7 +23759,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py)
 - File: rollback_rehearsal.py (ext: .py)
 
 #### Summary
@@ -23808,7 +23808,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
 - File: snapshot_cli.py (ext: .py)
 
 #### Summary
@@ -23857,7 +23857,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
 - File: snapshot_format.md (ext: .md)
 
 #### Summary
@@ -23906,7 +23906,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
 - File: aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (ext: .json)
 
 #### Summary
@@ -23954,7 +23954,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/pytest.ini)
+- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /workspace/frameworks/fwk-001-cursor-rules/pytest.ini)
 - File: pytest.ini (ext: .ini)
 
 #### Summary
@@ -24002,7 +24002,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/requirements-test.txt (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/requirements-test.txt)
+- Path: frameworks/fwk-001-cursor-rules/requirements-test.txt (abs: /workspace/frameworks/fwk-001-cursor-rules/requirements-test.txt)
 - File: requirements-test.txt (ext: .txt)
 
 #### Summary
@@ -24050,7 +24050,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/README.md)
+- Path: frameworks/fwk-001-cursor-rules/security/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/security/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -24099,7 +24099,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/access_policies.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/access_policies.md)
+- Path: frameworks/fwk-001-cursor-rules/security/access_policies.md (abs: /workspace/frameworks/fwk-001-cursor-rules/security/access_policies.md)
 - File: access_policies.md (ext: .md)
 
 #### Summary
@@ -24148,7 +24148,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/acl.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/acl.json)
+- Path: frameworks/fwk-001-cursor-rules/security/acl.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/acl.json)
 - File: acl.json (ext: .json)
 
 #### Summary
@@ -24197,7 +24197,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
+- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
 - File: validate_security_config.py (ext: .py)
 
 #### Summary
@@ -24246,7 +24246,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md)
 - File: T-10_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -24295,7 +24295,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -24343,7 +24343,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_051639 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_051639)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_051639 (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_051639)
 - File: artifacts_index.json.backup.20250824_051639 (ext: .20250824_051639)
 
 #### Summary
@@ -24391,7 +24391,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_053348.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_053348.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_053348.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_053348.json)
 - File: concurrency_test_report_20250824_053348.json (ext: .json)
 
 #### Summary
@@ -24440,7 +24440,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml)
+- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml)
 - File: concurrency_tests.yaml (ext: .yaml)
 
 #### Summary
@@ -24489,7 +24489,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
 - File: enhanced_index_writer.py (ext: .py)
 
 #### Summary
@@ -24538,7 +24538,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/lease_design.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/lease_design.md)
+- Path: frameworks/fwk-001-cursor-rules/sync/lease_design.md (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/lease_design.md)
 - File: lease_design.md (ext: .md)
 
 #### Summary
@@ -24587,7 +24587,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/test_concurrency.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/test_concurrency.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/test_concurrency.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/test_concurrency.py)
 - File: test_concurrency.py (ext: .py)
 
 #### Summary
@@ -24636,7 +24636,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/README.md)
+- Path: frameworks/fwk-001-cursor-rules/tests/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -24685,7 +24685,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/conftest.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/conftest.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/conftest.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/conftest.py)
 - File: conftest.py (ext: .py)
 
 #### Summary
@@ -24734,7 +24734,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
 - File: test_schema_validation.py (ext: .py)
 
 #### Summary
@@ -24784,7 +24784,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -24833,7 +24833,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
 - File: framework_contract_framework1.json (ext: .json)
 
 #### Summary
@@ -24882,7 +24882,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -24931,7 +24931,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -24980,7 +24980,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -25029,7 +25029,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
 - File: artifacts_index.json.leases (ext: .leases)
 
 #### Summary
@@ -25078,7 +25078,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -25127,7 +25127,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_062809.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_062809.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_062809.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_062809.json)
 - File: concurrency_test_report_20250824_062809.json (ext: .json)
 
 #### Summary
@@ -25176,7 +25176,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -25225,7 +25225,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
 - File: artifacts_index.json.leases (ext: .leases)
 
 #### Summary
@@ -25274,7 +25274,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.leases)
 - File: artifacts_index.json.leases (ext: .leases)
 
 #### Summary
@@ -25323,7 +25323,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
 - File: 8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (ext: .json)
 
 #### Summary
@@ -25372,7 +25372,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
 - File: 8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (ext: .json)
 
 #### Summary
@@ -25421,7 +25421,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_062840.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_062840.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_062840.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_062840.json)
 - File: index_backup_20250824_062840.json (ext: .json)
 
 #### Summary
@@ -25470,7 +25470,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_062840 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_062840)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_062840 (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_062840)
 - File: artifacts_index.json.backup.20250824_062840 (ext: .20250824_062840)
 
 #### Summary
@@ -25519,7 +25519,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -25568,7 +25568,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
 - File: 8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (ext: .json)
 
 #### Summary
@@ -25617,7 +25617,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
 - File: 8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (ext: .json)
 
 #### Summary
@@ -25666,7 +25666,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/pytest.ini)
+- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /workspace/frameworks/fwk-001-cursor-rules/pytest.ini)
 - File: pytest.ini (ext: .ini)
 
 #### Summary
@@ -25715,7 +25715,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/pytest.ini)
+- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /workspace/frameworks/fwk-001-cursor-rules/pytest.ini)
 - File: pytest.ini (ext: .ini)
 
 #### Summary
@@ -25764,7 +25764,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/pytest.ini)
+- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /workspace/frameworks/fwk-001-cursor-rules/pytest.ini)
 - File: pytest.ini (ext: .ini)
 
 #### Summary
@@ -25813,7 +25813,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/.gitignore (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/.gitignore)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/.gitignore (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/.gitignore)
 - File: .gitignore (ext: )
 
 #### Summary
@@ -25862,7 +25862,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/README.md)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -25911,7 +25911,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/CACHEDIR.TAG (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/CACHEDIR.TAG)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/CACHEDIR.TAG (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/CACHEDIR.TAG)
 - File: CACHEDIR.TAG (ext: .TAG)
 
 #### Summary
@@ -25960,7 +25960,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed)
 - File: lastfailed (ext: )
 
 #### Summary
@@ -26009,7 +26009,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids)
 - File: nodeids (ext: )
 
 #### Summary
@@ -26058,7 +26058,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise)
 - File: stepwise (ext: )
 
 #### Summary
@@ -26107,7 +26107,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
 - File: artifact.schema.json (ext: .json)
 
 #### Summary
@@ -26156,7 +26156,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed)
 - File: lastfailed (ext: )
 
 #### Summary
@@ -26205,7 +26205,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise)
 - File: stepwise (ext: )
 
 #### Summary
@@ -26254,7 +26254,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids)
 - File: nodeids (ext: )
 
 #### Summary
@@ -26303,7 +26303,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
 - File: test_schema_validation.py (ext: .py)
 
 #### Summary
@@ -26352,7 +26352,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
 - File: test_schema_validation.py (ext: .py)
 
 #### Summary
@@ -26401,7 +26401,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed)
 - File: lastfailed (ext: )
 
 #### Summary
@@ -26450,7 +26450,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise)
 - File: stepwise (ext: )
 
 #### Summary
@@ -26499,7 +26499,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids)
 - File: nodeids (ext: )
 
 #### Summary
@@ -26548,7 +26548,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
 - File: test_schema_validation.py (ext: .py)
 
 #### Summary
@@ -26597,7 +26597,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise)
 - File: stepwise (ext: )
 
 #### Summary
@@ -26646,7 +26646,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids)
 - File: nodeids (ext: )
 
 #### Summary
@@ -26695,7 +26695,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
 - File: test_schema_validation.py (ext: .py)
 
 #### Summary
@@ -26744,7 +26744,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/lastfailed)
 - File: lastfailed (ext: )
 
 #### Summary
@@ -26793,7 +26793,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise)
 - File: stepwise (ext: )
 
 #### Summary
@@ -26842,7 +26842,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids)
 - File: nodeids (ext: )
 
 #### Summary
@@ -26891,7 +26891,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
 - File: framework_contract_framework1.json (ext: .json)
 
 #### Summary
@@ -26940,7 +26940,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/pytest.ini)
+- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /workspace/frameworks/fwk-001-cursor-rules/pytest.ini)
 - File: pytest.ini (ext: .ini)
 
 #### Summary
@@ -26989,7 +26989,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
 - File: test_schema_validation.py (ext: .py)
 
 #### Summary
@@ -27038,7 +27038,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -27087,7 +27087,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
 - File: artifact.schema.json (ext: .json)
 
 #### Summary
@@ -27136,7 +27136,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/security/validation_results.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/security/validation_results.json)
+- Path: frameworks/fwk-001-cursor-rules/security/security/validation_results.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/security/validation_results.json)
 - File: validation_results.json (ext: .json)
 
 #### Summary
@@ -27185,7 +27185,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/security/validation_results.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/security/validation_results.json)
+- Path: frameworks/fwk-001-cursor-rules/security/security/validation_results.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/security/validation_results.json)
 - File: validation_results.json (ext: .json)
 
 #### Summary
@@ -27234,7 +27234,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
+- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
 - File: validate_security_config.py (ext: .py)
 
 #### Summary
@@ -27283,7 +27283,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
+- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
 - File: validate_security_config.py (ext: .py)
 
 #### Summary
@@ -27332,7 +27332,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validation_results.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validation_results.json)
+- Path: frameworks/fwk-001-cursor-rules/security/validation_results.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validation_results.json)
 - File: validation_results.json (ext: .json)
 
 #### Summary
@@ -27381,7 +27381,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
+- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
 - File: validate_security_config.py (ext: .py)
 
 #### Summary
@@ -27430,7 +27430,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validation_results.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validation_results.json)
+- Path: frameworks/fwk-001-cursor-rules/security/validation_results.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validation_results.json)
 - File: validation_results.json (ext: .json)
 
 #### Summary
@@ -27479,7 +27479,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/stepwise)
 - File: stepwise (ext: )
 
 #### Summary
@@ -27528,7 +27528,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids)
+- Path: frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids (abs: /workspace/frameworks/fwk-001-cursor-rules/.pytest_cache/v/cache/nodeids)
 - File: nodeids (ext: )
 
 #### Summary
@@ -27577,7 +27577,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -27626,7 +27626,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -27675,7 +27675,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -27724,7 +27724,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -27773,7 +27773,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -27822,7 +27822,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -27871,7 +27871,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
 - File: artifacts_index.json.lock (ext: .lock)
 
 #### Summary
@@ -27920,7 +27920,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/validation_results.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/validation_results.json)
+- Path: frameworks/fwk-001-cursor-rules/validation_results.json (abs: /workspace/frameworks/fwk-001-cursor-rules/validation_results.json)
 - File: validation_results.json (ext: .json)
 
 #### Summary
@@ -27969,7 +27969,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -28018,7 +28018,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -28067,7 +28067,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json)
 - File: test_plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -28116,7 +28116,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json.bak (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json.bak)
+- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json.bak (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json.bak)
 - File: test_plan.md.sidecar.json.bak (ext: .bak)
 
 #### Summary
@@ -28165,7 +28165,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -28214,7 +28214,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
 - File: artifacts_index.json.lock (ext: .lock)
 
 #### Summary
@@ -28263,7 +28263,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -28312,7 +28312,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
 - File: artifacts_index.json.lock (ext: .lock)
 
 #### Summary
@@ -28361,7 +28361,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -28409,7 +28409,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -28458,7 +28458,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
 - File: framework_contract_framework1.json (ext: .json)
 
 #### Summary
@@ -28507,7 +28507,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json)
 - File: test_plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -28556,7 +28556,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json.bak (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json.bak)
+- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json.bak (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json.bak)
 - File: test_plan.md.sidecar.json.bak (ext: .bak)
 
 #### Summary
@@ -28604,7 +28604,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
 - File: 8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (ext: .json)
 
 #### Summary
@@ -28653,7 +28653,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_062840.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_062840.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_062840.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_062840.json)
 - File: index_backup_20250824_062840.json (ext: .json)
 
 #### Summary
@@ -28701,7 +28701,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
 - File: 8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (ext: .json)
 
 #### Summary
@@ -28749,7 +28749,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/pytest.ini)
+- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /workspace/frameworks/fwk-001-cursor-rules/pytest.ini)
 - File: pytest.ini (ext: .ini)
 
 #### Summary
@@ -28797,7 +28797,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
 - File: artifact.schema.json (ext: .json)
 
 #### Summary
@@ -28846,7 +28846,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/security/validation_results.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/security/validation_results.json)
+- Path: frameworks/fwk-001-cursor-rules/security/security/validation_results.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/security/validation_results.json)
 - File: validation_results.json (ext: .json)
 
 #### Summary
@@ -28895,7 +28895,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
+- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
 - File: validate_security_config.py (ext: .py)
 
 #### Summary
@@ -28943,7 +28943,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validation_results.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validation_results.json)
+- Path: frameworks/fwk-001-cursor-rules/security/validation_results.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validation_results.json)
 - File: validation_results.json (ext: .json)
 
 #### Summary
@@ -28992,7 +28992,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -29040,7 +29040,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_062840 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_062840)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_062840 (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_062840)
 - File: artifacts_index.json.backup.20250824_062840 (ext: .20250824_062840)
 
 #### Summary
@@ -29088,7 +29088,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_062809.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_062809.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_062809.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_062809.json)
 - File: concurrency_test_report_20250824_062809.json (ext: .json)
 
 #### Summary
@@ -29137,7 +29137,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
 - File: test_schema_validation.py (ext: .py)
 
 #### Summary
@@ -29185,7 +29185,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/validation_results.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/validation_results.json)
+- Path: frameworks/fwk-001-cursor-rules/validation_results.json (abs: /workspace/frameworks/fwk-001-cursor-rules/validation_results.json)
 - File: validation_results.json (ext: .json)
 
 #### Summary
@@ -29523,7 +29523,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/.gitignore (abs: /home/haymayndz/HaymayndzAI/frameworks/.gitignore)
+- Path: frameworks/.gitignore (abs: /workspace/frameworks/.gitignore)
 - File: .gitignore (ext: .gitignore)
 
 #### Summary
@@ -29571,7 +29571,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.local-backup.md)
 - File: Labnotes.local-backup.md (ext: .md)
 
 #### Summary
@@ -29620,7 +29620,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -29669,7 +29669,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -29718,7 +29718,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
 - File: framework_contract_framework1.json (ext: .json)
 
 #### Summary
@@ -29767,7 +29767,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
 - File: framework_contract_framework1.mdc (ext: .mdc)
 
 #### Summary
@@ -29815,7 +29815,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/validate_contract.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/validate_contract.py)
+- Path: frameworks/fwk-001-cursor-rules/contracts/validate_contract.py (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/validate_contract.py)
 - File: validate_contract.py (ext: .py)
 
 #### Summary
@@ -29864,7 +29864,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -29912,7 +29912,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json)
 - File: Action_Plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -29961,7 +29961,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
 - File: Final_Implementation_Plan.md (ext: .md)
 
 #### Summary
@@ -30010,7 +30010,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json)
 - File: Final_Implementation_Plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -30059,7 +30059,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -30107,7 +30107,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json)
 - File: Summary_Report.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -30156,7 +30156,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
 - File: Validation_Report.md (ext: .md)
 
 #### Summary
@@ -30204,7 +30204,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json)
 - File: Validation_Report.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -30253,7 +30253,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid)
+- Path: frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid)
 - File: architecture_diagram.mermaid (ext: .mermaid)
 
 #### Summary
@@ -30301,7 +30301,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/migration_plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/migration_plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/migration_plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/migration_plan.md)
 - File: migration_plan.md (ext: .md)
 
 #### Summary
@@ -30350,7 +30350,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/migration_plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/migration_plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/migration_plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/migration_plan.md.sidecar.json)
 - File: migration_plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -30399,7 +30399,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml)
+- Path: frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml)
 - File: task_breakdown.yaml (ext: .yaml)
 
 #### Summary
@@ -30448,7 +30448,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/technical_plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/technical_plan.md)
 - File: technical_plan.md (ext: .md)
 
 #### Summary
@@ -30497,7 +30497,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json)
 - File: technical_plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -30546,7 +30546,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json.bak (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json.bak)
+- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json.bak (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/technical_plan.md.sidecar.json.bak)
 - File: technical_plan.md.sidecar.json.bak (ext: .bak)
 
 #### Summary
@@ -30594,7 +30594,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/test_plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/test_plan.md)
 - File: test_plan.md (ext: .md)
 
 #### Summary
@@ -30643,7 +30643,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json)
 - File: test_plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -30692,7 +30692,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json.bak (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json.bak)
+- Path: frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json.bak (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/test_plan.md.sidecar.json.bak)
 - File: test_plan.md.sidecar.json.bak (ext: .bak)
 
 #### Summary
@@ -30740,7 +30740,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/T-12_IMPLEMENTATION_SUMMARY.md)
 - File: T-12_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -30789,7 +30789,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md)
+- Path: frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/acceptance_checklist.md)
 - File: acceptance_checklist.md (ext: .md)
 
 #### Summary
@@ -30838,7 +30838,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml)
+- Path: frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/governance/owners_matrix.yaml)
 - File: owners_matrix.yaml (ext: .yaml)
 
 #### Summary
@@ -30887,7 +30887,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc)
 - File: hydration_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -30935,7 +30935,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
 - File: hydration_selector.py (ext: .py)
 
 #### Summary
@@ -30984,7 +30984,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml)
 - File: hydration_tests.yaml (ext: .yaml)
 
 #### Summary
@@ -31033,7 +31033,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py)
+- Path: frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py)
 - File: run_hydration_tests.py (ext: .py)
 
 #### Summary
@@ -31082,7 +31082,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/T-11_IMPLEMENTATION_SUMMARY.md)
 - File: T-11_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -31131,7 +31131,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/alerts.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/alerts.yaml)
+- Path: frameworks/fwk-001-cursor-rules/observability/alerts.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/alerts.yaml)
 - File: alerts.yaml (ext: .yaml)
 
 #### Summary
@@ -31180,7 +31180,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/audit_logs.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/audit_logs.md)
+- Path: frameworks/fwk-001-cursor-rules/observability/audit_logs.md (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/audit_logs.md)
 - File: audit_logs.md (ext: .md)
 
 #### Summary
@@ -31229,7 +31229,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.mmd (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/observability/dashboards.mmd)
+- Path: frameworks/fwk-001-cursor-rules/observability/dashboards.mmd (abs: /workspace/frameworks/fwk-001-cursor-rules/observability/dashboards.mmd)
 - File: dashboards.mmd (ext: .mmd)
 
 #### Summary
@@ -31277,7 +31277,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/README.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -31326,7 +31326,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/T-06_IMPLEMENTATION_SUMMARY.md)
 - File: T-06_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -31375,7 +31375,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/metadata/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
 - File: 8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (ext: .json)
 
 #### Summary
@@ -31424,7 +31424,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/metadata/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
 - File: aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (ext: .json)
 
 #### Summary
@@ -31473,7 +31473,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
 - File: promotion_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -31521,7 +31521,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051623.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051623.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051623.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051623.json)
 - File: index_backup_20250824_051623.json (ext: .json)
 
 #### Summary
@@ -31569,7 +31569,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051639.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051639.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051639.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_051639.json)
 - File: index_backup_20250824_051639.json (ext: .json)
 
 #### Summary
@@ -31617,7 +31617,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_062840.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_062840.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_062840.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rehearsal/index_backup_20250824_062840.json)
 - File: index_backup_20250824_062840.json (ext: .json)
 
 #### Summary
@@ -31665,7 +31665,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/rehearsal_report_20250824_051639.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rehearsal/rehearsal_report_20250824_051639.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rehearsal/rehearsal_report_20250824_051639.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rehearsal/rehearsal_report_20250824_051639.md)
 - File: rehearsal_report_20250824_051639.md (ext: .md)
 
 #### Summary
@@ -31714,7 +31714,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
 - File: rollback_playbook.md (ext: .md)
 
 #### Summary
@@ -31763,7 +31763,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_rehearsal.py)
 - File: rollback_rehearsal.py (ext: .py)
 
 #### Summary
@@ -31812,7 +31812,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
 - File: snapshot_cli.py (ext: .py)
 
 #### Summary
@@ -31861,7 +31861,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
 - File: snapshot_format.md (ext: .md)
 
 #### Summary
@@ -31910,7 +31910,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json)
 - File: 14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json (ext: .json)
 
 #### Summary
@@ -31958,7 +31958,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshots/8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json)
 - File: 8ba04267c0898fb148fce2e677d5b0c0b4126eb798c6e58972b9c1496b8db639.json (ext: .json)
 
 #### Summary
@@ -32006,7 +32006,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshots/aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json)
 - File: aa3586542311e80f58bd9cd65ce661f724cadd0a852f5234f1d4de07150f7eab.json (ext: .json)
 
 #### Summary
@@ -32054,7 +32054,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/pytest.ini)
+- Path: frameworks/fwk-001-cursor-rules/pytest.ini (abs: /workspace/frameworks/fwk-001-cursor-rules/pytest.ini)
 - File: pytest.ini (ext: .ini)
 
 #### Summary
@@ -32102,7 +32102,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/requirements-test.txt (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/requirements-test.txt)
+- Path: frameworks/fwk-001-cursor-rules/requirements-test.txt (abs: /workspace/frameworks/fwk-001-cursor-rules/requirements-test.txt)
 - File: requirements-test.txt (ext: .txt)
 
 #### Summary
@@ -32150,7 +32150,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/artifact_routing.json)
+- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.json (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/artifact_routing.json)
 - File: artifact_routing.json (ext: .json)
 
 #### Summary
@@ -32199,7 +32199,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc)
+- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc)
 - File: artifact_routing.mdc (ext: .mdc)
 
 #### Summary
@@ -32247,7 +32247,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py)
+- Path: frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py)
 - File: check_routing_conflicts.py (ext: .py)
 
 #### Summary
@@ -32296,7 +32296,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py)
+- Path: frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py)
 - File: resolve_artifact_path.py (ext: .py)
 
 #### Summary
@@ -32345,7 +32345,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
 - File: artifact.schema.json (ext: .json)
 
 #### Summary
@@ -32394,7 +32394,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc)
 - File: artifact_schema.mdc (ext: .mdc)
 
 #### Summary
@@ -32442,7 +32442,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/README.md)
+- Path: frameworks/fwk-001-cursor-rules/security/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/security/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -32491,7 +32491,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/access_policies.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/access_policies.md)
+- Path: frameworks/fwk-001-cursor-rules/security/access_policies.md (abs: /workspace/frameworks/fwk-001-cursor-rules/security/access_policies.md)
 - File: access_policies.md (ext: .md)
 
 #### Summary
@@ -32540,7 +32540,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/acl.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/acl.json)
+- Path: frameworks/fwk-001-cursor-rules/security/acl.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/acl.json)
 - File: acl.json (ext: .json)
 
 #### Summary
@@ -32589,7 +32589,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/security/validation_results.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/security/validation_results.json)
+- Path: frameworks/fwk-001-cursor-rules/security/security/validation_results.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/security/validation_results.json)
 - File: validation_results.json (ext: .json)
 
 #### Summary
@@ -32638,7 +32638,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
+- Path: frameworks/fwk-001-cursor-rules/security/validate_security_config.py (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validate_security_config.py)
 - File: validate_security_config.py (ext: .py)
 
 #### Summary
@@ -32687,7 +32687,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/security/validation_results.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/validation_results.json)
+- Path: frameworks/fwk-001-cursor-rules/security/validation_results.json (abs: /workspace/frameworks/fwk-001-cursor-rules/security/validation_results.json)
 - File: validation_results.json (ext: .json)
 
 #### Summary
@@ -32736,7 +32736,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md)
+- Path: frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/T-10_IMPLEMENTATION_SUMMARY.md)
 - File: T-10_IMPLEMENTATION_SUMMARY.md (ext: .md)
 
 #### Summary
@@ -32785,7 +32785,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc)
 - File: artifact_sync_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -32833,7 +32833,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -32881,7 +32881,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_051639 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_051639)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_051639 (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_051639)
 - File: artifacts_index.json.backup.20250824_051639 (ext: .20250824_051639)
 
 #### Summary
@@ -32929,7 +32929,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_062840 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_062840)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_062840 (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.backup.20250824_062840)
 - File: artifacts_index.json.backup.20250824_062840 (ext: .20250824_062840)
 
 #### Summary
@@ -32977,7 +32977,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
 - File: artifacts_index.json.lock (ext: .lock)
 
 #### Summary
@@ -33025,7 +33025,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/backfill_script.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/backfill_script.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/backfill_script.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/backfill_script.py)
 - File: backfill_script.py (ext: .py)
 
 #### Summary
@@ -33074,7 +33074,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_053348.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_053348.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_053348.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_053348.json)
 - File: concurrency_test_report_20250824_053348.json (ext: .json)
 
 #### Summary
@@ -33123,7 +33123,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_062809.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_062809.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_062809.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/concurrency_test_report_20250824_062809.json)
 - File: concurrency_test_report_20250824_062809.json (ext: .json)
 
 #### Summary
@@ -33172,7 +33172,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml)
+- Path: frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/concurrency_tests.yaml)
 - File: concurrency_tests.yaml (ext: .yaml)
 
 #### Summary
@@ -33221,7 +33221,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/enhanced_index_writer.py)
 - File: enhanced_index_writer.py (ext: .py)
 
 #### Summary
@@ -33270,7 +33270,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_cli.py)
 - File: index_cli.py (ext: .py)
 
 #### Summary
@@ -33319,7 +33319,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
 - File: index_writer.py (ext: .py)
 
 #### Summary
@@ -33368,7 +33368,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/lease_design.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/lease_design.md)
+- Path: frameworks/fwk-001-cursor-rules/sync/lease_design.md (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/lease_design.md)
 - File: lease_design.md (ext: .md)
 
 #### Summary
@@ -33417,7 +33417,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/test_concurrency.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/test_concurrency.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/test_concurrency.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/test_concurrency.py)
 - File: test_concurrency.py (ext: .py)
 
 #### Summary
@@ -33466,7 +33466,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -33514,7 +33514,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/README.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/README.md)
+- Path: frameworks/fwk-001-cursor-rules/tests/README.md (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/README.md)
 - File: README.md (ext: .md)
 
 #### Summary
@@ -33563,7 +33563,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/conftest.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/conftest.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/conftest.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/conftest.py)
 - File: conftest.py (ext: .py)
 
 #### Summary
@@ -33612,7 +33612,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
+- Path: frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py (abs: /workspace/frameworks/fwk-001-cursor-rules/tests/unit/test_schema_validation.py)
 - File: test_schema_validation.py (ext: .py)
 
 #### Summary
@@ -33661,7 +33661,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/validation_results.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/validation_results.json)
+- Path: frameworks/fwk-001-cursor-rules/validation_results.json (abs: /workspace/frameworks/fwk-001-cursor-rules/validation_results.json)
 - File: validation_results.json (ext: .json)
 
 #### Summary
@@ -33808,7 +33808,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -33857,7 +33857,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/END_TO_END.mmd (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/END_TO_END.mmd)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/END_TO_END.mmd (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/END_TO_END.mmd)
 - File: END_TO_END.mmd (ext: .mmd)
 
 #### Summary
@@ -33906,7 +33906,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_effective.shadow.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_effective.shadow.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_effective.shadow.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_effective.shadow.json)
 - File: routing_effective.shadow.json (ext: .json)
 
 #### Summary
@@ -33955,7 +33955,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -34004,7 +34004,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -34053,7 +34053,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-24T012031+0000 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-24T012031+0000)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-24T012031+0000 (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-24T012031+0000)
 - File: routing_override.yaml.bak.2025-08-24T012031+0000 (ext: .2025-08-24T012031+0000)
 
 #### Summary
@@ -34102,7 +34102,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -34151,7 +34151,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_baseline.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_baseline.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_baseline.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_baseline.json)
 - File: routing_baseline.json (ext: .json)
 
 #### Summary
@@ -34200,7 +34200,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -34249,7 +34249,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T214746+0000 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T214746+0000)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T214746+0000 (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T214746+0000)
 - File: routing_override.yaml.bak.2025-08-23T214746+0000 (ext: .2025-08-23T214746+0000)
 
 #### Summary
@@ -34347,7 +34347,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T202246+0000 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T202246+0000)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T202246+0000 (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T202246+0000)
 - File: routing_override.yaml.bak.2025-08-23T202246+0000 (ext: .2025-08-23T202246+0000)
 
 #### Summary
@@ -34494,7 +34494,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T141410+0000 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T141410+0000)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T141410+0000 (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T141410+0000)
 - File: routing_override.yaml.bak.2025-08-23T141410+0000 (ext: .2025-08-23T141410+0000)
 
 #### Summary
@@ -34543,7 +34543,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -34592,7 +34592,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -34641,7 +34641,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -34690,7 +34690,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -34739,7 +34739,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -34788,7 +34788,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml)
 - File: routing_override.yaml (ext: .yaml)
 
 #### Summary
@@ -34837,7 +34837,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T184833+0000 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T184833+0000)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T184833+0000 (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T184833+0000)
 - File: routing_override.yaml.bak.2025-08-23T184833+0000 (ext: .2025-08-23T184833+0000)
 
 #### Summary
@@ -34886,7 +34886,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -34935,7 +34935,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -34984,7 +34984,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/gates_baseline.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/gates_baseline.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/gates_baseline.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/gates_baseline.json)
 - File: gates_baseline.json (ext: .json)
 
 #### Summary
@@ -35033,7 +35033,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -35082,7 +35082,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-24T040858+0000 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-24T040858+0000)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-24T040858+0000 (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-24T040858+0000)
 - File: routing_override.yaml.bak.2025-08-24T040858+0000 (ext: .2025-08-24T040858+0000)
 
 #### Summary
@@ -35131,7 +35131,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -35180,7 +35180,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -35229,7 +35229,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-24T022708+0000 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-24T022708+0000)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-24T022708+0000 (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-24T022708+0000)
 - File: routing_override.yaml.bak.2025-08-24T022708+0000 (ext: .2025-08-24T022708+0000)
 
 #### Summary
@@ -35278,7 +35278,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -35327,7 +35327,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T164540+0000 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T164540+0000)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T164540+0000 (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T164540+0000)
 - File: routing_override.yaml.bak.2025-08-23T164540+0000 (ext: .2025-08-23T164540+0000)
 
 #### Summary
@@ -35376,7 +35376,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -35425,7 +35425,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -35474,7 +35474,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -35523,7 +35523,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -35572,7 +35572,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T123211+0000 (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T123211+0000)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T123211+0000 (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.2025-08-23T123211+0000)
 - File: routing_override.yaml.bak.2025-08-23T123211+0000 (ext: .2025-08-23T123211+0000)
 
 #### Summary
@@ -35670,7 +35670,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -35719,7 +35719,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -35768,7 +35768,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -35817,7 +35817,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -35866,7 +35866,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -35915,7 +35915,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -35964,7 +35964,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -36013,7 +36013,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -36062,7 +36062,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -36111,7 +36111,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -36160,7 +36160,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -36209,7 +36209,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -36258,7 +36258,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -36307,7 +36307,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -36356,7 +36356,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -36405,7 +36405,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -36454,7 +36454,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -36503,7 +36503,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -36552,7 +36552,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -36601,7 +36601,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -36650,7 +36650,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -36699,7 +36699,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -36748,7 +36748,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -36797,7 +36797,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -36846,7 +36846,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -36895,7 +36895,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -36944,7 +36944,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -36993,7 +36993,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -37042,7 +37042,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -37091,7 +37091,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -37140,7 +37140,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -37189,7 +37189,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -37238,7 +37238,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -37287,7 +37287,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -37336,7 +37336,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -37385,7 +37385,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -37434,7 +37434,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -37483,7 +37483,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -37532,7 +37532,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -37581,7 +37581,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -37630,7 +37630,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -37679,7 +37679,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -37728,7 +37728,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -37777,7 +37777,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -37826,7 +37826,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -37875,7 +37875,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -37924,7 +37924,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -37973,7 +37973,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -38022,7 +38022,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -38071,7 +38071,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -38120,7 +38120,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -38169,7 +38169,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -38218,7 +38218,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -38267,7 +38267,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -38316,7 +38316,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -38365,7 +38365,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -38414,7 +38414,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -38463,7 +38463,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -38512,7 +38512,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -38561,7 +38561,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -38610,7 +38610,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -38659,7 +38659,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -38708,7 +38708,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -38757,7 +38757,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -38806,7 +38806,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -38855,7 +38855,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -38904,7 +38904,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -38953,7 +38953,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -39002,7 +39002,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -39051,7 +39051,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -39100,7 +39100,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -39149,7 +39149,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -39198,7 +39198,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -39247,7 +39247,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/alert_history.log (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/alert_history.log)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/alert_history.log (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/alert_history.log)
 - File: alert_history.log (ext: .log)
 
 #### Summary
@@ -39296,7 +39296,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -39345,7 +39345,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -39394,7 +39394,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -39539,7 +39539,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -39588,7 +39588,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -39637,7 +39637,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -39685,7 +39685,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/alert/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -39734,7 +39734,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -39782,7 +39782,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/analyze/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -39831,7 +39831,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -39879,7 +39879,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/benchmark/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -39928,7 +39928,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -39976,7 +39976,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/health/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -40025,7 +40025,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -40073,7 +40073,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/observe/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -40122,7 +40122,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -40170,7 +40170,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/review/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -40219,7 +40219,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -40267,7 +40267,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/route/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -40316,7 +40316,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -40364,7 +40364,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/status/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -40413,7 +40413,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/health_report.md)
 - File: health_report.md (ext: .md)
 
 #### Summary
@@ -40461,7 +40461,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/validate_docs/monitoring_dashboard.json)
 - File: monitoring_dashboard.json (ext: .json)
 
 #### Summary
@@ -40511,7 +40511,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-game-development--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-game-development--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-game-development--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-game-development--cursor-directory.mdc)
 - File: rules-for-game-development--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -40560,7 +40560,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc)
 - File: you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc (ext: .mdc)
 
 #### Summary
@@ -40609,7 +40609,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-quarkus--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-quarkus--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-quarkus--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-quarkus--cursor-directory.mdc)
 - File: rules-for-quarkus--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -40658,7 +40658,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc)
 - File: you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc (ext: .mdc)
 
 #### Summary
@@ -40707,7 +40707,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-flutter--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-flutter--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-flutter--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-flutter--cursor-directory.mdc)
 - File: rules-for-flutter--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -40756,7 +40756,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc)
 - File: you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc (ext: .mdc)
 
 #### Summary
@@ -40805,7 +40805,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-testing--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-testing--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-testing--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-testing--cursor-directory.mdc)
 - File: rules-for-testing--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -40854,7 +40854,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-three-fiber--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-three-fiber--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-three-fiber--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-three-fiber--cursor-directory.mdc)
 - File: rules-for-react-three-fiber--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -40903,7 +40903,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwind-css--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwind-css--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwind-css--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwind-css--cursor-directory.mdc)
 - File: rules-for-tailwind-css--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -40952,7 +40952,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc)
 - File: you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc (ext: .mdc)
 
 #### Summary
@@ -41001,7 +41001,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nodejs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nodejs--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nodejs--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nodejs--cursor-directory.mdc)
 - File: rules-for-nodejs--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -41050,7 +41050,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc)
 - File: you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc (ext: .mdc)
 
 #### Summary
@@ -41099,7 +41099,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-golang--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-golang--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-golang--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-golang--cursor-directory.mdc)
 - File: rules-for-golang--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -41148,7 +41148,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-supabase--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-supabase--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-supabase--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-supabase--cursor-directory.mdc)
 - File: rules-for-supabase--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -41197,7 +41197,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc)
 - File: rules-for-feature-first--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -41246,7 +41246,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc)
 - File: you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc (ext: .mdc)
 
 #### Summary
@@ -41295,7 +41295,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-diffusion--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-diffusion--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-diffusion--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-diffusion--cursor-directory.mdc)
 - File: rules-for-diffusion--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -41344,7 +41344,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-paraglidejs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-paraglidejs--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-paraglidejs--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-paraglidejs--cursor-directory.mdc)
 - File: rules-for-paraglidejs--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -41393,7 +41393,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc)
 - File: you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc (ext: .mdc)
 
 #### Summary
@@ -41442,7 +41442,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc)
 - File: you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc (ext: .mdc)
 
 #### Summary
@@ -41491,7 +41491,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc)
 - File: you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc (ext: .mdc)
 
 #### Summary
@@ -41540,7 +41540,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-java--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-java--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-java--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-java--cursor-directory.mdc)
 - File: rules-for-java--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -41589,7 +41589,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc)
 - File: package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc (ext: .mdc)
 
 #### Summary
@@ -41638,7 +41638,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc)
 - File: you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc (ext: .mdc)
 
 #### Summary
@@ -41687,7 +41687,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc)
 - File: you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc (ext: .mdc)
 
 #### Summary
@@ -41736,7 +41736,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc)
 - File: you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc (ext: .mdc)
 
 #### Summary
@@ -41785,7 +41785,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-pixijs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-pixijs--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-pixijs--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-pixijs--cursor-directory.mdc)
 - File: rules-for-pixijs--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -41834,7 +41834,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-php--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-php--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-php--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-php--cursor-directory.mdc)
 - File: rules-for-php--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -41883,7 +41883,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-gatsby--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-gatsby--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-gatsby--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-gatsby--cursor-directory.mdc)
 - File: rules-for-gatsby--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -41932,7 +41932,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc)
 - File: you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc (ext: .mdc)
 
 #### Summary
@@ -41981,7 +41981,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-firebase--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-firebase--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-firebase--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-firebase--cursor-directory.mdc)
 - File: rules-for-firebase--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -42030,7 +42030,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-smart-contracts--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-smart-contracts--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-smart-contracts--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-smart-contracts--cursor-directory.mdc)
 - File: rules-for-smart-contracts--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -42079,7 +42079,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-laravel--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-laravel--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-laravel--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-laravel--cursor-directory.mdc)
 - File: rules-for-laravel--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -42128,7 +42128,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-wordpress--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-wordpress--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-wordpress--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-wordpress--cursor-directory.mdc)
 - File: rules-for-wordpress--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -42177,7 +42177,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc)
 - File: you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc (ext: .mdc)
 
 #### Summary
@@ -42226,7 +42226,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-fastapi--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-fastapi--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-fastapi--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-fastapi--cursor-directory.mdc)
 - File: rules-for-fastapi--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -42275,7 +42275,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-javascript--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-javascript--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-javascript--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-javascript--cursor-directory.mdc)
 - File: rules-for-javascript--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -42324,7 +42324,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-woocommerce--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-woocommerce--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-woocommerce--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-woocommerce--cursor-directory.mdc)
 - File: rules-for-woocommerce--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -42373,7 +42373,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc)
 - File: you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc (ext: .mdc)
 
 #### Summary
@@ -42422,7 +42422,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-astro--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-astro--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-astro--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-astro--cursor-directory.mdc)
 - File: rules-for-astro--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -42471,7 +42471,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc)
 - File: you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc (ext: .mdc)
 
 #### Summary
@@ -42520,7 +42520,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-async--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-async--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-async--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-async--cursor-directory.mdc)
 - File: rules-for-async--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -42569,7 +42569,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc)
 - File: you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc (ext: .mdc)
 
 #### Summary
@@ -42618,7 +42618,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vite--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vite--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vite--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vite--cursor-directory.mdc)
 - File: rules-for-vite--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -42667,7 +42667,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc)
 - File: prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc (ext: .mdc)
 
 #### Summary
@@ -42716,7 +42716,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc)
 - File: you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc (ext: .mdc)
 
 #### Summary
@@ -42765,7 +42765,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc)
 - File: you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc (ext: .mdc)
 
 #### Summary
@@ -42814,7 +42814,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rust--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rust--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rust--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rust--cursor-directory.mdc)
 - File: rules-for-rust--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -42863,7 +42863,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc)
 - File: you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc (ext: .mdc)
 
 #### Summary
@@ -42912,7 +42912,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc)
 - File: you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc (ext: .mdc)
 
 #### Summary
@@ -42961,7 +42961,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-viem-v2--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-viem-v2--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-viem-v2--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-viem-v2--cursor-directory.mdc)
 - File: rules-for-viem-v2--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -43010,7 +43010,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc)
 - File: you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc (ext: .mdc)
 
 #### Summary
@@ -43059,7 +43059,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc)
 - File: you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc (ext: .mdc)
 
 #### Summary
@@ -43108,7 +43108,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-scripting--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-scripting--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-scripting--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-scripting--cursor-directory.mdc)
 - File: rules-for-scripting--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -43157,7 +43157,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-django--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-django--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-django--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-django--cursor-directory.mdc)
 - File: rules-for-django--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -43206,7 +43206,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc)
 - File: you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc (ext: .mdc)
 
 #### Summary
@@ -43255,7 +43255,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-native--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-native--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-native--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-native--cursor-directory.mdc)
 - File: rules-for-react-native--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -43304,7 +43304,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc)
 - File: overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc (ext: .mdc)
 
 #### Summary
@@ -43353,7 +43353,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-web-development--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-web-development--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-web-development--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-web-development--cursor-directory.mdc)
 - File: rules-for-web-development--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -43402,7 +43402,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc)
 - File: you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc (ext: .mdc)
 
 #### Summary
@@ -43451,7 +43451,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-api--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-api--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-api--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-api--cursor-directory.mdc)
 - File: rules-for-api--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -43500,7 +43500,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc)
 - File: test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc (ext: .mdc)
 
 #### Summary
@@ -43549,7 +43549,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vue--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vue--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vue--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vue--cursor-directory.mdc)
 - File: rules-for-vue--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -43598,7 +43598,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-standardjs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-standardjs--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-standardjs--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-standardjs--cursor-directory.mdc)
 - File: rules-for-standardjs--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -43647,7 +43647,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc)
 - File: you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc (ext: .mdc)
 
 #### Summary
@@ -43696,7 +43696,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-developer-content--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-developer-content--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-developer-content--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-developer-content--cursor-directory.mdc)
 - File: rules-for-developer-content--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -43745,7 +43745,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc)
 - File: you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc (ext: .mdc)
 
 #### Summary
@@ -43794,7 +43794,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-phoenix--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-phoenix--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-phoenix--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-phoenix--cursor-directory.mdc)
 - File: rules-for-phoenix--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -43843,7 +43843,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-shadcn-ui--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-shadcn-ui--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-shadcn-ui--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-shadcn-ui--cursor-directory.mdc)
 - File: rules-for-shadcn-ui--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -43892,7 +43892,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc)
 - File: you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc (ext: .mdc)
 
 #### Summary
@@ -43941,7 +43941,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc)
 - File: you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc (ext: .mdc)
 
 #### Summary
@@ -43990,7 +43990,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-htmx--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-htmx--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-htmx--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-htmx--cursor-directory.mdc)
 - File: rules-for-htmx--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -44039,7 +44039,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc)
 - File: you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc (ext: .mdc)
 
 #### Summary
@@ -44088,7 +44088,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/_index.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/_index.json)
 - File: _index.json (ext: .json)
 
 #### Summary
@@ -44137,7 +44137,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-terraform--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-terraform--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-terraform--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-terraform--cursor-directory.mdc)
 - File: rules-for-terraform--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -44186,7 +44186,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc)
 - File: you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc (ext: .mdc)
 
 #### Summary
@@ -44235,7 +44235,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rails--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rails--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rails--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rails--cursor-directory.mdc)
 - File: rules-for-rails--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -44284,7 +44284,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-lua--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-lua--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-lua--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-lua--cursor-directory.mdc)
 - File: rules-for-lua--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -44333,7 +44333,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc)
 - File: you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc (ext: .mdc)
 
 #### Summary
@@ -44382,7 +44382,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc)
 - File: you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc (ext: .mdc)
 
 #### Summary
@@ -44431,7 +44431,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc)
 - File: you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc (ext: .mdc)
 
 #### Summary
@@ -44480,7 +44480,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc)
 - File: drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc (ext: .mdc)
 
 #### Summary
@@ -44529,7 +44529,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc)
 - File: you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc (ext: .mdc)
 
 #### Summary
@@ -44578,7 +44578,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-solito--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-solito--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-solito--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-solito--cursor-directory.mdc)
 - File: rules-for-solito--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -44627,7 +44627,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc)
 - File: write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc (ext: .mdc)
 
 #### Summary
@@ -44676,7 +44676,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-anchor--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-anchor--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-anchor--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-anchor--cursor-directory.mdc)
 - File: rules-for-anchor--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -44725,7 +44725,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc)
 - File: you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc (ext: .mdc)
 
 #### Summary
@@ -44774,7 +44774,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nuxtjs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nuxtjs--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nuxtjs--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nuxtjs--cursor-directory.mdc)
 - File: rules-for-nuxtjs--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -44823,7 +44823,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-typescript--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-typescript--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-typescript--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-typescript--cursor-directory.mdc)
 - File: rules-for-typescript--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -44872,7 +44872,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-al--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-al--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-al--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-al--cursor-directory.mdc)
 - File: rules-for-al--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -44921,7 +44921,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwindcss--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwindcss--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwindcss--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwindcss--cursor-directory.mdc)
 - File: rules-for-tailwindcss--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -44970,7 +44970,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-forcecom--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-forcecom--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-forcecom--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-forcecom--cursor-directory.mdc)
 - File: rules-for-forcecom--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -45019,7 +45019,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc)
 - File: you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc (ext: .mdc)
 
 #### Summary
@@ -45068,7 +45068,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc)
 - File: you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc (ext: .mdc)
 
 #### Summary
@@ -45117,7 +45117,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc)
 - File: this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc (ext: .mdc)
 
 #### Summary
@@ -45166,7 +45166,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-expo--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-expo--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-expo--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-expo--cursor-directory.mdc)
 - File: rules-for-expo--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -45215,7 +45215,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-swift--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-swift--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-swift--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-swift--cursor-directory.mdc)
 - File: rules-for-swift--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -45264,7 +45264,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc)
 - File: you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc (ext: .mdc)
 
 #### Summary
@@ -45313,7 +45313,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tutorials--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tutorials--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tutorials--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tutorials--cursor-directory.mdc)
 - File: rules-for-tutorials--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -45362,7 +45362,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tooling--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tooling--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tooling--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tooling--cursor-directory.mdc)
 - File: rules-for-tooling--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -45411,7 +45411,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc)
 - File: you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc (ext: .mdc)
 
 #### Summary
@@ -45460,7 +45460,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc)
 - File: you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc (ext: .mdc)
 
 #### Summary
@@ -45509,7 +45509,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc)
 - File: you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc (ext: .mdc)
 
 #### Summary
@@ -45558,7 +45558,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc)
 - File: you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc (ext: .mdc)
 
 #### Summary
@@ -45607,7 +45607,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-serverless--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-serverless--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-serverless--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-serverless--cursor-directory.mdc)
 - File: rules-for-serverless--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -45656,7 +45656,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc)
 - File: you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc (ext: .mdc)
 
 #### Summary
@@ -45705,7 +45705,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/try.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/try.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/try.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/try.md)
 - File: try.md (ext: .md)
 
 #### Summary
@@ -45754,7 +45754,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tauri--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tauri--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tauri--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tauri--cursor-directory.mdc)
 - File: rules-for-tauri--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -45803,7 +45803,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-cybersecurity--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-cybersecurity--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-cybersecurity--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-cybersecurity--cursor-directory.mdc)
 - File: rules-for-cybersecurity--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -45852,7 +45852,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-blockchain--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-blockchain--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-blockchain--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-blockchain--cursor-directory.mdc)
 - File: rules-for-blockchain--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -45901,7 +45901,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc)
 - File: you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc (ext: .mdc)
 
 #### Summary
@@ -45950,7 +45950,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc)
 - File: you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc (ext: .mdc)
 
 #### Summary
@@ -45999,7 +45999,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-alpinejs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-alpinejs--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-alpinejs--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-alpinejs--cursor-directory.mdc)
 - File: rules-for-alpinejs--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46048,7 +46048,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-python--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-python--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-python--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-python--cursor-directory.mdc)
 - File: rules-for-python--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46097,7 +46097,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-jina-ai--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-jina-ai--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-jina-ai--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-jina-ai--cursor-directory.mdc)
 - File: rules-for-jina-ai--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46146,7 +46146,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-ui--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-ui--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-ui--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-ui--cursor-directory.mdc)
 - File: rules-for-ui--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46195,7 +46195,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-onchainkit--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-onchainkit--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-onchainkit--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-onchainkit--cursor-directory.mdc)
 - File: rules-for-onchainkit--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46244,7 +46244,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-business-central--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-business-central--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-business-central--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-business-central--cursor-directory.mdc)
 - File: rules-for-business-central--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46292,7 +46292,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -46341,7 +46341,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/_index.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/_index.json)
 - File: _index.json (ext: .json)
 
 #### Summary
@@ -46390,7 +46390,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc)
 - File: drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc (ext: .mdc)
 
 #### Summary
@@ -46438,7 +46438,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc)
 - File: overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc (ext: .mdc)
 
 #### Summary
@@ -46486,7 +46486,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc)
 - File: package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc (ext: .mdc)
 
 #### Summary
@@ -46534,7 +46534,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc)
 - File: prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc (ext: .mdc)
 
 #### Summary
@@ -46582,7 +46582,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-al--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-al--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-al--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-al--cursor-directory.mdc)
 - File: rules-for-al--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46630,7 +46630,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-alpinejs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-alpinejs--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-alpinejs--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-alpinejs--cursor-directory.mdc)
 - File: rules-for-alpinejs--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46678,7 +46678,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-anchor--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-anchor--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-anchor--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-anchor--cursor-directory.mdc)
 - File: rules-for-anchor--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46726,7 +46726,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-api--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-api--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-api--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-api--cursor-directory.mdc)
 - File: rules-for-api--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46774,7 +46774,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-astro--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-astro--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-astro--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-astro--cursor-directory.mdc)
 - File: rules-for-astro--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46822,7 +46822,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-async--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-async--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-async--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-async--cursor-directory.mdc)
 - File: rules-for-async--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46870,7 +46870,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-blockchain--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-blockchain--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-blockchain--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-blockchain--cursor-directory.mdc)
 - File: rules-for-blockchain--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46918,7 +46918,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-business-central--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-business-central--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-business-central--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-business-central--cursor-directory.mdc)
 - File: rules-for-business-central--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -46966,7 +46966,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-cybersecurity--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-cybersecurity--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-cybersecurity--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-cybersecurity--cursor-directory.mdc)
 - File: rules-for-cybersecurity--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47014,7 +47014,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-developer-content--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-developer-content--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-developer-content--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-developer-content--cursor-directory.mdc)
 - File: rules-for-developer-content--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47062,7 +47062,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-diffusion--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-diffusion--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-diffusion--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-diffusion--cursor-directory.mdc)
 - File: rules-for-diffusion--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47110,7 +47110,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-django--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-django--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-django--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-django--cursor-directory.mdc)
 - File: rules-for-django--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47158,7 +47158,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-expo--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-expo--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-expo--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-expo--cursor-directory.mdc)
 - File: rules-for-expo--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47206,7 +47206,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-fastapi--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-fastapi--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-fastapi--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-fastapi--cursor-directory.mdc)
 - File: rules-for-fastapi--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47254,7 +47254,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc)
 - File: rules-for-feature-first--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47302,7 +47302,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-firebase--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-firebase--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-firebase--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-firebase--cursor-directory.mdc)
 - File: rules-for-firebase--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47350,7 +47350,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-flutter--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-flutter--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-flutter--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-flutter--cursor-directory.mdc)
 - File: rules-for-flutter--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47398,7 +47398,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-forcecom--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-forcecom--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-forcecom--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-forcecom--cursor-directory.mdc)
 - File: rules-for-forcecom--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47446,7 +47446,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-game-development--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-game-development--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-game-development--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-game-development--cursor-directory.mdc)
 - File: rules-for-game-development--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47494,7 +47494,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-gatsby--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-gatsby--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-gatsby--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-gatsby--cursor-directory.mdc)
 - File: rules-for-gatsby--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47542,7 +47542,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-golang--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-golang--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-golang--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-golang--cursor-directory.mdc)
 - File: rules-for-golang--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47590,7 +47590,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-htmx--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-htmx--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-htmx--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-htmx--cursor-directory.mdc)
 - File: rules-for-htmx--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47638,7 +47638,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-java--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-java--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-java--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-java--cursor-directory.mdc)
 - File: rules-for-java--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47686,7 +47686,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-javascript--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-javascript--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-javascript--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-javascript--cursor-directory.mdc)
 - File: rules-for-javascript--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47734,7 +47734,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-jina-ai--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-jina-ai--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-jina-ai--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-jina-ai--cursor-directory.mdc)
 - File: rules-for-jina-ai--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47782,7 +47782,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-laravel--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-laravel--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-laravel--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-laravel--cursor-directory.mdc)
 - File: rules-for-laravel--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47830,7 +47830,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-lua--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-lua--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-lua--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-lua--cursor-directory.mdc)
 - File: rules-for-lua--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47878,7 +47878,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nodejs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nodejs--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nodejs--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nodejs--cursor-directory.mdc)
 - File: rules-for-nodejs--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47926,7 +47926,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nuxtjs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nuxtjs--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nuxtjs--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nuxtjs--cursor-directory.mdc)
 - File: rules-for-nuxtjs--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -47974,7 +47974,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-onchainkit--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-onchainkit--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-onchainkit--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-onchainkit--cursor-directory.mdc)
 - File: rules-for-onchainkit--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48022,7 +48022,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-paraglidejs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-paraglidejs--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-paraglidejs--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-paraglidejs--cursor-directory.mdc)
 - File: rules-for-paraglidejs--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48070,7 +48070,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-phoenix--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-phoenix--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-phoenix--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-phoenix--cursor-directory.mdc)
 - File: rules-for-phoenix--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48118,7 +48118,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-php--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-php--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-php--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-php--cursor-directory.mdc)
 - File: rules-for-php--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48166,7 +48166,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-pixijs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-pixijs--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-pixijs--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-pixijs--cursor-directory.mdc)
 - File: rules-for-pixijs--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48214,7 +48214,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-python--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-python--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-python--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-python--cursor-directory.mdc)
 - File: rules-for-python--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48262,7 +48262,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-quarkus--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-quarkus--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-quarkus--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-quarkus--cursor-directory.mdc)
 - File: rules-for-quarkus--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48310,7 +48310,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rails--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rails--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rails--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rails--cursor-directory.mdc)
 - File: rules-for-rails--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48358,7 +48358,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-native--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-native--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-native--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-native--cursor-directory.mdc)
 - File: rules-for-react-native--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48406,7 +48406,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-three-fiber--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-three-fiber--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-three-fiber--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-three-fiber--cursor-directory.mdc)
 - File: rules-for-react-three-fiber--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48454,7 +48454,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rust--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rust--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rust--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rust--cursor-directory.mdc)
 - File: rules-for-rust--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48502,7 +48502,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-scripting--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-scripting--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-scripting--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-scripting--cursor-directory.mdc)
 - File: rules-for-scripting--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48550,7 +48550,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-serverless--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-serverless--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-serverless--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-serverless--cursor-directory.mdc)
 - File: rules-for-serverless--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48598,7 +48598,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-shadcn-ui--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-shadcn-ui--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-shadcn-ui--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-shadcn-ui--cursor-directory.mdc)
 - File: rules-for-shadcn-ui--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48646,7 +48646,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-smart-contracts--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-smart-contracts--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-smart-contracts--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-smart-contracts--cursor-directory.mdc)
 - File: rules-for-smart-contracts--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48694,7 +48694,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-solito--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-solito--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-solito--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-solito--cursor-directory.mdc)
 - File: rules-for-solito--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48742,7 +48742,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-standardjs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-standardjs--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-standardjs--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-standardjs--cursor-directory.mdc)
 - File: rules-for-standardjs--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48790,7 +48790,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-supabase--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-supabase--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-supabase--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-supabase--cursor-directory.mdc)
 - File: rules-for-supabase--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48838,7 +48838,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-swift--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-swift--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-swift--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-swift--cursor-directory.mdc)
 - File: rules-for-swift--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48886,7 +48886,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwind-css--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwind-css--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwind-css--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwind-css--cursor-directory.mdc)
 - File: rules-for-tailwind-css--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48934,7 +48934,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwindcss--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwindcss--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwindcss--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwindcss--cursor-directory.mdc)
 - File: rules-for-tailwindcss--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -48982,7 +48982,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tauri--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tauri--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tauri--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tauri--cursor-directory.mdc)
 - File: rules-for-tauri--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49030,7 +49030,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-terraform--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-terraform--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-terraform--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-terraform--cursor-directory.mdc)
 - File: rules-for-terraform--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49078,7 +49078,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-testing--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-testing--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-testing--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-testing--cursor-directory.mdc)
 - File: rules-for-testing--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49126,7 +49126,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tooling--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tooling--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tooling--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tooling--cursor-directory.mdc)
 - File: rules-for-tooling--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49174,7 +49174,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tutorials--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tutorials--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tutorials--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tutorials--cursor-directory.mdc)
 - File: rules-for-tutorials--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49222,7 +49222,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-typescript--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-typescript--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-typescript--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-typescript--cursor-directory.mdc)
 - File: rules-for-typescript--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49270,7 +49270,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-ui--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-ui--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-ui--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-ui--cursor-directory.mdc)
 - File: rules-for-ui--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49318,7 +49318,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-viem-v2--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-viem-v2--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-viem-v2--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-viem-v2--cursor-directory.mdc)
 - File: rules-for-viem-v2--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49366,7 +49366,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vite--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vite--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vite--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vite--cursor-directory.mdc)
 - File: rules-for-vite--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49414,7 +49414,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vue--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vue--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vue--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vue--cursor-directory.mdc)
 - File: rules-for-vue--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49462,7 +49462,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-web-development--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-web-development--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-web-development--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-web-development--cursor-directory.mdc)
 - File: rules-for-web-development--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49510,7 +49510,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-woocommerce--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-woocommerce--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-woocommerce--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-woocommerce--cursor-directory.mdc)
 - File: rules-for-woocommerce--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49558,7 +49558,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-wordpress--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-wordpress--cursor-directory.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-wordpress--cursor-directory.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-wordpress--cursor-directory.mdc)
 - File: rules-for-wordpress--cursor-directory.mdc (ext: .mdc)
 
 #### Summary
@@ -49606,7 +49606,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc)
 - File: test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc (ext: .mdc)
 
 #### Summary
@@ -49654,7 +49654,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc)
 - File: this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc (ext: .mdc)
 
 #### Summary
@@ -49702,7 +49702,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/try.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/try.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/try.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/try.md)
 - File: try.md (ext: .md)
 
 #### Summary
@@ -49751,7 +49751,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc)
 - File: write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc (ext: .mdc)
 
 #### Summary
@@ -49799,7 +49799,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc)
 - File: you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc (ext: .mdc)
 
 #### Summary
@@ -49847,7 +49847,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc)
 - File: you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc (ext: .mdc)
 
 #### Summary
@@ -49895,7 +49895,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc)
 - File: you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc (ext: .mdc)
 
 #### Summary
@@ -49943,7 +49943,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc)
 - File: you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc (ext: .mdc)
 
 #### Summary
@@ -49991,7 +49991,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc)
 - File: you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc (ext: .mdc)
 
 #### Summary
@@ -50039,7 +50039,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc)
 - File: you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc (ext: .mdc)
 
 #### Summary
@@ -50087,7 +50087,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc)
 - File: you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc (ext: .mdc)
 
 #### Summary
@@ -50135,7 +50135,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc)
 - File: you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc (ext: .mdc)
 
 #### Summary
@@ -50183,7 +50183,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc)
 - File: you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc (ext: .mdc)
 
 #### Summary
@@ -50231,7 +50231,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc)
 - File: you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc (ext: .mdc)
 
 #### Summary
@@ -50279,7 +50279,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc)
 - File: you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc (ext: .mdc)
 
 #### Summary
@@ -50327,7 +50327,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc)
 - File: you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc (ext: .mdc)
 
 #### Summary
@@ -50375,7 +50375,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc)
 - File: you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc (ext: .mdc)
 
 #### Summary
@@ -50423,7 +50423,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc)
 - File: you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc (ext: .mdc)
 
 #### Summary
@@ -50471,7 +50471,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc)
 - File: you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc (ext: .mdc)
 
 #### Summary
@@ -50519,7 +50519,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc)
 - File: you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc (ext: .mdc)
 
 #### Summary
@@ -50567,7 +50567,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc)
 - File: you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc (ext: .mdc)
 
 #### Summary
@@ -50615,7 +50615,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc)
 - File: you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc (ext: .mdc)
 
 #### Summary
@@ -50663,7 +50663,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc)
 - File: you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc (ext: .mdc)
 
 #### Summary
@@ -50711,7 +50711,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc)
 - File: you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc (ext: .mdc)
 
 #### Summary
@@ -50759,7 +50759,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc)
 - File: you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc (ext: .mdc)
 
 #### Summary
@@ -50807,7 +50807,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc)
 - File: you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc (ext: .mdc)
 
 #### Summary
@@ -50855,7 +50855,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc)
 - File: you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc (ext: .mdc)
 
 #### Summary
@@ -50903,7 +50903,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc)
 - File: you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc (ext: .mdc)
 
 #### Summary
@@ -50951,7 +50951,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc)
 - File: you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc (ext: .mdc)
 
 #### Summary
@@ -50999,7 +50999,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc)
 - File: you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc (ext: .mdc)
 
 #### Summary
@@ -51047,7 +51047,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc)
 - File: you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc (ext: .mdc)
 
 #### Summary
@@ -51095,7 +51095,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc)
 - File: you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc (ext: .mdc)
 
 #### Summary
@@ -51143,7 +51143,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc)
 - File: you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc (ext: .mdc)
 
 #### Summary
@@ -51191,7 +51191,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc)
 - File: you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc (ext: .mdc)
 
 #### Summary
@@ -51239,7 +51239,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc)
 - File: you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc (ext: .mdc)
 
 #### Summary
@@ -51287,7 +51287,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc)
 - File: you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc (ext: .mdc)
 
 #### Summary
@@ -51335,7 +51335,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc)
 - File: you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc (ext: .mdc)
 
 #### Summary
@@ -51383,7 +51383,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc)
 - File: you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc (ext: .mdc)
 
 #### Summary
@@ -51431,7 +51431,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc)
 - File: you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc (ext: .mdc)
 
 #### Summary
@@ -51479,7 +51479,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc)
 - File: you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc (ext: .mdc)
 
 #### Summary
@@ -51527,7 +51527,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc)
 - File: you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc (ext: .mdc)
 
 #### Summary
@@ -51575,7 +51575,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc)
 - File: you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc (ext: .mdc)
 
 #### Summary
@@ -51623,7 +51623,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc)
 - File: you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc (ext: .mdc)
 
 #### Summary
@@ -51671,7 +51671,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc)
 - File: you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc (ext: .mdc)
 
 #### Summary
@@ -51719,7 +51719,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc)
 - File: you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc (ext: .mdc)
 
 #### Summary
@@ -51767,7 +51767,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc)
 - File: you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc (ext: .mdc)
 
 #### Summary
@@ -51815,7 +51815,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc)
 - File: you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc (ext: .mdc)
 
 #### Summary
@@ -51863,7 +51863,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc)
 - File: you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc (ext: .mdc)
 
 #### Summary
@@ -51911,7 +51911,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc)
 - File: you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc (ext: .mdc)
 
 #### Summary
@@ -51959,7 +51959,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc)
 - File: you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc (ext: .mdc)
 
 #### Summary
@@ -52302,7 +52302,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/composite_rule.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/composite_rule.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/composite_rule.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/composite_rule.mdc)
 - File: composite_rule.mdc (ext: .mdc)
 
 #### Summary
@@ -52351,7 +52351,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/selection.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/selection.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/selection.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/selection.json)
 - File: selection.json (ext: .json)
 
 #### Summary
@@ -52400,7 +52400,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -52449,7 +52449,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -52545,7 +52545,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -52594,7 +52594,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/composite_rule.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/composite_rule.mdc)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/composite_rule.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/composite_rule.mdc)
 - File: composite_rule.mdc (ext: .mdc)
 
 #### Summary
@@ -52642,7 +52642,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/selection.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/selection.json)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/selection.json (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/selection.json)
 - File: selection.json (ext: .json)
 
 #### Summary
@@ -52691,7 +52691,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -52790,7 +52790,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -52886,7 +52886,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -52935,7 +52935,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -52984,7 +52984,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -53033,7 +53033,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
 - File: Validation_Report.md (ext: .md)
 
 #### Summary
@@ -53082,7 +53082,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
 - File: Validation_Report.md (ext: .md)
 
 #### Summary
@@ -53131,7 +53131,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
 - File: Final_Implementation_Plan.md (ext: .md)
 
 #### Summary
@@ -53180,7 +53180,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -53229,7 +53229,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -53278,7 +53278,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -53374,7 +53374,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -53423,7 +53423,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
 - File: Final_Implementation_Plan.md (ext: .md)
 
 #### Summary
@@ -53472,7 +53472,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -53521,7 +53521,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
 - File: Validation_Report.md (ext: .md)
 
 #### Summary
@@ -53618,7 +53618,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -53667,7 +53667,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -53716,7 +53716,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/templates/Summary_Report.template.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates/Summary_Report.template.md)
+- Path: frameworks/fwk-001-cursor-rules/templates/Summary_Report.template.md (abs: /workspace/frameworks/fwk-001-cursor-rules/templates/Summary_Report.template.md)
 - File: Summary_Report.template.md (ext: .md)
 
 #### Summary
@@ -53765,7 +53765,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -53814,7 +53814,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -53863,7 +53863,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/templates/Validation_Report.template.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates/Validation_Report.template.md)
+- Path: frameworks/fwk-001-cursor-rules/templates/Validation_Report.template.md (abs: /workspace/frameworks/fwk-001-cursor-rules/templates/Validation_Report.template.md)
 - File: Validation_Report.template.md (ext: .md)
 
 #### Summary
@@ -54007,7 +54007,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -54056,7 +54056,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -54105,7 +54105,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -54153,7 +54153,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/templates/Summary_Report.template.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates/Summary_Report.template.md)
+- Path: frameworks/fwk-001-cursor-rules/templates/Summary_Report.template.md (abs: /workspace/frameworks/fwk-001-cursor-rules/templates/Summary_Report.template.md)
 - File: Summary_Report.template.md (ext: .md)
 
 #### Summary
@@ -54202,7 +54202,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/templates/Validation_Report.template.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates/Validation_Report.template.md)
+- Path: frameworks/fwk-001-cursor-rules/templates/Validation_Report.template.md (abs: /workspace/frameworks/fwk-001-cursor-rules/templates/Validation_Report.template.md)
 - File: Validation_Report.template.md (ext: .md)
 
 #### Summary
@@ -54252,7 +54252,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -54301,7 +54301,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -54349,7 +54349,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -54398,7 +54398,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary

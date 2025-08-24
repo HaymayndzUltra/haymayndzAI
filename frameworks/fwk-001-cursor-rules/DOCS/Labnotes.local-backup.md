@@ -205,7 +205,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md)
+- Path: frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md (abs: /workspace/frameworks/fwk-001-cursor-rules/templates/Labnotes.entry.template.md)
 - File: Labnotes.entry.template.md (ext: .md)
 
 #### Summary
@@ -254,7 +254,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -303,7 +303,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
@@ -1317,7 +1317,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -1560,7 +1560,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -1610,7 +1610,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -1659,7 +1659,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -1708,7 +1708,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -1806,7 +1806,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
 - File: memory_enhancement_auditor.mdc (ext: .mdc)
 
 #### Summary
@@ -2002,7 +2002,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -2051,7 +2051,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
 - File: planner_moderator_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2100,7 +2100,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
 - File: framework_memory_bridge.mdc (ext: .mdc)
 
 #### Summary
@@ -2149,7 +2149,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2198,7 +2198,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
 - File: execution_orchestrator.mdc (ext: .mdc)
 
 #### Summary
@@ -2296,7 +2296,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -2345,7 +2345,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2394,7 +2394,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -2443,7 +2443,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
 - File: planner_moderator_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2492,7 +2492,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
 - File: framework_memory_bridge.mdc (ext: .mdc)
 
 #### Summary
@@ -2541,7 +2541,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2590,7 +2590,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
 - File: execution_orchestrator.mdc (ext: .mdc)
 
 #### Summary
@@ -2639,7 +2639,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -2688,7 +2688,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2736,7 +2736,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -2784,7 +2784,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -2833,7 +2833,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -2882,7 +2882,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
 - File: planner_moderator_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2930,7 +2930,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -2978,7 +2978,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
 - File: execution_orchestrator.mdc (ext: .mdc)
 
 #### Summary
@@ -3026,7 +3026,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
 - File: framework_memory_bridge.mdc (ext: .mdc)
 
 #### Summary
@@ -3074,7 +3074,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
 - File: memory_enhancement_auditor.mdc (ext: .mdc)
 
 #### Summary
@@ -3122,7 +3122,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
 - File: principal_engineer_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -3170,7 +3170,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
 - File: rules_master_toggle.mdc (ext: .mdc)
 
 #### Summary
@@ -3463,7 +3463,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/OVERVIEW.md)
 - File: OVERVIEW.md (ext: .md)
 
 #### Summary
@@ -3610,7 +3610,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md)
 - File: labnotes_changes.md (ext: .md)
 
 #### Summary
@@ -3659,7 +3659,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md)
 - File: git_changes.md (ext: .md)
 
 #### Summary
@@ -3708,7 +3708,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md)
 - File: fs_changes.md (ext: .md)
 
 #### Summary
@@ -3757,7 +3757,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -3806,7 +3806,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md)
 - File: discrepancies.md (ext: .md)
 
 #### Summary
@@ -3904,7 +3904,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -3953,7 +3953,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -4002,7 +4002,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -4051,7 +4051,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -4100,7 +4100,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -4148,7 +4148,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/HANDBOOK.md)
 - File: HANDBOOK.md (ext: .md)
 
 #### Summary
@@ -4197,7 +4197,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -4246,7 +4246,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/STATUS.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/STATUS.md)
 - File: STATUS.md (ext: .md)
 
 #### Summary
@@ -4294,7 +4294,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/discrepancies.md)
 - File: discrepancies.md (ext: .md)
 
 #### Summary
@@ -4343,7 +4343,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/fs_changes.md)
 - File: fs_changes.md (ext: .md)
 
 #### Summary
@@ -4392,7 +4392,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/git_changes.md)
 - File: git_changes.md (ext: .md)
 
 #### Summary
@@ -4441,7 +4441,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/labnotes_changes.md)
 - File: labnotes_changes.md (ext: .md)
 
 #### Summary
@@ -4490,7 +4490,7 @@ wc -l memory-bank/queue-system/tasks_done.jsonl | cat
 
 - Actor: User [AI | User | Automation]
 - Action: CREATE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md)
 - File: Latest_Current.md (ext: .md)
 
 #### Summary
@@ -4649,7 +4649,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -4795,7 +4795,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/Labnotes.md)
 - File: Labnotes.md (ext: .md)
 
 #### Summary
@@ -4845,7 +4845,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/technical_plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/technical_plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/technical_plan.md)
 - File: technical_plan.md (ext: .md)
 
 #### Summary
@@ -4894,7 +4894,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py)
+- Path: frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/run_hydration_tests.py)
 - File: run_hydration_tests.py (ext: .py)
 
 #### Summary
@@ -4943,7 +4943,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py)
+- Path: frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/resolve_artifact_path.py)
 - File: resolve_artifact_path.py (ext: .py)
 
 #### Summary
@@ -4992,7 +4992,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact.schema.json)
 - File: artifact.schema.json (ext: .json)
 
 #### Summary
@@ -5041,7 +5041,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md.sidecar.json)
 - File: Action_Plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -5090,7 +5090,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md.sidecar.json)
 - File: Summary_Report.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -5139,7 +5139,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
+- Path: frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/DOCS/changes/routing_conflicts_report.md)
 - File: routing_conflicts_report.md (ext: .md)
 
 #### Summary
@@ -5188,7 +5188,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py)
+- Path: frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/check_routing_conflicts.py)
 - File: check_routing_conflicts.py (ext: .py)
 
 #### Summary
@@ -5237,7 +5237,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md.sidecar.json)
 - File: Final_Implementation_Plan.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -5335,7 +5335,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json.lock)
 - File: artifacts_index.json.lock (ext: .lock)
 
 #### Summary
@@ -5384,7 +5384,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/validate_contract.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/validate_contract.py)
+- Path: frameworks/fwk-001-cursor-rules/contracts/validate_contract.py (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/validate_contract.py)
 - File: validate_contract.py (ext: .py)
 
 #### Summary
@@ -5433,7 +5433,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_selector.py)
 - File: hydration_selector.py (ext: .py)
 
 #### Summary
@@ -5482,7 +5482,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.mdc)
 - File: framework_contract_framework1.mdc (ext: .mdc)
 
 #### Summary
@@ -5531,7 +5531,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc)
+- Path: frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/schemas/artifact_schema.mdc)
 - File: artifact_schema.mdc (ext: .mdc)
 
 #### Summary
@@ -5580,7 +5580,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifact_sync_rules.mdc)
 - File: artifact_sync_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -5629,7 +5629,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
+- Path: frameworks/fwk-001-cursor-rules/sync/artifacts_index.json (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/artifacts_index.json)
 - File: artifacts_index.json (ext: .json)
 
 #### Summary
@@ -5678,7 +5678,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
+- Path: frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json (abs: /workspace/frameworks/fwk-001-cursor-rules/contracts/framework_contract_framework1.json)
 - File: framework_contract_framework1.json (ext: .json)
 
 #### Summary
@@ -5727,7 +5727,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_writer.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_writer.py)
 - File: index_writer.py (ext: .py)
 
 #### Summary
@@ -5776,7 +5776,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_tests.yaml)
 - File: hydration_tests.yaml (ext: .yaml)
 
 #### Summary
@@ -5825,7 +5825,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/rollback_playbook.md)
 - File: rollback_playbook.md (ext: .md)
 
 #### Summary
@@ -5874,7 +5874,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md.sidecar.json)
 - File: Validation_Report.md.sidecar.json (ext: .json)
 
 #### Summary
@@ -5923,7 +5923,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_cli.py)
 - File: snapshot_cli.py (ext: .py)
 
 #### Summary
@@ -5972,7 +5972,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/promotion_rules.mdc)
 - File: promotion_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -6021,7 +6021,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc)
+- Path: frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/hydration/hydration_rules.mdc)
 - File: hydration_rules.mdc (ext: .mdc)
 
 #### Summary
@@ -6070,7 +6070,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid)
+- Path: frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/architecture_diagram.mermaid)
 - File: architecture_diagram.mermaid (ext: .mermaid)
 
 #### Summary
@@ -6119,7 +6119,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshot_format.md)
 - File: snapshot_format.md (ext: .md)
 
 #### Summary
@@ -6168,7 +6168,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/sync/index_cli.py (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/sync/index_cli.py)
+- Path: frameworks/fwk-001-cursor-rules/sync/index_cli.py (abs: /workspace/frameworks/fwk-001-cursor-rules/sync/index_cli.py)
 - File: index_cli.py (ext: .py)
 
 #### Summary
@@ -6217,7 +6217,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml)
+- Path: frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/task_breakdown.yaml)
 - File: task_breakdown.yaml (ext: .yaml)
 
 #### Summary
@@ -6266,7 +6266,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json)
+- Path: frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json (abs: /workspace/frameworks/fwk-001-cursor-rules/promotion/snapshots/14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json)
 - File: 14cc93c52edb30c679e3ae98299917025abbfc667f9a098942ed8089e2a09b59.json (ext: .json)
 
 #### Summary
@@ -6315,7 +6315,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/artifact_routing.json)
+- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.json (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/artifact_routing.json)
 - File: artifact_routing.json (ext: .json)
 
 #### Summary
@@ -6364,7 +6364,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: DELETE [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc)
+- Path: frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/routing/artifact_routing.mdc)
 - File: artifact_routing.mdc (ext: .mdc)
 
 #### Summary
@@ -6413,7 +6413,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md)
 - File: Final_Implementation_Plan.md (ext: .md)
 
 #### Summary
@@ -6462,7 +6462,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Summary_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Summary_Report.md)
 - File: Summary_Report.md (ext: .md)
 
 #### Summary
@@ -6511,7 +6511,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- Path: frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /workspace/frameworks/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
 - File: auditor_ai.mdc (ext: .mdc)
 
 #### Summary
@@ -6560,7 +6560,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Validation_Report.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Validation_Report.md)
 - File: Validation_Report.md (ext: .md)
 
 #### Summary
@@ -6609,7 +6609,7 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 - Actor: User [AI | User | Automation]
 - Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
-- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
+- Path: frameworks/fwk-001-cursor-rules/examples/Action_Plan.md (abs: /workspace/frameworks/fwk-001-cursor-rules/examples/Action_Plan.md)
 - File: Action_Plan.md (ext: .md)
 
 #### Summary
