@@ -1,0 +1,42 @@
+version: 0
+scope: routing_slice_dry_run
+timestamp: '2025-08-23T13:07:16Z'
+overrides:
+  roles:
+    product_owner_ai:
+      enabled: true
+    planning_ai:
+      enabled: true
+    codegen_ai:
+      enabled: false
+    qa_ai:
+      enabled: false
+    mlops_ai:
+      enabled: false
+    documentation_ai:
+      enabled: false
+    analyst_ai:
+      enabled: false
+    memory_ai:
+      enabled: true
+    observability_ai:
+      enabled: false
+    execution_orchestrator:
+      enabled: true
+    prompt_factory_ai:
+      enabled: false
+    auditor_ai:
+      enabled: false
+    principal_engineer_ai:
+      enabled: false
+    security_ai:
+      enabled: false
+    l10n_i18n_ai:
+      enabled: false
+    prompt_linter_ai:
+      enabled: false
+    data_ai:
+      enabled: false
+    planner_moderator_ai:
+      enabled: false
+notes: 'Dry-run: minimal activation slice; mapping unchanged; dependencies respected.'
