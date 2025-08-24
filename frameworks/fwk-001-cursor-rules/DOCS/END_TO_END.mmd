@@ -1,3 +1,150 @@
+%%{init: { "flowchart": { "defaultRenderer": "elk" }}}%%
+flowchart LR
+
+%% ------------------- MEMORY -------------------
+subgraph MEM["Knowledge / Memory Bridge"]
+  direction TB
+  M1@{ shape: rect, label: "memory_ai" }
+  M2@{ shape: rect, label: "framework_memory_bridge" }
+end
+
+%% ------------------- ORCHESTRATOR -------------------
+subgraph ORCH["Orchestrator / Routing"]
+  direction TB
+  OR1@{ shape: rect, label: "rules_master_toggle" }
+  OR2@{ shape: rect, label: "execution_orchestrator" }
+  OR3@{ shape: rect, label: "roles_status.json" }
+  OR4@{ shape: rect, label: "routing_matrix.json" }
+  OR5@{ shape: rect, label: "workflow_state.json" }
+  OR6@{ shape: rect, label: "gate_results.json" }
+  OR7@{ shape: rect, label: "handoff_log.json" }
+  EM1@{ shape: rect, label: "AI_ENFORCEMENT_MODE=solo→WARN" }
+  EM2@{ shape: rect, label: "AI_ENFORCEMENT_MODE=team→BLOCK" }
+end
+
+%% ------------------- INPUTS -------------------
+subgraph INP["Inputs"]
+  direction TB
+  I1@{ shape: rect, label: "product_backlog.yaml" }
+  I2@{ shape: rect, label: "Action_Plan.md" }
+end
+
+%% ------------------- PLANNING -------------------
+subgraph PLAN["Planning & Design"]
+  direction TB
+  P1@{ shape: rect, label: "planning_ai" }
+  P2@{ shape: rect, label: "technical_plan.md" }
+  P3@{ shape: rect, label: "task_breakdown.yaml" }
+  P4@{ shape: rect, label: "architecture_diagram.mermaid" }
+  P5@{ shape: rect, label: "acceptance_criteria.json" }
+end
+
+%% ------------------- AUDIT -------------------
+subgraph AUDIT["Audit/Validate/Synthesize Gates"]
+  direction TB
+  A1@{ shape: rect, label: "auditor_ai" }
+  A2@{ shape: rect, label: "Summary_Report.md" }
+  A3@{ shape: rect, label: "principal_engineer_ai" }
+  A4@{ shape: rect, label: "Validation_Report.md" }
+  A5@{ shape: rect, label: "Final_Implementation_Plan.md" }
+end
+
+%% ------------------- GOVERNANCE -------------------
+subgraph GOV["Governance & Extensions"]
+  direction TB
+  G1@{ shape: rect, label: "artifact_schema.mdc" }
+  G2@{ shape: rect, label: "artifact_routing.mdc" }
+  G3@{ shape: rect, label: "artifact_sync_rules.mdc" }
+  G4@{ shape: rect, label: "hydration_rules.mdc" }
+  G5@{ shape: rect, label: "framework_contract_framework1.mdc" }
+  G6@{ shape: rect, label: "framework_contract_framework2.mdc" }
+  G7@{ shape: rect, label: "promotion_rules.mdc" }
+  G8@{ shape: rect, label: "artifacts_index.json" }
+end
+
+%% ------------------- SECURITY -------------------
+subgraph SEC["Security"]
+  direction TB
+  S1@{ shape: rect, label: "security/access_policies.md" }
+  S2@{ shape: rect, label: "security/acl.json" }
+  S3@{ shape: rect, label: "security/validate_security_config.py" }
+end
+
+%% ------------------- DELIVERY -------------------
+subgraph DEL["Delivery & Implementation"]
+  direction TB
+  D1@{ shape: rect, label: "codegen_ai" }
+  D2@{ shape: rect, label: "qa_ai" }
+  D3@{ shape: rect, label: "documentation_ai" }
+end
+
+%% ------------------- MLOPS -------------------
+subgraph MZ["MLOps / Deploy"]
+  direction TB
+  ML1@{ shape: rect, label: "mlops_ai" }
+  ML2@{ shape: rect, label: "deployment_manifest.yaml" }
+end
+
+%% ------------------- OBSERVABILITY -------------------
+subgraph OBS["Observability"]
+  direction TB
+  O1@{ shape: rect, label: "observability_ai" }
+  O2@{ shape: rect, label: "analyst_ai" }
+  O3@{ shape: rect, label: "monitoring_dashboard.json" }
+  O4@{ shape: rect, label: "alert_history.log" }
+  O5@{ shape: rect, label: "health_report.md" }
+end
+
+
+%% ------------------- CONNECTIONS -------------------
+
+M1 --> M2
+OR1 --> OR2
+OR1 --> OR4 & OR3
+OR2 --- OR5 & OR6 & OR7
+OR2 --- EM1 & EM2
+
+P1 --> P2 & P3 & P4 & P5
+A1 --> A2
+A2 --> A3
+A3 --> A4
+A4 --> A5
+
+S3 --- S2
+S1 -.-> S2
+S2 --> G7 & G4 & G3
+
+G1 -.-> P2
+G2 -.-> P2
+G3 --- G8
+G4 -.-> P1
+G8 --> G4
+G4 --> D1 & D2 & D3 & ML1
+G7 -.-> G8
+G7 -.-> A5
+
+OR4 --> P1 & A1 & A3 & D1 & D2 & ML1 & D3 & O1
+I1 --> P1
+I2 --> P1
+P2 --> A1 & A3
+P3 --> A1
+P4 --> A1
+P5 --> A1
+P1 --> A2
+
+D1 --> D2
+D2 --> ML1
+D1 --> D3
+D3 --> ML1
+ML1 --> ML2
+ML1 --> O1
+O1 --> O2 & O3 & O4 & O5
+
+S2 --> G7 & G4 & G3
+S1 --> S2
+S3 --> S2
+
+M2 --> P1 & D1 & D2 & D3 & ML1 & O1
 flowchart LR
 %% ================== COLUMN/SUBGRAPH ===============
 
