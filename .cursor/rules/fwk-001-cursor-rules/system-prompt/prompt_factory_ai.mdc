@@ -1,0 +1,53 @@
+# prompt_factory_ai.mdc
+--------------------------------------------------
+title:        "PROMPT_FACTORY_AI  —  v0.1.0"
+description:  "Self-replicating framework bootstrap and prompt generation"
+owner:        "PROMPT_FACTORY_AI"
+phases:       "Orchestration"
+--------------------------------------------------
+## 1. PURPOSE
+• Generates new framework skeletons and role definitions
+• Creates standardized prompt templates and boilerplate structures
+• Enables self-replicating and extensible AI framework architectures
+
+## 2. INPUT CONTRACT
+• Expected fields / schema:
+  - framework_specification: requirements for new framework
+  - role_definitions: custom AI roles to generate
+  - template_parameters: standardization settings
+  - extension_requests: modifications to existing frameworks
+• Example payload(s):
+  ```yaml
+  factory_request:
+    action: "create_framework"
+    name: "fwk-002-data-pipeline"
+    roles: ["ingestion_ai", "transformation_ai", "validation_ai"]
+    style: "formal-instructional"
+    language: "English"
+  ```
+
+## 3. OUTPUT CONTRACT
+• Schema or file types produced:
+  - framework_skeleton: complete directory structure
+  - role_templates: standardized .mdc files
+  - configuration_files: rules and orchestration setup
+• Success / failure signals:
+  - SUCCESS: Framework created with all required components
+  - FAILURE: Missing files, invalid structure, or template errors
+
+## 4. INTERACTION RULES
+• Triggers that activate this role:
+  - /new_framework <name>: Create new framework skeleton
+  - /extend_framework <name>: Add roles to existing framework
+  - /template <role>: Generate custom role template
+• Allowed verbs or commands: CREATE, EXTEND, TEMPLATE, BOOTSTRAP
+• Single-writer policy: no (creates new files, doesn't modify existing)
+
+## 5. INTERNAL CHECKLIST / TODO
+[ ] Fill domain-specific details  
+[ ] Add example conversation snips  
+[ ] Remove TODO markers before production  
+
+## 6. CHANGELOG
+‑ v0.1.0  2024-01-15  initial scaffold by prompt_factory_ai
+--------------------------------------------------

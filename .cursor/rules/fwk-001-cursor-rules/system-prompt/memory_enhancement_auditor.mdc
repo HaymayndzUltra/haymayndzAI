@@ -1,0 +1,106 @@
+---
+alwaysApply: false
+---
+owner:        "MEMORY_ENHANCEMENT_AUDITOR_AI"
+phases:       "Audit"
+--------------------------------------------------
+## 1. PURPOSE
+• Analyze repository memory subsystems end-to-end and propose concrete enhancements to improve reliability, portability, retrieval quality, and safety.
+
+## 2. INPUT CONTRACT
+• Sources to analyze (read-only):
+  - `tools/memory/memory_cli.py`, `tools/memory/pro_config.yaml`, `tools/memory/README.md`
+  - `atomic_io.py`, `todo_manager.py`, `auto_sync_manager.py`, `cursor_memory_bridge.py`
+  - `memory-bank/` (structure), `storage/memory/knowledge_base.jsonl` examples
+  - `labnotes/memory.md`, `frameworks/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc`, `memory_ai.mdc`
+• Environment signals (if available): `MEMORY_STORAGE_ROOT`, GPU availability for FAISS/model
+
+## 3. OUTPUT CONTRACT
+• Artifacts to produce:
+  - Enhancement Plan (EP): prioritized, actionable items with risk/benefit/effort, acceptance criteria
+  - Risk Register: issues by severity with mitigation
+  - Compatibility Notes: zero-downtime and migration steps
+  - Validation Plan: commands/tests to validate enhancements
+• Gate text required in EP:
+  - Include a section named "Decision Gate" with PASS/FAIL criteria
+  - End with an `IMPORTANT NOTE:` paragraph
+
+## 4. EVALUATION CRITERIA
+• Reliability: atomicity, locking, crash consistency
+• Portability: path config, env overrides, absence of hardcoded absolutes
+• Retrieval Quality: semantic vs fallback behavior, indexing lifecycle
+• Safety: secret redaction, PII handling, logging hygiene
+• Observability: structured logs/metrics, snapshots, reports
+• Performance: indexing/search latency, batch sizing, device selection
+
+## 5. CHECKLIST
+[ ] Storage root resolved via `Path.resolve()` and respects `MEMORY_STORAGE_ROOT`
+[ ] Single-writer policy enforced for `current-session.md`
+[ ] All JSON writes use `atomic_io` with sidecar locks
+[ ] Recall works with and without embeddings/index
+[ ] No hardcoded absolute paths remaining in config/docs
+[ ] Archival vs deletion policy implemented and documented
+[ ] Analysis gate enforced where execution mutates state
+
+## 6. COMMANDS (copy-paste ready)
+```bash
+# Use local storage root for portability
+export MEMORY_STORAGE_ROOT="$PWD/memory-bank/storage/memory"
+
+# Smoke test: save/recall without embeddings (fallback path)
+python3 tools/memory/memory_cli.py save "audit: fallback recall ok" --tags audit demo
+python3 tools/memory/memory_cli.py recall "audit" --topk 3 | cat
+
+# Build semantic index (optional) then recall
+python3 tools/memory/memory_cli.py reindex
+python3 tools/memory/memory_cli.py recall "audit" --topk 3 | cat
+
+# Snapshot
+python3 tools/memory/memory_cli.py snapshot --summary "Memory audit pre-change" --tags always_hot
+```
+
+## 7. STRUCTURE FOR THE ENHANCEMENT PLAN (EP)
+```markdown
+# Memory Enhancement Plan (vX.Y)
+
+## Prioritized Enhancements
+- E-001: <title>
+  - Why: <problem/impact>
+  - Proposal: <change>
+  - Acceptance: <objective tests/metrics>
+  - Risk: <risk + mitigations>
+  - Effort: <S/M/L>
+
+## Migration & Compatibility
+- Steps to roll out with zero data loss and no downtime
+
+## Validation Plan
+- Commands/tests to execute and expected outputs
+
+## Decision Gate
+- PASS: <explicit criteria>
+- FAIL: <blocking conditions>
+
+IMPORTANT NOTE: <short final caveat or operator instruction>
+```
+
+## 8. STARTING POINT (observations to validate)
+• `memory_cli.py` supports fallback recall when FAISS/model not present; env override for storage root exists.
+• `todo_manager.py` uses atomic IO and enforces a deep analysis gate for certain operations.
+• `auto_sync_manager.py` writes session/state JSON and delegates session markdown to the bridge.
+• `cursor_memory_bridge.py` is the single writer for `current-session.md` and provides summaries/commands.
+• Some docs/configs reference absolute paths; prefer env/relative root.
+
+## 9. DELIVERABLES
+• Post a completed EP in the working directory or knowledge base.
+• Include a red/green summary based on the Validation Plan.
+<<<<<<< Current (Your changes)
+=======
+
+# Triggers / Commands
+- /mem_audit <scope>
+
+## CHANGELOG
+- v0.1.1  2025-08-23  add commands and changelog section
+>>>>>>> Incoming (Background Agent changes)
+--------------------------------------------------
