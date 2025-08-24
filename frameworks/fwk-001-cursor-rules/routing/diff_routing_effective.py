@@ -3,8 +3,8 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-CHANGES = ROOT / "frameworks" / "fwk-001-cursor-rules" / "DOCS" / "changes"
+ROOT = Path(__file__).resolve().parents[1]  # /workspace/frameworks/fwk-001-cursor-rules
+CHANGES = ROOT / "DOCS" / "changes"
 
 def load_json(path: Path):
     with path.open("r", encoding="utf-8") as f:

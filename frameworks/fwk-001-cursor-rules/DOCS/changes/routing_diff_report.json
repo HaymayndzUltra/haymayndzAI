@@ -1,0 +1,12 @@
+{
+  "baseline_exists": true,
+  "effective_exists": true,
+  "override_exists": true,
+  "diff": {
+    "added_keys_in_effective": [
+      "overrides",
+      "progressive_mode"
+    ],
+    "removed_keys_in_effective": []
+  }
+}
