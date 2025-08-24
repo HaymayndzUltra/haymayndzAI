@@ -1,0 +1,41 @@
+---
+description: >
+  Phase-aware next steps: detects current phase from artifacts and actions,
+  then proposes the adjacent step. Encodes the state machine in lightweight form.
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# Rule: guidance_phase_awareness.mdc (Phase-Aware Steps)
+
+## Phase Detection (Heuristics)
+- BACKLOG if `product_backlog.yaml` present/just updated.
+- PLANNING if `technical_plan.md` or `task_breakdown.yaml` updated.
+- AUDIT if `Summary_Report.md` requested/generated.
+- VERIFICATION/SYNTHESIS if `Validation_Report.md` or
+  `Final_Implementation_Plan.md` referenced.
+- DEVELOPMENT if code/test files changed by `/gen_code`.
+- TESTING if `test_results.json` present.
+- DEPLOYMENT if `deployment_manifest.yaml` applied.
+- MONITORING if dashboards/alerts updated.
+
+## Adjacent Steps (per phase)
+- BACKLOG → PLANNING:
+  - Domain: refine acceptance criteria; estimate scope.
+  - If framework-enabled & high confidence: `/plan`
+- PLANNING → AUDIT/VERIFY/SYNTH:
+  - Domain: risk checklist, dependency matrix.
+  - If enabled & high confidence: `/audit` then `/peer_review`
+- DEVELOPMENT → TESTING:
+  - Domain: run unit/integration tests; increase coverage.
+  - If enabled & medium+ confidence: `/test`
+- TESTING → DEPLOYMENT:
+  - If pass: smoke test then deploy.
+  - If enabled & medium+ confidence: `/deploy`
+- DEPLOYMENT → MONITORING:
+  - Domain: verify SLOs, set alerts, track error budgets.
+  - If enabled & medium+ confidence: `/observe`
+
+## Fallback (Unclear Phase)
+- Ask **one** clarifying question (scope, target artifact, env).
+- Provide **one** safe, non-command next step.

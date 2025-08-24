@@ -1,0 +1,60 @@
+{
+  "timestamp": "2025-08-23T22:43:14.311382+00:00",
+  "framework": "fwk-001-cursor-rules",
+  "validation": "security_config",
+  "overall_status": "FAIL",
+  "checks": {
+    "acl_structure": {
+      "status": "FAIL",
+      "errors": [
+        "Failed to load ACL file: [Errno 2] No such file or directory: '/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/security/acl.json'"
+      ]
+    },
+    "roles": {
+      "status": "FAIL",
+      "errors": [
+        "Failed to load ACL file"
+      ]
+    },
+    "resources": {
+      "status": "FAIL",
+      "errors": [
+        "Failed to load ACL file"
+      ]
+    },
+    "security_policies": {
+      "status": "FAIL",
+      "errors": [
+        "Access policies document not found"
+      ]
+    },
+    "compliance_standards": {
+      "status": "FAIL",
+      "errors": [
+        "Failed to load ACL file"
+      ]
+    },
+    "encryption_config": {
+      "status": "FAIL",
+      "errors": [
+        "Failed to load ACL file"
+      ]
+    },
+    "incident_response": {
+      "status": "FAIL",
+      "errors": [
+        "Failed to load ACL file"
+      ]
+    }
+  },
+  "errors": [
+    "Failed to load ACL file: [Errno 2] No such file or directory: '/home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/security/security/acl.json'",
+    "Failed to load ACL file",
+    "Failed to load ACL file",
+    "Access policies document not found",
+    "Failed to load ACL file",
+    "Failed to load ACL file",
+    "Failed to load ACL file"
+  ],
+  "warnings": []
+}

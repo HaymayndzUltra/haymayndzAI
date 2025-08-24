@@ -1,0 +1,490 @@
+# Framework Governance - Owners Matrix (RACI)
+# T-12 Implementation: Governance fields, RACI, estimates, acceptance
+
+## Overview
+Comprehensive RACI matrix defining roles and responsibilities for all framework components, tasks, and operational activities. Ensures clear ownership, accountability, and governance across the entire framework.
+
+## RACI Definitions
+- **R (Responsible)**: Person/team who does the work
+- **A (Accountable)**: Person/team who is ultimately accountable
+- **C (Consulted)**: Person/team who provides input/feedback
+- **I (Informed)**: Person/team who is kept informed of progress
+
+## Framework Tasks RACI Matrix
+
+### T-01: Schema Definition and Artifact Routing
+```yaml
+T-01_schema_definition:
+  title: "Define artifact schema (frontmatter/sidecar)"
+  owner_role: "platform_eng"
+  priority: "P0"
+  estimate_days: 1
+  raci_matrix:
+    responsible: "platform_eng"
+    accountable: "platform_eng_lead"
+    consulted: ["principal_engineer", "architect"]
+    informed: ["orchestrator_infra", "qa_platform"]
+  current_status: "COMPLETE"
+  completion_date: "2025-08-24"
+  acceptance_criteria:
+    - "All existing example artifacts validate against schema"
+    - "Schema documented with versioning and enums"
+  deliverables:
+    - "artifact_schema.mdc"
+  risk_refs: ["R-006"]
+```
+
+### T-02: Artifact Routing and Conflict Resolution
+```yaml
+T-02_artifact_routing:
+  title: "Implement artifact routing with conflict detection"
+  owner_role: "principal_engineer"
+  priority: "P0"
+  estimate_days: 2
+  raci_matrix:
+    responsible: "principal_engineer"
+    accountable: "principal_engineer"
+    consulted: ["platform_eng", "architect"]
+    informed: ["orchestrator_infra", "qa_platform", "devops_release"]
+  current_status: "COMPLETE"
+  completion_date: "2025-08-24"
+  acceptance_criteria:
+    - "0 conflicts vs routing_matrix.json"
+    - "Deterministic path resolution with tests"
+  deliverables:
+    - "artifact_routing.mdc"
+    - "routing_conflicts_report.md"
+  risk_refs: ["R-003"]
+```
+
+### T-03: Index Management and Hydration
+```yaml
+T-03_index_management:
+  title: "Build artifacts index (single-writer, atomic, journaled)"
+  owner_role: "orchestrator_infra"
+  priority: "P0"
+  estimate_days: 3
+  raci_matrix:
+    responsible: "orchestrator_infra"
+    accountable: "orchestrator_infra_lead"
+    consulted: ["platform_eng", "principal_engineer"]
+    informed: ["devops_release", "qa_platform", "sre_platform"]
+  current_status: "COMPLETE"
+  completion_date: "2025-08-24"
+  acceptance_criteria:
+    - "Crash simulation preserves consistency"
+    - "Lockfile prevents concurrent writers"
+  deliverables:
+    - "artifacts_index.json"
+    - "index_writer_lib.py"
+    - "recovery_journal.log"
+  risk_refs: ["R-002", "B-004"]
+```
+
+### T-04: Hydration Precedence with Explicit Tie-breakers
+```yaml
+T-04_hydration_precedence:
+  title: "Hydration precedence with explicit tie-breakers"
+  owner_role: "platform_eng"
+  priority: "P1"
+  estimate_days: 2
+  raci_matrix:
+    responsible: "platform_eng"
+    accountable: "platform_eng_lead"
+    consulted: ["principal_engineer", "architect"]
+    informed: ["orchestrator_infra", "qa_platform", "sre_platform"]
+  current_status: "COMPLETE"
+  completion_date: "2025-08-24"
+  acceptance_criteria:
+    - "Deterministic selection proven by repeated runs"
+    - "Tie-breakers documented and tested"
+  deliverables:
+    - "hydration_rules.mdc"
+    - "hydration_tests.yaml"
+  risk_refs: ["R-004"]
+```
+
+### T-05: Framework Contract for Framework1
+```yaml
+T-05_framework_contract:
+  title: "Framework contract for framework1"
+  owner_role: "principal_engineer"
+  priority: "P1"
+  estimate_days: 2
+  raci_matrix:
+    responsible: "principal_engineer"
+    accountable: "principal_engineer"
+    consulted: ["platform_eng", "architect", "devops_release"]
+    informed: ["orchestrator_infra", "qa_platform", "sre_platform"]
+  current_status: "COMPLETE"
+  completion_date: "2025-08-24"
+  acceptance_criteria:
+    - "Contract validates allowed artifacts and states"
+  deliverables:
+    - "framework_contract_framework1.mdc"
+  risk_refs: ["R-001"]
+```
+
+### T-06: Promotion Governance (Snapshots, Sign/Verify, Rollback)
+```yaml
+T-06_promotion_governance:
+  title: "Promotion governance (snapshots, sign/verify, rollback)"
+  owner_role: "devops_release"
+  priority: "P1"
+  estimate_days: 2
+  raci_matrix:
+    responsible: "devops_release"
+    accountable: "devops_release_lead"
+    consulted: ["orchestrator_infra", "principal_engineer", "security_platform"]
+    informed: ["platform_eng", "qa_platform", "sre_platform"]
+  current_status: "COMPLETE"
+  completion_date: "2025-08-24"
+  acceptance_criteria:
+    - "Signed snapshots with retention policy"
+    - "Rollback rehearsal passes"
+  deliverables:
+    - "promotion_rules.mdc"
+    - "rollback_playbook.md"
+    - "snapshot_format.md"
+    - "snapshot_cli.py"
+    - "rollback_rehearsal.py"
+    - "README.md"
+  risk_refs: ["R-005"]
+```
+
+### T-07: Migration and Backfill Plan
+```yaml
+T-07_migration_backfill:
+  title: "Migration and backfill plan"
+  owner_role: "platform_eng"
+  priority: "P1"
+  estimate_days: 2
+  raci_matrix:
+    responsible: "platform_eng"
+    accountable: "platform_eng_lead"
+    consulted: ["orchestrator_infra", "devops_release", "qa_platform"]
+    informed: ["principal_engineer", "sre_platform"]
+  current_status: "COMPLETE"
+  completion_date: "2025-08-24"
+  acceptance_criteria:
+    - "Zero data loss in dry-run"
+    - "Rollback path documented"
+  deliverables:
+    - "migration_plan.md"
+    - "backfill_script.py"
+  risk_refs: ["B-001"]
+```
+
+### T-08: Test Strategy (Unit/Contract/E2E/Gates)
+```yaml
+T-08_test_strategy:
+  title: "Test strategy (unit/contract/e2e/gates)"
+  owner_role: "qa_platform"
+  priority: "P0"
+  estimate_days: 2
+  raci_matrix:
+    responsible: "qa_platform"
+    accountable: "qa_platform_lead"
+    consulted: ["platform_eng", "principal_engineer", "devops_release"]
+    informed: ["orchestrator_infra", "sre_platform"]
+  current_status: "COMPLETE"
+  completion_date: "2025-08-24"
+  acceptance_criteria:
+    - ">=80% coverage; gate checks green"
+  deliverables:
+    - "test_plan.md"
+    - "ci_checks.yaml"
+    - "run_checks.sh"
+    - "validate_sidecars.py"
+  risk_refs: ["B-002"]
+```
+
+### T-09: Access Control and Secrets for Metadata/Snapshots
+```yaml
+T-09_access_control:
+  title: "Access control and secrets for metadata/snapshots"
+  owner_role: "security_platform"
+  priority: "P1"
+  estimate_days: 1
+  raci_matrix:
+    responsible: "security_platform"
+    accountable: "security_platform_lead"
+    consulted: ["devops_release", "principal_engineer"]
+    informed: ["platform_eng", "orchestrator_infra", "qa_platform", "sre_platform"]
+  current_status: "COMPLETE"
+  completion_date: "2025-08-24"
+  acceptance_criteria:
+    - "Least-privilege policies enforced"
+  deliverables:
+    - "access_policies.md"
+    - "acl.json"
+  risk_refs: ["B-003"]
+```
+
+### T-10: Multi-Writer Hardening
+```yaml
+T-10_multi_writer_hardening:
+  title: "Multi-writer hardening"
+  owner_role: "orchestrator_infra"
+  priority: "P2"
+  estimate_days: 2
+  raci_matrix:
+    responsible: "orchestrator_infra"
+    accountable: "orchestrator_infra_lead"
+    consulted: ["platform_eng", "principal_engineer"]
+    informed: ["devops_release", "qa_platform", "sre_platform"]
+  current_status: "COMPLETE"
+  completion_date: "2025-08-24"
+  acceptance_criteria:
+    - "Concurrent writes detected and serialized"
+  deliverables:
+    - "lease_design.md"
+    - "concurrency_tests.yaml"
+    - "enhanced_index_writer.py"
+    - "test_concurrency.py"
+  risk_refs: ["B-004"]
+```
+
+### T-11: Telemetry/Observability for Drift and Promotions
+```yaml
+T-11_telemetry_observability:
+  title: "Telemetry/observability for drift and promotions"
+  owner_role: "sre_platform"
+  priority: "P1"
+  estimate_days: 2
+  raci_matrix:
+    responsible: "sre_platform"
+    accountable: "sre_platform_lead"
+    consulted: ["platform_eng", "devops_release", "principal_engineer"]
+    informed: ["orchestrator_infra", "qa_platform", "security_platform"]
+  current_status: "COMPLETE"
+  completion_date: "2025-08-24"
+  acceptance_criteria:
+    - "Drift detected within 5m; MTTR < 30m"
+  deliverables:
+    - "dashboards.mmd"
+    - "alerts.yaml"
+    - "audit_logs.md"
+  risk_refs: ["B-005"]
+```
+
+### T-12: Governance Fields, RACI, Estimates, Acceptance
+```yaml
+T-12_governance_fields:
+  title: "Governance fields, RACI, estimates, acceptance"
+  owner_role: "program_mgmt"
+  priority: "P0"
+  estimate_days: 1
+  raci_matrix:
+    responsible: "program_mgmt"
+    accountable: "program_mgmt_lead"
+    consulted: ["all_team_leads", "architect"]
+    informed: ["all_teams", "stakeholders"]
+  current_status: "IN_PROGRESS"
+  completion_date: "2025-08-24"
+  acceptance_criteria:
+    - "All tasks have owners, estimates, acceptance criteria"
+  deliverables:
+    - "owners_matrix.yaml"
+    - "acceptance_checklist.md"
+  risk_refs: ["R-006"]
+```
+
+## Framework Components RACI Matrix
+
+### Core Infrastructure Components
+```yaml
+core_infrastructure:
+  artifacts_index:
+    responsible: "orchestrator_infra"
+    accountable: "orchestrator_infra_lead"
+    consulted: ["platform_eng", "principal_engineer"]
+    informed: ["all_teams"]
+  
+  schema_management:
+    responsible: "platform_eng"
+    accountable: "platform_eng_lead"
+    consulted: ["principal_engineer", "architect"]
+    informed: ["all_teams"]
+  
+  routing_system:
+    responsible: "principal_engineer"
+    accountable: "principal_engineer"
+    consulted: ["platform_eng", "architect"]
+    informed: ["all_teams"]
+```
+
+### Operational Components
+```yaml
+operational_components:
+  promotion_system:
+    responsible: "devops_release"
+    accountable: "devops_release_lead"
+    consulted: ["orchestrator_infra", "security_platform"]
+    informed: ["all_teams"]
+  
+  observability_system:
+    responsible: "sre_platform"
+    accountable: "sre_platform_lead"
+    consulted: ["platform_eng", "devops_release"]
+    informed: ["all_teams"]
+  
+  security_framework:
+    responsible: "security_platform"
+    accountable: "security_platform_lead"
+    consulted: ["devops_release", "principal_engineer"]
+    informed: ["all_teams"]
+```
+
+### Quality and Testing Components
+```yaml
+quality_testing:
+  test_framework:
+    responsible: "qa_platform"
+    accountable: "qa_platform_lead"
+    consulted: ["platform_eng", "principal_engineer"]
+    informed: ["all_teams"]
+  
+  ci_cd_pipeline:
+    responsible: "devops_release"
+    accountable: "devops_release_lead"
+    consulted: ["qa_platform", "platform_eng"]
+    informed: ["all_teams"]
+```
+
+## Team Responsibilities and Escalation
+
+### Team Lead Responsibilities
+```yaml
+team_leads:
+  platform_eng_lead:
+    responsibilities:
+      - "Schema definition and management"
+      - "Hydration rules and precedence"
+      - "Migration and backfill planning"
+    escalation_path: "program_mgmt_lead"
+    backup: "principal_engineer"
+  
+  principal_engineer:
+    responsibilities:
+      - "Artifact routing and conflict resolution"
+      - "Framework contract definition"
+      - "Architecture decisions and guidance"
+    escalation_path: "program_mgmt_lead"
+    backup: "platform_eng_lead"
+  
+  orchestrator_infra_lead:
+    responsibilities:
+      - "Index management and hydration"
+      - "Multi-writer hardening"
+      - "Infrastructure scalability"
+    escalation_path: "program_mgmt_lead"
+    backup: "platform_eng_lead"
+  
+  devops_release_lead:
+    responsibilities:
+      - "Promotion governance and rollback"
+      - "CI/CD pipeline management"
+      - "Release coordination"
+    escalation_path: "program_mgmt_lead"
+    backup: "orchestrator_infra_lead"
+  
+  sre_platform_lead:
+    responsibilities:
+      - "Observability and monitoring"
+      - "Incident response and recovery"
+      - "Performance optimization"
+    escalation_path: "program_mgmt_lead"
+    backup: "orchestrator_infra_lead"
+  
+  qa_platform_lead:
+    responsibilities:
+      - "Test strategy and execution"
+      - "Quality assurance and validation"
+      - "Test automation and coverage"
+    escalation_path: "program_mgmt_lead"
+    backup: "platform_eng_lead"
+  
+  security_platform_lead:
+    responsibilities:
+      - "Access control and security policies"
+      - "Security compliance and auditing"
+      - "Threat detection and response"
+    escalation_path: "program_mgmt_lead"
+    backup: "principal_engineer"
+```
+
+### Escalation Matrix
+```yaml
+escalation_matrix:
+  level_1:
+    description: "Team level resolution"
+    timeframe: "0-4 hours"
+    participants: ["team_members", "team_lead"]
+  
+  level_2:
+    description: "Cross-team coordination"
+    timeframe: "4-8 hours"
+    participants: ["team_leads", "principal_engineer"]
+  
+  level_3:
+    description: "Program management involvement"
+    timeframe: "8-24 hours"
+    participants: ["program_mgmt_lead", "stakeholders"]
+  
+  level_4:
+    description: "Executive escalation"
+    timeframe: "24+ hours"
+    participants: ["executive_sponsor", "program_mgmt_lead"]
+```
+
+## Governance and Oversight
+
+### Program Management Oversight
+```yaml
+program_management:
+  responsibilities:
+    - "Overall framework governance and coordination"
+    - "Resource allocation and timeline management"
+    - "Risk management and mitigation"
+    - "Stakeholder communication and reporting"
+    - "Quality assurance and acceptance criteria"
+  
+  governance_activities:
+    - "Weekly progress reviews"
+    - "Monthly milestone assessments"
+    - "Quarterly framework health checks"
+    - "Annual framework evolution planning"
+  
+  success_metrics:
+    - "All tasks completed within estimates"
+    - "100% acceptance criteria met"
+    - "Zero critical risks unmitigated"
+    - "Stakeholder satisfaction > 90%"
+```
+
+### Framework Health Monitoring
+```yaml
+framework_health:
+  metrics:
+    - "Task completion rate"
+    - "Acceptance criteria pass rate"
+    - "Risk mitigation progress"
+    - "Team velocity and capacity"
+    - "Quality metrics and test coverage"
+  
+  health_indicators:
+    green: "All tasks on track, risks mitigated"
+    yellow: "Some delays or risks identified"
+    red: "Critical issues or major delays"
+  
+  review_frequency:
+    - "Daily": Team standups and progress updates
+    - "Weekly": Team lead coordination meetings
+    - "Monthly": Program management reviews
+    - "Quarterly": Stakeholder presentations"
+```
+
+---
+
+**T-12 Owners Matrix** provides comprehensive governance structure with clear RACI definitions, team responsibilities, and escalation procedures for all framework components and tasks.

@@ -1,0 +1,367 @@
+# Concurrency Tests for Multi-Writer Hardening - T-10
+
+## Test Overview
+Comprehensive test suite to validate concurrent write detection, serialization, and conflict resolution for the artifacts index.
+
+## Test Categories
+
+### 1. Basic Concurrency Tests
+
+#### Test: Single Writer Isolation
+```yaml
+test_id: "CONC-001"
+name: "Single Writer Isolation"
+description: "Verify single writer can acquire lease and write without conflicts"
+setup:
+  - clear_index: true
+  - create_test_artifacts: 3
+steps:
+  - action: "acquire_lease"
+    writer_id: "test_writer_1"
+    duration: 60
+    expected: "SUCCESS"
+  - action: "write_artifact"
+    lease_id: "{{lease_id}}"
+    artifact: "test_artifact_1"
+    expected: "SUCCESS"
+  - action: "release_lease"
+    lease_id: "{{lease_id}}"
+    expected: "SUCCESS"
+validation:
+  - check_index_consistency: true
+  - verify_artifact_exists: "test_artifact_1"
+  - verify_lease_released: true
+```
+
+#### Test: Multiple Writers Sequential
+```yaml
+test_id: "CONC-002"
+name: "Multiple Writers Sequential"
+description: "Verify multiple writers can write sequentially without conflicts"
+setup:
+  - clear_index: true
+  - create_test_artifacts: 2
+steps:
+  - action: "acquire_lease"
+    writer_id: "test_writer_1"
+    duration: 30
+    expected: "SUCCESS"
+  - action: "write_artifact"
+    lease_id: "{{lease_id_1}}"
+    artifact: "artifact_from_writer_1"
+    expected: "SUCCESS"
+  - action: "release_lease"
+    lease_id: "{{lease_id_1}}"
+    expected: "SUCCESS"
+  - action: "acquire_lease"
+    writer_id: "test_writer_2"
+    duration: 30
+    expected: "SUCCESS"
+  - action: "write_artifact"
+    lease_id: "{{lease_id_2}}"
+    artifact: "artifact_from_writer_2"
+    expected: "SUCCESS"
+  - action: "release_lease"
+    lease_id: "{{lease_id_2}}"
+    expected: "SUCCESS"
+validation:
+  - check_index_consistency: true
+  - verify_artifact_exists: "artifact_from_writer_1"
+  - verify_artifact_exists: "artifact_from_writer_2"
+  - verify_no_conflicts: true
+```
+
+### 2. Concurrent Write Detection Tests
+
+#### Test: Concurrent Write Detection
+```yaml
+test_id: "CONC-003"
+name: "Concurrent Write Detection"
+description: "Verify system detects when multiple writers attempt simultaneous access"
+setup:
+  - clear_index: true
+  - create_test_artifacts: 1
+steps:
+  - action: "acquire_lease"
+    writer_id: "test_writer_1"
+    duration: 60
+    expected: "SUCCESS"
+  - action: "acquire_lease"
+    writer_id: "test_writer_2"
+    duration: 60
+    expected: "BLOCKED"
+    timeout: 5
+  - action: "write_artifact"
+    lease_id: "{{lease_id_1}}"
+    artifact: "artifact_from_writer_1"
+    expected: "SUCCESS"
+  - action: "release_lease"
+    lease_id: "{{lease_id_1}}"
+    expected: "SUCCESS"
+validation:
+  - verify_concurrent_access_detected: true
+  - verify_second_writer_blocked: true
+  - verify_first_writer_succeeded: true
+  - check_conflict_log: true
+```
+
+#### Test: Lease Expiration Handling
+```yaml
+test_id: "CONC-004"
+name: "Lease Expiration Handling"
+description: "Verify expired leases are properly handled and cleaned up"
+setup:
+  - clear_index: true
+  - create_test_artifacts: 1
+steps:
+  - action: "acquire_lease"
+    writer_id: "test_writer_1"
+    duration: 2
+    expected: "SUCCESS"
+  - action: "wait"
+    duration: 3
+    expected: "SUCCESS"
+  - action: "write_artifact"
+    lease_id: "{{lease_id_1}}"
+    artifact: "artifact_after_expiry"
+    expected: "LEASE_EXPIRED"
+  - action: "acquire_lease"
+    writer_id: "test_writer_2"
+    duration: 30
+    expected: "SUCCESS"
+validation:
+  - verify_lease_expired: "{{lease_id_1}}"
+  - verify_expired_lease_cleaned: true
+  - verify_new_lease_acquired: true
+  - check_lease_cleanup_log: true
+```
+
+### 3. Conflict Resolution Tests
+
+#### Test: Write-Write Conflict Detection
+```yaml
+test_id: "CONC-005"
+name: "Write-Write Conflict Detection"
+description: "Verify system detects conflicts when writers modify same artifacts"
+setup:
+  - clear_index: true
+  - create_test_artifacts: 1
+steps:
+  - action: "acquire_lease"
+    writer_id: "test_writer_1"
+    duration: 60
+    expected: "SUCCESS"
+  - action: "write_artifact"
+    lease_id: "{{lease_id_1}}"
+    artifact: "conflict_artifact_v1"
+    expected: "SUCCESS"
+  - action: "release_lease"
+    lease_id: "{{lease_id_1}}"
+    expected: "SUCCESS"
+  - action: "acquire_lease"
+    writer_id: "test_writer_2"
+    duration: 60
+    expected: "SUCCESS"
+  - action: "write_artifact"
+    lease_id: "{{lease_id_2}}"
+    artifact: "conflict_artifact_v2"
+    expected: "CONFLICT_DETECTED"
+validation:
+  - verify_conflict_detected: true
+  - verify_conflict_details_logged: true
+  - verify_conflict_resolution_required: true
+  - check_conflict_report: true
+```
+
+#### Test: Automatic Conflict Resolution
+```yaml
+test_id: "CONC-006"
+name: "Automatic Conflict Resolution"
+description: "Verify system can automatically resolve compatible conflicts"
+setup:
+  - clear_index: true
+  - create_test_artifacts: 2
+steps:
+  - action: "acquire_lease"
+    writer_id: "test_writer_1"
+    duration: 60
+    expected: "SUCCESS"
+  - action: "write_artifact"
+    lease_id: "{{lease_id_1}}"
+    artifact: "compatible_artifact_1"
+    expected: "SUCCESS"
+  - action: "release_lease"
+    lease_id: "{{lease_id_1}}"
+    expected: "SUCCESS"
+  - action: "acquire_lease"
+    writer_id: "test_writer_2"
+    duration: 60
+    expected: "SUCCESS"
+  - action: "write_artifact"
+    lease_id: "{{lease_id_2}}"
+    artifact: "compatible_artifact_2"
+    expected: "SUCCESS"
+  - action: "release_lease"
+    lease_id: "{{lease_id_2}}"
+    expected: "SUCCESS"
+validation:
+  - verify_conflicts_auto_resolved: true
+  - verify_both_artifacts_present: true
+  - verify_index_consistency: true
+  - check_auto_resolution_log: true
+```
+
+### 4. Performance and Load Tests
+
+#### Test: High Concurrency Load
+```yaml
+test_id: "CONC-007"
+name: "High Concurrency Load"
+description: "Verify system handles high concurrent load without performance degradation"
+setup:
+  - clear_index: true
+  - create_test_artifacts: 10
+parameters:
+  concurrent_writers: 5
+  operations_per_writer: 20
+  lease_duration: 30
+steps:
+  - action: "start_concurrent_writers"
+    count: "{{concurrent_writers}}"
+    operations: "{{operations_per_writer}}"
+    expected: "SUCCESS"
+  - action: "wait_for_completion"
+    timeout: 120
+    expected: "SUCCESS"
+validation:
+  - verify_all_operations_completed: true
+  - verify_performance_metrics_within_limits: true
+  - verify_no_data_corruption: true
+  - check_performance_report: true
+performance_metrics:
+  - max_write_latency: "< 100ms"
+  - average_write_latency: "< 50ms"
+  - throughput: "> 100 ops/sec"
+  - error_rate: "< 1%"
+```
+
+#### Test: Long-Running Operations
+```yaml
+test_id: "CONC-008"
+name: "Long-Running Operations"
+description: "Verify system handles long-running operations with lease renewal"
+setup:
+  - clear_index: true
+  - create_test_artifacts: 5
+steps:
+  - action: "acquire_lease"
+    writer_id: "long_running_writer"
+    duration: 300
+    expected: "SUCCESS"
+  - action: "start_long_operation"
+    duration: 180
+    lease_renewal: true
+    expected: "SUCCESS"
+  - action: "write_artifact"
+    lease_id: "{{lease_id}}"
+    artifact: "long_running_result"
+    expected: "SUCCESS"
+  - action: "release_lease"
+    lease_id: "{{lease_id}}"
+    expected: "SUCCESS"
+validation:
+  - verify_lease_renewed: true
+  - verify_operation_completed: true
+  - verify_no_lease_expiration: true
+  - check_lease_renewal_log: true
+```
+
+### 5. Recovery and Resilience Tests
+
+#### Test: Crash Recovery
+```yaml
+test_id: "CONC-009"
+name: "Crash Recovery"
+description: "Verify system recovers properly from crashes during concurrent operations"
+setup:
+  - clear_index: true
+  - create_test_artifacts: 3
+steps:
+  - action: "acquire_lease"
+    writer_id: "crash_test_writer"
+    duration: 60
+    expected: "SUCCESS"
+  - action: "write_artifact"
+    lease_id: "{{lease_id}}"
+    artifact: "artifact_before_crash"
+    expected: "SUCCESS"
+  - action: "simulate_crash"
+    expected: "SUCCESS"
+  - action: "restart_system"
+    expected: "SUCCESS"
+  - action: "verify_recovery"
+    expected: "SUCCESS"
+validation:
+  - verify_system_recovered: true
+  - verify_data_integrity: true
+  - verify_lease_cleanup: true
+  - check_recovery_log: true
+```
+
+#### Test: Deadlock Detection
+```yaml
+test_id: "CONC-010"
+name: "Deadlock Detection"
+description: "Verify system detects and resolves deadlock situations"
+setup:
+  - clear_index: true
+  - create_test_artifacts: 2
+steps:
+  - action: "create_deadlock_scenario"
+    writers: 3
+    resources: 2
+    expected: "SUCCESS"
+  - action: "wait_for_deadlock_detection"
+    timeout: 30
+    expected: "SUCCESS"
+  - action: "resolve_deadlock"
+    expected: "SUCCESS"
+validation:
+  - verify_deadlock_detected: true
+  - verify_deadlock_resolved: true
+  - verify_system_operational: true
+  - check_deadlock_resolution_log: true
+```
+
+## Test Execution
+
+### Prerequisites
+- Multi-writer hardening implementation deployed
+- Test environment with isolated storage
+- Performance monitoring tools available
+- Log aggregation and analysis tools
+
+### Execution Order
+1. **Basic Tests** (CONC-001 to CONC-002)
+2. **Detection Tests** (CONC-003 to CONC-004)
+3. **Resolution Tests** (CONC-005 to CONC-006)
+4. **Performance Tests** (CONC-007 to CONC-008)
+5. **Recovery Tests** (CONC-009 to CONC-010)
+
+### Success Criteria
+- **All tests pass** with expected results
+- **Performance metrics** within specified limits
+- **No data corruption** or loss
+- **Proper conflict detection** and resolution
+- **System recovery** from all failure scenarios
+
+### Reporting
+- **Test results summary** with pass/fail status
+- **Performance metrics** and benchmarks
+- **Conflict detection statistics** and patterns
+- **Recovery time measurements** and analysis
+- **Recommendations** for optimization
+
+---
+
+**T-10 Concurrency Tests** provide comprehensive validation of the multi-writer hardening implementation, ensuring that concurrent writes are properly detected, serialized, and resolved while maintaining system performance and data integrity.

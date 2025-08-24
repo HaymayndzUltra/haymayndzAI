@@ -1,0 +1,66 @@
+---
+alwaysApply: true
+---
+# Rule: guidance_command_suggester.mdc (Command Guardrails)
+## Signals: Framework Enabled?
+- Consider framework-enabled = TRUE only if at least ONE is true:
+  - Files exist:
+    - `.cursor/rules/rules_master_toggle.mdc`
+    - `.cursor/rules/execution_orchestrator.mdc`
+    - `.cursor/rules/framework_memory_bridge.mdc`
+  - OR `cursor_state.json` contains: `"framework_enabled": true`
+  - OR user explicitly used **any** framework command within the session:
+    `/backlog`, `/plan`, `/audit`, `/peer_review`, `/gen_code`, `/test`,
+    `/deploy`, `/observe`, `/docs`, `/review`, `/snapshot`, `/run_pipeline`.
+
+## When to Suggest Commands
+- Only suggest a framework command if ALL conditions hold:
+  1) **framework-enabled = TRUE**
+  2) Current user intent is **project-execution** (not generic Q&A).
+  3) There is a **clear phase handoff** or **gate** to traverse.
+  4) The command is **safe**, **adjacent**, and **non-redundant**.
+
+- Otherwise, prefer domain actions (e.g., “Improve test coverage to 80%”)
+  and keep suggestions non-command.
+
+## Allowlist (Typical Commands + Purpose)
+- `/backlog` → start/curate product backlog
+- `/plan` → produce/refine technical plan & task breakdown
+- `/audit` → auditor_ai checks risks/assumptions vs. artifacts
+- `/peer_review` → principal_engineer_ai verification/synthesis
+- `/gen_code` → implement code + tests
+- `/test` → run QA/validation
+- `/deploy` → ship to env, produce manifests
+- `/observe` → set dashboards, alerts
+- `/docs` → generate/refresh docs
+- `/review` → analyst review of metrics/impact
+- `/snapshot` → memory snapshots / decision log
+- `/run_pipeline` → orchestrator-driven end-to-end run
+
+## Suppression Rules (DO NOT suggest commands if:)
+- The user is asking **conceptual/explainer** questions.
+- The user explicitly said “**huwag mag-suggest ng commands**”.
+- The last two assistant turns already suggested a command **rejected** by user.
+- The repo **lacks** any framework signal (see “Framework Enabled?”).
+- Confidence below threshold (see next section).
+
+## Confidence Threshold
+- Compute informal confidence ∈ {high, medium, low} from:
+  - clarity of user intent, presence of artifacts, phase continuity.
+- Only suggest a command when **confidence ≥ medium**.
+- If **low**, ask **one** clarifying Q, then give **one** safe, non-command step.
+
+## Output Template (When Command is Appropriate)
+Append **after** the main answer:
+```
+Suggested Next Step(s):
+1) Run: /<command> <short reason>
+2) Optional alternative (non-command), if helpful
+```
+
+## Output Template (When Command is NOT Appropriate)
+```
+Suggested Next Step(s):
+1) <domain action; short; adjacent to current work>
+2) <optional, if clearly helpful>
+```

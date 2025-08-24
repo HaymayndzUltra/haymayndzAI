@@ -1,0 +1,454 @@
+{
+  "version": "1.0",
+  "framework": "fwk-001-cursor-rules",
+  "owner": "security_platform",
+  "priority": "P1",
+  "risk_reference": "B-003",
+  "last_updated": "2025-08-24T00:00:00Z",
+  "description": "Access Control List configuration for fwk-001-cursor-rules framework",
+  
+  "metadata": {
+    "schema_version": "2025.1.0",
+    "compliance_standards": [
+      "OWASP-Top-10",
+      "NIST-CSF",
+      "ISO-27001",
+      "SOC-2"
+    ],
+    "encryption_standards": [
+      "AES-256-GCM",
+      "RSA-4096",
+      "SHA-256",
+      "Argon2id"
+    ]
+  },
+  
+  "roles": {
+    "framework_developer": {
+      "description": "Framework developers with artifact creation and modification privileges",
+      "permissions": {
+        "metadata": {
+          "read": ["own_artifacts", "public_artifacts"],
+          "write": ["own_artifacts"],
+          "delete": ["own_artifacts"],
+          "admin": false
+        },
+        "snapshots": {
+          "read": ["public_snapshots"],
+          "write": false,
+          "delete": false,
+          "admin": false
+        },
+        "security": {
+          "read": ["basic_policies"],
+          "write": false,
+          "delete": false,
+          "admin": false
+        }
+      },
+      "authentication": {
+        "mfa_required": false,
+        "session_timeout": 3600,
+        "max_failed_attempts": 5
+      }
+    },
+    
+    "qa_engineer": {
+      "description": "Quality assurance engineers with read access to all artifacts and snapshots",
+      "permissions": {
+        "metadata": {
+          "read": ["all_artifacts"],
+          "write": false,
+          "delete": false,
+          "admin": false
+        },
+        "snapshots": {
+          "read": ["all_snapshots"],
+          "write": false,
+          "delete": false,
+          "admin": false
+        },
+        "security": {
+          "read": ["basic_policies", "test_results"],
+          "write": false,
+          "delete": false,
+          "admin": false
+        }
+      },
+      "authentication": {
+        "mfa_required": false,
+        "session_timeout": 7200,
+        "max_failed_attempts": 5
+      }
+    },
+    
+    "devops_engineer": {
+      "description": "DevOps engineers with promotion and deployment privileges",
+      "permissions": {
+        "metadata": {
+          "read": ["all_artifacts"],
+          "write": false,
+          "delete": false,
+          "admin": false
+        },
+        "snapshots": {
+          "read": ["all_snapshots"],
+          "write": ["create_promotion", "create_rollback"],
+          "delete": false,
+          "admin": false
+        },
+        "security": {
+          "read": ["deployment_policies", "infrastructure_security"],
+          "write": ["deployment_configs"],
+          "delete": false,
+          "admin": false
+        }
+      },
+      "authentication": {
+        "mfa_required": true,
+        "session_timeout": 1800,
+        "max_failed_attempts": 3
+      }
+    },
+    
+    "security_analyst": {
+      "description": "Security analysts with audit and compliance privileges",
+      "permissions": {
+        "metadata": {
+          "read": ["all_artifacts", "security_logs"],
+          "write": false,
+          "delete": false,
+          "admin": ["audit_access"]
+        },
+        "snapshots": {
+          "read": ["all_snapshots", "audit_logs"],
+          "write": false,
+          "delete": false,
+          "admin": ["audit_access"]
+        },
+        "security": {
+          "read": ["all_policies", "security_logs", "audit_reports"],
+          "write": ["security_reports"],
+          "delete": false,
+          "admin": ["audit_access", "security_monitoring"]
+        }
+      },
+      "authentication": {
+        "mfa_required": true,
+        "session_timeout": 900,
+        "max_failed_attempts": 3
+      }
+    },
+    
+    "framework_admin": {
+      "description": "Framework administrators with full access privileges",
+      "permissions": {
+        "metadata": {
+          "read": ["all_artifacts", "all_logs"],
+          "write": ["all_artifacts"],
+          "delete": ["all_artifacts"],
+          "admin": ["full_access"]
+        },
+        "snapshots": {
+          "read": ["all_snapshots", "all_logs"],
+          "write": ["all_operations"],
+          "delete": ["all_snapshots"],
+          "admin": ["full_access"]
+        },
+        "security": {
+          "read": ["all_policies", "all_logs", "all_reports"],
+          "write": ["all_policies", "all_configs"],
+          "delete": ["all_policies", "all_configs"],
+          "admin": ["full_access", "system_configuration"]
+        }
+      },
+      "authentication": {
+        "mfa_required": true,
+        "session_timeout": 600,
+        "max_failed_attempts": 2
+      }
+    },
+    
+    "system_process": {
+      "description": "System processes with limited scope access",
+      "permissions": {
+        "metadata": {
+          "read": ["own_scope"],
+          "write": ["own_scope"],
+          "delete": ["own_scope"],
+          "admin": false
+        },
+        "snapshots": {
+          "read": ["own_scope"],
+          "write": ["own_scope"],
+          "delete": false,
+          "admin": false
+        },
+        "security": {
+          "read": ["own_scope"],
+          "write": false,
+          "delete": false,
+          "admin": false
+        }
+      },
+      "authentication": {
+        "mfa_required": false,
+        "session_timeout": 86400,
+        "max_failed_attempts": 10
+      }
+    }
+  },
+  
+  "resources": {
+    "artifacts": {
+      "public": {
+        "path_pattern": "examples/*.md",
+        "access_level": "public",
+        "encryption": "none",
+        "audit_logging": true
+      },
+      "internal": {
+        "path_pattern": "schemas/*.json",
+        "access_level": "internal",
+        "encryption": "at_rest",
+        "audit_logging": true
+      },
+      "sensitive": {
+        "path_pattern": "security/*.json",
+        "access_level": "restricted",
+        "encryption": "at_rest_and_transit",
+        "audit_logging": true
+      },
+      "critical": {
+        "path_pattern": "contracts/*.mdc",
+        "access_level": "admin_only",
+        "encryption": "at_rest_and_transit",
+        "audit_logging": true,
+        "approval_workflow": true
+      }
+    },
+    
+    "snapshots": {
+      "promotion": {
+        "path_pattern": "promotion/snapshots/*.json",
+        "access_level": "devops_engineer",
+        "encryption": "at_rest",
+        "audit_logging": true,
+        "digital_signature": true
+      },
+      "rollback": {
+        "path_pattern": "promotion/rollback/*.json",
+        "access_level": "devops_engineer",
+        "encryption": "at_rest",
+        "audit_logging": true,
+        "approval_workflow": true
+      },
+      "audit": {
+        "path_pattern": "promotion/audit/*.json",
+        "access_level": "security_analyst",
+        "encryption": "at_rest",
+        "audit_logging": true,
+        "immutable": true
+      }
+    },
+    
+    "metadata": {
+      "artifact_index": {
+        "path_pattern": "artifacts_index.json",
+        "access_level": "internal",
+        "encryption": "at_rest",
+        "audit_logging": true,
+        "backup_required": true
+      },
+      "routing_config": {
+        "path_pattern": "routing/*.json",
+        "access_level": "internal",
+        "encryption": "at_rest",
+        "audit_logging": true
+      },
+      "hydration_rules": {
+        "path_pattern": "hydration/*.mdc",
+        "access_level": "internal",
+        "encryption": "at_rest",
+        "audit_logging": true
+      }
+    }
+  },
+  
+  "access_control": {
+    "authentication": {
+      "methods": ["username_password", "api_key", "oauth2", "saml"],
+      "mfa_methods": ["totp", "sms", "hardware_token"],
+      "session_management": {
+        "max_concurrent_sessions": 3,
+        "session_timeout": 3600,
+        "idle_timeout": 900
+      }
+    },
+    
+    "authorization": {
+      "rbac_enabled": true,
+      "abac_enabled": true,
+      "dynamic_policies": true,
+      "permission_inheritance": true
+    },
+    
+    "audit": {
+      "enabled": true,
+      "log_level": "INFO",
+      "retention_period": {
+        "security_logs": "7_years",
+        "access_logs": "3_years",
+        "audit_logs": "permanent"
+      },
+      "storage": {
+        "encrypted": true,
+        "integrity_protection": true,
+        "backup_required": true
+      }
+    }
+  },
+  
+  "secrets_management": {
+    "encryption": {
+      "algorithm": "AES-256-GCM",
+      "key_derivation": "Argon2id",
+      "key_rotation": "90_days"
+    },
+    
+    "storage": {
+      "encrypted_at_rest": true,
+      "encrypted_in_transit": true,
+      "key_management": "hardware_security_module"
+    },
+    
+    "access_control": {
+      "role_based": true,
+      "time_limited": true,
+      "audit_logging": true
+    },
+    
+    "rotation": {
+      "automatic": true,
+      "schedule": "90_days",
+      "emergency_rotation": true
+    }
+  },
+  
+  "incident_response": {
+    "detection": {
+      "automated_monitoring": true,
+      "manual_reporting": true,
+      "threshold_alerts": true
+    },
+    
+    "response": {
+      "immediate_containment": true,
+      "investigation_procedures": true,
+      "recovery_plans": true
+    },
+    
+    "notification": {
+      "security_team": "immediate",
+      "stakeholders": "within_1_hour",
+      "regulatory": "within_72_hours"
+    }
+  },
+  
+  "compliance": {
+    "standards": {
+      "gdpr": {
+        "enabled": true,
+        "data_protection": true,
+        "privacy_controls": true
+      },
+      "soc2": {
+        "enabled": true,
+        "security": true,
+        "availability": true,
+        "confidentiality": true
+      },
+      "iso27001": {
+        "enabled": true,
+        "information_security": true,
+        "risk_management": true
+      }
+    },
+    
+    "monitoring": {
+      "quarterly_reviews": true,
+      "annual_audits": true,
+      "penetration_testing": true,
+      "vulnerability_assessments": true
+    }
+  },
+  
+  "monitoring": {
+    "real_time": {
+      "access_patterns": true,
+      "failed_attempts": true,
+      "privilege_escalation": true,
+      "data_exfiltration": true
+    },
+    
+    "alerting": {
+      "immediate_alerts": true,
+      "daily_reports": true,
+      "weekly_reviews": true,
+      "monthly_audits": true
+    },
+    
+    "metrics": {
+      "policy_coverage": true,
+      "access_violations": true,
+      "incident_response_times": true,
+      "compliance_scores": true
+    }
+  },
+  
+  "policies": {
+    "least_privilege": {
+      "enabled": true,
+      "enforcement": "strict",
+      "regular_reviews": true
+    },
+    
+    "defense_in_depth": {
+      "enabled": true,
+      "layers": ["network", "application", "data", "physical"],
+      "fail_secure": true
+    },
+    
+    "zero_trust": {
+      "enabled": true,
+      "continuous_verification": true,
+      "micro_segmentation": true
+    },
+    
+    "audit_compliance": {
+      "enabled": true,
+      "all_access_logged": true,
+      "regular_assessments": true
+    }
+  },
+  
+  "maintenance": {
+    "policy_updates": {
+      "annual_review": true,
+      "quarterly_updates": true,
+      "emergency_updates": true
+    },
+    
+    "continuous_improvement": {
+      "lessons_learned": true,
+      "best_practices": true,
+      "technology_updates": true
+    },
+    
+    "training": {
+      "security_awareness": true,
+      "role_specific_training": true,
+      "regular_updates": true
+    }
+  }
+}

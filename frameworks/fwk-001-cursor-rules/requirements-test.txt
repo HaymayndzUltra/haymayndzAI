@@ -1,0 +1,45 @@
+# Test Dependencies — T-08 (Test Strategy Implementation)
+# Framework: fwk-001-cursor-rules
+# Owner: qa_platform
+# Priority: P0
+
+# Core Testing Framework
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
+pytest-benchmark>=4.0.0
+pytest-xdist>=3.0.0
+
+# Schema Validation
+jsonschema>=4.17.0
+pyyaml>=6.0
+
+# Code Quality & Security
+bandit>=1.7.0
+safety>=2.3.0
+black>=23.0.0
+isort>=5.12.0
+flake8>=6.0.0
+mypy>=1.0.0
+
+# Test Utilities
+factory-boy>=3.2.0
+faker>=18.0.0
+responses>=0.23.0
+freezegun>=1.2.0
+
+# Coverage & Reporting
+coverage>=7.0.0
+pytest-html>=3.1.0
+pytest-json-report>=1.5.0
+
+# Performance Testing
+pytest-benchmark>=4.0.0
+memory-profiler>=0.60.0
+
+# Mocking & Stubbing
+httpx>=0.24.0
+requests-mock>=1.10.0
+
+# Documentation Testing
+doctest-ignore-unicode>=0.1.2
