@@ -815,3 +815,14 @@
 - Expected role: rules_master_toggle
 - Route target OK: True
 - No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /status
+- Timestamp (UTC): 2025-08-24T12:06:19+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: []
+- Expected role: execution_orchestrator
+- Route target OK: True
+- No routing drift: True
