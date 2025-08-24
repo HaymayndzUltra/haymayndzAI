@@ -19,6 +19,9 @@ MDC = os.path.join(REPO, "frameworks", "fwk-001-cursor-rules", "system-prompt", 
 MDC_FALLBACK = os.path.join(REPO, "frameworks", "fwk-001-cursor-rules", "DOCS", "harvested", "selection_20250824_090835", "fwk-001-cursor-rules", "system-prompt", "rules_master_toggle.mdc")
 OVR  = os.path.join(REPO, "frameworks", "fwk-001-cursor-rules", "DOCS", "changes", "routing_override.yaml")
 
+TOOLS = os.path.join(REPO, "frameworks", "fwk-001-cursor-rules", "tools")
+EXAMPLES = os.path.join(REPO, "frameworks", "fwk-001-cursor-rules", "examples")
+
 
 def _mdc_path() -> str:
     if os.path.isfile(MDC):
@@ -97,6 +100,32 @@ def resolve(trigger: str) -> Dict[str, Any]:
     return {"ok": True, "trigger": trigger, "role": role, **eff}
 
 
+def _maybe_inject_persona(agent: str) -> None:
+    if os.environ.get("JIT_PERSONA", "off").lower() != "on":
+        return
+    # Build index if missing; best-effort only
+    index = os.path.join(TOOLS, 'rule_index.json')
+    try:
+        if not os.path.isfile(index):
+            os.system(f"python3 {os.path.join(TOOLS, 'rules_indexer.py')} > /dev/null 2>&1 || true")
+        os.system(f"python3 {os.path.join(TOOLS, 'jit_persona_orchestrator.py')} {agent} > /dev/null 2>&1 || true")
+        # Write tiny summary near examples for easy inspection (read-only log)
+        payload = os.path.join(TOOLS, 'persona_payload.json')
+        if os.path.isfile(payload):
+            with open(payload, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            summary = {
+                'agent': data.get('persona', {}).get('agent'),
+                'intent': data.get('persona', {}).get('intent'),
+                'source_rule': data.get('persona', {}).get('source_rule'),
+            }
+            with open(os.path.join(EXAMPLES, 'persona_injection_summary.router.json'), 'w', encoding='utf-8') as f:
+                json.dump(summary, f, indent=2)
+    except Exception:
+        # Fail silent: router remains deterministic
+        pass
+
+
 def print_status() -> None:
     eff = build_effective()
     roles = eff["roles"]
@@ -118,7 +147,10 @@ def main() -> int:
     if cmd == "route":
         if len(sys.argv) < 3:
             print("ERR: missing trigger, e.g. /plan", file=sys.stderr); return 2
-        print(json.dumps(resolve(sys.argv[2]), indent=2)); return 0
+        res = resolve(sys.argv[2])
+        if res.get("ok"):
+            _maybe_inject_persona(agent=res.get("role", "codegen_ai"))
+        print(json.dumps(res, indent=2)); return 0
     print(f"ERR: unknown cmd {cmd}", file=sys.stderr); return 2
 
 
