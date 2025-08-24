@@ -1,0 +1,25 @@
+{
+  "component": "routing_progressive_monitor",
+  "scope": "limited:/review",
+  "metrics": {
+    "timestamp_utc": "2025-08-24T02:27:35+00:00",
+    "progressive_mode": true,
+    "allowlist_triggers": [
+      "/route",
+      "/status",
+      "/health",
+      "/observe",
+      "/alert",
+      "/benchmark",
+      "/analyze",
+      "/review"
+    ],
+    "trigger": "/review",
+    "expected_role": "analyst_ai",
+    "route_target_ok": true,
+    "role_enabled_ok": true,
+    "no_routing_drift": true
+  },
+  "alerts": [],
+  "status": "PASS"
+}

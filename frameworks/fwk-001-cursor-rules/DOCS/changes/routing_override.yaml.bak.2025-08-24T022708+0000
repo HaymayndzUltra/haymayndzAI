@@ -10,5 +10,4 @@ overrides:
   - /alert
   - /benchmark
   - /analyze
-  - /review
 notes: Dry-run only. Progressive OFF.

@@ -264,7 +264,8 @@
       "/observe",
       "/alert",
       "/benchmark",
-      "/analyze"
+      "/analyze",
+      "/review"
     ]
   }
 }
