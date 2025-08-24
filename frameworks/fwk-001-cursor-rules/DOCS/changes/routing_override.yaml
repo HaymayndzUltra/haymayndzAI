@@ -1,4 +1,4 @@
-progressive_mode: true
+progressive_mode: false
 overrides:
   command_routing: {}
   roles: {}
