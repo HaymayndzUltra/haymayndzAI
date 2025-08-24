@@ -252,21 +252,5 @@
     "/threat_model": "security_ai",
     "/compliance_check": "security_ai",
     "/planner_mode": "planner_moderator_ai"
-  },
-  "progressive_mode": true,
-  "overrides": {
-    "command_routing": {},
-    "roles": {},
-    "allowlist_triggers": [
-      "/route",
-      "/status",
-      "/health",
-      "/observe",
-      "/alert",
-      "/benchmark",
-      "/analyze",
-      "/review",
-      "/validate_docs"
-    ]
   }
 }
