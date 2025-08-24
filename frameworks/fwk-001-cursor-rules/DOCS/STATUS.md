@@ -9,6 +9,10 @@ Current
 - Canonical policies: frameworks/fwk-001-cursor-rules/system-prompt/*
 - Gates: BLOCK semantics per execution_orchestrator.mdc
 - Examples present for all required artifacts
+- Routing updated: `/toggle` → `rules_master_toggle` in routing matrix
+- Progressive mode: OFF (dry-run; shadow-only overrides)
+- Progressive ON (limited): /route only via DOCS/changes/routing_override.yaml (rollback: use .bak)
+‑ Progressive ON (limited): ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs'] via DOCS/changes/routing_override.yaml (rollback: use .bak)
 
 Open items (project-specific)
 - Fill project goals and constraints into role INPUT contracts

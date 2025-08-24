@@ -1,0 +1,407 @@
+%%{init: { "flowchart": { "defaultRenderer": "elk" }}}%%
+flowchart LR
+
+%% ------------------- MEMORY -------------------
+subgraph MEM["Knowledge / Memory Bridge"]
+  direction TB
+  M1@{ shape: rect, label: "memory_ai" }
+  M2@{ shape: rect, label: "framework_memory_bridge" }
+end
+
+%% ------------------- ORCHESTRATOR -------------------
+subgraph ORCH["Orchestrator / Routing"]
+  direction TB
+  OR1@{ shape: rect, label: "rules_master_toggle" }
+  OR2@{ shape: rect, label: "execution_orchestrator" }
+  OR3@{ shape: rect, label: "roles_status.json" }
+  OR4@{ shape: rect, label: "routing_matrix.json" }
+  OR5@{ shape: rect, label: "workflow_state.json" }
+  OR6@{ shape: rect, label: "gate_results.json" }
+  OR7@{ shape: rect, label: "handoff_log.json" }
+  EM1@{ shape: rect, label: "AI_ENFORCEMENT_MODE=solo→WARN" }
+  EM2@{ shape: rect, label: "AI_ENFORCEMENT_MODE=team→BLOCK" }
+end
+
+%% ------------------- INPUTS -------------------
+subgraph INP["Inputs"]
+  direction TB
+  I1@{ shape: rect, label: "product_backlog.yaml" }
+  I2@{ shape: rect, label: "Action_Plan.md" }
+end
+
+%% ------------------- PLANNING -------------------
+subgraph PLAN["Planning & Design"]
+  direction TB
+  P1@{ shape: rect, label: "planning_ai" }
+  P2@{ shape: rect, label: "technical_plan.md" }
+  P3@{ shape: rect, label: "task_breakdown.yaml" }
+  P4@{ shape: rect, label: "architecture_diagram.mermaid" }
+  P5@{ shape: rect, label: "acceptance_criteria.json" }
+end
+
+%% ------------------- AUDIT -------------------
+subgraph AUDIT["Audit/Validate/Synthesize Gates"]
+  direction TB
+  A1@{ shape: rect, label: "auditor_ai" }
+  A2@{ shape: rect, label: "Summary_Report.md" }
+  A3@{ shape: rect, label: "principal_engineer_ai" }
+  A4@{ shape: rect, label: "Validation_Report.md" }
+  A5@{ shape: rect, label: "Final_Implementation_Plan.md" }
+end
+
+%% ------------------- GOVERNANCE -------------------
+subgraph GOV["Governance & Extensions"]
+  direction TB
+  G1@{ shape: rect, label: "artifact_schema.mdc" }
+  G2@{ shape: rect, label: "artifact_routing.mdc" }
+  G3@{ shape: rect, label: "artifact_sync_rules.mdc" }
+  G4@{ shape: rect, label: "hydration_rules.mdc" }
+  G5@{ shape: rect, label: "framework_contract_framework1.mdc" }
+  G6@{ shape: rect, label: "framework_contract_framework2.mdc" }
+  G7@{ shape: rect, label: "promotion_rules.mdc" }
+  G8@{ shape: rect, label: "artifacts_index.json" }
+end
+
+%% ------------------- SECURITY -------------------
+subgraph SEC["Security"]
+  direction TB
+  S1@{ shape: rect, label: "security/access_policies.md" }
+  S2@{ shape: rect, label: "security/acl.json" }
+  S3@{ shape: rect, label: "security/validate_security_config.py" }
+end
+
+%% ------------------- DELIVERY -------------------
+subgraph DEL["Delivery & Implementation"]
+  direction TB
+  D1@{ shape: rect, label: "codegen_ai" }
+  D2@{ shape: rect, label: "qa_ai" }
+  D3@{ shape: rect, label: "documentation_ai" }
+end
+
+%% ------------------- MLOPS -------------------
+subgraph MZ["MLOps / Deploy"]
+  direction TB
+  ML1@{ shape: rect, label: "mlops_ai" }
+  ML2@{ shape: rect, label: "deployment_manifest.yaml" }
+end
+
+%% ------------------- OBSERVABILITY -------------------
+subgraph OBS["Observability"]
+  direction TB
+  O1@{ shape: rect, label: "observability_ai" }
+  O2@{ shape: rect, label: "analyst_ai" }
+  O3@{ shape: rect, label: "monitoring_dashboard.json" }
+  O4@{ shape: rect, label: "alert_history.log" }
+  O5@{ shape: rect, label: "health_report.md" }
+end
+
+
+%% ------------------- CONNECTIONS -------------------
+
+M1 --> M2
+OR1 --> OR2
+OR1 --> OR4 & OR3
+OR2 --- OR5 & OR6 & OR7
+OR2 --- EM1 & EM2
+
+P1 --> P2 & P3 & P4 & P5
+A1 --> A2
+A2 --> A3
+A3 --> A4
+A4 --> A5
+
+S3 --- S2
+S1 -.-> S2
+S2 --> G7 & G4 & G3
+
+G1 -.-> P2
+G2 -.-> P2
+G3 --- G8
+G4 -.-> P1
+G8 --> G4
+G4 --> D1 & D2 & D3 & ML1
+G7 -.-> G8
+G7 -.-> A5
+
+OR4 --> P1 & A1 & A3 & D1 & D2 & ML1 & D3 & O1
+I1 --> P1
+I2 --> P1
+P2 --> A1 & A3
+P3 --> A1
+P4 --> A1
+P5 --> A1
+P1 --> A2
+
+D1 --> D2
+D2 --> ML1
+D1 --> D3
+D3 --> ML1
+ML1 --> ML2
+ML1 --> O1
+O1 --> O2 & O3 & O4 & O5
+
+S2 --> G7 & G4 & G3
+S1 --> S2
+S3 --> S2
+
+M2 --> P1 & D1 & D2 & D3 & ML1 & O1
+flowchart LR
+%% ================== COLUMN/SUBGRAPH ===============
+
+subgraph MEM[Knowledge / Memory Bridge]
+  direction TB
+  MEMAI[memory_ai]:::memory
+  FMB[framework_memory_bridge]:::memory
+end
+
+subgraph ORCH[Orchestrator / Routing]
+  direction TB
+  RMT[rules_master_toggle]:::orch
+  EXO[execution_orchestrator]:::orch
+  RSJ[roles_status.json]:::index
+  RMJ[routing_matrix.json]:::index
+  WFJ[workflow_state.json]:::index
+  GRJ[gate_results.json]:::index
+  HJ[handoff_log.json]:::index
+end
+
+subgraph INP[Inputs]
+  direction TB
+  BLK[product_backlog.yaml]:::input
+  ACT[Action_Plan.md]:::input
+end
+
+subgraph PLN[Planning & Design]
+  direction TB
+  PLAI[planning_ai]:::plan
+  TP[technical_plan.md]:::plan
+  TBK[task_breakdown.yaml]:::plan
+  ADG[architecture_diagram.mermaid]:::plan
+  ACJ[acceptance_criteria.json]:::plan
+end
+
+subgraph PREG[Audit/Validate/Synthesize Gates]
+  direction TB
+  AUD[auditor_ai]:::gate
+  SR[Summary_Report.md]:::gate
+  PE[principal_engineer_ai]:::gate
+  VR[Validation_Report.md]:::gate
+  FIP[Final_Implementation_Plan.md]:::gate
+end
+
+subgraph GOVZ[Governance & Extensions]
+  direction TB
+  SCH[artifact_schema.mdc]:::gov
+  ROT[artifact_routing.mdc]:::gov
+  SYN[artifact_sync_rules.mdc]:::gov
+  HYD[hydration_rules.mdc]:::gov
+  C1[framework_contract_framework1.mdc]:::gov
+  C2[framework_contract_framework2.mdc]:::gov
+  PRO[promotion_rules.mdc]:::gov
+  AIJ[artifacts_index.json]:::index
+end
+
+subgraph SECZ[Security]
+  direction TB
+  AP[security/access_policies.md]:::sec
+  ACL[security/acl.json]:::sec
+  VAL[security/validate_security_config.py]:::sec
+end
+
+subgraph DEL[Delivery & Implementation]
+  direction TB
+  CG[codegen_ai]:::delivery
+  QA[qa_ai]:::delivery
+  DOC[documentation_ai]:::delivery
+end
+
+subgraph MZ[MLOps / Deploy]
+  direction TB
+  MLOP[mlops_ai]:::mlops
+  DMF[deployment_manifest.yaml]:::index
+end
+
+subgraph OBSZ[Observability]
+  direction TB
+  OBSR[observability_ai]:::obs
+  ANL[analyst_ai]:::obs
+  MDASH[monitoring_dashboard.json]:::index
+  AHL[alert_history.log]:::index
+  HREP[health_report.md]:::index
+end
+
+MEMAI --> FMB
+RMT --> EXO
+RMT -- Routing JSON --- RMJ & RSJ
+EXO --- WFJ & GRJ & HJ
+PLAI --> TP & TBK & ADG & ACJ
+AUD --> SR
+PE --> VR
+SR --> PE
+VR --> FIP
+SYN --- AIJ
+VAL --- ACL
+MLOP --- DMF
+OBSR --- MDASH & AHL & HREP
+ANL --- MDASH
+
+RMJ -- "Route" --> PLAI & AUD & PE & CG & QA & MLOP & DOC & OBSR
+BLK -- Input --> PLAI
+ACT -- Input --> PLAI
+TP -- Plan --> AUD & PE
+TBK -- Plan --> AUD
+ACJ -- Plan --> AUD
+ADG -- Plan --> AUD
+PLAI -- handoff --> SR
+SR -- findings --> PE
+VR -- confirmed findings --> FIP
+
+SCH -. validates .- TP
+ROT -. routes .- TP
+SYN -. updates .- AIJ
+HYD -. resolves inputs .- PLAI
+AIJ -- "approved→latest→solo" --> HYD
+HYD -- hydrated --> CG & QA & DOC & MLOP
+PRO -. draft→approved→snapshot/rollback .- AIJ
+PRO -. governs .- FIP
+CG -- Implementation --> QA
+QA --> MLOP
+MLOP -- DeployNotify --> OBSR
+DOC --> MLOP
+ACL -- SecGate --> PRO & HYD & SYN
+AP -. policy .- ACL
+VAL -. validate .- ACL
+FMB --- PLAI & CG & QA & DOC & MLOP
+
+%% Enforcement mode
+EXO --- EM1[AI_ENFORCEMENT_MODE=solo→WARN]:::index
+EXO --- EM2[AI_ENFORCEMENT_MODE=team→BLOCK]:::index
+
+%% ================== NODE STYLES (classDefs) ===============
+classDef memory    fill:#FFF6E5,stroke:#F0B429,stroke-width:2px,color:#7A4D00
+classDef orch      fill:#FFEBD6,stroke:#FF9D3B,stroke-width:2px,color:#8A4B00
+classDef input     fill:#E8F5FF,stroke:#6BB6FF,stroke-width:2px,color:#0B5394
+classDef plan      fill:#F0E6FF,stroke:#C5A3FF,stroke-width:2.5px,color:#5A2CA0
+classDef gate      fill:#FFE5E5,stroke:#FF7A7A,stroke-width:2.2px,color:#A33
+classDef gov       fill:#FFF0F5,stroke:#FF6FA1,stroke-width:2px,color:#8A004A
+classDef delivery  fill:#E9FFE9,stroke:#66CC66,stroke-width:2px,color:#2F6627
+classDef mlops     fill:#E6FFFA,stroke:#2DD4BF,stroke-width:2px,color:#065F46
+classDef obs       fill:#EAF7FF,stroke:#62B0FF,stroke-width:2.3px,color:#0C4A6E
+classDef sec       fill:#FFF0F5,stroke:#CC3366,stroke-width:2.3px,color:#8A0035
+classDef index     fill:#FFFFFF,stroke:#333,stroke-dasharray: 6 3,stroke-width:1.5px,color:#333
+
+%% ================== EDGE STYLES (linkStyle) ===============
+linkStyle default stroke:#333,stroke-width:1.2px  %% Main/data flow is dark gray/black
+
+%% Orange Routing lines (Orchestrator/RMJ to destinations)
+linkStyle 13,14,15,16,17,18,19,20 stroke:#FF8800,stroke-width:2.2px
+
+%% Sky blue input lines (Input to PLAI)
+linkStyle 21,22 stroke:#6BB6FF,stroke-width:2px
+
+%% Violet planning lines (PLAI to Planning artifacts)
+linkStyle 7,8,9,10 stroke:#5A2CA0,stroke-width:2.2px
+
+%% Red/pink lines (Gates)
+linkStyle 28,29,30,31,32,33,34,35 stroke:#A33,stroke-width:2.2px
+
+%% Governance enforcement lines (dotted gray)
+linkStyle 36,37,38,39 stroke:#999,stroke-width:2px,stroke-dasharray:4 3
+
+%% Hydration (green thin)
+linkStyle 40,41,42,43 stroke:#2E8B57,stroke-width:1.5px
+
+%% Promo/snapshot dotted blue
+linkStyle 44,45 stroke:#0077CC,stroke-dasharray:4 3
+
+%% Security lines
+linkStyle 46,47,48 stroke:#8A0035,stroke-width:1.4px
+linkStyle 49,50 stroke:#8A0035,stroke-width:2.2px,stroke-dasharray:4 3
+
+%% Memory bridge lines (amber)
+linkStyle 51,52,53,54,55 stroke:#F0B429,stroke-width:1.8px
+flowchart TD
+  %% Inputs → Artifacts → Governance/Promotion → Observability
+
+  subgraph Inputs
+    PO[/Backlog: product_backlog.yaml/]
+    AP[/Action_Plan.md/]
+  end
+
+  subgraph Planning
+    PL[planning_ai]
+    TPL[[technical_plan.md]]
+    TBD[[task_breakdown.yaml]]
+    ADG[[architecture_diagram.mermaid]]
+  end
+
+  subgraph Audit_Verify_Synthesize
+    AU[auditor_ai]
+    SR[[Summary_Report.md]]
+    PE[principal_engineer_ai]
+    VR[[Validation_Report.md]]
+    FIP[[Final_Implementation_Plan.md]]
+  end
+
+  subgraph Delivery
+    CG[codegen_ai]
+    QA[qa_ai]
+    ML[mlops_ai]
+    DOC[documentation_ai]
+  end
+
+  subgraph Observability
+    OB[observability_ai]
+    AN[analyst_ai]
+  end
+
+  subgraph Memory_Bridge
+    MEM[memory_ai]
+    BRIDGE[[framework_memory_bridge]]
+  end
+
+  subgraph Orchestration
+    ORCH[execution_orchestrator]
+    RMT[rules_master_toggle]
+  end
+
+  %% Origin/main additions (contracts, routing, promotion, sync)
+  subgraph Governance_and_Extensions
+    CNT[[contracts/*]]
+    GOV[[governance/*]]
+    ROUTE[[routing/*]]
+    PROMO[[promotion/*]]
+    SYNC[[sync/*]]
+    SCHEMA[[schemas/*]]
+    SEC[[security/*]]
+  end
+
+  %% Flow wiring
+  PO --> PL
+  AP --> PL
+  PL --> TPL --> AU --> SR --> PE --> VR --> FIP --> CG
+  PL --> TBD
+  CG --> QA --> ML --> OB --> AN
+  CG --> DOC
+  MEM --- BRIDGE --- ORCH
+  ORCH --> PL
+  ORCH --> CG
+  ORCH --> QA
+  ORCH --> ML
+  RMT --> ORCH
+
+  %% Governance hooks
+  TPL --> CNT
+  FIP --> GOV
+  ROUTE -. artifact routing .- DOC
+  PROMO -. release process .- ML
+  SYNC -. index & concurrency .- GOV
+  SCHEMA --> ROUTE
+  SEC --> ML
+
+  %% Inputs to Observability
+  ML --> OB
+  OB --> AN
+
+  %% Final Outputs
+  AN -->|reports| GOV

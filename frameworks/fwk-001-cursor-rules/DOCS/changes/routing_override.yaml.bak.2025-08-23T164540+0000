@@ -1,0 +1,8 @@
+progressive_mode: true
+overrides:
+  command_routing: {}
+  roles: {}
+  allowlist_triggers:
+  - /route
+  - /status
+notes: Dry-run only. Progressive OFF.

@@ -80,10 +80,15 @@ See `rules_master_toggle.mdc` routing matrix. Example additions used in Café pr
 - Start/Stop pipeline: `/run_pipeline`, `/halt`, `/status`
 - Planner-first: `/planner_mode on|off`
 
+Note: Routing fix applied — `rules_master_toggle` handles `/toggle` and `/route`. Progressive mode is OFF; routing overrides are shadow-only.
+
+Limited Progressive ON: active for `/route`, `/status`, `/health`, `/observe`, `/alert`, `/benchmark`, `/analyze`, `/review`, `/validate_docs` via `DOCS/changes/routing_override.yaml` (rollback: restore `.bak`).
+
 ## 8) Files Index
 - System prompts: `system-prompt/*.mdc` (+ OPTIONAL/*)
 - Docs: this handbook
 - Examples: sample files (if any)
+ - End-to-end diagram: `DOCS/END_TO_END.mmd`
 
 ## 10) Recent Change Reports
 - Consolidated (last 3 days): `frameworks/fwk-001-cursor-rules/DOCS/reports/Latest_Current.md`
