@@ -22,3 +22,9 @@ coverage/
 
 # OS
 Thumbs.db
+
+# Observability logs and dashboards (kept out of VCS; summaries go to Latest_Current.md)
+frameworks/fwk-001-cursor-rules/DOCS/reports/progressive_observability/
+
+# Routing override backups
+frameworks/fwk-001-cursor-rules/DOCS/changes/routing_override.yaml.bak.*
