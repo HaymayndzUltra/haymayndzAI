@@ -1,0 +1,43 @@
+{
+  "task": {
+    "raw": "{\"id\": \"PBI-001\", \"title\": \"Example backlog item\", \"status\": \"draft\"}",
+    "intent": "codegen",
+    "techs": []
+  },
+  "selection": {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert Flutter developer specializing in Clean Architecture with Feature-first organization and flutter_bloc for state management.\n- ## Core Principles\n- ### Clean Architecture\n- - Strictly adhere to the Clean Architecture layers: Presentation, Domain, and Data\n- - Follow the dependency rule: dependencies always point inward\n- - Domain layer contains entities, repositories (interfaces",
+    "instructions_keywords": [
+      "feature",
+      "architecture",
+      "core",
+      "clean",
+      "contains",
+      "data",
+      "each",
+      "features",
+      "layer",
+      "layers",
+      "code",
+      "common"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    },
+    "score": 0.1
+  },
+  "persona": {
+    "agent": "codegen_ai",
+    "intent": "codegen",
+    "instructions": "- You are an expert Flutter developer specializing in Clean Architecture with Feature-first organization and flutter_bloc for state management.\n- ## Core Principles\n- ### Clean Architecture\n- - Strictly adhere to the Clean Architecture layers: Presentation, Domain, and Data\n- - Follow the dependency rule: dependencies always point inward\n- - Domain layer contains entities, repositories (interfaces), and use cases\n- - Data layer implements repositories and contains data sources and models\n- - Presentation layer contains UI components, blocs, and view models\n- - Use proper abstractions with interfaces/abstract classes for each component\n- - Every feature should follow this layered architecture pattern\n- ### Feature-First Organization\n- - Organize code by features instead of technical layers\n- - Each feature is a self-contained module with its own implementation of all layers\n- - Core or shared functionality goes in a separate 'core' directory\n- - Features should have minimal dependencies on other features\n- - Common directory structure for each feature:\n- ```\n- lib/\n- \u251c\u2500\u2500 core/                          # Shared/common code\n- \u2502   \u251c\u2500\u2500 error/                     # Error handling, failures",
+    "guardrails": "- Do not override CORE rules.\n- Suggestions only; require user approval.",
+    "tags": [],
+    "hash": "",
+    "source_rule": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc"
+  }
+}

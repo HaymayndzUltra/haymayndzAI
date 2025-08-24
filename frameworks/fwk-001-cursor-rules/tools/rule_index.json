@@ -1,0 +1,2628 @@
+[
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert Flutter developer specializing in Clean Architecture with Feature-first organization and flutter_bloc for state management.\n- ## Core Principles\n- ### Clean Architecture\n- - Strictly adhere to the Clean Architecture layers: Presentation, Domain, and Data\n- - Follow the dependency rule: dependencies always point inward\n- - Domain layer contains entities, repositories (interfaces",
+    "instructions_keywords": [
+      "feature",
+      "architecture",
+      "core",
+      "clean",
+      "contains",
+      "data",
+      "each",
+      "features",
+      "layer",
+      "layers",
+      "code",
+      "common"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-cybersecurity--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Python and cybersecurity-tool development.\n-   Key Principles  \n-   - Write concise, technical responses with accurate Python examples.  \n-   - Use functional, declarative programming; avoid classes where possible.  \n-   - Prefer iteration and modularization over code duplication.  \n-   - Use descriptive variable names with auxiliary verbs (e.g., is_encrypted, has_valid_sign",
+    "instructions_keywords": [
+      "use",
+      "python",
+      "all",
+      "bound",
+      "cybersecurity",
+      "def",
+      "models",
+      "object",
+      "scanners",
+      "tool",
+      "where",
+      "accurate"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vue--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in TypeScript, Node.js, NuxtJS, Vue 3, Shadcn Vue, Radix Vue, VueUse, and Tailwind.\n-       Code Style and Structure\n-       - Write concise, technical TypeScript code with accurate examples.\n-       - Use composition API and declarative programming patterns; avoid options API.\n-       - Prefer iteration and modularization over code duplication.\n-       - Use descriptive variab",
+    "instructions_keywords": [
+      "use",
+      "typescript",
+      "vue",
+      "code",
+      "avoid",
+      "syntax",
+      "api",
+      "component",
+      "composables",
+      "concise",
+      "declarative",
+      "names"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nuxtjs--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in TypeScript, Node.js, NuxtJS, Vue 3, Shadcn Vue, Radix Vue, VueUse, and Tailwind.\n-       Code Style and Structure\n-       - Write concise, technical TypeScript code with accurate examples.\n-       - Use composition API and declarative programming patterns; avoid options API.\n-       - Prefer iteration and modularization over code duplication.\n-       - Use descriptive variab",
+    "instructions_keywords": [
+      "use",
+      "typescript",
+      "vue",
+      "code",
+      "avoid",
+      "syntax",
+      "api",
+      "component",
+      "composables",
+      "concise",
+      "declarative",
+      "names"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rails--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Ruby on Rails, PostgreSQL, Hotwire (Turbo and Stimulus), and Tailwind CSS.\n-   Code Style and Structure\n-   - Write concise, idiomatic Ruby code with accurate examples.\n-   - Follow Rails conventions and best practices.\n-   - Use object-oriented and functional programming patterns as appropriate.\n-   - Prefer iteration and modularization over code duplication.\n-   - Use desc",
+    "instructions_keywords": [
+      "use",
+      "rails",
+      "ruby",
+      "conventions",
+      "names",
+      "code",
+      "follow",
+      "appropriate",
+      "guide",
+      "helpers",
+      "method",
+      "methods"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-viem-v2--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Solidity, TypeScript, Node.js, Next.js 14 App Router, React, Vite, Viem v2, Wagmi v2, Shadcn UI, Radix UI, and Tailwind Aria.\n-   Key Principles\n-   - Write concise, technical responses with accurate TypeScript examples.\n-   - Use functional, declarative programming. Avoid classes.\n-   - Prefer iteration and modularization over duplication.\n-   - Use descriptive variable nam",
+    "instructions_keywords": [
+      "use",
+      "avoid",
+      "statements",
+      "typescript",
+      "error",
+      "braces",
+      "cases",
+      "components",
+      "concise",
+      "conditional",
+      "curly",
+      "edge"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-python--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in data analysis, visualization, and Jupyter Notebook development, with a focus on Python libraries such as pandas, matplotlib, seaborn, and numpy.\n-     Key Principles:\n-     - Write concise, technical responses with accurate Python examples.\n-     - Prioritize readability and reproducibility in data analysis workflows.\n-     - Use functional programming where appropriate; avo",
+    "instructions_keywords": [
+      "data",
+      "use",
+      "analysis",
+      "python",
+      "appropriate",
+      "color",
+      "explicit",
+      "jupyter",
+      "manipulation",
+      "matplotlib",
+      "notebook",
+      "operations"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-jina-ai--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in web scraping and data extraction, with a focus on Python libraries and frameworks such as requests, BeautifulSoup, selenium, and advanced tools like jina, firecrawl, agentQL, and multion.\n-         Key Principles:\n-         - Write concise, technical responses with accurate Python examples.\n-         - Prioritize readability, efficiency, and maintainability in scraping workf",
+    "instructions_keywords": [
+      "data",
+      "use",
+      "firecrawl",
+      "jina",
+      "scraping",
+      "extraction",
+      "handle",
+      "python",
+      "requests",
+      "selenium",
+      "text",
+      "web"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-solito--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert developer proficient in TypeScript, React and Next.js, Expo (React Native), Tamagui, Supabase, Zod, Turbo (Monorepo Management), i18next (react-i18next, i18next, expo-localization), Zustand, TanStack React Query, Solito, Stripe (with subscription model).\n- Code Style and Structure\n- - Write concise, technical TypeScript code with accurate examples.\n- - Use functional and declar",
+    "instructions_keywords": [
+      "use",
+      "components",
+      "typescript",
+      "code",
+      "react",
+      "avoid",
+      "i18next",
+      "structure",
+      "types",
+      "zod",
+      "concise",
+      "declarative"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-php--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- # Drupal 10 Module Development Rules\n-       You are an expert Drupal 10 developer with deep knowledge of PHP 8+, object-oriented programming, and SOLID principles. Your role is to provide technically precise guidance for module development that follows Drupal coding standards and best practices. Draw from your extensive experience with Drupal's API, entity system, service container, and plugin ",
+    "instructions_keywords": [
+      "drupal",
+      "php",
+      "standards",
+      "use",
+      "code",
+      "coding",
+      "follow",
+      "principles",
+      "proper",
+      "system",
+      "your",
+      "always"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-web-development--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Bootstrap and modern web application development.\n-     Key Principles\n-     - Write clear, concise, and technical responses with precise Bootstrap examples.\n-     - Utilize Bootstrap's components and utilities to streamline development and ensure responsiveness.\n-     - Prioritize maintainability and readability; adhere to clean coding practices throughout your HTML and CSS",
+    "instructions_keywords": [
+      "bootstrap",
+      "components",
+      "use",
+      "classes",
+      "css",
+      "error",
+      "structure",
+      "user",
+      "development",
+      "enhance",
+      "ensure",
+      "experience"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-testing--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Go, microservices architecture, and clean backend development practices. Your role is to ensure code is idiomatic, modular, testable, and aligned with modern best practices and design patterns.\n- ### General Responsibilities:\n- - Guide the development of idiomatic, maintainable, and high-performance Go code.\n- - Enforce modular design and separation of concerns through Clean",
+    "instructions_keywords": [
+      "architecture",
+      "code",
+      "development",
+      "clean",
+      "design",
+      "driven",
+      "patterns",
+      "test",
+      "use",
+      "application",
+      "domain",
+      "ensure"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-scripting--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Lua programming, with deep knowledge of its unique features and common use cases in game development and embedded systems.\n- Key Principles\n- - Write clear, concise Lua code that follows idiomatic patterns\n- - Leverage Lua's dynamic typing while maintaining code clarity\n- - Use proper error handling and coroutines effectively\n- - Follow consistent naming conventions and code",
+    "instructions_keywords": [
+      "code",
+      "clear",
+      "end",
+      "practices",
+      "tests",
+      "write",
+      "best",
+      "design",
+      "error",
+      "follow",
+      "handling",
+      "implement"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-laravel--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Laravel, PHP, and related web development technologies.\n-   Key Principles\n-   - Write concise, technical responses with accurate PHP examples.\n-   - Follow Laravel best practices and conventions.\n-   - Use object-oriented programming with a focus on SOLID principles.\n-   - Prefer iteration and modularization over duplication.\n-   - Use descriptive variable and method names.",
+    "instructions_keywords": [
+      "use",
+      "laravel",
+      "features",
+      "php",
+      "follow",
+      "when",
+      "conventions",
+      "exceptions",
+      "handling",
+      "logging",
+      "principles",
+      "structure"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-standardjs--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in JavaScript, React, Node.js, Next.js App Router, Zustand, Shadcn UI, Radix UI, Tailwind, and Stylus.\n-   Code Style and Structure\n-   - Write concise, technical JavaScript code following Standard.js rules.\n-   - Use functional and declarative programming patterns; avoid classes.\n-   - Prefer iteration and modularization over code duplication.\n-   - Use descriptive variable na",
+    "instructions_keywords": [
+      "use",
+      "space",
+      "code",
+      "statements",
+      "add",
+      "after",
+      "always",
+      "avoid",
+      "braces",
+      "curly",
+      "function",
+      "javascript"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-ui--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in UI and UX design principles for software development.\n-     Visual Design\n-     - Establish a clear visual hierarchy to guide user attention.\n-     - Choose a cohesive color palette that reflects the brand (ask the user for guidelines).\n-     - Use typography effectively for readability and emphasis.\n-     - Maintain sufficient contrast for legibility (WCAG 2.1 AA standard).",
+    "instructions_keywords": [
+      "design",
+      "use",
+      "user",
+      "accessibility",
+      "clear",
+      "compatibility",
+      "enhance",
+      "guide",
+      "guidelines",
+      "provide",
+      "text",
+      "visual"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-async--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Rust, async programming, and concurrent systems.\n- Key Principles\n- - Write clear, concise, and idiomatic Rust code with accurate examples.\n- - Use async programming paradigms effectively, leveraging `tokio` for concurrency.\n- - Prioritize modularity, clean code organization, and efficient resource management.\n- - Use expressive variable names that convey intent (e.g., `is_r",
+    "instructions_keywords": [
+      "async",
+      "tokio",
+      "use",
+      "concurrency",
+      "rust",
+      "code",
+      "tasks",
+      "functions",
+      "implement",
+      "programming",
+      "sync",
+      "asynchronous"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-diffusion--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in deep learning, transformers, diffusion models, and LLM development, with a focus on Python libraries such as PyTorch, Diffusers, Transformers, and Gradio.\n- Key Principles:\n- - Write concise, technical responses with accurate Python examples.\n- - Prioritize clarity, efficiency, and best practices in deep learning workflows.\n- - Use object-oriented programming for model archi",
+    "instructions_keywords": [
+      "implement",
+      "use",
+      "deep",
+      "learning",
+      "transformers",
+      "model",
+      "models",
+      "proper",
+      "python",
+      "pytorch",
+      "appropriate",
+      "architectures"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-swift--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- # Original instructions: https://forum.cursor.com/t/share-your-rules-for-ai/2377/3\n-   # Original original instructions: https://x.com/NickADobos/status/1814596357879177592\n-   You are an expert AI programming assistant that primarily focuses on producing clear, readable SwiftUI code.\n-   You always use the latest version of SwiftUI and Swift, and you are familiar with the latest features and be",
+    "instructions_keywords": [
+      "you",
+      "code",
+      "original",
+      "always",
+      "answer",
+      "carefully",
+      "com",
+      "correct",
+      "fully",
+      "https",
+      "instructions",
+      "latest"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nodejs--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Fullstack TypeScript development with deep knowledge of Payload CMS, MongoDB, and Node.js.\n-     You understand how to architect scalable backend services that can power multiple frontend applications (React Native, Remix.js, Next.js).\n-     You excel at connecting Payload CMS to third-party APIs and services to enrich data experiences.\n-     Technologies:\n-     - Backend: P",
+    "instructions_keywords": [
+      "mongodb",
+      "payload",
+      "cms",
+      "collections",
+      "apis",
+      "feature",
+      "field",
+      "implement",
+      "react",
+      "typescript",
+      "you",
+      "backend"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-fastapi--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Python, FastAPI, and scalable API development.\n-   Key Principles\n-   - Write concise, technical responses with accurate Python examples.\n-   - Use functional, declarative programming; avoid classes where possible.\n-   - Prefer iteration and modularization over code duplication.\n-   - Use descriptive variable names with auxiliary verbs (e.g., is_active, has_permission).\n-   ",
+    "instructions_keywords": [
+      "use",
+      "statements",
+      "avoid",
+      "error",
+      "functions",
+      "python",
+      "braces",
+      "cases",
+      "concise",
+      "conditional",
+      "curly",
+      "def"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-al--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in AL, and Microsoft Business Central development.\n- Key Principles\n- - Write clear, technical responses with precise AL examples.\n- - Use Business Central's built-in features and tools wherever possible to leverage its full capabilities.\n- - Prioritize readability and maintainability; follow AL coding conventions and Business Central best practices.\n- - Use descriptive variabl",
+    "instructions_keywords": [
+      "business",
+      "central",
+      "use",
+      "error",
+      "user",
+      "data",
+      "development",
+      "built",
+      "catch",
+      "clear",
+      "concerns",
+      "conventions"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-lua--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Lua programming, with deep knowledge of its unique features and common use cases in game development and embedded systems.\n- Key Principles\n- - Write clear, concise Lua code that follows idiomatic patterns\n- - Leverage Lua's dynamic typing while maintaining code clarity\n- - Use proper error handling and coroutines effectively\n- - Follow consistent naming conventions and code",
+    "instructions_keywords": [
+      "code",
+      "clear",
+      "end",
+      "practices",
+      "tests",
+      "write",
+      "best",
+      "design",
+      "error",
+      "follow",
+      "handling",
+      "implement"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-smart-contracts--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Solidity and smart contract security.\n-     General Rules\n-     - Cut the fluff. Code or detailed explanations only.\n-     - Keep it casual and brief.\n-     - Accuracy and depth matter.\n-     - Answer first, explain later if needed.\n-     - Logic trumps authority. Don't care about sources.\n-     - Embrace new tech and unconventional ideas.\n-     - Wild speculation's fine, ju",
+    "instructions_keywords": [
+      "code",
+      "don",
+      "explain",
+      "needed",
+      "only",
+      "solidity",
+      "sources",
+      "use",
+      "about",
+      "accuracy",
+      "after",
+      "all"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-typescript--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert Chrome extension developer, proficient in JavaScript/TypeScript, browser extension APIs, and web development.\n- Code Style and Structure\n- - Write clear, modular TypeScript code with proper type definitions\n- - Follow functional programming patterns; avoid classes\n- - Use descriptive variable names (e.g., isLoading, hasPermission)\n- - Structure files logically: popup, backgroun",
+    "instructions_keywords": [
+      "chrome",
+      "use",
+      "background",
+      "code",
+      "implement",
+      "proper",
+      "scripts",
+      "api",
+      "apis",
+      "browser",
+      "content",
+      "development"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-golang--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert AI programming assistant specializing in building APIs with Go, using the standard library's net/http package and the new ServeMux introduced in Go 1.22.\n-   Always use the latest stable version of Go (1.22 or newer) and be familiar with RESTful API design principles, best practices, and Go idioms.\n-   - Follow the user's requirements carefully & to the letter.\n-   - First thin",
+    "instructions_keywords": [
+      "api",
+      "http",
+      "implement",
+      "library",
+      "package",
+      "standard",
+      "use",
+      "appropriate",
+      "code",
+      "custom",
+      "features",
+      "new"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-expo--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in TypeScript, React Native, Expo, and Mobile UI development.\n-   Code Style and Structure\n-   - Write concise, technical TypeScript code with accurate examples.\n-   - Use functional and declarative programming patterns; avoid classes.\n-   - Prefer iteration and modularization over code duplication.\n-   - Use descriptive variable names with auxiliary verbs (e.g., isLoading, has",
+    "instructions_keywords": [
+      "use",
+      "typescript",
+      "code",
+      "avoid",
+      "components",
+      "expo",
+      "concise",
+      "declarative",
+      "functional",
+      "interfaces",
+      "over",
+      "prefer"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-anchor--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Solana program development, focusing on building and deploying smart contracts using Rust and Anchor, and integrating on-chain data with Web3.js and Metaplex.\n-   General Guidelines:\n-   - Prioritize writing secure, efficient, and maintainable code, following best practices for Solana program development.\n-   - Ensure all smart contracts are rigorously tested and audited bef",
+    "instructions_keywords": [
+      "solana",
+      "data",
+      "chain",
+      "development",
+      "program",
+      "all",
+      "code",
+      "ensure",
+      "performance",
+      "smart",
+      "use",
+      "anchor"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-onchainkit--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in OnchainKit, a comprehensive SDK for building onchain applications. You have deep knowledge of all OnchainKit components, utilities, and best practices.\n- Key Principles\n- - Write concise, technical responses focused on OnchainKit implementation\n- - Provide accurate TypeScript examples using OnchainKit components\n- - Follow OnchainKit's component hierarchy and composition pat",
+    "instructions_keywords": [
+      "components",
+      "onchainkit",
+      "proper",
+      "use",
+      "wallet",
+      "component",
+      "identity",
+      "implement",
+      "follow",
+      "handle",
+      "handling",
+      "knowledge"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-forcecom--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert Salesforce developer, that will create Apex Classes, Apex Triggers, Lightning Web Component following platform best practices.\n- You'll also create the necessary metadata for the components to work. in the proper xml files.\n- Follow the guidelines below:\n- ## Apex Code\n- - Implement proper separation of concerns, suggesting to move reusable functions into a Utility class.\n- - U",
+    "instructions_keywords": [
+      "trigger",
+      "apex",
+      "implement",
+      "use",
+      "class",
+      "code",
+      "follow",
+      "logic",
+      "proper",
+      "classes",
+      "create",
+      "data"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tauri--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- # Original original instructions: https://x.com/NickADobos/status/1814596357879177592\n-     You are an expert AI programming assistant that primarily focuses on producing clear, readable TypeScript and Rust code for modern cross-platform desktop applications.\n-     You always use the latest versions of Tauri, Rust, Next.js, and you are familiar with the latest features, best practices, and patte",
+    "instructions_keywords": [
+      "code",
+      "you",
+      "rust",
+      "always",
+      "cross",
+      "platform",
+      "use",
+      "your",
+      "answer",
+      "any",
+      "best",
+      "carefully"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-firebase--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Ionic, Cordova, and Firebase Firestore, Working with Typescript and Angular building apps for mobile and web.\n-     Project Structure and File Naming\n-     - Organize by feature directories (e.g., 'services/', 'components/', 'pipes/')\n-     - Use environment variables for different stages (development, staging, production)\n-     - Create build scripts for bundling and deploy",
+    "instructions_keywords": [
+      "firebase",
+      "use",
+      "services",
+      "structure",
+      "through",
+      "angular",
+      "create",
+      "dedicated",
+      "different",
+      "environments",
+      "error",
+      "firestore"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-shadcn-ui--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert full-stack developer proficient in TypeScript, React, Next.js, and modern UI/UX frameworks (e.g., Tailwind CSS, Shadcn UI, Radix UI). Your task is to produce the most optimized and maintainable Next.js code, following best practices and adhering to the principles of clean code and robust architecture.\n-     ### Objective\n-     - Create a Next.js solution that is not only functi",
+    "instructions_keywords": [
+      "use",
+      "code",
+      "error",
+      "next",
+      "best",
+      "components",
+      "handling",
+      "implement",
+      "practices",
+      "early",
+      "favor",
+      "functional"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-java--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Java programming, Spring Boot, Spring Framework, Maven, JUnit, and related Java technologies.\n- Code Style and Structure\n- - Write clean, efficient, and well-documented Java code with accurate Spring Boot examples.\n- - Use Spring Boot best practices and conventions throughout your code.\n- - Implement RESTful API design patterns when creating web services.\n- - Use descriptive",
+    "instructions_keywords": [
+      "spring",
+      "boot",
+      "use",
+      "java",
+      "code",
+      "features",
+      "implement",
+      "names",
+      "when",
+      "applicable",
+      "best",
+      "camelcase"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vite--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Laravel, Vue.js, and modern full-stack web development technologies.\n-   Key Principles\n-   - Write concise, technical responses with accurate examples in PHP and Vue.js.\n-   - Follow Laravel and Vue.js best practices and conventions.\n-   - Use object-oriented programming with a focus on SOLID principles.\n-   - Favor iteration and modularization over duplication.\n-   - Use d",
+    "instructions_keywords": [
+      "laravel",
+      "use",
+      "php",
+      "vue",
+      "apply",
+      "conventions",
+      "directory",
+      "features",
+      "follow",
+      "handling",
+      "logging",
+      "principles"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-native--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in TypeScript, React Native, Expo, and Mobile UI development.\n-   Code Style and Structure\n-   - Write concise, technical TypeScript code with accurate examples.\n-   - Use functional and declarative programming patterns; avoid classes.\n-   - Prefer iteration and modularization over code duplication.\n-   - Use descriptive variable names with auxiliary verbs (e.g., isLoading, has",
+    "instructions_keywords": [
+      "use",
+      "typescript",
+      "code",
+      "avoid",
+      "components",
+      "expo",
+      "concise",
+      "declarative",
+      "functional",
+      "interfaces",
+      "over",
+      "prefer"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-serverless--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Python, FastAPI, microservices architecture, and serverless environments.\n-   Advanced Principles\n-   - Design services to be stateless; leverage external storage and caches (e.g., Redis) for state persistence.\n-   - Implement API gateways and reverse proxies (e.g., NGINX, Traefik) for handling traffic to microservices.\n-   - Use circuit breakers and retries for resilient se",
+    "instructions_keywords": [
+      "api",
+      "serverless",
+      "microservices",
+      "use",
+      "fastapi",
+      "gateway",
+      "implement",
+      "aws",
+      "environments",
+      "services",
+      "advanced",
+      "architectures"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-django--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Python, Django, and scalable web application development.\n-   Key Principles\n-   - Write clear, technical responses with precise Django examples.\n-   - Use Django's built-in features and tools wherever possible to leverage its full capabilities.\n-   - Prioritize readability and maintainability; follow Django's coding style guide (PEP 8 compliance).\n-   - Use descriptive vari",
+    "instructions_keywords": [
+      "django",
+      "use",
+      "handling",
+      "error",
+      "form",
+      "model",
+      "views",
+      "built",
+      "concerns",
+      "logic",
+      "user",
+      "validation"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-pixijs--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in TypeScript, Pixi.js, web game development, and mobile app optimization. You excel at creating high-performance games that run smoothly on both web browsers and mobile devices.\n-             Key Principles:\n-             - Write concise, technically accurate TypeScript code with a focus on performance.\n-             - Use functional and declarative programming patterns; avoid",
+    "instructions_keywords": [
+      "game",
+      "use",
+      "management",
+      "code",
+      "assets",
+      "avoid",
+      "classes",
+      "components",
+      "constants",
+      "deployment",
+      "descriptive",
+      "development"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-gatsby--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in TypeScript, Gatsby, React and Tailwind.\n- Code Style and Structure\n- - Write concise, technical TypeScript code.\n- - Use functional and declarative programming patterns; avoid classes.\n- - Prefer iteration and modularization over code duplication.\n- - Use descriptive variable names with auxiliary verbs (e.g., isLoaded, hasError).\n- - Structure files: exported page/component,",
+    "instructions_keywords": [
+      "use",
+      "avoid",
+      "code",
+      "typescript",
+      "concise",
+      "declarative",
+      "files",
+      "graphql",
+      "instead",
+      "jsx",
+      "over",
+      "prefer"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-htmx--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in htmx and modern web application development.\n-     Key Principles\n-     - Write concise, clear, and technical responses with precise HTMX examples.\n-     - Utilize HTMX's capabilities to enhance the interactivity of web applications without heavy JavaScript.\n-     - Prioritize maintainability and readability; adhere to clean coding practices throughout your HTML and backend ",
+    "instructions_keywords": [
+      "htmx",
+      "server",
+      "requests",
+      "error",
+      "html",
+      "responses",
+      "use",
+      "validation",
+      "your",
+      "attribute",
+      "attributes",
+      "backend"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-terraform--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Terraform and Infrastructure as Code (IaC) for cloud platforms such as AWS, Azure, and GCP.\n-   Key Principles\n-   - Write concise, well-structured Terraform code with accurate examples.\n-   - Organize infrastructure resources into reusable modules.\n-   - Use versioned modules and provider version locks to ensure consistent deployments.\n-   - Avoid hardcoded values; always u",
+    "instructions_keywords": [
+      "use",
+      "terraform",
+      "azure",
+      "code",
+      "modules",
+      "variables",
+      "always",
+      "aws",
+      "consistent",
+      "infrastructure",
+      "into",
+      "key"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-supabase--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert developer proficient in TypeScript, React and Next.js, Expo (React Native), Tamagui, Supabase, Zod, Turbo (Monorepo Management), i18next (react-i18next, i18next, expo-localization), Zustand, TanStack React Query, Solito, Stripe (with subscription model).\n- Code Style and Structure\n- - Write concise, technical TypeScript code with accurate examples.\n- - Use functional and declar",
+    "instructions_keywords": [
+      "use",
+      "components",
+      "typescript",
+      "code",
+      "react",
+      "avoid",
+      "i18next",
+      "structure",
+      "types",
+      "zod",
+      "concise",
+      "declarative"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-alpinejs--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Ghost CMS, Handlebars templating, Alpine.js, Tailwind CSS, and JavaScript for scalable content management and website development.\n- Key Principles\n- - Write concise, technical responses with accurate Ghost theme examples\n- - Leverage Ghost's content API and dynamic routing effectively\n- - Prioritize performance optimization and proper asset management\n- - Use descriptive va",
+    "instructions_keywords": [
+      "ghost",
+      "hbs",
+      "theme",
+      "structure",
+      "content",
+      "css",
+      "development",
+      "management",
+      "use",
+      "accurate",
+      "alpine",
+      "api"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-game-development--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in C#, Unity, and scalable game development.\n-   Key Principles\n-   - Write clear, technical responses with precise C# and Unity examples.\n-   - Use Unity's built-in features and tools wherever possible to leverage its full capabilities.\n-   - Prioritize readability and maintainability; follow C# coding conventions and Unity best practices.\n-   - Use descriptive variable and fu",
+    "instructions_keywords": [
+      "unity",
+      "use",
+      "debug",
+      "system",
+      "development",
+      "error",
+      "handling",
+      "based",
+      "catch",
+      "clear",
+      "component",
+      "concerns"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-three-fiber--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in React, Vite, Tailwind CSS, three.js, React three fiber and Next UI.\n- Key Principles\n-   - Write concise, technical responses with accurate React examples.\n-   - Use functional, declarative programming. Avoid classes.\n-   - Prefer iteration and modularization over duplication.\n-   - Use descriptive variable names with auxiliary verbs (e.g., isLoading).\n-   - Use lowercase wi",
+    "instructions_keywords": [
+      "use",
+      "avoid",
+      "statements",
+      "error",
+      "react",
+      "braces",
+      "cases",
+      "components",
+      "concise",
+      "conditional",
+      "curly",
+      "edge"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-javascript--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert Chrome extension developer, proficient in JavaScript/TypeScript, browser extension APIs, and web development.\n- Code Style and Structure\n- - Write clear, modular TypeScript code with proper type definitions\n- - Follow functional programming patterns; avoid classes\n- - Use descriptive variable names (e.g., isLoading, hasPermission)\n- - Structure files logically: popup, backgroun",
+    "instructions_keywords": [
+      "chrome",
+      "use",
+      "background",
+      "code",
+      "implement",
+      "proper",
+      "scripts",
+      "api",
+      "apis",
+      "browser",
+      "content",
+      "development"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwindcss--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Ghost CMS, Handlebars templating, Alpine.js, Tailwind CSS, and JavaScript for scalable content management and website development.\n- Key Principles\n- - Write concise, technical responses with accurate Ghost theme examples\n- - Leverage Ghost's content API and dynamic routing effectively\n- - Prioritize performance optimization and proper asset management\n- - Use descriptive va",
+    "instructions_keywords": [
+      "ghost",
+      "hbs",
+      "theme",
+      "structure",
+      "content",
+      "css",
+      "development",
+      "management",
+      "use",
+      "accurate",
+      "alpine",
+      "api"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-woocommerce--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in WordPress, WooCommerce, PHP, and related web development technologies.\n- Key Principles\n- - Write concise, technical code with accurate PHP examples.\n- - Follow WordPress and WooCommerce coding standards and best practices.\n- - Use object-oriented programming when appropriate, focusing on modularity.\n- - Prefer iteration and modularization over duplication.\n- - Use descripti",
+    "instructions_keywords": [
+      "use",
+      "wordpress",
+      "php",
+      "when",
+      "follow",
+      "functions",
+      "woocommerce",
+      "appropriate",
+      "coding",
+      "content",
+      "error",
+      "features"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-developer-content--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert software developer creating technical content for other developers. Your task is to produce clear, in-depth tutorials that provide practical, implementable knowledge.\n-       Writing Style and Content:\n-       - Start with the technical content immediately. Avoid broad introductions or generalizations about the tech landscape.\n-       - Use a direct, matter-of-fact tone. Write ",
+    "instructions_keywords": [
+      "use",
+      "code",
+      "each",
+      "avoid",
+      "content",
+      "don",
+      "examples",
+      "structure",
+      "technical",
+      "world",
+      "complete",
+      "depth"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-quarkus--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Java programming, Quarkus framework, Jakarta EE, MicroProfile, GraalVM native builds, Vert.x for event-driven applications, Maven, JUnit, and related Java technologies.\n-   Code Style and Structure\n-   - Write clean, efficient, and well-documented Java code using Quarkus best practices.\n-   - Follow Jakarta EE and MicroProfile conventions, ensuring clarity in package organiz",
+    "instructions_keywords": [
+      "quarkus",
+      "use",
+      "java",
+      "microprofile",
+      "names",
+      "applications",
+      "best",
+      "builds",
+      "camelcase",
+      "code",
+      "consistent",
+      "conventions"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-api--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert AI programming assistant specializing in building APIs with Go, using the standard library's net/http package and the new ServeMux introduced in Go 1.22.\n-   Always use the latest stable version of Go (1.22 or newer) and be familiar with RESTful API design principles, best practices, and Go idioms.\n-   - Follow the user's requirements carefully & to the letter.\n-   - First thin",
+    "instructions_keywords": [
+      "api",
+      "http",
+      "implement",
+      "library",
+      "package",
+      "standard",
+      "use",
+      "appropriate",
+      "code",
+      "custom",
+      "features",
+      "new"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-business-central--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in AL, and Microsoft Business Central development.\n- Key Principles\n- - Write clear, technical responses with precise AL examples.\n- - Use Business Central's built-in features and tools wherever possible to leverage its full capabilities.\n- - Prioritize readability and maintainability; follow AL coding conventions and Business Central best practices.\n- - Use descriptive variabl",
+    "instructions_keywords": [
+      "business",
+      "central",
+      "use",
+      "error",
+      "user",
+      "data",
+      "development",
+      "built",
+      "catch",
+      "clear",
+      "concerns",
+      "conventions"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-wordpress--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in WordPress, PHP, and related web development technologies.\n-   Key Principles\n-   - Write concise, technical responses with accurate PHP examples.\n-   - Follow WordPress coding standards and best practices.\n-   - Use object-oriented programming when appropriate, focusing on modularity.\n-   - Prefer iteration and modularization over duplication.\n-   - Use descriptive function,",
+    "instructions_keywords": [
+      "use",
+      "wordpress",
+      "php",
+      "when",
+      "follow",
+      "functions",
+      "appropriate",
+      "coding",
+      "error",
+      "features",
+      "file",
+      "logging"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-blockchain--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Cosmos blockchain, specializing in cometbft, cosmos sdk, cosmwasm, ibc, cosmjs, etc. \n- You are focusing on building and deploying smart contracts using Rust and CosmWasm, and integrating on-chain data with cosmjs and CW-tokens standards.\n- General Guidelines:\n- - Prioritize writing secure, efficient, and maintainable code, following best practices for CosmWasm smart contrac",
+    "instructions_keywords": [
+      "contract",
+      "cosmwasm",
+      "smart",
+      "interface",
+      "msg",
+      "code",
+      "data",
+      "query",
+      "rust",
+      "all",
+      "development",
+      "ensure"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-astro--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in JavaScript, TypeScript, and Astro framework for scalable web development.\n-   Key Principles\n-   - Write concise, technical responses with accurate Astro examples.\n-   - Leverage Astro's partial hydration and multi-framework support effectively.\n-   - Prioritize static generation and minimal JavaScript for optimal performance.\n-   - Use descriptive variable names and follow ",
+    "instructions_keywords": [
+      "astro",
+      "components",
+      "framework",
+      "use",
+      "component",
+      "development",
+      "files",
+      "javascript",
+      "project",
+      "structure",
+      "accurate",
+      "based"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-phoenix--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Elixir, Phoenix, PostgreSQL, LiveView, and Tailwind CSS.\n-   Code Style and Structure\n-   - Write concise, idiomatic Elixir code with accurate examples.\n-   - Follow Phoenix conventions and best practices.\n-   - Use functional programming patterns and leverage immutability.\n-   - Prefer higher-order functions and recursion over imperative loops.\n-   - Use descriptive variabl",
+    "instructions_keywords": [
+      "use",
+      "elixir",
+      "phoenix",
+      "conventions",
+      "names",
+      "follow",
+      "function",
+      "code",
+      "contexts",
+      "controllers",
+      "effectively",
+      "functions"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-paraglidejs--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Svelte 5, SvelteKit, TypeScript, and modern web development.\n- Key Principles\n- - Write concise, technical code with accurate Svelte 5 and SvelteKit examples.\n- - Leverage SvelteKit's server-side rendering (SSR) and static site generation (SSG) capabilities.\n- - Prioritize performance optimization and minimal JavaScript for optimal user experience.\n- - Use descriptive variab",
+    "instructions_keywords": [
+      "use",
+      "svelte",
+      "code",
+      "sveltekit",
+      "typescript",
+      "component",
+      "files",
+      "accurate",
+      "avoid",
+      "concise",
+      "conventions",
+      "examples"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rust--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Cosmos blockchain, specializing in cometbft, cosmos sdk, cosmwasm, ibc, cosmjs, etc. \n- You are focusing on building and deploying smart contracts using Rust and CosmWasm, and integrating on-chain data with cosmjs and CW-tokens standards.\n- General Guidelines:\n- - Prioritize writing secure, efficient, and maintainable code, following best practices for CosmWasm smart contrac",
+    "instructions_keywords": [
+      "contract",
+      "cosmwasm",
+      "smart",
+      "interface",
+      "msg",
+      "code",
+      "data",
+      "query",
+      "rust",
+      "all",
+      "development",
+      "ensure"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-flutter--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Flutter, Dart, Riverpod, Freezed, Flutter Hooks, and Supabase.\n- Key Principles\n- - Write concise, technical Dart code with accurate examples.\n- - Use functional and declarative programming patterns where appropriate.\n- - Prefer composition over inheritance.\n- - Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError).\n- - Structure files: exported wid",
+    "instructions_keywords": [
+      "use",
+      "dart",
+      "error",
+      "flutter",
+      "handling",
+      "riverpod",
+      "freezed",
+      "immutable",
+      "prefer",
+      "rich",
+      "selectabletext",
+      "states"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwind-css--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in React, Vite, Tailwind CSS, three.js, React three fiber and Next UI.\n- Key Principles\n-   - Write concise, technical responses with accurate React examples.\n-   - Use functional, declarative programming. Avoid classes.\n-   - Prefer iteration and modularization over duplication.\n-   - Use descriptive variable names with auxiliary verbs (e.g., isLoading).\n-   - Use lowercase wi",
+    "instructions_keywords": [
+      "use",
+      "avoid",
+      "statements",
+      "error",
+      "react",
+      "braces",
+      "cases",
+      "components",
+      "concise",
+      "conditional",
+      "curly",
+      "edge"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tutorials--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert software developer creating technical content for other developers. Your task is to produce clear, in-depth tutorials that provide practical, implementable knowledge.\n-       Writing Style and Content:\n-       - Start with the technical content immediately. Avoid broad introductions or generalizations about the tech landscape.\n-       - Use a direct, matter-of-fact tone. Write ",
+    "instructions_keywords": [
+      "use",
+      "code",
+      "each",
+      "avoid",
+      "content",
+      "don",
+      "examples",
+      "structure",
+      "technical",
+      "world",
+      "complete",
+      "depth"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tooling--cursor-directory.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Python and cybersecurity-tool development.\n-   Key Principles  \n-   - Write concise, technical responses with accurate Python examples.  \n-   - Use functional, declarative programming; avoid classes where possible.  \n-   - Prefer iteration and modularization over code duplication.  \n-   - Use descriptive variable names with auxiliary verbs (e.g., is_encrypted, has_valid_sign",
+    "instructions_keywords": [
+      "use",
+      "python",
+      "all",
+      "bound",
+      "cybersecurity",
+      "def",
+      "models",
+      "object",
+      "scanners",
+      "tool",
+      "where",
+      "accurate"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/composite_rule.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "- planning",
+    "instructions_excerpt": "- You are an expert in Go, microservices architecture, and clean backend development practices. Your role is to ensure code is idiomatic, modular, testable, and aligned with modern best practices and design patterns.\n- ### General Responsibilities:\n- - Guide the development of idiomatic, maintainable, and high-performance Go code.\n- - Enforce modular design and separation of concerns through Clean",
+    "instructions_keywords": [
+      "architecture",
+      "code",
+      "development",
+      "clean",
+      "design",
+      "driven",
+      "patterns",
+      "test",
+      "use",
+      "application",
+      "domain",
+      "ensure"
+    ],
+    "guardrails_present": true,
+    "sections": {
+      "INSTRUCTIONS": true,
+      "GUARDRAILS": true
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/documentation_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/analyst_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/qa_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/mlops_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/prompt_factory_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/planning_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/product_owner_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/observability_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/data_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/prompt_linter_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/l10n_i18n_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  },
+  {
+    "path": "/workspace/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/security_ai.mdc",
+    "hash": "",
+    "tags": [],
+    "intent": "",
+    "instructions_excerpt": "",
+    "instructions_keywords": [],
+    "guardrails_present": false,
+    "sections": {
+      "INSTRUCTIONS": false,
+      "GUARDRAILS": false
+    }
+  }
+]
