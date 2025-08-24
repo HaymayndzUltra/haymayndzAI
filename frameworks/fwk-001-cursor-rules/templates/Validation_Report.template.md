@@ -1,30 +1,31 @@
-## Validation Report — Peer Review
-
-### 1) Scope & Context (detected plan type/intent)
-- **Plan Title**: 
-- **Type/Intent**: 
-
-### 2) Validated Findings
-| Risk ID | Decision (CONFIRM/CHALLENGE) | Rationale | Evidence Ref |
+| Risk ID | Decision (CONFIRM/CHALLENGE) | Rationale | Evidence Ref (Plan + Codebase) |
 |---|---|---|---|
-| R-001 | CONFIRM |  | ```<line_start>:<line_end>:<path/to/Action_Plan.md>``` |
+| R-001 | CONFIRM |  | `AP:L<line>` & `CB:/path/to/file.py` |
 
-### 3) Contested Findings
+## 3. Contested Findings
 - **R-###** — <Why contested>
-  - **Evidence**: ```<line_start>:<line_end>:<path/to/Action_Plan.md>```
+  - **Evidence**: `AP:L<line>` & `CB:/path/to/file.py`
 
-### 4) New Risks (NEW-RISK-###)
+## 4. New Risks (NEW-RISK-###)
 - **NEW-RISK-001 — <Title>**
   - **Severity**: High | Medium | Low
   - **Rationale**: 
-  - **Evidence**: ```<line_start>:<line_end>:<path/to/Action_Plan.md>```
+  - **Evidence**: `CB:/path/to/file.py`
 
-### 5) Coverage Summary
-- Validated: 
-- Not applicable: 
+## 5. Confirmed Alignments
+- **A-001 — <Title of Alignment>**
+  - **Decision**: CONFIRM
+  - **Rationale**: 
+  - **Evidence**: `AP:L<line>` & `CB:/path/to/file.py`
 
-### 6) Verdict
-- Risk report largely validated with minor contests.
+## 6. Verdict & Gating Decision
+- [CHOOSE ONE OF THE FOLLOWING VERDICTS AND PROVIDE DETAILS]
 
-<!-- Rules: Do not delete contested risks. Label new risks as NEW-RISK-###. Use precise evidence refs. -->
+- **Verdict Option 1: GO**
+  - **Decision**: **GO**. Risk report validated. Proceeding to synthesis.
+  - **Rationale**: All identified risks are manageable (Low/Medium severity) and have clear mitigation paths.
 
+- **Verdict Option 2: NO-GO**
+  - **Decision**: **NO-GO**. Synthesis halted. Plan requires revision.
+  - **Blocking Issues**: 
+    - [List all High severity risks or major contests that triggered the halt, with their IDs and titles]
