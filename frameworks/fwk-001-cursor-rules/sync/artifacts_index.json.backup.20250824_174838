@@ -1,0 +1,15 @@
+{
+  "artifacts": [
+    {
+      "checksumSha256": "11dee0757bc49ddde9b88d1c8a8fc9778692944ba529885b4ff36ad08f03735a",
+      "createdAt": "2025-08-23T20:47:07Z",
+      "framework": "fwk-001-cursor-rules",
+      "id": "test_plan",
+      "kind": "test_plan",
+      "status": "review",
+      "updatedAt": "2025-08-24T01:22:59Z",
+      "version": "1.0.0"
+    }
+  ],
+  "version": 1
+}
