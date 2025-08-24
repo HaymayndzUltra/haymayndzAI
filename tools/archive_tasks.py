@@ -5,7 +5,10 @@ import json
 import os
 from pathlib import Path
 from typing import List, Dict, Any
-from atomic_io import with_file_lock
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+from repo.atomic_io import with_file_lock
 
 ACTIVE = Path("memory-bank/queue-system/tasks_active.json")
 DONEL = Path("memory-bank/queue-system/tasks_done.jsonl")

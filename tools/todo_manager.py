@@ -16,8 +16,10 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional
 import re
 import subprocess
-from atomic_io import atomic_write_json, with_json_lock
-from tz_utils import now_ph_iso, parse_iso_aware, now_ph
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+from repo.atomic_io import atomic_write_json, with_json_lock
+from repo.tz_utils import now_ph_iso, parse_iso_aware, now_ph
 
 DATA_FILE = Path(os.getcwd()) / "memory-bank" / "queue-system" / "tasks_active.json"
 

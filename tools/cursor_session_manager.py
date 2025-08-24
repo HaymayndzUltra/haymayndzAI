@@ -5,7 +5,10 @@ import time
 import atexit
 from datetime import datetime
 from typing import Any, Dict, Optional
-from atomic_io import atomic_write_json, with_json_lock
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+from repo.atomic_io import atomic_write_json, with_json_lock
 
 
 class CursorSessionManager:

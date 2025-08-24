@@ -8,7 +8,7 @@ import stat
 import re
 from subprocess import run, CompletedProcess
 from typing import Tuple, Dict, Any
-from tz_utils import now_ph, PH_TZ
+from .tz_utils import now_ph, PH_TZ
 
 LOGS_DIR = os.path.join("memory-bank", "logs")
 

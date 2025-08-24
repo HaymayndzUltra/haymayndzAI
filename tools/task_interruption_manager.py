@@ -11,10 +11,13 @@ from typing import Dict, Any, List, Optional
 from pathlib import Path
 
 # Import existing managers
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from todo_manager import new_task, add_todo, list_open_tasks, set_task_status
 from task_state_manager import save_task_state, load_task_state
-from atomic_io import atomic_write_json, with_json_lock
-from tz_utils import now_ph_iso
+from repo.atomic_io import atomic_write_json, with_json_lock
+from repo.tz_utils import now_ph_iso
 
 class TaskInterruptionManager:
     """Manages automatic task interruption and resumption"""

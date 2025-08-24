@@ -9,6 +9,8 @@ import json
 from typing import List, Dict, Any
 from task_interruption_manager import auto_task_handler, get_interruption_status, resume_all_interrupted_tasks
 from todo_manager import list_open_tasks, add_todo, mark_done, delete_todo, show_task_details, new_task, hard_delete_task
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 # 🚀 Intelligent workflow integration (FIXED VERSION)
 try:
     from workflow_memory_intelligence_fixed import execute_task_intelligently

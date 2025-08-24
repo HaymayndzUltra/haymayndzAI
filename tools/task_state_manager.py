@@ -13,8 +13,11 @@ import os
 from datetime import datetime
 from typing import Dict, Any
 
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from cursor_session_manager import session_manager
-from atomic_io import atomic_write_json, with_json_lock
+from repo.atomic_io import atomic_write_json, with_json_lock
 
 STATE_FILE = os.path.join(os.getcwd(), "task-state.json")
 

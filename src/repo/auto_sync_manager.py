@@ -11,8 +11,16 @@ import atexit
 from datetime import datetime, timezone, timedelta
 from typing import Dict, Any, Optional, List
 from dataclasses import dataclass, asdict
-from common.utils.log_setup import configure_logging
-from atomic_io import atomic_write_json, with_json_lock
+try:
+    from common.utils.log_setup import configure_logging  # type: ignore
+except Exception:
+    import logging
+    def configure_logging(name: str, level: str | int = "INFO"):
+        lvl = getattr(logging, level, logging.INFO) if isinstance(level, str) else level
+        logging.basicConfig(level=lvl, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+        return logging.getLogger(name)
+
+from .atomic_io import atomic_write_json, with_json_lock
 
 # Configure logging
 logger = configure_logging(__name__)
