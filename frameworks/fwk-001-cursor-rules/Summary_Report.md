@@ -1,68 +1,127 @@
 # Summary Report — Audit of Action Plan
 
-## Context Summary
-- Scope: Memory system hardening (atomic IO, locks, single-writer markdown, cursor state SoT, PH timezone, execution logging, recall fallback, archival).
-- Inputs reviewed: `Action_Plan.md`, repository code under memory modules.
+## 1. Context Summary (type/intent detected)
+- **Plan Title**: Action_Plan.md (fwk-001-cursor-rules/examples)
+- **Type**: Diagnostic/Analytical – test coverage and gate validation across framework components
+- **Intent**: Validate presence and behavior of routing, hydration, security, observability, workflow gates, and artifacts; confirm alignment with docs and reports
 
-## Critical Risks (R-###)
-- R-001 (HIGH): Competing writers for `current-session.md` may cause drift or corruption.
-  - Evidence:
-    - `auto_sync_manager.py` writes markdown directly (lines 221–223)
-    - `cursor_memory_bridge.py` also writes markdown (lines 61–67)
-- R-002 (HIGH): Non-atomic writes to queue SoT (`tasks_active.json`) risk truncation/corruption under concurrency.
-  - Evidence:
-    - `todo_manager.py` `_save` uses direct `write_text` (lines 85–101)
-- R-003 (HIGH): Cursor state split-brain (root vs memory-bank) causes inconsistency across tools.
-  - Evidence:
-    - `cursor_session_manager.py` default path is root `cursor_state.json` (line 19)
-    - `auto_sync_manager.py` uses `memory-bank/cursor_state.json` (lines 41–46)
-- R-004 (MEDIUM): Timezone handling inconsistent (mix of naive `utcnow()` and aware ISO) leading to misordering and incorrect retention.
-  - Evidence:
-    - `todo_manager.py` uses `datetime.utcnow()` with `fromisoformat` (lines 64–75)
-    - Multiple modules stamp with `utcnow().isoformat()` (e.g., `task_interruption_manager.py` lines 42–47)
-- R-005 (MEDIUM): Execution logging lacks structured outputs and redaction; difficult for diagnostics.
-  - Evidence:
-    - `todo_manager.py` `exec_substep` prints only; no `.out/.err/.json` persisted (lines 637–651)
-- R-006 (LOW): `memory_cli recall` forces embeddings/model even when fallback search is intended.
-  - Evidence:
-    - Model required in `load_model` and used in `cmd_recall` regardless of index presence (lines 44–48, 141–147 in `tools/memory/memory_cli.py`)
-- R-007 (LOW): Hardcoded absolute storage paths reduce portability.
-  - Evidence:
-    - `tools/memory/pro_config.yaml` storage root set to an absolute user path (lines 15–21)
-- R-008 (LOW): Logging dependency `common.utils.log_setup` may be absent → import error.
-  - Evidence:
-    - `auto_sync_manager.py` and `workflow_memory_intelligence_fixed.py` import `configure_logging` from `common.utils.log_setup`
+## 2. Critical Risks (Conflicts with Codebase)
+- **R-001 — Command-to-role matrix reference may be ambiguous**
+  - **Evidence/Quote**: ```4:5:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Conflict**: Plan cites “system-prompt/rules_master_toggle.mdc matrix”; repository contains rules under `.cursor/rules/` and docs at `frameworks/fwk-001-cursor-rules/DOCS/ROLES_MATRIX.md`. No single file named `system-prompt/rules_master_toggle.mdc` within framework root.
+  - **Severity**: Medium
+  - **Affected Steps**: Phase 1 – Command Surface Sanity
+  - **Downstream Impact**: Potential mismatch in expected source-of-truth for role matrix could invalidate matrix-based assertions.
 
-## Blind Spots
-- Lack of quantitative acceptance tests for atomicity/locking and crash durability.
-- No explicit redaction policy for run logs.
-- No retention/rotation policy for task archives/logs.
+- **R-002 — roles_status.json not present**
+  - **Evidence/Quote**: ```6:9:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Conflict**: No `roles_status.json` found under repo. Expected by “Role Activation Matrix Integrity”.
+  - **Severity**: Medium
+  - **Affected Steps**: Phase 1 – Role Activation Matrix Integrity
+  - **Downstream Impact**: Toggle validation outputs may not be verifiable.
 
-## Assumptions
-- Linux with `flock(2)` available; local filesystem for SoT files.
-- Python ≥ 3.10; no other external writers to SoT.
+- **R-003 — Generated artifacts referenced but not guaranteed present**
+  - **Evidence/Quote**: ```31:37:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Conflict**: Artifacts `product_backlog.yaml`, `technical_plan.md`, `task_breakdown.yaml`, `test_results.json` are referenced as outcomes; not found under repo by static search (only docs mention). 
+  - **Severity**: Medium
+  - **Affected Steps**: Phase 2 — Core Sequential Workflow
+  - **Downstream Impact**: E2E gate checks could falsely fail due to missing generated outputs in current repo state.
 
-## Ambiguities
-- Ownership map: exact boundary between `AutoSyncManager` and `cursor_memory_bridge` for markdown generation during transitions.
+- **R-004 — Deployment manifest file not present**
+  - **Evidence/Quote**: ```39:42:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Conflict**: `deployment_manifest.yaml` not present; only verification reports exist under `VERIFICATION/deploy_obs`.
+  - **Severity**: Medium
+  - **Affected Steps**: Phase 2 — Deployment and Observability
+  - **Downstream Impact**: Deployment gate assertions cannot be verified by file presence.
 
-## Consistency Issues
-- Task state files naming/location mismatch:
-  - `task-state.json` (root) vs `memory-bank/task_state.json` (AutoSync).
-  - `task_interruption_state.json` (root) vs `memory-bank/task_interruption_state.json` (AutoSync).
+- **R-005 — Planner-first toggles not concretely implemented as commands**
+  - **Evidence/Quote**: ```72:75:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Conflict**: Mentions `/planner_mode on|off`; repository contains documentation references but no executable command router to effect this toggle.
+  - **Severity**: Low
+  - **Affected Steps**: Phase 3 — Planner-first Mode and Toggles
+  - **Downstream Impact**: Tests relying on runtime toggling may be documentation-only.
 
-## Compliance / Feasibility / Timeline / Scope
-- Feasible in phased rollout (2–3 weeks) with feature flags for single-writer enforcement.
-- Requires adding tests (latency, durability) and documentation updates.
+## 3. Confirmed Alignments (Matches with Codebase)
+- **A-001 — Routing utilities exist and are testable**
+  - **Evidence/Quote**: ```14:17:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Alignment**: `routing/resolve_artifact_path.py`, `routing/check_routing_conflicts.py`, and `routing/artifact_routing.json` exist.
+  - **Rationale**: Enables deterministic pathing checks and conflicts reporting as stated.
 
-## Traceability (selected)
-- `auto_sync_manager.py` 221–223; 41–46
-- `cursor_memory_bridge.py` 61–67
-- `cursor_session_manager.py` 19
-- `todo_manager.py` 64–75; 85–101; 637–651
-- `task_interruption_manager.py` 42–47
-- `tools/memory/memory_cli.py` 44–48; 141–147
-- `tools/memory/pro_config.yaml` 15–21
+- **A-002 — Hydration assets present**
+  - **Evidence/Quote**: ```18:21:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Alignment**: `hydration/hydration_selector.py`, `hydration/hydration_tests.yaml`, `hydration/run_hydration_tests.py` present.
+  - **Rationale**: Supports plan’s hydration validation.
 
-## Verdict
-- Proceed with Phases 1–3 as P0 (Atomic IO+locks; single-writer enforcement; cursor state unification), then Phases 4–7.
-- Block execution that writes SoT until Phase 1 is implemented or guarded by locks/atomic writes.
+- **A-003 — Security validation present with ACL and policies**
+  - **Evidence/Quote**: ```26:29:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Alignment**: `security/validate_security_config.py`, `security/acl.json`, `security/access_policies.md` exist.
+  - **Rationale**: Matches plan’s security validation step.
+
+- **A-004 — Observability artifacts exist**
+  - **Evidence/Quote**: ```22:25:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Alignment**: `observability/alerts.yaml`, `dashboards.mmd`, `audit_logs.md` exist.
+  - **Rationale**: Enables static checks.
+
+- **A-005 — Routing baseline/shadow and conflicts report present**
+  - **Evidence/Quote**: ```14:17:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Alignment**: `DOCS/changes/routing_baseline.json`, `routing_effective.shadow.json`, `routing_conflicts_report.md` (with “No conflicts detected.”)
+  - **Rationale**: Aligns with expected outcomes for routing checks.
+
+- **A-006 — Schema artifact present**
+  - **Evidence/Quote**: ```10:13:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Alignment**: `schemas/artifact.schema.json` exists.
+  - **Rationale**: Plan’s schema checks are feasible.
+
+- **A-007 — Concurrency and sync tests exist**
+  - **Evidence/Quote**: ```51:54:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Alignment**: `sync/test_concurrency.py`, `concurrency_tests.yaml`, `enhanced_index_writer.py` present.
+  - **Rationale**: Supports concurrency validations.
+
+- **A-008 — Coverage threshold specified**
+  - **Evidence/Quote**: ```64:67:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+  - **Codebase Alignment**: `pytest.ini` enforces `--cov-fail-under=80`.
+  - **Rationale**: Matches performance/coverage requirement.
+
+## 4. Potential Blind Spots
+- **B-001 — Command router abstraction**
+  - **Why it matters**: Plan assumes commands like `/backlog`, `/plan`, `/deploy` exist operationally; codebase has documentation and verification artifacts, but no unified executable router surfaced.
+
+- **B-002 — Source-of-truth for role matrix**
+  - **Why it matters**: Multiple locations (docs vs `.cursor/rules`) could diverge.
+
+## 5. Assumptions (explicit/implicit) & fragility
+- **A-001 (Implicit)**: Command suite is implemented and produces artifacts on demand.
+  - **Fragility**: Medium — repo shows docs/tests but not the runtime dispatcher.
+- **A-002 (Implicit)**: Toggling roles updates a machine-readable `roles_status.json`.
+  - **Fragility**: Medium — file not found.
+
+## 6. Ambiguities & Measurement Gaps
+- **M-001**: Not clear which file is the canonical role matrix (`rules_master_toggle.mdc` equivalent) used for verification.
+- **M-002**: Expected locations for generated artifacts are not fully specified (paths may vary).
+
+## 7. Consistency Issues (within plan & across refs)
+- References to `system-prompt/rules_master_toggle.mdc` vs framework-local files and unified `.cursor/rules` could conflict.
+
+## 8. Compliance/Feasibility/Timeline/Scope findings
+- **Compliance**: Security validation feasible; schemas present.
+- **Feasibility**: High for static checks; Medium for dynamic command-driven artifacts.
+- **Timeline/Ordering**: Phase ordering is logical; dependent on command router for artifact generation.
+- **Scope**: Broad but consistent with framework structure.
+
+## 9. Traceability Map (Risk & Alignment IDs → Plan refs)
+- R-001 → ```4:5:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- R-002 → ```6:9:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- R-003 → ```31:37:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- R-004 → ```39:42:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- R-005 → ```72:75:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- A-001 → ```14:17:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- A-002 → ```18:21:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- A-003 → ```26:29:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- A-004 → ```22:25:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- A-005 → ```14:17:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- A-006 → ```10:13:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- A-007 → ```51:54:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+- A-008 → ```64:67:frameworks/fwk-001-cursor-rules/examples/Action_Plan.md```
+
+## 10. Verdict
+- Risks detected. See sections above.
