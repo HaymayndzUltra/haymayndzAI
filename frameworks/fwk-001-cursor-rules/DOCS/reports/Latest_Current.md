@@ -577,3 +577,10 @@
 - Expected role: documentation_ai
 - Route target OK: True
 - No routing drift: True
+
+## /validate_docs Canary Summary (limited)
+- Runs recorded: 7
+- Window: 2025-08-24T04:09:24+00:00 → 2025-08-24T04:34:44+00:00 (UTC)
+- Scope: Progressive ON allowlist ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: documentation_ai
+- Result: PASS (0 alerts), No routing drift
