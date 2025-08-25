@@ -9,7 +9,11 @@ We are commissioning a comprehensive, end-to-end self-audit of the HaymayndzAI F
 3) Propose a robust, complete workflow with clear acceptance criteria, rollback steps, and traceable tasks.
 
 ## Source of Truth (Rules Directory)
-- Primary rules directory (read-only reference): `/home/haymayndz/HaymayndzAI/.cursor/rules/`
+- Primary rules directory (read-only reference): 
+  - **Local environment:** `/home/haymayndz/HaymayndzAI/.cursor/rules/`
+  - **AI workspace:** `/workspace/.cursor/rules/`
+  - **Environment variable:** `$REPO_ROOT/.cursor/rules/` (recommended)
+  - **Relative path:** `.cursor/rules/` (from project root)
 
 ## Required Artifacts (Deliverables)
 - Summary_Report.md (audit findings; risks & alignments with evidence to rules/files)
