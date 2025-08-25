@@ -95,7 +95,7 @@ def build_specs() -> Dict[str, MarkerSpec]:
         ),
         "frontend/angular": MarkerSpec(
             description="Angular markers",
-            checks=[("file", "angular.json"), ("json-dep", "@angular/core"), ("glob", "**/*.ts")],
+            checks=[("file", "angular.json"), ("glob", "**/*.ts")],
         ),
         "frontend/svelte": MarkerSpec(
             description="Svelte markers",
