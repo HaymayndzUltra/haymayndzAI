@@ -1,0 +1,278 @@
+meta:
+  client: AI Orchestration System (Solo Freelance Dev Readiness)
+  owner: product_owner_ai
+  version: 0.1.0
+  generated_at: 2025-08-25T00:00:00Z
+  notes: >
+    This backlog turns the current system (as the client brief) into a production-ready roadmap.
+    Items are grouped by priority (P0 immediate, P1 next, P2 later). Each item has measurable
+    acceptance criteria and artifacts for gating with auditor_ai and principal_engineer_ai.
+
+items:
+  - id: BL-001
+    title: Orchestrator role selection + rule attach logging (stabilize)
+    description: >
+      Ensure execution_orchestrator.mdc reliably detects stacks (globs) and emits rule_attach_log.json
+      for traceability; cover mapping for React, Python, PHP, Go, .NET, Mobile.
+    priority: P0
+    type: feature
+    owner_role: execution_orchestrator
+    artifacts:
+      - .cursor/rules/execution_orchestrator.mdc
+      - rule_attach_log.json
+    acceptance_criteria:
+      - Given repo markers for each stack, when detection runs, then attach_rules is correct and logged.
+      - 100% of supported stacks produce a rule_attach_log entry with timestamp and mapping.
+      - Unit checks verify at least one file per stack triggers expected rules.
+    dependencies: []
+    effort: M
+    risk: Medium
+
+  - id: BL-002
+    title: Two-session audit → peer review gate (bias separation)
+    description: >
+      Enforce separate sessions for auditor_ai and principal_engineer_ai. Auditor produces Summary_Report.md
+      with evidence; Principal Engineer validates and issues GO/NO-GO in Validation_Report.md.
+    priority: P0
+    type: feature
+    owner_role: auditor_ai
+    artifacts:
+      - frameworks/fwk-001-cursor-rules/examples/Summary_Report.md
+      - frameworks/fwk-001-cursor-rules/examples/Validation_Report.md
+    acceptance_criteria:
+      - /audit produces Summary_Report.md with line-cited evidence to Action_Plan.md and codebase.
+      - /peer_review produces Validation_Report.md with CONFIRM/CHALLENGE, NEW-RISK, and clear GO/NO-GO.
+      - NO cross-session memory contamination (manual spot-check of narratives differs).
+    dependencies: [BL-004]
+    effort: M
+    risk: Medium
+
+  - id: BL-003
+    title: Product backlog → technical plan → draft Action_Plan generator
+    description: >
+      From product_backlog.yaml and technical_plan.md/task_breakdown.yaml, generate a recommended
+      (non-final) Action_Plan.md to feed audit/peer-review gates.
+    priority: P0
+    type: feature
+    owner_role: planning_ai
+    artifacts:
+      - memory-bank/plan/Action_Plan.md
+      - tools/generate_action_plan.py
+    acceptance_criteria:
+      - Running generator with a valid backlog yields Action_Plan.md in memory-bank/plan/.
+      - The plan covers phases, gates, routing, security, observability, and memory bridge.
+      - Auditor can run on the draft and produce a usable Summary_Report.md.
+    dependencies: []
+    effort: M
+    risk: Low
+
+  - id: BL-004
+    title: Example project wiring for gates (audit/validation/synthesis)
+    description: >
+      Provide a minimal working example (MWE) folder and scripts showing the end-to-end: /audit → /peer_review
+      → /synthesize_plan producing Final_Implementation_Plan.md.
+    priority: P0
+    type: docs
+    owner_role: documentation_ai
+    artifacts:
+      - frameworks/fwk-001-cursor-rules/examples/Action_Plan.md
+      - frameworks/fwk-001-cursor-rules/examples/Summary_Report.md
+      - frameworks/fwk-001-cursor-rules/examples/Validation_Report.md
+      - frameworks/fwk-001-cursor-rules/examples/Final_Implementation_Plan.md
+    acceptance_criteria:
+      - Following README steps produces all 3 artifacts with correct content.
+      - GO/NO-GO logic is demonstrable with toggled inputs.
+    dependencies: [BL-003]
+    effort: S
+    risk: Low
+
+  - id: BL-005
+    title: Security QA baseline (SQLi/XSS/Auth) integrated in qa_ai
+    description: >
+      Expand qa_ai.mdc with concrete security checks and surface a security_report.md; add sample
+      tests and pass/fail criteria; ensure security issues block at QA gate.
+    priority: P0
+    type: quality
+    owner_role: qa_ai
+    artifacts:
+      - .cursor/rules/qa_ai.mdc
+      - security_report.md
+    acceptance_criteria:
+      - Security checks list present and mapped to pass/fail signals.
+      - Demo repo yields a security_report.md; failing checks block pipeline.
+    dependencies: []
+    effort: M
+    risk: Medium
+
+  - id: BL-006
+    title: Observability starter pack (alerts + dashboards) validation
+    description: >
+      Provide minimal alerts.yaml and dashboards.mmd with validation steps; ensure parsing and rendering
+      are part of Observability checks prior to deploy gate.
+    priority: P0
+    type: ops
+    owner_role: observability_ai
+    artifacts:
+      - frameworks/fwk-001-cursor-rules/observability/alerts.yaml
+      - frameworks/fwk-001-cursor-rules/observability/dashboards.mmd
+    acceptance_criteria:
+      - YAML lints cleanly; Mermaid renders without errors.
+      - Observability gate passes with these artifacts present.
+    dependencies: []
+    effort: S
+    risk: Low
+
+  - id: BL-007
+    title: Memory learning loop (pattern_library.json) + storage layout
+    description: >
+      Persist successful patterns and decisions via memory_ai; ensure pattern_library.json is created
+      and bridged to memory-bank and storage/memory indices.
+    priority: P0
+    type: feature
+    owner_role: memory_ai
+    artifacts:
+      - .cursor/rules/memory_ai.mdc
+      - storage/memory/knowledge_base.jsonl
+      - storage/memory/kb.index.faiss
+      - pattern_library.json
+    acceptance_criteria:
+      - After QA PASS, learning signals are appended to pattern_library.json.
+      - recall/snapshot/learn CLI confirms round-trip.
+    dependencies: []
+    effort: M
+    risk: Medium
+
+  - id: BL-008
+    title: Framework auto-attach globs coverage and tests
+    description: >
+      Validate that react/vue/angular/svelte, node/python/php/dotnet/go, and mobile rules attach correctly
+      via file markers; add simple smoke tests per framework.
+    priority: P0
+    type: quality
+    owner_role: codegen_ai
+    artifacts:
+      - .cursor/frameworks/**.mdc
+      - tests for rule attach mapping
+    acceptance_criteria:
+      - For a minimal file in each stack, attach log lists the expected rules.
+      - No false positives for unrelated stacks.
+    dependencies: [BL-001]
+    effort: S
+    risk: Low
+
+  - id: BL-009
+    title: Onboarding & Quick Start for solo dev workflow
+    description: >
+      Document a 30-min path from client brief → backlog → plan → draft plan → audit → peer review.
+    priority: P0
+    type: docs
+    owner_role: documentation_ai
+    artifacts:
+      - /workspace/docs/inventories/*
+      - /frameworks/fwk-001-cursor-rules/QUICK_START.md
+    acceptance_criteria:
+      - Following guide produces all intermediate artifacts.
+      - New user can run both sessions without confusion (separate chats).
+    dependencies: [BL-004]
+    effort: S
+    risk: Low
+
+  - id: BL-010
+    title: Planner-first mode (+ confirmation prompts) validation
+    description: >
+      Validate planner-first restrictions and confirmation logging; ensure mode toggling is auditable.
+    priority: P1
+    type: feature
+    owner_role: planner_moderator_ai
+    artifacts:
+      - confirmation logs
+    acceptance_criteria:
+      - Restricted actions require explicit confirmation (logged with timestamp and actor).
+      - Toggling off restores normal behavior.
+    dependencies: []
+    effort: S
+    risk: Low
+
+  - id: BL-011
+    title: Promotion snapshots + rollback rehearsal
+    description: >
+      Exercise snapshot CLI and rollback playbook; ensure snapshots are restorable and rehearsals pass.
+    priority: P1
+    type: ops
+    owner_role: mlops_ai
+    artifacts:
+      - promotion/snapshot_cli.py
+      - promotion/rollback_playbook.md
+    acceptance_criteria:
+      - Snapshot creation and restoration succeeds with logs.
+      - Rehearsal completes without errors; health checks OK post-restore.
+    dependencies: []
+    effort: M
+    risk: Medium
+
+  - id: BL-012
+    title: Routing override progressive mode tests
+    description: >
+      Validate routing_override.yaml and effective shadow; verify .bak rollback flow.
+    priority: P1
+    type: quality
+    owner_role: execution_orchestrator
+    artifacts:
+      - DOCS/changes/routing_override.yaml
+      - DOCS/changes/routing_effective.shadow.json
+    acceptance_criteria:
+      - Applying overrides changes effective routing as expected.
+      - Restoring .bak reverts to baseline; conflicts report remains empty.
+    dependencies: []
+    effort: S
+    risk: Low
+
+  - id: BL-013
+    title: Hydration selector scenarios
+    description: >
+      Ensure hydration rules select correct configs across common scenarios.
+    priority: P1
+    type: quality
+    owner_role: codegen_ai
+    artifacts:
+      - hydration/hydration_selector.py
+      - hydration/hydration_tests.yaml
+    acceptance_criteria:
+      - All hydration tests pass locally; selector decisions are deterministic.
+    dependencies: []
+    effort: S
+    risk: Low
+
+  - id: BL-014
+    title: Performance & concurrency thresholds
+    description: >
+      Define and test baseline performance SLAs (pytest durations, coverage, concurrency smoke tests).
+    priority: P1
+    type: quality
+    owner_role: qa_ai
+    artifacts:
+      - pytest.ini updates
+      - tests/concurrency
+    acceptance_criteria:
+      - Coverage ≥ 80%; top 10 test durations under target; concurrency tests pass.
+    dependencies: []
+    effort: M
+    risk: Medium
+
+  - id: BL-015
+    title: Freelance business templates (client onboarding, QA workflows)
+    description: >
+      Provide ready-to-use templates (ecommerce/fintech/saas) and QA workflows to reduce ramp-up time.
+    priority: P2
+    type: docs
+    owner_role: product_owner_ai
+    artifacts:
+      - .cursor/templates/*
+      - /workspace/docs/inventories/DECISION_GUIDE.md
+    acceptance_criteria:
+      - Templates included and referenced from Quick Start.
+      - At least two verticals have baseline rulesets.
+    dependencies: [BL-009]
+    effort: M
+    risk: Low
+
