@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for Svelte/SvelteKit. Auto-applies to Svelte projects.
+globs: ["**/*.svelte", "**/*.ts", "**/*.js", "svelte.config.*"]
+alwaysApply: false
+---
 You are an expert in JavaScript, TypeScript, and SvelteKit framework for scalable web development.
 
 Key Principles

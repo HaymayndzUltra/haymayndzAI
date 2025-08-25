@@ -1,4 +1,9 @@
-# framework_memory_bridge.mdc
+---
+description: >
+  Universal guidance rule: framework_memory_bridge — Always active across the workspace.
+globs: ["**/*"]
+alwaysApply: true
+---
 --------------------------------------------------
 title:        "FRAMEWORK_MEMORY_BRIDGE  —  v0.1.0"
 description:  "Integration bridge between framework roles and existing memory-bank system"

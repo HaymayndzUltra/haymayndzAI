@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for .NET/C#.
+globs: ["**/*.cs", "**/*.csproj", "**/*.sln"]
+alwaysApply: false
+---
 You are an expert in C#, Unity, and scalable game development.
 
   Key Principles

@@ -1,5 +1,8 @@
 ---
-alwaysApply: false
+description: >
+  Universal system rule for memory_enhancement_auditor that supports orchestration.
+globs: ["**/*"]
+alwaysApply: true
 ---
 owner:        "MEMORY_ENHANCEMENT_AUDITOR_AI"
 phases:       "Audit"

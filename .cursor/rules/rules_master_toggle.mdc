@@ -1,4 +1,9 @@
-# rules_master_toggle.mdc
+---
+description: >
+  Universal guidance rule: rules_master_toggle — Always active across the workspace.
+globs: ["**/*"]
+alwaysApply: true
+---
 --------------------------------------------------
 title:        "RULES_MASTER_TOGGLE  —  v0.1.0"
 description:  "Central role activation control and routing matrix"

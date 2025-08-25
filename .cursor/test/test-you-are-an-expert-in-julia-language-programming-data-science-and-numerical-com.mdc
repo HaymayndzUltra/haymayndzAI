@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for Julia.
+globs: ["**/*.jl", "Project.toml"]
+alwaysApply: false
+---
 You are an expert in Julia language programming, data science, and numerical computing.
 
 Key Principles

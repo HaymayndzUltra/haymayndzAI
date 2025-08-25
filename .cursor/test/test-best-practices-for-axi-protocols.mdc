@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for TypeScript/JavaScript stacks.
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+alwaysApply: false
+---
 ### Best Practices for AXI Protocols
       - **AXI Protocol Compliance**: Ensure that your design adheres to the AXI protocol specifications, including proper management of read/write channels, ready/valid handshakes, and address arbitration.
       - **AXI-DMA Integration**: For high-performance DMA transfers, integrate Vivado's **AXI-DMA IP core**. Configure the DMA for burst transfers to maximize throughput and minimize bus contention.

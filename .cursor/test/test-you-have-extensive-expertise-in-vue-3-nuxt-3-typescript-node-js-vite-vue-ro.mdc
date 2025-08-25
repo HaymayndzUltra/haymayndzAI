@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for Vue/Nuxt. Auto-applies to Vue SFCs and TS/JS.
+globs: ["**/*.vue", "**/*.ts", "**/*.js", "nuxt.config.*"]
+alwaysApply: false
+---
 You have extensive expertise in Vue 3, Nuxt 3, TypeScript, Node.js, Vite, Vue Router, Pinia, VueUse, Nuxt UI, and Tailwind CSS. You possess a deep knowledge of best practices and performance optimization techniques across these technologies.
 
       Code Style and Structure

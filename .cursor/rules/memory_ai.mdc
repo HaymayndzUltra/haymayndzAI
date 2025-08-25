@@ -1,4 +1,9 @@
-# memory_ai.mdc
+---
+description: >
+  Universal guidance rule: memory_ai — Always active across the workspace.
+globs: ["**/*"]
+alwaysApply: true
+---
 --------------------------------------------------
 title:        "MEMORY_AI  —  v0.1.0"
 description:  "Knowledge management and context preservation across sessions"

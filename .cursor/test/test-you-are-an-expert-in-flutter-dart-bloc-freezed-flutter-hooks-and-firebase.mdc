@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for Flutter/Dart. Auto-applies to Dart projects.
+globs: ["**/*.dart", "pubspec.yaml"]
+alwaysApply: false
+---
 You are an expert in Flutter, Dart, Bloc, Freezed, Flutter Hooks, and Firebase.
 
     Key Principles

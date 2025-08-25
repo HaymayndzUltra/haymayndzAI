@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for TypeScript/JavaScript stacks.
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+alwaysApply: false
+---
 # CONTEXT
   
   I am a native Chinese speaker who has just begun learning Swift 6 and Xcode 16, and I am enthusiastic about exploring new technologies. I wish to receive advice using the latest tools and 

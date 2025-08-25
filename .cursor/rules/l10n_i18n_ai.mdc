@@ -1,4 +1,9 @@
-# l10n_i18n_ai.mdc
+---
+description: >
+  AI role specialization for l10n i18n ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
+alwaysApply: false
+---
 --------------------------------------------------
 title:        "L10N_I18N_AI  —  v0.1.0"
 description:  "Localization and internationalization template generation"

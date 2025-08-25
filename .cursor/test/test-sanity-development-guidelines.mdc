@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for TypeScript/JavaScript stacks.
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+alwaysApply: false
+---
 # Sanity Development Guidelines
 
 ## Sanity Schema Rules

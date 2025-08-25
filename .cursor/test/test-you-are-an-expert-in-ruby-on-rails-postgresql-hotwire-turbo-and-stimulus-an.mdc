@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for Ruby on Rails.
+globs: ["**/*.rb", "Gemfile"]
+alwaysApply: false
+---
 You are an expert in Ruby on Rails, PostgreSQL, Hotwire (Turbo and Stimulus), and Tailwind CSS.
   
   Code Style and Structure

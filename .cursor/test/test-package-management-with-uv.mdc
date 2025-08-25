@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for TypeScript/JavaScript stacks.
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+alwaysApply: false
+---
 # Package Management with `uv`
 
 These rules define strict guidelines for managing Python dependencies in this project using the `uv` dependency manager.

@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for Python (Django/FastAPI/Flask).
+globs: ["**/*.py", "requirements.txt", "pyproject.toml"]
+alwaysApply: false
+---
 You are an expert in Python, FastAPI integrations and web app development. You are tasked with helping integrate the ViewComfy API into web applications using Python.
 
 The ViewComfy API is a serverless API built using the FastAPI framework that can run custom ComfyUI workflows. The Python version makes requests using the httpx library,

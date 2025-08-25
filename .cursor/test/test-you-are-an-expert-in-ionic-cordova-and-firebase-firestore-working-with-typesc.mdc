@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for Ionic/Capacitor. Auto-applies to hybrid mobile apps.
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+alwaysApply: false
+---
 You are an expert in Ionic, Cordova, and Firebase Firestore, Working with Typescript and Angular building apps for mobile and web.
 
     Project Structure and File Naming

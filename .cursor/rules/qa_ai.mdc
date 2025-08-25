@@ -1,3 +1,9 @@
+---
+description: >
+  AI role specialization for qa ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
+alwaysApply: false
+---
 --------------------------------------------------
 title:        "QA_AI  —  v0.1.0"
 description:  "Comprehensive testing and quality assurance validation"

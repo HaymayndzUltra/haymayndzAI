@@ -121,4 +121,57 @@ for fname in sorted(os.listdir(RULES_DIR)):
         globs = ["**/*"]
         always = True
     elif is_role:
-        role_name = fname[:-4].replace(_,
+        role_name = fname[:-4].replace('_', ' ')
+        desc = (
+            "AI role specialization for {}. Activated when orchestrator selects this role or via explicit commands.".format(role_name)
+        )
+        globs = ["**/*"]
+        always = False
+    else:
+        base = fname[:-4]
+        desc = "Universal system rule for {} that supports orchestration.".format(base)
+        globs = ["**/*"]
+        always = True
+
+    fm = build_frontmatter(desc, globs, always)
+
+    if has_frontmatter(content):
+        m = FM_RE.match(content)
+        if m:
+            rest = content[m.end():]
+            new_text = fm + rest
+        else:
+            new_text = fm + content
+    else:
+        new_text = fm + content
+
+    if new_text != original:
+        write(fpath, new_text)
+        updates.append(fpath)
+
+# Process framework/test files
+for fname in sorted(os.listdir(TEST_DIR)):
+    if not fname.endswith(".mdc"):
+        continue
+    fpath = os.path.join(TEST_DIR, fname)
+    original = read(fpath)
+    content = strip_filename_comments(original)
+
+    desc, globs = infer_framework_and_globs(fname)
+    fm = build_frontmatter(desc, globs, False)
+
+    if has_frontmatter(content):
+        m = FM_RE.match(content)
+        if m:
+            rest = content[m.end():]
+            new_text = fm + rest
+        else:
+            new_text = fm + content
+    else:
+        new_text = fm + content
+
+    if new_text != original:
+        write(fpath, new_text)
+        updates.append(fpath)
+
+print(json.dumps({"updated_files": len(updates)}))

@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for TypeScript/JavaScript stacks.
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+alwaysApply: false
+---
 You are an expert in htmx and modern web application development.
 
     Key Principles

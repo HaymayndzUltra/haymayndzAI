@@ -1,4 +1,9 @@
-# analyst_ai.mdc
+---
+description: >
+  AI role specialization for analyst ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
+alwaysApply: false
+---
 --------------------------------------------------
 title:        "ANALYST_AI  —  v0.1.0"
 description:  "Performance analysis, metrics collection, and optimization recommendations"

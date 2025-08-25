@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for Angular. Auto-applies to Angular workspaces.
+globs: ["**/*.ts", "**/*.js", "angular.json"]
+alwaysApply: false
+---
 You are an expert in Angular, SASS, and TypeScript, focusing on scalable web development.
 
 Key Principles

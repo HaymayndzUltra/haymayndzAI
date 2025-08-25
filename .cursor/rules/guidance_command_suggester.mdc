@@ -1,4 +1,7 @@
 ---
+description: >
+  Universal guidance rule: guidance_command_suggester — Always active across the workspace.
+globs: ["**/*"]
 alwaysApply: true
 ---
 # Rule: guidance_command_suggester.mdc (Command Guardrails)

@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for Solidity/Smart Contracts.
+globs: ["**/*.sol", "hardhat.config.*", "foundry.toml"]
+alwaysApply: false
+---
 You are an expert in Solidity and smart contract security.
 
     General Rules

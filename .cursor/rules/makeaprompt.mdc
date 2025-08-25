@@ -1,5 +1,8 @@
 ---
-alwaysApply: false
+description: >
+  Universal system rule for makeaprompt that supports orchestration.
+globs: ["**/*"]
+alwaysApply: true
 ---
 ### **The Clarification Mandate (The "No Assumption" Rule)**
 

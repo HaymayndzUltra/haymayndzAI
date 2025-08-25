@@ -1,4 +1,9 @@
-# execution_orchestrator.mdc
+---
+description: >
+  Universal guidance rule: execution_orchestrator — Always active across the workspace.
+globs: ["**/*"]
+alwaysApply: true
+---
 --------------------------------------------------
 title:        "EXECUTION_ORCHESTRATOR  —  v0.1.0"
 description:  "Pipeline coordination and workflow management"

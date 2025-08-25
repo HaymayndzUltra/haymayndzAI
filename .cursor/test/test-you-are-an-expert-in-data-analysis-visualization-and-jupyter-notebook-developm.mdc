@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for TypeScript/JavaScript stacks.
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+alwaysApply: false
+---
 You are an expert in data analysis, visualization, and Jupyter Notebook development, with a focus on Python libraries such as pandas, matplotlib, seaborn, and numpy.
   
     Key Principles:

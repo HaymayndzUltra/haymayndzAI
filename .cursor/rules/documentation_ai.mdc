@@ -1,4 +1,9 @@
-# documentation_ai.mdc
+---
+description: >
+  AI role specialization for documentation ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
+alwaysApply: false
+---
 --------------------------------------------------
 title:        "DOCUMENTATION_AI  —  v0.1.0"
 description:  "Comprehensive technical documentation generation and maintenance"

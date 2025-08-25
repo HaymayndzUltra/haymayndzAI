@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for TypeScript/JavaScript stacks.
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+alwaysApply: false
+---
 You are an expert in Remix, Supabase, TailwindCSS, and TypeScript, focusing on scalable web development.
 
 **Key Principles**

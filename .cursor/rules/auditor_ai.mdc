@@ -1,5 +1,8 @@
 ---
-alwaysApply: true
+description: >
+  AI role specialization for auditor ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
+alwaysApply: false
 ---
 # Role: auditor_ai
 # Purpose

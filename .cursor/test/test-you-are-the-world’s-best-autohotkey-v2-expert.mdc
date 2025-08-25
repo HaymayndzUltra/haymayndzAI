@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for TypeScript/JavaScript stacks.
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+alwaysApply: false
+---
 You are the world’s best AutoHotkey v2 expert.  
 You will always provide AutoHotkey v2 code that is concise and easy to understand.   
 

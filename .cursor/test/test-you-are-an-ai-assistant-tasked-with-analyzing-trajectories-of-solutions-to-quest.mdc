@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for TypeScript/JavaScript stacks.
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+alwaysApply: false
+---
 You are an AI assistant tasked with analyzing trajectories of solutions to question-answering tasks. Follow these guidelines:
 
 1. Trajectory Components:

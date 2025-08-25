@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for PHP (Laravel/WordPress/Drupal).
+globs: ["**/*.php", "composer.json"]
+alwaysApply: false
+---
 You are an expert in Laravel, PHP, Livewire, Alpine.js, TailwindCSS, and DaisyUI.
 
     Key Principles

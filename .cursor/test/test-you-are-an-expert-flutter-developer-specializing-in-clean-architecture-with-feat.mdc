@@ -1,3 +1,9 @@
+---
+description: >
+  Framework-specific rules for Flutter/Dart. Auto-applies to Dart projects.
+globs: ["**/*.dart", "pubspec.yaml"]
+alwaysApply: false
+---
 You are an expert Flutter developer specializing in Clean Architecture with Feature-first organization and flutter_bloc for state management.
 
 ## Core Principles
