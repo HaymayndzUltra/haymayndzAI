@@ -1,35 +1,3 @@
-<<<<<<< Current (Your changes)
-# Action Plan
-
-## Overview
-This document outlines the actionable steps derived from the technical planning phase.
-
-## Key Actions
-- [ ] **Action Item 1**: Description and rationale
-- [ ] **Action Item 2**: Description and rationale
-- [ ] **Action Item 3**: Description and rationale
-
-## Dependencies
-- List any dependencies between actions
-- Identify critical path items
-
-## Timeline
-- **Phase 1**: [Start Date] - [End Date]
-- **Phase 2**: [Start Date] - [End Date]
-- **Phase 3**: [Start Date] - [End Date]
-
-## Success Criteria
-- Measurable outcomes for each action
-- Quality gates and checkpoints
-
-## Risk Mitigation
-- Potential risks and mitigation strategies
-- Contingency plans
-
-## Notes
-- Additional context and considerations
-- Stakeholder input and feedback
-=======
 # Action Plan: AI Orchestration System (Solo Freelance Dev Readiness)
 
 ## Inputs
@@ -47,7 +15,7 @@ Establish a working end-to-end pipeline: backlog → plan → draft Action_Plan 
 - Outputs: Planning gate evidence captured in audit notes
 
 ### Phase 2 — Draft Action Plan (This document)
-- Scope: Convert backlog BL-001 … BL-015 into actionable steps with artifacts and checks
+- Scope: Convert backlog items into actionable steps with artifacts and checks
 - Outputs: This `Action_Plan.md`
 
 ### Phase 3 — Audit (auditor_ai) → Summary_Report.md
@@ -69,21 +37,26 @@ Establish a working end-to-end pipeline: backlog → plan → draft Action_Plan 
 - Outputs: `Final_Implementation_Plan.md` with sequenced tasks and rollback notes
 
 ## Workstreams (from backlog)
-- BL-001: Orchestrator rule attach logging → `rule_attach_log.json`
-- BL-002: Two-session audit → peer review → reports present
-- BL-003: Generator from backlog/plan → `Action_Plan.md`
-- BL-004: Example wiring producing all gating artifacts
-- BL-005: Security QA baseline → `security_report.md` and gate policy
-- BL-006: Observability starter → `observability/alerts.yaml`, `dashboards.mmd`
-- BL-007: Memory learning loop → `pattern_library.json` and storage layout
-- BL-008: Framework globs coverage → attach mapping tests
-- BL-009: Onboarding & Quick Start → doc path from brief to review
-- BL-010…015: P1/P2 enhancements (planner mode, snapshots, overrides, hydration, perf, templates)
-- BL-016: Java/Spring Boot rules migration → attach coverage and latency targets
-- BL-017: Rust rules migration → precise attach using rust markers
-- BL-018: Unity (C#) rules → attach on .cs game scripts with 0 false positives
-- BL-019: iOS/Swift rules → attach coverage with testing/security/perf guidance
-- BL-020: E-commerce (Shopify/WordPress) rules → attach coverage and docs
+- BL-001: Orchestrator role selection + rule attach logging (stabilize) → `.cursor/rules/execution_orchestrator.mdc`, `rule_attach_log.json`
+- BL-002: Two-session audit → peer review gate (bias separation) → `frameworks/fwk-001-cursor-rules/examples/Summary_Report.md`, `frameworks/fwk-001-cursor-rules/examples/Validation_Report.md`
+- BL-003: Product backlog → technical plan → draft Action_Plan generator → `memory-bank/plan/Action_Plan.md`, `tools/generate_action_plan.py`
+- BL-016: Java/Spring Boot rules migration and attach coverage → `.cursor/frameworks/backend/java/**`, `rule_attach_log.json`
+- BL-017: Rust rules migration and attach coverage → `.cursor/frameworks/backend/rust/**`, `rule_attach_log.json`
+- BL-018: Unity (C#) game development rules and attach coverage → `.cursor/frameworks/specialized/unity/**`, `rule_attach_log.json`
+- BL-019: iOS/Swift mobile rules and attach coverage → `.cursor/frameworks/mobile/ios/**`, `rule_attach_log.json`
+- BL-020: E-commerce rules (Shopify/WordPress) and attach coverage → `.cursor/frameworks/specialized/ecommerce/**`, `rule_attach_log.json`
+- BL-004: Example project wiring for gates (audit/validation/synthesis) → `frameworks/fwk-001-cursor-rules/examples/Action_Plan.md`, `frameworks/fwk-001-cursor-rules/examples/Summary_Report.md`
+- BL-005: Security QA baseline (SQLi/XSS/Auth) integrated in qa_ai → `.cursor/rules/qa_ai.mdc`, `security_report.md`
+- BL-006: Observability starter pack (alerts + dashboards) validation → `frameworks/fwk-001-cursor-rules/observability/alerts.yaml`, `frameworks/fwk-001-cursor-rules/observability/dashboards.mmd`
+- BL-007: Memory learning loop (pattern_library.json) + storage layout → `.cursor/rules/memory_ai.mdc`, `storage/memory/knowledge_base.jsonl`
+- BL-008: Framework auto-attach globs coverage and tests → `.cursor/frameworks/**.mdc`, `tests for rule attach mapping`
+- BL-009: Onboarding & Quick Start for solo dev workflow → `/workspace/docs/inventories/*`, `/frameworks/fwk-001-cursor-rules/QUICK_START.md`
+- BL-010: Planner-first mode (+ confirmation prompts) validation → `confirmation logs`
+- BL-011: Promotion snapshots + rollback rehearsal → `promotion/snapshot_cli.py`, `promotion/rollback_playbook.md`
+- BL-012: Routing override progressive mode tests → `DOCS/changes/routing_override.yaml`, `DOCS/changes/routing_effective.shadow.json`
+- BL-013: Hydration selector scenarios → `hydration/hydration_selector.py`, `hydration/hydration_tests.yaml`
+- BL-014: Performance & concurrency thresholds → `pytest.ini updates`, `tests/concurrency`
+- BL-015: Freelance business templates (client onboarding, QA workflows) → `.cursor/templates/*`, `/workspace/docs/inventories/DECISION_GUIDE.md`
 
 ## Acceptance Criteria (Definition of Done)
 - `Summary_Report.md` with evidence citations
@@ -93,4 +66,3 @@ Establish a working end-to-end pipeline: backlog → plan → draft Action_Plan 
 
 ## IMPORTANT NOTE
 Run audit and peer review in separate sessions to avoid bias. Treat planning and QA gates as blocking unless explicitly set to warn; include explicit evidence references in all findings.
->>>>>>> Incoming (Background Agent changes)
