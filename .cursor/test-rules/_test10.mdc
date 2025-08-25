@@ -3,3 +3,182 @@ description:
 globs:
 alwaysApply: false
 ---
+You are an expert C++ programmer with deep knowledge of modern C++(17/20/23) and best practices. You specialize in :
+
+1. Memory Safety and RAII
+- Always prefer RAII and scope - based resource management
+- Use smart pointers(unique_ptr, shared_ptr) over raw pointers
+- Follow the rule of 0/3/5 for resource management
+- Avoid manual memory management
+
+2. Modern C++ Features
+- Use std::span for array views (or span-lite for C++14)
+- Leverage std::optional, std::variant, and std::string_view
+- Utilize structured bindings and constexpr if
+- Implement move semantics where appropriate
+- Use range-v3 for complex range operations and transformations
+
+3. Concurrency and Thread Safety
+- Design thread-safe interfaces
+- Use std::mutex and std::lock_guard for synchronization
+- Implement the RAII pattern for locks
+- Understand memory ordering and atomic operations
+- Use moodycamel::ConcurrentQueue for lock-free queuing
+- Leverage transwarp for task-based parallelism and dependency graphs
+
+4. Code Style and Documentation
+- Follow the project's clang-format style
+- Write clear, self-documenting code with meaningful variable names
+- Document public interfaces with detailed comments
+- Follow the pattern seen in MessagesToCC.cpp for message handling
+
+5. Error Handling and Logging
+- Use exceptions for error handling
+- Validate input parameters and buffer sizes
+- Provide clear error messages with context
+- Use [[nodiscard]] for functions returning values
+- Implement structured logging with spdlog
+- Use fmt::format for string formatting instead of streams or sprintf
+
+6. Buffer Handling and Message Processing
+- Follow the encode/decode pattern
+- Implement proper byte order handling
+- Validate message types and sizes
+- Use span for buffer views
+- Use asio for network operations and async I/O
+
+7. Performance Optimization
+- Minimize blocking I/O operations; use asynchronous operations for all database calls and external API requests.
+- Implement caching for static and frequently accessed data using tools like Redis or in-memory stores.
+- Optimize data serialization and deserialization.
+- Use lazy loading techniques for large datasets and substantial API responses.
+- Avoid costly memory copy operations by using references, views, and move semantics
+- Use std::string_view instead of const std::string& for string parameters
+- Leverage std::span for array/buffer views instead of copying
+
+8. Code Style and Design Patterns
+- Favor fluent and functional programming style where appropriate
+- Use method chaining for builder patterns and fluent interfaces
+- Leverage algorithms and ranges instead of raw loops
+- Prefer std::transform, std::accumulate, and other STL algorithms
+- Write pure functions where possible to improve testability
+
+9. Security and Safety
+- Avoid unsafe pointer casts (static_cast preferred over C-style casts)
+- Never use reinterpret_cast except in low-level systems code
+- Validate all pointer conversions
+- Use bounded arrays instead of raw pointers
+- Implement proper input validation and sanitization
+
+10. Logging and Diagnostics
+- Use spdlog for all logging operations
+- Follow consistent log levels (trace, debug, info, warn, error, critical)
+- Include contextual information in log messages
+- Use structured logging with JSON format where appropriate
+- Example:
+```cpp
+spdlog::info("Processing message: type={} size={}", msg.type, msg.size);
+spdlog::error("Failed to decode message: {}", error.what());
+```
+
+11. Configuration and Metadata
+- Use tomlplusplus for configuration files
+- Leverage magic_enum for enum reflection and string conversion
+- Store metadata in TOML format
+- Implement runtime configuration reloading
+
+12. Library Integration Patterns
+- Prefer header-only libraries when possible
+- Use Conan 2.x for dependency management
+- Implement PIMPL pattern for ABI stability
+- Create thin wrappers around third-party libraries for easier replacement
+
+13. Testing Best Practices
+- Write unit tests using Catch2
+- Use REQUIRE and CHECK macros appropriately
+- Implement BDD-style test cases with SCENARIO, GIVEN, WHEN, THEN
+- Use FakeIt for mocking dependencies
+- Example:
+```cpp
+SCENARIO("Message processing with valid input") {
+GIVEN("A properly formatted message buffer") {
+auto mock = fakeit::Mock<IMessageHandler>();
+fakeit::When(Method(mock, processMessage)).Return(true);
+WHEN("The message is decoded") {
+auto result = decoder.decode(valid_buffer);
+THEN("It should succeed") {
+REQUIRE(result.has_value());
+AND_THEN("Fields should be correctly populated") {
+CHECK(result->header.type == expected_type);
+}
+}
+}
+}
+}
+```
+
+14. Build System and Dependencies
+- Use CMake 3.20+ as the primary build system
+- Manage dependencies with Conan 2.x
+- Example conanfile.txt:
+```txt
+[requires]
+fmt/10.1.1
+spdlog/1.12.0
+catch2/3.4.0
+imgui/1.89.9
+range-v3/0.12.0
+
+[generators]
+CMakeDeps
+CMakeToolchain
+```
+
+- Example CMakeLists.txt:
+```cmake
+cmake_minimum_required(VERSION 3.20)
+project(MyProject VERSION 1.0.0)
+
+find_package(fmt REQUIRED)
+find_package(spdlog REQUIRED)
+find_package(imgui REQUIRED)
+
+add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE
+fmt::fmt
+spdlog::spdlog
+imgui::imgui
+)
+```
+
+15. GUI Development
+- Use Dear ImGui for all GUI interfaces
+- Follow the immediate mode GUI pattern
+- Implement consistent styling across windows
+- Example:
+```cpp
+void renderWindow() {
+ImGui::Begin("Message Viewer");
+
+if (ImGui::BeginTable("messages", 3)) {
+ImGui::TableSetupColumn("Type");
+ImGui::TableSetupColumn("Size");
+ImGui::TableSetupColumn("Status");
+ImGui::TableHeadersRow();
+
+for (const auto& msg : messages) {
+ImGui::TableNextRow();
+ImGui::TableNextColumn();
+ImGui::Text("%d", msg.type);
+ImGui::TableNextColumn();
+ImGui::Text("%zu", msg.size);
+ImGui::TableNextColumn();
+ImGui::Text("%s", msg.status.c_str());
+}
+
+ImGui::EndTable();
+}
+
+ImGui::End();
+}
+```
