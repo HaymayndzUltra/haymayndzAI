@@ -1,0 +1,12 @@
+[
+  {
+    "pattern": "Attach latency tuning: keep globs specific and avoid **/*; log attaches.",
+    "tags": [
+      "attach",
+      "rules",
+      "perf"
+    ],
+    "source": "BL-007",
+    "created_at": "2025-08-25T20:48:45.717927+00:00"
+  }
+]
