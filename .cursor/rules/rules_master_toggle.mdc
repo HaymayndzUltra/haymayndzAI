@@ -32,7 +32,7 @@ roles:
   planning_ai:
     enabled: true
     priority: 2
-    triggers: ["/plan", "/architect", "/estimate"]
+    triggers: ["/plan", "/plan --action-plan", "/architect", "/estimate"]
     dependencies: ["product_owner_ai"]
     
   codegen_ai:
@@ -150,6 +150,7 @@ command_routing:
   "/prioritize":        "product_owner_ai"
   "/refine":           "product_owner_ai"
   "/plan":             "planning_ai"
+  "/plan --action-plan": "planning_ai"
   "/architect":        "planning_ai"
   "/estimate":         "planning_ai"
   "/gen_code":         "codegen_ai"
