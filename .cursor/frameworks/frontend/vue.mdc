@@ -1,0 +1,23 @@
+---
+description: Vue/Nuxt rules with auto-attach via globs
+globs: ["**/*.vue", "nuxt.config.*"]
+alwaysApply: false
+---
+
+# Vue / Nuxt Engineering Rules
+
+- Use `<script setup lang="ts">` and defineProps/defineEmits.
+- Keep components small; use composables for logic.
+- SSR-friendly APIs in Nuxt; guard client-only code.
+
+## Performance
+- Avoid reactive oversubscription; use `computed` and `watchEffect` wisely.
+- Virtualize large lists.
+
+## Security
+- Escape dynamic HTML; server-validate params.
+
+## @Docs
+- Vue Docs: `https://vuejs.org/guide/`
+- Nuxt Docs: `https://nuxt.com/docs`
+

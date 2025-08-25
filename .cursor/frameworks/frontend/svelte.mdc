@@ -1,0 +1,15 @@
+---
+description: Svelte/SvelteKit rules with auto-attach via globs
+globs: ["**/*.svelte", "svelte.config.*"]
+alwaysApply: false
+---
+
+# Svelte / SvelteKit Rules
+
+- Keep stores small; derive values with `derived`.
+- Prefer load functions/`+page.server.ts` for data.
+
+## @Docs
+- Svelte Docs: `https://svelte.dev/docs`
+- SvelteKit Docs: `https://kit.svelte.dev/docs`
+

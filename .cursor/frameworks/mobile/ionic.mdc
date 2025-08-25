@@ -1,0 +1,15 @@
+---
+description: Ionic/Cordova rules auto-attached via globs
+globs: ["ionic.config.json", "capacitor.config.*", "**/*.tsx", "**/*.ts"]
+alwaysApply: false
+---
+
+# Ionic / Capacitor Rules
+
+- Use Capacitor plugins; wrap native calls; handle permissions.
+- Keep UI responsive; prefer lazy routes.
+
+## @Docs
+- Ionic: `https://ionicframework.com/docs`
+- Capacitor: `https://capacitorjs.com/docs`
+

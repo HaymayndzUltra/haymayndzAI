@@ -63,11 +63,13 @@ sync_rules:
     - framework_todos → tasks_active.json (append mode)
     - role_outputs → memory-bank/project-brain/
     - execution_logs → memory-bank/logs/
+    - rule_attach_log.json → memory-bank/observability/rules/
     
   memory_to_framework:
     - tasks_active.json → framework role context
     - cursor_state.json → execution_orchestrator state
     - current-session.md → memory_ai knowledge base
+    - pattern_library.json → auto-suggestions in planning/codegen
     
   conflict_resolution:
     - existing_system_precedence: true  # Existing system wins conflicts

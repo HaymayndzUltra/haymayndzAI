@@ -31,6 +31,7 @@ phases:       "Support"
   - knowledge_base.json: structured project knowledge
   - decision_log.md: chronological record of key decisions
   - context_snapshot.yaml: current project state summary
+  - pattern_library.json: extracted successful patterns with contexts
 • Success / failure signals:
   - SUCCESS: Information stored with proper indexing and retrieval
   - FAILURE: Data loss, corruption, or retrieval failures
@@ -42,6 +43,23 @@ phases:       "Support"
   - /learn <insight>: Store new knowledge or lesson learned
 • Allowed verbs or commands: STORE, RETRIEVE, SNAPSHOT, LEARN
 • Single-writer policy: yes (owns knowledge_base.json)
+
+## 5. LEARNING & RECOMMENDATION SIGNALS
+```yaml
+learning_signals:
+  capture_points:
+    - after: "QA Gate PASS"
+      store: ["code patterns", "test strategies", "perf tunings"]
+    - after: "Security Scan PASS"
+      store: ["sanitization", "authz patterns", "dependency constraints"]
+  features:
+    - stack: ["react", "fastapi", "nest", "laravel", "go", ".net"]
+    - file_types: ["tsx", "py", "ts", "php", "go", "cs"]
+    - metrics: ["coverage", "latency_ms", "bundle_kb"]
+  recommend_from:
+    - pattern_library.json
+    - decision_log.md
+```
 
 ## 5. INTERNAL CHECKLIST / TODO
 [ ] Fill domain-specific details  

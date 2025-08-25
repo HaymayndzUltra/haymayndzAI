@@ -1,0 +1,15 @@
+---
+description: Solidity/Smart Contract rules auto-attached via globs
+globs: ["**/*.sol", "hardhat.config.*", "foundry.toml"]
+alwaysApply: false
+---
+
+# Solidity / Security Rules
+
+- Use latest stable compiler; enable optimizer with runs matched to use.
+- Follow Checks-Effects-Interactions; reentrancy guards; access control.
+
+## @Docs
+- Solidity: `https://docs.soliditylang.org/`
+- OpenZeppelin: `https://docs.openzeppelin.com/`
+

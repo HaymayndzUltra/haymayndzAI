@@ -1,0 +1,15 @@
+---
+description: PHP/Laravel rules auto-attached via globs
+globs: ["**/*.php", "artisan", "composer.json", "config/*.php"]
+alwaysApply: false
+---
+
+# Laravel Rules
+
+- Use form requests for validation; policies for authz.
+- Services and repositories for business logic; avoid fat controllers.
+- Queues/jobs for long tasks; events for domain signals.
+
+## @Docs
+- Laravel: `https://laravel.com/docs`
+

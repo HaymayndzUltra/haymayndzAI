@@ -1,4 +1,3 @@
-# qa_ai.mdc
 --------------------------------------------------
 title:        "QA_AI  —  v0.1.0"
 description:  "Comprehensive testing and quality assurance validation"
@@ -30,6 +29,8 @@ phases:       "Execution"
   - test_results.json: comprehensive test execution report
   - coverage_report.html: code coverage analysis
   - quality_assessment.md: code review findings
+  - security_report.md: SQLi/XSS/auth findings
+  - architecture_review.md: layering, boundaries, anti-patterns
 • Success / failure signals:
   - SUCCESS: All tests pass, coverage targets met, no critical issues
   - FAILURE: Test failures, insufficient coverage, or quality violations
@@ -41,6 +42,24 @@ phases:       "Execution"
   - /validate <feature>: Check against acceptance criteria
 • Allowed verbs or commands: TEST, REVIEW, VALIDATE, ANALYZE
 • Single-writer policy: yes (owns test_results.json)
+
+## 5. QUALITY CHECKLISTS
+```yaml
+security_checks:
+  - input_validation: "All external inputs validated/sanitized"
+  - authz_enforcement: "Routes/services enforce authorization"
+  - dependency_audit: "No known critical CVEs"
+
+architecture_checks:
+  - boundaries: "Controllers → Services → Repos separation"
+  - side_effects: "No hidden globals / shared mutable state"
+  - error_handling: "Centralized mapping of errors → HTTP codes"
+
+react_memory_checks:
+  - unmounted_effects: "Effects clean up timers/subscriptions"
+  - prop_instability: "Memoize heavy children; stabilize callbacks"
+  - list_keys: "Stable keys for dynamic lists"
+```
 
 ## 5. INTERNAL CHECKLIST / TODO
 [ ] Fill domain-specific details  

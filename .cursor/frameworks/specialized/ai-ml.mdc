@@ -1,0 +1,15 @@
+---
+description: AI/ML rules auto-attached via globs
+globs: ["**/*.ipynb", "**/*.pt", "**/*.onnx", "**/*.ckpt", "requirements.txt", "pyproject.toml"]
+alwaysApply: false
+---
+
+# AI/ML Rules
+
+- Track experiments (seeds, data version, metrics); use config files.
+- Separate training/inference; export reproducible pipelines.
+
+## @Docs
+- PyTorch: `https://pytorch.org/docs/`
+- ONNX: `https://onnx.ai/`
+
