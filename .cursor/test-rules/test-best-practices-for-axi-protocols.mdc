@@ -1,7 +1,7 @@
 ---
 description: >
   Framework-specific rules for TypeScript/JavaScript stacks.
-globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+globs: "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"
 alwaysApply: false
 ---
 ### Best Practices for AXI Protocols
