@@ -1,0 +1,280 @@
+{
+  "generated_at": "2025-08-25T19:26:34.963431+00:00",
+  "repo_root": "/workspace",
+  "entries": [
+    {
+      "framework": "frontend/react",
+      "rule_file": ".cursor/frameworks/frontend/react.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "file",
+          "path": "package.json",
+          "present": false
+        },
+        {
+          "type": "json-dep",
+          "dep": "react",
+          "present": false
+        },
+        {
+          "type": "glob",
+          "path": "**/*.tsx",
+          "matches": 0
+        },
+        {
+          "type": "glob",
+          "path": "**/*.jsx",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "frontend/vue",
+      "rule_file": ".cursor/frameworks/frontend/vue.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "file",
+          "path": "package.json",
+          "present": false
+        },
+        {
+          "type": "json-dep",
+          "dep": "vue",
+          "present": false
+        },
+        {
+          "type": "glob",
+          "path": "**/*.vue",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "frontend/angular",
+      "rule_file": ".cursor/frameworks/frontend/angular.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "file",
+          "path": "angular.json",
+          "present": false
+        },
+        {
+          "type": "json-dep",
+          "dep": "@angular/core",
+          "present": false
+        },
+        {
+          "type": "glob",
+          "path": "**/*.ts",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "frontend/svelte",
+      "rule_file": ".cursor/frameworks/frontend/svelte.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "file",
+          "path": "package.json",
+          "present": false
+        },
+        {
+          "type": "json-dep",
+          "dep": "svelte",
+          "present": false
+        },
+        {
+          "type": "glob",
+          "path": "**/*.svelte",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "backend/node",
+      "rule_file": ".cursor/frameworks/backend/node.mdc",
+      "detected": true,
+      "confidence": "high",
+      "markers": [
+        {
+          "type": "file",
+          "path": "package.json",
+          "present": false
+        },
+        {
+          "type": "regex",
+          "pattern": "express|koa|fastify",
+          "present": true
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "backend/python",
+      "rule_file": ".cursor/frameworks/backend/python.mdc",
+      "detected": true,
+      "confidence": "high",
+      "markers": [
+        {
+          "type": "glob",
+          "path": "**/*.py",
+          "matches": 64
+        },
+        {
+          "type": "file",
+          "path": "pyproject.toml",
+          "present": false
+        },
+        {
+          "type": "file",
+          "path": "requirements.txt",
+          "present": false
+        }
+      ],
+      "matched_files": [
+        "/workspace/scripts/auto_restore_templates.py",
+        "/workspace/scripts/report_last3days.py",
+        "/workspace/scripts/progressive_monitor.py",
+        "/workspace/scripts/validate_sidecars.py",
+        "/workspace/scripts/labnotes_watcher.py"
+      ]
+    },
+    {
+      "framework": "backend/php",
+      "rule_file": ".cursor/frameworks/backend/php.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "glob",
+          "path": "**/*.php",
+          "matches": 0
+        },
+        {
+          "type": "file",
+          "path": "composer.json",
+          "present": false
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "backend/go",
+      "rule_file": ".cursor/frameworks/backend/go.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "file",
+          "path": "go.mod",
+          "present": false
+        },
+        {
+          "type": "glob",
+          "path": "**/*.go",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "backend/dotnet",
+      "rule_file": ".cursor/frameworks/backend/dotnet.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "glob",
+          "path": "**/*.cs",
+          "matches": 0
+        },
+        {
+          "type": "glob",
+          "path": "**/*.sln",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "mobile/flutter",
+      "rule_file": ".cursor/frameworks/mobile/flutter.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "file",
+          "path": "pubspec.yaml",
+          "present": false
+        },
+        {
+          "type": "glob",
+          "path": "**/*.dart",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "mobile/react-native",
+      "rule_file": ".cursor/frameworks/mobile/react-native.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "file",
+          "path": "package.json",
+          "present": false
+        },
+        {
+          "type": "json-dep",
+          "dep": "react-native",
+          "present": false
+        },
+        {
+          "type": "glob",
+          "path": "**/*.tsx",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "mobile/ionic",
+      "rule_file": ".cursor/frameworks/mobile/ionic.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "file",
+          "path": "package.json",
+          "present": false
+        },
+        {
+          "type": "json-dep",
+          "dep": "@ionic",
+          "present": false
+        },
+        {
+          "type": "glob",
+          "path": "**/*.ts",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    }
+  ]
+}
