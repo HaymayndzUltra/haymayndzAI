@@ -1,4 +1,9 @@
-# security_ai.mdc
+---
+description: >
+  AI role specialization for security ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
+alwaysApply: false
+---
 --------------------------------------------------
 title:        "SECURITY_AI  —  v0.1.0"
 description:  "Security scanning, threat modeling, and vulnerability assessment"

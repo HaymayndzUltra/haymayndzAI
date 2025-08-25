@@ -1,0 +1,15 @@
+---
+description: React Native rules auto-attached via globs
+globs: ["**/*.tsx", "**/*.jsx", "app.json", "react-native.config.js"]
+alwaysApply: false
+---
+
+# React Native Rules
+
+- Use TypeScript; platform-specific files (*.ios.tsx, *.android.tsx).
+- Manage navigation with React Navigation; handle deep links.
+- Optimize lists with FlatList/SectionList windowing.
+
+## @Docs
+- React Native: `https://reactnative.dev/docs`
+

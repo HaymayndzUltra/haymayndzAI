@@ -1,4 +1,9 @@
-# prompt_factory_ai.mdc
+---
+description: >
+  AI role specialization for prompt factory ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
+alwaysApply: false
+---
 --------------------------------------------------
 title:        "PROMPT_FACTORY_AI  —  v0.1.0"
 description:  "Self-replicating framework bootstrap and prompt generation"

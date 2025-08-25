@@ -1,4 +1,9 @@
-# mlops_ai.mdc
+---
+description: >
+  AI role specialization for mlops ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
+alwaysApply: false
+---
 --------------------------------------------------
 title:        "MLOPS_AI  —  v0.1.0"
 description:  "Deployment automation and infrastructure management"

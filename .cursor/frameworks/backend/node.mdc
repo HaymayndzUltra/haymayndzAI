@@ -1,0 +1,23 @@
+---
+description: Node.js/Express/NestJS rules with auto-attach via globs
+globs: ["**/*.ts", "**/*.js", "nest-cli.json", "express*", "src/**/*.controller.ts"]
+alwaysApply: false
+---
+
+# Node.js / Express / NestJS Rules
+
+- Use TypeScript strict mode; DTO validation (Zod/class-validator).
+- Layered architecture: controllers → services → repositories.
+- Avoid shared mutable state; prefer DI.
+
+## API
+- OpenAPI-first; generate types; validate inputs/outputs.
+- Handle errors centrally; map to proper HTTP codes.
+
+## Security
+- Rate limit, helmet, CORS, input validation, authz checks.
+
+## @Docs
+- Express: `https://expressjs.com/`
+- NestJS: `https://docs.nestjs.com/`
+

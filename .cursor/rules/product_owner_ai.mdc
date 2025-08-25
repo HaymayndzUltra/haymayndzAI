@@ -1,4 +1,9 @@
-# product_owner_ai.mdc
+---
+description: >
+  AI role specialization for product owner ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
+alwaysApply: false
+---
 --------------------------------------------------
 title:        "PRODUCT_OWNER_AI  —  v0.1.0"
 description:  "Requirements gathering, backlog management, and feature prioritization"

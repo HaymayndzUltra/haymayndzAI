@@ -1,0 +1,21 @@
+---
+description: Angular rules with auto-attach via globs
+globs: ["angular.json", "**/*.component.ts", "**/*.module.ts"]
+alwaysApply: false
+---
+
+# Angular Engineering Rules
+
+- Use standalone components when practical; strong typing everywhere.
+- Reactive forms over template forms for complex flows.
+- Strict change detection; OnPush by default.
+
+## Performance
+- Prefer `async` pipe; avoid manual subscriptions without `takeUntil`.
+
+## Security
+- Use HttpClient with interceptors; sanitize HTML, enable CSP.
+
+## @Docs
+- Angular Docs: `https://angular.dev/`
+

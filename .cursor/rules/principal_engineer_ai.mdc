@@ -1,6 +1,7 @@
 ---
-description:
-globs:
+description: >
+  AI role specialization for principal engineer ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
 alwaysApply: false
 ---
 # Role: principal_engineer_ai

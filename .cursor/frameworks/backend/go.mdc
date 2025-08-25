@@ -1,0 +1,17 @@
+---
+description: Go backend rules auto-attached via globs
+globs: ["**/*.go", "go.mod", "go.sum"]
+alwaysApply: false
+---
+
+# Go Backend Rules
+
+- Context-first APIs; propagate context; avoid global state.
+- Use interfaces for dependencies; small packages per domain.
+
+## HTTP
+- Use chi/echo/gin; middleware for auth/logging/metrics.
+
+## @Docs
+- Go: `https://go.dev/doc/`
+

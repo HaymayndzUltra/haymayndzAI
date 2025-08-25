@@ -1,0 +1,27 @@
+---
+description: React/Next.js rules with auto-attach via file globs
+globs: ["**/*.tsx", "**/*.jsx", "next.config.*", "app/**", "pages/**"]
+alwaysApply: false
+---
+
+# React / Next.js Engineering Rules
+
+- Prefer React Server Components when possible; minimize `use client`.
+- Validate forms with Zod; co-locate schema and types.
+- Use error boundaries (`error.tsx`, `global-error.tsx`).
+- Optimize images (next/image), lazy-load, and prefetch critical routes.
+- Ensure accessibility (ARIA, keyboard nav, contrast).
+
+## Performance & Memory
+- Avoid state leaks: cancel effects on unmount; clear timers/subscriptions.
+- Use `useMemo`/`useCallback` to stabilize prop refs to memoized children.
+- Profile with React DevTools Profiler for commits > 16ms.
+
+## Security
+- Sanitize user input; encode dangerouslySetInnerHTML; CSP headers.
+- Protect API routes; validate body/query with Zod.
+
+## @Docs
+- React Docs: `https://react.dev/`
+- Next.js Docs: `https://nextjs.org/docs`
+

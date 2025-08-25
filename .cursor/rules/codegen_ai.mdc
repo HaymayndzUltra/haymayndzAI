@@ -1,4 +1,7 @@
 ---
+description: >
+  AI role specialization for codegen ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
 alwaysApply: false
 ---
 owner:        "CODEGEN_AI"

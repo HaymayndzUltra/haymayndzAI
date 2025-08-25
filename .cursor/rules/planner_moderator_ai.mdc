@@ -1,4 +1,9 @@
-# planner_moderator_ai.mdc
+---
+description: >
+  AI role specialization for planner moderator ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
+alwaysApply: false
+---
 --------------------------------------------------
 title:        "PLANNER_MODERATOR_AI  —  v0.1.0"
 description:  "Single-toggle, answer-first, confirm-before-action session moderator"

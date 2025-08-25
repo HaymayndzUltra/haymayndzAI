@@ -1,8 +1,6 @@
 ---
 description: >
-  Universal guidance rule: after every response, suggest the next logical step.
-  But suggestions must be context-aware, minimal, and only if helpful.
-  Do not suggest framework commands unless other rules greenlight it.
+  Universal guidance rule: guidance_next_steps — Always active across the workspace.
 globs: ["**/*"]
 alwaysApply: false
 ---

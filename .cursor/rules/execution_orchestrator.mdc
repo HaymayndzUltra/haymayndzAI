@@ -1,4 +1,9 @@
-# execution_orchestrator.mdc
+---
+description: >
+  Universal guidance rule: execution_orchestrator — Always active across the workspace.
+globs: ["**/*"]
+alwaysApply: true
+---
 --------------------------------------------------
 title:        "EXECUTION_ORCHESTRATOR  —  v0.1.0"
 description:  "Pipeline coordination and workflow management"
@@ -14,6 +19,7 @@ phases:       "Orchestration"
 - workflow_state.json: current pipeline state
 - gate_results.json: results per gate
 - handoff_log.json: role handoff trace
+ - rule_attach_log.json: which framework rules were attached and why
 
 # Triggers / Commands
 - /run_pipeline
@@ -43,6 +49,48 @@ graph TD
     B --> X[auditor_ai]
     X --> Y[principal_engineer_ai]
     Y --> C
+```
+## 2.b ROLE SELECTION & RULE LOADING
+```yaml
+role_selection:
+  strategy: "task_context_matching"
+  inputs:
+    - file_patterns: ["**/*.tsx", "**/*.py", "**/*.php", "**/*.go", "**/*.cs"]
+    - project_structure: ["app/", "pages/", "src/", "angular.json", "nest-cli.json", "manage.py", "pubspec.yaml"]
+    - commit_metadata: ["feat:", "fix:", "docs:"]
+  mapping:
+    - when: "*.tsx or next.config.* present"
+      attach_rules: ["frameworks/frontend/react.mdc"]
+      prefer_roles: ["codegen_ai", "qa_ai", "documentation_ai"]
+    - when: "*.py or FastAPI/Django markers present"
+      attach_rules: ["frameworks/backend/python.mdc"]
+      prefer_roles: ["codegen_ai", "qa_ai", "security_ai"]
+    - when: "*.ts with Nest markers (nest-cli.json)"
+      attach_rules: ["frameworks/backend/node.mdc"]
+      prefer_roles: ["codegen_ai", "qa_ai", "security_ai"]
+    - when: "*.php or artisan present"
+      attach_rules: ["frameworks/backend/php.mdc"]
+      prefer_roles: ["codegen_ai", "qa_ai", "security_ai"]
+    - when: "*.go or go.mod present"
+      attach_rules: ["frameworks/backend/go.mdc"]
+      prefer_roles: ["codegen_ai", "qa_ai"]
+    - when: "*.dart or pubspec.yaml present"
+      attach_rules: ["frameworks/mobile/flutter.mdc"]
+      prefer_roles: ["codegen_ai", "qa_ai"]
+
+docs_integration:
+  enabled: true
+  sources:
+    - name: React Docs
+      url: "https://react.dev/"
+    - name: Next Docs
+      url: "https://nextjs.org/docs"
+    - name: FastAPI Docs
+      url: "https://fastapi.tiangolo.com/"
+    - name: Django Docs
+      url: "https://docs.djangoproject.com/"
+logging:
+  rule_attach_log: "rule_attach_log.json"
 ```
 
 ## 3. GATE RULES AND CHECKPOINTS

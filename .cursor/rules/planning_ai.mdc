@@ -1,4 +1,9 @@
-# planning_ai.mdc
+---
+description: >
+  AI role specialization for planning ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
+alwaysApply: false
+---
 --------------------------------------------------
 title:        "PLANNING_AI  —  v0.1.0"
 description:  "Technical architecture design and implementation planning"

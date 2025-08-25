@@ -1,0 +1,14 @@
+---
+description: Flutter/Dart mobile rules auto-attached via globs
+globs: ["pubspec.yaml", "**/*.dart"]
+alwaysApply: false
+---
+
+# Flutter Rules
+
+- Use Riverpod/Bloc; Freezed for union types; json_serializable.
+- Keep widgets pure; extract state to providers/blocs.
+
+## @Docs
+- Flutter: `https://docs.flutter.dev/`
+

@@ -1,0 +1,17 @@
+---
+description: .NET API rules auto-attached via globs
+globs: ["**/*.csproj", "**/*.sln", "**/*.cs", "Program.cs", "Startup.cs"]
+alwaysApply: false
+---
+
+# .NET Backend Rules
+
+- Minimal APIs or clean architecture; DI for services/repositories.
+- Nullable reference types enabled; async all the way.
+
+## Security
+- Data annotations + FluentValidation; authorization policies.
+
+## @Docs
+- ASP.NET Core: `https://learn.microsoft.com/aspnet/core/`
+

@@ -68196,3 +68196,15237 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 ---
 
+### 2025-08-25 22:47:42 PST+0800 — DELETE — .cursor/analytics.md
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/analytics.md (abs: /home/haymayndz/HaymayndzAI/.cursor/analytics.md)
+- File: analytics.md (ext: .md)
+
+#### Summary
+- Auto Summary: +0/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/docs/Freelance_Business_Integration.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/docs/Freelance_Business_Integration.md (abs: /home/haymayndz/HaymayndzAI/.cursor/docs/Freelance_Business_Integration.md)
+- File: Freelance_Business_Integration.md (ext: .md)
+
+#### Summary
+- Auto Summary: +14/-0 lines; Importance: Low
+-- Headings: ## Freelance Business Integration;### Client Onboarding Templates;### Project-Specific Rule Sets;### QA Workflows;### Delivery Optimization
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +14 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/docs/Implementation_Guide.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/docs/Implementation_Guide.md (abs: /home/haymayndz/HaymayndzAI/.cursor/docs/Implementation_Guide.md)
+- File: Implementation_Guide.md (ext: .md)
+
+#### Summary
+- Auto Summary: +24/-0 lines; Importance: Low
+-- Headings: ## Implementation Guide;### Setup;### Configuration Examples;### Testing Procedures;### Troubleshooting
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +24 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/docs/Optimization_Recommendations.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/docs/Optimization_Recommendations.md (abs: /home/haymayndz/HaymayndzAI/.cursor/docs/Optimization_Recommendations.md)
+- File: Optimization_Recommendations.md (ext: .md)
+
+#### Summary
+- Auto Summary: +7/-0 lines; Importance: Low
+-- Headings: ## Optimization Recommendations
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/docs/System_Architecture.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/docs/System_Architecture.md (abs: /home/haymayndz/HaymayndzAI/.cursor/docs/System_Architecture.md)
+- File: System_Architecture.md (ext: .md)
+
+#### Summary
+- Auto Summary: +56/-0 lines; Importance: Low
+-- Headings: ## AI Orchestration System Architecture;### Mission;### Core Components;### Framework Rules (Auto-Attach via Globs);### Pipeline Diagram;### Rule Application Decision Tree;### Context Switching Logic
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +56 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/backend/dotnet.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/backend/dotnet.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/backend/dotnet.mdc)
+- File: dotnet.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +17/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +17 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/backend/go.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/backend/go.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/backend/go.mdc)
+- File: go.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +17/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +17 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/backend/node.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/backend/node.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/backend/node.mdc)
+- File: node.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +23/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +23 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/backend/php.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/backend/php.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/backend/php.mdc)
+- File: php.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +15/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +15 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/backend/python.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/backend/python.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/backend/python.mdc)
+- File: python.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +25/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +25 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/frontend/angular.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/frontend/angular.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/frontend/angular.mdc)
+- File: angular.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +21/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +21 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/frontend/react.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/frontend/react.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/frontend/react.mdc)
+- File: react.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +27/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +27 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/frontend/svelte.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/frontend/svelte.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/frontend/svelte.mdc)
+- File: svelte.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +15/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +15 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/frontend/vue.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/frontend/vue.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/frontend/vue.mdc)
+- File: vue.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +23/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +23 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/mobile/flutter.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/mobile/flutter.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/mobile/flutter.mdc)
+- File: flutter.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +14/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +14 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/mobile/ionic.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/mobile/ionic.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/mobile/ionic.mdc)
+- File: ionic.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +15/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +15 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/mobile/react-native.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/mobile/react-native.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/mobile/react-native.mdc)
+- File: react-native.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +15/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +15 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/specialized/ai-ml.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/specialized/ai-ml.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/specialized/ai-ml.mdc)
+- File: ai-ml.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +15/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +15 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — .cursor/frameworks/specialized/blockchain.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/frameworks/specialized/blockchain.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/frameworks/specialized/blockchain.mdc)
+- File: blockchain.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +15/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +15 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/analyst_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/analyst_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/analyst_ai.mdc)
+- File: analyst_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/auditor_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/auditor_ai.mdc)
+- File: auditor_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +4/-1 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +4 lines, -1 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/codegen_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/codegen_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/codegen_ai.mdc)
+- File: codegen_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +4/-1 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +4 lines, -1 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/data_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/data_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/data_ai.mdc)
+- File: data_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/documentation_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/documentation_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/documentation_ai.mdc)
+- File: documentation_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/execution_orchestrator.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/execution_orchestrator.mdc)
+- File: execution_orchestrator.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +50/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +50 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/framework_memory_bridge.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/framework_memory_bridge.mdc)
+- File: framework_memory_bridge.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +9/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +9 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/guidance_command_suggester.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/guidance_command_suggester.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/guidance_command_suggester.mdc)
+- File: guidance_command_suggester.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +3/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +3 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/guidance_next_steps.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/guidance_next_steps.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/guidance_next_steps.mdc)
+- File: guidance_next_steps.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +1/-3 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +1 lines, -3 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/guidance_phase_awareness.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/guidance_phase_awareness.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/guidance_phase_awareness.mdc)
+- File: guidance_phase_awareness.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +1/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +1 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/l10n_i18n_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/l10n_i18n_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/l10n_i18n_ai.mdc)
+- File: l10n_i18n_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/makeaprompt.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/makeaprompt.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/makeaprompt.mdc)
+- File: makeaprompt.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +5/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +5 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/memory_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/memory_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/memory_ai.mdc)
+- File: memory_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +25/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +25 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/memory_enhancement_auditor.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/memory_enhancement_auditor.mdc)
+- File: memory_enhancement_auditor.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +4/-1 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +4 lines, -1 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/mlops_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/mlops_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/mlops_ai.mdc)
+- File: mlops_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/observability_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/observability_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/observability_ai.mdc)
+- File: observability_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/planner_moderator_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/planner_moderator_ai.mdc)
+- File: planner_moderator_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/planning_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/planning_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/planning_ai.mdc)
+- File: planning_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/principal_engineer_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/principal_engineer_ai.mdc)
+- File: principal_engineer_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +4/-3 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +4 lines, -3 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/product_owner_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/product_owner_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/product_owner_ai.mdc)
+- File: product_owner_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/prompt_factory_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/prompt_factory_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/prompt_factory_ai.mdc)
+- File: prompt_factory_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/prompt_linter_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/prompt_linter_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/prompt_linter_ai.mdc)
+- File: prompt_linter_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/qa_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/qa_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/qa_ai.mdc)
+- File: qa_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +27/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +27 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/rules_master_toggle.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/rules_master_toggle.mdc)
+- File: rules_master_toggle.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — MODIFY — .cursor/rules/security_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/security_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/security_ai.mdc)
+- File: security_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-best-practices-for-axi-protocols.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-best-practices-for-axi-protocols.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-best-practices-for-axi-protocols.mdc)
+- File: test-best-practices-for-axi-protocols.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +16/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +16 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-c-development-rules.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-c-development-rules.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-c-development-rules.mdc)
+- File: test-c-development-rules.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +73/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +73 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-case-generation-prompt.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-case-generation-prompt.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-case-generation-prompt.mdc)
+- File: test-case-generation-prompt.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +10/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +10 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-context-1.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-context-1.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-context-1.mdc)
+- File: test-context-1.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +281/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +281 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-context.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-context.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-context.mdc)
+- File: test-context.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +68/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +68 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-drupal-10-module-development-rules.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-drupal-10-module-development-rules.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-drupal-10-module-development-rules.mdc)
+- File: test-drupal-10-module-development-rules.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +88/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +88 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-elixir-and-phoenix-best-practices.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-elixir-and-phoenix-best-practices.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-elixir-and-phoenix-best-practices.mdc)
+- File: test-elixir-and-phoenix-best-practices.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +122/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +122 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-modular-design-code-organization.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-modular-design-code-organization.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-modular-design-code-organization.mdc)
+- File: test-modular-design-code-organization.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +37/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +37 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-net-development-rules.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-net-development-rules.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-net-development-rules.mdc)
+- File: test-net-development-rules.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +75/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +75 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-original-instructions-https-forum-cursor-com-t-share-your-rules-for-ai-2377.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-original-instructions-https-forum-cursor-com-t-share-your-rules-for-ai-2377.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-original-instructions-https-forum-cursor-com-t-share-your-rules-for-ai-2377.mdc)
+- File: test-original-instructions-https-forum-cursor-com-t-share-your-rules-for-ai-2377.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +24/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +24 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-original-original-instructions-https-x-com-nickadobos-status-18145963578791.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-original-original-instructions-https-x-com-nickadobos-status-18145963578791.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-original-original-instructions-https-x-com-nickadobos-status-18145963578791.mdc)
+- File: test-original-original-instructions-https-x-com-nickadobos-status-18145963578791.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +30/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +30 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-overview.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-overview.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-overview.mdc)
+- File: test-overview.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +89/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +89 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-package-management-with-uv.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-package-management-with-uv.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-package-management-with-uv.mdc)
+- File: test-package-management-with-uv.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +68/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +68 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-prisma-orm-development-guidelines.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-prisma-orm-development-guidelines.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-prisma-orm-development-guidelines.mdc)
+- File: test-prisma-orm-development-guidelines.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +159/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +159 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-prompt-for-expert-angular-developer.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-prompt-for-expert-angular-developer.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-prompt-for-expert-angular-developer.mdc)
+- File: test-prompt-for-expert-angular-developer.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +107/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +107 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-prompt-for-expert-manifest-developer.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-prompt-for-expert-manifest-developer.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-prompt-for-expert-manifest-developer.mdc)
+- File: test-prompt-for-expert-manifest-developer.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +61/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +61 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-sanity-development-guidelines.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-sanity-development-guidelines.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-sanity-development-guidelines.mdc)
+- File: test-sanity-development-guidelines.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +317/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +317 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-the-following-text-has-been-compressed-by-you-the-llm-to-save-space-decode-th.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-the-following-text-has-been-compressed-by-you-the-llm-to-save-space-decode-th.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-the-following-text-has-been-compressed-by-you-the-llm-to-save-space-decode-th.mdc)
+- File: test-the-following-text-has-been-compressed-by-you-the-llm-to-save-space-decode-th.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +192/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +192 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-these-are-the-rules-created-and-used-by-the-official-cursor-team.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-these-are-the-rules-created-and-used-by-the-official-cursor-team.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-these-are-the-rules-created-and-used-by-the-official-cursor-team.mdc)
+- File: test-these-are-the-rules-created-and-used-by-the-official-cursor-team.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +35/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +35 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-this-comprehensive-guide-outlines-best-practices-conventions-and-standards-for.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-this-comprehensive-guide-outlines-best-practices-conventions-and-standards-for.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-this-comprehensive-guide-outlines-best-practices-conventions-and-standards-for.mdc)
+- File: test-this-comprehensive-guide-outlines-best-practices-conventions-and-standards-for.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +209/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +209 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-unity-c-expert-developer-prompt.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-unity-c-expert-developer-prompt.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-unity-c-expert-developer-prompt.mdc)
+- File: test-unity-c-expert-developer-prompt.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +101/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +101 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-when-generating-rspec-tests-follow-these-best-practices-to-ensure-they-are-comp.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-when-generating-rspec-tests-follow-these-best-practices-to-ensure-they-are-comp.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-when-generating-rspec-tests-follow-these-best-practices-to-ensure-they-are-comp.mdc)
+- File: test-when-generating-rspec-tests-follow-these-best-practices-to-ensure-they-are-comp.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +37/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +37 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-write-code-that-follows-laravel-php-guidelines-from-spatie-be.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-write-code-that-follows-laravel-php-guidelines-from-spatie-be.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-write-code-that-follows-laravel-php-guidelines-from-spatie-be.mdc)
+- File: test-write-code-that-follows-laravel-php-guidelines-from-spatie-be.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +9/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +9 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-a-model-that-critiques-and-reflects-on-the-quality-of-responses-providi.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-a-model-that-critiques-and-reflects-on-the-quality-of-responses-providi.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-a-model-that-critiques-and-reflects-on-the-quality-of-responses-providi.mdc)
+- File: test-you-are-a-model-that-critiques-and-reflects-on-the-quality-of-responses-providi.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +38/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +38 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-a-professional-programmer-of-arduino-esp32-and-esp8266-microcontrollers.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-a-professional-programmer-of-arduino-esp32-and-esp8266-microcontrollers.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-a-professional-programmer-of-arduino-esp32-and-esp8266-microcontrollers.mdc)
+- File: test-you-are-a-professional-programmer-of-arduino-esp32-and-esp8266-microcontrollers.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +29/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +29 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-a-python-programming-assistant-you-will-be-given.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-a-python-programming-assistant-you-will-be-given.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-a-python-programming-assistant-you-will-be-given.mdc)
+- File: test-you-are-a-python-programming-assistant-you-will-be-given.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +37/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +37 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-a-senior-blazor-and-net-developer-experienced-in-c-asp-net-core-and.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-a-senior-blazor-and-net-developer-experienced-in-c-asp-net-core-and.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-a-senior-blazor-and-net-developer-experienced-in-c-asp-net-core-and.mdc)
+- File: test-you-are-a-senior-blazor-and-net-developer-experienced-in-c-asp-net-core-and.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +74/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +74 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-a-senior-dart-programmer-with-experience-in-the-flutter-framework-and-a.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-a-senior-dart-programmer-with-experience-in-the-flutter-framework-and-a.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-a-senior-dart-programmer-with-experience-in-the-flutter-framework-and-a.mdc)
+- File: test-you-are-a-senior-dart-programmer-with-experience-in-the-flutter-framework-and-a.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +133/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +133 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-a-senior-devops-engineer-and-backend-solutions-developer-with-expertise.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-a-senior-devops-engineer-and-backend-solutions-developer-with-expertise.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-a-senior-devops-engineer-and-backend-solutions-developer-with-expertise.mdc)
+- File: test-you-are-a-senior-devops-engineer-and-backend-solutions-developer-with-expertise.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +158/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +158 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-a-senior-front-end-developer-and-an-expert-in-reactjs-nextjs-javascrip.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-a-senior-front-end-developer-and-an-expert-in-reactjs-nextjs-javascrip.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-a-senior-front-end-developer-and-an-expert-in-reactjs-nextjs-javascrip.mdc)
+- File: test-you-are-a-senior-front-end-developer-and-an-expert-in-reactjs-nextjs-javascrip.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +39/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +39 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-a-senior-kotlin-programmer-with-experience-in-the-android-framework-and.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-a-senior-kotlin-programmer-with-experience-in-the-android-framework-and.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-a-senior-kotlin-programmer-with-experience-in-the-android-framework-and.mdc)
+- File: test-you-are-a-senior-kotlin-programmer-with-experience-in-the-android-framework-and.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +128/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +128 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-a-senior-qa-automation-engineer-expert-in-typescript-javascript-fronte.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-a-senior-qa-automation-engineer-expert-in-typescript-javascript-fronte.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-a-senior-qa-automation-engineer-expert-in-typescript-javascript-fronte.mdc)
+- File: test-you-are-a-senior-qa-automation-engineer-expert-in-typescript-javascript-fronte.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +29/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +29 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-a-senior-typescript-programmer-with-experience-in-the-fastify-framework.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-a-senior-typescript-programmer-with-experience-in-the-fastify-framework.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-a-senior-typescript-programmer-with-experience-in-the-fastify-framework.mdc)
+- File: test-you-are-a-senior-typescript-programmer-with-experience-in-the-fastify-framework.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +121/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +121 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-a-senior-typescript-programmer-with-experience-in-the-nestjs-framework-a-1.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-a-senior-typescript-programmer-with-experience-in-the-nestjs-framework-a-1.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-a-senior-typescript-programmer-with-experience-in-the-nestjs-framework-a-1.mdc)
+- File: test-you-are-a-senior-typescript-programmer-with-experience-in-the-nestjs-framework-a-1.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +138/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +138 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-a-senior-typescript-programmer-with-experience-in-the-nestjs-framework-a.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-a-senior-typescript-programmer-with-experience-in-the-nestjs-framework-a.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-a-senior-typescript-programmer-with-experience-in-the-nestjs-framework-a.mdc)
+- File: test-you-are-a-senior-typescript-programmer-with-experience-in-the-nestjs-framework-a.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +126/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +126 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-ai-assistant-navigating-an-e-commerce-website-to-find-and-purchase-pr.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-ai-assistant-navigating-an-e-commerce-website-to-find-and-purchase-pr.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-ai-assistant-navigating-an-e-commerce-website-to-find-and-purchase-pr.mdc)
+- File: test-you-are-an-ai-assistant-navigating-an-e-commerce-website-to-find-and-purchase-pr.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +52/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +52 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-ai-assistant-tasked-with-analyzing-trajectories-of-solutions-to-quest.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-ai-assistant-tasked-with-analyzing-trajectories-of-solutions-to-quest.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-ai-assistant-tasked-with-analyzing-trajectories-of-solutions-to-quest.mdc)
+- File: test-you-are-an-ai-assistant-tasked-with-analyzing-trajectories-of-solutions-to-quest.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +43/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +43 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-ai-programming-assistant-specializing-in-building-apis-with-go.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-ai-programming-assistant-specializing-in-building-apis-with-go.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-ai-programming-assistant-specializing-in-building-apis-with-go.mdc)
+- File: test-you-are-an-expert-ai-programming-assistant-specializing-in-building-apis-with-go.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +34/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +34 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-chrome-extension-developer-proficient-in-javascript-typescrip.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-chrome-extension-developer-proficient-in-javascript-typescrip.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-chrome-extension-developer-proficient-in-javascript-typescrip.mdc)
+- File: test-you-are-an-expert-chrome-extension-developer-proficient-in-javascript-typescrip.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +93/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +93 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-developer-in-html-and-css-focusing-on-best-practices-accessi.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-developer-in-html-and-css-focusing-on-best-practices-accessi.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-developer-in-html-and-css-focusing-on-best-practices-accessi.mdc)
+- File: test-you-are-an-expert-developer-in-html-and-css-focusing-on-best-practices-accessi.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +62/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +62 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-developer-in-typescript-node-js-next-js-14-app-router-react.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-developer-in-typescript-node-js-next-js-14-app-router-react.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-developer-in-typescript-node-js-next-js-14-app-router-react.mdc)
+- File: test-you-are-an-expert-developer-in-typescript-node-js-next-js-14-app-router-react.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +132/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +132 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-developer-proficient-in-typescript-react-and-next-js-expo-r.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-developer-proficient-in-typescript-react-and-next-js-expo-r.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-developer-proficient-in-typescript-react-and-next-js-expo-r.mdc)
+- File: test-you-are-an-expert-developer-proficient-in-typescript-react-and-next-js-expo-r.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +126/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +126 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-flutter-developer-specializing-in-clean-architecture-with-feat.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-flutter-developer-specializing-in-clean-architecture-with-feat.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-flutter-developer-specializing-in-clean-architecture-with-feat.mdc)
+- File: test-you-are-an-expert-flutter-developer-specializing-in-clean-architecture-with-feat.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +374/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +374 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-full-stack-developer-proficient-in-typescript-react-next-js.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-full-stack-developer-proficient-in-typescript-react-next-js.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-full-stack-developer-proficient-in-typescript-react-next-js.mdc)
+- File: test-you-are-an-expert-full-stack-developer-proficient-in-typescript-react-next-js.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +59/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +59 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-full-stack-web-developer-focused-on-producing-clear-readable-1.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-full-stack-web-developer-focused-on-producing-clear-readable-1.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-full-stack-web-developer-focused-on-producing-clear-readable-1.mdc)
+- File: test-you-are-an-expert-full-stack-web-developer-focused-on-producing-clear-readable-1.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +32/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +32 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-full-stack-web-developer-focused-on-producing-clear-readable.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-full-stack-web-developer-focused-on-producing-clear-readable.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-full-stack-web-developer-focused-on-producing-clear-readable.mdc)
+- File: test-you-are-an-expert-full-stack-web-developer-focused-on-producing-clear-readable.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +31/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +31 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-al-and-microsoft-business-central-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-al-and-microsoft-business-central-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-al-and-microsoft-business-central-development.mdc)
+- File: test-you-are-an-expert-in-al-and-microsoft-business-central-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +66/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +66 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-angular-sass-and-typescript-focusing-on-scalable-web-dev.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-angular-sass-and-typescript-focusing-on-scalable-web-dev.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-angular-sass-and-typescript-focusing-on-scalable-web-dev.mdc)
+- File: test-you-are-an-expert-in-angular-sass-and-typescript-focusing-on-scalable-web-dev.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +88/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +88 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-bootstrap-and-modern-web-application-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-bootstrap-and-modern-web-application-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-bootstrap-and-modern-web-application-development.mdc)
+- File: test-you-are-an-expert-in-bootstrap-and-modern-web-application-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +46/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +46 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-c-unity-and-scalable-game-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-c-unity-and-scalable-game-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-c-unity-and-scalable-game-development.mdc)
+- File: test-you-are-an-expert-in-c-unity-and-scalable-game-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +58/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +58 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-cosmos-blockchain-specializing-in-cometbft-cosmos-sdk-co.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-cosmos-blockchain-specializing-in-cometbft-cosmos-sdk-co.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-cosmos-blockchain-specializing-in-cometbft-cosmos-sdk-co.mdc)
+- File: test-you-are-an-expert-in-cosmos-blockchain-specializing-in-cometbft-cosmos-sdk-co.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +45/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +45 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-data-analysis-visualization-and-jupyter-notebook-developm.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-data-analysis-visualization-and-jupyter-notebook-developm.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-data-analysis-visualization-and-jupyter-notebook-developm.mdc)
+- File: test-you-are-an-expert-in-data-analysis-visualization-and-jupyter-notebook-developm.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +62/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +62 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-deep-learning-transformers-diffusion-models-and-llm-deve.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-deep-learning-transformers-diffusion-models-and-llm-deve.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-deep-learning-transformers-diffusion-models-and-llm-deve.mdc)
+- File: test-you-are-an-expert-in-deep-learning-transformers-diffusion-models-and-llm-deve.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +75/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +75 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-elixir-phoenix-postgresql-liveview-and-tailwind-css.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-elixir-phoenix-postgresql-liveview-and-tailwind-css.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-elixir-phoenix-postgresql-liveview-and-tailwind-css.mdc)
+- File: test-you-are-an-expert-in-elixir-phoenix-postgresql-liveview-and-tailwind-css.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +65/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +65 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-flutter-dart-bloc-freezed-flutter-hooks-and-firebase.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-flutter-dart-bloc-freezed-flutter-hooks-and-firebase.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-flutter-dart-bloc-freezed-flutter-hooks-and-firebase.mdc)
+- File: test-you-are-an-expert-in-flutter-dart-bloc-freezed-flutter-hooks-and-firebase.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +88/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +88 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-flutter-dart-riverpod-freezed-flutter-hooks-and-supaba.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-flutter-dart-riverpod-freezed-flutter-hooks-and-supaba.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-flutter-dart-riverpod-freezed-flutter-hooks-and-supaba.mdc)
+- File: test-you-are-an-expert-in-flutter-dart-riverpod-freezed-flutter-hooks-and-supaba.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +80/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +80 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-fullstack-typescript-development-with-deep-knowledge-of-pay.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-fullstack-typescript-development-with-deep-knowledge-of-pay.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-fullstack-typescript-development-with-deep-knowledge-of-pay.mdc)
+- File: test-you-are-an-expert-in-fullstack-typescript-development-with-deep-knowledge-of-pay.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +108/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +108 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-ghost-cms-handlebars-templating-alpine-js-tailwind-css.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-ghost-cms-handlebars-templating-alpine-js-tailwind-css.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-ghost-cms-handlebars-templating-alpine-js-tailwind-css.mdc)
+- File: test-you-are-an-expert-in-ghost-cms-handlebars-templating-alpine-js-tailwind-css.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +129/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +129 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-go-microservices-architecture-and-clean-backend-developme.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-go-microservices-architecture-and-clean-backend-developme.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-go-microservices-architecture-and-clean-backend-developme.mdc)
+- File: test-you-are-an-expert-in-go-microservices-architecture-and-clean-backend-developme.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +101/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +101 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-htmx-and-modern-web-application-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-htmx-and-modern-web-application-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-htmx-and-modern-web-application-development.mdc)
+- File: test-you-are-an-expert-in-htmx-and-modern-web-application-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +47/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +47 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-ionic-and-cordova-working-with-typescript-and-angular-buil.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-ionic-and-cordova-working-with-typescript-and-angular-buil.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-ionic-and-cordova-working-with-typescript-and-angular-buil.mdc)
+- File: test-you-are-an-expert-in-ionic-and-cordova-working-with-typescript-and-angular-buil.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +64/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +64 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-ionic-cordova-and-firebase-firestore-working-with-typesc.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-ionic-cordova-and-firebase-firestore-working-with-typesc.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-ionic-cordova-and-firebase-firestore-working-with-typesc.mdc)
+- File: test-you-are-an-expert-in-ionic-cordova-and-firebase-firestore-working-with-typesc.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +98/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +98 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-java-programming-quarkus-framework-jakarta-ee-microprofi.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-java-programming-quarkus-framework-jakarta-ee-microprofi.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-java-programming-quarkus-framework-jakarta-ee-microprofi.mdc)
+- File: test-you-are-an-expert-in-java-programming-quarkus-framework-jakarta-ee-microprofi.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +82/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +82 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-java-programming-spring-boot-spring-framework-maven-jun.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-java-programming-spring-boot-spring-framework-maven-jun.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-java-programming-spring-boot-spring-framework-maven-jun.mdc)
+- File: test-you-are-an-expert-in-java-programming-spring-boot-spring-framework-maven-jun.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +81/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +81 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-javascript-react-native-expo-and-mobile-ui-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-javascript-react-native-expo-and-mobile-ui-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-javascript-react-native-expo-and-mobile-ui-development.mdc)
+- File: test-you-are-an-expert-in-javascript-react-native-expo-and-mobile-ui-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +39/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +39 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-javascript-react-node-js-next-js-app-router-zustand-sh.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-javascript-react-node-js-next-js-app-router-zustand-sh.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-javascript-react-node-js-next-js-app-router-zustand-sh.mdc)
+- File: test-you-are-an-expert-in-javascript-react-node-js-next-js-app-router-zustand-sh.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +150/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +150 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-javascript-typescript-and-astro-framework-for-scalable-we.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-javascript-typescript-and-astro-framework-for-scalable-we.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-javascript-typescript-and-astro-framework-for-scalable-we.mdc)
+- File: test-you-are-an-expert-in-javascript-typescript-and-astro-framework-for-scalable-we.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +113/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +113 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-javascript-typescript-and-sveltekit-framework-for-scalabl.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-javascript-typescript-and-sveltekit-framework-for-scalabl.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-javascript-typescript-and-sveltekit-framework-for-scalabl.mdc)
+- File: test-you-are-an-expert-in-javascript-typescript-and-sveltekit-framework-for-scalabl.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +118/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +118 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-jax-python-numpy-and-machine-learning.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-jax-python-numpy-and-machine-learning.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-jax-python-numpy-and-machine-learning.mdc)
+- File: test-you-are-an-expert-in-jax-python-numpy-and-machine-learning.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +104/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +104 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-julia-language-programming-data-science-and-numerical-com.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-julia-language-programming-data-science-and-numerical-com.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-julia-language-programming-data-science-and-numerical-com.mdc)
+- File: test-you-are-an-expert-in-julia-language-programming-data-science-and-numerical-com.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +126/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +126 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-laravel-php-and-related-web-development-technologies-1.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-laravel-php-and-related-web-development-technologies-1.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-laravel-php-and-related-web-development-technologies-1.mdc)
+- File: test-you-are-an-expert-in-laravel-php-and-related-web-development-technologies-1.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +98/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +98 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-laravel-php-and-related-web-development-technologies.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-laravel-php-and-related-web-development-technologies.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-laravel-php-and-related-web-development-technologies.mdc)
+- File: test-you-are-an-expert-in-laravel-php-and-related-web-development-technologies.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +63/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +63 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-laravel-php-livewire-alpine-js-tailwindcss-and-daisyui.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-laravel-php-livewire-alpine-js-tailwindcss-and-daisyui.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-laravel-php-livewire-alpine-js-tailwindcss-and-daisyui.mdc)
+- File: test-you-are-an-expert-in-laravel-php-livewire-alpine-js-tailwindcss-and-daisyui.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +95/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +95 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-laravel-vue-js-and-modern-full-stack-web-development-tech.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-laravel-vue-js-and-modern-full-stack-web-development-tech.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-laravel-vue-js-and-modern-full-stack-web-development-tech.mdc)
+- File: test-you-are-an-expert-in-laravel-vue-js-and-modern-full-stack-web-development-tech.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +65/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +65 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-lua-programming-with-deep-knowledge-of-its-unique-features.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-lua-programming-with-deep-knowledge-of-its-unique-features.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-lua-programming-with-deep-knowledge-of-its-unique-features.mdc)
+- File: test-you-are-an-expert-in-lua-programming-with-deep-knowledge-of-its-unique-features.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +128/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +128 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-building-onchain-applic.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-building-onchain-applic.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-building-onchain-applic.mdc)
+- File: test-you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-building-onchain-applic.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +71/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +71 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-python-and-cybersecurity-tool-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-python-and-cybersecurity-tool-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-python-and-cybersecurity-tool-development.mdc)
+- File: test-you-are-an-expert-in-python-and-cybersecurity-tool-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +65/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +65 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-python-django-and-scalable-restful-api-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-python-django-and-scalable-restful-api-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-python-django-and-scalable-restful-api-development.mdc)
+- File: test-you-are-an-expert-in-python-django-and-scalable-restful-api-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +125/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +125 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-python-django-and-scalable-web-application-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-python-django-and-scalable-web-application-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-python-django-and-scalable-web-application-development.mdc)
+- File: test-you-are-an-expert-in-python-django-and-scalable-web-application-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +59/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +59 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-python-fastapi-and-scalable-api-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-python-fastapi-and-scalable-api-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-python-fastapi-and-scalable-api-development.mdc)
+- File: test-you-are-an-expert-in-python-fastapi-and-scalable-api-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +67/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +67 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-python-fastapi-integrations-and-web-app-development-you-a.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-python-fastapi-integrations-and-web-app-development-you-a.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-python-fastapi-integrations-and-web-app-development-you-a.mdc)
+- File: test-you-are-an-expert-in-python-fastapi-integrations-and-web-app-development-you-a.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +574/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +574 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-python-fastapi-microservices-architecture-and-serverless.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-python-fastapi-microservices-architecture-and-serverless.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-python-fastapi-microservices-architecture-and-serverless.mdc)
+- File: test-you-are-an-expert-in-python-fastapi-microservices-architecture-and-serverless.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +50/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +50 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-python-flask-and-scalable-api-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-python-flask-and-scalable-api-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-python-flask-and-scalable-api-development.mdc)
+- File: test-you-are-an-expert-in-python-flask-and-scalable-api-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +97/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +97 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-python-odoo-and-enterprise-business-application-developme.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-python-odoo-and-enterprise-business-application-developme.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-python-odoo-and-enterprise-business-application-developme.mdc)
+- File: test-you-are-an-expert-in-python-odoo-and-enterprise-business-application-developme.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +56/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +56 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-python-robocorp-and-scalable-rpa-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-python-robocorp-and-scalable-rpa-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-python-robocorp-and-scalable-rpa-development.mdc)
+- File: test-you-are-an-expert-in-python-robocorp-and-scalable-rpa-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +65/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +65 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-react-vite-tailwind-css-three-js-react-three-fiber-and.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-react-vite-tailwind-css-three-js-react-three-fiber-and.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-react-vite-tailwind-css-three-js-react-three-fiber-and.mdc)
+- File: test-you-are-an-expert-in-react-vite-tailwind-css-three-js-react-three-fiber-and.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +51/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +51 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-remix-supabase-tailwindcss-and-typescript-focusing-on-s.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-remix-supabase-tailwindcss-and-typescript-focusing-on-s.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-remix-supabase-tailwindcss-and-typescript-focusing-on-s.mdc)
+- File: test-you-are-an-expert-in-remix-supabase-tailwindcss-and-typescript-focusing-on-s.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +84/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +84 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-ruby-on-rails-postgresql-hotwire-turbo-and-stimulus-an.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-ruby-on-rails-postgresql-hotwire-turbo-and-stimulus-an.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-ruby-on-rails-postgresql-hotwire-turbo-and-stimulus-an.mdc)
+- File: test-you-are-an-expert-in-ruby-on-rails-postgresql-hotwire-turbo-and-stimulus-an.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +65/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +65 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-rust-async-programming-and-concurrent-systems.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-rust-async-programming-and-concurrent-systems.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-rust-async-programming-and-concurrent-systems.mdc)
+- File: test-you-are-an-expert-in-rust-async-programming-and-concurrent-systems.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +65/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +65 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-solana-program-development-focusing-on-building-and-deploy.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-solana-program-development-focusing-on-building-and-deploy.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-solana-program-development-focusing-on-building-and-deploy.mdc)
+- File: test-you-are-an-expert-in-solana-program-development-focusing-on-building-and-deploy.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +44/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +44 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-solidity-and-smart-contract-security.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-solidity-and-smart-contract-security.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-solidity-and-smart-contract-security.mdc)
+- File: test-you-are-an-expert-in-solidity-and-smart-contract-security.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +88/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +88 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-solidity-typescript-node-js-next-js-14-app-router-react.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-solidity-typescript-node-js-next-js-14-app-router-react.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-solidity-typescript-node-js-next-js-14-app-router-react.mdc)
+- File: test-you-are-an-expert-in-solidity-typescript-node-js-next-js-14-app-router-react.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +71/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +71 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-svelte-5-sveltekit-typescript-and-modern-web-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-svelte-5-sveltekit-typescript-and-modern-web-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-svelte-5-sveltekit-typescript-and-modern-web-development.mdc)
+- File: test-you-are-an-expert-in-svelte-5-sveltekit-typescript-and-modern-web-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +220/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +220 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-terraform-and-infrastructure-as-code-iac-for-cloud-platfo.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-terraform-and-infrastructure-as-code-iac-for-cloud-platfo.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-terraform-and-infrastructure-as-code-iac-for-cloud-platfo.mdc)
+- File: test-you-are-an-expert-in-terraform-and-infrastructure-as-code-iac-for-cloud-platfo.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +61/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +61 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-terraform-state-management-and-handling-advanced-workflows.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-terraform-state-management-and-handling-advanced-workflows.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-terraform-state-management-and-handling-advanced-workflows.mdc)
+- File: test-you-are-an-expert-in-terraform-state-management-and-handling-advanced-workflows.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +31/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +31 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-typescript-gatsby-react-and-tailwind.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-typescript-gatsby-react-and-tailwind.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-typescript-gatsby-react-and-tailwind.mdc)
+- File: test-you-are-an-expert-in-typescript-gatsby-react-and-tailwind.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +52/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +52 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-typescript-node-js-next-js-app-router-react-shadcn-ui.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-typescript-node-js-next-js-app-router-react-shadcn-ui.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-typescript-node-js-next-js-app-router-react-shadcn-ui.mdc)
+- File: test-you-are-an-expert-in-typescript-node-js-next-js-app-router-react-shadcn-ui.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +48/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +48 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-typescript-node-js-nuxtjs-vue-3-shadcn-vue-radix-vue.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-typescript-node-js-nuxtjs-vue-3-shadcn-vue-radix-vue.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-typescript-node-js-nuxtjs-vue-3-shadcn-vue-radix-vue.mdc)
+- File: test-you-are-an-expert-in-typescript-node-js-nuxtjs-vue-3-shadcn-vue-radix-vue.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +63/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +63 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-typescript-node-js-vite-vue-js-vue-router-pinia-vueus.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-typescript-node-js-vite-vue-js-vue-router-pinia-vueus.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-typescript-node-js-vite-vue-js-vue-router-pinia-vueus.mdc)
+- File: test-you-are-an-expert-in-typescript-node-js-vite-vue-js-vue-router-pinia-vueus.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +41/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +41 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-typescript-pixi-js-web-game-development-and-mobile-app-o.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-typescript-pixi-js-web-game-development-and-mobile-app-o.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-typescript-pixi-js-web-game-development-and-mobile-app-o.mdc)
+- File: test-you-are-an-expert-in-typescript-pixi-js-web-game-development-and-mobile-app-o.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +124/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +124 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-typescript-react-native-expo-and-mobile-app-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-typescript-react-native-expo-and-mobile-app-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-typescript-react-native-expo-and-mobile-app-development.mdc)
+- File: test-you-are-an-expert-in-typescript-react-native-expo-and-mobile-app-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +41/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +41 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-typescript-react-native-expo-and-mobile-ui-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-typescript-react-native-expo-and-mobile-ui-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-typescript-react-native-expo-and-mobile-ui-development.mdc)
+- File: test-you-are-an-expert-in-typescript-react-native-expo-and-mobile-ui-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +105/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +105 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-ui-and-ux-design-principles-for-software-development.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-ui-and-ux-design-principles-for-software-development.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-ui-and-ux-design-principles-for-software-development.mdc)
+- File: test-you-are-an-expert-in-ui-and-ux-design-principles-for-software-development.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +123/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +123 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-web-development-including-javascript-typescript-css-rea.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-web-development-including-javascript-typescript-css-rea.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-web-development-including-javascript-typescript-css-rea.mdc)
+- File: test-you-are-an-expert-in-web-development-including-javascript-typescript-css-rea.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +25/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +25 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-web-scraping-and-data-extraction-with-a-focus-on-python-li.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-web-scraping-and-data-extraction-with-a-focus-on-python-li.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-web-scraping-and-data-extraction-with-a-focus-on-python-li.mdc)
+- File: test-you-are-an-expert-in-web-scraping-and-data-extraction-with-a-focus-on-python-li.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +75/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +75 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-wordpress-php-and-related-web-development-technologies-1.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-wordpress-php-and-related-web-development-technologies-1.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-wordpress-php-and-related-web-development-technologies-1.mdc)
+- File: test-you-are-an-expert-in-wordpress-php-and-related-web-development-technologies-1.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +65/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +65 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-wordpress-php-and-related-web-development-technologies.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-wordpress-php-and-related-web-development-technologies.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-wordpress-php-and-related-web-development-technologies.mdc)
+- File: test-you-are-an-expert-in-wordpress-php-and-related-web-development-technologies.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +62/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +62 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-in-wordpress-woocommerce-php-and-related-web-development-te.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-in-wordpress-woocommerce-php-and-related-web-development-te.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-in-wordpress-woocommerce-php-and-related-web-development-te.mdc)
+- File: test-you-are-an-expert-in-wordpress-woocommerce-php-and-related-web-development-te.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +89/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +89 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-ios-developer-using-swift-and-swiftui-follow-these-guidelines.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-ios-developer-using-swift-and-swiftui-follow-these-guidelines.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-ios-developer-using-swift-and-swiftui-follow-these-guidelines.mdc)
+- File: test-you-are-an-expert-ios-developer-using-swift-and-swiftui-follow-these-guidelines.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +116/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +116 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-salesforce-developer-that-will-create-apex-classes-apex-trig.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-salesforce-developer-that-will-create-apex-classes-apex-trig.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-salesforce-developer-that-will-create-apex-classes-apex-trig.mdc)
+- File: test-you-are-an-expert-salesforce-developer-that-will-create-apex-classes-apex-trig.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +55/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +55 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-shopify-theme-developer-with-advanced-knowledge-of-liquid-htm.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-shopify-theme-developer-with-advanced-knowledge-of-liquid-htm.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-shopify-theme-developer-with-advanced-knowledge-of-liquid-htm.mdc)
+- File: test-you-are-an-expert-shopify-theme-developer-with-advanced-knowledge-of-liquid-htm.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +450/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +450 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-are-an-expert-software-developer-creating-technical-content-for-other-develo.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-are-an-expert-software-developer-creating-technical-content-for-other-develo.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-are-an-expert-software-developer-creating-technical-content-for-other-develo.mdc)
+- File: test-you-are-an-expert-software-developer-creating-technical-content-for-other-develo.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +47/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +47 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — ".cursor/test-rules/test-you-are-the-world\342\200\231s-best-autohotkey-v2-expert.mdc"
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: ".cursor/test-rules/test-you-are-the-world\342\200\231s-best-autohotkey-v2-expert.mdc" (abs: /home/haymayndz/HaymayndzAI/".cursor/test-rules/test-you-are-the-world\342\200\231s-best-autohotkey-v2-expert.mdc")
+- File: test-you-are-the-world\342\200\231s-best-autohotkey-v2-expert.mdc" (ext: .mdc")
+
+#### Summary
+- Auto Summary: +0/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — RENAME — .cursor/test-rules/test-you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-js-vite-vue-ro.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: RENAME [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-js-vite-vue-ro.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-js-vite-vue-ro.mdc)
+- File: test-you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-js-vite-vue-ro.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +45/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +45 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — docs/inventories/CURSOR_RULES.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: docs/inventories/CURSOR_RULES.md (abs: /home/haymayndz/HaymayndzAI/docs/inventories/CURSOR_RULES.md)
+- File: CURSOR_RULES.md (ext: .md)
+
+#### Summary
+- Auto Summary: +14/-0 lines; Importance: Low
+-- Headings: ## Folder: /.cursor/rules
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +14 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — docs/inventories/CURSOR_TEST_RULES.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: docs/inventories/CURSOR_TEST_RULES.md (abs: /home/haymayndz/HaymayndzAI/docs/inventories/CURSOR_TEST_RULES.md)
+- File: CURSOR_TEST_RULES.md (ext: .md)
+
+#### Summary
+- Auto Summary: +15/-0 lines; Importance: Low
+-- Headings: ## Folder: /.cursor/test and /.cursor/test-rules
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +15 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — docs/inventories/DECISION_GUIDE.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: docs/inventories/DECISION_GUIDE.md (abs: /home/haymayndz/HaymayndzAI/docs/inventories/DECISION_GUIDE.md)
+- File: DECISION_GUIDE.md (ext: .md)
+
+#### Summary
+- Auto Summary: +25/-0 lines; Importance: Low
+-- Headings: ## Decision Guide: Integration vs. New Repo
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +25 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — docs/inventories/FRAMEWORKS.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: docs/inventories/FRAMEWORKS.md (abs: /home/haymayndz/HaymayndzAI/docs/inventories/FRAMEWORKS.md)
+- File: FRAMEWORKS.md (ext: .md)
+
+#### Summary
+- Auto Summary: +20/-0 lines; Importance: Low
+-- Headings: ## Folder: /frameworks;### /frameworks/fwk-001-cursor-rules
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +20 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — docs/inventories/MEMORY_BANK.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: docs/inventories/MEMORY_BANK.md (abs: /home/haymayndz/HaymayndzAI/docs/inventories/MEMORY_BANK.md)
+- File: MEMORY_BANK.md (ext: .md)
+
+#### Summary
+- Auto Summary: +19/-0 lines; Importance: Low
+-- Headings: ## Folder: /memory-bank
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +19 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — docs/inventories/MEMORY_SYSTEM.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: docs/inventories/MEMORY_SYSTEM.md (abs: /home/haymayndz/HaymayndzAI/docs/inventories/MEMORY_SYSTEM.md)
+- File: MEMORY_SYSTEM.md (ext: .md)
+
+#### Summary
+- Auto Summary: +15/-0 lines; Importance: Low
+-- Headings: ## Folder: /memory_system
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +15 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — docs/inventories/SRC_REPO.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: docs/inventories/SRC_REPO.md (abs: /home/haymayndz/HaymayndzAI/docs/inventories/SRC_REPO.md)
+- File: SRC_REPO.md (ext: .md)
+
+#### Summary
+- Auto Summary: +13/-0 lines; Importance: Low
+-- Headings: ## Folder: /src/repo
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +13 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — docs/inventories/STORAGE_MEMORY.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: docs/inventories/STORAGE_MEMORY.md (abs: /home/haymayndz/HaymayndzAI/docs/inventories/STORAGE_MEMORY.md)
+- File: STORAGE_MEMORY.md (ext: .md)
+
+#### Summary
+- Auto Summary: +13/-0 lines; Importance: Low
+-- Headings: ## Folder: /storage/memory
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +13 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — CREATE — docs/inventories/TOOLS.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: docs/inventories/TOOLS.md (abs: /home/haymayndz/HaymayndzAI/docs/inventories/TOOLS.md)
+- File: TOOLS.md (ext: .md)
+
+#### Summary
+- Auto Summary: +19/-0 lines; Importance: Low
+-- Headings: ## Folder: /tools
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +19 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/_index.json
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/_index.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/_index.json)
+- File: _index.json (ext: .json)
+
+#### Summary
+- Auto Summary: +0/-262 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -262 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc)
+- File: drupal-10-module-development-rules-you-are-an-expert-drupal-f0a86fef.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-92 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -92 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc)
+- File: overview-you-are-an-expert-in-typescript-and-nodejs-develop-7f26cf0c.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-93 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -93 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc)
+- File: package-management-with-uv-these-rules-define-strict-guidel-c620bf2b.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-72 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -72 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc)
+- File: prisma-orm-development-guidelines-you-are-a-senior-typescrip-a0d049e1.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-163 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -163 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-al--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-al--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-al--cursor-directory.mdc)
+- File: rules-for-al--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-alpinejs--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-alpinejs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-alpinejs--cursor-directory.mdc)
+- File: rules-for-alpinejs--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-anchor--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-anchor--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-anchor--cursor-directory.mdc)
+- File: rules-for-anchor--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-api--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-api--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-api--cursor-directory.mdc)
+- File: rules-for-api--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-astro--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-astro--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-astro--cursor-directory.mdc)
+- File: rules-for-astro--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-async--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-async--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-async--cursor-directory.mdc)
+- File: rules-for-async--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-blockchain--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-blockchain--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-blockchain--cursor-directory.mdc)
+- File: rules-for-blockchain--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-business-central--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-business-central--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-business-central--cursor-directory.mdc)
+- File: rules-for-business-central--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-cybersecurity--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-cybersecurity--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-cybersecurity--cursor-directory.mdc)
+- File: rules-for-cybersecurity--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-developer-content--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-developer-content--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-developer-content--cursor-directory.mdc)
+- File: rules-for-developer-content--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-diffusion--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-diffusion--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-diffusion--cursor-directory.mdc)
+- File: rules-for-diffusion--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-django--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-django--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-django--cursor-directory.mdc)
+- File: rules-for-django--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-expo--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-expo--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-expo--cursor-directory.mdc)
+- File: rules-for-expo--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-fastapi--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-fastapi--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-fastapi--cursor-directory.mdc)
+- File: rules-for-fastapi--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-feature-first--cursor-directory.mdc)
+- File: rules-for-feature-first--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-firebase--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-firebase--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-firebase--cursor-directory.mdc)
+- File: rules-for-firebase--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-flutter--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-flutter--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-flutter--cursor-directory.mdc)
+- File: rules-for-flutter--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-forcecom--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-forcecom--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-forcecom--cursor-directory.mdc)
+- File: rules-for-forcecom--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-game-development--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-game-development--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-game-development--cursor-directory.mdc)
+- File: rules-for-game-development--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-gatsby--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-gatsby--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-gatsby--cursor-directory.mdc)
+- File: rules-for-gatsby--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-golang--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-golang--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-golang--cursor-directory.mdc)
+- File: rules-for-golang--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-htmx--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-htmx--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-htmx--cursor-directory.mdc)
+- File: rules-for-htmx--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-java--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-java--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-java--cursor-directory.mdc)
+- File: rules-for-java--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-javascript--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-javascript--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-javascript--cursor-directory.mdc)
+- File: rules-for-javascript--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-jina-ai--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-jina-ai--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-jina-ai--cursor-directory.mdc)
+- File: rules-for-jina-ai--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-laravel--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-laravel--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-laravel--cursor-directory.mdc)
+- File: rules-for-laravel--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-lua--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-lua--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-lua--cursor-directory.mdc)
+- File: rules-for-lua--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nodejs--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nodejs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nodejs--cursor-directory.mdc)
+- File: rules-for-nodejs--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nuxtjs--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nuxtjs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-nuxtjs--cursor-directory.mdc)
+- File: rules-for-nuxtjs--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-onchainkit--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-onchainkit--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-onchainkit--cursor-directory.mdc)
+- File: rules-for-onchainkit--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-paraglidejs--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-paraglidejs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-paraglidejs--cursor-directory.mdc)
+- File: rules-for-paraglidejs--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-phoenix--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-phoenix--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-phoenix--cursor-directory.mdc)
+- File: rules-for-phoenix--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-php--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-php--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-php--cursor-directory.mdc)
+- File: rules-for-php--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-pixijs--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-pixijs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-pixijs--cursor-directory.mdc)
+- File: rules-for-pixijs--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-python--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-python--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-python--cursor-directory.mdc)
+- File: rules-for-python--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-quarkus--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-quarkus--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-quarkus--cursor-directory.mdc)
+- File: rules-for-quarkus--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rails--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rails--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rails--cursor-directory.mdc)
+- File: rules-for-rails--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-native--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-native--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-native--cursor-directory.mdc)
+- File: rules-for-react-native--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-three-fiber--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-three-fiber--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-react-three-fiber--cursor-directory.mdc)
+- File: rules-for-react-three-fiber--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:42 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rust--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rust--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-rust--cursor-directory.mdc)
+- File: rules-for-rust--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-scripting--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-scripting--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-scripting--cursor-directory.mdc)
+- File: rules-for-scripting--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-serverless--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-serverless--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-serverless--cursor-directory.mdc)
+- File: rules-for-serverless--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-shadcn-ui--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-shadcn-ui--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-shadcn-ui--cursor-directory.mdc)
+- File: rules-for-shadcn-ui--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-smart-contracts--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-smart-contracts--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-smart-contracts--cursor-directory.mdc)
+- File: rules-for-smart-contracts--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-solito--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-solito--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-solito--cursor-directory.mdc)
+- File: rules-for-solito--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-standardjs--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-standardjs--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-standardjs--cursor-directory.mdc)
+- File: rules-for-standardjs--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-supabase--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-supabase--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-supabase--cursor-directory.mdc)
+- File: rules-for-supabase--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-swift--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-swift--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-swift--cursor-directory.mdc)
+- File: rules-for-swift--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-29 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -29 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwind-css--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwind-css--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwind-css--cursor-directory.mdc)
+- File: rules-for-tailwind-css--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwindcss--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwindcss--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tailwindcss--cursor-directory.mdc)
+- File: rules-for-tailwindcss--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tauri--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tauri--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tauri--cursor-directory.mdc)
+- File: rules-for-tauri--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-terraform--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-terraform--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-terraform--cursor-directory.mdc)
+- File: rules-for-terraform--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-testing--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-testing--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-testing--cursor-directory.mdc)
+- File: rules-for-testing--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tooling--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tooling--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tooling--cursor-directory.mdc)
+- File: rules-for-tooling--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tutorials--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tutorials--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-tutorials--cursor-directory.mdc)
+- File: rules-for-tutorials--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-typescript--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-typescript--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-typescript--cursor-directory.mdc)
+- File: rules-for-typescript--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-ui--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-ui--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-ui--cursor-directory.mdc)
+- File: rules-for-ui--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-viem-v2--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-viem-v2--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-viem-v2--cursor-directory.mdc)
+- File: rules-for-viem-v2--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vite--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vite--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vite--cursor-directory.mdc)
+- File: rules-for-vite--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vue--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vue--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-vue--cursor-directory.mdc)
+- File: rules-for-vue--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-web-development--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-web-development--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-web-development--cursor-directory.mdc)
+- File: rules-for-web-development--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-woocommerce--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-woocommerce--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-woocommerce--cursor-directory.mdc)
+- File: rules-for-woocommerce--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-wordpress--cursor-directory.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-wordpress--cursor-directory.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/rules-for-wordpress--cursor-directory.mdc)
+- File: rules-for-wordpress--cursor-directory.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/composite_rule.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/composite_rule.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/composite_rule.mdc)
+- File: composite_rule.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-176 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -176 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/data_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/data_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/data_ai.mdc)
+- File: data_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-53 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -53 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/l10n_i18n_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/l10n_i18n_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/l10n_i18n_ai.mdc)
+- File: l10n_i18n_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-52 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -52 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/planner_moderator_ai.mdc)
+- File: planner_moderator_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-65 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -65 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/prompt_linter_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/prompt_linter_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/prompt_linter_ai.mdc)
+- File: prompt_linter_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-52 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -52 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/security_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/security_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/OPTIONAL/security_ai.mdc)
+- File: security_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-52 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -52 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/analyst_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/analyst_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/analyst_ai.mdc)
+- File: analyst_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-52 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -52 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/auditor_ai.mdc)
+- File: auditor_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-108 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -108 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc)
+- File: codegen_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-53 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -53 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/documentation_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/documentation_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/documentation_ai.mdc)
+- File: documentation_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-52 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -52 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/execution_orchestrator.mdc)
+- File: execution_orchestrator.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-269 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -269 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/framework_memory_bridge.mdc)
+- File: framework_memory_bridge.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-115 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -115 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_ai.mdc)
+- File: memory_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-53 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -53 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/memory_enhancement_auditor.mdc)
+- File: memory_enhancement_auditor.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-106 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -106 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/mlops_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/mlops_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/mlops_ai.mdc)
+- File: mlops_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-52 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -52 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/observability_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/observability_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/observability_ai.mdc)
+- File: observability_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-52 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -52 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/planning_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/planning_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/planning_ai.mdc)
+- File: planning_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-52 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -52 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/principal_engineer_ai.mdc)
+- File: principal_engineer_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-117 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -117 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/product_owner_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/product_owner_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/product_owner_ai.mdc)
+- File: product_owner_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-53 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -53 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/prompt_factory_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/prompt_factory_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/prompt_factory_ai.mdc)
+- File: prompt_factory_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-53 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -53 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/qa_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/qa_ai.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/qa_ai.mdc)
+- File: qa_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-52 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -52 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/fwk-001-cursor-rules/system-prompt/rules_master_toggle.mdc)
+- File: rules_master_toggle.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-203 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -203 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/selection.json
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/selection.json (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/selection_20250824_090835/selection.json)
+- File: selection.json (ext: .json)
+
+#### Summary
+- Auto Summary: +0/-39 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -39 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc)
+- File: test-case-generation-prompt-you-are-an-ai-coding-assistant-t-eec9426f.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-14 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -14 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc)
+- File: this-comprehensive-guide-outlines-best-practices-conventions-6e02f704.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-213 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -213 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/try.md
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/try.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/try.md)
+- File: try.md (ext: .md)
+
+#### Summary
+- Auto Summary: +0/-6293 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -6293 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc)
+- File: write-code-that-follows-laravel-amp-php-guidelines-from-spat-2c1642a1.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-13 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -13 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc)
+- File: you-are-a-python-programming-assistant-you-will-be-given-a-f-46b90ea0.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-41 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -41 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc)
+- File: you-are-a-senior-front-end-developer-and-an-expert-in-reactj-ac4b5823.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-43 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -43 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc)
+- File: you-are-a-senior-qa-automation-engineer-expert-in-typescript-d8ee55c8.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-33 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -33 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc)
+- File: you-are-a-senior-typescript-programmer-with-experience-in-th-1fd8abe5.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-142 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -142 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc)
+- File: you-are-a-senior-typescript-programmer-with-experience-in-th-f98f2fb3.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-130 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -130 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc)
+- File: you-are-an-expert-chrome-extension-developer-proficient-in-j-7167c2f7.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-97 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -97 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc)
+- File: you-are-an-expert-developer-in-typescript-nodejs-nextjs-14-a-261c1ef6.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-136 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -136 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc)
+- File: you-are-an-expert-developer-proficient-in-typescript-react-a-4d4e09e3.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-130 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -130 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc)
+- File: you-are-an-expert-full-stack-developer-proficient-in-typescr-b0e68d62.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-63 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -63 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc)
+- File: you-are-an-expert-full-stack-web-developer-focused-on-produc-1bbbb674.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-35 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -35 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc)
+- File: you-are-an-expert-full-stack-web-developer-focused-on-produc-ace8efc9.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-36 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -36 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc)
+- File: you-are-an-expert-in-data-analysis-visualization-and-jupyter-13ed64d0.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-66 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -66 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc)
+- File: you-are-an-expert-in-deep-learning-transformers-diffusion-mo-93d89657.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-79 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -79 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc)
+- File: you-are-an-expert-in-fullstack-typescript-development-with-d-36147c1e.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-112 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -112 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc)
+- File: you-are-an-expert-in-javascript-react-native-expo-and-mobile-d3089026.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-43 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -43 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc)
+- File: you-are-an-expert-in-javascript-react-nodejs-nextjs-app-rout-69c0622c.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-154 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -154 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc)
+- File: you-are-an-expert-in-jax-python-numpy-and-machine-learning-eae37abc.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-108 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -108 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc)
+- File: you-are-an-expert-in-laravel-php-and-related-web-development-58da215a.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-67 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -67 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc)
+- File: you-are-an-expert-in-laravel-php-and-related-web-development-b664b5d1.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-102 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -102 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc)
+- File: you-are-an-expert-in-laravel-php-livewire-alpinejs-tailwindc-8555431a.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-99 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -99 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc)
+- File: you-are-an-expert-in-laravel-vuejs-and-modern-full-stack-web-afaa5af3.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-69 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -69 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc)
+- File: you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-buil-45f3d4f2.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-75 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -75 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc)
+- File: you-are-an-expert-in-python-and-cybersecurity-tool-developme-67e89777.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-69 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -69 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc)
+- File: you-are-an-expert-in-python-django-and-scalable-restful-api-8d780e3d.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-129 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -129 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc)
+- File: you-are-an-expert-in-python-django-and-scalable-web-applicat-53f52ac9.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-63 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -63 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc)
+- File: you-are-an-expert-in-python-fastapi-and-scalable-api-develop-f531d868.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-71 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -71 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc)
+- File: you-are-an-expert-in-python-fastapi-integrations-and-web-app-377a9436.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-578 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -578 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc)
+- File: you-are-an-expert-in-python-fastapi-microservices-architectu-f6258d5c.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-54 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -54 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc)
+- File: you-are-an-expert-in-python-flask-and-scalable-api-developme-5e295e38.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-101 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -101 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc)
+- File: you-are-an-expert-in-python-odoo-and-enterprise-business-app-85212d40.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-60 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -60 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc)
+- File: you-are-an-expert-in-python-robocorp-and-scalable-rpa-develo-fd72e76e.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-69 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -69 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc)
+- File: you-are-an-expert-in-react-vite-tailwind-css-threejs-react-t-7e21e034.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-55 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -55 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc)
+- File: you-are-an-expert-in-solidity-typescript-nodejs-nextjs-14-ap-daab2795.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-75 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -75 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc)
+- File: you-are-an-expert-in-typescript-gatsby-react-and-tailwind-co-0b672c44.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-56 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -56 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc)
+- File: you-are-an-expert-in-typescript-nodejs-nextjs-app-router-rea-6e534ff4.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-52 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -52 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc)
+- File: you-are-an-expert-in-typescript-nodejs-nuxtjs-vue-3-shadcn-v-44e70b47.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-67 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -67 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc)
+- File: you-are-an-expert-in-typescript-nodejs-vite-vuejs-vue-router-29bc4ae2.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-45 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -45 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc)
+- File: you-are-an-expert-in-typescript-pixijs-web-game-development-1e2fa74d.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-128 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -128 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc)
+- File: you-are-an-expert-in-typescript-react-native-expo-and-mobile-771ae233.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-45 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -45 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc)
+- File: you-are-an-expert-in-typescript-react-native-expo-and-mobile-e8852306.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-109 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -109 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc)
+- File: you-are-an-expert-in-web-development-including-javascript-ty-2626412b.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-29 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -29 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc)
+- File: you-are-an-expert-in-web-scraping-and-data-extraction-with-a-815b9418.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-79 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -79 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc)
+- File: you-are-an-expert-in-wordpress-php-and-related-web-developme-5b17f3dc.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-69 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -69 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc)
+- File: you-are-an-expert-in-wordpress-php-and-related-web-developme-a8dbb72c.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-66 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -66 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc)
+- File: you-are-an-expert-shopify-theme-developer-with-advanced-know-9a873388.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-454 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -454 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — DELETE — frameworks/fwk-001-cursor-rules/DOCS/harvested/you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: DELETE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/harvested/you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/harvested/you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc)
+- File: you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-2553b621.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +0/-49 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +0 lines, -49 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/ACTIONS.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/ACTIONS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/ACTIONS.md)
+- File: ACTIONS.md (ext: .md)
+
+#### Summary
+- Auto Summary: +6902/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +6902 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/CHANGES.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/CHANGES.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/CHANGES.md)
+- File: CHANGES.md (ext: .md)
+
+#### Summary
+- Auto Summary: +4249/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +4249 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/DECISIONS.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/DECISIONS.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/DECISIONS.md)
+- File: DECISIONS.md (ext: .md)
+
+#### Summary
+- Auto Summary: +24/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +24 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/HUMAN_EXPLAINER.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/HUMAN_EXPLAINER.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/HUMAN_EXPLAINER.md)
+- File: HUMAN_EXPLAINER.md (ext: .md)
+
+#### Summary
+- Auto Summary: +65/-0 lines; Importance: Medium
+-- Headings: ## Labnotes Explainer (Human-Readable);### Project Scope (from Labnotes);### Phases — What changed and why;### Tests & Results — What verifies each phase;### File Inventory — How to read each change entry;### How to clean this up (organize “pano aayusin”) ;### Quick Navigation Aids
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +65 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/SUMMARY.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/SUMMARY.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/SUMMARY.md)
+- File: SUMMARY.md (ext: .md)
+
+#### Summary
+- Auto Summary: +13/-0 lines; Importance: Medium
+-- Headings: ## Labnotes Summary;### Files
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +13 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — CREATE — frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/TOC.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/TOC.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/DOCS/labnotes_index/TOC.md)
+- File: TOC.md (ext: .md)
+
+#### Summary
+- Auto Summary: +18102/-0 lines; Importance: Medium
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +18102 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — CREATE — memory-bank/plan/client_brief.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: memory-bank/plan/client_brief.md (abs: /home/haymayndz/HaymayndzAI/memory-bank/plan/client_brief.md)
+- File: client_brief.md (ext: .md)
+
+#### Summary
+- Auto Summary: +94/-0 lines; Importance: Low
+-- Headings: # Client Brief: AI Orchestration System (Solo Freelance Dev Readiness);## 1) Background & Goals;## 2) Success Criteria (business + technical);## 3) In Scope;## 4) Out of Scope (for now);## 5) Constraints & Assumptions;## 6) Non-Functional Requirements;## 7) Multi-Agent Process Overview;## 8) Deliverables (artifacts expected);## 9) Integration Scenarios (stacks to support);## 10) Script Inventory & Consolidation (Keep/Modify/Deprecate);## 11) Compliance & Security;## 12) Risks (examples);## 13) Acceptance Criteria (Definition of Done);## 14) Open Questions
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +94 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — CREATE — memory-bank/plan/product_backlog.yaml
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: memory-bank/plan/product_backlog.yaml (abs: /home/haymayndz/HaymayndzAI/memory-bank/plan/product_backlog.yaml)
+- File: product_backlog.yaml (ext: .yaml)
+
+#### Summary
+- Auto Summary: +278/-0 lines; Importance: Low
+-- Keys: meta,client,owner,version,generated_at,notes,items,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,Provide a minimal working example (MWE) folder and scripts showing the end-to-end,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk,- id,title,description,priority,type,owner_role,artifacts,acceptance_criteria,dependencies,effort,risk
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +278 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-25 22:47:43 PST+0800 — CREATE — tools/std_mdc.py
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: tools/std_mdc.py (abs: /home/haymayndz/HaymayndzAI/tools/std_mdc.py)
+- File: std_mdc.py (ext: .py)
+
+#### Summary
+- Auto Summary: +177/-0 lines; Importance: Low
+-- Functions/Classes: read,write,has_frontmatter,build_frontmatter,strip_filename_comments,infer_framework_and_globs
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +177 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+

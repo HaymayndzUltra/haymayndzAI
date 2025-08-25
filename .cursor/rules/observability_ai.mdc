@@ -1,4 +1,9 @@
-# observability_ai.mdc
+---
+description: >
+  AI role specialization for observability ai. Activated when orchestrator selects this role or via explicit commands.
+globs: ["**/*"]
+alwaysApply: false
+---
 --------------------------------------------------
 title:        "OBSERVABILITY_AI  —  v0.1.0"
 description:  "System monitoring, alerting, and health tracking"

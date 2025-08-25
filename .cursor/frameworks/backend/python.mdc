@@ -1,0 +1,25 @@
+---
+description: Python/FastAPI/Django rules auto-attached by globs
+globs: ["**/*.py", "pyproject.toml", "requirements.txt", "manage.py", "asgi.py", "wsgi.py"]
+alwaysApply: false
+---
+
+# Python: FastAPI / Django Rules
+
+- Type hints everywhere; pydantic models for IO schemas.
+- Separate settings (12-factor); env var validation.
+
+## FastAPI
+- Routers per domain; dependencies for auth/db.
+- Use async DB drivers; lifespan events to manage resources.
+
+## Django
+- Use class-based views or DRF ViewSets; migrate atomically.
+
+## Security
+- Validate/escape inputs; CSRF where applicable; authz checks.
+
+## @Docs
+- FastAPI: `https://fastapi.tiangolo.com/`
+- Django: `https://docs.djangoproject.com/`
+
