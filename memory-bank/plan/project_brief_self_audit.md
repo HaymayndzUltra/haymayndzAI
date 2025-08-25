@@ -44,3 +44,23 @@ We are commissioning a comprehensive, end-to-end self-audit of the HaymayndzAI F
 - Begin with backlog/plan generation if missing; then draft Action_Plan.md
 - Run audit to produce Summary_Report.md; then peer review to produce Validation_Report.md
 - Only on GO, synthesize Final_Implementation_Plan.md
+
+## Program: Framework Rules Migration & Enhancement (Client Scope)
+
+- Goal: Migrate and enhance rules so per-stack guidance auto-attaches reliably, with no conflicts and measurable attach performance/coverage.
+- In-Scope: `.cursor/frameworks/` consolidation; deconflict legacy `.cursor/test-rules/`; attach logging; coverage tests for React/Next, Vue/Nuxt, Angular, Svelte, Python(FastAPI/Django), PHP(Laravel), Node/Express, Go, Flutter, React Native.
+- Out-of-Scope (this iteration): Java/Spring Boot, Rust, Unity, iOS/Swift, Shopify/WordPress (propose as P2).
+- Artifacts:
+  - `rule_attach_log.json` (per stack, with timestamps, mapping, and file markers)
+  - Updated per-stack rule files with ≥20 actionable points (security, testing, performance)
+  - Attach coverage tests (sample files per stack + expected attach map)
+  - Observability configs: `observability/alerts.yaml`, `observability/dashboards.mmd`
+  - `security_report.md` from QA checks
+- Acceptance Criteria:
+  - Attach coverage ≥ 1 sample per stack; 0 false positives for unrelated stacks
+  - Attach latency P95 ≤ 200ms per check on local run
+  - alwaysApply: false enforced; globs do not use generic `**/*` for matching; no conflicts with legacy rules
+  - Security: High issues block at QA gate; Observability YAML parses and Mermaid renders
+- Gates & Evidence:
+  - Planning/Codegen/QA/Audit/Peer-review gates enforced
+  - All findings cite file:line or section; attach evidence references to rules and logs

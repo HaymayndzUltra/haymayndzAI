@@ -66,6 +66,91 @@ items:
     effort: M
     risk: Low
 
+  - id: BL-016
+    title: Java/Spring Boot rules migration and attach coverage
+    description: >
+      Create comprehensive Java/Spring rules with ≥20 actionable points and validate auto-attach behavior.
+    priority: P2
+    type: quality
+    owner_role: codegen_ai
+    artifacts:
+      - .cursor/frameworks/backend/java/**
+      - rule_attach_log.json
+    acceptance_criteria:
+      - Sample Java/Spring files trigger only Java rules; no false positives to other stacks.
+      - Attach latency P95 ≤ 200ms per check on local run.
+    dependencies: [BL-001, BL-008]
+    effort: M
+    risk: Medium
+
+  - id: BL-017
+    title: Rust rules migration and attach coverage
+    description: >
+      Provide Rust rules with ≥20 actionable points and ensure precise attach using rust markers.
+    priority: P2
+    type: quality
+    owner_role: codegen_ai
+    artifacts:
+      - .cursor/frameworks/backend/rust/**
+      - rule_attach_log.json
+    acceptance_criteria:
+      - Sample Rust files trigger only Rust rules with 0 false positives.
+      - Attach latency P95 ≤ 200ms per check on local run.
+    dependencies: [BL-001, BL-008]
+    effort: M
+    risk: Medium
+
+  - id: BL-018
+    title: Unity (C#) game development rules and attach coverage
+    description: >
+      Create Unity-focused rules (C# patterns) with ≥20 points; validate attach on .cs game scripts.
+    priority: P2
+    type: quality
+    owner_role: codegen_ai
+    artifacts:
+      - .cursor/frameworks/specialized/unity/**
+      - rule_attach_log.json
+    acceptance_criteria:
+      - Sample Unity C# files attach only Unity/C# rules; 0 false positives.
+      - Attach latency P95 ≤ 200ms per check on local run.
+    dependencies: [BL-001, BL-008]
+    effort: M
+    risk: Medium
+
+  - id: BL-019
+    title: iOS/Swift mobile rules and attach coverage
+    description: >
+      Provide Swift/iOS rules with ≥20 points including testing, security, and performance guidance.
+    priority: P2
+    type: quality
+    owner_role: codegen_ai
+    artifacts:
+      - .cursor/frameworks/mobile/ios/**
+      - rule_attach_log.json
+    acceptance_criteria:
+      - Sample Swift files attach only iOS rules; 0 false positives.
+      - Attach latency P95 ≤ 200ms per check on local run.
+    dependencies: [BL-001, BL-008]
+    effort: M
+    risk: Medium
+
+  - id: BL-020
+    title: E-commerce rules (Shopify/WordPress) and attach coverage
+    description: >
+      Add Shopify/WordPress rules (theme/plugins/app patterns) with ≥20 points and verify attach.
+    priority: P2
+    type: quality
+    owner_role: codegen_ai
+    artifacts:
+      - .cursor/frameworks/specialized/ecommerce/**
+      - rule_attach_log.json
+    acceptance_criteria:
+      - Sample Shopify/WordPress files attach only e-commerce rules; 0 false positives.
+      - Attach latency P95 ≤ 200ms per check on local run.
+    dependencies: [BL-001, BL-008, BL-009]
+    effort: M
+    risk: Medium
+
   - id: BL-004
     title: Example project wiring for gates (audit/validation/synthesis)
     description: >
