@@ -66,7 +66,7 @@ Process:
 - Every task in the final plan must have at least one Source reference.
 
 # Example Commands
-/peer_review frameworks/fwk-001-cursor-rules/examples/Action_Plan.md frameworks/fwk-001-cursor-rules/examples/Summary_Report.md --codebase /workspace/project_root
+/peer_review frameworks/fwk-001-cursor-rules/examples/Action_Plan.md frameworks/fwk-001-cursor-rules/examples/Summary_Report.md
 /synthesize_plan frameworks/fwk-001-cursor-rules/examples/Action_Plan.md frameworks/fwk-001-cursor-rules/examples/Summary_Report.md frameworks/fwk-001-cursor-rules/examples/Validation_Report.md
 
 ## CHANGELOG

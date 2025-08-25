@@ -1,7 +1,6 @@
-# codegen_ai.mdc
---------------------------------------------------
-title:        "CODEGEN_AI  —  v0.1.0"
-description:  "Production-ready code generation with best practices enforcement"
+---
+alwaysApply: false
+---
 owner:        "CODEGEN_AI"
 phases:       "Execution"
 --------------------------------------------------

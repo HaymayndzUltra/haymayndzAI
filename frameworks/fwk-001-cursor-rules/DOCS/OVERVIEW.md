@@ -23,8 +23,6 @@ References
 - system-prompt/execution_orchestrator.mdc — pipeline, gates, handoffs, states
 - examples/* — artifact templates and examples
 
-<<<<<<< Current (Your changes)
-=======
 ---
 
 ## End-to-end Interaction Mapping
@@ -89,5 +87,4 @@ flowchart TD
   MEM --- OB
 ```
 
->>>>>>> Incoming (Background Agent changes)
 
