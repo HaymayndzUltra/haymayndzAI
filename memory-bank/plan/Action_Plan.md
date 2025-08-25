@@ -64,5 +64,8 @@ Establish a working end-to-end pipeline: backlog → plan → draft Action_Plan 
 - `Final_Implementation_Plan.md` with task sequencing and rollback
 - Security gate blocks on High issues; Observability configs lint/render cleanly
 
+## Commands Index
+- See `frameworks/fwk-001-cursor-rules/examples/COMMANDS_DEMO.md` for runnable examples of all role triggers.
+
 ## IMPORTANT NOTE
 Run audit and peer review in separate sessions to avoid bias. Treat planning and QA gates as blocking unless explicitly set to warn; include explicit evidence references in all findings.
