@@ -11,6 +11,8 @@ Targets:
 - Summary_Report.md
 - Validation_Report.md
 - Final_Implementation_Plan.md
+- Action_Plan.md
+- memory-bank/plan/ versions of the above
 
 Usage:
   python3 /workspace/scripts/auto_restore_templates.py --interval 1.0
@@ -50,12 +52,24 @@ EXAMPLES_ROOT = Path(os.getenv(
     "EXAMPLES_ROOT",
     str(REPO_ROOT / "frameworks/fwk-001-cursor-rules/examples"),
 ))
+MEMORY_BANK_PLAN_ROOT = Path(os.getenv(
+    "MEMORY_BANK_PLAN_ROOT",
+    str(REPO_ROOT / "memory-bank/plan"),
+))
 
 
 TARGETS = {
+    # Examples directory targets
     EXAMPLES_ROOT / "Summary_Report.md": TEMPLATES_ROOT / "Summary_Report.template.md",
     EXAMPLES_ROOT / "Validation_Report.md": TEMPLATES_ROOT / "Validation_Report.template.md",
     EXAMPLES_ROOT / "Final_Implementation_Plan.md": TEMPLATES_ROOT / "Final_Implementation_Plan.template.md",
+    EXAMPLES_ROOT / "Action_Plan.md": TEMPLATES_ROOT / "Action_Plan.template.md",
+    
+    # Memory bank plan directory targets
+    MEMORY_BANK_PLAN_ROOT / "Summary_Report.md": TEMPLATES_ROOT / "Summary_Report.template.md",
+    MEMORY_BANK_PLAN_ROOT / "Validation_Report.md": TEMPLATES_ROOT / "Validation_Report.template.md",
+    MEMORY_BANK_PLAN_ROOT / "Final_Implementation_Plan.md": TEMPLATES_ROOT / "Final_Implementation_Plan.template.md",
+    MEMORY_BANK_PLAN_ROOT / "Action_Plan.md": TEMPLATES_ROOT / "Action_Plan.template.md",
 }
 
 

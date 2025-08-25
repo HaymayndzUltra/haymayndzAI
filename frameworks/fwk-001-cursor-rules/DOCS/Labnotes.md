@@ -84105,3 +84105,100 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 ---
 
+### 2025-08-26 01:04:07 PST+0800 — CREATE — frameworks/fwk-001-cursor-rules/templates/Action_Plan.template.md
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: frameworks/fwk-001-cursor-rules/templates/Action_Plan.template.md (abs: /home/haymayndz/HaymayndzAI/frameworks/fwk-001-cursor-rules/templates/Action_Plan.template.md)
+- File: Action_Plan.template.md (ext: .md)
+
+#### Summary
+- Auto Summary: +30/-0 lines; Importance: Medium
+-- Headings: # Action Plan;## Overview;## Key Actions;## Dependencies;## Timeline;## Success Criteria;## Risk Mitigation;## Notes
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +30 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 01:04:07 PST+0800 — MODIFY — scripts/auto_restore_templates.py
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: scripts/auto_restore_templates.py (abs: /home/haymayndz/HaymayndzAI/scripts/auto_restore_templates.py)
+- File: auto_restore_templates.py (ext: .py)
+
+#### Summary
+- Auto Summary: +14/-0 lines; Importance: High
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +14 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
