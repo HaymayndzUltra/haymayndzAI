@@ -1,3 +1,4 @@
 {"id":"kb_20250823_092519_c4a0f5932b","type":"fact","text":"Test memory entry about telemetry pipelines and CUDA GPUs","tags":["ops","gpu"],"confidence":0.9,"source":"user","ts":"2025-08-23T01:25:19Z"}
 {"id":"kb_20250823_092537_c4a0f5932b","type":"fact","text":"Test memory entry about telemetry pipelines and CUDA GPUs","tags":["ops","gpu"],"confidence":0.9,"source":"user","ts":"2025-08-23T01:25:37Z"}
 {"id":"kb_20250823_165610_164cd98bf2","type":"note","text":"E2E check: planner mode enabled and memory working 2025-08-23T08:56:06Z","tags":["e2e","planner","memory"],"confidence":0.9,"source":"system","ts":"2025-08-23T08:56:10Z"}
+{"id":"kb_20250825_205158_2c156caefe","type":"fact","text":"BL-007: Learned pattern added to pattern_library.json","tags":["project:default","learning"],"confidence":0.9,"source":"user","ts":"2025-08-25T20:51:58Z"}
