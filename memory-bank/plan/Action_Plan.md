@@ -47,6 +47,11 @@ Establish a working end-to-end pipeline: backlog → plan → draft Action_Plan 
 - BL-008: Framework globs coverage → attach mapping tests
 - BL-009: Onboarding & Quick Start → doc path from brief to review
 - BL-010…015: P1/P2 enhancements (planner mode, snapshots, overrides, hydration, perf, templates)
+- BL-016: Java/Spring Boot rules migration → attach coverage and latency targets
+- BL-017: Rust rules migration → precise attach using rust markers
+- BL-018: Unity (C#) rules → attach on .cs game scripts with 0 false positives
+- BL-019: iOS/Swift rules → attach coverage with testing/security/perf guidance
+- BL-020: E-commerce (Shopify/WordPress) rules → attach coverage and docs
 
 ## Acceptance Criteria (Definition of Done)
 - `Summary_Report.md` with evidence citations
