@@ -4,7 +4,7 @@ description: >
   But suggestions must be context-aware, minimal, and only if helpful.
   Do not suggest framework commands unless other rules greenlight it.
 globs: ["**/*"]
-alwaysApply: true
+alwaysApply: false
 ---
 
 # Rule: guidance_next_steps.mdc (Universal Guidance)

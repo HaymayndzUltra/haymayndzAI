@@ -3,7 +3,7 @@ description: >
   Phase-aware next steps: detects current phase from artifacts and actions,
   then proposes the adjacent step. Encodes the state machine in lightweight form.
 globs: ["**/*"]
-alwaysApply: true
+alwaysApply: false
 ---
 
 # Rule: guidance_phase_awareness.mdc (Phase-Aware Steps)
