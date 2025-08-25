@@ -14,6 +14,12 @@
   - Entrance Criteria: 
   - Exit Criteria: 
 
+### 4.1) Phase-by-Phase (Week-aligned)
+- Phase 1 (Week 1): BL-001 to BL-006
+- Phase 2 (Week 2): BL-007 to BL-012
+- Phase 3 (Week 3): BL-013 to BL-020
+- Phase 4 (Week 4): BL-021 to BL-027
+
 ### 5) Rollback & Recovery Playbooks
 - Decision Points, Triggers, Steps
 

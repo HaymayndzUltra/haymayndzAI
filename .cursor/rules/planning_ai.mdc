@@ -37,6 +37,9 @@ phases:       "Foundation"
   - SUCCESS: Plan passes technical review and has clear tasks
   - FAILURE: Missing dependencies or unrealistic timelines
 
+## 3.a ADDITIONAL OUTPUT REQUIREMENT
+- When the planning output leads to `Final_Implementation_Plan.md` (directly or via synthesis), ensure a section named `## Phase-by-Phase` exists, mapping weeks to BL ranges (e.g., Phase 1: BL-001–BL-006; Phase 2: BL-007–BL-012; Phase 3: BL-013–BL-020; Phase 4: BL-021–BL-027).
+
 ## 4. INTERACTION RULES
 • Triggers that activate this role:
   - /plan: Generate implementation plan from backlog

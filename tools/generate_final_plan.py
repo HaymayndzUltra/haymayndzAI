@@ -132,6 +132,18 @@ def render_plan(
     lines.append("- Validation Report: memory-bank/plan/Validation_Report.md")
     lines.append("")
 
+    # Mandatory Phase-by-Phase section
+    lines.append("## Phase-by-Phase (Week-aligned)")
+    lines.append("")
+    lines.append("- Phase 1 (Week 1): BL-001 to BL-006")
+    lines.append("")
+    lines.append("- Phase 2 (Week 2): BL-007 to BL-012")
+    lines.append("")
+    lines.append("- Phase 3 (Week 3): BL-013 to BL-020")
+    lines.append("")
+    lines.append("- Phase 4 (Week 4): BL-021 to BL-027")
+    lines.append("")
+
     return "\n".join(lines)
 
 

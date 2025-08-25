@@ -66,41 +66,6 @@
   - Prerequisites: Task 19
   - Traceability: Plan=memory-bank/plan/Action_Plan.md; Audit=memory-bank/plan/Summary_Report.md; Validation=memory-bank/plan/Validation_Report.md
 
-- [21] BL-021 — Frontend rules migration (React/Next, Vue/Nuxt, Angular, Svelte) → `.cursor/frameworks/frontend/*`
-  - Prerequisites: Task 20
-  - Deliverables: ≥20 detailed points per tech, examples, security/perf/testing sections; attach tests
-  - Traceability: Plan/Action_Plan.md; Audit/Summary_Report.md; Validation/Validation_Report.md
-
-- [22] BL-022 — Backend rules migration (Python FastAPI/Django, PHP/Laravel, Node, Go) → `.cursor/frameworks/backend/*`
-  - Prerequisites: Task 21
-  - Deliverables: ≥20 detailed points per tech; attach tests
-  - Traceability: Plan/Action_Plan.md; Audit/Summary_Report.md; Validation/Validation_Report.md
-
-- [23] BL-023 — Mobile rules migration (React Native/Expo, Flutter) → `.cursor/frameworks/mobile/*`
-  - Prerequisites: Task 22
-  - Deliverables: ≥20 detailed points per tech; attach tests
-  - Traceability: Plan/Action_Plan.md; Audit/Summary_Report.md; Validation/Validation_Report.md
-
-- [24] BL-024 — Specialized rules migration (Blockchain, Terraform/DevOps) → `.cursor/frameworks/specialized/*`
-  - Prerequisites: Task 23
-  - Deliverables: ≥20 detailed points per tech; attach tests
-  - Traceability: Plan/Action_Plan.md; Audit/Summary_Report.md; Validation/Validation_Report.md
-
-- [25] BL-025 — Retire legacy `.cursor/test-rules/` safely (archive + conflict cleanup + rollback)
-  - Prerequisites: Task 24
-  - Deliverables: archive folder; conflict matrix; rollback note
-  - Traceability: Plan/Action_Plan.md; Audit/Summary_Report.md; Validation/Validation_Report.md
-
-- [26] BL-026 — UAT + success metrics validation (coverage, conflicts=0, <2s attach/resp)
-  - Prerequisites: Task 25
-  - Deliverables: UAT checklist; metrics report; CI perf checks
-  - Traceability: Plan/Action_Plan.md; Audit/Summary_Report.md; Validation/Validation_Report.md
-
-- [27] BL-027 — Docs, training, and handover (user guide, migration notes)
-  - Prerequisites: Task 26
-  - Deliverables: QUICK_START updates; migration guide; handover pack
-  - Traceability: Plan/Action_Plan.md; Audit/Summary_Report.md; Validation/Validation_Report.md
-
 ## Risk Considerations (from Audit)
 - R-001 (Medium): Missing rule_attach_log.json reduces observability of rule attach coverage.
 - R-002 (Medium): security_report.md not yet generated; QA gate readiness unclear.
@@ -119,13 +84,9 @@
 ## Phase-by-Phase (Week-aligned)
 
 - Phase 1 (Week 1): BL-001 to BL-006
-  - Foundations: attach logging, audit/peer-review wiring, generator, security gate, observability
 
 - Phase 2 (Week 2): BL-007 to BL-012
-  - Memory learning loop, auto-attach coverage tests, onboarding docs, planner mode, snapshots/rollback, routing tests
 
 - Phase 3 (Week 3): BL-013 to BL-020
-  - Hydration, performance/concurrency, templates, and P2 migrations (Java/Spring, Rust, Unity, iOS, E-commerce)
 
 - Phase 4 (Week 4): BL-021 to BL-027
-  - Frontend/Backend/Mobile/Specialized migrations with ≥20 detailed points each; retire old rules; UAT; docs & handover

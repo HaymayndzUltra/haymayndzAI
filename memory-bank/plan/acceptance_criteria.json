@@ -37,6 +37,19 @@
     "risk": "Medium",
     "effort": "M"
   },
+  "SYNTHESIS-PHASE-REQUIREMENT": {
+    "title": "Final plan must include Phase-by-Phase section",
+    "priority": "P0",
+    "type": "quality",
+    "owner_role": "principal_engineer_ai",
+    "acceptance_criteria": [
+      "Final_Implementation_Plan.md contains '## Phase-by-Phase' with BL ranges (BL-001–BL-006, BL-007–BL-012, BL-013–BL-020, BL-021–BL-027)."
+    ],
+    "artifacts": [
+      "memory-bank/plan/Final_Implementation_Plan.md"
+    ],
+    "dependencies": []
+  },
   "BL-003": {
     "title": "Product backlog \u2192 technical plan \u2192 draft Action_Plan generator",
     "priority": "P0",
