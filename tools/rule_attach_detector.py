@@ -9,28 +9,7 @@ Supported frameworks (initial set):
 
 The detector scans for common markers and maps them to corresponding
 `.cursor/frameworks/<group>/<name>.mdc` rule files if present.
-
-Output schema (rule_attach_log.json):
-{
-  "generated_at": "<ISO datetime>",
-  "repo_root": "<abs path>",
-  "entries": [
-    {
-      "framework": "frontend/react",
-      "rule_file": ".cursor/frameworks/frontend/react.mdc",
-      "detected": true,
-      "confidence": "high|medium|low",
-      "markers": [
-        {"type": "file", "path": "package.json", "evidence": "dependency:react"},
-        {"type": "glob", "path": "**/*.tsx", "matches": 3}
-      ],
-      "matched_files": ["src/App.tsx", "..."],
-    },
-    ...
-  ]
-}
 """
-
 from __future__ import annotations
 
 import argparse
@@ -50,9 +29,6 @@ class MarkerSpec:
     # (kind, path_or_regex)
     # kind ∈ {"file", "glob", "regex", "json-dep"}
     checks: List[Tuple[str, str]]
-
-
-REPO_ROOT = Path.cwd()
 
 
 def read_text_safe(path: Path) -> str:
@@ -85,7 +61,11 @@ def file_exists(root: Path, relative: str) -> bool:
     return (root / relative).exists()
 
 
-def regex_anywhere(root: Path, pattern: str, exts: Tuple[str, ...] = (".md", ".mdx", ".py", ".ts", ".tsx", ".js", ".jsx", ".go", ".php", ".cs", ".json", ".yml", ".yaml")) -> bool:
+def regex_anywhere(
+    root: Path,
+    pattern: str,
+    exts: Tuple[str, ...] = (".md", ".mdx", ".py", ".ts", ".tsx", ".js", ".jsx", ".go", ".php", ".cs", ".json", ".yml", ".yaml"),
+) -> bool:
     rx = re.compile(pattern, re.IGNORECASE)
     for p in root.rglob("*"):
         if p.is_file() and p.suffix.lower() in exts and p.stat().st_size < 2_000_000:
@@ -159,21 +139,25 @@ def build_specs() -> Dict[str, MarkerSpec]:
     return specs
 
 
-def rule_file_for(framework_key: str) -> Optional[str]:
-    base = ".cursor/frameworks"
+def rule_file_for(framework_key: str, root: Path) -> Optional[str]:
+    base = root / ".cursor" / "frameworks"
     group, name = framework_key.split("/", 1)
     if group not in {"frontend", "backend", "mobile", "specialized"}:
-        # default to nested path if unknown
-        path = f"{base}/{framework_key}.mdc"
+        path = base / framework_key
+        path = path.with_suffix(".mdc")
     else:
-        path = f"{base}/{group}/{name}.mdc"
-    return path if Path(path).exists() else None
+        path = base / group / f"{name}.mdc"
+    return str(path.relative_to(root)) if path.exists() else None
 
 
 def detect(root: Path, key: str, spec: MarkerSpec) -> Tuple[bool, List[Dict[str, object]], List[str]]:
     evidence: List[Dict[str, object]] = []
     matched_files: List[str] = []
     positives = 0
+    any_glob_match = False
+    has_glob_spec = False
+    json_dep_results: List[bool] = []
+    has_json_dep_spec = False
 
     for kind, arg in spec.checks:
         if kind == "file":
@@ -182,27 +166,40 @@ def detect(root: Path, key: str, spec: MarkerSpec) -> Tuple[bool, List[Dict[str,
             if exists:
                 positives += 1
         elif kind == "glob":
+            has_glob_spec = True
             count, matches = glob_count(root, arg)
             evidence.append({"type": kind, "path": arg, "matches": count})
             matched_files.extend(matches[:5])
             if count > 0:
                 positives += 1
+                any_glob_match = True
         elif kind == "regex":
             found = regex_anywhere(root, arg)
             evidence.append({"type": kind, "pattern": arg, "present": found})
             if found:
                 positives += 1
         elif kind == "json-dep":
+            has_json_dep_spec = True
             pj = root / "package.json"
             ok = pj.exists() and json_has_dep(pj, arg)
             evidence.append({"type": kind, "dep": arg, "present": ok})
             if ok:
                 positives += 1
+            json_dep_results.append(ok)
         else:
             evidence.append({"type": kind, "detail": arg, "present": False})
 
-    detected = positives >= max(1, len(spec.checks) // 2)
-    confidence = "high" if positives >= max(2, len(spec.checks) - 1) else ("medium" if positives >= 2 else "low")
+    # Detection policy
+    json_ok = (not has_json_dep_spec) or all(json_dep_results)
+    if not json_ok:
+        detected = False
+    else:
+        if has_glob_spec:
+            detected = any_glob_match
+        else:
+            detected = positives >= 2
+    rule_path = rule_file_for(key, root)
+    confidence = "high" if detected and rule_path else ("medium" if detected else "low")
     return detected, evidence, matched_files[:10]
 
 
@@ -217,12 +214,13 @@ def main() -> int:
     parser.add_argument("--output", default="rule_attach_log.json", help="Output JSON path")
     args = parser.parse_args()
 
+    root = Path.cwd()
     specs = build_specs()
     entries: List[Dict[str, object]] = []
 
     for key, spec in specs.items():
-        detected, markers, matched_files = detect(REPO_ROOT, key, spec)
-        rule_file = rule_file_for(key)
+        detected, markers, matched_files = detect(root, key, spec)
+        rule_file = rule_file_for(key, root)
         entries.append({
             "framework": key,
             "rule_file": rule_file,
@@ -234,11 +232,13 @@ def main() -> int:
 
     out = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "repo_root": str(REPO_ROOT.resolve()),
+        "repo_root": str(root.resolve()),
         "entries": entries,
     }
 
-    out_path = (REPO_ROOT / args.output).resolve()
+    out_path = Path(args.output)
+    if not out_path.is_absolute():
+        out_path = Path.cwd() / out_path
     atomic_write_json(out_path, out)
     print(f"✅ Wrote {out_path}")
     return 0
@@ -246,4 +246,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-
