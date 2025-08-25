@@ -1,3 +1,19 @@
+flowchart LR
+  subgraph SLOs
+    A[HTTP Error Rate] -->|alert: HighErrorRate| P[Pager]
+    B[P95 Latency] -->|alert: ElevatedLatencyP95| P
+  end
+
+  subgraph Metrics
+    R[http_requests_total]
+    E[http_requests_errors_total]
+    D[http_request_duration_seconds_bucket]
+  end
+
+  R --> A
+  E --> A
+  D --> B
+
 # Observability Dashboards - T-11 Implementation
 
 ## Overview
