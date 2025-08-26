@@ -1,7 +1,7 @@
 ---
-description: ''
-globs: []
-alwaysApply: false
+description: "Testing and quality assurance standards and workflows"
+globs: ["**/*"]
+alwaysApply: true
 ---
 # Testing and Quality Assurance Standards
 
@@ -324,7 +324,4 @@ jobs:
 2. **Manual review** for complex changes
 3. **Performance regression** detection
 4. **Security vulnerability** scanning
-description:
-globs:
-alwaysApply: true
 ---

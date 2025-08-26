@@ -1,7 +1,7 @@
 ---
-description: ''
-globs: []
-alwaysApply: false
+description: "Security standards and compliance requirements"
+globs: ["**/*"]
+alwaysApply: true
 ---
 # Security and Compliance Standards
 
@@ -217,7 +217,4 @@ SECURITY_HEADERS = {
 - **Dependency vulnerability management**
 - **API security review** for external integrations
 - **Contract security requirements** and SLAs
-description:
-globs:
-alwaysApply: true
 ---

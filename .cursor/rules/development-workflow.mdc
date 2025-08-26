@@ -1,7 +1,7 @@
 ---
-description: ''
-globs: []
-alwaysApply: false
+description: "Workflow pipeline, phases, gates, and orchestration"
+globs: ["**/*"]
+alwaysApply: true
 ---
 # Development Workflow
 
@@ -147,7 +147,4 @@ This workspace uses a structured development pipeline with multiple phases and q
 - Weekly quality metrics
 - Monthly process improvement recommendations
 - Quarterly architecture review summaries
-description:
-globs:
-alwaysApply: true
 ---

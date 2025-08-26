@@ -1,7 +1,7 @@
 ---
-description: ''
-globs: []
-alwaysApply: false
+description: "AI system architecture, roles, memory, orchestration"
+globs: ["**/*"]
+alwaysApply: true
 ---
 # AI System Architecture
 
@@ -111,7 +111,4 @@ src/repo/             # Core repository utilities
 2. Test role interaction patterns
 3. Test memory persistence and recovery
 4. Test error handling and fallback mechanisms
-description:
-globs:
-alwaysApply: true
 ---

@@ -1,3 +1,7 @@
+---
+title: Technology Stack Rules
+---
+
 # Technology Stack Rules
 
 ## Overview
@@ -57,12 +61,6 @@ This rule provides access to technology-specific development guidelines and best
 - **Java**: [Java Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-java-programming-quarkus-framework-jakarta-ee-microprofi.mdc)
 - **Kotlin**: [Kotlin Android](mdc:.cursor/test-rules/test-you-are-a-senior-kotlin-programmer-with-experience-in-the-android-framework-and.mdc)
 - **Swift**: [iOS Development](mdc:.cursor/test-rules/test-you-are-an-expert-ios-developer-using-swift-and-swiftui-follow-these-guidelines.mdc)
-- **C#/.NET**: [.NET Development](mdc:.cursor/test-rules/test-net-development-rules.mdc)
-
-### Blockchain and Web3
-- **Solidity**: [Smart Contract Security](mdc:.cursor/test-rules/test-you-are-an-expert-in-solidity-and-smart-contract-security.mdc)
-- **Solana**: [Solana Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-solana-program-development-focusing-on-building-and-deploy.mdc)
-- **OnchainKit**: [Onchain Applications](mdc:.cursor/test-rules/test-you-are-an-expert-in-onchainkit-a-comprehensive-sdk-for-building-onchain-applic.mdc)
 
 ## Development Tools and Practices
 
@@ -148,7 +146,3 @@ This rule provides access to technology-specific development guidelines and best
 The technology stack rules provide comprehensive guidance for development across different frameworks and languages. They complement the core development rules by providing specific, actionable guidance for each technology area.
 
 Remember: **Technology rules enhance, but don't replace, core development principles**. Always maintain the quality, security, and maintainability standards defined in the core rules.
-description:
-globs:
-alwaysApply: true
----

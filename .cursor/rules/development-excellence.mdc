@@ -1,7 +1,7 @@
 ---
-description: ''
-globs: []
-alwaysApply: false
+description: "Master development standards across phases and stacks"
+globs: ["**/*"]
+alwaysApply: true
 ---
 # Development Excellence
 
@@ -256,7 +256,4 @@ This rule provides comprehensive guidance for maintaining the highest standards 
 Development excellence is not a destination but a continuous journey. By following these standards and best practices, we ensure that our AI development environment produces high-quality, secure, and maintainable systems that meet the needs of our users and stakeholders.
 
 Remember: **Quality is everyone's responsibility**, and **continuous improvement is the key to long-term success**.
-description:
-globs:
-alwaysApply: true
 ---

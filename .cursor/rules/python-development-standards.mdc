@@ -1,7 +1,7 @@
 ---
-description: ''
-globs: []
-alwaysApply: false
+description: "Python style, typing, error handling, security"
+globs: ["**/*.py", "pyproject.toml", "requirements.txt"]
+alwaysApply: true
 ---
 # Python Development Standards
 
@@ -79,7 +79,4 @@ from .atomic_io import atomic_write_json, with_json_lock
 - Use secure random number generation (`secrets` module)
 - Implement proper authentication and authorization
 - Sanitize file paths to prevent directory traversal attacks
-description:
-globs:
-alwaysApply: true
 ---
