@@ -150,7 +150,11 @@ def build_specs() -> Dict[str, MarkerSpec]:
         ),
         "specialized/ecommerce": MarkerSpec(
             description="E-commerce (Shopify/WordPress) markers",
-            checks=[("glob", "**/*.liquid"), ("glob", "**/*.php"), ("regex", r"Shopify|WooCommerce|WordPress")],
+            checks=[
+                ("glob", "**/*.liquid"),                 # Shopify themes
+                ("glob", "wp-content/**"),               # WordPress structure
+                ("regex", r"Shopify|WooCommerce|WordPress|wp-content"),
+            ],
         ),
     }
     return specs
