@@ -38,7 +38,7 @@ jobs:
       - name: Run attach mapping tests
         working-directory: frameworks/fwk-001-cursor-rules
         run: |
-          pytest -q tests/unit/test_rule_attach_mapping.py tests/unit/test_rule_attach_mapping_more.py
+          pytest -q tests/unit/test_rule_attach_mapping.py tests/unit/test_rule_attach_mapping_more.py tests/unit/test_rule_attach_mapping_new_stacks.py
 
       - name: Run hydration tests
         working-directory: frameworks/fwk-001-cursor-rules
