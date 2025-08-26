@@ -1,0 +1,4 @@
+# Frontend Standards
+- Co-locate tests as `*.test.tsx` / `*.spec.tsx`
+- Prefer functional components; named exports
+- Keep components ≤ 200 LOC; extract hooks

@@ -23,17 +23,17 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install pytest pytest-cov pytest-xdist pyyaml
 
-      - name: Run detector (rule attach)
+      - name: Generate Cursor Rules (detector → curated selector → linter)
         run: |
-          python3 tools/rule_attach_detector.py --output rule_attach_log.json
+          python3 tools/generate_cursor_rules.py --lint
 
-      - name: Run selector (hydrate rules)
-        run: |
-          python3 tools/hydration_selector.py --attach-log rule_attach_log.json --source .cursor/test-rules --dest .cursor/rules
-
-      - name: Run MDC linter
-        run: |
-          python3 tools/mdc_linter.py --paths .cursor/rules .cursor/test-rules --write
+      - name: Upload attach artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cursor-rules-artifacts
+          path: |
+            rule_attach_log.json
+            .cursor/rules/.selected.json
 
       - name: Run attach mapping tests
         working-directory: frameworks/fwk-001-cursor-rules
