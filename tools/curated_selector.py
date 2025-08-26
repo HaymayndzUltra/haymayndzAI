@@ -37,6 +37,16 @@ def select_files(source: Path, frameworks: List[str], max_per_fw: int = 2) -> Di
     files = [p for p in source.glob("*.mdc") if p.is_file()]
     lower_name: Dict[Path, str] = {p: p.name.lower() for p in files}
 
+    # Order candidates: newest first, then name asc for stability
+    def sort_key(p: Path) -> tuple:
+        try:
+            mtime = p.stat().st_mtime
+        except Exception:
+            mtime = 0.0
+        return (-mtime, lower_name[p])
+
+    files_sorted = sorted(files, key=sort_key)
+
     picked: set[Path] = set()
 
     # Per-framework picks
@@ -45,7 +55,7 @@ def select_files(source: Path, frameworks: List[str], max_per_fw: int = 2) -> Di
         if not keys:
             continue
         count = 0
-        for p in files:
+        for p in files_sorted:
             if p in picked:
                 continue
             name = lower_name[p]
@@ -57,7 +67,7 @@ def select_files(source: Path, frameworks: List[str], max_per_fw: int = 2) -> Di
 
     # Global picks (one each if matches)
     for label, keys in GLOBAL_KEYWORDS:
-        for p in files:
+        for p in files_sorted:
             if p in picked:
                 continue
             name = lower_name[p]
