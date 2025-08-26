@@ -76,6 +76,18 @@ Process:
 
 ---
 
+# Session Handoff
+
+- After Peer Review, write `Validation_Report.md` and emit a handoff record to `handoff_log.json` with fields:
+  - `id`: stable unique ID (e.g., `handoff-<timestamp>-principal_engineer_ai`)
+  - `origin_role`: `principal_engineer_ai`
+  - `target_role`: `codegen_ai` (only if Verdict is GO)
+  - `inputs`: [`Action_Plan.md`, `Summary_Report.md`]
+  - `outputs`: [`Validation_Report.md`] (+ `Final_Implementation_Plan.md` if GO)
+  - `required_by`: `synthesis_gate`
+  - `status`: `ready` (GO) | `blocked` (NO-GO)
+- "NO-GO" must not emit a target assignment; orchestrator remains in VALIDATION or BLOCKED.
+
 # Validation_Report.md Template
 
 ## 1. Scope & Context (detected plan type/intent)

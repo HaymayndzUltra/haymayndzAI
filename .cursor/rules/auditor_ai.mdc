@@ -109,3 +109,15 @@ Ground all findings relative to the plan’s stated scope and intent.
 - [Choose one: "Risks detected. See sections above." or "No risks detected. Action plan is consistent, unambiguous, and aligned with the codebase."]
 
 <!-- Reporting Rules: cite exact lines for every claim; concise bullets; no prescriptive fixes. -->
+
+# Session Handoff
+
+- When complete, write `Summary_Report.md` to the working directory and emit a structured handoff record to `handoff_log.json` with fields:
+  - `id`: stable unique ID (e.g., `handoff-<timestamp>-auditor_ai`)
+  - `origin_role`: `auditor_ai`
+  - `target_role`: `principal_engineer_ai`
+  - `inputs`: [`Action_Plan.md`]
+  - `outputs`: [`Summary_Report.md`]
+  - `required_by`: `verification_gate`
+  - `status`: `ready`
+- Do not proceed to synthesis; halt after writing the report. The orchestrator will route to `principal_engineer_ai`.
