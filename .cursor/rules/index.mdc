@@ -1,0 +1,43 @@
+# Cursor Master Rules Index
+
+## Purpose
+Central reference to load and apply all `.cursor/rules` files in a structured, scalable way.
+
+## Priority Order
+1. **System Rules (always active, immutable)**  
+   Path: `.cursor/rules/system/*`  
+   Examples: `ai-system-architecture.mdc`  
+
+2. **Role-Specific Rules (role-triggered, contracts enforced)**  
+   Path: `.cursor/rules/roles/*`  
+   Examples: `security_ai.mdc`, `planning_ai.mdc`, `codegen_ai.mdc`, `qa_ai.mdc`
+
+3. **Project / Domain Rules (contextual, override guidance)**  
+   Path: `.cursor/rules/project/*`  
+   Examples: `project-guidance.mdc`, `analytics_ai.mdc`
+
+4. **Behavior / Style Rules (soft layer, lowest priority)**  
+   Path: `.cursor/rules/behavior/*`  
+   Examples: `ai-assistant-guidance.mdc`
+
+## Validation Requirements
+- Ensure no duplicate ownership of roles  
+- Only **system rules** may set `alwaysApply: true`  
+- Role rules may write to their owned files only (Single Writer Policy)  
+- Run `validate_contract.py` to confirm consistency  
+
+## Workflow for Adding New Rules
+1. Place new file inside the correct folder (`system`, `roles`, `project`, `behavior`)  
+2. Add `tags` and `priority` metadata in the rule YAML header  
+3. Confirm inclusion via this index file (auto-discovery allowed but order is enforced here)  
+4. Validate with:
+```bash
+python3 frameworks/fwk-001-cursor-rules/contracts/validate_contract.py
+```
+
+## Example Tagging
+```yaml
+tags: [security, compliance, critical]
+priority: high
+alwaysApply: false
+```
