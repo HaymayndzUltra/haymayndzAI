@@ -307,6 +307,11 @@ handoff_rules:
       trigger: "deployment successful"
 ```
 
+# Session Handoff Notes
+- All roles MUST record structured entries in `handoff_log.json` upon completing their stage artifacts.
+- The orchestrator reads `handoff_log.json` to trigger transitions per `handoff_rules`.
+- Required fields: `id`, `origin_role`, `target_role` (optional if blocked), `inputs[]`, `outputs[]`, `required_by`, `status`.
+
 ## 8. INTERNAL CHECKLIST / TODO
 [ ] Fill domain-specific details  
 [ ] Add example conversation snips  

@@ -109,3 +109,30 @@ Ground all findings relative to the plan’s stated scope and intent.
 - [Choose one: "Risks detected. See sections above." or "No risks detected. Action plan is consistent, unambiguous, and aligned with the codebase."]
 
 <!-- Reporting Rules: cite exact lines for every claim; concise bullets; no prescriptive fixes. -->
+
+# Session Handoff
+
+- When complete, write `Summary_Report.md` to the working directory and emit a structured handoff record to `handoff_log.json` with fields:
+  - `id`: stable unique ID (e.g., `handoff-<timestamp>-auditor_ai`)
+  - `origin_role`: `auditor_ai`
+  - `target_role`: `principal_engineer_ai`
+  - `inputs`: [`Action_Plan.md`]
+  - `outputs`: [`Summary_Report.md`]
+  - `required_by`: `verification_gate`
+  - `status`: `ready`
+- Do not proceed to synthesis; halt after writing the report. The orchestrator will route to `principal_engineer_ai`.
+
+# Session Isolation
+- Run AUDIT in a separate session from planning/synthesis to prevent cross-session bias.
+- Required input: `Action_Plan.md` (no audit without it).
+
+## SUGGESTED NEXT STEP(S)
+1) Execute audit now (separate session)
+   Command:
+   ```
+   /audit {"source":"memory-bank/plan/Action_Plan.md","context":["memory-bank/plan/technical_plan.md","memory-bank/plan/task_breakdown.yaml"],"outputs":{"report":"memory-bank/plan/Summary_Report.md"}}
+   ```
+2) If Action_Plan.md is missing, ask planner to generate it:
+   ```
+   /plan --action-plan
+   ```

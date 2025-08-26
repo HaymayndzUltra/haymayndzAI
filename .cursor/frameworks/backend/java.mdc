@@ -1,0 +1,3 @@
+# Java/Spring Boot — Baseline Rules
+- Prefer Spring Boot 3.x
+- Enforce layered architecture and constructor injection

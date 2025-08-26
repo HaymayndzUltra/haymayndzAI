@@ -1,0 +1,4 @@
+# Backend Standards
+- Twelve-Factor configuration; no secrets in repo
+- Health endpoints and structured logging
+- Tests co-located under `tests/` with pytest or jest

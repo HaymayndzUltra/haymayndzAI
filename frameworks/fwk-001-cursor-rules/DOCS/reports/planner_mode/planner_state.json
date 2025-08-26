@@ -1,0 +1,10 @@
+{
+  "planner_mode": {
+    "enabled": true,
+    "answer_first": true,
+    "confirm_before_action": "always",
+    "code_default": "blocked"
+  },
+  "updated_at": "2025-08-26T01:17:10.143910+00:00",
+  "actor": "orchestrator"
+}

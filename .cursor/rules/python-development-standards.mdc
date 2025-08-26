@@ -1,0 +1,82 @@
+---
+description: "Python style, typing, error handling, security"
+globs: ["**/*.py", "pyproject.toml", "requirements.txt"]
+alwaysApply: true
+---
+# Python Development Standards
+
+## Code Style & Formatting
+- Use **4 spaces** for indentation (no tabs)
+- Follow **PEP 8** style guidelines
+- Maximum line length: **88 characters** (Black formatter standard)
+- Use **snake_case** for functions and variables
+- Use **PascalCase** for classes
+- Use **UPPER_CASE** for constants
+
+## Import Organization
+```python
+# Standard library imports
+import os
+import json
+import time
+from datetime import datetime, timezone, timedelta
+from typing import Dict, Any, Optional, List
+from contextlib import contextmanager
+
+# Third-party imports
+import logging
+import atexit
+
+# Local imports
+from .atomic_io import atomic_write_json, with_json_lock
+```
+
+## Type Hints
+- **Always** use type hints for function parameters and return values
+- Use `Optional[T]` for nullable values
+- Use `Union[T1, T2]` or `T1 | T2` (Python 3.10+) for multiple types
+- Use `Any` sparingly and document why it's necessary
+
+## Error Handling
+- Use specific exception types when possible
+- Implement proper cleanup in `finally` blocks
+- Log errors with appropriate context
+- Use context managers for resource management
+
+## File Operations
+- Use atomic operations for critical file writes (see [atomic_io.py](mdc:src/repo/atomic_io.py))
+- Implement proper file locking for concurrent access
+- Use `with` statements for file operations
+- Set appropriate file permissions (default: `0o600` for sensitive files)
+
+## Logging Standards
+- Use structured logging with appropriate log levels
+- Include context in log messages
+- Use f-strings for log formatting
+- Configure logging at module level
+
+## Testing Requirements
+- Write unit tests for all public functions
+- Use `pytest` as the testing framework
+- Aim for **90%+ code coverage**
+- Test edge cases and error conditions
+- Use fixtures for common test data
+
+## Documentation
+- Use **Google-style docstrings** for all public functions and classes
+- Include type information in docstrings
+- Document exceptions that may be raised
+- Provide usage examples for complex functions
+
+## Performance Considerations
+- Use list comprehensions over explicit loops when appropriate
+- Prefer `set` operations for membership testing
+- Use `collections.defaultdict` for counting operations
+- Profile code before optimization
+
+## Security Best Practices
+- Validate all input data
+- Use secure random number generation (`secrets` module)
+- Implement proper authentication and authorization
+- Sanitize file paths to prevent directory traversal attacks
+---

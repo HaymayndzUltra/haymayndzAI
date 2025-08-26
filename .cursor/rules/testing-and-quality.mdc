@@ -1,0 +1,327 @@
+---
+description: "Testing and quality assurance standards and workflows"
+globs: ["**/*"]
+alwaysApply: true
+---
+# Testing and Quality Assurance Standards
+
+## Quality Principles
+
+### Test-Driven Development (TDD)
+- **Write tests first** before implementing features
+- **Red-Green-Refactor** cycle for all development
+- **Test coverage** should exceed 90% for production code
+- **Continuous testing** throughout development lifecycle
+
+### Quality Gates
+- **Unit tests** must pass before code review
+- **Integration tests** must pass before deployment
+- **Performance tests** must meet SLA requirements
+- **Security tests** must pass before production release
+
+## Testing Pyramid
+
+### 1. Unit Tests (70% of tests)
+**Purpose**: Test individual functions and methods in isolation
+**Tools**: pytest (Python), Jest (JavaScript), JUnit (Java)
+**Coverage**: 90%+ line coverage required
+
+```python
+# Example unit test structure
+import pytest
+from unittest.mock import Mock, patch
+from src.repo.atomic_io import atomic_write_text
+
+class TestAtomicIO:
+    def test_atomic_write_text_success(self, tmp_path):
+        """Test successful atomic text write"""
+        test_file = tmp_path / "test.txt"
+        test_content = "Hello, World!"
+        
+        atomic_write_text(str(test_file), test_content)
+        
+        assert test_file.read_text() == test_content
+    
+    def test_atomic_write_text_creates_directory(self, tmp_path):
+        """Test that atomic write creates parent directories"""
+        test_dir = tmp_path / "new_dir"
+        test_file = test_dir / "test.txt"
+        test_content = "Test content"
+        
+        atomic_write_text(str(test_file), test_content)
+        
+        assert test_dir.exists()
+        assert test_file.read_text() == test_content
+    
+    @patch('os.fsync')
+    @patch('os.replace')
+    def test_atomic_write_text_uses_fsync(self, mock_replace, mock_fsync, tmp_path):
+        """Test that atomic write uses fsync for durability"""
+        test_file = tmp_path / "test.txt"
+        test_content = "Test content"
+        
+        atomic_write_text(str(test_file), test_content)
+        
+        assert mock_fsync.called
+        assert mock_replace.called
+```
+
+### 2. Integration Tests (20% of tests)
+**Purpose**: Test component interactions and data flow
+**Tools**: pytest-integration, TestContainers, Docker Compose
+**Coverage**: Critical paths and component boundaries
+
+```python
+# Example integration test
+import pytest
+from src.repo.auto_sync_manager import AutoSyncManager
+from src.repo.atomic_io import atomic_write_json
+import tempfile
+import os
+
+class TestAutoSyncManagerIntegration:
+    @pytest.fixture
+    def temp_memory_bank(self):
+        """Create temporary memory bank for testing"""
+        temp_dir = tempfile.mkdtemp()
+        memory_bank = os.path.join(temp_dir, "memory-bank")
+        os.makedirs(memory_bank)
+        
+        # Create test state files
+        test_state = {"test": "data", "timestamp": "2024-01-01T00:00:00Z"}
+        atomic_write_json(os.path.join(memory_bank, "test_state.json"), test_state)
+        
+        yield memory_bank
+        
+        # Cleanup
+        import shutil
+        shutil.rmtree(temp_dir)
+    
+    def test_auto_sync_manager_integration(self, temp_memory_bank, monkeypatch):
+        """Test AutoSyncManager with real file system operations"""
+        # Mock the memory bank path
+        monkeypatch.setenv("MEMORY_STORAGE_ROOT", temp_memory_bank)
+        
+        # Initialize manager
+        manager = AutoSyncManager()
+        
+        # Verify state files are accessible
+        assert os.path.exists(os.path.join(temp_memory_bank, "test_state.json"))
+        
+        # Test sync operation
+        result = manager.sync_all_states()
+        assert result["status"] == "success"
+```
+
+### 3. End-to-End Tests (10% of tests)
+**Purpose**: Test complete user workflows and system behavior
+**Tools**: Selenium, Playwright, Cypress
+**Coverage**: Critical user journeys and business processes
+
+## Test Organization
+
+### File Structure
+```
+tests/
+├── unit/                    # Unit tests
+│   ├── test_atomic_io.py
+│   ├── test_auto_sync_manager.py
+│   └── test_tz_utils.py
+├── integration/             # Integration tests
+│   ├── test_memory_system.py
+│   └── test_workflow_pipeline.py
+├── e2e/                    # End-to-end tests
+│   ├── test_user_workflows.py
+│   └── test_system_integration.py
+├── fixtures/               # Test fixtures and data
+│   ├── conftest.py
+│   └── test_data/
+└── mocks/                  # Mock objects and stubs
+    └── mock_external_services.py
+```
+
+### Test Configuration
+```python
+# conftest.py - Shared test configuration
+import pytest
+import tempfile
+import os
+from pathlib import Path
+
+@pytest.fixture(scope="session")
+def test_environment():
+    """Setup test environment for entire test session"""
+    # Create temporary test directory
+    test_dir = tempfile.mkdtemp()
+    
+    # Set environment variables
+    os.environ["TEST_MODE"] = "true"
+    os.environ["MEMORY_STORAGE_ROOT"] = test_dir
+    
+    yield test_dir
+    
+    # Cleanup
+    import shutil
+    shutil.rmtree(test_dir)
+
+@pytest.fixture
+def memory_bank(test_environment):
+    """Create memory bank directory for each test"""
+    memory_bank = os.path.join(test_environment, "memory-bank")
+    os.makedirs(memory_bank, exist_ok=True)
+    return memory_bank
+
+@pytest.fixture
+def sample_task_data():
+    """Sample task data for testing"""
+    return {
+        "id": "test-task-001",
+        "title": "Test Task",
+        "description": "A test task for unit testing",
+        "status": "active",
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    }
+```
+
+## Quality Metrics
+
+### Code Coverage
+- **Line Coverage**: Minimum 90% for production code
+- **Branch Coverage**: Minimum 80% for critical paths
+- **Function Coverage**: Minimum 95% for public APIs
+- **Coverage Reports**: Generate HTML and XML reports
+
+### Performance Benchmarks
+```python
+import time
+import pytest
+from src.repo.atomic_io import atomic_write_text
+
+def test_atomic_write_performance(benchmark):
+    """Benchmark atomic write performance"""
+    def atomic_write_operation():
+        with tempfile.NamedTemporaryFile(delete=False) as tmp:
+            atomic_write_text(tmp.name, "test content" * 1000)
+            os.unlink(tmp.name)
+    
+    # Benchmark the operation
+    result = benchmark(atomic_write_operation)
+    
+    # Assert performance requirements
+    assert result.stats.mean < 0.1  # Less than 100ms
+    assert result.stats.stddev < 0.05  # Low variance
+```
+
+### Security Testing
+- **Static Analysis**: Bandit, Semgrep, CodeQL
+- **Dependency Scanning**: Snyk, OWASP Dependency Check
+- **SAST/DAST**: SonarQube, OWASP ZAP
+- **Container Security**: Trivy, Clair
+
+## Continuous Quality
+
+### Pre-commit Hooks
+```yaml
+# .pre-commit-config.yaml
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+  
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+  
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+  
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+  
+  - repo: https://github.com/pycqa/bandit
+    rev: 1.7.5
+    hooks:
+      - id: bandit
+        args: ["-r", "src/"]
+```
+
+### CI/CD Pipeline
+```yaml
+# .github/workflows/quality.yml
+name: Quality Assurance
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.9, 3.10, 3.11]
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+      
+      - name: Run linting
+        run: |
+          flake8 src/ tests/
+          black --check src/ tests/
+          isort --check-only src/ tests/
+      
+      - name: Run security scan
+        run: bandit -r src/
+      
+      - name: Run tests with coverage
+        run: |
+          pytest tests/ --cov=src/ --cov-report=xml --cov-report=html
+      
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./coverage.xml
+```
+
+## Best Practices
+
+### Test Design
+1. **Arrange-Act-Assert** pattern for test structure
+2. **One assertion per test** for clarity
+3. **Descriptive test names** that explain the scenario
+4. **Test isolation** - tests should not depend on each other
+
+### Test Data Management
+1. **Use factories** for creating test objects
+2. **Minimize test data** to essential information
+3. **Clean up resources** after tests
+4. **Use realistic data** that represents production scenarios
+
+### Performance Testing
+1. **Baseline measurements** for performance regression detection
+2. **Load testing** for system capacity planning
+3. **Stress testing** for failure mode identification
+4. **Monitoring** during performance tests
+
+### Quality Gates
+1. **Automated checks** in CI/CD pipeline
+2. **Manual review** for complex changes
+3. **Performance regression** detection
+4. **Security vulnerability** scanning
+---

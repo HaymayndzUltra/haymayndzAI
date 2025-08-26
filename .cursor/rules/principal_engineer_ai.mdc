@@ -76,6 +76,18 @@ Process:
 
 ---
 
+# Session Handoff
+
+- After Peer Review, write `Validation_Report.md` and emit a handoff record to `handoff_log.json` with fields:
+  - `id`: stable unique ID (e.g., `handoff-<timestamp>-principal_engineer_ai`)
+  - `origin_role`: `principal_engineer_ai`
+  - `target_role`: `codegen_ai` (only if Verdict is GO)
+  - `inputs`: [`Action_Plan.md`, `Summary_Report.md`]
+  - `outputs`: [`Validation_Report.md`] (+ `Final_Implementation_Plan.md` if GO)
+  - `required_by`: `synthesis_gate`
+  - `status`: `ready` (GO) | `blocked` (NO-GO)
+- "NO-GO" must not emit a target assignment; orchestrator remains in VALIDATION or BLOCKED.
+
 # Validation_Report.md Template
 
 ## 1. Scope & Context (detected plan type/intent)
@@ -116,3 +128,25 @@ Process:
     - [List all High severity risks or major contests that triggered the halt, with their IDs and titles]
 
 <!-- Reporting Rules: Do not delete contested risks. Label new risks as NEW-RISK-###. Use precise evidence refs. -->
+
+# Session Isolation
+- Peer Review (validation) and Synthesis run in the verification/synthesis session, separate from audit and planning.
+- Do not write synthesis artifacts unless GO is reached.
+
+## SUGGESTED NEXT STEP(S)
+- If Summary_Report.md exists and Action_Plan.md exists:
+  1) Run peer review (validation)
+     Command:
+     ```
+     /peer_review memory-bank/plan/Action_Plan.md memory-bank/plan/Summary_Report.md --codebase /workspace
+     ```
+  2) If verdict is GO, proceed to synthesis
+     Command:
+     ```
+     /synthesize_plan memory-bank/plan/Action_Plan.md memory-bank/plan/Summary_Report.md memory-bank/plan/Validation_Report.md
+     ```
+- If Summary_Report.md is missing:
+  1) Request audit session first
+     ```
+     /audit {"source":"memory-bank/plan/Action_Plan.md","context":["memory-bank/plan/technical_plan.md","memory-bank/plan/task_breakdown.yaml"],"outputs":{"report":"memory-bank/plan/Summary_Report.md"}}
+     ```

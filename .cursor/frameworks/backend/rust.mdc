@@ -1,0 +1,3 @@
+# Rust — Baseline Rules
+- Use cargo workspaces when multiple crates
+- Enforce clippy clean and fmt

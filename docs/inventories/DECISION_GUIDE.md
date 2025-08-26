@@ -10,6 +10,7 @@ Use these inventories to decide:
   - Comprehensive; includes governance/security/tests.
   - If adopting full process (audit → verify → synthesize) → INTEGRATE as submodule.
   - If you only need prompts → extract `system-prompt/` into your `.cursor/rules` and keep references to docs.
+  - Templates: see `/.cursor/templates/CLIENT_ONBOARDING_CHECKLIST.md`, `/.cursor/templates/QA_WORKFLOW_TEMPLATE.md`.
 
 - /memory_system + /memory-bank + /storage/memory:
   - If you need learning/retrieval across projects → INTEGRATE all three; ensure `kb.index.faiss` lifecycle.

@@ -135,6 +135,27 @@ def build_specs() -> Dict[str, MarkerSpec]:
             description="Ionic markers",
             checks=[("file", "package.json"), ("json-dep", "@ionic"), ("glob", "**/*.ts")],
         ),
+        # New: Java, Rust, iOS/Swift, E-commerce (Shopify/WordPress)
+        "backend/java": MarkerSpec(
+            description="Java/Spring markers",
+            checks=[("file", "pom.xml"), ("glob", "**/*.java")],
+        ),
+        "backend/rust": MarkerSpec(
+            description="Rust markers",
+            checks=[("file", "Cargo.toml"), ("glob", "**/*.rs")],
+        ),
+        "mobile/ios": MarkerSpec(
+            description="iOS/Swift markers",
+            checks=[("glob", "**/*.swift"), ("glob", "**/*.xcodeproj")],
+        ),
+        "specialized/ecommerce": MarkerSpec(
+            description="E-commerce (Shopify/WordPress) markers",
+            checks=[
+                ("glob", "**/*.liquid"),                 # Shopify themes
+                ("glob", "wp-content/**"),               # WordPress structure
+                ("regex", r"Shopify|WooCommerce|WordPress|wp-content"),
+            ],
+        ),
     }
     return specs
 
@@ -221,6 +242,12 @@ def main() -> int:
     for key, spec in specs.items():
         detected, markers, matched_files = detect(root, key, spec)
         rule_file = rule_file_for(key, root)
+
+        # Special-case: backend/php must have composer.json present to count as detected
+        if key == "backend/php" and detected:
+            if not (root / "composer.json").exists():
+                detected = False
+
         entries.append({
             "framework": key,
             "rule_file": rule_file,

@@ -67,6 +67,22 @@ Sa Cursor chat, subukan:
 /gen_code src/auth/login.ts
 ```
 
+### Step 3.1: Auto-Attach ng Rules (Detector → Selector → Linter)
+
+1) Tumakbo mula sa repo root para awtomatikong pumili ng tamang `.mdc` rules base sa markers ng project:
+
+```bash
+python3 tools/rule_attach_detector.py --output rule_attach_log.json
+python3 tools/hydration_selector.py --attach-log rule_attach_log.json --source .cursor/test-rules --dest .cursor/rules
+python3 tools/mdc_linter.py --paths .cursor/rules .cursor/test-rules --write
+```
+
+- Output:
+  - `rule_attach_log.json` — detections at candidate mappings
+  - Na-promote na files sa `.cursor/rules/` galing `.cursor/test-rules/`
+  - Na-lint/na-format na frontmatter para sa `.mdc` files
+- Note: Nakakabit din ito sa CI; tingnan ang `.github/workflows/ci.yml`.
+
 ### Step 4: Quick Validation
 I-check kung may na-generate na files sa:
 - `src/` folder - may mga generated code

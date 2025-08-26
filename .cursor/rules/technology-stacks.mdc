@@ -1,0 +1,151 @@
+---
+title: Technology Stack Rules
+description: ''
+globs: []
+alwaysApply: false
+---
+
+# Technology Stack Rules
+
+## Overview
+This rule provides access to technology-specific development guidelines and best practices for various frameworks and languages. These rules are sourced from our comprehensive testing and experimentation with different technology stacks.
+
+## Python Development
+
+### Web Frameworks
+- **FastAPI**: [FastAPI Integration Rules](mdc:.cursor/test-rules/test-you-are-an-expert-in-python-fastapi-integrations-and-web-app-development-you-a.mdc)
+- **Django**: [Django Web Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-python-django-and-scalable-web-application-development.mdc)
+- **Flask**: [Flask API Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-python-flask-and-scalable-api-development.mdc)
+
+### Specialized Python
+- **Cybersecurity Tools**: [Python Security Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-python-and-cybersecurity-tool-development.mdc)
+- **Machine Learning**: [JAX and NumPy ML](mdc:.cursor/test-rules/test-you-are-an-expert-in-jax-python-numpy-and-machine-learning.mdc)
+- **RPA Development**: [Robocorp RPA](mdc:.cursor/test-rules/test-you-are-an-expert-in-python-robocorp-and-scalable-rpa-development.mdc)
+- **Web Scraping**: [Data Extraction](mdc:.cursor/test-rules/test-you-are-an-expert-in-web-scraping-and-data-extraction-with-a-focus-on-python-li.mdc)
+
+## JavaScript/TypeScript Development
+
+### Frontend Frameworks
+- **React**: [React Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-javascript-react-node-js-next-js-app-router-zustand-sh.mdc)
+- **Next.js**: [Next.js App Router](mdc:.cursor/test-rules/test-you-are-an-expert-in-typescript-node-js-next-js-app-router-react-shadcn-ui.mdc)
+- **Vue.js**: [Vue 3 Development](mdc:.cursor/test-rules/test-you-have-extensive-expertise-in-vue-3-nuxt-3-typescript-node-js-vite-vue-ro.mdc)
+- **Svelte**: [Svelte 5 and SvelteKit](mdc:.cursor/test-rules/test-you-are-an-expert-in-svelte-5-sveltekit-typescript-and-modern-web-development.mdc)
+- **Astro**: [Astro Framework](mdc:.cursor/test-rules/test-you-are-an-expert-in-javascript-typescript-and-astro-framework-for-scalable-we.mdc)
+
+### Mobile Development
+- **React Native**: [React Native with Expo](mdc:.cursor/test-rules/test-you-are-an-expert-in-typescript-react-native-expo-and-mobile-app-development.mdc)
+- **Mobile UI**: [Mobile UI Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-javascript-react-native-expo-and-mobile-ui-development.mdc)
+
+### Backend and Full-Stack
+- **Node.js**: [Node.js Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-typescript-node-js-next-js-app-router-react-shadcn-ui.mdc)
+- **NestJS**: [NestJS Framework](mdc:.cursor/test-rules/test-you-are-a-senior-typescript-programmer-with-experience-in-the-nestjs-framework-a-1.mdc)
+- **Fastify**: [Fastify Framework](mdc:.cursor/test-rules/test-you-are-a-senior-typescript-programmer-with-experience-in-the-fastify-framework.mdc)
+
+## PHP Development
+
+### Laravel Ecosystem
+- **Laravel Core**: [Laravel Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-laravel-php-and-related-web-development-technologies.mdc)
+- **Laravel Livewire**: [Livewire and Alpine.js](mdc:.cursor/test-rules/test-you-are-an-expert-in-laravel-php-livewire-alpine-js-tailwindcss-and-daisyui.mdc)
+- **Laravel Vue**: [Laravel + Vue.js](mdc:.cursor/test-rules/test-you-are-an-expert-in-laravel-vue-js-and-modern-full-stack-web-development-tech.mdc)
+
+### WordPress Development
+- **WordPress Core**: [WordPress Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-wordpress-php-and-related-web-development-technologies.mdc)
+- **WooCommerce**: [WooCommerce Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-wordpress-woocommerce-php-and-related-web-development-te.mdc)
+
+## Other Languages and Frameworks
+
+### Modern Languages
+- **Rust**: [Rust Async Programming](mdc:.cursor/test-rules/test-you-are-an-expert-in-rust-async-programming-and-concurrent-systems.mdc)
+- **Go**: [Go Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-go-programming-language-and-related-web-development-technologies.mdc)
+- **Julia**: [Julia Data Science](mdc:.cursor/test-rules/test-you-are-an-expert-in-julia-language-programming-data-science-and-numerical-com.mdc)
+- **Lua**: [Lua Programming](mdc:.cursor/test-rules/test-you-are-an-expert-in-lua-programming-with-deep-knowledge-of-its-unique-features.mdc)
+
+### Enterprise and Mobile
+- **Java**: [Java Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-java-programming-quarkus-framework-jakarta-ee-microprofi.mdc)
+- **Kotlin**: [Kotlin Android](mdc:.cursor/test-rules/test-you-are-a-senior-kotlin-programmer-with-experience-in-the-android-framework-and.mdc)
+- **Swift**: [iOS Development](mdc:.cursor/test-rules/test-you-are-an-expert-ios-developer-using-swift-and-swiftui-follow-these-guidelines.mdc)
+
+## Development Tools and Practices
+
+### Testing and Quality
+- **RSpec Testing**: [RSpec Best Practices](mdc:.cursor/test-rules/test-when-generating-rspec-tests-follow-these-best-practices-to-ensure-they-are-comp.mdc)
+- **QA Automation**: [QA Automation Engineering](mdc:.cursor/test-rules/test-you-are-a-senior-qa-automation-engineer-expert-in-typescript-javascript-fronte.mdc)
+
+### DevOps and Infrastructure
+- **Terraform**: [Infrastructure as Code](mdc:.cursor/test-rules/test-you-are-an-expert-in-terraform-and-infrastructure-as-code-iac-for-cloud-platfo.mdc)
+- **DevOps Engineering**: [DevOps and Backend Solutions](mdc:.cursor/test-rules/test-you-are-a-senior-devops-engineer-and-backend-solutions-developer-with-expertise.mdc)
+
+### Design and UX
+- **UI/UX Design**: [Design Principles](mdc:.cursor/test-rules/test-you-are-an-expert-in-ui-and-ux-design-principles-for-software-development.mdc)
+- **Frontend Development**: [Frontend Expertise](mdc:.cursor/test-rules/test-you-are-a-senior-front-end-developer-and-an-expert-in-reactjs-nextjs-javascrip.mdc)
+
+## Specialized Development Areas
+
+### Game Development
+- **Unity C#**: [Unity Development](mdc:.cursor/test-rules/test-unity-c-expert-developer-prompt.mdc)
+- **Pixi.js**: [Web Game Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-typescript-pixi-js-web-game-development-and-mobile-app-o.mdc)
+- **Three.js**: [3D Web Development](mdc:.cursor/test-rules/test-you-are-an-expert-in-react-vite-tailwind-css-three-js-react-three-fiber-and.mdc)
+
+### Enterprise Solutions
+- **Salesforce**: [Salesforce Development](mdc:.cursor/test-rules/test-you-are-an-expert-salesforce-developer-that-will-create-apex-classes-apex-trig.mdc)
+- **Shopify**: [Shopify Theme Development](mdc:.cursor/test-rules/test-you-are-an-expert-shopify-theme-developer-with-advanced-knowledge-of-liquid-htm.mdc)
+- **Drupal**: [Drupal Module Development](mdc:.cursor/test-rules/test-drupal-10-module-development-rules.mdc)
+
+### Content Management
+- **Sanity CMS**: [Sanity Development](mdc:.cursor/test-rules/test-sanity-development-guidelines.mdc)
+- **Prisma ORM**: [Prisma Development](mdc:.cursor/test-rules/test-prisma-orm-development-guidelines.mdc)
+
+## Usage Guidelines
+
+### When to Use Technology Rules
+1. **Starting new projects** in specific frameworks
+2. **Learning new technologies** and best practices
+3. **Debugging framework-specific issues**
+4. **Implementing best practices** for specific stacks
+5. **Code review** for technology-specific concerns
+
+### Rule Selection Strategy
+1. **Primary Language**: Start with language-specific rules (Python, JavaScript, etc.)
+2. **Framework**: Add framework-specific rules for your project
+3. **Specialization**: Include domain-specific rules (security, testing, etc.)
+4. **Integration**: Consider how rules work together
+
+### Rule Conflicts and Resolution
+- **Language rules** take precedence over framework rules
+- **Security rules** override convenience rules
+- **Performance rules** should be balanced with maintainability
+- **When in doubt**, refer to the [Development Excellence](mdc:.cursor/rules/development-excellence.mdc) rule
+
+## Integration with Main Rules
+
+### Core Rule Dependencies
+- [Development Excellence](mdc:.cursor/rules/development-excellence.mdc) - Master development standards
+- [Python Development Standards](mdc:.cursor/rules/python-development-standards.mdc) - Python-specific guidelines
+- [Security and Compliance](mdc:.cursor/rules/security-and-compliance.mdc) - Security requirements
+- [Testing and Quality](mdc:.cursor/rules/testing-and-quality.mdc) - Quality assurance standards
+
+### Workflow Integration
+- **Planning Phase**: Use technology rules for architecture decisions
+- **Development Phase**: Apply framework-specific best practices
+- **Testing Phase**: Use technology-specific testing guidelines
+- **Deployment Phase**: Follow technology-specific deployment patterns
+
+## Maintenance and Updates
+
+### Rule Evolution
+- **Technology rules** are updated based on framework releases
+- **Best practices** evolve with industry standards
+- **Security rules** are updated for new vulnerabilities
+- **Performance rules** are refined based on benchmarks
+
+### Contribution Guidelines
+- **Test new rules** in the test-rules directory first
+- **Validate rules** against real-world projects
+- **Document changes** and rationale
+- **Review and approve** before moving to main rules
+
+## Conclusion
+
+The technology stack rules provide comprehensive guidance for development across different frameworks and languages. They complement the core development rules by providing specific, actionable guidance for each technology area.
+
+Remember: **Technology rules enhance, but don't replace, core development principles**. Always maintain the quality, security, and maintainability standards defined in the core rules.

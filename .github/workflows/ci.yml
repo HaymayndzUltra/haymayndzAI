@@ -21,9 +21,32 @@ jobs:
       - name: Install test deps
         run: |
           python -m pip install --upgrade pip
-          python -m pip install pytest pytest-cov pytest-xdist
+          python -m pip install pytest pytest-cov pytest-xdist pyyaml
+
+      - name: Generate Cursor Rules (detector → curated selector → linter)
+        run: |
+          python3 tools/generate_cursor_rules.py --lint
+
+      - name: Upload attach artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cursor-rules-artifacts
+          path: |
+            rule_attach_log.json
+            .cursor/rules/.selected.json
 
       - name: Run attach mapping tests
         working-directory: frameworks/fwk-001-cursor-rules
         run: |
-          pytest -q tests/unit/test_rule_attach_mapping.py tests/unit/test_rule_attach_mapping_more.py
+          pytest -q tests/unit/test_rule_attach_mapping.py tests/unit/test_rule_attach_mapping_more.py tests/unit/test_rule_attach_mapping_new_stacks.py
+
+      - name: Run hydration tests
+        working-directory: frameworks/fwk-001-cursor-rules
+        run: |
+          pytest -q tests/unit/test_hydration_selector.py
+          python3 hydration/run_hydration_tests.py hydration/hydration_tests.yaml
+
+      - name: Run concurrency smoke tests
+        working-directory: frameworks/fwk-001-cursor-rules
+        run: |
+          pytest -q tests/unit/test_concurrency_smoke.py

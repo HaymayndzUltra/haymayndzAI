@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-25T19:26:34.963431+00:00",
+  "generated_at": "2025-08-26T02:45:37.051032+00:00",
   "repo_root": "/workspace",
   "entries": [
     {
@@ -67,11 +67,6 @@
           "present": false
         },
         {
-          "type": "json-dep",
-          "dep": "@angular/core",
-          "present": false
-        },
-        {
           "type": "glob",
           "path": "**/*.ts",
           "matches": 0
@@ -106,8 +101,8 @@
     {
       "framework": "backend/node",
       "rule_file": ".cursor/frameworks/backend/node.mdc",
-      "detected": true,
-      "confidence": "high",
+      "detected": false,
+      "confidence": "low",
       "markers": [
         {
           "type": "file",
@@ -131,7 +126,7 @@
         {
           "type": "glob",
           "path": "**/*.py",
-          "matches": 64
+          "matches": 80
         },
         {
           "type": "file",
@@ -272,6 +267,87 @@
           "type": "glob",
           "path": "**/*.ts",
           "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "backend/java",
+      "rule_file": ".cursor/frameworks/backend/java.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "file",
+          "path": "pom.xml",
+          "present": false
+        },
+        {
+          "type": "glob",
+          "path": "**/*.java",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "backend/rust",
+      "rule_file": ".cursor/frameworks/backend/rust.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "file",
+          "path": "Cargo.toml",
+          "present": false
+        },
+        {
+          "type": "glob",
+          "path": "**/*.rs",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "mobile/ios",
+      "rule_file": ".cursor/frameworks/mobile/ios.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "glob",
+          "path": "**/*.swift",
+          "matches": 0
+        },
+        {
+          "type": "glob",
+          "path": "**/*.xcodeproj",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "specialized/ecommerce",
+      "rule_file": ".cursor/frameworks/specialized/ecommerce.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "glob",
+          "path": "**/*.liquid",
+          "matches": 0
+        },
+        {
+          "type": "glob",
+          "path": "**/*.php",
+          "matches": 0
+        },
+        {
+          "type": "regex",
+          "pattern": "Shopify|WooCommerce|WordPress",
+          "present": true
         }
       ],
       "matched_files": []

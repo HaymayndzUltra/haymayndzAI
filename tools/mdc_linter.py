@@ -89,7 +89,7 @@ def ensure_frontmatter(text: str) -> Tuple[str, LintResult]:
         current_fm["globs"] = []
         issues.append("missing-globs"); changed = True
 
-    if current_fm.get("alwaysApply") is not False:
+    if "alwaysApply" not in current_fm or not isinstance(current_fm.get("alwaysApply"), bool):
         current_fm["alwaysApply"] = False
         issues.append("alwaysApply-normalized-false"); changed = True
 

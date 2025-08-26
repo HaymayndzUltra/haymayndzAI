@@ -815,3 +815,25 @@
 - Expected role: rules_master_toggle
 - Route target OK: True
 - No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /route
+- Timestamp (UTC): 2025-08-26T01:18:10+00:00
+- Status: PASS
+- Progressive mode: True
+- Allowlist: ['/review', '/route', '/status']
+- Expected role: rules_master_toggle
+- Route target OK: True
+- No routing drift: True
+
+
+## Progressive Monitoring Snapshot (limited canary)
+- Trigger: /route
+- Timestamp (UTC): 2025-08-26T02:09:34+00:00
+- Status: WARN
+- Progressive mode: False
+- Allowlist: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Expected role: rules_master_toggle
+- Route target OK: True
+- No routing drift: True
