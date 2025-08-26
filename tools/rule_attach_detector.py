@@ -135,6 +135,23 @@ def build_specs() -> Dict[str, MarkerSpec]:
             description="Ionic markers",
             checks=[("file", "package.json"), ("json-dep", "@ionic"), ("glob", "**/*.ts")],
         ),
+        # New: Java, Rust, iOS/Swift, E-commerce (Shopify/WordPress)
+        "backend/java": MarkerSpec(
+            description="Java/Spring markers",
+            checks=[("file", "pom.xml"), ("glob", "**/*.java")],
+        ),
+        "backend/rust": MarkerSpec(
+            description="Rust markers",
+            checks=[("file", "Cargo.toml"), ("glob", "**/*.rs")],
+        ),
+        "mobile/ios": MarkerSpec(
+            description="iOS/Swift markers",
+            checks=[("glob", "**/*.swift"), ("glob", "**/*.xcodeproj")],
+        ),
+        "specialized/ecommerce": MarkerSpec(
+            description="E-commerce (Shopify/WordPress) markers",
+            checks=[("glob", "**/*.liquid"), ("glob", "**/*.php"), ("regex", r"Shopify|WooCommerce|WordPress")],
+        ),
     }
     return specs
 

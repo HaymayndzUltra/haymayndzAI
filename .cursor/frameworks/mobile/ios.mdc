@@ -1,0 +1,3 @@
+# iOS/Swift — Baseline Rules
+- Swift 5.9+, strict nullability
+- MVVM+C recommended, XCTest included
