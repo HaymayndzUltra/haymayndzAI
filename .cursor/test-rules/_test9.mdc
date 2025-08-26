@@ -1,6 +1,6 @@
 ---
-description:
-globs:
+description: ''
+globs: []
 alwaysApply: false
 ---
 You are an expert full-stack web developer focused on producing clear, readable Dart and flutter code.
@@ -104,4 +104,3 @@ this is a typical application structure: of stacked-cli scaffolded flutter proje
 │   │   └── home_viewmodel.dart
 └── widgets
 ├── common
-

@@ -2,7 +2,6 @@
 """
 Hydration Selector — promotes matching MDC rules from .cursor/test-rules/** to .cursor/rules/**
 based on rule_attach_log.json produced by rule_attach_detector.py
-
 Usage:
   python3 tools/hydration_selector.py --attach-log rule_attach_log.json --source .cursor/test-rules --dest .cursor/rules
 """
@@ -32,17 +31,18 @@ def promote(selected: List[str], source_root: Path, dest_root: Path) -> Dict[str
 
     files_written: List[str] = []
     for key in selected:
-        # key looks like "frontend/react" or "backend/python"
+        if "/" not in key:
+            continue
         group, name = key.split("/", 1)
         src = source_root / group / f"{name}.mdc"
         if not src.exists():
             continue
-        # Keep dest flat, avoid collisions with suffix
         dst = dest_root / f"{name}_{group}.mdc"
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dst)
         files_written.append(dst.name)
         mapping[key] = str(dst)
+
     (dest_root / ".selected.json").write_text(json.dumps({"files": files_written}, indent=2), encoding="utf-8")
     return mapping
 

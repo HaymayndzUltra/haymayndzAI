@@ -1,2 +1,7 @@
+---
+description: ''
+globs: []
+alwaysApply: false
+---
 ## 3.a ADDITIONAL OUTPUT REQUIREMENT
 - Any generation or update of `Final_Implementation_Plan.md` MUST include a `## Phase-by-Phase` section mapping weeks to BL ranges (e.g., Phase 1: BL-001–BL-006; Phase 2: BL-007–BL-012; Phase 3: BL-013–BL-020; Phase 4: BL-021–BL-027).

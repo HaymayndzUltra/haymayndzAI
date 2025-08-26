@@ -1,8 +1,9 @@
 ---
-description: >
-  Universal guidance rule: rules_master_toggle — Always active across the workspace.
-globs: ["**/*"]
-alwaysApply: true
+description: "Universal guidance rule: rules_master_toggle \u2014 Always active across\
+  \ the workspace.\n"
+globs:
+- '**/*'
+alwaysApply: false
 ---
 --------------------------------------------------
 title:        "RULES_MASTER_TOGGLE  —  v0.1.0"

@@ -1,8 +1,9 @@
 ---
-description: >
-  Universal guidance rule: execution_orchestrator — Always active across the workspace.
-globs: ["**/*"]
-alwaysApply: true
+description: "Universal guidance rule: execution_orchestrator \u2014 Always active\
+  \ across the workspace.\n"
+globs:
+- '**/*'
+alwaysApply: false
 ---
 --------------------------------------------------
 title:        "EXECUTION_ORCHESTRATOR  —  v0.1.0"

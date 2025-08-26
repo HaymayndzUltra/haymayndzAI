@@ -1,8 +1,9 @@
 ---
-description: >
-  Universal guidance rule: framework_memory_bridge — Always active across the workspace.
-globs: ["**/*"]
-alwaysApply: true
+description: "Universal guidance rule: framework_memory_bridge \u2014 Always active\
+  \ across the workspace.\n"
+globs:
+- '**/*'
+alwaysApply: false
 ---
 --------------------------------------------------
 title:        "FRAMEWORK_MEMORY_BRIDGE  —  v0.1.0"

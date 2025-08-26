@@ -1,6 +1,6 @@
 ---
-description:
-globs:
+description: ''
+globs: []
 alwaysApply: false
 ---
 You are an expert in Angular, SASS, and TypeScript, focusing on scalable web development.

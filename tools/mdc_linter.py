@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 """
 MDC Linter/Formatter
-
-Validates and auto-fixes MDC rule files to ensure required frontmatter keys:
+Validates and auto-fixes MDC frontmatter:
 - description: <string>
 - globs: <list>
 - alwaysApply: false
-
 Usage:
   python3 tools/mdc_linter.py --paths .cursor/test-rules .cursor/rules --write
 """
@@ -45,7 +43,11 @@ def parse_yaml(s: str) -> Dict:
                 k, v = ln.split(":", 1)
                 out[k.strip()] = v.strip()
         return out
-    return yaml.safe_load(s) or {}
+    try:
+        return yaml.safe_load(s) or {}
+    except Exception:
+        # invalid YAML → treat as empty so we can rebuild safely
+        return {}
 
 def dump_yaml(obj: Dict) -> str:
     if yaml is None:
@@ -78,9 +80,15 @@ def ensure_frontmatter(text: str) -> Tuple[str, LintResult]:
     if "description" not in current_fm or current_fm.get("description") in (None, ""):
         current_fm["description"] = ""
         issues.append("missing-description"); changed = True
+
+    val = current_fm.get("globs")
+    if isinstance(val, str):
+        current_fm["globs"] = [x.strip().strip("'\"") for x in val.split(",") if x.strip()]
+        issues.append("globs-normalized-from-string"); changed = True
     if "globs" not in current_fm or not isinstance(current_fm.get("globs"), list):
         current_fm["globs"] = []
         issues.append("missing-globs"); changed = True
+
     if current_fm.get("alwaysApply") is not False:
         current_fm["alwaysApply"] = False
         issues.append("alwaysApply-normalized-false"); changed = True
@@ -89,9 +97,9 @@ def ensure_frontmatter(text: str) -> Tuple[str, LintResult]:
     if changed:
         new_fm_body = dump_yaml(current_fm).rstrip("\n")
         new_lines = []
-        new_lines.extend(lines[: start + 1])     # keep opening ---
-        new_lines.extend(new_fm_body.splitlines())
-        new_lines.extend(lines[end:])            # keep closing --- and rest
+        new_lines.extend(lines[: start + 1])         # keep opening ---
+        new_lines.extend(new_fm_body.splitlines())   # normalized body
+        new_lines.extend(lines[end:])                # keep closing --- and rest
         return "\n".join(new_lines), LintResult(Path(), True, issues, before_keys, after_keys)
 
     return text, LintResult(Path(), False, issues, before_keys, after_keys)
@@ -123,9 +131,10 @@ def main() -> int:
     summary = {
         "checked": len(results),
         "changed": sum(1 for r in results if r.changed),
-        "issues": {k: sum(1 for r in results if k in r.issues) for k in [
-            "added-frontmatter", "missing-description", "missing-globs", "alwaysApply-normalized-false"
-        ]},
+        "issues": {
+            k: sum(1 for r in results if k in r.issues)
+            for k in ["added-frontmatter","missing-description","missing-globs","alwaysApply-normalized-false","globs-normalized-from-string"]
+        },
         "files": [{
             "path": str(r.path),
             "changed": r.changed,
