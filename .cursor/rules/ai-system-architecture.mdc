@@ -1,0 +1,117 @@
+---
+description: ''
+globs: []
+alwaysApply: false
+---
+# AI System Architecture
+
+## System Overview
+This workspace implements a sophisticated AI development environment with multiple specialized AI roles, memory systems, and execution orchestration.
+
+## Core Components
+
+### AI Role System
+- **product_owner_ai**: Requirements and backlog management
+- **planning_ai**: Technical architecture and implementation planning
+- **codegen_ai**: Code generation and implementation
+- **qa_ai**: Quality assurance and testing
+- **mlops_ai**: Machine learning operations and deployment
+- **observability_ai**: Monitoring and observability
+- **security_ai**: Security analysis and compliance
+- **data_ai**: Data engineering and analytics
+- **documentation_ai**: Documentation generation and maintenance
+- **analyst_ai**: Data analysis and insights
+- **auditor_ai**: Code and architecture auditing
+- **principal_engineer_ai**: Senior technical review and guidance
+
+### Memory System
+- **memory_ai**: Core memory management and persistence
+- **memory_enhancement_auditor**: Memory optimization and validation
+- **framework_memory_bridge**: Integration between frameworks and memory
+
+### Execution Orchestration
+- **execution_orchestrator**: Pipeline coordination and workflow management
+- **planner_moderator_ai**: Planning phase coordination
+- **guidance_command_suggester**: Command and workflow suggestions
+- **guidance_next_steps**: Next action recommendations
+- **guidance_phase_awareness**: Phase-specific guidance
+
+## File Structure
+```
+memory-bank/          # Persistent memory storage
+├── cursor_state.json
+├── task_state.json
+├── task_interruption_state.json
+├── queue-system/
+│   └── tasks_active.json
+└── current-session.md
+
+src/repo/             # Core repository utilities
+├── atomic_io.py      # Atomic file operations
+├── auto_sync_manager.py  # State synchronization
+├── exec_logging.py   # Execution logging
+└── tz_utils.py       # Timezone utilities
+```
+
+## Integration Patterns
+
+### State Management
+- Use [atomic_io.py](mdc:src/repo/atomic_io.py) for critical state writes
+- Implement proper file locking for concurrent access
+- Use [auto_sync_manager.py](mdc:src/repo/auto_sync_manager.py) for automatic state synchronization
+
+### Memory Persistence
+- Store AI interactions and decisions in structured JSON format
+- Implement atomic writes to prevent corruption
+- Use sidecar locks for concurrent access control
+
+### Workflow Execution
+- Follow the defined pipeline graph for role handoffs
+- Implement gate rules and quality checkpoints
+- Use structured logging for audit trails
+
+## Best Practices
+
+### AI Role Integration
+- Each AI role should have a clear responsibility boundary
+- Implement proper handoff protocols between roles
+- Use consistent interfaces for role communication
+
+### Memory Management
+- Design memory schemas for different types of information
+- Implement versioning for memory evolution
+- Use compression for large memory stores
+
+### Error Handling
+- Implement graceful degradation when AI roles are unavailable
+- Log all role interactions for debugging
+- Provide fallback mechanisms for critical operations
+
+### Performance
+- Cache frequently accessed memory data
+- Implement lazy loading for large memory stores
+- Use background processes for memory maintenance
+
+## Development Guidelines
+
+### Adding New AI Roles
+1. Define clear responsibilities and interfaces
+2. Implement proper error handling and logging
+3. Add to the execution pipeline graph
+4. Update role selection logic
+
+### Memory Schema Evolution
+1. Version all memory schemas
+2. Implement migration scripts for schema changes
+3. Maintain backward compatibility when possible
+4. Document all schema changes
+
+### Testing AI Systems
+1. Test individual AI role functionality
+2. Test role interaction patterns
+3. Test memory persistence and recovery
+4. Test error handling and fallback mechanisms
+description:
+globs:
+alwaysApply: true
+---

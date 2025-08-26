@@ -1,0 +1,223 @@
+---
+description: ''
+globs: []
+alwaysApply: false
+---
+# Security and Compliance Standards
+
+## Security Principles
+
+### Defense in Depth
+- Implement security at multiple layers
+- Use principle of least privilege
+- Assume breach and design for detection
+- Implement secure by default configurations
+
+### Data Protection
+- **Encrypt data at rest** using AES-256 or stronger
+- **Encrypt data in transit** using TLS 1.3
+- **Implement proper key management** with rotation
+- **Use secure random number generation** (`secrets` module in Python)
+
+### Access Control
+- **Implement role-based access control (RBAC)**
+- **Use multi-factor authentication (MFA)** for sensitive operations
+- **Implement session management** with secure timeouts
+- **Log all access attempts** for audit purposes
+
+## Code Security Standards
+
+### Input Validation
+```python
+# Always validate and sanitize input
+import re
+from typing import Optional
+
+def validate_email(email: str) -> Optional[str]:
+    """Validate email format and return sanitized version"""
+    if not email or not isinstance(email, str):
+        return None
+    
+    # Basic email validation
+    email_pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    if not re.match(email_pattern, email):
+        return None
+    
+    # Sanitize: lowercase and trim
+    return email.lower().strip()
+
+def sanitize_file_path(path: str) -> str:
+    """Prevent directory traversal attacks"""
+    # Remove any path traversal attempts
+    clean_path = os.path.normpath(path)
+    if clean_path.startswith('..') or clean_path.startswith('/'):
+        raise ValueError("Invalid file path")
+    return clean_path
+```
+
+### Secure File Operations
+- Use [atomic_io.py](mdc:src/repo/atomic_io.py) for critical file operations
+- Set appropriate file permissions (`0o600` for sensitive files)
+- Implement proper file locking for concurrent access
+- Validate file paths to prevent directory traversal
+
+### Authentication and Authorization
+```python
+import hashlib
+import secrets
+from typing import Optional
+
+class SecureAuth:
+    def __init__(self):
+        self.salt_length = 32
+        self.hash_iterations = 100000
+    
+    def hash_password(self, password: str) -> str:
+        """Hash password with salt using PBKDF2"""
+        salt = secrets.token_hex(self.salt_length)
+        hash_obj = hashlib.pbkdf2_hmac(
+            'sha256', 
+            password.encode('utf-8'), 
+            salt.encode('utf-8'), 
+            self.hash_iterations
+        )
+        return f"{salt}:{hash_obj.hex()}"
+    
+    def verify_password(self, password: str, stored_hash: str) -> bool:
+        """Verify password against stored hash"""
+        try:
+            salt, hash_hex = stored_hash.split(':', 1)
+            hash_obj = hashlib.pbkdf2_hmac(
+                'sha256', 
+                password.encode('utf-8'), 
+                salt.encode('utf-8'), 
+                self.hash_iterations
+            )
+            return secrets.compare_digest(hash_obj.hex(), hash_hex)
+        except Exception:
+            return False
+```
+
+## Compliance Requirements
+
+### Data Privacy
+- **GDPR Compliance**: Implement data minimization and right to be forgotten
+- **CCPA Compliance**: Provide data access and deletion capabilities
+- **HIPAA Compliance**: Implement healthcare data protection measures
+- **SOC 2**: Maintain security, availability, and confidentiality controls
+
+### Audit and Logging
+```python
+import logging
+import json
+from datetime import datetime, timezone
+from typing import Dict, Any
+
+class SecurityLogger:
+    def __init__(self, log_file: str):
+        self.logger = logging.getLogger('security')
+        self.logger.setLevel(logging.INFO)
+        
+        # File handler with rotation
+        handler = logging.FileHandler(log_file)
+        formatter = logging.Formatter(
+            '%(asctime)s - %(levelname)s - %(message)s'
+        )
+        handler.setFormatter(formatter)
+        self.logger.addHandler(handler)
+    
+    def log_access(self, user_id: str, resource: str, action: str, 
+                   success: bool, ip_address: str = None):
+        """Log access attempts for audit purposes"""
+        log_entry = {
+            'timestamp': datetime.now(timezone.utc).isoformat(),
+            'user_id': user_id,
+            'resource': resource,
+            'action': action,
+            'success': success,
+            'ip_address': ip_address,
+            'event_type': 'access_attempt'
+        }
+        
+        self.logger.info(json.dumps(log_entry))
+    
+    def log_security_event(self, event_type: str, description: str, 
+                          severity: str, user_id: str = None):
+        """Log security events for monitoring"""
+        log_entry = {
+            'timestamp': datetime.now(timezone.utc).isoformat(),
+            'event_type': event_type,
+            'description': description,
+            'severity': severity,
+            'user_id': user_id
+        }
+        
+        self.logger.warning(json.dumps(log_entry))
+```
+
+## Security Testing
+
+### Static Analysis
+- Use **Bandit** for Python security scanning
+- Use **ESLint** with security plugins for JavaScript/TypeScript
+- Use **SonarQube** for comprehensive code quality analysis
+- Implement **pre-commit hooks** for security checks
+
+### Dynamic Testing
+- **Penetration testing** for web applications
+- **API security testing** using tools like OWASP ZAP
+- **Dependency vulnerability scanning** with tools like Snyk
+- **Container security scanning** for Docker images
+
+### Security Headers
+```python
+# For web applications, implement security headers
+SECURITY_HEADERS = {
+    'X-Content-Type-Options': 'nosniff',
+    'X-Frame-Options': 'DENY',
+    'X-XSS-Protection': '1; mode=block',
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
+    'Content-Security-Policy': "default-src 'self'",
+    'Referrer-Policy': 'strict-origin-when-cross-origin'
+}
+```
+
+## Incident Response
+
+### Security Incident Classification
+- **Critical**: Data breach, unauthorized access to production
+- **High**: Failed authentication attempts, suspicious activity
+- **Medium**: Policy violations, configuration issues
+- **Low**: Minor security warnings, informational events
+
+### Response Procedures
+1. **Immediate containment** of the incident
+2. **Assessment** of impact and scope
+3. **Investigation** and root cause analysis
+4. **Remediation** and security improvements
+5. **Documentation** and lessons learned
+6. **Notification** to stakeholders if required
+
+## Best Practices
+
+### Regular Security Reviews
+- **Monthly**: Code security review
+- **Quarterly**: Architecture security assessment
+- **Annually**: Penetration testing and compliance audit
+- **Continuous**: Automated security scanning
+
+### Security Training
+- **Developer security training** on secure coding practices
+- **Security awareness training** for all team members
+- **Regular security updates** and threat intelligence sharing
+- **Security incident response drills**
+
+### Third-Party Security
+- **Vendor security assessments** for third-party services
+- **Dependency vulnerability management**
+- **API security review** for external integrations
+- **Contract security requirements** and SLAs
+description:
+globs:
+alwaysApply: true
+---

@@ -1,0 +1,274 @@
+# Test Rules Management
+
+## Overview
+The `.cursor/test-rules` directory contains a comprehensive collection of technology-specific rules that have been developed through testing and experimentation. This rule provides guidance on how to manage, organize, and maintain these rules effectively.
+
+## Current State
+
+### Directory Structure
+```
+.cursor/test-rules/
+├── Technology-Specific Rules (80+ files)
+├── Framework Expertise Rules
+├── Development Best Practices
+├── Experimental Rules
+└── Legacy/Outdated Rules
+```
+
+### Rule Categories
+1. **Python Development** (FastAPI, Django, Flask, ML, Security)
+2. **JavaScript/TypeScript** (React, Vue, Svelte, Node.js, Mobile)
+3. **PHP Development** (Laravel, WordPress, WooCommerce)
+4. **Other Languages** (Rust, Go, Java, Kotlin, Swift)
+5. **Blockchain/Web3** (Solidity, Solana, OnchainKit)
+6. **Game Development** (Unity, Pixi.js, Three.js)
+7. **Enterprise Solutions** (Salesforce, Shopify, Drupal)
+8. **DevOps & Infrastructure** (Terraform, CI/CD)
+
+## Organization Strategy
+
+### 1. Technology Stack Rules
+- **Primary Rule**: [Technology Stack Rules](mdc:.cursor/rules/technology-stacks.mdc)
+- **Purpose**: Master index of all technology-specific rules
+- **Usage**: Reference for finding appropriate rules for specific projects
+
+### 2. Rule Classification System
+```yaml
+# Rule Classification Schema
+rule_type:
+  - production: "Ready for production use"
+  - experimental: "Under development/testing"
+  - deprecated: "Outdated, needs update"
+  - specialized: "Domain-specific expertise"
+
+technology_stack:
+  - language: "Python, JavaScript, Rust, etc."
+  - framework: "Django, React, Laravel, etc."
+  - domain: "Web, Mobile, Game, ML, etc."
+  - platform: "Cloud, Desktop, Mobile, etc."
+```
+
+### 3. File Naming Convention
+```
+Current: test-you-are-an-expert-in-[technology].mdc
+Proposed: [technology]-[domain]-[version].mdc
+
+Examples:
+- python-fastapi-web-v1.0.mdc
+- react-frontend-mobile-v1.0.mdc
+- laravel-php-backend-v1.0.mdc
+```
+
+## Maintenance Workflow
+
+### 1. Rule Assessment
+- **Monthly Review**: Assess rule quality and relevance
+- **Version Tracking**: Track rule versions and updates
+- **Dependency Check**: Verify rule dependencies and conflicts
+- **Performance Impact**: Monitor rule performance and efficiency
+
+### 2. Rule Lifecycle
+```
+Development → Testing → Validation → Production → Maintenance → Deprecation
+     ↓            ↓         ↓           ↓           ↓           ↓
+  test-rules → test-rules → review → main-rules → updates → archive
+```
+
+### 3. Quality Assurance
+- **Content Review**: Ensure accuracy and relevance
+- **Format Validation**: Verify proper Cursor rule format
+- **Link Validation**: Check internal and external references
+- **Performance Testing**: Measure rule impact on AI responses
+
+## Integration with Main Rules
+
+### 1. Rule Hierarchy
+```
+Development Excellence (Master Rule)
+├── Technology Stack Rules (Technology Index)
+│   ├── Python Development Standards
+│   ├── Security and Compliance
+│   └── Testing and Quality
+└── Framework-Specific Rules (test-rules/)
+    ├── FastAPI Rules
+    ├── React Rules
+    ├── Laravel Rules
+    └── [Other Technology Rules]
+```
+
+### 2. Rule Selection Logic
+```python
+def select_rules(project_type, technology_stack, requirements):
+    """
+    Intelligent rule selection based on project context
+    """
+    # Core rules always apply
+    core_rules = [
+        "development-excellence.mdc",
+        "python-development-standards.mdc",
+        "security-and-compliance.mdc"
+    ]
+    
+    # Technology-specific rules
+    tech_rules = get_technology_rules(technology_stack)
+    
+    # Domain-specific rules
+    domain_rules = get_domain_rules(project_type)
+    
+    # Security and compliance rules
+    security_rules = get_security_rules(requirements)
+    
+    return core_rules + tech_rules + domain_rules + security_rules
+```
+
+## Best Practices
+
+### 1. Rule Development
+- **Test First**: Always develop rules in test-rules directory
+- **Documentation**: Include clear descriptions and usage examples
+- **Validation**: Test rules with real projects before promotion
+- **Versioning**: Use semantic versioning for rule updates
+
+### 2. Rule Maintenance
+- **Regular Updates**: Keep rules current with technology changes
+- **Conflict Resolution**: Resolve conflicts between overlapping rules
+- **Performance Monitoring**: Track rule efficiency and impact
+- **User Feedback**: Incorporate user experience and suggestions
+
+### 3. Rule Organization
+- **Logical Grouping**: Organize by technology, domain, and purpose
+- **Clear Naming**: Use descriptive, consistent file names
+- **Cross-References**: Link related rules and dependencies
+- **Search Optimization**: Enable easy discovery and access
+
+## Tools and Automation
+
+### 1. Rule Validation Scripts
+```bash
+#!/bin/bash
+# validate-rules.sh - Validate all test rules
+
+echo "Validating Cursor rules..."
+
+# Check file format
+find .cursor/test-rules -name "*.mdc" -exec sh -c '
+    echo "Checking $1..."
+    if ! grep -q "^---" "$1"; then
+        echo "ERROR: $1 missing frontmatter"
+    fi
+    if ! grep -q "description:" "$1"; then
+        echo "ERROR: $1 missing description"
+    fi
+' sh {} \;
+
+# Check for broken links
+echo "Checking internal links..."
+grep -r "mdc:" .cursor/test-rules | while read line; do
+    file=$(echo "$line" | cut -d: -f1)
+    link=$(echo "$line" | grep -o "mdc:[^)]*" | cut -d: -f2)
+    if [ ! -f "$link" ]; then
+        echo "WARNING: Broken link in $file: $link"
+    fi
+done
+```
+
+### 2. Rule Performance Monitoring
+```python
+# rule-performance.py - Monitor rule performance
+import time
+import json
+from pathlib import Path
+
+class RulePerformanceMonitor:
+    def __init__(self):
+        self.metrics_file = "rule_performance.json"
+        self.metrics = self.load_metrics()
+    
+    def measure_rule_impact(self, rule_name, response_time, quality_score):
+        """Measure rule performance impact"""
+        if rule_name not in self.metrics:
+            self.metrics[rule_name] = []
+        
+        self.metrics[rule_name].append({
+            "timestamp": time.time(),
+            "response_time": response_time,
+            "quality_score": quality_score
+        })
+        
+        self.save_metrics()
+    
+    def generate_report(self):
+        """Generate performance report"""
+        report = {}
+        for rule, data in self.metrics.items():
+            if data:
+                avg_response = sum(d["response_time"] for d in data) / len(data)
+                avg_quality = sum(d["quality_score"] for d in data) / len(data)
+                report[rule] = {
+                    "avg_response_time": avg_response,
+                    "avg_quality_score": avg_quality,
+                    "usage_count": len(data)
+                }
+        return report
+```
+
+## Migration Strategy
+
+### 1. Phase 1: Organization (Week 1-2)
+- [ ] Audit all existing rules
+- [ ] Categorize by technology and domain
+- [ ] Implement new naming convention
+- [ ] Create technology stack index
+
+### 2. Phase 2: Validation (Week 3-4)
+- [ ] Validate rule content and format
+- [ ] Test rule performance and accuracy
+- [ ] Resolve conflicts and dependencies
+- [ ] Update broken links and references
+
+### 3. Phase 3: Integration (Week 5-6)
+- [ ] Update main rules with references
+- [ ] Implement rule selection logic
+- [ ] Create documentation and guides
+- [ ] Train team on new organization
+
+### 4. Phase 4: Maintenance (Ongoing)
+- [ ] Establish regular review schedule
+- [ ] Implement performance monitoring
+- [ ] Create update and deprecation processes
+- [ ] Maintain rule quality standards
+
+## Success Metrics
+
+### 1. Organization Metrics
+- **Rule Discovery**: Time to find appropriate rules
+- **Rule Coverage**: Percentage of technologies covered
+- **Rule Quality**: Average rule quality score
+- **Maintenance Efficiency**: Time to update and maintain rules
+
+### 2. Performance Metrics
+- **Response Time**: AI response time with rules
+- **Quality Score**: Output quality improvement
+- **Rule Conflicts**: Number of rule conflicts
+- **User Satisfaction**: Developer experience ratings
+
+### 3. Maintenance Metrics
+- **Update Frequency**: Regular rule updates
+- **Deprecation Rate**: Outdated rule identification
+- **Documentation Quality**: Rule documentation completeness
+- **Team Adoption**: Rule usage across team
+
+## Conclusion
+
+The test-rules directory is a valuable resource that provides comprehensive technology-specific guidance. By implementing proper organization, maintenance, and integration strategies, we can maximize the value of these rules while maintaining the quality and performance of our AI development environment.
+
+**Key Principles**:
+- **Organize systematically** by technology and domain
+- **Maintain quality** through regular review and validation
+- **Integrate seamlessly** with core development rules
+- **Monitor performance** to ensure optimal AI assistance
+- **Evolve continuously** with technology and best practice changes
+description:
+globs:
+alwaysApply: true
+---

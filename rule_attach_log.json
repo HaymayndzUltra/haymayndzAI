@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-08-26T01:10:21.343934+00:00",
-  "repo_root": "/workspace",
+  "generated_at": "2025-08-26T02:08:08.439703+00:00",
+  "repo_root": "/home/haymayndz/HaymayndzAI",
   "entries": [
     {
       "framework": "frontend/react",
@@ -126,7 +126,7 @@
         {
           "type": "glob",
           "path": "**/*.py",
-          "matches": 73
+          "matches": 1000
         },
         {
           "type": "file",
@@ -140,11 +140,11 @@
         }
       ],
       "matched_files": [
-        "/workspace/scripts/auto_restore_templates.py",
-        "/workspace/scripts/report_last3days.py",
-        "/workspace/scripts/progressive_monitor.py",
-        "/workspace/scripts/validate_sidecars.py",
-        "/workspace/scripts/labnotes_watcher.py"
+        "/home/haymayndz/HaymayndzAI/.venv/lib/python3.10/site-packages/memory_profiler.py",
+        "/home/haymayndz/HaymayndzAI/.venv/lib/python3.10/site-packages/mypy_extensions.py",
+        "/home/haymayndz/HaymayndzAI/.venv/lib/python3.10/site-packages/typing_extensions.py",
+        "/home/haymayndz/HaymayndzAI/.venv/lib/python3.10/site-packages/_black_version.py",
+        "/home/haymayndz/HaymayndzAI/.venv/lib/python3.10/site-packages/mccabe.py"
       ]
     },
     {

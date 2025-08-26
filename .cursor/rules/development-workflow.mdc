@@ -1,0 +1,153 @@
+---
+description: ''
+globs: []
+alwaysApply: false
+---
+# Development Workflow
+
+## Pipeline Overview
+This workspace uses a structured development pipeline with multiple phases and quality gates.
+
+## Development Phases
+
+### 1. Planning Phase
+**Role**: `planning_ai`
+**Inputs**: Product requirements, user stories, technical constraints
+**Outputs**: Technical design, architecture decisions, implementation plan
+**Deliverables**:
+- Technical architecture document
+- API specifications
+- Database schema design
+- Security requirements
+
+### 2. Development Phase
+**Role**: `codegen_ai`
+**Inputs**: Technical design, specifications
+**Outputs**: Implemented code, unit tests
+**Deliverables**:
+- Source code implementation
+- Unit test suite
+- Integration tests
+- Code documentation
+
+### 3. Quality Assurance Phase
+**Role**: `qa_ai`
+**Inputs**: Implemented code, test suite
+**Outputs**: Test results, quality metrics
+**Deliverables**:
+- Test execution reports
+- Code coverage metrics
+- Performance benchmarks
+- Security scan results
+
+### 4. Deployment Phase
+**Role**: `mlops_ai`
+**Inputs**: Tested code, deployment configuration
+**Outputs**: Deployed application, monitoring setup
+**Deliverables**:
+- Deployment artifacts
+- Infrastructure configuration
+- Monitoring and alerting setup
+- Rollback procedures
+
+## Quality Gates
+
+### Planning Gate
+- **Required**: Complete technical design
+- **Validation**: Architecture review by `principal_engineer_ai`
+- **Audit**: Security and compliance review by `auditor_ai`
+
+### Development Gate
+- **Required**: Code implementation with tests
+- **Validation**: Code review and static analysis
+- **Audit**: Security code review by `security_ai`
+
+### QA Gate
+- **Required**: All tests passing, coverage >90%
+- **Validation**: Performance and security testing
+- **Audit**: Final architecture validation
+
+### Deployment Gate
+- **Required**: All quality checks passed
+- **Validation**: Infrastructure readiness
+- **Audit**: Production readiness review
+
+## Workflow Commands
+
+### Pipeline Control
+- `/run_pipeline` - Execute full development pipeline
+- `/status` - Check current pipeline status
+- `/halt` - Pause pipeline execution
+- `/resume` - Resume paused pipeline
+
+### Phase Management
+- `/plan` - Execute planning phase
+- `/develop` - Execute development phase
+- `/test` - Execute QA phase
+- `/deploy` - Execute deployment phase
+
+### Quality Checks
+- `/audit` - Run security and compliance audit
+- `/review` - Execute code review process
+- `/validate` - Run validation tests
+
+## Best Practices
+
+### Phase Transitions
+1. **Complete all deliverables** before phase transition
+2. **Validate quality gates** before proceeding
+3. **Document decisions** and rationale
+4. **Update project status** in memory system
+
+### Error Handling
+1. **Identify failure point** in pipeline
+2. **Rollback to last stable state**
+3. **Document failure reason** and resolution
+4. **Implement corrective actions**
+
+### Continuous Improvement
+1. **Collect metrics** from each phase
+2. **Identify bottlenecks** and inefficiencies
+3. **Implement process improvements**
+4. **Update workflow documentation**
+
+## Integration with Memory System
+
+### State Persistence
+- Store pipeline state in `memory-bank/`
+- Use atomic operations for state updates
+- Implement automatic state synchronization
+
+### Knowledge Management
+- Document all technical decisions
+- Store architecture patterns and best practices
+- Maintain implementation history and lessons learned
+
+### Collaboration
+- Share progress updates with team
+- Document handoff points between roles
+- Maintain communication logs and decisions
+
+## Monitoring and Observability
+
+### Pipeline Metrics
+- Phase completion times
+- Quality gate pass/fail rates
+- Error frequency and types
+- Resource utilization
+
+### Alerting
+- Pipeline failures and delays
+- Quality gate violations
+- Security and compliance issues
+- Performance degradation
+
+### Reporting
+- Daily pipeline status reports
+- Weekly quality metrics
+- Monthly process improvement recommendations
+- Quarterly architecture review summaries
+description:
+globs:
+alwaysApply: true
+---
