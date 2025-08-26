@@ -1,6 +1,6 @@
 ---
 description: React/Next.js framework baselines
-globs: ["**/*.tsx", "**/*.jsx", "**/*.ts", "**/*.js", "next.config.*", "app/**", "pages/**", "src/app/**", "src/pages/**"]
+globs: ["**/*.tsx","**/*.jsx","**/*.ts","**/*.js","next.config.*","app/**","pages/**","src/app/**","src/pages/**"]
 alwaysApply: false
 tags: [frontend, react, nextjs, typescript, javascript]
 ---

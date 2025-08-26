@@ -1,6 +1,6 @@
 ---
 description: ASP.NET Core backend standards (Web API, EF, middleware)
-globs: ["**/*.cs", "appsettings*.json"]
+globs: ["**/*.cs","appsettings*.json"]
 alwaysApply: false
 tags: [backend, dotnet, aspnetcore, ef]
 ---

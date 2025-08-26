@@ -1,6 +1,6 @@
 ---
 description: Architect patterns and decision principles (ADR, system design)
-globs: ["docs/**", "architecture/**", "adr/**", "**/*.md", "**/*.mdx"]
+globs: ["docs/**","architecture/**","adr/**","**/*.md"]
 alwaysApply: false
 tags: [role, architect, architecture, adr]
 ---
