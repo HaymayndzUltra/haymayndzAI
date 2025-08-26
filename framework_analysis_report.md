@@ -110,3 +110,62 @@ Unspecified (no roles defined) | N/A in INPUT_FILE | `L2-L2: summary: Validated 
   - Findings highlight structural absences in the file; actual processes may exist elsewhere but are not evidenced here
 
 Confidence Score: 100%
+
+---
+
+## Code & Rules-Informed Addendum (v2)
+
+### Executive Addendum Summary
+
+The repository’s `.cursor/rules` and `src/` implementations provide a far richer picture than the lone `context_snapshot.yaml`.  Many governance mechanisms (pipeline graph, gate rules, atomic writes, single-writer policies) already exist in rules and code.  However, key **implementation gaps** remain: task schema lacks approval / gate / handoff fields; orchestrator state artifacts (`workflow_state.json`, `gate_results.json`) are absent; and no runtime handler exists for `/run_pipeline` commands or `role_timeout → ESCALATE` logic.
+
+### 1) Alignment Matrix — Rules vs. Code
+
+| Requirement (Rule) | Code Evidence | Status |
+|--------------------|---------------|--------|
+| Pipeline graph with ordered roles | `L34-L36: A[product_owner_ai] --> B[planning_ai] ...` (`.cursor/rules/execution_orchestrator.mdc`) | RULE-DEFINED ✅ (graph present) |
+| Gate definitions & blocking conditions | `L97-L124` same file (planning, code_generation, QA, deployment gates) | RULE-DEFINED ✅ (rules only) |
+| Atomic writes & file locking for state | `L37-L45: def atomic_write_bytes(... os.replace...)` (`src/repo/atomic_io.py`) | IMPLEMENTED ✅ |
+| Single-writer policy for session markdown | `L217-L219: from cursor_memory_bridge import dump_markdown` (`src/repo/auto_sync_manager.py`) | IMPLEMENTED ✅ |
+| Task SOT in `tasks_active.json` | `L71-L78` (`memory-bank/queue-system/README.md`) | IMPLEMENTED ✅ |
+| Approvals / handoff log fields in task schema | `L1-L8` (`memory-bank/queue-system/tasks_active.json`) shows none | MISSING ❌ |
+| Orchestrator state artifacts (`workflow_state.json`, `gate_results.json`) | repo search → not found | MISSING ❌ |
+| `/run_pipeline`, `/status`, etc. command handlers | no CLI or module implements | MISSING ❌ |
+| Escalation for `role_timeout` | `L228-L231: role_timeout → ESCALATE … human_operator` (rule) but no handler in code | MISSING ❌ |
+
+### 2) Updated Gaps & Missing Processes
+
+1. **State Artifacts Not Materialized**  
+   Evidence rule: `L19-L23` (`execution_orchestrator.mdc`) enumerates output artifacts; none exist in repo.
+2. **Task Schema Mis-alignment**  
+   Evidence code: `L1-L8` (`tasks_active.json`) lacks `approvals[]`, `gate_results`, `handoff_log` required by rules (`L310-L314`).
+3. **Command Execution Layer Absent**  
+   Rule commands (`L25-L30`, `/run_pipeline`, `/status`) have no implementation under `src/`.
+4. **Error Escalation Logic Missing**  
+   Rule (`L228-L231`) specifies `role_timeout → ESCALATE → human_operator`; no code paths implement notification or blocking.
+
+### 3) Strategic Recommendations (Updated)
+
+ID | Recommendation | Impact | Effort | Dependencies
+---|----------------|--------|--------|-------------
+R1 | **Implement orchestrator state persistence** (`workflow_state.json`, `gate_results.json`, `handoff_log.json`) with atomic writes & locks | High | M | atomic_io.py
+R2 | **Extend task JSON schema** to include `approvals[]`, `gate_results[]`, `handoff_ref` aligning with rule specs | High | S | R1
+R3 | **Create CLI / module `pipeline_cli.py`** to handle `/run_pipeline`, `/status`, `/halt`, `/resume` commands, updating orchestrator state | High | M | R1
+R4 | **Add escalation handler** for `role_timeout` that logs, blocks pipeline, and writes notification to `alerts/` | Medium | S | R1
+R5 | **Back-fill existing tasks** in `tasks_active.json` & `tasks_queue.json` with new schema fields (default empty arrays) | Medium | S | R2
+
+### 4) Evidence References (Addendum)
+
+- `.cursor/rules/execution_orchestrator.mdc`  
+  - `L34-L36`: pipeline edges  
+  - `L97-L124`: gate definitions  
+  - `L228-L231`: role_timeout escalation  
+  - `L310-L314`: handoff log required fields
+- `src/repo/atomic_io.py` `L37-L45`: atomic write implementation  
+- `src/repo/auto_sync_manager.py` `L217-L219`: single-writer call  
+- `memory-bank/queue-system/README.md` `L71-L78`: task SOT paths  
+- `memory-bank/queue-system/tasks_active.json` `L1-L8`: current task fields
+
+---
+
+Confidence Score (addendum): 93%
