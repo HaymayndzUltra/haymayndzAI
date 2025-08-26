@@ -26,8 +26,8 @@ def main() -> int:
     # 1) Detector
     run([sys.executable, str(REPO / 'tools' / 'rule_attach_detector.py'), '--output', args.attach_log])
 
-    # 2) Selector (treat test-rules as curated library)
-    run([sys.executable, str(REPO / 'tools' / 'hydation_selector.py').replace('hydation','hydration'), '--attach-log', args.attach_log, '--source', args.source, '--dest', args.dest])
+    # 2) Curated selector (promote curated test-rules)
+    run([sys.executable, str(REPO / 'tools' / 'curated_selector.py'), '--attach-log', args.attach_log, '--source', args.source, '--dest', args.dest])
 
     # 3) Linter (optional)
     if args.lint:
