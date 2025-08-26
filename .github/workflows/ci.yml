@@ -39,3 +39,14 @@ jobs:
         working-directory: frameworks/fwk-001-cursor-rules
         run: |
           pytest -q tests/unit/test_rule_attach_mapping.py tests/unit/test_rule_attach_mapping_more.py
+
+      - name: Run hydration tests
+        working-directory: frameworks/fwk-001-cursor-rules
+        run: |
+          pytest -q tests/unit/test_hydration_selector.py
+          python3 hydration/run_hydration_tests.py hydration/hydration_tests.yaml
+
+      - name: Run concurrency smoke tests
+        working-directory: frameworks/fwk-001-cursor-rules
+        run: |
+          pytest -q tests/unit/test_concurrency_smoke.py
