@@ -1,0 +1,6 @@
+---
+description: Test conventions (unit, integration, mocks, structure)
+globs: ["**/*.test.*", "**/*spec.*", "**/tests/**", "**/__tests__/**"]
+alwaysApply: false
+tags: [testing, qa]
+---

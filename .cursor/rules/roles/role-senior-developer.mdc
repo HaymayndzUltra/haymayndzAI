@@ -1,0 +1,6 @@
+---
+description: Senior Developer communication and code review standards
+globs: ["README.md", "docs/**", "*.md", "CONTRIBUTING.md"]
+alwaysApply: false
+tags: [role, senior-developer, communication, review]
+---

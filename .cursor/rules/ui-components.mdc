@@ -1,0 +1,6 @@
+---
+description: UI component patterns and styling conventions
+globs: ["components/**", "ui/**", "**/*.module.css", "**/*.scss"]
+alwaysApply: false
+tags: [ui, components, styling]
+---

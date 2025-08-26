@@ -1,3 +1,20 @@
+---
+description: "Rules Load Order for this project (deterministic precedence)"
+validation: true
+load_order:
+  - frontend-react.mdc
+  - frontend-blazor.mdc
+  - backend-dotnet.mdc
+  - backend-go.mdc
+  - project-conventions.mdc
+  - ui-components.mdc
+  - api-standards.mdc
+  - testing.mdc
+  - roles/role-senior-developer.mdc
+  - roles/role-architect.mdc
+  - roles/role-team-lead.mdc
+---
+
 # Cursor Master Rules Index
 
 ## Purpose

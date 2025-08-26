@@ -1,0 +1,6 @@
+---
+description: Project-wide conventions (naming, formatting, package managers, repo hygiene)
+globs: ["**/*"]
+alwaysApply: false
+tags: [project, conventions, baseline]
+---

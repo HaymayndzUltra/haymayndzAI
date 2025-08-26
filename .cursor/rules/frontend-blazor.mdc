@@ -1,0 +1,6 @@
+---
+description: Blazor/Razor component standards
+globs: ["**/*.razor", "**/*.razor.cs", "**/*.csproj"]
+alwaysApply: false
+tags: [frontend, blazor, razor, dotnet]
+---

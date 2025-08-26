@@ -1,0 +1,6 @@
+---
+description: Team Lead practices (project management, documentation standards)
+globs: ["docs/**", ".github/**", "**/*.md", "**/*.mdx"]
+alwaysApply: false
+tags: [role, team-lead, management, documentation]
+---
