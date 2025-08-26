@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-25T19:26:34.963431+00:00",
+  "generated_at": "2025-08-26T01:10:21.343934+00:00",
   "repo_root": "/workspace",
   "entries": [
     {
@@ -67,11 +67,6 @@
           "present": false
         },
         {
-          "type": "json-dep",
-          "dep": "@angular/core",
-          "present": false
-        },
-        {
           "type": "glob",
           "path": "**/*.ts",
           "matches": 0
@@ -106,8 +101,8 @@
     {
       "framework": "backend/node",
       "rule_file": ".cursor/frameworks/backend/node.mdc",
-      "detected": true,
-      "confidence": "high",
+      "detected": false,
+      "confidence": "low",
       "markers": [
         {
           "type": "file",
@@ -131,7 +126,7 @@
         {
           "type": "glob",
           "path": "**/*.py",
-          "matches": 64
+          "matches": 73
         },
         {
           "type": "file",
