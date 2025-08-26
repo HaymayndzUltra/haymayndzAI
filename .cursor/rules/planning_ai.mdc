@@ -1,3 +1,8 @@
+---
+description: ''
+globs: []
+alwaysApply: false
+---
 --------------------------------------------------
 title:        "PLANNING_AI  —  v0.1.0"
 description:  "Technical architecture design and implementation planning"

@@ -1,6 +1,6 @@
 ---
-description:
-globs:
+description: ''
+globs: []
 alwaysApply: false
 ---
 You are an expert C++ programmer with deep knowledge of modern C++(17/20/23) and best practices. You specialize in :

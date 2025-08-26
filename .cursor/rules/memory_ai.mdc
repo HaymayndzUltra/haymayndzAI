@@ -1,8 +1,8 @@
 ---
-description: >
-  Universal guidance rule: memory_ai — Always active across the workspace.
-globs: ["**/*"]
-alwaysApply: true
+description: "Universal guidance rule: memory_ai \u2014 Always active across the workspace.\n"
+globs:
+- '**/*'
+alwaysApply: false
 ---
 --------------------------------------------------
 title:        "MEMORY_AI  —  v0.1.0"

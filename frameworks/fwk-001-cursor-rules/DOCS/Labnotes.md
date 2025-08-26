@@ -84835,3 +84835,1493 @@ Next: keep monitor on-demand (or cron/CI) until stability confirmed; do not wide
 
 ---
 
+### 2025-08-26 08:16:04 PST+0800 — CREATE — tools/hydration_selector.py
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: tools/hydration_selector.py (abs: /home/haymayndz/HaymayndzAI/tools/hydration_selector.py)
+- File: hydration_selector.py (ext: .py)
+
+#### Summary
+- Auto Summary: +63/-0 lines; Importance: Low
+-- Functions/Classes: promote,main
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +63 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:16:04 PST+0800 — CREATE — tools/mdc_linter.py
+
+- Actor: User [AI | User | Automation]
+- Action: CREATE [CREATE | MODIFY | DELETE | TEST]
+- Path: tools/mdc_linter.py (abs: /home/haymayndz/HaymayndzAI/tools/mdc_linter.py)
+- File: mdc_linter.py (ext: .py)
+
+#### Summary
+- Auto Summary: +141/-0 lines; Importance: Low
+-- Functions/Classes: LintResult:,find_frontmatter_blocks,parse_yaml,dump_yaml,ensure_frontmatter,process_file,main
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +141 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/rules/ai-assistant-guidance.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/ai-assistant-guidance.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/ai-assistant-guidance.mdc)
+- File: ai-assistant-guidance.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +1/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +1 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/rules/codegen_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/codegen_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/codegen_ai.mdc)
+- File: codegen_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +5/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +5 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/rules/execution_orchestrator.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/execution_orchestrator.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/execution_orchestrator.mdc)
+- File: execution_orchestrator.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +6/-5 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +6 lines, -5 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/rules/framework_memory_bridge.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/framework_memory_bridge.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/framework_memory_bridge.mdc)
+- File: framework_memory_bridge.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +6/-5 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +6 lines, -5 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/rules/guidance_command_suggester.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/guidance_command_suggester.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/guidance_command_suggester.mdc)
+- File: guidance_command_suggester.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +6/-5 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +6 lines, -5 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/rules/makeaprompt.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/makeaprompt.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/makeaprompt.mdc)
+- File: makeaprompt.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-5 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -5 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/rules/memory_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/memory_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/memory_ai.mdc)
+- File: memory_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +5/-5 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +5 lines, -5 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/rules/memory_enhancement_auditor.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/memory_enhancement_auditor.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/memory_enhancement_auditor.mdc)
+- File: memory_enhancement_auditor.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +7/-5 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +7 lines, -5 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/rules/planning_ai.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/planning_ai.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/planning_ai.mdc)
+- File: planning_ai.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +6/-1 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +6 lines, -1 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/rules/project-guidance.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/project-guidance.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/project-guidance.mdc)
+- File: project-guidance.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +2/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +2 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/rules/rules_master_toggle.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/rules/rules_master_toggle.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/rules/rules_master_toggle.mdc)
+- File: rules_master_toggle.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +6/-5 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +6 lines, -5 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test1.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test1.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test1.mdc)
+- File: _test1.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +3/-1 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +3 lines, -1 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test10.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test10.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test10.mdc)
+- File: _test10.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +2/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +2 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test11.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test11.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test11.mdc)
+- File: _test11.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +2/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +2 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test12.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test12.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test12.mdc)
+- File: _test12.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +3/-3 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +3 lines, -3 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test13.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test13.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test13.mdc)
+- File: _test13.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +2/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +2 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test14.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test14.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test14.mdc)
+- File: _test14.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +2/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +2 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test2.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test2.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test2.mdc)
+- File: _test2.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +3/-1 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +3 lines, -1 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test3.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test3.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test3.mdc)
+- File: _test3.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +4/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +4 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test4-1.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test4-1.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test4-1.mdc)
+- File: _test4-1.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +2/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +2 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test4.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test4.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test4.mdc)
+- File: _test4.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +2/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +2 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test5.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test5.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test5.mdc)
+- File: _test5.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +2/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +2 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test7.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test7.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test7.mdc)
+- File: _test7.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +2/-2 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +2 lines, -2 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test8.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test8.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test8.mdc)
+- File: _test8.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +3/-3 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +3 lines, -3 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/_test9.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/_test9.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/_test9.mdc)
+- File: _test9.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +3/-4 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +3 lines, -4 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .cursor/test-rules/test-best-practices-for-axi-protocols.mdc
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .cursor/test-rules/test-best-practices-for-axi-protocols.mdc (abs: /home/haymayndz/HaymayndzAI/.cursor/test-rules/test-best-practices-for-axi-protocols.mdc)
+- File: test-best-practices-for-axi-protocols.mdc (ext: .mdc)
+
+#### Summary
+- Auto Summary: +3/-4 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +3 lines, -4 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — .gitignore
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: .gitignore (abs: /home/haymayndz/HaymayndzAI/.gitignore)
+- File: .gitignore (ext: .gitignore)
+
+#### Summary
+- Auto Summary: +3/-0 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +3 lines, -0 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — tools/hydration_selector.py
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: tools/hydration_selector.py (abs: /home/haymayndz/HaymayndzAI/tools/hydration_selector.py)
+- File: hydration_selector.py (ext: .py)
+
+#### Summary
+- Auto Summary: +3/-3 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +3 lines, -3 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
+### 2025-08-26 08:22:06 PST+0800 — MODIFY — tools/mdc_linter.py
+
+- Actor: User [AI | User | Automation]
+- Action: MODIFY [CREATE | MODIFY | DELETE | TEST]
+- Path: tools/mdc_linter.py (abs: /home/haymayndz/HaymayndzAI/tools/mdc_linter.py)
+- File: mdc_linter.py (ext: .py)
+
+#### Summary
+- Auto Summary: +19/-10 lines; Importance: Low
+
+#### Reason / Motivation
+-
+
+#### Details of Change
+- Staged diff stats: +19 lines, -10 lines
+
+#### Commands Run (if any)
+````bash
+# add commands here
+````
+
+#### Tests Executed
+- [ ] Unit
+- [ ] Integration
+- [ ] Manual
+- Notes:
+
+#### Results / Observations
+-
+
+#### Acceptance / Verification
+- Criteria:
+- Evidence:
+
+#### Risks / Impact
+-
+
+#### Rollback / Recovery
+- Steps:
+
+#### Follow-ups / Next Steps
+-
+
+#### Traceability
+- References: Action_Plan / Summary_Report / Validation_Report / Final_Implementation_Plan (add section/lines)
+
+---
+
