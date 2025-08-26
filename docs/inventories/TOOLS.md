@@ -11,6 +11,17 @@ Key scripts:
 - setup_memory_mcp.py: MCP setup.
 - std_mdc.py: Standardizes `.mdc` files with frontmatter.
 - organize_root_python.sh: Repo organization helper.
+- rule_attach_detector.py: Scans repo for stack markers and writes `rule_attach_log.json`.
+- hydration_selector.py: Promotes matching `.mdc` from `.cursor/test-rules` to `.cursor/rules`.
+- mdc_linter.py: Validates and auto-fixes `.mdc` frontmatter.
+
+### Auto-Attach Pipeline (Detector → Selector → Linter)
+Run from repo root:
+```bash
+python3 tools/rule_attach_detector.py --output rule_attach_log.json
+python3 tools/hydration_selector.py --attach-log rule_attach_log.json --source .cursor/test-rules --dest .cursor/rules
+python3 tools/mdc_linter.py --paths .cursor/rules .cursor/test-rules --write
+```
 
 Subfolder:
 - memory/: Auxiliary memory utilities.

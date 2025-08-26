@@ -13,3 +13,12 @@ Auto-attach:
 
 Usage:
 - The orchestrator maps file markers to attach the appropriate framework rules. These complements the universal rules under `/.cursor/rules`.
+
+### Hydration Flow (Detector → Selector → Linter)
+- Promote matching `.mdc` from `.cursor/test-rules/` into `.cursor/rules/` using repository markers:
+```bash
+python3 tools/rule_attach_detector.py --output rule_attach_log.json
+python3 tools/hydration_selector.py --attach-log rule_attach_log.json --source .cursor/test-rules --dest .cursor/rules
+python3 tools/mdc_linter.py --paths .cursor/rules .cursor/test-rules --write
+```
+- Artifacts: `rule_attach_log.json`, promoted `.mdc` files, and normalized frontmatter.
