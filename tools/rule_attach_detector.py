@@ -242,6 +242,12 @@ def main() -> int:
     for key, spec in specs.items():
         detected, markers, matched_files = detect(root, key, spec)
         rule_file = rule_file_for(key, root)
+
+        # Special-case: backend/php must have composer.json present to count as detected
+        if key == "backend/php" and detected:
+            if not (root / "composer.json").exists():
+                detected = False
+
         entries.append({
             "framework": key,
             "rule_file": rule_file,
