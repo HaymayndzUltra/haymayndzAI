@@ -1,8 +1,8 @@
 # Progressive ON Health Report (limited: /route)
 
-- Timestamp (UTC): 2025-08-24T07:52:27+00:00
-- Progressive mode: False
-- Allowlist triggers: ['/route', '/status', '/health', '/observe', '/alert', '/benchmark', '/analyze', '/review', '/validate_docs']
+- Timestamp (UTC): 2025-08-26T01:18:10+00:00
+- Progressive mode: True
+- Allowlist triggers: ['/review', '/route', '/status']
 - Trigger: /route
 - Expected role: rules_master_toggle
 - Route target OK: True
@@ -10,4 +10,4 @@
 - No routing drift: True
 
 ## Alerts
-- Progressive mode expected True but found False
+- (none)

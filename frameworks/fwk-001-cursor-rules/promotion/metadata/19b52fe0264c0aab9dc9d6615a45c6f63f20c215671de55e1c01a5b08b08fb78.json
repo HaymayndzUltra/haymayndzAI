@@ -1,0 +1,32 @@
+{
+  "snapshot": {
+    "digest": "19b52fe0264c0aab9dc9d6615a45c6f63f20c215671de55e1c01a5b08b08fb78",
+    "createdAt": "2025-08-26T01:17:28.548665Z",
+    "creator": "ubuntu",
+    "trigger": "manual",
+    "environment": "development"
+  },
+  "artifacts": {
+    "count": 33,
+    "statuses": {
+      "review": 29,
+      "approved": 4
+    },
+    "kinds": [
+      "validation_report",
+      "legacy_mdc",
+      "test_plan",
+      "final_implementation_plan",
+      "action_plan",
+      "migration_plan",
+      "technical_plan",
+      "summary_report"
+    ]
+  },
+  "promotion": {
+    "gate": "verification_gate",
+    "checksum": "4c9bf010468c9ebbda41264d6086077f699fcaa3243406d455fa1731b5883707",
+    "timestamp": "2025-08-26T01:17:28.548765Z"
+  },
+  "notes": "Snapshot created via CLI - manual trigger"
+}
