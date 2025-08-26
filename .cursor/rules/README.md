@@ -126,6 +126,13 @@ class SecureAuth:
         return f"{salt}:{hash_obj.hex()}"
 ```
 
+### Generate Cursor Rules (Curated Library)
+Run from repo root to promote curated `.cursor/test-rules` into `.cursor/rules` based on detected markers:
+```bash
+python tools/generate_cursor_rules.py --lint
+```
+This runs detector → selector → linter and prints a JSON summary.
+
 ## Best Practices
 
 ### 1. Rule Selection
