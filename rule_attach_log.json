@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-08-26T02:08:08.439703+00:00",
-  "repo_root": "/home/haymayndz/HaymayndzAI",
+  "generated_at": "2025-08-26T02:39:38.694000+00:00",
+  "repo_root": "/workspace",
   "entries": [
     {
       "framework": "frontend/react",
@@ -126,7 +126,7 @@
         {
           "type": "glob",
           "path": "**/*.py",
-          "matches": 1000
+          "matches": 78
         },
         {
           "type": "file",
@@ -140,11 +140,11 @@
         }
       ],
       "matched_files": [
-        "/home/haymayndz/HaymayndzAI/.venv/lib/python3.10/site-packages/memory_profiler.py",
-        "/home/haymayndz/HaymayndzAI/.venv/lib/python3.10/site-packages/mypy_extensions.py",
-        "/home/haymayndz/HaymayndzAI/.venv/lib/python3.10/site-packages/typing_extensions.py",
-        "/home/haymayndz/HaymayndzAI/.venv/lib/python3.10/site-packages/_black_version.py",
-        "/home/haymayndz/HaymayndzAI/.venv/lib/python3.10/site-packages/mccabe.py"
+        "/workspace/scripts/auto_restore_templates.py",
+        "/workspace/scripts/report_last3days.py",
+        "/workspace/scripts/progressive_monitor.py",
+        "/workspace/scripts/validate_sidecars.py",
+        "/workspace/scripts/labnotes_watcher.py"
       ]
     },
     {
@@ -267,6 +267,87 @@
           "type": "glob",
           "path": "**/*.ts",
           "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "backend/java",
+      "rule_file": ".cursor/frameworks/backend/java.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "file",
+          "path": "pom.xml",
+          "present": false
+        },
+        {
+          "type": "glob",
+          "path": "**/*.java",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "backend/rust",
+      "rule_file": ".cursor/frameworks/backend/rust.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "file",
+          "path": "Cargo.toml",
+          "present": false
+        },
+        {
+          "type": "glob",
+          "path": "**/*.rs",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "mobile/ios",
+      "rule_file": ".cursor/frameworks/mobile/ios.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "glob",
+          "path": "**/*.swift",
+          "matches": 0
+        },
+        {
+          "type": "glob",
+          "path": "**/*.xcodeproj",
+          "matches": 0
+        }
+      ],
+      "matched_files": []
+    },
+    {
+      "framework": "specialized/ecommerce",
+      "rule_file": ".cursor/frameworks/specialized/ecommerce.mdc",
+      "detected": false,
+      "confidence": "low",
+      "markers": [
+        {
+          "type": "glob",
+          "path": "**/*.liquid",
+          "matches": 0
+        },
+        {
+          "type": "glob",
+          "path": "**/*.php",
+          "matches": 0
+        },
+        {
+          "type": "regex",
+          "pattern": "Shopify|WooCommerce|WordPress",
+          "present": true
         }
       ],
       "matched_files": []
