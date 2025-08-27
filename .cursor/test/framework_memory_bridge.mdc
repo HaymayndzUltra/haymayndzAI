@@ -1,0 +1,123 @@
+---
+description: "Universal guidance rule: framework_memory_bridge \u2014 Always active\
+  \ across the workspace.\n"
+globs:
+- '**/*'
+alwaysApply: false
+---
+--------------------------------------------------
+title:        "FRAMEWORK_MEMORY_BRIDGE  —  v0.1.0"
+description:  "Integration bridge between framework roles and existing memory-bank system"
+owner:        "FRAMEWORK_MEMORY_BRIDGE"
+phases:       "Orchestration"
+--------------------------------------------------
+## 1. PURPOSE
+• Bridges new framework AI roles with existing sophisticated memory-bank system
+• Synchronizes framework state with tasks_active.json and memory persistence
+• Preserves existing workflow while enabling new role-based capabilities
+
+# Output Artifact
+- bridge_sync_report.md: summary of sync actions and results
+- bridge_mapping.json: resolved command mappings and status
+
+# Triggers / Commands
+- /bridge_sync
+- /hybrid_execute
+- /memory_context
+
+## 2. INPUT CONTRACT
+• Expected fields / schema:
+  - framework_commands: role-based commands from new framework
+  - existing_tasks: tasks_active.json from memory-bank/queue-system/
+  - memory_context: current-session.md and cursor_state.json
+  - workflow_intelligence: output from workflow_memory_intelligence_fixed.py
+• Example payload(s):
+  ```yaml
+  bridge_request:
+    source: "framework_role"
+    action: "codegen_ai.generate"
+    target_task_id: "memory_system_canonicalization_actionable_20250820"
+    sync_memory: true
+  ```
+
+## 3. EXISTING SYSTEM INTEGRATION
+```yaml
+# Map framework commands to existing system
+command_mapping:
+  # Framework → Existing System
+  "/backlog":     "python3 todo_manager.py new"
+  "/plan":        "python3 plan_next.py"
+  "/gen_code":    "python3 workflow_memory_intelligence_fixed.py execute"
+  "/test":        "python3 analyzer.py --phase-index"
+  "/deploy":      "python3 auto_sync_manager.py deploy"
+  "/snapshot":    "python3 tools/memory/memory_cli.py snapshot"
+  "/recall":      "python3 tools/memory/memory_cli.py recall"
+  "/learn":       "python3 tools/memory/memory_cli.py save"
+
+# Existing CLI preserved
+existing_commands:
+  "memoryctl tcc":     "Launch Task Command Center"
+  "memoryctl run":     "Execute tasks concurrently"
+  "memoryctl search":  "Search memory bank"
+  "memoryctl sync":    "Sync with remote store"
+```
+
+## 4. STATE SYNCHRONIZATION PROTOCOL
+```yaml
+sync_rules:
+  framework_to_memory:
+    - framework_todos → tasks_active.json (append mode)
+    - role_outputs → memory-bank/project-brain/
+    - execution_logs → memory-bank/logs/
+    - rule_attach_log.json → memory-bank/observability/rules/
+    
+  memory_to_framework:
+    - tasks_active.json → framework role context
+    - cursor_state.json → execution_orchestrator state
+    - current-session.md → memory_ai knowledge base
+    - pattern_library.json → auto-suggestions in planning/codegen
+    
+  conflict_resolution:
+    - existing_system_precedence: true  # Existing system wins conflicts
+    - framework_enhancement_mode: true  # Framework adds capabilities
+    - preserve_workflows: true          # Don't break existing patterns
+```
+
+## 5. INTERACTION RULES
+• Triggers that activate this role:
+  - /bridge_sync: Synchronize framework with memory system
+  - /hybrid_execute <command>: Execute using best of both systems
+  - /memory_context: Load existing context into framework roles
+• Allowed verbs or commands: BRIDGE, SYNC, HYBRID, CONTEXT
+• Single-writer policy: no (coordinates between systems)
+
+## 6. INTEGRATION BENEFITS
+```yaml
+enhanced_capabilities:
+  existing_system_strengths:
+    - "Proven task_command_center.py with 583 lines of mature functionality"
+    - "Sophisticated workflow_memory_intelligence_fixed.py (1950 lines)"
+    - "Robust todo_manager.py with hierarchical task management"
+    - "Auto-sync with Philippines timezone normalization"
+    - "Advanced cursor rules with toggle controls and trigger phrases"
+    
+  framework_enhancements:
+    - "Role-based specialization (product_owner_ai, planning_ai, etc.)"
+    - "Standardized input/output contracts"
+    - "Pipeline orchestration with gate controls"
+    - "Self-replicating framework generation"
+    
+  hybrid_advantages:
+    - "Best of both: mature execution + structured roles"
+    - "Preserve existing workflows while adding new capabilities"
+    - "Gradual migration path without disrupting current system"
+```
+
+## 7. INTERNAL CHECKLIST / TODO
+[ ] Fill domain-specific details  
+[ ] Add example conversation snips  
+[ ] Remove TODO markers before production  
+
+## 8. CHANGELOG
+‑ v0.1.0  2024-01-15  initial scaffold by prompt_factory_ai
+--------------------------------------------------

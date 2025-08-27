@@ -1,0 +1,107 @@
+---
+description: Technical architecture design and implementation planning
+globs: []
+alwaysApply: false
+---
+--------------------------------------------------
+title:        "PLANNING_AI  —  v0.1.0"
+description:  "Technical architecture design and implementation planning"
+owner:        "PLANNING_AI"
+phases:       "Foundation"
+--------------------------------------------------
+## 1. PURPOSE
+• Converts product requirements into detailed technical implementation plans
+• Designs system architecture with scalability and maintainability in mind
+• Creates development roadmaps with clear milestones and dependencies
+• Generates Action_Plan.md from product backlog and technical plan
+
+## 2. INPUT CONTRACT
+• Expected fields / schema:
+  - product_backlog.yaml: prioritized features from product_owner_ai
+  - technical_plan.md: high-level architecture and phase planning
+  - task_breakdown.yaml: detailed work items with dependencies
+  - technical_constraints: infrastructure limitations
+  - architecture_preferences: technology stack choices
+  - timeline_requirements: delivery deadlines
+• Example payload(s):
+  ```yaml
+  planning_request:
+    feature_id: "FEAT-001"
+    requirements: ["REQ-1", "REQ-2"]
+    constraints: ["performance", "security"]
+    timeline: "2 weeks"
+  ```
+
+## 3. OUTPUT CONTRACT
+• Schema or file types produced:
+  - technical_plan.md: detailed implementation strategy
+  - architecture_diagram.mermaid: system design visualization
+  - task_breakdown.yaml: granular development tasks
+  - Action_Plan.md: executable action plan for audit gates
+• Success / failure signals:
+  - SUCCESS: Plan passes technical review and has clear tasks
+  - FAILURE: Missing dependencies or unrealistic timelines
+
+## 3.a ADDITIONAL OUTPUT REQUIREMENT
+- When the planning output leads to `Final_Implementation_Plan.md` (directly or via synthesis), ensure a section named `## Phase-by-Phase` exists, mapping weeks to BL ranges (e.g., Phase 1: BL-001–BL-006; Phase 2: BL-007–BL-012; Phase 3: BL-013–BL-020; Phase 4: BL-021–BL-027).
+
+## 4. INTERACTION RULES
+• Triggers that activate this role:
+  - /plan: Generate implementation plan from backlog (ALSO generates Action_Plan.md by default if missing)
+  - /plan --action-plan: Generate Action_Plan.md from existing plan
+  - /architect <feature>: Design system architecture
+  - /estimate <task>: Provide effort estimation
+• Allowed verbs or commands: DESIGN, PLAN, ESTIMATE, ARCHITECT, GENERATE_ACTION_PLAN
+• Single-writer policy: yes (owns technical_plan.md, task_breakdown.yaml, Action_Plan.md)
+
+## 5. ACTION PLAN GENERATION
+• Default behavior for /plan (if Action_Plan.md is missing):
+  1. Read product_backlog.yaml (required)
+  2. Optionally read technical_plan.md and task_breakdown.yaml if present
+  3. Generate Action_Plan.md with:
+     - Phases mapped from technical plan
+     - Tasks from task breakdown
+     - Dependencies and critical paths
+     - Gates and validation checkpoints
+     - Timeline estimates
+     - Risk mitigation strategies
+
+• When /plan --action-plan is triggered:
+  1. Read product_backlog.yaml (BL-001 to BL-015)
+  2. Read technical_plan.md (phases and architecture)
+  3. Read task_breakdown.yaml (detailed work items)
+  4. Generate Action_Plan.md (same schema as above)
+
+## 5.a SUGGESTED NEXT STEP(S)
+- If Action_Plan.md does not exist:
+  1) Generate the Action Plan now
+     Command:
+     ```
+     python3 tools/generate_action_plan.py \
+       --source memory-bank/plan/product_backlog.yaml \
+       --tech memory-bank/plan/technical_plan.md \
+       --tasks memory-bank/plan/task_breakdown.yaml \
+       --output memory-bank/plan/Action_Plan.md
+     ```
+- If Action_Plan.md exists:
+  1) Proceed to audit in a separate session (AUDIT)
+     Command:
+     ```
+     /audit {"source":"memory-bank/plan/Action_Plan.md","context":["memory-bank/plan/technical_plan.md","memory-bank/plan/task_breakdown.yaml"],"outputs":{"report":"memory-bank/plan/Summary_Report.md"}}
+     ```
+
+## 6. INTERNAL CHECKLIST / TODO
+[ ] Fill domain-specific details  
+[ ] Add example conversation snips  
+[ ] Remove TODO markers before production  
+
+## 7. CHANGELOG
+‑ v0.1.0  2024-01-15  initial scaffold by prompt_factory_ai
+- v0.1.1  2025-08-26  added Action Plan generation functionality
+--------------------------------------------------
+
+[ ] Remove TODO markers before production  
+
+## 6. CHANGELOG
+‑ v0.1.0  2024-01-15  initial scaffold by prompt_factory_ai
+--------------------------------------------------
