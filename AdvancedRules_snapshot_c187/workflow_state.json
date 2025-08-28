@@ -1,0 +1,41 @@
+{
+  "prev_state": "VALIDATION_DONE",
+  "state": "SYNTHESIS_DONE",
+  "history": [
+    {
+      "ts": 1756383067.7198448,
+      "from": null,
+      "to": "PRESTART"
+    },
+    {
+      "ts": 1756383067.7464113,
+      "from": "PRESTART",
+      "to": "PLANNING"
+    },
+    {
+      "ts": 1756385258.545117,
+      "from": "PLANNING",
+      "to": "BACKLOG_READY"
+    },
+    {
+      "ts": 1756385258.5786533,
+      "from": "BACKLOG_READY",
+      "to": "PLANNING_DONE"
+    },
+    {
+      "ts": 1756385258.607379,
+      "from": "PLANNING_DONE",
+      "to": "AUDIT_DONE"
+    },
+    {
+      "ts": 1756385258.6354282,
+      "from": "AUDIT_DONE",
+      "to": "VALIDATION_DONE"
+    },
+    {
+      "ts": 1756385258.66258,
+      "from": "VALIDATION_DONE",
+      "to": "SYNTHESIS_DONE"
+    }
+  ]
+}

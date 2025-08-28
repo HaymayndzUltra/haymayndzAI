@@ -1,0 +1,9 @@
+---
+kind: role
+id: security_ai
+description: "Security role (machine-consumable). See roles/security_ai.md for full doc."
+globs: []
+alwaysApply: false
+version: 1
+---
+

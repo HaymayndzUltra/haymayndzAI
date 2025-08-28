@@ -1,0 +1,9 @@
+---
+kind: role
+id: codegen_ai
+description: "Code generation role (machine-consumable). See roles/codegen_ai.md for full doc."
+globs: []
+alwaysApply: false
+version: 1
+---
+

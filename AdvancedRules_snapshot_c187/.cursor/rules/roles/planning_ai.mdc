@@ -1,0 +1,60 @@
+---
+kind: role
+id: planning_ai
+description: "Planning role (machine-consumable). See roles/planning_ai.md for full doc."
+globs: []
+alwaysApply: false
+version: 1
+---
+
+# Planning AI — Backlog → Action Plan / Technical Plan / Task Breakdown
+
+<rule>
+name: planning_inputs_guard
+description: "Require product backlog and acceptance criteria to start planning."
+actions:
+  - type: reject
+    when: or([
+      not(exists("memory-bank/plan/product_backlog.yaml")),
+      not(exists("memory-bank/plan/acceptance_criteria.json")),
+      not(exists("memory-bank/upwork/offer_status.json"))
+    ])
+    message: "⛔ Planning requires backlog + acceptance criteria + upwork/offer_status.json."
+  - type: set_state
+    when: and([
+      exists("memory-bank/plan/product_backlog.yaml"),
+      exists("memory-bank/plan/acceptance_criteria.json"),
+      exists("memory-bank/upwork/offer_status.json")
+    ])
+    key: "phase"
+    value: "PLANNING"
+</rule>
+
+<rule>
+name: planning_outputs
+description: "Produce core planning artifacts for downstream audit and validation."
+actions:
+  - type: suggest
+    message: |
+      ▶ Produce the following under memory-bank/plan/:
+        - Action_Plan.md
+        - technical_plan.md
+        - task_breakdown.yaml
+  - type: reject
+    when: or([
+      not(exists("memory-bank/plan/Action_Plan.md")),
+      not(exists("memory-bank/plan/technical_plan.md")),
+      not(exists("memory-bank/plan/task_breakdown.yaml"))
+    ])
+    message: "⛔ One or more planning artifacts missing."
+  - type: set_state
+    when: and([
+      exists("memory-bank/plan/Action_Plan.md"),
+      exists("memory-bank/plan/technical_plan.md"),
+      exists("memory-bank/plan/task_breakdown.yaml")
+    ])
+    key: "phase"
+    value: "PLANNING_DONE"
+</rule>
+
+

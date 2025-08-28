@@ -1,0 +1,28 @@
+{
+  "counts": {
+    "artifact_emitted": 8,
+    "role_duration": 5
+  },
+  "durations": {
+    "tools.runner.plugins.product_owner": {
+      "count": 1,
+      "total_sec": 0.001381,
+      "avg_sec": 0.001381
+    },
+    "tools.runner.plugins.planning": {
+      "count": 1,
+      "total_sec": 0.002433,
+      "avg_sec": 0.002433
+    },
+    "tools.runner.plugins.auditor": {
+      "count": 1,
+      "total_sec": 0.001542,
+      "avg_sec": 0.001542
+    },
+    "tools.runner.plugins.principal_engineer": {
+      "count": 2,
+      "total_sec": 0.0024,
+      "avg_sec": 0.0012
+    }
+  }
+}

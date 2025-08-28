@@ -1,0 +1,63 @@
+---
+kind: role
+id: auditor_ai
+description: "Auditor role (machine-consumable). See roles/auditor_ai.md for full doc."
+globs: []
+alwaysApply: false
+version: 1
+---
+
+# Auditor AI — Action Plan vs Codebase Verification
+
+<rule>
+name: audit_inputs_guard
+description: "Block audit if Action_Plan.md missing; guide user to planning outputs."
+actions:
+  - type: reject
+    when: not(exists("memory-bank/plan/Action_Plan.md"))
+    message: |
+      ⛔ Missing required input: memory-bank/plan/Action_Plan.md
+      Tip: Run planning to produce Action Plan before audit.
+  - type: set_state
+    when: exists("memory-bank/plan/Action_Plan.md")
+    key: "phase"
+    value: "AUDIT"
+</rule>
+
+<rule>
+name: audit_action_plan_against_codebase
+description: |
+  Compare Action_Plan.md assertions vs actual repository evidence.
+  Identify conflicts (risks) and alignments (correct observations). Produce Summary_Report.md.
+actions:
+  - type: suggest
+    message: |
+      ▶ Perform audit:
+        1) Parse goals/scope from memory-bank/plan/Action_Plan.md
+        2) Cross-check against codebase (files, configs, scripts) with citations
+        3) Classify findings: RISK|ALIGNMENT with references
+        4) Emit memory-bank/plan/Summary_Report.md (non-empty)
+  - type: reject
+    when: not(exists("memory-bank/plan/Summary_Report.md"))
+    message: "⛔ Summary_Report.md not found. Emit report with cited evidence."
+  - type: set_state
+    when: exists("memory-bank/plan/Summary_Report.md")
+    key: "phase"
+    value: "AUDIT_DONE"
+</rule>
+
+<rule>
+name: audit_exit_handoff
+description: "After Summary_Report.md exists, instruct to open a new session for Principal Engineer validation."
+filters:
+  - type: equals
+    key: "phase"
+    value: "AUDIT_DONE"
+actions:
+  - type: suggest
+    message: |
+      ✅ Audit complete. Open a NEW SESSION and start Principal Engineer validation
+      with inputs: Action_Plan.md + Summary_Report.md.
+</rule>
+
+

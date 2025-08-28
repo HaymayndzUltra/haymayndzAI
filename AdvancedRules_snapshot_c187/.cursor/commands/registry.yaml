@@ -1,0 +1,128 @@
+version: 1
+defaults:
+  one_step_policy: true
+  min_confidence: 0.9
+
+commands:
+  - id: preflight
+    trigger: run_readiness
+    run:
+      shell: ["python3", "tools/run_role.py", "readiness", "--check"]
+    contexts:
+      must_exist_any_of:
+        - "memory-bank/business/client_score.json"
+        - "memory-bank/business/capacity_report.md"
+        - "memory-bank/plan/proposal.md"
+    ui:
+      label: "Run Pre-Start Checks"
+      reason: "Gate planning based on business readiness"
+
+  - id: upwork_offer_status
+    trigger: set_offer_status
+    run:
+      shell: ["python3", "tools/upwork/adapter.py", "--contract", "fixed", "--escrow", "true", "--diary", "true", "--cap", "10"]
+    emits:
+      creates: ["memory-bank/upwork/offer_status.json"]
+    ui:
+      label: "Set Upwork Offer Status"
+      reason: "Populate offer_status.json for readiness gate"
+
+  - id: prestart_ensure_readiness
+    trigger: auto_create_missing_readiness
+    run:
+      shell: ["python3", "tools/prestart/ensure_readiness.py"]
+    emits:
+      creates: ["memory-bank/upwork/offer_status.json"]
+    ui:
+      label: "Ensure Prestart Readiness Artifacts"
+      reason: "Auto-create missing readiness files with safe defaults"
+
+  - id: prestart_composite
+    trigger: prestart_all
+    run:
+      shell: ["python3", "tools/prestart/prestart_composite.py"]
+    emits:
+      creates: ["memory-bank/upwork/offer_status.json"]
+    ui:
+      label: "Run Prestart Composite"
+      reason: "Ensure readiness + print preflight status"
+
+  - id: backlog_from_client_brief
+    role_from: PRODUCT_OWNER_AI
+    trigger: run_product_owner
+    run:
+      shell: ["python3", "tools/run_role.py", "product_owner_ai"]
+    contexts:
+      must_exist: ["memory-bank/plan/client_brief.md"]
+    emits:
+      creates:
+        - "memory-bank/plan/product_backlog.yaml"
+        - "memory-bank/plan/acceptance_criteria.json"
+      sets_state: "BACKLOG_READY"
+    ui:
+      label: "Generate Backlog & Acceptance"
+      reason: "From client_brief.md"
+
+  - id: planning_from_backlog
+    role_from: PLANNING_AI
+    trigger: run_planning
+    run:
+      shell: ["python3", "tools/run_role.py", "planning_ai"]
+    contexts:
+      must_exist:
+        - "memory-bank/plan/product_backlog.yaml"
+        - "memory-bank/plan/acceptance_criteria.json"
+        - "memory-bank/upwork/offer_status.json"
+    emits:
+      creates:
+        - "memory-bank/plan/Action_Plan.md"
+        - "memory-bank/plan/technical_plan.md"
+        - "memory-bank/plan/task_breakdown.yaml"
+      sets_state: "PLANNING_DONE"
+    ui:
+      label: "Create Plans"
+      reason: "Action/technical/task breakdown"
+
+  - id: audit_action_plan
+    role_from: AUDITOR_AI
+    trigger: run_auditor
+    run:
+      shell: ["python3", "tools/run_role.py", "auditor_ai"]
+    contexts:
+      must_exist: ["memory-bank/plan/Action_Plan.md"]
+    emits:
+      creates: ["memory-bank/plan/Summary_Report.md"]
+      sets_state: "AUDIT_DONE"
+    ui:
+      label: "Audit Action Plan"
+      reason: "Verify plan vs codebase with citations"
+
+  - id: peer_review_validation
+    role_from: PRINCIPAL_ENGINEER_AI
+    trigger: run_principal_engineer_peer_review
+    run:
+      shell: ["python3", "tools/run_role.py", "principal_engineer_ai", "--mode", "PEER_REVIEW"]
+    contexts:
+      must_exist: ["memory-bank/plan/Summary_Report.md"]
+    emits:
+      creates: ["memory-bank/plan/Validation_Report.md"]
+      sets_state: "VALIDATION_DONE"
+    ui:
+      label: "Peer Review (Validation)"
+      reason: "Confirm/Challenge audit findings"
+
+  - id: synthesize_final_plan
+    role_from: PRINCIPAL_ENGINEER_AI
+    trigger: run_principal_engineer_synthesis
+    run:
+      shell: ["python3", "tools/run_role.py", "principal_engineer_ai", "--mode", "SYNTHESIS"]
+    contexts:
+      must_exist:
+        - "memory-bank/plan/Summary_Report.md"
+        - "memory-bank/plan/Validation_Report.md"
+    emits:
+      creates: ["memory-bank/plan/Final_Implementation_Plan.md"]
+      sets_state: "SYNTHESIS_DONE"
+    ui:
+      label: "Synthesize Final Plan"
+      reason: "Consolidate into executable roadmap"
