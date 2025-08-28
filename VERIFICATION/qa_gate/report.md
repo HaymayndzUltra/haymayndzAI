@@ -1,3 +1,5 @@
+Status: WARN
+
 ### QA Gate Policy — codegen_ai ↔ qa_ai (Independent of Implementation)
 
 #### Scope & Objective
@@ -10,6 +12,13 @@
 - **Role specs**:
   - `frameworks/fwk-001-cursor-rules/system-prompt/codegen_ai.mdc`
   - `frameworks/fwk-001-cursor-rules/system-prompt/qa_ai.mdc`
+
+## Rationale
+- PASS requires concrete artifacts for C1–C6; none are present in this verification set (see Required evidence list), so acceptance is WARN pending data.
+- Decision rule unambiguous: PASS iff C1..C6 are all PASS (Decision Matrix).
+- Audit schema defined with +08:00 timestamps and loop control (findings.json audit_schema).
+- Loop policy, termination guarantees, and escalation paths are declared (Section 3).
+- Documentation interaction on PASS/FAIL specified (Section 5) enabling traceability.
 
 ### 1) Gate Decision Model
 - **Gate Name**: `quality_assurance_gate`

@@ -1,3 +1,5 @@
+Status: PASS
+
 ### Routing Analysis Report (vertical: routing)
 
 **Scope & Inputs**
@@ -8,6 +10,13 @@
   - `.cursor/rules/rules_master_toggle.mdc`, `.cursor/rules/trigger_phrases*.mdc`
   - `frameworks/fwk-001-cursor-rules/system-prompt/*.mdc` (role contracts, framework toggle + routing matrix)
 - **Out‑of‑Scope**: Implementing routing changes; creating new agents/APIs; performance tuning beyond measurement points
+
+## Rationale
+- Unique primary handler per command with ≤1 fallback verified; only `/review` declares `qa_ai` fallback (see Routing Matrix).
+- Toggle policy explicitly documented (master and per‑role) with canonical messages (rules_master_toggle.mdc).
+- Error paths enumerated and deterministic (ROLE_DISABLED, MISSING_DEPENDENCY, MASTER_TOGGLE_OFF, UNRECOGNIZED_COMMAND, AMBIGUOUS_ROUTE) with remediation.
+- Dependency awareness declared and consistent with framework matrix; failure behaviors specified.
+- Observability guidance present (correlation_id, sink path) enabling auditability.
 
 ## Deterministic Routing Policy
 - **Single‑dispatch**: Exactly one primary handler per command; ≤1 fallback.

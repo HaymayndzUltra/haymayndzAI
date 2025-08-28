@@ -1,3 +1,5 @@
+Status: PASS
+
 # Documentation Flow Analysis — codegen_ai → documentation_ai; analyst_ai support
 
 ## 1) Executive Summary
@@ -6,6 +8,13 @@
 - **Storage**: All role artifacts live under `memory-bank/roles/<role>/...` (additive to the system). Canonical docs are versioned in Git and carry provenance front matter.
 - **Provenance**: Each artifact embeds `task_id`, `phase`, `commit`, `qa_status`, `source_paths`, and a link into the decision ledger (`memory-bank/decisions/index.jsonl`).
 - **Gates**: Deep Analysis Gate remains authoritative on `exec --run` and `done`. Documentation promotion to canonical occurs only after QA/gate PASS.
+
+## Rationale
+- Triggers and storage paths are defined for drafts, promotions, validations, and reviews (Sections 3 and 5).
+- Provenance schema explicitly listed and ties to decision ledger (Section 6).
+- Review loop and orchestrator linkage specify validation on phase done and QA PASS gating (Section 7).
+- SLOs for freshness and analyst review on major updates defined, mitigating drift (SLOs section).
+- Risks and mitigations enumerate stale docs and merge conflicts with clear controls.
 
 ## 2) Sources
 - `PROPOSAL/proposal_3.md` (Consolidated Architectural Proposal; routing, gates, storage namespaces, decision ledger)

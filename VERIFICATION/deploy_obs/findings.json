@@ -201,5 +201,15 @@
     "health_and_rollback_unambiguous_testable": true,
     "post_deploy_validation_declared_and_mapped": true,
     "notes": "This file defines the versioned contract, enumerates testable health/rollback signals, and declares post-deploy validation tied to orchestrator transitions."
-  }
+  },
+  "findings": [
+    {"concern":"versioned_contract_complete","severity":"info","evidence":{"path":"VERIFICATION/deploy_obs/report.md","section":"Contract / Health & Readiness / Telemetry Events","why":"Contract id, schema version, artifacts, telemetry events are enumerated."}},
+    {"concern":"health_rollback_signals_testable","severity":"info","evidence":{"path":"VERIFICATION/deploy_obs/report.md","section":"Health & Readiness / Rollback Signals","why":"Signals specify thresholds and test hooks for rollback.requested."}},
+    {"concern":"post_deploy_validation_mapped","severity":"info","evidence":{"path":"VERIFICATION/deploy_obs/report.md","section":"Post‑Deploy Validation & Orchestrator Transitions","why":"Validation steps map to DEPLOYMENT transitions to MONITORING or ROLLBACK."}}
+  ],
+  "recommendations": [
+    "Validate monitoring_config.json against JSON schema at build time.",
+    "Smoke-test health endpoints in CI using the command_preview before rollout.",
+    "Record telemetry events with +08:00 timestamps and correlation_id per deploy."
+  ]
 }
