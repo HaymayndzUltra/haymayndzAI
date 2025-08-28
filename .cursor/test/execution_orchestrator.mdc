@@ -1,8 +1,7 @@
 ---
-description: "Universal guidance rule: execution_orchestrator \u2014 Always active\
-  \ across the workspace.\n"
-globs:
-- '**/*'
+description: >
+  Universal guidance rule: execution_orchestrator — Always active across the workspace.
+globs: ["**/*"]
 alwaysApply: false
 ---
 --------------------------------------------------
@@ -306,11 +305,6 @@ handoff_rules:
       to: ["observability_ai", "analyst_ai"]
       trigger: "deployment successful"
 ```
-
-# Session Handoff Notes
-- All roles MUST record structured entries in `handoff_log.json` upon completing their stage artifacts.
-- The orchestrator reads `handoff_log.json` to trigger transitions per `handoff_rules`.
-- Required fields: `id`, `origin_role`, `target_role` (optional if blocked), `inputs[]`, `outputs[]`, `required_by`, `status`.
 
 ## 8. INTERNAL CHECKLIST / TODO
 [ ] Fill domain-specific details  
