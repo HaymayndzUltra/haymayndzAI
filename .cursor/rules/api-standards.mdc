@@ -1,0 +1,6 @@
+---
+description: API standards (REST, validation, pagination, error semantics)
+globs: ["api/**", "controllers/**", "services/**", "routes/**"]
+alwaysApply: false
+tags: [api, standards]
+---

@@ -1,0 +1,6 @@
+---
+description: Go backend standards (HTTP servers, concurrency, layout)
+globs: ["**/*.go", "go.mod", "go.sum"]
+alwaysApply: false
+tags: [backend, go]
+---
