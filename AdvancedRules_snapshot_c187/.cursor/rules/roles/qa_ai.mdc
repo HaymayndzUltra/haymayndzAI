@@ -1,0 +1,9 @@
+---
+kind: role
+id: qa_ai
+description: "QA role (machine-consumable). See roles/qa_ai.md for full doc."
+globs: []
+alwaysApply: false
+version: 1
+---
+

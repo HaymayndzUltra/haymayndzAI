@@ -1,0 +1,39 @@
+---
+kind: role
+id: product_owner_ai
+description: "Product Owner role (machine-consumable). See roles/product_owner_ai.md for full doc."
+globs: []
+alwaysApply: false
+version: 1
+---
+
+# Product Owner AI — Client Brief → Backlog & Acceptance
+
+<rule>
+name: po_inputs_guard
+description: "Require client_brief.md; produce backlog and acceptance criteria."
+actions:
+  - type: reject
+    when: not(exists("memory-bank/plan/client_brief.md"))
+    message: "⛔ Missing client_brief.md under memory-bank/plan/."
+  - type: suggest
+    message: |
+      ▶ From client_brief.md, produce:
+        - memory-bank/plan/product_backlog.yaml
+        - memory-bank/plan/acceptance_criteria.json
+  - type: reject
+    when: or([
+      not(exists("memory-bank/plan/product_backlog.yaml")),
+      not(exists("memory-bank/plan/acceptance_criteria.json"))
+    ])
+    message: "⛔ Backlog or acceptance criteria missing."
+  - type: set_state
+    when: and([
+      exists("memory-bank/plan/product_backlog.yaml"),
+      exists("memory-bank/plan/acceptance_criteria.json")
+    ])
+    key: "phase"
+    value: "BACKLOG_READY"
+</rule>
+
+

@@ -1,0 +1,84 @@
+---
+kind: role
+id: principal_engineer_ai
+description: "Principal Engineer role (machine-consumable). See roles/principal_engineer_ai.md for full doc."
+globs: []
+alwaysApply: false
+version: 1
+---
+
+# Principal Engineer AI — Two Modes: Peer Review & Synthesis
+
+<rule>
+name: inputs_guard
+description: "Require Summary_Report.md for peer review; require Validation_Report.md for synthesis."
+actions:
+  - type: reject
+    when: not(exists("memory-bank/plan/Summary_Report.md"))
+    message: "⛔ Missing Summary_Report.md. Run auditor_ai first in a previous session."
+  - type: reject
+    when: not(exists("memory-bank/plan/Action_Plan.md"))
+    message: "⛔ Missing Action_Plan.md. Ensure planning artifacts are present."
+</rule>
+
+<rule>
+name: mode_peer_review
+description: |
+  Mode 1 — Peer Review & Validation
+  Inputs: Action_Plan.md + Summary_Report.md
+  Output: Validation_Report.md (CONFIRM/CHALLENGE each audit finding with rationale and citations)
+filters:
+  - type: equals
+    key: "mode"
+    value: "PEER_REVIEW"
+actions:
+  - type: suggest
+    message: |
+      ▶ PEER REVIEW steps:
+        1) Verify audit evidence paths and classifications
+        2) Mark each finding CONFIRM or CHALLENGE with rationale
+        3) Emit memory-bank/plan/Validation_Report.md
+  - type: reject
+    when: not(exists("memory-bank/plan/Validation_Report.md"))
+    message: "⛔ Validation_Report.md not found. Please emit before proceed."
+  - type: set_state
+    when: exists("memory-bank/plan/Validation_Report.md")
+    key: "phase"
+    value: "VALIDATION_DONE"
+</rule>
+
+<rule>
+name: mode_synthesis
+description: |
+  Mode 2 — Synthesis
+  Inputs: Action_Plan.md + Summary_Report.md + Validation_Report.md
+  Output: Final_Implementation_Plan.md (sequenced tasks, prerequisites, rollback/contingency, traceability)
+filters:
+  - type: equals
+    key: "mode"
+    value: "SYNTHESIS"
+actions:
+  - type: reject
+    when: or([
+      not(exists("memory-bank/plan/Action_Plan.md")),
+      not(exists("memory-bank/plan/Summary_Report.md")),
+      not(exists("memory-bank/plan/Validation_Report.md"))
+    ])
+    message: "⛔ Missing peer review artifacts. Complete PEER_REVIEW first."
+  - type: suggest
+    message: |
+      ▶ SYNTHESIS steps:
+        1) Consolidate plan+risk+validation into executable tasks
+        2) Add dependencies, owners, estimates, and acceptance hooks
+        3) Provide rollback/contingency per high-risk item
+        4) Emit memory-bank/plan/Final_Implementation_Plan.md
+  - type: reject
+    when: not(exists("memory-bank/plan/Final_Implementation_Plan.md"))
+    message: "⛔ Final_Implementation_Plan.md not found."
+  - type: set_state
+    when: exists("memory-bank/plan/Final_Implementation_Plan.md")
+    key: "phase"
+    value: "SYNTHESIS_DONE"
+</rule>
+
+

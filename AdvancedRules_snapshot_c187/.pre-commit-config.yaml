@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: validate-rules
+        name: validate-rules
+        entry: python3 tools/rules/validate.py
+        language: system
+        pass_filenames: false

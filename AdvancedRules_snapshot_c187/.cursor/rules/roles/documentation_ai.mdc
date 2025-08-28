@@ -1,0 +1,9 @@
+---
+kind: role
+id: documentation_ai
+description: "Documentation role (machine-consumable). See roles/documentation_ai.md for full doc."
+globs: []
+alwaysApply: false
+version: 1
+---
+

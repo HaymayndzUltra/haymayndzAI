@@ -1,0 +1,3818 @@
+From 281f1d5aaf15d3a7f737e2a9fd2df67bd5423ea9 Mon Sep 17 00:00:00 2001
+From: Cursor Agent <cursoragent@cursor.com>
+Date: Thu, 28 Aug 2025 14:20:51 +0000
+Subject: [PATCH] Sync: AdvancedRules pipeline, governance, decision scoring,
+ runner, readiness, schemas, observability
+
+---
+ .cursor/commands/registry.yaml                | 133 +++++++++--
+ .cursor/rules/README.md                       |  16 ++
+ .cursor/rules/roles/auditor_ai.mdc            |  63 +++++
+ .cursor/rules/roles/codegen_ai.mdc            |   9 +
+ .cursor/rules/roles/documentation_ai.mdc      |   9 +
+ .cursor/rules/roles/planning_ai.mdc           |  60 +++++
+ .cursor/rules/roles/principal_engineer_ai.mdc |  84 +++++++
+ .cursor/rules/roles/product_owner_ai.mdc      |  39 +++
+ .cursor/rules/roles/qa_ai.mdc                 |   9 +
+ .cursor/rules/roles/security_ai.mdc           |   9 +
+ .github/workflows/governance.yml              |  27 +++
+ .pre-commit-config.yaml                       |   8 +
+ README.md                                     |  72 ++++++
+ docs/INTEGRATION_GUIDE.md                     |  44 ++--
+ docs/README.md                                |  47 ++--
+ logs/decision_metrics.json                    |  19 ++
+ logs/events.jsonl                             |  43 ++++
+ logs/observability/summary.json               |  28 +++
+ logs/observability/summary.md                 |  13 +
+ memory-bank/README.md                         | 160 +------------
+ memory-bank/artifacts_index.json              | 224 ++++++++++++++++++
+ memory-bank/plan/Action_Plan.md               |   1 +
+ memory-bank/plan/Final_Implementation_Plan.md |   4 +
+ memory-bank/plan/Summary_Report.md            |   2 +
+ memory-bank/plan/Validation_Report.md         |   5 +
+ memory-bank/plan/acceptance_criteria.json     |   3 +
+ memory-bank/plan/client_brief.md              |  60 +----
+ memory-bank/plan/product_backlog.yaml         |   1 +
+ memory-bank/plan/task_breakdown.yaml          |   1 +
+ memory-bank/plan/technical_plan.md            |   1 +
+ memory-bank/upwork/offer_status.json          |   6 +
+ rule_attach_log.json                          |  52 ++++
+ schema/README.md                              |  13 +
+ schema/acceptance_criteria.schema.json        |  26 ++
+ ...mplementation_plan.frontmatter.schema.json |  28 +++
+ .../validation_report.frontmatter.schema.json |  25 ++
+ tests/README.md                               |  17 ++
+ ...test_pipeline.cpython-313-pytest-8.4.1.pyc | Bin 0 -> 8889 bytes
+ tests/e2e/test_pipeline.py                    |  60 +++++
+ ...ing_validator.cpython-313-pytest-8.4.1.pyc | Bin 0 -> 4426 bytes
+ tests/smoke/test_scoring_validator.py         |  27 +++
+ tools/README.md                               |  39 +++
+ .../__pycache__/hash_index.cpython-313.pyc    | Bin 0 -> 2720 bytes
+ tools/artifacts/hash_index.py                 |  41 ++++
+ tools/audit/diff_evidence.py                  |  33 +++
+ tools/decision_scoring/README.md              |  14 ++
+ .../advanced_score.cpython-313.pyc            | Bin 0 -> 8322 bytes
+ .../__pycache__/metrics.cpython-313.pyc       | Bin 0 -> 2313 bytes
+ tools/decision_scoring/advanced_score.py      | 112 +++++++++
+ tools/decision_scoring/calibrate.py           |  76 ++++++
+ tools/decision_scoring/calibration.json       |   4 +
+ .../examples/trigger_candidates.json          |  17 ++
+ tools/decision_scoring/metrics.py             |  36 +++
+ tools/decision_scoring/thresholds.json        |   5 +
+ tools/observability/aggregate.py              |  61 +++++
+ tools/orchestrator/README.md                  |  15 ++
+ .../__pycache__/state.cpython-313.pyc         | Bin 0 -> 2989 bytes
+ tools/orchestrator/state.py                   |  58 +++++
+ tools/orchestrator/trigger_next.py            |  82 +++++++
+ tools/prestart/ensure_readiness.py            |  28 +++
+ tools/prestart/prestart_composite.py          |  22 ++
+ tools/quickstart.py                           |  27 +++
+ tools/rule_attach/detect.py                   | 146 ++++++++++++
+ tools/rules/validate.py                       |  37 +++
+ tools/run_role.py                             | 104 ++++++++
+ tools/runner/README.md                        |  16 ++
+ .../__pycache__/io_utils.cpython-313.pyc      | Bin 0 -> 3618 bytes
+ tools/runner/io_utils.py                      |  44 ++++
+ .../__pycache__/auditor.cpython-313.pyc       | Bin 0 -> 658 bytes
+ .../__pycache__/planning.cpython-313.pyc      | Bin 0 -> 1009 bytes
+ .../principal_engineer.cpython-313.pyc        | Bin 0 -> 1433 bytes
+ .../__pycache__/product_owner.cpython-313.pyc | Bin 0 -> 887 bytes
+ tools/runner/plugins/auditor.py               |   8 +
+ tools/runner/plugins/planning.py              |  12 +
+ tools/runner/plugins/principal_engineer.py    |  27 +++
+ tools/runner/plugins/product_owner.py         |  11 +
+ tools/schema/validate_artifacts.py            |  54 +++++
+ tools/upwork/adapter.py                       |  37 +++
+ workflow_state.json                           |  41 ++++
+ 79 files changed, 2386 insertions(+), 269 deletions(-)
+ create mode 100644 .cursor/rules/README.md
+ create mode 100644 .cursor/rules/roles/auditor_ai.mdc
+ create mode 100644 .cursor/rules/roles/codegen_ai.mdc
+ create mode 100644 .cursor/rules/roles/documentation_ai.mdc
+ create mode 100644 .cursor/rules/roles/planning_ai.mdc
+ create mode 100644 .cursor/rules/roles/principal_engineer_ai.mdc
+ create mode 100644 .cursor/rules/roles/product_owner_ai.mdc
+ create mode 100644 .cursor/rules/roles/qa_ai.mdc
+ create mode 100644 .cursor/rules/roles/security_ai.mdc
+ create mode 100644 .github/workflows/governance.yml
+ create mode 100644 .pre-commit-config.yaml
+ create mode 100644 logs/decision_metrics.json
+ create mode 100644 logs/events.jsonl
+ create mode 100644 logs/observability/summary.json
+ create mode 100644 logs/observability/summary.md
+ create mode 100644 memory-bank/artifacts_index.json
+ create mode 100644 memory-bank/plan/Action_Plan.md
+ create mode 100644 memory-bank/plan/Final_Implementation_Plan.md
+ create mode 100644 memory-bank/plan/Summary_Report.md
+ create mode 100644 memory-bank/plan/Validation_Report.md
+ create mode 100644 memory-bank/plan/acceptance_criteria.json
+ create mode 100644 memory-bank/plan/product_backlog.yaml
+ create mode 100644 memory-bank/plan/task_breakdown.yaml
+ create mode 100644 memory-bank/plan/technical_plan.md
+ create mode 100644 rule_attach_log.json
+ create mode 100644 schema/README.md
+ create mode 100644 schema/acceptance_criteria.schema.json
+ create mode 100644 schema/final_implementation_plan.frontmatter.schema.json
+ create mode 100644 schema/validation_report.frontmatter.schema.json
+ create mode 100644 tests/README.md
+ create mode 100644 tests/e2e/__pycache__/test_pipeline.cpython-313-pytest-8.4.1.pyc
+ create mode 100644 tests/e2e/test_pipeline.py
+ create mode 100644 tests/smoke/__pycache__/test_scoring_validator.cpython-313-pytest-8.4.1.pyc
+ create mode 100644 tests/smoke/test_scoring_validator.py
+ create mode 100644 tools/README.md
+ create mode 100644 tools/artifacts/__pycache__/hash_index.cpython-313.pyc
+ create mode 100644 tools/artifacts/hash_index.py
+ create mode 100644 tools/audit/diff_evidence.py
+ create mode 100644 tools/decision_scoring/README.md
+ create mode 100644 tools/decision_scoring/__pycache__/advanced_score.cpython-313.pyc
+ create mode 100644 tools/decision_scoring/__pycache__/metrics.cpython-313.pyc
+ create mode 100644 tools/decision_scoring/advanced_score.py
+ create mode 100644 tools/decision_scoring/calibrate.py
+ create mode 100644 tools/decision_scoring/calibration.json
+ create mode 100644 tools/decision_scoring/examples/trigger_candidates.json
+ create mode 100644 tools/decision_scoring/metrics.py
+ create mode 100644 tools/decision_scoring/thresholds.json
+ create mode 100644 tools/observability/aggregate.py
+ create mode 100644 tools/orchestrator/README.md
+ create mode 100644 tools/orchestrator/__pycache__/state.cpython-313.pyc
+ create mode 100644 tools/orchestrator/state.py
+ create mode 100644 tools/orchestrator/trigger_next.py
+ create mode 100644 tools/prestart/ensure_readiness.py
+ create mode 100644 tools/prestart/prestart_composite.py
+ create mode 100644 tools/quickstart.py
+ create mode 100644 tools/rule_attach/detect.py
+ create mode 100644 tools/rules/validate.py
+ create mode 100755 tools/run_role.py
+ create mode 100644 tools/runner/README.md
+ create mode 100644 tools/runner/__pycache__/io_utils.cpython-313.pyc
+ create mode 100644 tools/runner/io_utils.py
+ create mode 100644 tools/runner/plugins/__pycache__/auditor.cpython-313.pyc
+ create mode 100644 tools/runner/plugins/__pycache__/planning.cpython-313.pyc
+ create mode 100644 tools/runner/plugins/__pycache__/principal_engineer.cpython-313.pyc
+ create mode 100644 tools/runner/plugins/__pycache__/product_owner.cpython-313.pyc
+ create mode 100644 tools/runner/plugins/auditor.py
+ create mode 100644 tools/runner/plugins/planning.py
+ create mode 100644 tools/runner/plugins/principal_engineer.py
+ create mode 100644 tools/runner/plugins/product_owner.py
+ create mode 100644 tools/schema/validate_artifacts.py
+ create mode 100644 tools/upwork/adapter.py
+ create mode 100644 workflow_state.json
+
+diff --git a/.cursor/commands/registry.yaml b/.cursor/commands/registry.yaml
+index 967f0b5..b76dd33 100644
+--- a/.cursor/commands/registry.yaml
++++ b/.cursor/commands/registry.yaml
+@@ -1,43 +1,128 @@
+-cat > .cursor/commands/registry.yaml <<'YAML'
+ version: 1
+ defaults:
+   one_step_policy: true
+   min_confidence: 0.9
+ 
+ commands:
+-  - id: planning → audit
++  - id: preflight
++    trigger: run_readiness
++    run:
++      shell: ["python3", "tools/run_role.py", "readiness", "--check"]
++    contexts:
++      must_exist_any_of:
++        - "memory-bank/business/client_score.json"
++        - "memory-bank/business/capacity_report.md"
++        - "memory-bank/plan/proposal.md"
++    ui:
++      label: "Run Pre-Start Checks"
++      reason: "Gate planning based on business readiness"
++
++  - id: upwork_offer_status
++    trigger: set_offer_status
++    run:
++      shell: ["python3", "tools/upwork/adapter.py", "--contract", "fixed", "--escrow", "true", "--diary", "true", "--cap", "10"]
++    emits:
++      creates: ["memory-bank/upwork/offer_status.json"]
++    ui:
++      label: "Set Upwork Offer Status"
++      reason: "Populate offer_status.json for readiness gate"
++
++  - id: prestart_ensure_readiness
++    trigger: auto_create_missing_readiness
++    run:
++      shell: ["python3", "tools/prestart/ensure_readiness.py"]
++    emits:
++      creates: ["memory-bank/upwork/offer_status.json"]
++    ui:
++      label: "Ensure Prestart Readiness Artifacts"
++      reason: "Auto-create missing readiness files with safe defaults"
++
++  - id: prestart_composite
++    trigger: prestart_all
++    run:
++      shell: ["python3", "tools/prestart/prestart_composite.py"]
++    emits:
++      creates: ["memory-bank/upwork/offer_status.json"]
++    ui:
++      label: "Run Prestart Composite"
++      reason: "Ensure readiness + print preflight status"
++
++  - id: backlog_from_client_brief
++    role_from: PRODUCT_OWNER_AI
++    trigger: run_product_owner
++    run:
++      shell: ["python3", "tools/run_role.py", "product_owner_ai"]
++    contexts:
++      must_exist: ["memory-bank/plan/client_brief.md"]
++    emits:
++      creates:
++        - "memory-bank/plan/product_backlog.yaml"
++        - "memory-bank/plan/acceptance_criteria.json"
++      sets_state: "BACKLOG_READY"
++    ui:
++      label: "Generate Backlog & Acceptance"
++      reason: "From client_brief.md"
++
++  - id: planning_from_backlog
+     role_from: PLANNING_AI
++    trigger: run_planning
++    run:
++      shell: ["python3", "tools/run_role.py", "planning_ai"]
++    contexts:
++      must_exist:
++        - "memory-bank/plan/product_backlog.yaml"
++        - "memory-bank/plan/acceptance_criteria.json"
++        - "memory-bank/upwork/offer_status.json"
++    emits:
++      creates:
++        - "memory-bank/plan/Action_Plan.md"
++        - "memory-bank/plan/technical_plan.md"
++        - "memory-bank/plan/task_breakdown.yaml"
++      sets_state: "PLANNING_DONE"
++    ui:
++      label: "Create Plans"
++      reason: "Action/technical/task breakdown"
++
++  - id: audit_action_plan
++    role_from: AUDITOR_AI
+     trigger: run_auditor
+     run:
+-      shell: ["python3","tools/run_role.py","auditor_ai","--inputs","memory-bank/plan/Action_Plan.md"]
+-    requires:
+-      states_any_of: ["PLANNING_DONE"]
+-      completed_steps_all_of: ["planning_gate_passed"]
+-      gates_passed_all_of: ["PLANNING_GATE"]
++      shell: ["python3", "tools/run_role.py", "auditor_ai"]
+     contexts:
+       must_exist: ["memory-bank/plan/Action_Plan.md"]
+     emits:
+-      sets_state: "AUDIT_IN_PROGRESS"
+-      add_completed_step: "audit_started"
++      creates: ["memory-bank/plan/Summary_Report.md"]
++      sets_state: "AUDIT_DONE"
+     ui:
+-      label: "Validate plan (Auditor)"
+-      reason: "Planning complete + gate passed; validate with citations."
++      label: "Audit Action Plan"
++      reason: "Verify plan vs codebase with citations"
+ 
+-  - id: audit→verify
+-    role_from: AUDITOR_AI
+-    trigger: run_principal_engineer
++  - id: peer_review_validation
++    role_from: PRINCIPAL_ENGINEER_AI
++    trigger: run_principal_engineer_peer_review
+     run:
+-      shell: ["python3","tools/run_role.py","principal_engineer_ai","--inputs","memory-bank/plan/Summary_Report.md"]
+-    requires:
+-      states_any_of: ["AUDIT_DONE"]
+-      completed_steps_all_of: ["audit_gate_passed"]
+-      gates_passed_all_of: ["AUDIT_GATE"]
++      shell: ["python3", "tools/run_role.py", "principal_engineer_ai", "--mode", "PEER_REVIEW"]
+     contexts:
+       must_exist: ["memory-bank/plan/Summary_Report.md"]
+     emits:
+-      sets_state: "VERIFICATION_IN_PROGRESS"
+-      add_completed_step: "verification_started"
++      creates: ["memory-bank/plan/Validation_Report.md"]
++      sets_state: "VALIDATION_DONE"
++    ui:
++      label: "Peer Review (Validation)"
++      reason: "Confirm/Challenge audit findings"
++
++  - id: synthesize_final_plan
++    role_from: PRINCIPAL_ENGINEER_AI
++    trigger: run_principal_engineer_synthesis
++    run:
++      shell: ["python3", "tools/run_role.py", "principal_engineer_ai", "--mode", "SYNTHESIS"]
++    contexts:
++      must_exist:
++        - "memory-bank/plan/Summary_Report.md"
++        - "memory-bank/plan/Validation_Report.md"
++    emits:
++      creates: ["memory-bank/plan/Final_Implementation_Plan.md"]
++      sets_state: "SYNTHESIS_DONE"
+     ui:
+-      label: "Verify audit (Principal Engineer)"
+-      reason: "Audit gate passed; decide CONFIRM/CHALLENGE."
+-YAML
++      label: "Synthesize Final Plan"
++      reason: "Consolidate into executable roadmap"
+diff --git a/.cursor/rules/README.md b/.cursor/rules/README.md
+new file mode 100644
+index 0000000..f65bcd5
+--- /dev/null
++++ b/.cursor/rules/README.md
+@@ -0,0 +1,16 @@
++# .cursor/rules/
++
++- Purpose: Rule system for orchestrators, roles, domains, kits, and templates.
++
++## Layout
++- roles/: machine-consumable role rules (no non-empty `globs`, not `alwaysApply: true`)
++- orchestrator/: high-level coordination docs
++- domains/: technology stacks and utilities
++- kits/: prestart and upwork kits
++- indexes/, advanced/, templates/: supporting rules
++
++## Governance
++- Validate role policies:
++```bash
++python3 tools/rules/validate.py
++```
+\ No newline at end of file
+diff --git a/.cursor/rules/roles/auditor_ai.mdc b/.cursor/rules/roles/auditor_ai.mdc
+new file mode 100644
+index 0000000..499659a
+--- /dev/null
++++ b/.cursor/rules/roles/auditor_ai.mdc
+@@ -0,0 +1,63 @@
++---
++kind: role
++id: auditor_ai
++description: "Auditor role (machine-consumable). See roles/auditor_ai.md for full doc."
++globs: []
++alwaysApply: false
++version: 1
++---
++
++# Auditor AI — Action Plan vs Codebase Verification
++
++<rule>
++name: audit_inputs_guard
++description: "Block audit if Action_Plan.md missing; guide user to planning outputs."
++actions:
++  - type: reject
++    when: not(exists("memory-bank/plan/Action_Plan.md"))
++    message: |
++      ⛔ Missing required input: memory-bank/plan/Action_Plan.md
++      Tip: Run planning to produce Action Plan before audit.
++  - type: set_state
++    when: exists("memory-bank/plan/Action_Plan.md")
++    key: "phase"
++    value: "AUDIT"
++</rule>
++
++<rule>
++name: audit_action_plan_against_codebase
++description: |
++  Compare Action_Plan.md assertions vs actual repository evidence.
++  Identify conflicts (risks) and alignments (correct observations). Produce Summary_Report.md.
++actions:
++  - type: suggest
++    message: |
++      ▶ Perform audit:
++        1) Parse goals/scope from memory-bank/plan/Action_Plan.md
++        2) Cross-check against codebase (files, configs, scripts) with citations
++        3) Classify findings: RISK|ALIGNMENT with references
++        4) Emit memory-bank/plan/Summary_Report.md (non-empty)
++  - type: reject
++    when: not(exists("memory-bank/plan/Summary_Report.md"))
++    message: "⛔ Summary_Report.md not found. Emit report with cited evidence."
++  - type: set_state
++    when: exists("memory-bank/plan/Summary_Report.md")
++    key: "phase"
++    value: "AUDIT_DONE"
++</rule>
++
++<rule>
++name: audit_exit_handoff
++description: "After Summary_Report.md exists, instruct to open a new session for Principal Engineer validation."
++filters:
++  - type: equals
++    key: "phase"
++    value: "AUDIT_DONE"
++actions:
++  - type: suggest
++    message: |
++      ✅ Audit complete. Open a NEW SESSION and start Principal Engineer validation
++      with inputs: Action_Plan.md + Summary_Report.md.
++</rule>
++
++
+diff --git a/.cursor/rules/roles/codegen_ai.mdc b/.cursor/rules/roles/codegen_ai.mdc
+new file mode 100644
+index 0000000..d9a2e9a
+--- /dev/null
++++ b/.cursor/rules/roles/codegen_ai.mdc
+@@ -0,0 +1,9 @@
++---
++kind: role
++id: codegen_ai
++description: "Code generation role (machine-consumable). See roles/codegen_ai.md for full doc."
++globs: []
++alwaysApply: false
++version: 1
++---
++
+diff --git a/.cursor/rules/roles/documentation_ai.mdc b/.cursor/rules/roles/documentation_ai.mdc
+new file mode 100644
+index 0000000..7c9b238
+--- /dev/null
++++ b/.cursor/rules/roles/documentation_ai.mdc
+@@ -0,0 +1,9 @@
++---
++kind: role
++id: documentation_ai
++description: "Documentation role (machine-consumable). See roles/documentation_ai.md for full doc."
++globs: []
++alwaysApply: false
++version: 1
++---
++
+diff --git a/.cursor/rules/roles/planning_ai.mdc b/.cursor/rules/roles/planning_ai.mdc
+new file mode 100644
+index 0000000..7c625fd
+--- /dev/null
++++ b/.cursor/rules/roles/planning_ai.mdc
+@@ -0,0 +1,60 @@
++---
++kind: role
++id: planning_ai
++description: "Planning role (machine-consumable). See roles/planning_ai.md for full doc."
++globs: []
++alwaysApply: false
++version: 1
++---
++
++# Planning AI — Backlog → Action Plan / Technical Plan / Task Breakdown
++
++<rule>
++name: planning_inputs_guard
++description: "Require product backlog and acceptance criteria to start planning."
++actions:
++  - type: reject
++    when: or([
++      not(exists("memory-bank/plan/product_backlog.yaml")),
++      not(exists("memory-bank/plan/acceptance_criteria.json")),
++      not(exists("memory-bank/upwork/offer_status.json"))
++    ])
++    message: "⛔ Planning requires backlog + acceptance criteria + upwork/offer_status.json."
++  - type: set_state
++    when: and([
++      exists("memory-bank/plan/product_backlog.yaml"),
++      exists("memory-bank/plan/acceptance_criteria.json"),
++      exists("memory-bank/upwork/offer_status.json")
++    ])
++    key: "phase"
++    value: "PLANNING"
++</rule>
++
++<rule>
++name: planning_outputs
++description: "Produce core planning artifacts for downstream audit and validation."
++actions:
++  - type: suggest
++    message: |
++      ▶ Produce the following under memory-bank/plan/:
++        - Action_Plan.md
++        - technical_plan.md
++        - task_breakdown.yaml
++  - type: reject
++    when: or([
++      not(exists("memory-bank/plan/Action_Plan.md")),
++      not(exists("memory-bank/plan/technical_plan.md")),
++      not(exists("memory-bank/plan/task_breakdown.yaml"))
++    ])
++    message: "⛔ One or more planning artifacts missing."
++  - type: set_state
++    when: and([
++      exists("memory-bank/plan/Action_Plan.md"),
++      exists("memory-bank/plan/technical_plan.md"),
++      exists("memory-bank/plan/task_breakdown.yaml")
++    ])
++    key: "phase"
++    value: "PLANNING_DONE"
++</rule>
++
++
+diff --git a/.cursor/rules/roles/principal_engineer_ai.mdc b/.cursor/rules/roles/principal_engineer_ai.mdc
+new file mode 100644
+index 0000000..b315ec8
+--- /dev/null
++++ b/.cursor/rules/roles/principal_engineer_ai.mdc
+@@ -0,0 +1,84 @@
++---
++kind: role
++id: principal_engineer_ai
++description: "Principal Engineer role (machine-consumable). See roles/principal_engineer_ai.md for full doc."
++globs: []
++alwaysApply: false
++version: 1
++---
++
++# Principal Engineer AI — Two Modes: Peer Review & Synthesis
++
++<rule>
++name: inputs_guard
++description: "Require Summary_Report.md for peer review; require Validation_Report.md for synthesis."
++actions:
++  - type: reject
++    when: not(exists("memory-bank/plan/Summary_Report.md"))
++    message: "⛔ Missing Summary_Report.md. Run auditor_ai first in a previous session."
++  - type: reject
++    when: not(exists("memory-bank/plan/Action_Plan.md"))
++    message: "⛔ Missing Action_Plan.md. Ensure planning artifacts are present."
++</rule>
++
++<rule>
++name: mode_peer_review
++description: |
++  Mode 1 — Peer Review & Validation
++  Inputs: Action_Plan.md + Summary_Report.md
++  Output: Validation_Report.md (CONFIRM/CHALLENGE each audit finding with rationale and citations)
++filters:
++  - type: equals
++    key: "mode"
++    value: "PEER_REVIEW"
++actions:
++  - type: suggest
++    message: |
++      ▶ PEER REVIEW steps:
++        1) Verify audit evidence paths and classifications
++        2) Mark each finding CONFIRM or CHALLENGE with rationale
++        3) Emit memory-bank/plan/Validation_Report.md
++  - type: reject
++    when: not(exists("memory-bank/plan/Validation_Report.md"))
++    message: "⛔ Validation_Report.md not found. Please emit before proceed."
++  - type: set_state
++    when: exists("memory-bank/plan/Validation_Report.md")
++    key: "phase"
++    value: "VALIDATION_DONE"
++</rule>
++
++<rule>
++name: mode_synthesis
++description: |
++  Mode 2 — Synthesis
++  Inputs: Action_Plan.md + Summary_Report.md + Validation_Report.md
++  Output: Final_Implementation_Plan.md (sequenced tasks, prerequisites, rollback/contingency, traceability)
++filters:
++  - type: equals
++    key: "mode"
++    value: "SYNTHESIS"
++actions:
++  - type: reject
++    when: or([
++      not(exists("memory-bank/plan/Action_Plan.md")),
++      not(exists("memory-bank/plan/Summary_Report.md")),
++      not(exists("memory-bank/plan/Validation_Report.md"))
++    ])
++    message: "⛔ Missing peer review artifacts. Complete PEER_REVIEW first."
++  - type: suggest
++    message: |
++      ▶ SYNTHESIS steps:
++        1) Consolidate plan+risk+validation into executable tasks
++        2) Add dependencies, owners, estimates, and acceptance hooks
++        3) Provide rollback/contingency per high-risk item
++        4) Emit memory-bank/plan/Final_Implementation_Plan.md
++  - type: reject
++    when: not(exists("memory-bank/plan/Final_Implementation_Plan.md"))
++    message: "⛔ Final_Implementation_Plan.md not found."
++  - type: set_state
++    when: exists("memory-bank/plan/Final_Implementation_Plan.md")
++    key: "phase"
++    value: "SYNTHESIS_DONE"
++</rule>
++
++
+diff --git a/.cursor/rules/roles/product_owner_ai.mdc b/.cursor/rules/roles/product_owner_ai.mdc
+new file mode 100644
+index 0000000..a4f9ca3
+--- /dev/null
++++ b/.cursor/rules/roles/product_owner_ai.mdc
+@@ -0,0 +1,39 @@
++---
++kind: role
++id: product_owner_ai
++description: "Product Owner role (machine-consumable). See roles/product_owner_ai.md for full doc."
++globs: []
++alwaysApply: false
++version: 1
++---
++
++# Product Owner AI — Client Brief → Backlog & Acceptance
++
++<rule>
++name: po_inputs_guard
++description: "Require client_brief.md; produce backlog and acceptance criteria."
++actions:
++  - type: reject
++    when: not(exists("memory-bank/plan/client_brief.md"))
++    message: "⛔ Missing client_brief.md under memory-bank/plan/."
++  - type: suggest
++    message: |
++      ▶ From client_brief.md, produce:
++        - memory-bank/plan/product_backlog.yaml
++        - memory-bank/plan/acceptance_criteria.json
++  - type: reject
++    when: or([
++      not(exists("memory-bank/plan/product_backlog.yaml")),
++      not(exists("memory-bank/plan/acceptance_criteria.json"))
++    ])
++    message: "⛔ Backlog or acceptance criteria missing."
++  - type: set_state
++    when: and([
++      exists("memory-bank/plan/product_backlog.yaml"),
++      exists("memory-bank/plan/acceptance_criteria.json")
++    ])
++    key: "phase"
++    value: "BACKLOG_READY"
++</rule>
++
++
+diff --git a/.cursor/rules/roles/qa_ai.mdc b/.cursor/rules/roles/qa_ai.mdc
+new file mode 100644
+index 0000000..be47a78
+--- /dev/null
++++ b/.cursor/rules/roles/qa_ai.mdc
+@@ -0,0 +1,9 @@
++---
++kind: role
++id: qa_ai
++description: "QA role (machine-consumable). See roles/qa_ai.md for full doc."
++globs: []
++alwaysApply: false
++version: 1
++---
++
+diff --git a/.cursor/rules/roles/security_ai.mdc b/.cursor/rules/roles/security_ai.mdc
+new file mode 100644
+index 0000000..7985642
+--- /dev/null
++++ b/.cursor/rules/roles/security_ai.mdc
+@@ -0,0 +1,9 @@
++---
++kind: role
++id: security_ai
++description: "Security role (machine-consumable). See roles/security_ai.md for full doc."
++globs: []
++alwaysApply: false
++version: 1
++---
++
+diff --git a/.github/workflows/governance.yml b/.github/workflows/governance.yml
+new file mode 100644
+index 0000000..6ec488e
+--- /dev/null
++++ b/.github/workflows/governance.yml
+@@ -0,0 +1,27 @@
++name: Governance
++
++on:
++  pull_request:
++    branches: [ "**" ]
++
++jobs:
++  validate-rules:
++    runs-on: ubuntu-latest
++    steps:
++      - name: Checkout
++        uses: actions/checkout@v4
++
++      - name: Set up Python
++        uses: actions/setup-python@v5
++        with:
++          python-version: "3.x"
++
++      - name: Run rules validator
++        run: python3 tools/rules/validate.py
++
++      - name: Run pre-commit hooks (rules validation)
++        run: |
++          python3 -m pip install --upgrade pip
++          pip install pre-commit
++          pre-commit run --all-files --show-diff-on-failure
++
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+new file mode 100644
+index 0000000..9a50ceb
+--- /dev/null
++++ b/.pre-commit-config.yaml
+@@ -0,0 +1,8 @@
++repos:
++  - repo: local
++    hooks:
++      - id: validate-rules
++        name: validate-rules
++        entry: python3 tools/rules/validate.py
++        language: system
++        pass_filenames: false
+diff --git a/README.md b/README.md
+index f9a206e..f6283c5 100644
+--- a/README.md
++++ b/README.md
+@@ -36,6 +36,15 @@ AdvancedRules is an intelligent framework that orchestrates specialized AI perso
+ - **Reports**: Security findings, test plans, audit reports
+ - **Logs**: Handoff logs, gate results, execution tracking
+ 
++### 6. Operational Stack (New)
++- **Runner + Plugins**: `tools/run_role.py`, `tools/runner/plugins/*` (per-role execution, event logging)
++- **Decision Scoring v3**: `tools/decision_scoring/advanced_score.py` (calibration, exploration, shadow) + metrics
++- **Trigger**: `tools/orchestrator/trigger_next.py` (scorer → registry)
++- **State Engine**: `tools/orchestrator/state.py` (idempotent transitions; `workflow_state.json`)
++- **Provenance**: `tools/artifacts/hash_index.py` → `memory-bank/artifacts_index.json`
++- **Attach Log**: `tools/rule_attach/detect.py` → `rule_attach_log.json`
++- **Observability**: `tools/observability/aggregate.py` → `logs/observability/summary.{json,md}`
++
+ ### 5. Documentation (`docs/`)
+ - **README**: Comprehensive framework documentation
+ - **ADRs**: Architecture Decision Records system
+@@ -56,6 +65,69 @@ AdvancedRules/
+ └── package.json # Node.js project configuration
+ 
+ 
++## ⚡ Operational Quickstart (Solo Freelancer Pipeline)
++
++### 1) Prestart / Readiness
++```bash
++python3 tools/prestart/prestart_composite.py
++```
++Ensures `memory-bank/upwork/offer_status.json` exists and prints preflight status.
++
++### 2) Minimal happy path
++```bash
++python3 tools/quickstart.py
++```
++Runs: readiness → product owner → planning → audit → PE peer review → PE synthesis.
++
++### 3) Manual steps (if preferred)
++```bash
++# Prepare client brief
++mkdir -p memory-bank/plan
++printf "Client brief" > memory-bank/plan/client_brief.md
++
++# Roles
++python3 tools/run_role.py product_owner_ai
++python3 tools/run_role.py planning_ai
++python3 tools/run_role.py auditor_ai
++python3 tools/run_role.py principal_engineer_ai --mode PEER_REVIEW
++python3 tools/run_role.py principal_engineer_ai --mode SYNTHESIS
++```
++
++### 4) Decision Scoring v3 and Trigger
++```bash
++# Score candidates (prints decision, trace, optional shadow)
++python3 tools/decision_scoring/advanced_score.py
++
++# Trigger next step from scorer result (dry-run prints mapped command)
++python3 tools/orchestrator/trigger_next.py --dry-run --candidates tools/decision_scoring/examples/trigger_candidates.json
++```
++
++### 5) Govern, Validate, Observe
++```bash
++# Governance policy checks
++python3 tools/rules/validate.py
++
++# Artifact schema checks
++python3 tools/schema/validate_artifacts.py
++
++# Observability summary
++python3 tools/observability/aggregate.py && sed -n '1,120p' logs/observability/summary.md
++```
++
++### 6) Provenance and Rule Attach
++```bash
++# Provenance index (auto-written on artifact emits)
++cat memory-bank/artifacts_index.json
++
++# Deterministic attach log
++python3 tools/rule_attach/detect.py --dry-run
++python3 tools/rule_attach/detect.py && head -n 1 rule_attach_log.json
++```
++
++## 🎯 What’s Included vs Deferred
++- Included: governance validator, role rules (guards), registry (tightened), runner plugins, readiness, decision scoring v3, trigger, state engine, provenance, attach log, observability, schemas, quickstart, tests.
++- Deferred (by choice): CI tests on PRs (only validator runs in CI until you port to your main repo).
++
+ ## 🔧 Rules File Format
+ 
+ ### YAML Frontmatter Structure
+diff --git a/docs/INTEGRATION_GUIDE.md b/docs/INTEGRATION_GUIDE.md
+index 983967b..052671d 100644
+--- a/docs/INTEGRATION_GUIDE.md
++++ b/docs/INTEGRATION_GUIDE.md
+@@ -6,10 +6,13 @@ This guide documents the hand-off implementation of the Decision Scoring + Safe
+ ## Architecture
+ 
+ ### Core Components
+-- **Decision Scorer** (`tools/decision_scoring/score.py`): Evaluates candidates using weighted metrics
++- **Decision Scorer (v3)** (`tools/decision_scoring/advanced_score.py`): calibrated, exploration+shadow
+ - **Safety Runner** (`tools/decision_scoring/execute_envelope.sh`): Executes actions in controlled environment
+ - **Envelope Builder**: Creates execution envelopes based on scoring decisions
+-- **Logging System**: Maintains decision logs in `logs/decisions/`
++- **Logging System**: Maintains decision logs in `logs/decisions/`; metrics in `logs/decision_metrics.json`
++- **Provenance** (`tools/artifacts/hash_index.py`): content hashes in `memory-bank/artifacts_index.json`
++- **Rule Attach Log** (`tools/rule_attach/detect.py`): append-only `rule_attach_log.json`
++- **State Engine** (`tools/orchestrator/state.py`): `workflow_state.json` with idempotent transitions
+ 
+ ### Decision Flow
+ ```mermaid
+@@ -52,11 +55,16 @@ Create `decision_candidates.json` with the following schema:
+ }
+ ```
+ 
+-### 2. Execute Decision Scoring
++### 2. Execute Decision Scoring (v3)
+ ```bash
+-mkdir -p logs/decisions
+-TS="$(date +%Y%m%d_%H%M%S)"
+-python3 tools/decision_scoring/score.py tools/decision_scoring/weights.json < decision_candidates.json | tee logs/decisions/$TS.json
++python3 tools/decision_scoring/advanced_score.py
++# or programmatically
++python3 - << 'PY'
++from tools.decision_scoring.advanced_score import score_candidates
++c=[{"id":"plan","action_type":"COMMAND_TRIGGER","risk":"LOW","scores":{"intent":0.9,"state":0.7,"evidence":0.6,"recency":0.4,"pref":0.5,"cost":0.2,"risk_penalty":0.1}},
++   {"id":"ask","action_type":"NATURAL_STEP","risk":"LOW","scores":{"intent":0.78,"state":0.7,"evidence":0.6,"recency":0.5,"pref":0.4,"cost":0.0,"risk_penalty":0.0}}]
++print(score_candidates(c, explore=True, shadow=True))
++PY
+ ```
+ 
+ ### 3. Build Execution Envelope
+@@ -78,19 +86,16 @@ tools/decision_scoring/execute_envelope.sh action_envelope.json
+ - **Recency**: Temporal relevance of information
+ - **Preference**: User/system preferences and priorities
+ 
+-### Weights Configuration
++### Weights/Thresholds/Calibration
+ ```json
+-{
+-  "w_intent": 0.30,
+-  "w_state": 0.25,
+-  "w_evidence": 0.20,
+-  "w_recency": 0.15,
+-  "w_pref": 0.10,
+-  "lambda_command_bias": 0.03,
+-  "epsilon": 0.05,
+-  "t_high": 0.75,
+-  "t_mid": 0.55
+-}
++// tools/decision_scoring/weights.json
++{"intent":0.30,"state":0.25,"evidence":0.20,"recency":0.15,"pref":0.10,"cost":-0.10,"risk_penalty":-0.20}
++
++// tools/decision_scoring/thresholds.json
++{"conf_high":0.75,"conf_mid":0.55,"eps_gap":0.05}
++
++// tools/decision_scoring/calibration.json
++{"alpha":1.0,"beta":0.0}
+ ```
+ 
+ ### Decision Gates
+@@ -181,5 +186,8 @@ ls -la memory-bank/business/
+ 
+ **Status**: ✅ IMPLEMENTED AND VALIDATED
+ **Decision Log**: `logs/decisions/20250828_142955.json`
++**Metrics**: `logs/decision_metrics.json`
++**Provenance**: `memory-bank/artifacts_index.json`
++**Rule Attach**: `rule_attach_log.json`
+ **Safety**: ✅ DRY_RUN execution confirmed
+ **Documentation**: Complete integration guide created
+diff --git a/docs/README.md b/docs/README.md
+index 8bf3da5..63c8379 100644
+--- a/docs/README.md
++++ b/docs/README.md
+@@ -32,7 +32,7 @@ AdvancedRules is an intelligent framework that orchestrates specialized AI perso
+ - **Specialized**: AI/ML, Blockchain, DevOps
+ - **Utilities**: TypeScript, Database, Git, Clean Code
+ 
+-## 🚀 Getting Started
++## 🚀 Getting Started (Operational Quickstart)
+ 
+ ### Prerequisites
+ - Git
+@@ -40,18 +40,22 @@ AdvancedRules is an intelligent framework that orchestrates specialized AI perso
+ - Python 3.8+ (for backend development)
+ - Docker (for containerized development)
+ 
+-### Installation
++### Run the solo-freelancer pipeline
+ ```bash
+-# Clone the repository
+-git clone <repository-url>
+-cd AdvancedRules
+-
+-# Install dependencies
+-npm install
+-pip install -r requirements.txt
+-
+-# Initialize the framework
+-npm run init
++# Prestart / Upwork readiness
++python3 tools/prestart/prestart_composite.py
++
++# One-command happy path
++python3 tools/quickstart.py
++
++# Or manual steps
++mkdir -p memory-bank/plan
++printf "Client brief" > memory-bank/plan/client_brief.md
++python3 tools/run_role.py product_owner_ai
++python3 tools/run_role.py planning_ai
++python3 tools/run_role.py auditor_ai
++python3 tools/run_role.py principal_engineer_ai --mode PEER_REVIEW
++python3 tools/run_role.py principal_engineer_ai --mode SYNTHESIS
+ ```
+ 
+ ### Configuration
+@@ -70,13 +74,16 @@ npm run init
+ 5. **Quality Assurance**: QA AI and Security AI validate code quality
+ 6. **Audit & Deploy**: Auditor AI ensures compliance before deployment
+ 
+-### Advanced Features
+-- **Multi-Persona Coordination**: Execute complex workflows across multiple AI personas
+-- **Quality Gates**: Automated validation checkpoints throughout development
+-- **Memory Persistence**: Maintain context and knowledge across sessions
+-- **Adaptive Execution**: Dynamic persona activation based on task complexity
++### Decision Scoring v3 + Trigger
++```bash
++# Score
++python3 tools/decision_scoring/advanced_score.py
++
++# Trigger (dry-run)
++python3 tools/orchestrator/trigger_next.py --dry-run --candidates tools/decision_scoring/examples/trigger_candidates.json
++```
+ 
+-## 📁 Project Structure
++## 📁 Project Structure (key paths)
+ 
+ ```
+ AdvancedRules/
+@@ -85,9 +92,9 @@ AdvancedRules/
+ │   ├── roles/              # AI persona definitions
+ │   └── domains/            # Domain-specific knowledge
+ ├── memory-bank/            # AI-generated artifacts and memory
+-├── src/                    # Application source code
++├── tools/                  # Runner, scoring, orchestrator, provenance, etc.
+ ├── docs/                   # Documentation and ADRs
+-└── tests/                  # Test suites and validation
++└── tests/                  # E2E + smoke tests
+ ```
+ 
+ ## 🎭 AI Personas
+diff --git a/logs/decision_metrics.json b/logs/decision_metrics.json
+new file mode 100644
+index 0000000..bc3e1a7
+--- /dev/null
++++ b/logs/decision_metrics.json
+@@ -0,0 +1,19 @@
++{
++  "2025-08-28": {
++    "counts": {
++      "decision": 1
++    },
++    "events": [
++      {
++        "type": "decision",
++        "decision": "ASK_CLARIFY",
++        "trace": {
++          "mode": "shadow",
++          "top": 0.5436386872370789,
++          "gap": 0.0006068201628397496
++        },
++        "ts": 1756383007.6857038
++      }
++    ]
++  }
++}
+\ No newline at end of file
+diff --git a/logs/events.jsonl b/logs/events.jsonl
+new file mode 100644
+index 0000000..25bc622
+--- /dev/null
++++ b/logs/events.jsonl
+@@ -0,0 +1,43 @@
++{"type": "artifact_emitted", "role": "product_owner_ai", "path": "memory-bank/plan/product_backlog.yaml"}
++{"type": "artifact_emitted", "role": "product_owner_ai", "path": "memory-bank/plan/acceptance_criteria.json"}
++{"type": "role_duration", "module": "tools.runner.plugins.product_owner", "seconds": 0.0013811588287353516}
++{"type": "artifact_emitted", "role": "planning_ai", "path": "memory-bank/plan/Action_Plan.md"}
++{"type": "artifact_emitted", "role": "planning_ai", "path": "memory-bank/plan/technical_plan.md"}
++{"type": "artifact_emitted", "role": "planning_ai", "path": "memory-bank/plan/task_breakdown.yaml"}
++{"type": "role_duration", "module": "tools.runner.plugins.planning", "seconds": 0.0024330615997314453}
++{"type": "artifact_emitted", "role": "auditor_ai", "path": "memory-bank/plan/Summary_Report.md"}
++{"type": "role_duration", "module": "tools.runner.plugins.auditor", "seconds": 0.0015420913696289062}
++{"type": "artifact_emitted", "role": "principal_engineer_ai", "path": "memory-bank/plan/Validation_Report.md"}
++{"type": "role_duration", "module": "tools.runner.plugins.principal_engineer", "seconds": 0.0016760826110839844}
++{"type": "artifact_emitted", "role": "principal_engineer_ai", "path": "memory-bank/plan/Final_Implementation_Plan.md"}
++{"type": "role_duration", "module": "tools.runner.plugins.principal_engineer", "seconds": 0.0007240772247314453}
++{"type": "artifact_emitted", "role": "planning_ai", "path": "memory-bank/plan/Action_Plan.md"}
++{"type": "artifact_emitted", "role": "planning_ai", "path": "memory-bank/plan/technical_plan.md"}
++{"type": "artifact_emitted", "role": "planning_ai", "path": "memory-bank/plan/task_breakdown.yaml"}
++{"type": "role_duration", "module": "tools.runner.plugins.planning", "seconds": 0.0015625953674316406}
++{"type": "artifact_emitted", "role": "product_owner_ai", "path": "memory-bank/plan/product_backlog.yaml"}
++{"type": "artifact_emitted", "role": "product_owner_ai", "path": "memory-bank/plan/acceptance_criteria.json"}
++{"type": "role_duration", "module": "tools.runner.plugins.product_owner", "seconds": 0.0014319419860839844}
++{"type": "artifact_emitted", "role": "planning_ai", "path": "memory-bank/plan/Action_Plan.md"}
++{"type": "artifact_emitted", "role": "planning_ai", "path": "memory-bank/plan/technical_plan.md"}
++{"type": "artifact_emitted", "role": "planning_ai", "path": "memory-bank/plan/task_breakdown.yaml"}
++{"type": "role_duration", "module": "tools.runner.plugins.planning", "seconds": 0.001894235610961914}
++{"type": "artifact_emitted", "role": "auditor_ai", "path": "memory-bank/plan/Summary_Report.md"}
++{"type": "role_duration", "module": "tools.runner.plugins.auditor", "seconds": 0.000751495361328125}
++{"type": "artifact_emitted", "role": "principal_engineer_ai", "path": "memory-bank/plan/Validation_Report.md"}
++{"type": "role_duration", "module": "tools.runner.plugins.principal_engineer", "seconds": 0.0007345676422119141}
++{"type": "artifact_emitted", "role": "principal_engineer_ai", "path": "memory-bank/plan/Final_Implementation_Plan.md"}
++{"type": "role_duration", "module": "tools.runner.plugins.principal_engineer", "seconds": 0.0007512569427490234}
++{"type": "artifact_emitted", "role": "product_owner_ai", "path": "memory-bank/plan/product_backlog.yaml"}
++{"type": "artifact_emitted", "role": "product_owner_ai", "path": "memory-bank/plan/acceptance_criteria.json"}
++{"type": "role_duration", "module": "tools.runner.plugins.product_owner", "seconds": 0.0011162757873535156}
++{"type": "artifact_emitted", "role": "planning_ai", "path": "memory-bank/plan/Action_Plan.md"}
++{"type": "artifact_emitted", "role": "planning_ai", "path": "memory-bank/plan/technical_plan.md"}
++{"type": "artifact_emitted", "role": "planning_ai", "path": "memory-bank/plan/task_breakdown.yaml"}
++{"type": "role_duration", "module": "tools.runner.plugins.planning", "seconds": 0.005816459655761719}
++{"type": "artifact_emitted", "role": "auditor_ai", "path": "memory-bank/plan/Summary_Report.md"}
++{"type": "role_duration", "module": "tools.runner.plugins.auditor", "seconds": 0.0006885528564453125}
++{"type": "artifact_emitted", "role": "principal_engineer_ai", "path": "memory-bank/plan/Validation_Report.md"}
++{"type": "role_duration", "module": "tools.runner.plugins.principal_engineer", "seconds": 0.0007910728454589844}
++{"type": "artifact_emitted", "role": "principal_engineer_ai", "path": "memory-bank/plan/Final_Implementation_Plan.md"}
++{"type": "role_duration", "module": "tools.runner.plugins.principal_engineer", "seconds": 0.0007572174072265625}
+diff --git a/logs/observability/summary.json b/logs/observability/summary.json
+new file mode 100644
+index 0000000..3212b48
+--- /dev/null
++++ b/logs/observability/summary.json
+@@ -0,0 +1,28 @@
++{
++  "counts": {
++    "artifact_emitted": 8,
++    "role_duration": 5
++  },
++  "durations": {
++    "tools.runner.plugins.product_owner": {
++      "count": 1,
++      "total_sec": 0.001381,
++      "avg_sec": 0.001381
++    },
++    "tools.runner.plugins.planning": {
++      "count": 1,
++      "total_sec": 0.002433,
++      "avg_sec": 0.002433
++    },
++    "tools.runner.plugins.auditor": {
++      "count": 1,
++      "total_sec": 0.001542,
++      "avg_sec": 0.001542
++    },
++    "tools.runner.plugins.principal_engineer": {
++      "count": 2,
++      "total_sec": 0.0024,
++      "avg_sec": 0.0012
++    }
++  }
++}
+\ No newline at end of file
+diff --git a/logs/observability/summary.md b/logs/observability/summary.md
+new file mode 100644
+index 0000000..81d8ebd
+--- /dev/null
++++ b/logs/observability/summary.md
+@@ -0,0 +1,13 @@
++# Observability Summary
++
++## Event Counts
++
++- artifact_emitted: 8
++- role_duration: 5
++
++## Role Durations
++
++- tools.runner.plugins.product_owner: count=1, total=0.001381s, avg=0.001381s
++- tools.runner.plugins.planning: count=1, total=0.002433s, avg=0.002433s
++- tools.runner.plugins.auditor: count=1, total=0.001542s, avg=0.001542s
++- tools.runner.plugins.principal_engineer: count=2, total=0.0024s, avg=0.0012s
+diff --git a/memory-bank/README.md b/memory-bank/README.md
+index 611e89e..d646dd9 100644
+--- a/memory-bank/README.md
++++ b/memory-bank/README.md
+@@ -1,152 +1,16 @@
+-# Memory Bank README
++# memory-bank/
+ 
+-## Overview
+-This Memory Bank serves as the central knowledge repository for project management, client assessments, capacity planning, and operational workflows within the AdvancedRules framework. It contains structured data and documentation that supports decision-making throughout the project lifecycle.
++- Purpose: Persistent artifacts produced by roles and pipeline steps.
+ 
+-## Directory Structure
++## Key paths
++- plan/: planning artifacts (client_brief.md, product_backlog.yaml, acceptance_criteria.json, Action_Plan.md, technical_plan.md, task_breakdown.yaml, Summary_Report.md, Validation_Report.md, Final_Implementation_Plan.md)
++- upwork/: Upwork readiness (offer_status.json)
++- business/: business inputs (client_score.json, capacity_report.md, pricing.ratecard.yaml, estimate_brief.md)
++- artifacts_index.json: provenance index (auto-updated)
+ 
+-### `/business/` - Business Intelligence & Planning
+-Contains core business documents that inform project decisions and resource allocation.
+-
+-#### 📋 Capacity Report (`capacity_report.md`)
+-- **Weekly Availability**: 40 hours/week (Mon-Fri, flexible weekends)
+-- **Focus Blocks**: 9 AM - 12 PM, 2 PM - 6 PM
+-- **Hard Constraints**: No Wednesdays, max 2 active projects, 4-hour minimum blocks
+-- **Current Commitments**: Project A (8 hours/week ongoing)
+-- **Recommendation**: ACCEPT new projects (25 hours/week maximum)
+-
+-#### 🎯 Client Assessment (`client_score.json`)
+-- **Fit Score**: 75/100 (Medium risk, Medium complexity)
+-- **Must-Ask Questions**:
+-  - Timeline requirements
+-  - Main point of contact
+-  - Success criteria
+-  - Budget range
+-- **Status**: No decline reasons noted, client appears reasonable
+-
+-#### 📊 Project Estimation (`estimate_brief.md`)
+-- **Project Type**: Medium complexity (M)
+-- **Effort Estimate**: 150-200 hours (including 25% risk buffer)
+-- **Timeline**: 6 weeks total
+-  - Weeks 1-2: Discovery & Architecture (40 hours)
+-  - Weeks 3-4: Core Development (80 hours)
+-  - Week 5: Testing & QA (30 hours)
+-  - Week 6: Deployment & Documentation (20 hours)
+-- **Key Uncertainties**: Requirements clarity, integration complexity, testing requirements, deployment environment
+-
+-#### 💰 Pricing Structure (`pricing.ratecard.yaml`)
+-- **Base Rates**:
+-  - Hourly: $75
+-  - Daily: $600
+-  - Weekly: $3,000
+-- **Rush Rates**: $95/hour (+25%)
+-- **Weekend Rates**: $85/hour (+13%)
+-- **Package Pricing**:
+-  - Discovery & Planning: $1,500 (1-2 weeks)
+-  - Development & Testing: T&M or Fixed (project dependent)
+-  - Post-Launch Support: $500 (1 month)
+-- **Terms**: 50% upfront, Net 15 days, 2% late fee after 30 days
+-
+-### `/checklists/` - Operational Checklists
+-Standardized checklists and runbooks for consistent project execution.
+-
+-#### 📋 PRE-START Master Checklist (`prestart-master-checklist.md`)
+-Comprehensive checklist covering:
+-- **Repo Preparation**: Framework files, PRE-START kit files, globs configuration
+-- **Template & Data Folders**: Template directory, memory bank structure
+-- **Required Artifacts**: 5 mandatory files for gate passage
+-- **Command Flow**: 10-step execution order with acceptance criteria
+-- **Negative Tests**: Must-block scenarios for validation
+-- **Version Control**: Git workflow and hygiene practices
+-
+-#### 🚀 PRE-START Runbook (`prestart-runbook.md`)
+-Detailed execution guide with exact command order:
+-1. `/pricing` → Ratecard & terms setup
+-2. `/screen_client` → Client assessment
+-3. `/capacity` → Team availability check
+-4. `/estimate` → Project estimation
+-5. `/proposal` → Goal-level proposal
+-6. `/upwork_cover` → Upwork-specific assets
+-7. `/upwork_checks` → Offer status setup
+-8. `/preflight` → Final gate check
+-
+-### `/plan/` - Project Planning Documents
+-Strategic planning documents for project initiation and execution.
+-
+-#### 📋 Client Brief Template (`client_brief.md`)
+-Structured template for documenting:
+-- Business objectives and success metrics
+-- Technical requirements (functional & non-functional)
+-- Constraints and assumptions
+-- Risk assessment matrix
+-- Next steps and action items
+-
+-#### 📄 Project Proposal (`proposal.md`)
+-*Currently empty - to be populated during proposal phase*
+-
+-### `/upwork/` - Upwork Integration
+-Upwork-specific documentation and status tracking.
+-
+-#### 📊 Offer Status (`offer_status.json`)
+-*Currently empty - to be populated when Upwork offer is received*
+-
+-### `/logs/` & `/reports/` - Tracking & Analytics
+-*Currently empty directories for future use*
+-
+-## Key Workflows
+-
+-### PRE-START Phase Workflow
+-1. **Pricing Setup** → Establish rates and terms
+-2. **Client Screening** → Assess fit and risk
+-3. **Capacity Planning** → Check resource availability
+-4. **Project Estimation** → Create timeline and budget estimates
+-5. **Proposal Development** → Craft goal-level proposal
+-6. **Upwork Preparation** → Create cover letter and milestones
+-7. **Offer Management** → Track contract status and funding
+-8. **Gate Check** → Validate all prerequisites before planning
+-
+-### Required Artifacts for Gate Passage
+-```
+-✅ memory-bank/business/client_score.json
+-✅ memory-bank/business/capacity_report.md
+-✅ memory-bank/business/pricing.ratecard.yaml
+-✅ memory-bank/business/estimate_brief.md
+-✅ memory-bank/plan/proposal.md
++## Notes
++- Files are auto-indexed with SHA-256 when written by the runner.
++- Validate artifact schemas:
++```bash
++python3 tools/schema/validate_artifacts.py
+ ```
+-
+-### Upwork Contract Requirements
+-- **Fixed Price**: Requires escrow funding (Milestone 1 funded)
+-- **Hourly**: Requires Work Diary enabled + weekly cap hours set
+-
+-## Current Status
+-
+-### ✅ Completed Assessments
+-- Client fit score: 75/100 (Medium risk)
+-- Capacity assessment: Ready for new projects
+-- Project estimation: 150-200 hours (6 weeks)
+-- Pricing structure: Established with flexible packages
+-
+-### ⏳ Pending Items
+-- Project proposal document
+-- Upwork offer status
+-- Specific client requirements gathering
+-
+-### 🎯 Recommendations
+-- Start new projects with 25 hours/week maximum
+-- Maintain 15 hours/week buffer for existing commitments
+-- Consider Week 2 start for proper project handoff
+-- Focus on requirements clarification in discovery phase
+-
+-## Usage Guidelines
+-
+-1. **Update regularly** - Keep capacity reports and client assessments current
+-2. **Follow checklists** - Use PRE-START checklist for consistent execution
+-3. **Validate gate conditions** - Ensure all required artifacts exist before advancing phases
+-4. **Document decisions** - Record rationale for capacity decisions and risk assessments
+-
+-## Contact & Support
+-For questions about Memory Bank structure or workflows, refer to the AdvancedRules framework documentation or contact the development team.
+-
+----
+-*Last Updated: $(date)*
+-*Framework Version: AdvancedRules v1.0*
+diff --git a/memory-bank/artifacts_index.json b/memory-bank/artifacts_index.json
+new file mode 100644
+index 0000000..dcdcb51
+--- /dev/null
++++ b/memory-bank/artifacts_index.json
+@@ -0,0 +1,224 @@
++[
++  {
++    "path": "memory-bank/plan/product_backlog.yaml",
++    "sha256": "7f7798c78c455fd78304c8431256b45e0a12b404a3f190a2ba3406f4005e98ed",
++    "created_at": 1756381523.4386346,
++    "source_role": "product_owner_ai"
++  },
++  {
++    "path": "memory-bank/plan/acceptance_criteria.json",
++    "sha256": "bbec39c790faaf869c95c5f09c6bd9d4805aa0e263621bf105f73432a5c2f88d",
++    "created_at": 1756381523.4392636,
++    "source_role": "product_owner_ai"
++  },
++  {
++    "path": "memory-bank/plan/Action_Plan.md",
++    "sha256": "d56af0c2e19ed3936d2f3669d85cad8c72e79910c0f872eb5995d16007a512d7",
++    "created_at": 1756381523.4690056,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/technical_plan.md",
++    "sha256": "c5cacd83dca67e015fb8d36078e3bb243233d0a7da27fd6764a27b0fb4c8d3cf",
++    "created_at": 1756381523.4692912,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/task_breakdown.yaml",
++    "sha256": "b23b81c926c482a5d1655f798b8bed7d6fe3f47e501aaf3d68ac62fea7f4f0d2",
++    "created_at": 1756381523.469539,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/Summary_Report.md",
++    "sha256": "7588066d95087524a4fd544516359d3dd9f24c88ff8c0b9a1f8143226af0df6d",
++    "created_at": 1756381523.4980078,
++    "source_role": "auditor_ai"
++  },
++  {
++    "path": "memory-bank/plan/Validation_Report.md",
++    "sha256": "45c7248d19639e98d890df9f0f242c3f05b08bbe34047402b6599ce81d61eee7",
++    "created_at": 1756381523.5247562,
++    "source_role": "principal_engineer_ai"
++  },
++  {
++    "path": "memory-bank/plan/Final_Implementation_Plan.md",
++    "sha256": "9ff3e65a27c33101ca2edf0ae7c7bdc03a9e014e3bed375db33c7e9b67b97aa8",
++    "created_at": 1756381523.5515106,
++    "source_role": "principal_engineer_ai"
++  },
++  {
++    "path": "memory-bank/plan/Validation_Report.md",
++    "sha256": "287afa833e11d6cc505f050e3a27e522689db2e32fb8d78cc38ddc138c888855",
++    "created_at": 1756383470.8865976,
++    "source_role": "principal_engineer_ai"
++  },
++  {
++    "path": "memory-bank/plan/Final_Implementation_Plan.md",
++    "sha256": "b0656fd9e8a29c9a07ffcdad797f0b4a1772ce8e1c95ad34f1165cc9fb8c45ab",
++    "created_at": 1756383470.9209232,
++    "source_role": "principal_engineer_ai"
++  },
++  {
++    "path": "memory-bank/plan/product_backlog.yaml",
++    "sha256": "7f7798c78c455fd78304c8431256b45e0a12b404a3f190a2ba3406f4005e98ed",
++    "created_at": 1756383718.2090104,
++    "source_role": "product_owner_ai"
++  },
++  {
++    "path": "memory-bank/plan/acceptance_criteria.json",
++    "sha256": "bbec39c790faaf869c95c5f09c6bd9d4805aa0e263621bf105f73432a5c2f88d",
++    "created_at": 1756383718.2094119,
++    "source_role": "product_owner_ai"
++  },
++  {
++    "path": "memory-bank/plan/Action_Plan.md",
++    "sha256": "d56af0c2e19ed3936d2f3669d85cad8c72e79910c0f872eb5995d16007a512d7",
++    "created_at": 1756383718.242045,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/technical_plan.md",
++    "sha256": "c5cacd83dca67e015fb8d36078e3bb243233d0a7da27fd6764a27b0fb4c8d3cf",
++    "created_at": 1756383718.2424862,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/task_breakdown.yaml",
++    "sha256": "b23b81c926c482a5d1655f798b8bed7d6fe3f47e501aaf3d68ac62fea7f4f0d2",
++    "created_at": 1756383718.242841,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/Summary_Report.md",
++    "sha256": "7588066d95087524a4fd544516359d3dd9f24c88ff8c0b9a1f8143226af0df6d",
++    "created_at": 1756383718.2735202,
++    "source_role": "auditor_ai"
++  },
++  {
++    "path": "memory-bank/plan/Validation_Report.md",
++    "sha256": "287afa833e11d6cc505f050e3a27e522689db2e32fb8d78cc38ddc138c888855",
++    "created_at": 1756383718.3027315,
++    "source_role": "principal_engineer_ai"
++  },
++  {
++    "path": "memory-bank/plan/Final_Implementation_Plan.md",
++    "sha256": "b0656fd9e8a29c9a07ffcdad797f0b4a1772ce8e1c95ad34f1165cc9fb8c45ab",
++    "created_at": 1756383718.3323417,
++    "source_role": "principal_engineer_ai"
++  },
++  {
++    "path": "memory-bank/plan/Action_Plan.md",
++    "sha256": "d56af0c2e19ed3936d2f3669d85cad8c72e79910c0f872eb5995d16007a512d7",
++    "created_at": 1756384631.5049198,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/technical_plan.md",
++    "sha256": "c5cacd83dca67e015fb8d36078e3bb243233d0a7da27fd6764a27b0fb4c8d3cf",
++    "created_at": 1756384631.5053425,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/task_breakdown.yaml",
++    "sha256": "b23b81c926c482a5d1655f798b8bed7d6fe3f47e501aaf3d68ac62fea7f4f0d2",
++    "created_at": 1756384631.5056577,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/product_backlog.yaml",
++    "sha256": "7f7798c78c455fd78304c8431256b45e0a12b404a3f190a2ba3406f4005e98ed",
++    "created_at": 1756384946.432553,
++    "source_role": "product_owner_ai"
++  },
++  {
++    "path": "memory-bank/plan/acceptance_criteria.json",
++    "sha256": "bbec39c790faaf869c95c5f09c6bd9d4805aa0e263621bf105f73432a5c2f88d",
++    "created_at": 1756384946.4329476,
++    "source_role": "product_owner_ai"
++  },
++  {
++    "path": "memory-bank/plan/Action_Plan.md",
++    "sha256": "d56af0c2e19ed3936d2f3669d85cad8c72e79910c0f872eb5995d16007a512d7",
++    "created_at": 1756384946.462072,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/technical_plan.md",
++    "sha256": "c5cacd83dca67e015fb8d36078e3bb243233d0a7da27fd6764a27b0fb4c8d3cf",
++    "created_at": 1756384946.4624317,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/task_breakdown.yaml",
++    "sha256": "b23b81c926c482a5d1655f798b8bed7d6fe3f47e501aaf3d68ac62fea7f4f0d2",
++    "created_at": 1756384946.4632866,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/Summary_Report.md",
++    "sha256": "7588066d95087524a4fd544516359d3dd9f24c88ff8c0b9a1f8143226af0df6d",
++    "created_at": 1756384946.4911351,
++    "source_role": "auditor_ai"
++  },
++  {
++    "path": "memory-bank/plan/Validation_Report.md",
++    "sha256": "287afa833e11d6cc505f050e3a27e522689db2e32fb8d78cc38ddc138c888855",
++    "created_at": 1756384946.518287,
++    "source_role": "principal_engineer_ai"
++  },
++  {
++    "path": "memory-bank/plan/Final_Implementation_Plan.md",
++    "sha256": "b0656fd9e8a29c9a07ffcdad797f0b4a1772ce8e1c95ad34f1165cc9fb8c45ab",
++    "created_at": 1756384946.5456812,
++    "source_role": "principal_engineer_ai"
++  },
++  {
++    "path": "memory-bank/plan/product_backlog.yaml",
++    "sha256": "7f7798c78c455fd78304c8431256b45e0a12b404a3f190a2ba3406f4005e98ed",
++    "created_at": 1756385258.5444746,
++    "source_role": "product_owner_ai"
++  },
++  {
++    "path": "memory-bank/plan/acceptance_criteria.json",
++    "sha256": "bbec39c790faaf869c95c5f09c6bd9d4805aa0e263621bf105f73432a5c2f88d",
++    "created_at": 1756385258.5448782,
++    "source_role": "product_owner_ai"
++  },
++  {
++    "path": "memory-bank/plan/Action_Plan.md",
++    "sha256": "d56af0c2e19ed3936d2f3669d85cad8c72e79910c0f872eb5995d16007a512d7",
++    "created_at": 1756385258.573053,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/technical_plan.md",
++    "sha256": "c5cacd83dca67e015fb8d36078e3bb243233d0a7da27fd6764a27b0fb4c8d3cf",
++    "created_at": 1756385258.5734065,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/task_breakdown.yaml",
++    "sha256": "b23b81c926c482a5d1655f798b8bed7d6fe3f47e501aaf3d68ac62fea7f4f0d2",
++    "created_at": 1756385258.5737224,
++    "source_role": "planning_ai"
++  },
++  {
++    "path": "memory-bank/plan/Summary_Report.md",
++    "sha256": "7588066d95087524a4fd544516359d3dd9f24c88ff8c0b9a1f8143226af0df6d",
++    "created_at": 1756385258.607096,
++    "source_role": "auditor_ai"
++  },
++  {
++    "path": "memory-bank/plan/Validation_Report.md",
++    "sha256": "287afa833e11d6cc505f050e3a27e522689db2e32fb8d78cc38ddc138c888855",
++    "created_at": 1756385258.6345267,
++    "source_role": "principal_engineer_ai"
++  },
++  {
++    "path": "memory-bank/plan/Final_Implementation_Plan.md",
++    "sha256": "b0656fd9e8a29c9a07ffcdad797f0b4a1772ce8e1c95ad34f1165cc9fb8c45ab",
++    "created_at": 1756385258.6622741,
++    "source_role": "principal_engineer_ai"
++  }
++]
+\ No newline at end of file
+diff --git a/memory-bank/plan/Action_Plan.md b/memory-bank/plan/Action_Plan.md
+new file mode 100644
+index 0000000..ad32cbb
+--- /dev/null
++++ b/memory-bank/plan/Action_Plan.md
+@@ -0,0 +1 @@
++# Action Plan
+diff --git a/memory-bank/plan/Final_Implementation_Plan.md b/memory-bank/plan/Final_Implementation_Plan.md
+new file mode 100644
+index 0000000..86632cc
+--- /dev/null
++++ b/memory-bank/plan/Final_Implementation_Plan.md
+@@ -0,0 +1,4 @@
++---
++{"title": "Final Implementation Plan", "version": 1, "tasks": []}
++---
++# Final Implementation Plan
+diff --git a/memory-bank/plan/Summary_Report.md b/memory-bank/plan/Summary_Report.md
+new file mode 100644
+index 0000000..9345bbf
+--- /dev/null
++++ b/memory-bank/plan/Summary_Report.md
+@@ -0,0 +1,2 @@
++# Summary Report
++- OK: stub evidence
+diff --git a/memory-bank/plan/Validation_Report.md b/memory-bank/plan/Validation_Report.md
+new file mode 100644
+index 0000000..1abed3b
+--- /dev/null
++++ b/memory-bank/plan/Validation_Report.md
+@@ -0,0 +1,5 @@
++---
++{"title": "Validation Report", "version": 1, "findings": []}
++---
++# Validation Report
++- CONFIRM: stub
+diff --git a/memory-bank/plan/acceptance_criteria.json b/memory-bank/plan/acceptance_criteria.json
+new file mode 100644
+index 0000000..6ff236e
+--- /dev/null
++++ b/memory-bank/plan/acceptance_criteria.json
+@@ -0,0 +1,3 @@
++{
++  "criteria": []
++}
+\ No newline at end of file
+diff --git a/memory-bank/plan/client_brief.md b/memory-bank/plan/client_brief.md
+index 2a0d347..d7eda27 100644
+--- a/memory-bank/plan/client_brief.md
++++ b/memory-bank/plan/client_brief.md
+@@ -1,59 +1 @@
+-# Client Brief Template
+-# Generated by Product Owner AI
+-
+-## Project Overview
+-**Project Name**: [Project Name]
+-**Client**: [Client Name]
+-**Date**: [Date]
+-**Status**: [Status]
+-
+-## Business Objectives
+-- **Primary Goal**: [Main business objective]
+-- **Success Metrics**: [KPIs and success criteria]
+-- **Target Audience**: [Primary users and stakeholders]
+-- **Business Value**: [Expected ROI and business impact]
+-
+-## Technical Requirements
+-### Functional Requirements
+-- [ ] Feature 1: [Description]
+-- [ ] Feature 2: [Description]
+-- [ ] Feature 3: [Description]
+-
+-### Non-Functional Requirements
+-- **Performance**: [Performance expectations]
+-- **Security**: [Security requirements]
+-- **Scalability**: [Scalability needs]
+-- **Compliance**: [Regulatory requirements]
+-
+-## Constraints & Assumptions
+-### Technical Constraints
+-- [Constraint 1]
+-- [Constraint 2]
+-- [Constraint 3]
+-
+-### Business Constraints
+-- [Budget constraints]
+-- [Timeline constraints]
+-- [Resource constraints]
+-
+-### Assumptions
+-- [Assumption 1]
+-- [Assumption 2]
+-- [Assumption 3]
+-
+-## Risk Assessment
+-| Risk | Probability | Impact | Mitigation Strategy |
+-|------|-------------|---------|-------------------|
+-| [Risk 1] | [High/Medium/Low] | [High/Medium/Low] | [Strategy] |
+-| [Risk 2] | [High/Medium/Low] | [High/Medium/Low] | [Strategy] |
+-
+-## Next Steps
+-1. [Action item 1]
+-2. [Action item 2]
+-3. [Action item 3]
+-
+-## Notes
+-[Additional context, questions, or considerations]
+-
+----
+-*Generated by AdvancedRules Product Owner AI on [Timestamp]*
++Client brief
+\ No newline at end of file
+diff --git a/memory-bank/plan/product_backlog.yaml b/memory-bank/plan/product_backlog.yaml
+new file mode 100644
+index 0000000..951231d
+--- /dev/null
++++ b/memory-bank/plan/product_backlog.yaml
+@@ -0,0 +1 @@
++# backlog: generated by runner
+diff --git a/memory-bank/plan/task_breakdown.yaml b/memory-bank/plan/task_breakdown.yaml
+new file mode 100644
+index 0000000..e33f998
+--- /dev/null
++++ b/memory-bank/plan/task_breakdown.yaml
+@@ -0,0 +1 @@
++# tasks
+diff --git a/memory-bank/plan/technical_plan.md b/memory-bank/plan/technical_plan.md
+new file mode 100644
+index 0000000..a1ccc03
+--- /dev/null
++++ b/memory-bank/plan/technical_plan.md
+@@ -0,0 +1 @@
++# Technical Plan
+diff --git a/memory-bank/upwork/offer_status.json b/memory-bank/upwork/offer_status.json
+index e69de29..a8bc1c8 100644
+--- a/memory-bank/upwork/offer_status.json
++++ b/memory-bank/upwork/offer_status.json
+@@ -0,0 +1,6 @@
++{
++  "contract_type": "fixed",
++  "escrow_funded": true,
++  "work_diary_ready": true,
++  "weekly_cap_hours": 15
++}
+\ No newline at end of file
+diff --git a/rule_attach_log.json b/rule_attach_log.json
+new file mode 100644
+index 0000000..21d299d
+--- /dev/null
++++ b/rule_attach_log.json
+@@ -0,0 +1,52 @@
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "", "matched_rule": ".cursor/rules/advanced/typescript-base.mdc", "match_reason": "alwaysApply", "nested_scope": "advanced", "decision_trace": "alwaysApply:true"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/plan/Summary_Report.md", "matched_rule": ".cursor/rules/audit_output_presence.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:memory-bank/plan/Summary_Report.md matched:Summary_Report.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/decision_gate.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/decision_scoring.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/decision_scoring_tool.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "tools/artifacts/hash_index.py", "matched_rule": ".cursor/rules/domains/frontend/htmx.mdc", "match_reason": "glob", "nested_scope": "domains/frontend", "decision_trace": "glob:**/*.py matched:hash_index.py"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "tools/artifacts/hash_index.py", "matched_rule": ".cursor/rules/domains/specialized/ai-ml.mdc", "match_reason": "glob", "nested_scope": "domains/specialized", "decision_trace": "glob:**/*.py matched:hash_index.py"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "scripts/validate_prestart.sh", "matched_rule": ".cursor/rules/domains/specialized/devops.mdc", "match_reason": "glob", "nested_scope": "domains/specialized", "decision_trace": "glob:**/*.sh matched:validate_prestart.sh"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "", "matched_rule": ".cursor/rules/domains/utilities/unified-code-formatting.mdc", "match_reason": "alwaysApply", "nested_scope": "domains/utilities", "decision_trace": "alwaysApply:true"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/kits/prestart/capacity_planner.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/kits/prestart/client_screener.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/prestart/demo_playbook.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/kits/prestart/estimate_sizer.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/kits/prestart/pricing_policy.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/kits/prestart/proposal_builder.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/prestart/repo_bootstrapper.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/prestart/risk_catalog.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/prestart/scope_guard.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/upwork/connects_policy.mdc", "match_reason": "glob", "nested_scope": "kits/upwork", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/upwork/contract_guard.mdc", "match_reason": "glob", "nested_scope": "kits/upwork", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/upwork/upwork_adapter.mdc", "match_reason": "glob", "nested_scope": "kits/upwork", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "", "matched_rule": ".cursor/rules/next_step_suggester.mdc", "match_reason": "alwaysApply", "nested_scope": ".", "decision_trace": "alwaysApply:true"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/orchestrator_postrun.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/plan/Action_Plan.md", "matched_rule": ".cursor/rules/planning_output_presence.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:memory-bank/plan/Action_Plan.md matched:Action_Plan.md"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "", "matched_rule": ".cursor/rules/readiness_check.mdc", "match_reason": "alwaysApply", "nested_scope": ".", "decision_trace": "alwaysApply:true"}
++{"timestamp": "2025-08-28T12:07:00.158932Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": ".cursor/commands/registry.yaml", "matched_rule": ".cursor/rules/registry_policy_guard.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:.cursor/commands/registry.yaml matched:registry.yaml"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "", "matched_rule": ".cursor/rules/advanced/typescript-base.mdc", "match_reason": "alwaysApply", "nested_scope": "advanced", "decision_trace": "alwaysApply:true"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/plan/Summary_Report.md", "matched_rule": ".cursor/rules/audit_output_presence.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:memory-bank/plan/Summary_Report.md matched:Summary_Report.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/decision_gate.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/decision_scoring.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/decision_scoring_tool.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "tools/artifacts/hash_index.py", "matched_rule": ".cursor/rules/domains/frontend/htmx.mdc", "match_reason": "glob", "nested_scope": "domains/frontend", "decision_trace": "glob:**/*.py matched:hash_index.py"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "tools/artifacts/hash_index.py", "matched_rule": ".cursor/rules/domains/specialized/ai-ml.mdc", "match_reason": "glob", "nested_scope": "domains/specialized", "decision_trace": "glob:**/*.py matched:hash_index.py"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "scripts/validate_prestart.sh", "matched_rule": ".cursor/rules/domains/specialized/devops.mdc", "match_reason": "glob", "nested_scope": "domains/specialized", "decision_trace": "glob:**/*.sh matched:validate_prestart.sh"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "", "matched_rule": ".cursor/rules/domains/utilities/unified-code-formatting.mdc", "match_reason": "alwaysApply", "nested_scope": "domains/utilities", "decision_trace": "alwaysApply:true"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/kits/prestart/capacity_planner.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/kits/prestart/client_screener.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/prestart/demo_playbook.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/kits/prestart/estimate_sizer.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/kits/prestart/pricing_policy.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/kits/prestart/proposal_builder.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/prestart/repo_bootstrapper.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/prestart/risk_catalog.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/prestart/scope_guard.mdc", "match_reason": "glob", "nested_scope": "kits/prestart", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/upwork/connects_policy.mdc", "match_reason": "glob", "nested_scope": "kits/upwork", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/upwork/contract_guard.mdc", "match_reason": "glob", "nested_scope": "kits/upwork", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/README.md", "matched_rule": ".cursor/rules/kits/upwork/upwork_adapter.mdc", "match_reason": "glob", "nested_scope": "kits/upwork", "decision_trace": "glob:memory-bank/** matched:README.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "", "matched_rule": ".cursor/rules/next_step_suggester.mdc", "match_reason": "alwaysApply", "nested_scope": ".", "decision_trace": "alwaysApply:true"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "FOLDER_STRUCTURE.md", "matched_rule": ".cursor/rules/orchestrator_postrun.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:**/* matched:FOLDER_STRUCTURE.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "memory-bank/plan/Action_Plan.md", "matched_rule": ".cursor/rules/planning_output_presence.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:memory-bank/plan/Action_Plan.md matched:Action_Plan.md"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": "", "matched_rule": ".cursor/rules/readiness_check.mdc", "match_reason": "alwaysApply", "nested_scope": ".", "decision_trace": "alwaysApply:true"}
++{"timestamp": "2025-08-28T12:07:18.803691Z", "repo_sha": "7a229ee2a269e295dacb4fd55b085e6d3067d076", "file_path": ".cursor/commands/registry.yaml", "matched_rule": ".cursor/rules/registry_policy_guard.mdc", "match_reason": "glob", "nested_scope": ".", "decision_trace": "glob:.cursor/commands/registry.yaml matched:registry.yaml"}
+diff --git a/schema/README.md b/schema/README.md
+new file mode 100644
+index 0000000..f0c5025
+--- /dev/null
++++ b/schema/README.md
+@@ -0,0 +1,13 @@
++# schema/
++
++- Purpose: JSON and frontmatter schemas for artifact validation.
++
++## Files
++- acceptance_criteria.schema.json: JSON schema for `memory-bank/plan/acceptance_criteria.json`
++- validation_report.frontmatter.schema.json: frontmatter schema for `Validation_Report.md`
++- final_implementation_plan.frontmatter.schema.json: frontmatter schema for `Final_Implementation_Plan.md`
++
++## Validate
++```bash
++python3 tools/schema/validate_artifacts.py
++```
+\ No newline at end of file
+diff --git a/schema/acceptance_criteria.schema.json b/schema/acceptance_criteria.schema.json
+new file mode 100644
+index 0000000..d24f6e6
+--- /dev/null
++++ b/schema/acceptance_criteria.schema.json
+@@ -0,0 +1,26 @@
++{
++  "$schema": "https://json-schema.org/draft/2020-12/schema",
++  "$id": "https://example.com/schemas/acceptance_criteria.schema.json",
++  "title": "Acceptance Criteria",
++  "type": "object",
++  "properties": {
++    "criteria": {
++      "type": "array",
++      "items": {
++        "type": "object",
++        "properties": {
++          "id": { "type": ["string", "integer"] },
++          "title": { "type": "string" },
++          "description": { "type": "string" },
++          "priority": { "type": ["string", "integer"] },
++          "tags": { "type": "array", "items": { "type": "string" } }
++        },
++        "required": ["title"],
++        "additionalProperties": true
++      }
++    }
++  },
++  "required": ["criteria"],
++  "additionalProperties": true
++}
++
+diff --git a/schema/final_implementation_plan.frontmatter.schema.json b/schema/final_implementation_plan.frontmatter.schema.json
+new file mode 100644
+index 0000000..394e604
+--- /dev/null
++++ b/schema/final_implementation_plan.frontmatter.schema.json
+@@ -0,0 +1,28 @@
++{
++  "$schema": "https://json-schema.org/draft/2020-12/schema",
++  "$id": "https://example.com/schemas/final_implementation_plan.frontmatter.schema.json",
++  "title": "Final Implementation Plan Frontmatter",
++  "type": "object",
++  "properties": {
++    "title": { "type": "string" },
++    "date": { "type": "string" },
++    "version": { "type": ["string", "number"] },
++    "tasks": {
++      "type": "array",
++      "items": {
++        "type": "object",
++        "properties": {
++          "id": { "type": ["string", "integer"] },
++          "summary": { "type": "string" },
++          "owner": { "type": "string" },
++          "depends_on": { "type": "array", "items": { "type": ["string", "integer"] } },
++          "rollback": { "type": "string" }
++        },
++        "required": ["summary"],
++        "additionalProperties": true
++      }
++    }
++  },
++  "additionalProperties": true
++}
++
+diff --git a/schema/validation_report.frontmatter.schema.json b/schema/validation_report.frontmatter.schema.json
+new file mode 100644
+index 0000000..7bdb00e
+--- /dev/null
++++ b/schema/validation_report.frontmatter.schema.json
+@@ -0,0 +1,25 @@
++{
++  "$schema": "https://json-schema.org/draft/2020-12/schema",
++  "$id": "https://example.com/schemas/validation_report.frontmatter.schema.json",
++  "title": "Validation Report Frontmatter",
++  "type": "object",
++  "properties": {
++    "title": { "type": "string" },
++    "date": { "type": "string" },
++    "version": { "type": ["string", "number"] },
++    "findings": {
++      "type": "array",
++      "items": {
++        "type": "object",
++        "properties": {
++          "id": { "type": ["string", "integer"] },
++          "status": { "type": "string", "enum": ["CONFIRM", "CHALLENGE"] },
++          "rationale": { "type": "string" }
++        },
++        "required": ["status"]
++      }
++    }
++  },
++  "additionalProperties": true
++}
++
+diff --git a/tests/README.md b/tests/README.md
+new file mode 100644
+index 0000000..275897a
+--- /dev/null
++++ b/tests/README.md
+@@ -0,0 +1,17 @@
++# tests/
++
++- Purpose: Automated validation for the end-to-end pipeline and critical invariants.
++
++## Suites
++- e2e/: golden-path pipeline test (plan → audit → peer_review → synthesis)
++- smoke/: scorer v3 and governance validator smoke tests
++
++## How to run
++```bash
++# If pytest is on PATH
++pytest -q
++
++# Or install to user-local bin and run
++python3 -m pip install --break-system-packages pytest -q
++/home/ubuntu/.local/bin/pytest -q
++```
+\ No newline at end of file
+diff --git a/tests/e2e/__pycache__/test_pipeline.cpython-313-pytest-8.4.1.pyc b/tests/e2e/__pycache__/test_pipeline.cpython-313-pytest-8.4.1.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..f7b53077d6d255f31259959220b9f20a4800e290
+GIT binary patch
+literal 8889
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/tests/e2e/test_pipeline.py b/tests/e2e/test_pipeline.py
+new file mode 100644
+index 0000000..23dbf3a
+--- /dev/null
++++ b/tests/e2e/test_pipeline.py
+@@ -0,0 +1,60 @@
++import json
++import subprocess
++from pathlib import Path
++
++REPO = Path(__file__).resolve().parents[2]
++MB = REPO / "memory-bank"
++
++
++def run(cmd):
++    subprocess.check_call(cmd, cwd=str(REPO))
++
++
++def test_pipeline_golden_path(tmp_path):
++    # 0) ensure readiness
++    run(["python3", "tools/prestart/ensure_readiness.py"])  # creates offer_status.json if missing
++
++    # 1) client brief
++    plan_dir = MB / "plan"
++    plan_dir.mkdir(parents=True, exist_ok=True)
++    (plan_dir / "client_brief.md").write_text("Client brief test", encoding="utf-8")
++
++    # 2) product owner → backlog + acceptance
++    run(["python3", "tools/run_role.py", "product_owner_ai"])
++
++    # 3) planning → plans (requires offer_status.json)
++    run(["python3", "tools/run_role.py", "planning_ai"])
++
++    # 4) audit
++    run(["python3", "tools/run_role.py", "auditor_ai"])
++
++    # 5) principal engineer peer review → validation
++    run(["python3", "tools/run_role.py", "principal_engineer_ai", "--mode", "PEER_REVIEW"])
++
++    # 6) principal engineer synthesis → final plan
++    run(["python3", "tools/run_role.py", "principal_engineer_ai", "--mode", "SYNTHESIS"])
++
++    # Assertions: artifacts exist
++    must_exist = [
++        MB / "plan/product_backlog.yaml",
++        MB / "plan/acceptance_criteria.json",
++        MB / "plan/Action_Plan.md",
++        MB / "plan/technical_plan.md",
++        MB / "plan/task_breakdown.yaml",
++        MB / "plan/Summary_Report.md",
++        MB / "plan/Validation_Report.md",
++        MB / "plan/Final_Implementation_Plan.md",
++    ]
++    for p in must_exist:
++        assert p.exists() and p.stat().st_size > 0, f"missing: {p}"
++
++    # Provenance index exists and has entries
++    idx = REPO / "memory-bank/artifacts_index.json"
++    assert idx.exists() and idx.stat().st_size > 0
++    data = json.loads(idx.read_text())
++    assert isinstance(data, list) and len(data) >= 5
++
++    # Events logged
++    events = REPO / "logs/events.jsonl"
++    assert events.exists() and events.stat().st_size > 0
++
+diff --git a/tests/smoke/__pycache__/test_scoring_validator.cpython-313-pytest-8.4.1.pyc b/tests/smoke/__pycache__/test_scoring_validator.cpython-313-pytest-8.4.1.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..a63e4ad9c054e338d77731a91617a2cf024bc977
+GIT binary patch
+literal 4426
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/tests/smoke/test_scoring_validator.py b/tests/smoke/test_scoring_validator.py
+new file mode 100644
+index 0000000..3380a5e
+--- /dev/null
++++ b/tests/smoke/test_scoring_validator.py
+@@ -0,0 +1,27 @@
++import json
++import subprocess
++from pathlib import Path
++
++REPO = Path(__file__).resolve().parents[2]
++
++
++def run(cmd):
++    subprocess.check_call(cmd, cwd=str(REPO))
++
++
++def test_scoring_shadow_and_trace():
++    code = (
++        "from tools.decision_scoring.advanced_score import score_candidates;"
++        "c=[{\"id\":\"planning_from_backlog\",\"action_type\":\"COMMAND_TRIGGER\",\"risk\":\"LOW\",\"scores\":{\"intent\":0.9,\"state\":0.8,\"evidence\":0.7,\"recency\":0.6,\"pref\":0.5,\"cost\":0.1,\"risk_penalty\":0.0}}];"
++        "import json; print(json.dumps(score_candidates(c, explore=True, shadow=True)))"
++    )
++    out = subprocess.check_output(["python3", "-c", code], cwd=str(REPO)).decode()
++    data = json.loads(out)
++    assert "decision" in data and "decision_trace" in data
++    assert data["decision"]["type"] in {"NEXT_STEP","OPTION_SET","ASK_CLARIFY","RISK_ALERT"}
++
++
++def test_governance_validator_passes():
++    out = subprocess.check_output(["python3", "tools/rules/validate.py"], cwd=str(REPO)).decode()
++    assert "OK: rule policy checks passed" in out
++
+diff --git a/tools/README.md b/tools/README.md
+new file mode 100644
+index 0000000..63f4048
+--- /dev/null
++++ b/tools/README.md
+@@ -0,0 +1,39 @@
++# tools/
++
++- Purpose: Execution utilities that power the solo-freelancer pipeline (runner, scoring, orchestrator, observability, readiness, audit, provenance).
++
++## Key modules
++- runner/: dispatch per role, artifact/event logging
++- decision_scoring/: v3 scorer (calibration, exploration, shadow) + metrics
++- orchestrator/: state engine + scorer→registry trigger
++- prestart/: ensure Upwork readiness + composite preflight
++- upwork/: adapter to write offer_status.json
++- rule_attach/: deterministic attach detector and log
++- observability/: aggregate logs/events into reports
++- artifacts/: provenance hashing (SHA-256 index)
++- audit/: evidence/citation helpers
++
++## Quick commands
++```bash
++# One-command happy path
++python3 tools/quickstart.py
++
++# Readiness / preflight
++python3 tools/prestart/prestart_composite.py
++
++# Role runner (examples)
++python3 tools/run_role.py product_owner_ai
++python3 tools/run_role.py planning_ai
++python3 tools/run_role.py auditor_ai
++python3 tools/run_role.py principal_engineer_ai --mode PEER_REVIEW
++python3 tools/run_role.py principal_engineer_ai --mode SYNTHESIS
++
++# Scoring v3 demo
++python3 tools/decision_scoring/advanced_score.py
++
++# Trigger next command (dry-run)
++python3 tools/orchestrator/trigger_next.py --dry-run --candidates tools/decision_scoring/examples/trigger_candidates.json
++
++# Observability summary
++python3 tools/observability/aggregate.py
++```
+\ No newline at end of file
+diff --git a/tools/artifacts/__pycache__/hash_index.cpython-313.pyc b/tools/artifacts/__pycache__/hash_index.cpython-313.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..fc8fa434020b9cdf1114bb3b839e6914b5527cd0
+GIT binary patch
+literal 2720
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/tools/artifacts/hash_index.py b/tools/artifacts/hash_index.py
+new file mode 100644
+index 0000000..fc69d98
+--- /dev/null
++++ b/tools/artifacts/hash_index.py
+@@ -0,0 +1,41 @@
++#!/usr/bin/env python3
++import hashlib
++import json
++import time
++from pathlib import Path
++from typing import Dict
++
++ROOT = Path(__file__).resolve().parents[2]
++INDEX = ROOT / "memory-bank/artifacts_index.json"
++
++def sha256(path: Path) -> str:
++    h = hashlib.sha256()
++    with path.open("rb") as f:
++        for chunk in iter(lambda: f.read(65536), b""):
++            h.update(chunk)
++    return h.hexdigest()
++
++def record(path: Path, role: str) -> Dict:
++    entry = {
++        "path": str(path.relative_to(ROOT)),
++        "sha256": sha256(path),
++        "created_at": time.time(),
++        "source_role": role,
++    }
++    idx = []
++    if INDEX.exists():
++        try:
++            idx = json.loads(INDEX.read_text() or "[]")
++        except Exception:
++            idx = []
++    idx.append(entry)
++    INDEX.parent.mkdir(parents=True, exist_ok=True)
++    INDEX.write_text(json.dumps(idx, indent=2), encoding="utf-8")
++    return entry
++
++if __name__ == "__main__":
++    p = ROOT / "memory-bank/plan/Final_Implementation_Plan.md"
++    if p.exists() and p.stat().st_size:
++        rec = record(p, "principal_engineer_ai")
++        print(json.dumps(rec, indent=2))
++
+diff --git a/tools/audit/diff_evidence.py b/tools/audit/diff_evidence.py
+new file mode 100644
+index 0000000..1abb408
+--- /dev/null
++++ b/tools/audit/diff_evidence.py
+@@ -0,0 +1,33 @@
++#!/usr/bin/env python3
++import json
++import re
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[2]
++
++def collect_paths(plan_md: Path):
++    txt = plan_md.read_text(encoding="utf-8")
++    # naive path extraction: code-style or markdown links
++    paths = set()
++    for m in re.finditer(r"(?:`|\()([^`\)\s]+\.(?:py|md|json|yaml|yml|toml))", txt):
++        paths.add(m.group(1))
++    return sorted(paths)
++
++def cite_existing(paths):
++    cites = []
++    for rel in paths:
++        p = ROOT / rel
++        if p.exists():
++            cites.append({"path": rel, "exists": True, "size": p.stat().st_size})
++        else:
++            cites.append({"path": rel, "exists": False})
++    return cites
++
++if __name__ == "__main__":
++    plan = ROOT / "memory-bank/plan/Action_Plan.md"
++    if not plan.exists():
++        print(json.dumps({"error":"missing Action_Plan.md"}))
++    else:
++        paths = collect_paths(plan)
++        print(json.dumps({"cites": cite_existing(paths)}, indent=2))
++
+diff --git a/tools/decision_scoring/README.md b/tools/decision_scoring/README.md
+new file mode 100644
+index 0000000..7bfcb68
+--- /dev/null
++++ b/tools/decision_scoring/README.md
+@@ -0,0 +1,14 @@
++# tools/decision_scoring/
++
++- Purpose: Rank candidate actions and produce a safe, explainable decision.
++
++## v3 Features
++- Calibration (calibration.json), thresholds (thresholds.json), weights (weights.json)
++- Exploration on OPTION_SET, shadow mode, decision_trace
++- Metrics in logs/decision_metrics.json; calibrate.py to adjust values
++
++## Commands
++```bash
++python3 tools/decision_scoring/advanced_score.py
++python3 tools/decision_scoring/calibrate.py
++```
+\ No newline at end of file
+diff --git a/tools/decision_scoring/__pycache__/advanced_score.cpython-313.pyc b/tools/decision_scoring/__pycache__/advanced_score.cpython-313.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..c68a279eebd042c117fbf1163a7d1b55882da482
+GIT binary patch
+literal 8322
+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
+T{!F@H=I8wEwu#}Z=`Q>q%3@gs
+
+literal 0
+HcmV?d00001
+
+diff --git a/tools/decision_scoring/__pycache__/metrics.cpython-313.pyc b/tools/decision_scoring/__pycache__/metrics.cpython-313.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..1575c873f6c15edc32fe576a4ccde3cbffc1319a
+GIT binary patch
+literal 2313
+zcmZuy%}*Og6rbH4@7il@zQRX70EZBWk%&nfn&5;~DNq6^PUOW>Dx6vy?_wP6wL7~c
+zfvS;F6~!b{gVIJpY7a!c&>QM0$L2r4C6dXOs;Y8IPnO_N_0%_OFLBd6%WvMinR%Xh
+zzu$Y_^>{=C(loX)+lCQ(O((YS6=PRq5PE_nBr%hSlt+dzFlQ&(365|+>f<Kygo8LH
+zc*6Tol<P!MVF1oi3D=j$YCTYygd3{8Wn01yFo+lxB}bndEVsl*9nqR7f10H$r&&oj
+zgl=Nuk(||jiI<quSaMlwUP+ABNbdiw^HPnqUK_2GJi%)S$xR4FYdewTm1?Crss1E8
+zz?Sa;@2H1&xb1iNP=ZM?{)RVnIpk+dd{s7P{j7;cl5xZ2E@}&J=+VVPsZ2r-C~7>Z
+zCo@_str{d5*H7NmGn&a0)tDz*y!;bo4VgzAe0P5V^#o0WE=!nt-w``=Cn|pV1BBYq
+zG>u_N*v8Fvz}Q(G(^a)lG3}T`j2%^hhXAgO{q`=@kGjxNG;Q&P9utrZVEDkVvmLND
+zgNC>cG{gAW&?5WgSAO0UE{{%y$A=}8SMMZsLpQON0Y@q$E4t|-s;tBe^^Re>M(@Pc
+ztO2?D3GLF@W-xF&L+13X99IJum0PkFSC#O5O4S2KCX=eltsc*iq?QQSInFMan8qiR
+zSM;uW2viR32;Td5m+lsYmV(eyVmVjyPGif{;N##AiDG-8&>q-oKUHiW+?d*G3~ts0
+zOFXLa=EnctbD+9|yNGc$Z#OnQ7%y>P{i9Ppf8T%6i(YtZF1B$mjxeB2tjLBOuW%lA
+z&=gg0{RWKx;96lA-DFFcQu`f|82GS*tgjkB8ucBScG`~cK0daGq91|!l<*)cIV7G&
+zOCY}xngZquS(&IBK;yI^ie=^qr4MkMPihLREIQ_mnZC2&aH?87qd>0xJfRda`SMxQ
+zk)BhM#1wCnq@h}X5-3_^I+XczR`)Zc5oS8gi;vLEnOK)^siX}|3X*;X6aa+X_d`pe
+zB5p0<*0lp0c#~QK;4b3k0&f1!c)Iv_ajk3pi$cq(=VP0=`Bywb>S#Psy#+Uo84FpJ
+zK4^jBAFs|ZeUepQLAV9ru#b_=dySpm-yhzuBsf(O=nngppm7m4{2mM<Tt5mxPkh@y
+zG#tSaM_~=Wr{(|?Y<C*X5ph7TgPrz?2<m~^G)<%>k+;9kRNZy|*7iP%w*9IIBk?o}
+z#1yPsc;4=^Ey)={{Y-=z-H#7ktF>1ntX=;WXI!C0=kd?_j;H&MD?lDTo|&iI;jR4Z
+z<R}~?^hR%Jf=$-YNhdWhMaJ*6N)jf?v}!tagUnc#sH=ve&dBpA=%5MJfHI=Zl$Wzv
+zRZ}dM0O8tc=nkqVnN0r1e0&b}a*DiQa&fo>h1h3FnPbpqp))8X0RCq9>W@GH%iOgO
+zKgx~lc<LWre{g*@xaH~2eY!1r9|e{JtKI9LJnt-Y4sD4Sa>LuACqKK~R}>Ey#KWr-
+z>&%we3tr!`HTjv48_qkIF0b?!aNCZzVdc!jbZ%_tK<m@-$K&5l=Em|POP9B?K=+jS
+zyxP6iyLs^Jh5+g%9^Aps{DFHDW%fE_v9z4jVlmTc|6`c0(CD?Pm^3wdH8CU>f6Na3
+z^|7BNr{D=DXJoSe2CKqIH+2BxjoDQ42B8c$dB`=?D4`@K6m%2f&m>bS#21LFXHrml
+zP1KLWSFTKzE13f{EOe}NTREf0G&xO=IkM1U4MIs_-ME}!=lOI-fsTBEoQDMpxc)OJ
+z=#UKa8o7T%?%z@CALz)Rf;)fdYiPV}1)*(A=qL(31)*o1DG0qe44L1o?<<IXIiZAk
+z#+z4GK3wHi&Ms?v2&Sbv7KoWQR)$v_S1v8zEg?Ez>)Nx%lGDZ1uIMEM!`jsPv2}g@
+x#Iw(>>2thCy`^S^Yx0X*+`(5^%m>%bZ77A7b1(7vSJ;*Bxfd!q5I$tR>0iEo-ah~U
+
+literal 0
+HcmV?d00001
+
+diff --git a/tools/decision_scoring/advanced_score.py b/tools/decision_scoring/advanced_score.py
+new file mode 100644
+index 0000000..0771d5a
+--- /dev/null
++++ b/tools/decision_scoring/advanced_score.py
+@@ -0,0 +1,112 @@
++#!/usr/bin/env python3
++from __future__ import annotations
++import json, math, time
++from pathlib import Path
++from typing import Any, Dict, List, Tuple
++
++ROOT = Path(__file__).resolve().parents[2]
++CONF = ROOT / "tools/decision_scoring"
++
++DEFAULT_WEIGHTS = {"intent":0.30, "state":0.25, "evidence":0.20, "recency":0.15, "pref":0.10, "cost":-0.10, "risk_penalty":-0.20}
++DEFAULT_THRESH  = {"conf_high":0.75, "conf_mid":0.55, "eps_gap":0.05}
++DEFAULT_CALIB   = {"alpha":1.0, "beta":0.0}
++
++def _clamp01(x: float) -> float: return 0.0 if x < 0 else 1.0 if x > 1 else x
++def _sigmoid(z: float) -> float: return 1.0/(1.0+math.exp(-z))
++
++def _load_json(path: Path, fallback: Dict[str, Any]) -> Dict[str, Any]:
++    try:
++        return {**fallback, **json.loads(path.read_text() or "{}")}
++    except Exception:
++        return fallback
++
++def load_config() -> Tuple[Dict[str, float], Dict[str, float], Dict[str, float]]:
++    W = _load_json(CONF / "weights.json", DEFAULT_WEIGHTS)
++    T = _load_json(CONF / "thresholds.json", DEFAULT_THRESH)
++    C = _load_json(CONF / "calibration.json", DEFAULT_CALIB)
++    # normalize weights by sum of abs values (keep sign)
++    s = sum(abs(float(v)) for v in W.values()) or 1.0
++    W = {k: float(v)/s for k, v in W.items()}
++    return W, T, C
++
++def _collect_scores(c: Dict[str, Any]) -> Dict[str, float]:
++    s_in = c.get("scores", {})
++    out: Dict[str, float] = {}
++    for k in DEFAULT_WEIGHTS:
++        try:
++            out[k] = _clamp01(float(s_in.get(k, 0.0)))
++        except Exception:
++            out[k] = 0.0
++    return out
++
++def score_candidates(candidates: List[Dict[str, Any]],
++                     explore: bool = False,
++                     eps: float = 0.05,
++                     shadow: bool = False) -> Dict[str, Any]:
++    W, T, C = load_config()
++    alpha, beta = float(C["alpha"]), float(C["beta"])
++    conf_high, conf_mid, eps_gap = float(T["conf_high"]), float(T["conf_mid"]), float(T["eps_gap"])
++
++    scored: List[Tuple[float, Dict[str, Any], Dict[str, float], float]] = []
++    for c in candidates:
++        comps = _collect_scores(c)
++        raw = sum(comps.get(k, 0.0) * W.get(k, 0.0) for k in W)
++        final = _sigmoid(alpha*(raw - beta))
++        risk = str(c.get("risk", "LOW")).upper()
++        action_type = str(c.get("action_type", "NATURAL_STEP")).upper()
++        evidence_ok = comps.get("evidence", 0.0) >= 0.3
++        if action_type == "COMMAND_TRIGGER" and risk in {"MEDIUM","HIGH","CRITICAL"} and not evidence_ok:
++            final = min(final, 0.49)
++        enriched = {
++            "id": c.get("id",""),
++            "action_type": action_type,
++            "risk": risk,
++            "scores": {**comps, "final_raw": round(raw,6), "final": round(final,6)},
++            "explanation": c.get("explanation",""),
++        }
++        scored.append((final, enriched, comps, raw))
++
++    scored.sort(key=lambda t: t[0], reverse=True)
++    result: Dict[str, Any] = {"context_summary":"", "candidates":[x[1] for x in scored], "decision":{"type":"ASK_CLARIFY","reason":"no candidates"}}
++    if not scored:
++        return result
++
++    top, top_c, top_comps, top_raw = scored[0]
++    top2_gap = (top - scored[1][0]) if len(scored) > 1 else top
++    high_risk = any(c[1]["risk"] in {"MEDIUM","HIGH","CRITICAL"} for c in scored)
++
++    decision_trace = {"mode":"base", "top": top, "gap": top2_gap}
++    if top >= conf_high:
++        result["decision"] = {"type":"NEXT_STEP","reason":f"top≥{conf_high:.2f}"}
++    elif top >= conf_mid and top2_gap <= eps_gap:
++        k = min(3, len(scored))
++        result["candidates"] = [scored[i][1] for i in range(k)]
++        result["decision"] = {"type":"OPTION_SET","reason":f"{conf_mid:.2f}≤top<{conf_high:.2f} & gap≤{eps_gap}"}
++    else:
++        result["decision"] = {"type":"RISK_ALERT" if high_risk else "ASK_CLARIFY","reason":"low confidence" + (" + elevated risk" if high_risk else "")}
++
++    # exploration (only when not in shadow)
++    if explore and not shadow and result["decision"]["type"] == "OPTION_SET" and len(result["candidates"]) > 1:
++        # reproducible exploration based on timestamp bucket
++        bucket = int(time.time() // 60)  # minute bucket
++        if (bucket % int(1/eps if eps > 0 else 999999)) == 0:
++            result["candidates"] = list(reversed(result["candidates"]))
++            result["decision"]["reason"] += " | explore_eps"
++            decision_trace["mode"] = "explore"
++
++    # shadow mode (compute shadow but do not change decision)
++    if shadow:
++        shadow_candidates = list(reversed([x[1] for x in scored])) if result["decision"]["type"] == "OPTION_SET" else [scored[0][1]]
++        result["shadow"] = {"candidates": shadow_candidates, "note": "shadow mode; not applied"}
++        decision_trace["mode"] = "shadow"
++
++    result["decision_trace"] = decision_trace
++    return result
++
++if __name__ == "__main__":
++    demo = [
++        {"id":"plan","action_type":"COMMAND_TRIGGER","risk":"LOW","scores":{"intent":0.9,"state":0.7,"evidence":0.6,"recency":0.4,"pref":0.5,"cost":0.2,"risk_penalty":0.1}},
++        {"id":"ask","action_type":"NATURAL_STEP","risk":"LOW","scores":{"intent":0.78,"state":0.7,"evidence":0.6,"recency":0.5,"pref":0.4,"cost":0.0,"risk_penalty":0.0}}
++    ]
++    print(json.dumps(score_candidates(demo, explore=True, eps=0.05, shadow=True), indent=2))
++
+diff --git a/tools/decision_scoring/calibrate.py b/tools/decision_scoring/calibrate.py
+new file mode 100644
+index 0000000..191c2ea
+--- /dev/null
++++ b/tools/decision_scoring/calibrate.py
+@@ -0,0 +1,76 @@
++#!/usr/bin/env python3
++import json
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[2]
++CONF = ROOT / "tools/decision_scoring"
++METRICS = ROOT / "logs/decision_metrics.json"
++
++
++def load_json(p: Path, default):
++    if not p.exists():
++        return default
++    try:
++        return json.loads(p.read_text() or json.dumps(default))
++    except Exception:
++        return default
++
++
++def save_json(p: Path, data):
++    p.parent.mkdir(parents=True, exist_ok=True)
++    p.write_text(json.dumps(data, indent=2), encoding="utf-8")
++
++
++def main():
++    # Load configs
++    weights = load_json(CONF / "weights.json", {})
++    thresholds = load_json(CONF / "thresholds.json", {"conf_high": 0.75, "conf_mid": 0.55, "eps_gap": 0.05})
++    calib = load_json(CONF / "calibration.json", {"alpha": 1.0, "beta": 0.0})
++
++    # Load metrics
++    data = load_json(METRICS, {})
++    # Aggregate last day (if any)
++    if not data:
++        print("No metrics to calibrate; keeping configs as-is")
++        return
++    last_day = sorted(data.keys())[-1]
++    counts = data[last_day].get("counts", {})
++
++    # Heuristics: if OPTION_SET dominates, lower conf_mid slightly; if ASK_CLARIFY dominates, reduce alpha to compress scores
++    total_decisions = sum(counts.get(k, 0) for k in ["decision"])
++    # Fallback to counts by decision types in events if present
++    events = data[last_day].get("events", [])
++    type_counts = {"NEXT_STEP": 0, "OPTION_SET": 0, "ASK_CLARIFY": 0, "RISK_ALERT": 0}
++    for e in events:
++        if e.get("type") == "decision":
++            dt = e.get("decision") or e.get("payload", {}).get("decision")
++            if isinstance(dt, str) and dt in type_counts:
++                type_counts[dt] += 1
++
++    total = sum(type_counts.values()) or 1
++    opt_ratio = type_counts["OPTION_SET"] / total
++    ask_ratio = type_counts["ASK_CLARIFY"] / total
++
++    new_thresholds = dict(thresholds)
++    new_calib = dict(calib)
++
++    # Adjust conf_mid gently
++    if opt_ratio > 0.6:
++        new_thresholds["conf_mid"] = max(0.50, thresholds["conf_mid"] - 0.02)
++    elif opt_ratio < 0.2 and type_counts["NEXT_STEP"] > 0:
++        new_thresholds["conf_mid"] = min(0.60, thresholds["conf_mid"] + 0.02)
++
++    # Adjust alpha if too many ASK_CLARIFY
++    if ask_ratio > 0.5:
++        new_calib["alpha"] = max(0.8, calib["alpha"] - 0.05)
++    elif ask_ratio < 0.2:
++        new_calib["alpha"] = min(1.5, calib["alpha"] + 0.05)
++
++    save_json(CONF / "thresholds.json", new_thresholds)
++    save_json(CONF / "calibration.json", new_calib)
++    print(json.dumps({"updated_thresholds": new_thresholds, "updated_calibration": new_calib}, indent=2))
++
++
++if __name__ == "__main__":
++    main()
++
+diff --git a/tools/decision_scoring/calibration.json b/tools/decision_scoring/calibration.json
+new file mode 100644
+index 0000000..fcf7d13
+--- /dev/null
++++ b/tools/decision_scoring/calibration.json
+@@ -0,0 +1,4 @@
++{
++  "alpha": 0.95,
++  "beta": 0.0
++}
+\ No newline at end of file
+diff --git a/tools/decision_scoring/examples/trigger_candidates.json b/tools/decision_scoring/examples/trigger_candidates.json
+new file mode 100644
+index 0000000..3effe24
+--- /dev/null
++++ b/tools/decision_scoring/examples/trigger_candidates.json
+@@ -0,0 +1,17 @@
++{
++  "candidates": [
++    {
++      "id": "planning_from_backlog",
++      "action_type": "COMMAND_TRIGGER",
++      "risk": "LOW",
++      "scores": {"intent":0.9,"state":0.8,"evidence":0.7,"recency":0.6,"pref":0.5,"cost":0.1,"risk_penalty":0.0}
++    },
++    {
++      "id": "ask_for_details",
++      "action_type": "NATURAL_STEP",
++      "risk": "LOW",
++      "scores": {"intent":0.6,"state":0.6,"evidence":0.6,"recency":0.6,"pref":0.6,"cost":0.0,"risk_penalty":0.0}
++    }
++  ]
++}
++
+diff --git a/tools/decision_scoring/metrics.py b/tools/decision_scoring/metrics.py
+new file mode 100644
+index 0000000..4d62919
+--- /dev/null
++++ b/tools/decision_scoring/metrics.py
+@@ -0,0 +1,36 @@
++#!/usr/bin/env python3
++import json
++import time
++from pathlib import Path
++from typing import Dict, Any
++
++ROOT = Path(__file__).resolve().parents[2]
++METRICS = ROOT / "logs/decision_metrics.json"
++
++def load() -> Dict[str, Any]:
++    if METRICS.exists():
++        try:
++            return json.loads(METRICS.read_text() or "{}")
++        except Exception:
++            return {}
++    return {}
++
++def save(data: Dict[str, Any]) -> None:
++    METRICS.parent.mkdir(parents=True, exist_ok=True)
++    METRICS.write_text(json.dumps(data, indent=2), encoding="utf-8")
++
++def record(event_type: str, payload: Dict[str, Any]) -> None:
++    data = load()
++    bucket = time.strftime("%Y-%m-%d")
++    day = data.setdefault(bucket, {"counts":{}, "events": []})
++    cnt = day["counts"].get(event_type, 0)
++    day["counts"][event_type] = cnt + 1
++    payload = dict(payload)
++    payload["ts"] = time.time()
++    day["events"].append({"type": event_type, **payload})
++    save(data)
++
++if __name__ == "__main__":
++    record("decision", {"decision":"NEXT_STEP", "top":0.82})
++    print(METRICS)
++
+diff --git a/tools/decision_scoring/thresholds.json b/tools/decision_scoring/thresholds.json
+new file mode 100644
+index 0000000..54d9946
+--- /dev/null
++++ b/tools/decision_scoring/thresholds.json
+@@ -0,0 +1,5 @@
++{
++  "conf_high": 0.75,
++  "conf_mid": 0.55,
++  "eps_gap": 0.05
++}
+\ No newline at end of file
+diff --git a/tools/observability/aggregate.py b/tools/observability/aggregate.py
+new file mode 100644
+index 0000000..f6549bc
+--- /dev/null
++++ b/tools/observability/aggregate.py
+@@ -0,0 +1,61 @@
++#!/usr/bin/env python3
++import json
++import statistics
++from collections import defaultdict
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[2]
++EVENTS = ROOT / "logs/events.jsonl"
++OUT_DIR = ROOT / "logs/observability"
++
++def load_events():
++    items = []
++    if not EVENTS.exists():
++        return items
++    for line in EVENTS.read_text().splitlines():
++        line = line.strip()
++        if not line:
++            continue
++        try:
++            items.append(json.loads(line))
++        except Exception:
++            pass
++    return items
++
++def aggregate(items):
++    counts = defaultdict(int)
++    durations = defaultdict(list)
++    for e in items:
++        t = e.get("type", "unknown")
++        counts[t] += 1
++        if t == "role_duration":
++            mod = e.get("module", "unknown")
++            durations[mod].append(float(e.get("seconds", 0)))
++    duration_stats = {
++        mod: {
++            "count": len(vals),
++            "total_sec": round(sum(vals), 6),
++            "avg_sec": round(statistics.mean(vals), 6)
++        } for mod, vals in durations.items()
++    }
++    return {"counts": dict(counts), "durations": duration_stats}
++
++def write_reports(summary):
++    OUT_DIR.mkdir(parents=True, exist_ok=True)
++    (OUT_DIR / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
++    # minimal markdown
++    lines = ["# Observability Summary\n"]
++    lines.append("## Event Counts\n")
++    for k, v in summary["counts"].items():
++        lines.append(f"- {k}: {v}")
++    lines.append("\n## Role Durations\n")
++    for mod, stats in summary["durations"].items():
++        lines.append(f"- {mod}: count={stats['count']}, total={stats['total_sec']}s, avg={stats['avg_sec']}s")
++    (OUT_DIR / "summary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
++
++if __name__ == "__main__":
++    items = load_events()
++    summary = aggregate(items)
++    write_reports(summary)
++    print(json.dumps({"events": len(items)}, indent=2))
++
+diff --git a/tools/orchestrator/README.md b/tools/orchestrator/README.md
+new file mode 100644
+index 0000000..d958902
+--- /dev/null
++++ b/tools/orchestrator/README.md
+@@ -0,0 +1,15 @@
++# tools/orchestrator/
++
++- Purpose: Orchestration helpers (state engine and scoring→registry trigger).
++
++## Files
++- state.py: idempotent transitions, workflow_state.json
++- trigger_next.py: map Decision Scoring v3 output to registry commands
++
++## Usage
++```bash
++python3 tools/orchestrator/state.py --set PLANNING
++python3 tools/orchestrator/state.py --resume
++
++python3 tools/orchestrator/trigger_next.py --dry-run --candidates tools/decision_scoring/examples/trigger_candidates.json
++```
+\ No newline at end of file
+diff --git a/tools/orchestrator/__pycache__/state.cpython-313.pyc b/tools/orchestrator/__pycache__/state.cpython-313.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..1ecb97c379d34be71bcb707b74194c4a9acd40f5
+GIT binary patch
+literal 2989
+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
+DP=|GT
+
+literal 0
+HcmV?d00001
+
+diff --git a/tools/orchestrator/state.py b/tools/orchestrator/state.py
+new file mode 100644
+index 0000000..fc12ca3
+--- /dev/null
++++ b/tools/orchestrator/state.py
+@@ -0,0 +1,58 @@
++#!/usr/bin/env python3
++import json
++import time
++from pathlib import Path
++from typing import Dict, Any
++
++REPO_ROOT = Path(__file__).resolve().parents[2]
++STATE_FILE = REPO_ROOT / "workflow_state.json"
++
++
++def _now() -> float:
++    return time.time()
++
++
++def load_state() -> Dict[str, Any]:
++    if STATE_FILE.exists():
++        try:
++            return json.loads(STATE_FILE.read_text() or "{}")
++        except Exception:
++            return {}
++    return {}
++
++
++def save_state(data: Dict[str, Any]) -> None:
++    STATE_FILE.write_text(json.dumps(data, indent=2), encoding="utf-8")
++
++
++def transition(new_state: str) -> Dict[str, Any]:
++    """Idempotent transition. Writes only when the state changes."""
++    data = load_state()
++    cur = data.get("state")
++    ts = _now()
++    if cur != new_state:
++        data["prev_state"] = cur
++        data["state"] = new_state
++        data.setdefault("history", []).append({
++            "ts": ts,
++            "from": cur,
++            "to": new_state
++        })
++        save_state(data)
++    return {"prev": cur, "new": data.get("state"), "ts": ts}
++
++
++if __name__ == "__main__":
++    import argparse
++    ap = argparse.ArgumentParser()
++    ap.add_argument("--set", dest="set_state", default="", help="set state")
++    ap.add_argument("--resume", action="store_true", help="print current state")
++    args = ap.parse_args()
++    if args.set_state:
++        out = transition(args.set_state)
++        print(json.dumps(out, indent=2))
++    elif args.resume:
++        print(json.dumps(load_state(), indent=2))
++    else:
++        print(json.dumps({"usage": "--set <STATE> | --resume"}, indent=2))
++
+diff --git a/tools/orchestrator/trigger_next.py b/tools/orchestrator/trigger_next.py
+new file mode 100644
+index 0000000..8fb7f8a
+--- /dev/null
++++ b/tools/orchestrator/trigger_next.py
+@@ -0,0 +1,82 @@
++#!/usr/bin/env python3
++import argparse
++import json
++import re
++import subprocess
++import sys
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[2]
++REG = ROOT / ".cursor/commands/registry.yaml"
++
++
++def load_registry_commands() -> dict:
++    mapping = {}
++    if not REG.exists():
++        return mapping
++    cur_id = None
++    for raw in REG.read_text(encoding="utf-8").splitlines():
++        m_id = re.match(r"^\s*-\s+id:\s*(.+)$", raw)
++        if m_id:
++            cur_id = m_id.group(1).strip()
++            continue
++        m_shell = re.match(r"^\s*shell:\s*(\[.*\])\s*$", raw)
++        if m_shell and cur_id:
++            try:
++                arr = json.loads(m_shell.group(1))
++                mapping[cur_id] = arr
++            except Exception:
++                pass
++            cur_id = None
++    return mapping
++
++
++def run_shell(cmd: list, dry_run: bool) -> None:
++    if dry_run:
++        print("DRY_RUN:", " ".join(cmd))
++        return
++    subprocess.check_call(cmd, cwd=str(ROOT))
++
++
++def main() -> None:
++    ap = argparse.ArgumentParser()
++    ap.add_argument("--candidates", default=str(ROOT / "tools/decision_scoring/examples/trigger_candidates.json"))
++    ap.add_argument("--dry-run", action="store_true")
++    args = ap.parse_args()
++
++    mapping = load_registry_commands()
++    if str(ROOT) not in sys.path:
++        sys.path.insert(0, str(ROOT))
++    try:
++        from tools.decision_scoring.advanced_score import score_candidates
++    except Exception as e:
++        raise SystemExit(f"Cannot import scorer: {e}")
++
++    cfile = Path(args.candidates)
++    if cfile.exists():
++        data = json.loads(cfile.read_text())
++        candidates = data.get("candidates", data)
++    else:
++        # fallback sample
++        candidates = [
++            {"id":"planning_from_backlog","action_type":"COMMAND_TRIGGER","risk":"LOW","scores":{"intent":0.9,"state":0.8,"evidence":0.7,"recency":0.6,"pref":0.5,"cost":0.1,"risk_penalty":0.0}},
++            {"id":"ask_for_details","action_type":"NATURAL_STEP","risk":"LOW","scores":{"intent":0.6,"state":0.6,"evidence":0.6,"recency":0.6,"pref":0.6,"cost":0.0,"risk_penalty":0.0}}
++        ]
++
++    res = score_candidates(candidates, explore=True, shadow=False)
++    print(json.dumps({"decision": res.get("decision"), "top": res.get("candidates", [{}])[0].get("id")}, indent=2))
++
++    dtype = res.get("decision", {}).get("type")
++    if dtype in {"NEXT_STEP", "OPTION_SET"} and res.get("candidates"):
++        cmd_id = res["candidates"][0]["id"]
++        if cmd_id not in mapping:
++            print(f"No registry mapping for id: {cmd_id}")
++            return
++        run_shell(mapping[cmd_id], args.dry_run)
++    else:
++        print("No trigger —", dtype)
++
++
++if __name__ == "__main__":
++    main()
++
+diff --git a/tools/prestart/ensure_readiness.py b/tools/prestart/ensure_readiness.py
+new file mode 100644
+index 0000000..4ab8872
+--- /dev/null
++++ b/tools/prestart/ensure_readiness.py
+@@ -0,0 +1,28 @@
++#!/usr/bin/env python3
++import json
++from pathlib import Path
++
++REPO_ROOT = Path(__file__).resolve().parents[2]
++MB = REPO_ROOT / "memory-bank"
++
++def exists_nonempty(p: Path) -> bool:
++    return p.exists() and p.stat().st_size > 0
++
++def main() -> None:
++    # Ensure offer_status.json exists with sane defaults
++    offer = MB / "upwork/offer_status.json"
++    if not exists_nonempty(offer):
++        offer.parent.mkdir(parents=True, exist_ok=True)
++        offer.write_text(json.dumps({
++            "contract_type": "fixed",
++            "escrow_funded": True,
++            "work_diary_ready": True,
++            "weekly_cap_hours": 10
++        }, indent=2), encoding="utf-8")
++        print("created:", offer)
++    else:
++        print("ok:", offer)
++
++if __name__ == "__main__":
++    main()
++
+diff --git a/tools/prestart/prestart_composite.py b/tools/prestart/prestart_composite.py
+new file mode 100644
+index 0000000..7ae6782
+--- /dev/null
++++ b/tools/prestart/prestart_composite.py
+@@ -0,0 +1,22 @@
++#!/usr/bin/env python3
++import subprocess
++import sys
++from pathlib import Path
++
++REPO_ROOT = Path(__file__).resolve().parents[2]
++
++def run(cmd):
++    print("$", " ".join(cmd))
++    subprocess.check_call(cmd, cwd=str(REPO_ROOT))
++
++if __name__ == "__main__":
++    try:
++        run(["python3", "tools/prestart/ensure_readiness.py"])  # create defaults if missing
++        # optional override using adapter values
++        # run(["python3", "tools/upwork/adapter.py", "--contract", "fixed", "--escrow", "true", "--diary", "true", "--cap", "10"])
++        run(["python3", "tools/run_role.py", "readiness"])  # print preflight status
++        print("Prestart composite completed.")
++    except subprocess.CalledProcessError as e:
++        print("Prestart composite failed:", e, file=sys.stderr)
++        sys.exit(e.returncode)
++
+diff --git a/tools/quickstart.py b/tools/quickstart.py
+new file mode 100644
+index 0000000..69bf7b3
+--- /dev/null
++++ b/tools/quickstart.py
+@@ -0,0 +1,27 @@
++#!/usr/bin/env python3
++import subprocess
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[1]
++
++def run(cmd):
++    print("$", " ".join(cmd))
++    subprocess.check_call(cmd, cwd=str(ROOT))
++
++def main():
++    # Prestart composite (ensure offer_status + preflight)
++    run(["python3", "tools/prestart/prestart_composite.py"])
++    # Minimal happy path
++    plan = ROOT / "memory-bank/plan"
++    plan.mkdir(parents=True, exist_ok=True)
++    (plan / "client_brief.md").write_text("Client brief", encoding="utf-8")
++    run(["python3", "tools/run_role.py", "product_owner_ai"])
++    run(["python3", "tools/run_role.py", "planning_ai"])
++    run(["python3", "tools/run_role.py", "auditor_ai"])
++    run(["python3", "tools/run_role.py", "principal_engineer_ai", "--mode", "PEER_REVIEW"])
++    run(["python3", "tools/run_role.py", "principal_engineer_ai", "--mode", "SYNTHESIS"])
++    print("Quickstart complete. Check memory-bank/plan and logs/")
++
++if __name__ == "__main__":
++    main()
++
+diff --git a/tools/rule_attach/detect.py b/tools/rule_attach/detect.py
+new file mode 100644
+index 0000000..5fb8043
+--- /dev/null
++++ b/tools/rule_attach/detect.py
+@@ -0,0 +1,146 @@
++#!/usr/bin/env python3
++import argparse
++import datetime as dt
++import json
++import os
++import re
++import subprocess
++from glob import iglob
++from pathlib import Path
++from typing import List, Tuple
++
++REPO_ROOT = Path(__file__).resolve().parents[2]
++RULES_ROOT = REPO_ROOT / ".cursor/rules"
++LOG_PATH = REPO_ROOT / "rule_attach_log.json"
++
++
++def get_repo_sha() -> str:
++    try:
++        return subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=str(REPO_ROOT)).decode().strip()
++    except Exception:
++        return "unknown"
++
++
++def parse_frontmatter(text: str) -> Tuple[List[str], bool]:
++    """Return (globs, always_apply). Handles inline and multi-line lists.
++    Only inspects the first frontmatter block delimited by '---'."""
++    globs: List[str] = []
++    always_apply = False
++    blocks = re.split(r"^---\s*$", text, flags=re.M)
++    if len(blocks) < 3:
++        return globs, always_apply
++    fm = blocks[1]
++    # alwaysApply
++    m = re.search(r"^alwaysApply:\s*(true|false)\s*$", fm, flags=re.M)
++    if m:
++        always_apply = m.group(1).lower() == "true"
++    # globs inline
++    m2 = re.search(r"^globs:\s*\[(.*?)\]\s*$", fm, flags=re.M | re.S)
++    if m2:
++        inside = m2.group(1).strip()
++        if inside:
++            for part in inside.split(','):
++                pat = part.strip().strip('"\'')
++                if pat:
++                    globs.append(pat)
++        return globs, always_apply
++    # globs multi-line list
++    if re.search(r"^globs:\s*$", fm, flags=re.M):
++        # collect subsequent lines beginning with '-'
++        lines = fm.splitlines()
++        capture = False
++        for ln in lines:
++            if re.match(r"^globs:\s*$", ln):
++                capture = True
++                continue
++            if capture:
++                if re.match(r"^\s*-\s*['\"]?", ln):
++                    part = ln.strip()[1:].strip()
++                    part = part.strip('"\'')
++                    if part:
++                        globs.append(part)
++                elif re.match(r"^[A-Za-z_]+:\s*", ln):
++                    break
++    return globs, always_apply
++
++
++def find_matches(pattern: str) -> List[Path]:
++    # Patterns are evaluated relative to repo root, recursive allowed
++    abs_pat = str(REPO_ROOT / pattern)
++    out: List[Path] = []
++    for p in iglob(abs_pat, recursive=True):
++        path = Path(p)
++        # skip .git and .github noise
++        if any(seg in {".git", ".github"} for seg in path.parts):
++            continue
++        if path.is_file():
++            out.append(path)
++    return out
++
++
++def append_log(entry: dict, jsonl_path: Path) -> None:
++    jsonl_path.parent.mkdir(parents=True, exist_ok=True)
++    with jsonl_path.open("a", encoding="utf-8") as f:
++        f.write(json.dumps(entry) + "\n")
++
++
++def detect_and_log(log_path: Path, dry_run: bool = False) -> List[dict]:
++    repo_sha = get_repo_sha()
++    timestamp = dt.datetime.utcnow().isoformat() + "Z"
++    results: List[dict] = []
++
++    rule_files = sorted([p for p in RULES_ROOT.rglob("*.mdc") if "/roles/" not in str(p)])
++    for rule in rule_files:
++        text = rule.read_text(encoding="utf-8")
++        globs, always_apply = parse_frontmatter(text)
++        rel_rule = str(rule.relative_to(REPO_ROOT))
++        nested_scope = str(rule.parent.relative_to(RULES_ROOT))
++
++        if always_apply:
++            entry = {
++                "timestamp": timestamp,
++                "repo_sha": repo_sha,
++                "file_path": "",
++                "matched_rule": rel_rule,
++                "match_reason": "alwaysApply",
++                "nested_scope": nested_scope,
++                "decision_trace": "alwaysApply:true"
++            }
++            results.append(entry)
++            if not dry_run:
++                append_log(entry, log_path)
++            continue
++
++        if globs:
++            # Deterministic: evaluate patterns in lexical order, file matches in lexical order
++            for pat in sorted(set(globs)):
++                matches = sorted(find_matches(pat))
++                if not matches:
++                    continue
++                # Log first N matches to keep log compact; N=1 sufficient to prove attach
++                first = matches[0]
++                entry = {
++                    "timestamp": timestamp,
++                    "repo_sha": repo_sha,
++                    "file_path": str(first.relative_to(REPO_ROOT)),
++                    "matched_rule": rel_rule,
++                    "match_reason": "glob",
++                    "nested_scope": nested_scope,
++                    "decision_trace": f"glob:{pat} matched:{first.name}"
++                }
++                results.append(entry)
++                if not dry_run:
++                    append_log(entry, log_path)
++                # one entry per rule is enough to consider it attached
++                break
++    return results
++
++
++if __name__ == "__main__":
++    ap = argparse.ArgumentParser()
++    ap.add_argument("--log", default=str(LOG_PATH), help="path to append-only JSONL log")
++    ap.add_argument("--dry-run", action="store_true")
++    args = ap.parse_args()
++    out = detect_and_log(Path(args.log), dry_run=args.dry_run)
++    print(json.dumps({"attached": len(out)}, indent=2))
++
+diff --git a/tools/rules/validate.py b/tools/rules/validate.py
+new file mode 100644
+index 0000000..fa0a041
+--- /dev/null
++++ b/tools/rules/validate.py
+@@ -0,0 +1,37 @@
++#!/usr/bin/env python3
++import re
++import sys
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[2]
++
++def main() -> int:
++    errors = []
++
++    # Roles must not auto-attach (non-empty globs) and must not be alwaysApply:true
++    for f in (ROOT / ".cursor/rules/roles").glob("*.mdc"):
++        txt = f.read_text(encoding="utf-8")
++        # Accept exactly: globs: []
++        m = re.search(r"^globs:\s*\[(.*?)\]\s*$", txt, re.M)
++        if m:
++            if m.group(1).strip() != "":
++                errors.append(f"{f}: roles must not declare non-empty globs")
++        if re.search(r"^alwaysApply:\s*true", txt, re.M):
++            errors.append(f"{f}: roles must not be alwaysApply:true")
++
++    # Only orchestrator/gate/policy can be alwaysApply:true
++    for f in (ROOT / ".cursor/rules").rglob("*.mdc"):
++        txt = f.read_text(encoding="utf-8")
++        if re.search(r"^alwaysApply:\s*true", txt, re.M) and "/roles/" in str(f):
++            errors.append(f"{f}: roles cannot be alwaysApply:true")
++
++    if errors:
++        print("\n".join(errors))
++        return 1
++
++    print("OK: rule policy checks passed")
++    return 0
++
++if __name__ == "__main__":
++    sys.exit(main())
++
+diff --git a/tools/run_role.py b/tools/run_role.py
+new file mode 100755
+index 0000000..1f82764
+--- /dev/null
++++ b/tools/run_role.py
+@@ -0,0 +1,104 @@
++#!/usr/bin/env python3
++import argparse
++import json
++import os
++import sys
++from pathlib import Path
++from typing import Dict
++
++ROOT = Path(__file__).resolve().parents[1]
++MB = ROOT / "memory-bank"
++EVENTS = ROOT / "logs/events.jsonl"
++
++# Ensure repository root is importable (for tools.* modules)
++if str(ROOT) not in sys.path:
++    sys.path.insert(0, str(ROOT))
++from tools.artifacts.hash_index import record as index_record  # type: ignore
++from tools.runner.io_utils import append_event
++from importlib import import_module
++import time
++from tools.orchestrator.state import transition
++
++def ensure_parent(p: Path) -> None:
++    p.parent.mkdir(parents=True, exist_ok=True)
++
++def write_text(path: Path, content: str, role: str | None = None) -> None:
++    ensure_parent(path)
++    path.write_text(content, encoding="utf-8")
++    append_event({"type":"artifact_emitted","path":str(path.relative_to(ROOT))})
++    # provenance index for memory-bank artifacts
++    try:
++        if str(path).startswith(str(MB)) and path.exists() and path.stat().st_size:
++            index_record(path, role=role or "runner")
++    except Exception:
++        pass
++
++def touch_json(path: Path, payload: Dict, role: str | None = None) -> None:
++    ensure_parent(path)
++    path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
++    append_event({"type":"artifact_emitted","path":str(path.relative_to(ROOT))})
++    try:
++        if str(path).startswith(str(MB)) and path.exists() and path.stat().st_size:
++            index_record(path, role=role or "runner")
++    except Exception:
++        pass
++
++def write_md_with_frontmatter(path: Path, frontmatter: Dict, body: str, role: str | None = None) -> None:
++    fm = "---\n" + json.dumps(frontmatter, ensure_ascii=False) + "\n---\n"
++    write_text(path, fm + body, role=role)
++
++def append_event(evt: Dict) -> None:
++    ensure_parent(EVENTS)
++    EVENTS.write_text((EVENTS.read_text() if EVENTS.exists() else "") + json.dumps(evt) + "\n", encoding="utf-8")
++
++def run_plugin(module: str, func: str = "run", **kwargs):
++    start = time.time()
++    mod = import_module(module)
++    try:
++        getattr(mod, func)(**kwargs)
++    finally:
++        duration = time.time() - start
++        append_event({"type":"role_duration","module":module,"seconds":duration})
++
++def role_readiness_check() -> None:
++    # Placeholder: a no-op that prints which files exist
++    required = [
++        MB / "business/client_score.json",
++        MB / "business/capacity_report.md",
++        MB / "business/pricing.ratecard.yaml",
++        MB / "business/estimate_brief.md",
++        MB / "plan/proposal.md",
++    ]
++    status = {str(p.relative_to(ROOT)): p.exists() and p.stat().st_size > 0 for p in required}
++    print(json.dumps({"preflight": status}, indent=2))
++
++def main() -> None:
++    parser = argparse.ArgumentParser()
++    parser.add_argument("role", help="role id or helper name")
++    parser.add_argument("--mode", default="", help="role mode (for principal_engineer_ai)")
++    args = parser.parse_args()
++
++    if args.role == "product_owner_ai":
++        run_plugin("tools.runner.plugins.product_owner")
++        transition("BACKLOG_READY")
++    elif args.role == "planning_ai":
++        run_plugin("tools.runner.plugins.planning")
++        transition("PLANNING_DONE")
++    elif args.role == "auditor_ai":
++        run_plugin("tools.runner.plugins.auditor")
++        transition("AUDIT_DONE")
++    elif args.role == "principal_engineer_ai":
++        m = (args.mode or "PEER_REVIEW").upper()
++        run_plugin("tools.runner.plugins.principal_engineer", mode=m)
++        if m == "PEER_REVIEW":
++            transition("VALIDATION_DONE")
++        elif m == "SYNTHESIS":
++            transition("SYNTHESIS_DONE")
++    elif args.role == "readiness":
++        role_readiness_check()
++    else:
++        raise SystemExit(f"Unsupported role: {args.role}")
++
++if __name__ == "__main__":
++    main()
++
+diff --git a/tools/runner/README.md b/tools/runner/README.md
+new file mode 100644
+index 0000000..07ff8e0
+--- /dev/null
++++ b/tools/runner/README.md
+@@ -0,0 +1,16 @@
++# tools/runner/
++
++- Purpose: Execute role logic via `tools/run_role.py` dispatch; write artifacts, provenance, and structured events.
++
++## Files
++- io_utils.py: write_text/touch_json/frontmatter + event/provenance hooks
++- plugins/: per-role implementations
++
++## Usage
++```bash
++python3 tools/run_role.py product_owner_ai
++python3 tools/run_role.py planning_ai
++python3 tools/run_role.py auditor_ai
++python3 tools/run_role.py principal_engineer_ai --mode PEER_REVIEW
++python3 tools/run_role.py principal_engineer_ai --mode SYNTHESIS
++```
+\ No newline at end of file
+diff --git a/tools/runner/__pycache__/io_utils.cpython-313.pyc b/tools/runner/__pycache__/io_utils.cpython-313.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..7c11e54e7cba3c817cedb1f76656a78b96274a26
+GIT binary patch
+literal 3618
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/tools/runner/io_utils.py b/tools/runner/io_utils.py
+new file mode 100644
+index 0000000..e7e9ca2
+--- /dev/null
++++ b/tools/runner/io_utils.py
+@@ -0,0 +1,44 @@
++#!/usr/bin/env python3
++from __future__ import annotations
++import json
++from pathlib import Path
++from typing import Dict, Any
++
++ROOT = Path(__file__).resolve().parents[2]
++MB = ROOT / "memory-bank"
++EVENTS = ROOT / "logs/events.jsonl"
++
++def ensure_parent(p: Path) -> None:
++    p.parent.mkdir(parents=True, exist_ok=True)
++
++def append_event(evt: Dict[str, Any]) -> None:
++    ensure_parent(EVENTS)
++    content = (EVENTS.read_text() if EVENTS.exists() else "") + json.dumps(evt) + "\n"
++    EVENTS.write_text(content, encoding="utf-8")
++
++def write_text(path: Path, content: str, role: str | None = None) -> None:
++    from tools.artifacts.hash_index import record as index_record  # local import to avoid cycles
++    ensure_parent(path)
++    path.write_text(content, encoding="utf-8")
++    append_event({"type":"artifact_emitted","role":role or "runner","path":str(path.relative_to(ROOT))})
++    try:
++        if str(path).startswith(str(MB)) and path.exists() and path.stat().st_size:
++            index_record(path, role=role or "runner")
++    except Exception:
++        pass
++
++def touch_json(path: Path, payload: Dict[str, Any], role: str | None = None) -> None:
++    from tools.artifacts.hash_index import record as index_record
++    ensure_parent(path)
++    path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
++    append_event({"type":"artifact_emitted","role":role or "runner","path":str(path.relative_to(ROOT))})
++    try:
++        if str(path).startswith(str(MB)) and path.exists() and path.stat().st_size:
++            index_record(path, role=role or "runner")
++    except Exception:
++        pass
++
++def write_md_with_frontmatter(path: Path, frontmatter: Dict[str, Any], body: str, role: str | None = None) -> None:
++    fm = "---\n" + json.dumps(frontmatter, ensure_ascii=False) + "\n---\n"
++    write_text(path, fm + body, role=role)
++
+diff --git a/tools/runner/plugins/__pycache__/auditor.cpython-313.pyc b/tools/runner/plugins/__pycache__/auditor.cpython-313.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..e4958e7a6b2046eee988bc635cd600ea7a89641c
+GIT binary patch
+literal 658
+zcmZ8f&2G~`5Z<+&w6YUZM5%xSvV^Fx)Y_p^RX_--NE~QIK-mL_NJJ)Hg>C((*>#%a
+z!~<~cLvZ66cmhW~RI+m8fVd$=+}U-U1B~QvznS?wGyAh_w@oDN`|EF?JdDr}<*ZGs
+z$@0D=mxv&OPtgeme4>HoAYu^x9y&8XA8BsmmlC^LX<h&mbRg(Nl-iq@-C<p%TAC7d
+z`7Os1E>XV<Dj;~@La3*5|Jh;fKdRSI>iUhfh-im$YGoAnH&#sM*8~w=)s>SrNb{-g
+zpb>I6y0cqZ6eRxfP_Q%^yp!CE!`aTiz7sRfSu&dKRAQ3HaRAdnk7g+drGNOqse{fc
+zXzn|2PoFtl<R2Y6W+6?6)GW;)51B||5HJ^)2BZ;n4KU<{Ws^=A7rZpdlnWZanlJ(C
+z1iqrB+CcflzewSnXTgyA$Kg1T^}=2rQSOU0jkphal2GuoC?Bze`*kBPo0hsvL0i^P
+zefW`t&uG!Ii<`Ui*6y|C%`NZR>ddXq!oE}7eSBpf6q^SN!~O!r_TK!)Ug5njKAc?{
+z=O9l{-D(r4$RX*vMtQqx?yZ`8EFI*6MZ6lk+E&#U)T^p~hL&XI=JPlW<>)V9OS<aH
+UxGmwgjxqj;I)4luN4V1e1!;tyApigX
+
+literal 0
+HcmV?d00001
+
+diff --git a/tools/runner/plugins/__pycache__/planning.cpython-313.pyc b/tools/runner/plugins/__pycache__/planning.cpython-313.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..b98f81ecbcd0e5b84b979d9c9e5ccdd05f8778c6
+GIT binary patch
+literal 1009
+zcmbVLzi-n(6h8k*8sfyE;)hy9k)<qHO`Q&HNlQR#BnFCz+8T)=gXKD>)Qw|DcNf}N
+z4EzDC{1I$j**Y@X%@E1T#(>z6B6jZ1NmZf3z>|FM-uJ%u-96vkv{=joYF}QSA2&n*
+zzOi6#H0CyaMBOJ~0#kSe_5>vCiAdCdDVx#*a3UkABkGwSjH-)C{uH?cS_GbvM10+7
+zI$UBlWT}_vH!TQEv2~R*g*63$Lzer)HfQnUnQv2GD>EmV;wDvM28C;C(toPS*VGnL
+zUAo$Q0?Z84HM8b|ncJ2$(7K6pi*xe-<S3j|m~%QnFE+#FzGwT@J__0chge6p)AfRm
+zF|>PL`0yrF>$w=aekWYvg|_3sKCyiVS`Iq`<l4pw4*XF2TjomO4j0&Uh#UCUKHY`U
+zYlmuCOA(DB`9xtPpRQ-wt}Y}p3OpFz=amFH$G+>>p2b2|yja%W%)zuiTuP}n?pj9(
+z+TC_=>Zjf1${L|C&g(Lg>CaBG@XW;oCwX&-3GBT%a|vQs<1?7Dvq-k9rvd8XzU{#3
+zZu=eUxqUeBAg+=i@Ng9kd>^7}-y3vXA5))h+~^MziRMs|im-+7dpdjolY$y8R^mcs
+ztZc-}##q^km92@o6fHj)skJCq<An9Nus&95u~Hi=JF&9E2~S6AJ<8Q5vicE4clEfW
+zN2~RVXP5H9464MXN@O&?u3XA*XOIz>jC18;Z6xm_dY#y#$s$Mw$ZzU$a*wxQq%9b3
+zU=4`tVctIfIehboJz8Fj3Urp_>OFdEJop^lrXhO~Sf#^HNf3nZVEvc8ARGvs{~Ihr
+B^1T26
+
+literal 0
+HcmV?d00001
+
+diff --git a/tools/runner/plugins/__pycache__/principal_engineer.cpython-313.pyc b/tools/runner/plugins/__pycache__/principal_engineer.cpython-313.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..d03c509ff04ebab3dcf38dde866a4d930d7b2714
+GIT binary patch
+literal 1433
+zcma)5O>7%Q6rTO_&w69W@edeMX+xtb7Kwk-SS1l^6)abAQB38*1r#J}v8U-0@9Z+O
+zZW^C@4B`NnN;&2jZas4BoddRfh_(2}0reK-a%XmJW21n?NS>#8GvD{V_j%uFVL=9L
+z{ak+eWL*T{H}^1I?Ch=4Ef!t?2q5<{c)$_v0Z(`pK>kYs3Q*h<q4W;;S|sA3nD)JP
+zA!*)89TVL~b)#87*6k<t$Hc_8q1iSf4!{4ABN}ECIX;5yHo=t!=M@@neij7w8(A#-
+z0@Oft{&w=PFo~F}agf{j902Ve00;ae&BSel0H{jS^DIu0Ym-!yy*qGgdJ77LNj1bB
+z1gF_KUeV=+67*#O^k)PZfI%p4iz+w-Oi9R7QeiKY7}(1JfcZJ>LX8iD+y7gc#=6;G
+zomc1LVfZ#b(-;CO_*b0~Pv@eiGs<)>&2-Ln8><0V(Tp!0uQ;KHrBbzCEj=oiKI<f{
+zmWH#iZ5SFksaKI@5<6owJE?0a)zB%`@nI+BK^|!>y{Xx{iRVz!Syml$y>{(R3yx&#
+zb_+TFr-)F7aRQHZ++=LDvwBm#hLShb;wP2+<?8;9O6~SnvXiigjvKnAwdx2T>KGwX
+z*Yq^!h{R;PLHI@G)4dWb!?e%|?>0PL4_Rw&FVSngbmFs;bMhsxvrgdeR#&{leI2v1
+zWy5MA17UmI^prg1-Kzh*Ro&aPK-}RY?1KWVe~li|&hkz5Ki|upa19?}^BAk{^z5i<
+z$&uQYg$Qv+)$yTcI<=`I!xL&Fqx4L-i91NFjyneqXE*{u-%vNFs;X1W9-HKdT3Q2T
+zcbiW&+(6B0yM<`hHq92zk~YSOWUW@4`AM_a4bE66jIoW$Ta3|_K!0J|b1(=f-^<_1
+z-zm>`2mZk6e&3%OE-rNw8@<Ji%SfRYDO^VG^dfhLOUvCGAM}^DyUO-3urgG_-ROEx
+zSsx_UUglr%J*7BMwg%C)QBVrXR|=3rr$_x@>epEHv^b0>&kE<UbLs3xFMjJXmg&VZ
+zm$6(wmK!G3^Wu5oBG6sQ_mi95#mzq?5Qp3w9|*qZ)!6DW+C=WB{HtnD*&8VDPiwph
+zgGlP^?#1dwvYX2F!})F?KVmHb=5)d{B{Mc9qnq`%t+%LW@YsHV+Qf6>M?l_Y7?Nb0
+s6Znw*SIpGAWSJe^kDb2Dwkv_-xZlCOD>2D!o;I!k3qLgfbb|-}3%IRohX4Qo
+
+literal 0
+HcmV?d00001
+
+diff --git a/tools/runner/plugins/__pycache__/product_owner.cpython-313.pyc b/tools/runner/plugins/__pycache__/product_owner.cpython-313.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..f195cd6f2653c138a04b38e141df4f6c440e3783
+GIT binary patch
+literal 887
+zcmZ8f%Wl&^6dlLTqX|taH4!Ni#exl9)TXMk0IEtLbwS!xsD=%ZFpfQ>(>k^_GbT+|
+z{Q$Q80e0;234DS>7e!Vj7KjBakRtZnabqaGlE?RP?wR|T+2UduflQuF4t`1qeG^6|
+zxw$gaK{-VxGNm2VmZ+o(J-3r<%T#VFRB7jF9(;LIxrGiDTIkDK;fF}pq(pgc^8-yz
+z%0o&xwm3fKNtp+cb6_2^z)y0Wr+bdTW>Nq}hHv%(j#Jdl{BZkP1tA~3MEfFsO<HsN
+z{`~I(wwupDX08R@3Bgjgc&R}=Q;;bOZc~9C3J+x!br-VG6-+V3lnnGh%5Z(8E$of!
+zp=bMs;}Pt0t49fbs}J1q`Zb3-AdC^e|5$Zw-w(Lj$3CVu$7;`Zj=Z3+k5^KnkOpq#
+z0Mpz(vIpMy&b<uw=x?H{_C_j=e4r^OOIcbl1lzKS7(NX=JieW>+Kz)mZu<_l9I*;Y
+zY(3pTDKoV^6~j*o_?R%xlCn8s91pgS38xAKs2C@(-niNr6LVFQEn^taBNo~YHlDce
+z#5L}I<Y8v;An=%RS)~zrQJ?tC_^(zy93?UUXbq^u9qa`hC+K3i5jXYevVOArrE>GU
+zvO2A-o>$aqMZKst<CWdBY9}srE|ltf8rO|!&4|~{_?7or8O(hf)7r-5@YCJ6wH@!i
+zK2xk2@FFdj6e#8q_4l-5QVijJdZb6in@SpKwfbeXIti?Z6OaAtJ{?e6=SM`BAcIy#
+nT4{3tEA#LcZGb5z!s>ARk|jy{j+$T5<`ixIR`SvtDb4x=Z$svK
+
+literal 0
+HcmV?d00001
+
+diff --git a/tools/runner/plugins/auditor.py b/tools/runner/plugins/auditor.py
+new file mode 100644
+index 0000000..1d0c60c
+--- /dev/null
++++ b/tools/runner/plugins/auditor.py
+@@ -0,0 +1,8 @@
++#!/usr/bin/env python3
++from tools.runner.io_utils import write_text, MB
++
++def run() -> None:
++    if not (MB / "plan/Action_Plan.md").exists():
++        raise SystemExit("Action_Plan.md missing")
++    write_text(MB / "plan/Summary_Report.md", "# Summary Report\n- OK: stub evidence\n", role="auditor_ai")
++
+diff --git a/tools/runner/plugins/planning.py b/tools/runner/plugins/planning.py
+new file mode 100644
+index 0000000..bb6a930
+--- /dev/null
++++ b/tools/runner/plugins/planning.py
+@@ -0,0 +1,12 @@
++#!/usr/bin/env python3
++from tools.runner.io_utils import write_text, MB
++
++def run() -> None:
++    if not (MB / "plan/product_backlog.yaml").exists():
++        raise SystemExit("product_backlog.yaml missing")
++    if not (MB / "plan/acceptance_criteria.json").exists():
++        raise SystemExit("acceptance_criteria.json missing")
++    write_text(MB / "plan/Action_Plan.md", "# Action Plan\n", role="planning_ai")
++    write_text(MB / "plan/technical_plan.md", "# Technical Plan\n", role="planning_ai")
++    write_text(MB / "plan/task_breakdown.yaml", "# tasks\n", role="planning_ai")
++
+diff --git a/tools/runner/plugins/principal_engineer.py b/tools/runner/plugins/principal_engineer.py
+new file mode 100644
+index 0000000..8090197
+--- /dev/null
++++ b/tools/runner/plugins/principal_engineer.py
+@@ -0,0 +1,27 @@
++#!/usr/bin/env python3
++from tools.runner.io_utils import write_md_with_frontmatter, MB
++
++def run(mode: str) -> None:
++    m = mode.upper()
++    if m == "PEER_REVIEW":
++        if not (MB / "plan/Summary_Report.md").exists():
++            raise SystemExit("Summary_Report.md missing")
++        write_md_with_frontmatter(
++            MB / "plan/Validation_Report.md",
++            {"title":"Validation Report","version":1,"findings":[]},
++            "# Validation Report\n- CONFIRM: stub\n",
++            role="principal_engineer_ai",
++        )
++    elif m == "SYNTHESIS":
++        for req in ("Action_Plan.md", "Summary_Report.md", "Validation_Report.md"):
++            if not (MB / f"plan/{req}").exists():
++                raise SystemExit(f"{req} missing")
++        write_md_with_frontmatter(
++            MB / "plan/Final_Implementation_Plan.md",
++            {"title":"Final Implementation Plan","version":1,"tasks":[]},
++            "# Final Implementation Plan\n",
++            role="principal_engineer_ai",
++        )
++    else:
++        raise SystemExit(f"Unknown mode: {mode}")
++
+diff --git a/tools/runner/plugins/product_owner.py b/tools/runner/plugins/product_owner.py
+new file mode 100644
+index 0000000..140dda3
+--- /dev/null
++++ b/tools/runner/plugins/product_owner.py
+@@ -0,0 +1,11 @@
++#!/usr/bin/env python3
++from pathlib import Path
++from tools.runner.io_utils import write_text, touch_json, MB
++
++def run() -> None:
++    client_brief = MB / "plan/client_brief.md"
++    if not client_brief.exists():
++        raise SystemExit("client_brief.md missing; cannot generate backlog.")
++    write_text(MB / "plan/product_backlog.yaml", "# backlog: generated by runner\n", role="product_owner_ai")
++    touch_json(MB / "plan/acceptance_criteria.json", {"criteria": []}, role="product_owner_ai")
++
+diff --git a/tools/schema/validate_artifacts.py b/tools/schema/validate_artifacts.py
+new file mode 100644
+index 0000000..14f82af
+--- /dev/null
++++ b/tools/schema/validate_artifacts.py
+@@ -0,0 +1,54 @@
++#!/usr/bin/env python3
++import json
++import re
++import sys
++from pathlib import Path
++from typing import Any, Dict
++
++ROOT = Path(__file__).resolve().parents[2]
++
++def load_json(p: Path) -> Dict[str, Any]:
++    return json.loads(p.read_text() or "{}")
++
++def validate_json(instance: Dict[str, Any], schema: Dict[str, Any]) -> bool:
++    # Minimal structural validation (no external lib): check required keys
++    req = schema.get("required", [])
++    for k in req:
++        if k not in instance:
++            print(f"Missing required key: {k}")
++            return False
++    return True
++
++def parse_frontmatter(md_path: Path) -> Dict[str, Any]:
++    txt = md_path.read_text(encoding="utf-8")
++    parts = re.split(r"^---\s*$", txt, flags=re.M)
++    if len(parts) >= 3:
++        fm = parts[1]
++        try:
++            return json.loads(fm)
++        except Exception:
++            pass
++    return {}
++
++if __name__ == "__main__":
++    # Validate acceptance criteria JSON
++    ac = ROOT / "memory-bank/plan/acceptance_criteria.json"
++    ac_schema = ROOT / "schema/acceptance_criteria.schema.json"
++    if ac.exists():
++        ok = validate_json(load_json(ac), load_json(ac_schema))
++        print("acceptance_criteria:", "OK" if ok else "FAIL")
++
++    # Frontmatter validations (only checks for presence of frontmatter if any)
++    for name, schema_file in [
++        ("Validation_Report.md", ROOT / "schema/validation_report.frontmatter.schema.json"),
++        ("Final_Implementation_Plan.md", ROOT / "schema/final_implementation_plan.frontmatter.schema.json"),
++    ]:
++        p = ROOT / f"memory-bank/plan/{name}"
++        if p.exists():
++            fm = parse_frontmatter(p)
++            if fm:
++                ok = validate_json(fm, load_json(schema_file))
++                print(f"{name} frontmatter:", "OK" if ok else "FAIL")
++            else:
++                print(f"{name} frontmatter: MISSING or not JSON")
++
+diff --git a/tools/upwork/adapter.py b/tools/upwork/adapter.py
+new file mode 100644
+index 0000000..87c5856
+--- /dev/null
++++ b/tools/upwork/adapter.py
+@@ -0,0 +1,37 @@
++#!/usr/bin/env python3
++import argparse
++import json
++from pathlib import Path
++
++_FILE = Path(__file__).resolve()
++# /workspace/AdvancedRules/tools/upwork/adapter.py → parents[2] == repo root
++REPO_ROOT = _FILE.parents[2]
++MB = REPO_ROOT / "memory-bank"
++
++def write_offer(contract_type: str, escrow_funded: bool, work_diary_ready: bool, weekly_cap_hours: int) -> Path:
++    payload = {
++        "contract_type": contract_type.lower(),
++        "escrow_funded": bool(escrow_funded),
++        "work_diary_ready": bool(work_diary_ready),
++        "weekly_cap_hours": int(weekly_cap_hours),
++    }
++    out = MB / "upwork/offer_status.json"
++    out.parent.mkdir(parents=True, exist_ok=True)
++    out.write_text(json.dumps(payload, indent=2), encoding="utf-8")
++    return out
++
++if __name__ == "__main__":
++    p = argparse.ArgumentParser()
++    p.add_argument("--contract", default="fixed", choices=["fixed","hourly"]) 
++    p.add_argument("--escrow", default="true")
++    p.add_argument("--diary", default="true")
++    p.add_argument("--cap", default="10")
++    a = p.parse_args()
++    out = write_offer(
++        a.contract,
++        a.escrow.lower() in {"1","true","yes","y"},
++        a.diary.lower() in {"1","true","yes","y"},
++        int(a.cap)
++    )
++    print(out)
++
+diff --git a/workflow_state.json b/workflow_state.json
+new file mode 100644
+index 0000000..f294935
+--- /dev/null
++++ b/workflow_state.json
+@@ -0,0 +1,41 @@
++{
++  "prev_state": "VALIDATION_DONE",
++  "state": "SYNTHESIS_DONE",
++  "history": [
++    {
++      "ts": 1756383067.7198448,
++      "from": null,
++      "to": "PRESTART"
++    },
++    {
++      "ts": 1756383067.7464113,
++      "from": "PRESTART",
++      "to": "PLANNING"
++    },
++    {
++      "ts": 1756385258.545117,
++      "from": "PLANNING",
++      "to": "BACKLOG_READY"
++    },
++    {
++      "ts": 1756385258.5786533,
++      "from": "BACKLOG_READY",
++      "to": "PLANNING_DONE"
++    },
++    {
++      "ts": 1756385258.607379,
++      "from": "PLANNING_DONE",
++      "to": "AUDIT_DONE"
++    },
++    {
++      "ts": 1756385258.6354282,
++      "from": "AUDIT_DONE",
++      "to": "VALIDATION_DONE"
++    },
++    {
++      "ts": 1756385258.66258,
++      "from": "VALIDATION_DONE",
++      "to": "SYNTHESIS_DONE"
++    }
++  ]
++}
+\ No newline at end of file
+-- 
+2.48.1
+
