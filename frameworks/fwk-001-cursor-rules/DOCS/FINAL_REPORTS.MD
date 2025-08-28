@@ -146,6 +146,7 @@ file | type | alwaysApply | globs_count | includes_count
   - glob: `**/*.tsx`
   - glob: `**/*.js`
   - glob: `**/*.jsx`
+    - no matches found
 - /workspace/.cursor/rules/curated_test-you-are-an-expert-in-python-and-cybersecurity-tool-development.mdc
   - glob: `**/*.py`
     - sample: /workspace/frameworks/fwk-001-cursor-rules/contracts/validate_contract.py
@@ -178,9 +179,11 @@ file | type | alwaysApply | globs_count | includes_count
   - glob: `**/*.sol`
   - glob: `hardhat.config.*`
   - glob: `foundry.toml`
+    - no matches found
 - /workspace/.cursor/rules/curated_test-you-are-an-expert-in-terraform-and-infrastructure-as-code-iac-for-cloud-platfo.mdc
   - glob: `**/*.tf`
   - glob: `**/*.tfvars`
+    - no matches found
 - /workspace/.cursor/rules/data_ai.mdc
   - glob: `**/*`
     - sample: /workspace/${MEMORY_STORAGE_ROOT:-storage
@@ -679,9 +682,23 @@ file | type | alwaysApply | globs_count | includes_count
 - Missing referenced rule link in /workspace/.cursor/rules/test-rules-management.mdc: "
 - Missing referenced rule link in /workspace/.cursor/rules/test-rules-management.mdc: [^
 
+- Zero-match globs observed:
+  - `**/*.ts`, `**/*.tsx`, `**/*.js`, `**/*.jsx` (no matching files under /workspace)
+  - `**/*.sol`, `hardhat.config.*`, `foundry.toml` (no matching files under /workspace)
+  - `**/*.tf`, `**/*.tfvars` (no matching files under /workspace)
+
+- Malformed reference strings detected (likely YAML or formatting spillover) that could cause false-negative existence checks:
+  - In `/workspace/.cursor/rules/auditor_ai.mdc` and others: entries containing embedded JSON-like context (see section E lines referencing `memory-bank/plan/Action_Plan.md","context":...`). These are treated as a single path and marked MISSING.
+  - In `/workspace/.cursor/rules/product_owner_ai.mdc`: `memory-bank/plan/client_brief.md"` (trailing quote) marked MISSING while the correct path exists.
+
+- Top-level vs memory-bank artifacts:
+  - Several artifacts exist under `/workspace/memory-bank/plan/` but are checked at repository root and marked MISSING (e.g., `Action_Plan.md`, `Summary_Report.md`, `Validation_Report.md`, `technical_plan.md`, `task_breakdown.yaml`). Evidence in section E shows their presence under `memory-bank/plan/`.
+
 ## G. RECOMMENDATIONS (EVIDENCE-BASED ONLY)
 - Narrow overlapping alwaysApply globs or convert to conditional activation.
 - Fix broken mdc: links or restore referenced files under `.cursor/test-rules` or `frameworks/`.
+ - Normalize references to actual artifact locations (prefer `memory-bank/plan/*` where applicable) and correct malformed path strings to avoid false MISSING statuses.
+ - For zero-match globs, either scope them to subdirectories present in this repo or annotate them as intentionally broad with no current matches.
 
 ## H. EVIDENCE INDEX
 ```1:20:.cursor/rules/ai-assistant-guidance.mdc
@@ -1570,3 +1587,13 @@ alwaysApply: true
 - All paths/globs sample-validated? YES (first 10 per glob)
 - Parse/Access Errors: none
 >>> DONE (NO GUESSES, EVIDENCE-COMPLETE)
+
+---
+REVISION #1
+- Added explicit notes for zero-match globs in section D.
+- Documented malformed references and top-level vs memory-bank artifact path differences in section F.
+- Appended evidence-based recommendations to address malformed references and glob scoping in section G.
+
+CONFIDENCE: 95% — CONFIDENCE OK
+
+>>> SELF-REVIEW COMPLETE (CONFIDENCE: 95%)
